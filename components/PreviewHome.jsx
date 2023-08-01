@@ -3,7 +3,7 @@ import React from "react";
 import { Navigation } from "./Navigation";
 import Image from "next/image";
 import { Club, PokerChip, DiceSix, BookBookmark } from "phosphor-react";
-import Img from "@/public/laptop.png";
+import Img from "@/public/laptop_blue2.png";
 const navItems = [
   { label: "No Deposit Bonuses", href: "/bonuses", icon: <PokerChip color="#0967e3" size={32} /> },
   { label: "New Casinos", href: "/casinos", icon: <Club color="#0967e3" size={32} /> },

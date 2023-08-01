@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Diamond, DiceTwo, PokerChip } from "phosphor-react";
 import Link from "next/link";
 import Image from "next/image";
-import Img from "@/public/tablet.png";
-import Img2 from "@/public/mobile.png";
+import Img from "@/public/tablet_blue.png";
+import Img2 from "@/public/mobile_blue.png";
 
 
 const MenuItem = ({ title, excerpt, icon, excerpt2, link }) => {

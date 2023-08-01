@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { BookBookmark, Coins, UsersFour } from "phosphor-react";
-import Img from "@/public/mobile.png";
+import Img from "@/public/mobile_blue.png";
 import Link from "next/link";
 import jsonContent from "./guidePosts.json";
 
