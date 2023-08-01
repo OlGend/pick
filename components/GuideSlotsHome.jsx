@@ -17,7 +17,7 @@ const GuideSlotsHome = () => {
               <div className="item relative mb-5">
                 <BookBookmark
                   className="absolute left-0"
-                  color="#824287"
+                  color="#0967e3"
                   size={32}
                 />
                 <h4 className="mb-2">Establish a gambling budget</h4>
@@ -29,7 +29,7 @@ const GuideSlotsHome = () => {
                 </p>
               </div>
               <div className="item relative mb-5">
-                <Coins className="absolute left-0" color="#824287" size={32} />
+                <Coins className="absolute left-0" color="#0967e3" size={32} />
                 <h4 className="mb-2">
                   Avoid pursuing your losses at all costs
                 </h4>
@@ -44,7 +44,7 @@ const GuideSlotsHome = () => {
               <div className="item relative mb-5">
                 <UsersFour
                   className="absolute left-0"
-                  color="#824287"
+                  color="#0967e3"
                   size={32}
                 />
                 <h4 className="mb-2">
