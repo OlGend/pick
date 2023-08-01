@@ -16,7 +16,7 @@ const PreviewHome = () => {
     <div className="preview">
       <div className="main__container flex">
         <div className="flex flex-col">
-          <h1>Online Casino Reviews & Gambling Guides</h1>
+          <h1>Online Casino Reviews & Gambling Guide`s</h1>
           <p>
             Authentic player reviews, no deposit bonuses, and a wide selection
             of games with free play.
