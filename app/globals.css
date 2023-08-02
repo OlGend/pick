@@ -6270,7 +6270,7 @@ h1 {
     radial-gradient(closest-side at 65% 56%, #fff 0, #fff 100%) 0 0
     no-repeat padding-box; */
     /* background-image: url(../public/bg111.png); */
-  padding: 40px 0;
+  padding: 60px 0;
   background: #1d2730;
   position: relative;
 }
@@ -6297,12 +6297,15 @@ h1 {
   top: 50%;
   right: -149px;
   /* fill: rgba(42, 239, 144, 0.50); */
-  filter: drop-shadow(0px 0px 250px rgba(42, 85, 239, 0.50));
+  filter: drop-shadow(0px 0px 250px rgba(42, 85, 239));
   background: rgba(42, 85, 239, 0.50);
   z-index: 50;
   backdrop-filter: blur(10px); /* Размытие силой 10 пикселей (можно изменить значение) */
 }
-
+.btn-more {
+  font-size: 14px;
+  font-weight: 700;
+}
 .preview h1 {
   color: #fff;
   padding-bottom: 15px;
@@ -6337,7 +6340,7 @@ h1 {
 .preview-navigate a div svg {
   margin-bottom: 10px;
 }
-.card-brand:first-of-type {
+.card-brand:nth-child(5n+1){
   margin-left: 0;
 }
 .card-brand {
@@ -6345,6 +6348,7 @@ h1 {
   background: #1d2730;
   margin-left: 1%;
   border-radius: 2px;
+  
 }
 .brandImage {
   max-height: 100px;
@@ -6354,14 +6358,17 @@ h1 {
   justify-content: center;
 }
 .card-brand h4 {
-  color: #5dd667;
-  text-shadow: 0 0 24px rgba(93, 214, 103, 0.6);
+  color: #2173de;
+  text-shadow: 0 0 24px rgba(33, 115, 222, 0.6);
   margin-bottom: 10px;
+}
+.card-brand .btn-primary {
+  box-shadow: 0 1px 8px #0967e3;
 }
 .review-bonus {
   color: #fff !important;
   font-size: 14px;
-  min-height: 46px;
+  min-height: 69px;
 }
 .review-bonus br {
   display: none;
@@ -6378,31 +6385,31 @@ h2 {
   font-size: 24px;
   line-height: 28px;
 }
-/* Для всіх елементів, які є кратними 5 */
+.card-brand-filtered:nth-child(5n +1) .brandImage,
 .card-brand:nth-child(5n +1) .brandImage,
 .card-brand-new:nth-child(5n + 1) .brandImage {
   background: transparent radial-gradient(closest-side at 65% 56%, #ff0080 0, #c70067 100%) 0 0 no-repeat padding-box;
 }
 
-/* Для всіх елементів, які є кратними 5 + 1 */
+.card-brand-filtered:nth-child(5n +2) .brandImage,
 .card-brand:nth-child(5n + 2) .brandImage,
 .card-brand-new:nth-child(5n + 2) .brandImage {
   background: transparent radial-gradient(closest-side at 65% 56%, #a4ff00 0, #80c700 100%) 0 0 no-repeat padding-box;
 }
 
-/* Для всіх елементів, які є кратними 5 + 2 */
+.card-brand-filtered:nth-child(5n +3) .brandImage,
 .card-brand:nth-child(5n + 3) .brandImage,
 .card-brand-new:nth-child(5n + 3) .brandImage {
   background: transparent radial-gradient(closest-side at 65% 56%, #00e6ff 0, #00b2c7 100%) 0 0 no-repeat padding-box;
 }
 
-/* Для всіх елементів, які є кратними 5 + 3 */
+.card-brand-filtered:nth-child(5n +4) .brandImage,
 .card-brand:nth-child(5n + 4) .brandImage,
 .card-brand-new:nth-child(5n + 4) .brandImage {
   background: transparent radial-gradient(closest-side at 65% 56%, #ff6f61 0, #c73832 100%) 0 0 no-repeat padding-box;
 }
 
-/* Для всіх елементів, які є кратними 5 + 4 */
+.card-brand-filtered:nth-child(5n +5) .brandImage,
 .card-brand:nth-child(5n + 5) .brandImage,
 .card-brand-new:nth-child(5n + 5) .brandImage {
   background: transparent radial-gradient(closest-side at 65% 56%, #ffff00 0, #c7c700 100%) 0 0 no-repeat padding-box;
@@ -6440,7 +6447,7 @@ h2 {
 }
 
 .top-navigate a {
-  color: #5dd667;
+  color: #2173de;
   /* text-shadow: 0 0 24px rgba(93, 214, 103, 0.6); */
   font-weight: 600;
 }
@@ -6499,8 +6506,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .review-pros li::before {
   content: "+";
@@ -6684,4 +6690,138 @@ body {
 .header__container {
   display: flex;
   justify-content: space-between;
+}
+
+.card-brand-filtered {
+  border: 1px solid rgba(123, 140, 152, 0.2);
+}
+.card-brand-filtered .review-bonus {
+  min-height: auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000 !important;
+}
+.custom-list-item {
+  background: #f0f3f7;
+padding: 5px 5px;
+border: 1px solid rgba(123, 140, 152, 0.2);
+cursor: pointer;
+}
+.card-brand-filtered .review-pros li {
+  margin-top: 5px;
+}
+.card-brand-filtered .review-pros li::before {
+  content: "";
+  font-weight: 900;
+  position: absolute;
+  left: -5px;
+  background: #128722;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 15px;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  top: 6px;
+}
+.withdrawal h4 {
+  display: none;
+}
+
+.filter-brands .card-brand-filtered .brandImage a img {
+  max-height: initial !important;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+.ecopayz {
+  background: url(/ecopayz.png) no-repeat center;
+}
+.mastercard {
+  background: url(/master.png) no-repeat center;
+}
+.skrill {
+  background: url(/skrill.png) no-repeat center;
+}
+.neteller {
+  background: url(/neteller.png) no-repeat center;
+}
+.mifinity {
+  background: url(/mifinity.png) no-repeat center;
+}
+.visa {
+  background: url(/visa.png) no-repeat center;
+}
+.litecoin {
+  background: url(/litecoin.png) no-repeat center;
+}
+.bank-transfer, .bank-wire-transfer {
+  background: url(/bank.png) no-repeat center;
+}
+.ethereum {
+  background: url(/etherium.png) no-repeat center;
+}
+.trustly {
+  background: url(/trustly.png) no-repeat center;
+}
+.bitcoin {
+  background: url(/bitcoin.png) no-repeat center;
+}
+.boleto {
+  background: url(/boleto.png) no-repeat center;
+}
+.coinspaid {
+  background: url(/coinspaid.png) no-repeat center;
+}
+.discover {
+  background: url(/discover.png) no-repeat center;
+}
+.jeton-wallet {
+  background: url(/jeton.png) no-repeat center;
+}
+.muchbetter {
+  background: url(/muchbetter.png) no-repeat center;
+}
+.neosurf {
+  background: url(/neosurf.png) no-repeat center;
+}
+.paysafe-card {
+  background: url(/paysafecard.png) no-repeat center;
+}
+.piastrix {
+  background: url(/piastrix.png) no-repeat center;
+}
+.qiwi {
+  background: url(/qiwi.png) no-repeat center;
+}
+.tether {
+  background: url(/tether.png) no-repeat center;
+}
+.yandex-money {
+  background: url(/youmoney.png) no-repeat center;
+}
+.withdrawal ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.withdrawal li {
+  width: 70px;
+  height: 45px;
+  color: transparent;
+  margin-right: 3px;
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  margin-bottom: 3px;
 }

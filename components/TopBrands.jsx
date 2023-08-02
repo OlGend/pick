@@ -1,11 +1,15 @@
 // TopBrands.jsx (Клиентский компонент)
-"use client"
+"use client";
 import React from "react";
 import { Trophy } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrands } from "./useTopBrands";
-import { extractReviewBonus, extractReviewImage, extractLink } from "./brandUtils";
+import { useTopBrands } from "./useBrands";
+import {
+  extractReviewBonus,
+  extractReviewImage,
+  extractLink,
+} from "./brandUtils";
 
 export default function TopBrands() {
   // Передаем значение фильтра (например, 112) в хук useTopBrands
@@ -20,7 +24,7 @@ export default function TopBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center pt-12">
-          <Trophy color="#5dd667" size={32} />
+          <Trophy color="#0967e3" size={32} />
           <h2 className="ml-2">{title}</h2>
         </div>
         <div className="flex flex-wrap px-0 py-6">
@@ -29,7 +33,7 @@ export default function TopBrands() {
             const playLink = extractLink(brand.content.rendered);
 
             return (
-              <div className="basis-[19%] card-brand" key={brand.id}>
+              <div className="basis-[19%] card-brand mb-3" key={brand.id}>
                 <div className="brandImage p-3">
                   <Link key={brand.id} href={`/bonuses/${brand.id}`}>
                     <Image
@@ -42,9 +46,9 @@ export default function TopBrands() {
                   </Link>
                 </div>
                 <div className="brandContent p-3">
-                  <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                  {/* <Link key={brand.id} href={`/bonuses/${brand.id}`}>
                     <h4>{brand.title.rendered}</h4>
-                  </Link>
+                  </Link> */}
                   <div
                     dangerouslySetInnerHTML={{
                       __html: extractReviewBonus(brand.content.rendered),
@@ -54,7 +58,10 @@ export default function TopBrands() {
                     <Link className="btn btn-primary" href={playLink}>
                       Play Now
                     </Link>
-                    <Link className="btn btn-secondary" href={`/bonuses/${brand.id}`}>
+                    <Link
+                      className="btn btn-secondary"
+                      href={`/bonuses/${brand.id}`}
+                    >
                       Review
                     </Link>
                   </div>

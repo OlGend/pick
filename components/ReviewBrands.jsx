@@ -47,7 +47,7 @@ const ReviewBrands = () => {
             </p>
             <div className="">
               <MenuItem
-                icon={<Diamond color="#5dd667" size={24} />}
+                icon={<Diamond color="#0967e3" size={24} />}
                 title="Currently in active pursuit of fresh casino websites"
                 excerpt={"Our team is constantly seeking recently "}
                 link={
@@ -58,14 +58,14 @@ const ReviewBrands = () => {
                 excerpt2={", aiming to provide utmost value to our visitors."}
               />
               <MenuItem
-                icon={<DiceTwo color="#5dd667" size={24} />}
+                icon={<DiceTwo color="#0967e3" size={24} />}
                 title="The most precise details regarding each casino"
                 excerpt={
                   "We meticulously assess each casino and gather extensive information to ensure our visitors are well-informed about what to anticipate before playing"
                 }
               />
               <MenuItem
-                icon={<PokerChip color="#5dd667" size={24} />}
+                icon={<PokerChip color="#0967e3" size={24} />}
                 title="Currently in active pursuit of fresh casino websites"
                 excerpt={
                   "Every casino undergoes evaluation by an impartial team, adhering to a comprehensive, data-driven, "
@@ -95,7 +95,7 @@ const ReviewBrands = () => {
             </p>
             <div className="">
               <MenuItem
-                icon={<Diamond color="#5dd667" size={24} />}
+                icon={<Diamond color="#0967e3" size={24} />}
                 title="Compiling promotional deals from every online casino out there"
                 excerpt={"In our quest to provide the widest range of choices, we continually seek  "}
                 link={
@@ -107,7 +107,7 @@ const ReviewBrands = () => {
               />
               
               <MenuItem
-                icon={<DiceTwo color="#5dd667" size={24} />}
+                icon={<DiceTwo color="#0967e3" size={24} />}
                 title="Creating unique and exclusive bonuses tailored exclusively for our valued visitors"
                 excerpt={"In our quest to provide the widest range of choices, we continually seek fresh "}
                 link={
@@ -119,7 +119,7 @@ const ReviewBrands = () => {
               />
             
               <MenuItem
-                icon={<PokerChip color="#5dd667" size={24} />}
+                icon={<PokerChip color="#0967e3" size={24} />}
                 title="Comprehensive and precise details regarding every bonus"
                 excerpt={
                   "In our bonus database, you'll find crucial information and terms associated with each bonus, along with clear explanations and illustrative examples."

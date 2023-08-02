@@ -50,3 +50,32 @@ export function extractPros(content) {
   const extractPros = content.substring(reviewStart, reviewEnd + 6);
   return extractPros;
 }
+export function extractDeposit(content) {
+  const reviewStart = content.indexOf('<ul>\n<li>');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("</ul>>", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractDeposit = content.substring(reviewStart, reviewEnd + 6);
+  return extractDeposit;
+}
+
+export function extractWithdrawal(content) {
+  const reviewStart = content.indexOf('<h4 class="wp-block-heading" id="payment-methods">Withdrawal Methods</h4>');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("</div>", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractWithdrawal = content.substring(reviewStart, reviewEnd + 6);
+  return extractWithdrawal;
+}
+
+export function extractDeposits(content) {
+  const reviewStart = content.indexOf('<h4 class="wp-block-heading" id="payment-methods">Deposit Methods</h4>');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("</div>", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractDeposits = content.substring(reviewStart, reviewEnd + 6);
+  return extractDeposits;
+}

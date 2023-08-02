@@ -1,60 +1,70 @@
-"use client"
-import React, { useState } from 'react';
-import RecommendedBrands from "./RecommendedBrands";
+// TopBrands.jsx (Клієнтський компонент)
+"use client";
+import React, { useState } from "react";
 import AllBrands from "./AllBrands";
-import NewlyBrands from "./NewlyBrands";
-import CryptoBrands from "./CryptoBrands";
-
-
 
 const FilteredHome = () => {
-  const [currentTab, setCurrentTab] = useState(1); // Изначально выбран первый таб
+  const [currentTab, setCurrentTab] = useState(1);
 
-  // Функция для обновления текущего таба
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
   };
 
+  const navigateBrands = [
+    {
+      currentTab: 1,
+      currentCategories: 25,
+      currentText: "All Brands",
+    },
+    {
+      currentTab: 2,
+      currentCategories: 26,
+      currentText: "Recommended Brands",
+    },
+    {
+      currentTab: 3,
+      currentCategories: 24,
+      currentText: "Newly Brands",
+    },
+    {
+      currentTab: 4,
+      currentCategories: 19,
+      currentText: "Crypto Brands",
+    },
+    {
+      currentTab: 5,
+      currentCategories: 187,
+      currentText: "Top Sports Brands",
+    },
+  ];
+
   return (
-    <div className='main__container filter-brands'>
-      <div className='flex'>
-        {/* Добавляем класс "active" к кнопке, если она соответствует текущему табу */}
-        <button
-          className={`flex justify-center items-center p-4 border text-lg button-tab ${currentTab === 1 ? 'active' : ''}`}
-          onClick={() => handleTabChange(1)}
-        >
-          All Brands
-        </button>
-        {/* Добавляем класс "active" к кнопке, если она соответствует текущему табу */}
-        <button
-          className={`flex justify-center items-center p-4 border text-lg button-tab ${currentTab === 2 ? 'active' : ''}`}
-          onClick={() => handleTabChange(2)}
-        >
-          Recommended Brands
-        </button>
-          {/* Добавляем класс "active" к кнопке, если она соответствует текущему табу */}
+    <div className="main__container filter-brands">
+      <div className="flex">
+        {navigateBrands.map((item) => (
           <button
-          className={`flex justify-center items-center p-4 border text-lg button-tab ${currentTab === 3 ? 'active' : ''}`}
-          onClick={() => handleTabChange(3)}
-        >
-          Newly Brands
-        </button>
-          {/* Добавляем класс "active" к кнопке, если она соответствует текущему табу */}
-          <button
-          className={`flex justify-center items-center p-4 border text-lg button-tab ${currentTab === 4 ? 'active' : ''}`}
-          onClick={() => handleTabChange(4)}
-        >
-          CryptoBrands
-        </button>
+            key={item.currentTab}
+            className={`flex justify-center items-center p-4 border text-lg button-tab ${
+              currentTab === item.currentTab ? "active" : ""
+            }`}
+            onClick={() => handleTabChange(item.currentTab)}
+          >
+            {item.currentText}
+          </button>
+        ))}
       </div>
 
       <div>
-        {/* Отображение компонентов в зависимости от выбранного таба */}
-        {currentTab === 1 && <AllBrands />}
-        {currentTab === 2 && <RecommendedBrands />}
-        {currentTab === 3 && <NewlyBrands />}
-        {currentTab === 4 && <CryptoBrands />}
-
+        {navigateBrands.map((item) => {
+          return (
+            currentTab === item.currentTab && (
+              <AllBrands
+                key={item.currentTab}
+                choose={item.currentCategories}
+              />
+            )
+          );
+        })}
       </div>
     </div>
   );

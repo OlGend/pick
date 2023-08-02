@@ -21,8 +21,8 @@ export default async function Home() {
     <>
       <PreviewHome />
       <TopBrands />
-      <ReviewBrands />
       <NewBrands />
+      <ReviewBrands />
       <FilteredHome />
       <GuideSlotsHome />
     </>
