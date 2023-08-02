@@ -6730,14 +6730,38 @@ cursor: pointer;
 }
 
 .filter-brands .card-brand-filtered .brandImage a img {
-  max-height: initial !important;
+  max-height: 125px !important;
 } 
 
+.filter-brands .card-brand-filtered .buttons {
+  flex-direction: column;
 
+} 
 
-
-
-
+.filter-brands .card-brand-filtered .buttons .btn {
+  width: 100%;
+  padding: 12px 15px 8px !important;
+  box-shadow: none !important;
+  font-size: 18px;
+}
+.filter-brands .card-brand-filtered .buttons .btn-secondary {
+  background: transparent;
+  border: 1px solid #65676a;
+  color: #65676a;
+  font-size: 15px;
+}
+.filter-brands .card-brand-filtered .buttons .btn-secondary:hover {
+ border-color: #128722;
+  color: #128722;
+}
+.howUse {
+  border: 1px solid rgba(123, 140, 152, 0.2);
+}
+.howUse span {
+  font-weight: 700;
+  font-size: 17px;
+  color: #0967e3;
+}
 
 
 
@@ -6795,7 +6819,7 @@ cursor: pointer;
 .neosurf {
   background: url(/neosurf.png) no-repeat center;
 }
-.paysafe-card {
+.paysafe-card, .paysafecard {
   background: url(/paysafecard.png) no-repeat center;
 }
 .piastrix {

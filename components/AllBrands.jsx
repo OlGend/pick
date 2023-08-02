@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
-import { Gift, ShieldPlus, CaretDown, Bank, CurrencyCircleDollar } from "phosphor-react";
+import { Gift, ShieldPlus, CaretDown, Bank, CurrencyCircleDollar, Play, Eye } from "phosphor-react";
 
 import {
   extractReviewBonus,
@@ -152,15 +152,19 @@ export default function AllBrands({ choose }) {
                     </Link>
                   </div>
 
-                  <div className="buttons ml-auto p-3 flex items-center">
-                    <Link className="btn btn-primary mr-3 mt-0" href={playLink}>
-                      Play Now
-                    </Link>
+                  <div className="buttons ml-auto flex items-center">
                     <Link
-                      className="btn btn-secondary"
+                      className="btn btn-secondary text-center flex justify-center items-center"
                       href={`/bonuses/${brand.id}`}
-                    >
-                      Review
+                    ><Eye className="mr-2 mb-1" size={20} />
+                      Read review
+                    </Link>
+                    <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
+                      <span className="text-center">How to get bonus?</span>
+                      <p className="text-center m-0">Activate bonus in your casino account</p>
+                    </div>
+                    <Link className="btn btn-primary mt-0 text-center flex justify-center items-center" href={playLink}>
+                    <Play className="mr-2 mb-1" size={24} /> Play Now
                     </Link>
                   </div>
                 </div>
