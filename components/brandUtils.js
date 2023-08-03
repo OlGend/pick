@@ -79,3 +79,30 @@ export function extractDeposits(content) {
   const extractDeposits = content.substring(reviewStart, reviewEnd + 6);
   return extractDeposits;
 }
+// brandUtils.js
+export function extractCountries(content) {
+  const reviewStart = content.indexOf('Restricted Countries');
+  if (reviewStart === -1) return null;
+  const reviewEnd = content.indexOf("</p>", reviewStart);
+  if (reviewEnd === -1) return null;
+
+  const countriesText = content.substring(reviewStart, reviewEnd);
+  const countriesWithoutParentheses = countriesText
+    .split("Restricted Countries</h4>\n\n\n\n<p>")[1]
+    .trim()
+    .replace(/\([^)]*\)/g, "") // Видаляємо текст у дужках
+    .split(",")
+    .map((country) => country.trim());
+
+  return countriesWithoutParentheses;
+}
+
+export function extractFlag(content) {
+  const reviewStart = content.indexOf('<div class="pokageo-flag-circle">');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("</div>", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractFlag = content.substring(reviewStart, reviewEnd + 6);
+  return extractFlag;
+}

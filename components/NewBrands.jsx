@@ -1,7 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import React from "react";
-import { Trophy } from "phosphor-react";
+import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
@@ -24,7 +24,7 @@ export default function NewBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-          <Trophy color="#0967e3" size={32} />
+          <CalendarCheck color="#0967e3" size={32} />
           <h2 className="ml-2">{title}</h2>
         </div>
         <div className="flex flex-col px-0 py-6">
@@ -34,7 +34,7 @@ export default function NewBrands() {
 
             return (
               <div
-                className="flex flex-wrap mb-2 card-brand-new"
+                className="flex flex-wrap mb-2 card-brand-new justify-between"
                 key={brand.id}
               >
                 <div className="brandImage p-3">
@@ -49,7 +49,7 @@ export default function NewBrands() {
                   </Link>
                 </div>
                 <Link
-                  className="flex basis-[13%] items-center p-3"
+                  className="flex basis-[16%] items-center p-3"
                   key={brand.id}
                   href={`/bonuses/${brand.id}`}
                 >
@@ -62,26 +62,28 @@ export default function NewBrands() {
                   }}
                 />
                 <div
-                  className="flex basis-[10%] items-center"
+                  className="flex basis-[11%] items-center"
                   dangerouslySetInnerHTML={{
                     __html: extractBadge(brand.content.rendered),
                   }}
                 />
                 <div
-                  className="flex basis-[25%] items-center ml-3"
+                  className="flex basis-[25%] py-2 items-center ml-3"
                   dangerouslySetInnerHTML={{
                     __html: extractPros(brand.content.rendered),
                   }}
                 />
-                <div className="buttons ml-auto p-3 flex items-center">
-                  <Link className="btn btn-primary mr-3 mt-0" href={playLink}>
+                <div className="buttons basis-[17%] ml-auto p-3 flex items-center">
+                  <Link className="btn btn-primary mb-1 flex justify-center items-center w-full" href={playLink}>
+                    <Play className="mb-1 mr-1" size={24} />
                     Play Now
                   </Link>
                   <Link
-                    className="btn btn-secondary"
+                    className="btn btn-secondary flex justify-center items-center w-full"
                     href={`/bonuses/${brand.id}`}
                   >
-                    Review
+                    <Eye className="mb-1 mr-1" size={24} />
+                    Read Review
                   </Link>
                 </div>
               </div>

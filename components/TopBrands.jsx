@@ -1,7 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import React from "react";
-import { Trophy } from "phosphor-react";
+import { Play, Eye, Trophy } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
@@ -55,14 +55,17 @@ export default function TopBrands() {
                     }}
                   />
                   <div className="buttons">
-                    <Link className="btn btn-primary" href={playLink}>
-                      Play Now
-                    </Link>
+                  
                     <Link
-                      className="btn btn-secondary"
+                      className="btn btn-secondary flex justify-center items-center mb-1"
                       href={`/bonuses/${brand.id}`}
                     >
-                      Review
+                      <Eye className="mr-1 mb-1" size={20} />
+                      Read Review
+                    </Link>
+                    <Link className="btn btn-primary flex justify-center items-center mt-1" href={playLink}>
+                      <Play className="mr-1 mb-1" size={20} />
+                      Play Now
                     </Link>
                   </div>
                 </div>
