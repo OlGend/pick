@@ -1,13 +1,50 @@
+"use client";
 import { Navigation } from "./Navigation";
-
+import {
+  Gift,
+  PokerChip,
+  Spiral,
+  Notepad,
+  UsersThree,
+  At,
+  HouseLine,
+} from "phosphor-react";
 const navItems = [
-  { icon: "", label: "Home", href: "/" },
-  { icon: "", label: "Bonuses", href: "/bonuses" },
-  { icon: "", label: "New Casinos", href: "/casinos" },
-  { icon: "", label: "Free Spins", href: "/free-spins" },
-  { icon: "", label: "Guides", href: "/guides" },
-  { icon: "", label: "About", href: "/about" },
-  { icon: "", label: "Contacts", href: "/contacts" },
+  {
+    icon: <HouseLine className="mr-1 mb-1" size={24} />,
+    label: "Home",
+    href: "/",
+  },
+  {
+    icon: <Gift className="mr-1 mb-1" size={24} />,
+    label: "Bonuses",
+    href: "/bonuses",
+  },
+  {
+    icon: <PokerChip className="mr-1 mb-1" size={24} />,
+    label: "New Casinos",
+    href: "/casinos",
+  },
+  {
+    icon: <Spiral className="mr-1 mb-1" size={24} />,
+    label: "Free Spins",
+    href: "/free-spins",
+  },
+  {
+    icon: <Notepad className="mr-1 mb-1" size={24} />,
+    label: "Guides",
+    href: "/guides",
+  },
+  {
+    icon: <UsersThree className="mr-1 mb-1" size={24} />,
+    label: "About",
+    href: "/about",
+  },
+  {
+    icon: <At className="mr-1 mb-1" size={24} />,
+    label: "Contacts",
+    href: "/contacts",
+  },
 ];
 
 const TheHeader = () => {

@@ -2,6 +2,9 @@ import { Metadata } from "next";
 
 import TopBrands from "@/components/TopBrands";
 import NewBrands from "@/components/NewBrands";
+import FilteredHome from "@/components/FilteredHome";
+import PreviewBonuses from "@/components/PreviewBonuses";
+import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 export const metadata: Metadata = {
   title: "Bonuses | New Brand",
@@ -10,12 +13,11 @@ export const metadata: Metadata = {
 
 export default async function Bonuses() {
   return (
-    <>
-      <div className="main__container">
-        <h1>Bonuses page</h1>
-        <TopBrands />
-         <NewBrands />
-      </div>
-    </>
+    <div className="page-bonuses">
+      <PreviewBonuses />
+      <TopBrands />
+      <FilteredHome />
+      <GuideSlotsPage />
+    </div>
   );
 }

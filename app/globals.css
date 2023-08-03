@@ -6264,6 +6264,7 @@ h1 {
   line-height: 39px;
 }
 .preview,
+.bonuses,
 .tabNavigation,
 .guides {
   /* background: transparent
@@ -6274,7 +6275,12 @@ h1 {
   background: #1d2730;
   position: relative;
 }
+.page-bonuses .main {
+  background: #1d2730;
+}
+.page-bonuses .main::after,
 .preview::after,
+.bonuses::after,
 .tabNavigation::after,
 .guides::after {
   content: "";
@@ -6292,7 +6298,9 @@ h1 {
     10px
   ); /* Размытие силой 10 пикселей (можно изменить значение) */
 }
+.page-bonuses .main::before,
 .preview::before,
+.bonuses::before,
 .tabNavigation::before,
 .guides::before {
   content: "";
@@ -6448,7 +6456,6 @@ h2 {
   text-align: center;
 }
 .btn-primary {
-
   background: #0967e3;
 }
 .btn-primary:hover {
@@ -6462,7 +6469,7 @@ h2 {
 }
 .btn-secondary:hover {
   border-color: #128722;
-color: #128722;
+  color: #128722;
 }
 .card-brand .buttons .btn-primary {
   margin-top: auto;
@@ -6739,9 +6746,21 @@ p {
   display: flex;
   justify-content: space-between;
 }
-
+.page-bonuses .main {
+  position: relative;
+}
+.page-bonuses .filter-brands h2, .page-bonuses .filter-brands p {
+  color: #fff;
+}
+.guides-white {
+  background: #fff;
+}
+.guides-white h2 {
+  color: #000;
+}
 .card-brand-filtered {
   border: 1px solid rgba(123, 140, 152, 0.2);
+  background: #fff;
 }
 .card-brand-filtered .review-bonus {
   min-height: auto;
@@ -6916,7 +6935,7 @@ p {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 98, 255, 0.106);
-border: 2px solid rgba(106, 209, 253, 0.15) !important;
+  border: 2px solid rgba(106, 209, 253, 0.15) !important;
 }
 .filter-brands .card-brand-banner .brandImage a img {
   max-height: 80px !important;
@@ -6928,10 +6947,10 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
   background: linear-gradient(to bottom, #906be8, #e278ed);
 }
 .filter-brands .card-brand-banner:nth-child(2) {
-  background: linear-gradient(to bottom, #496CF5, #8BCEF7);
+  background: linear-gradient(to bottom, #496cf5, #8bcef7);
 }
 .filter-brands .card-brand-banner:nth-child(3) {
-  background: linear-gradient(to bottom, #296AB1, #2A9BCA );
+  background: linear-gradient(to bottom, #296ab1, #2a9bca);
 }
 
 .card-brand-banner::after {
@@ -6945,9 +6964,7 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
   filter: drop-shadow(0px 0px 250px rgba(42, 239, 144));
   background: rgba(42, 239, 144, 0.525);
   z-index: 50;
-  backdrop-filter: blur(
-    10px
-  );
+  backdrop-filter: blur(10px);
 }
 .card-brand-banner::before {
   content: "";
@@ -6960,9 +6977,7 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
   filter: drop-shadow(0px 0px 250px rgba(42, 85, 239));
   background: rgba(42, 85, 239, 0.5);
   z-index: 50;
-  backdrop-filter: blur(
-    10px
-  ); 
+  backdrop-filter: blur(10px);
 }
 .card-brand-new .review-bonus {
   line-height: 19px;
@@ -6971,7 +6986,8 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
 .review-bonus br {
   display: none;
 }
-.card-brand-new .review-bonus br, .card-brand .review-bonus br {
+.card-brand-new .review-bonus br,
+.card-brand .review-bonus br {
   display: block !important;
 }
 .card-brand .review-bonus strong br {
@@ -6992,6 +7008,7 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
   font-weight: 700;
   color: #000;
 }
-.withdrawal-limits .list-circle-check, .withdrawal-limits ul {
+.withdrawal-limits .list-circle-check,
+.withdrawal-limits ul {
   margin-top: 0;
 }

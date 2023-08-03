@@ -24,8 +24,7 @@ export default function NewBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-          <CalendarCheck color="#0967e3" size={32} />
-          <h2 className="ml-2">{title}</h2>
+          <h2>{title}</h2>
         </div>
         <div className="flex flex-col px-0 py-6">
           {filteredBrands.map((brand) => {

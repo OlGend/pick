@@ -25,7 +25,7 @@ const Navigation = ({ navLinks }: Props) => {
             href={link.href}
             className={isActive ? "active" : ""}
           >
-            <div>
+            <div className="flex items-center justify-center">
               {link.icon}
               <span>{link.label}</span>
             </div>
