@@ -6980,3 +6980,18 @@ border: 2px solid rgba(106, 209, 253, 0.15) !important;
 .card-brand-new .review-pros-cons li {
   margin-bottom: 4px;
 }
+.withdrawal-limits li {
+  color: #1d2730;
+  width: initial;
+  height: initial;
+  margin-bottom: 0;
+  margin-right: 0;
+  border: none !important;
+}
+.withdrawal-limits .title {
+  font-weight: 700;
+  color: #000;
+}
+.withdrawal-limits .list-circle-check, .withdrawal-limits ul {
+  margin-top: 0;
+}

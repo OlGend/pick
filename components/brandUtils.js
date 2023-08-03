@@ -79,6 +79,17 @@ export function extractDeposits(content) {
   const extractDeposits = content.substring(reviewStart, reviewEnd + 6);
   return extractDeposits;
 }
+
+export function extractLimits(content) {
+  const reviewStart = content.indexOf('<h4 class="wp-block-heading" id="payment-methods">Withdrawal Limits');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("</div>", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractDeposits = content.substring(reviewStart, reviewEnd + 6);
+  return extractDeposits;
+}
+
 // brandUtils.js
 export function extractCountries(content) {
   const reviewStart = content.indexOf('Restricted Countries');

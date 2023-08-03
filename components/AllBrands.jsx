@@ -14,6 +14,8 @@ import {
   Eye,
   Prohibit,
   MinusCircle,
+  DotsThreeCircle,
+  Handshake
 } from "phosphor-react";
 
 import {
@@ -26,6 +28,7 @@ import {
   extractDeposits,
   extractCountries,
   extractFlag,
+  extractLimits
 } from "./brandUtils";
 
 export default function AllBrands({ choose }) {
@@ -116,12 +119,22 @@ export default function AllBrands({ choose }) {
                       }}
                     />
                   </div>
-                  <div className="flex mb-3">
+                  <div className="flex mb-1">
                     <Gift className="mr-1" size={24} />
                     <div
                       className=" flex items-center"
                       dangerouslySetInnerHTML={{
                         __html: extractReviewBonus(brand.content.rendered),
+                      }}
+                    />
+                  </div>
+                  <div className="mb-2 withdrawal withdrawal-limits flex items-center">
+                  <Handshake className="mr-1 mb-1" size={24} />
+                    <div className="title mr-2">Withdrawal Limits:</div>
+                    <div
+                      className="items-center"
+                      dangerouslySetInnerHTML={{
+                        __html: extractLimits(brand.content.rendered),
                       }}
                     />
                   </div>
@@ -207,6 +220,7 @@ export default function AllBrands({ choose }) {
                       </div>
                     )}
                   </div>
+                
                 </div>
                 <div className="basis-[36%]">
                   <div className="brandImage p-3">
@@ -249,10 +263,11 @@ export default function AllBrands({ choose }) {
 
           {hasMoreBrands && (
             <button
-              className="btn-primary btn-more text-lg max-w-sm p-3 ml-auto mr-auto mt-4 font-semibold text-white"
+              className="btn-primary btn-more text-lg max-w-sm p-3 ml-auto mr-auto mt-4 font-semibold text-white flex justify-center items-center"
               onClick={loadMoreBrands}
             >
-              Load More Brands (+7)
+              <DotsThreeCircle className="mb-1 mr-1" size={24} />
+              Load More Brands
             </button>
           )}
         </div>
@@ -263,7 +278,11 @@ export default function AllBrands({ choose }) {
             return (
               <div className="card-brand-banner mb-2" key={item.id}>
                 <div className="brandImage p-3">
-                  <Link className="flex justify-center flex-col items-center" key={item.id} href={playLink}>
+                  <Link
+                    className="flex justify-center flex-col items-center"
+                    key={item.id}
+                    href={playLink}
+                  >
                     <Image
                       src={reviewImgSrc}
                       alt={item.title.rendered}
@@ -271,7 +290,7 @@ export default function AllBrands({ choose }) {
                       height={80}
                       loading="lazy"
                     />
-                     <div
+                    <div
                       className="p-3 text-center flex items-center"
                       dangerouslySetInnerHTML={{
                         __html: extractReviewBonus(item.content.rendered),

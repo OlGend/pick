@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Diamond, DiceTwo, PokerChip } from "phosphor-react";
+import { Diamond, DiceTwo, PokerChip, PersonSimpleRun, AlignCenterHorizontalSimple, ThumbsUp, CaretDown } from "phosphor-react";
 import Link from "next/link";
 import Image from "next/image";
 import Img from "@/public/tablet_blue.png";
@@ -47,7 +47,7 @@ const ReviewBrands = () => {
             </p>
             <div className="">
               <MenuItem
-                icon={<Diamond color="#0967e3" size={24} />}
+                icon={<PersonSimpleRun color="#0967e3" size={24} />}
                 title="Currently in active pursuit of fresh casino websites"
                 excerpt={"Our team is constantly seeking recently "}
                 link={
@@ -58,15 +58,15 @@ const ReviewBrands = () => {
                 excerpt2={", aiming to provide utmost value to our visitors."}
               />
               <MenuItem
-                icon={<DiceTwo color="#0967e3" size={24} />}
+                icon={<AlignCenterHorizontalSimple color="#0967e3" size={24} />}
                 title="The most precise details regarding each casino"
                 excerpt={
                   "We meticulously assess each casino and gather extensive information to ensure our visitors are well-informed about what to anticipate before playing"
                 }
               />
               <MenuItem
-                icon={<PokerChip color="#0967e3" size={24} />}
-                title="Currently in active pursuit of fresh casino websites"
+                icon={<ThumbsUp color="#0967e3" size={24} />}
+                title="Promoting responsible approach to gambling"
                 excerpt={
                   "Every casino undergoes evaluation by an impartial team, adhering to a comprehensive, data-driven, "
                 }
