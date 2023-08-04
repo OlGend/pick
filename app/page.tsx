@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 
 
 export default async function Home() {
- 
-
   return (
     <>
       <PreviewHome />
-      <TopBrands />
-      <NewBrands />
+      <div className="background-block">
+        <TopBrands />
+        <NewBrands />
+      </div>
       <ReviewBrands />
       <FilteredHome />
       <GuideSlotsHome />

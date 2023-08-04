@@ -1,7 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState, useEffect } from "react";
-import { Play, Eye, Trophy } from "phosphor-react";
+import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
@@ -20,13 +20,16 @@ export default function TopBrands() {
   const year = currentDate.getFullYear();
   const title = `CasinoFrog Best Choices for ${month} ${year}`;
 
-   useEffect(() => {
-    setLoading(false);
+  useEffect(() => {
+    if (filteredBrands.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
   }, [filteredBrands]);
-
   return (
     <>
-      {loading ? ( // Перевіряємо значення loading і відображаємо лоадер або контент
+      {loading ? (
         <Loader />
       ) : (
         <div className="main__container pb-6">

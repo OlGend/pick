@@ -13,8 +13,7 @@ import Image from "next/image";
 import Img from "@/public/beep2.png";
 
 const FilteredHome = () => {
-  const [currentTab, setCurrentTab] = useState(1);
-
+  const [currentTab, setCurrentTab] = useState(2);
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
   };

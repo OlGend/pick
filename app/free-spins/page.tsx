@@ -2,7 +2,9 @@ import { Metadata } from "next";
 
 import TopBrands from "@/components/TopBrands";
 import NewBrands from "@/components/NewBrands";
-
+import FilteredHome from "@/components/FilteredHome";
+import PreviewBonuses from "@/components/PreviewBonuses";
+import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 export const metadata: Metadata = {
   title: "Free spins | New Brand",
@@ -12,10 +14,11 @@ export const metadata: Metadata = {
 export default async function FreeSpins() {
   return (
     <>
-      <div className="main__container">
-        <h1>FreeSpins page</h1>
+      <div className="page-bonuses">
+        <PreviewBonuses />
         <TopBrands />
-         <NewBrands />
+        <FilteredHome />
+        <GuideSlotsPage />
       </div>
     </>
   );

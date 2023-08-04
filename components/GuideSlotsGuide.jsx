@@ -1,18 +1,27 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import jsonContent from "./guidePosts.json";
 import Link from "next/link";
 import Image from "next/image";
-import { CaretDown, CaretUp } from "@phosphor-icons/react"
+import { CaretDown, CaretUp } from "@phosphor-icons/react";
+import Loader from "@/components/Loader";
+
 
 export default function GuideSlotsGuide() {
+  const [loading, setLoading] = useState(true);
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore((prevShowMore) => !prevShowMore);
   };
-
+  useEffect(() => {
+    if (jsonContent.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, [jsonContent]);
   return (
     <>
       {showMore ? (
@@ -44,6 +53,10 @@ export default function GuideSlotsGuide() {
       )}
 
       <div className="guide-cards flex-wrap flex justify-start pt-12 pb-12">
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
         {jsonContent.map((item) => (
           <div className="guide-card relative mb-6" key={item.id}>
             <div className="avatar absolute"></div>
@@ -52,7 +65,9 @@ export default function GuideSlotsGuide() {
            
             <Link href={`/guides/${item.id}`}> <h4>{item.title}</h4></Link>
           </div>
-        ))}
+        ))}   
+        </>
+        )}
       </div>
     </>
   );
