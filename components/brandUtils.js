@@ -107,6 +107,19 @@ export function extractCountries(content) {
 
   return countriesWithoutParentheses;
 }
+export function extractProviders(content) {
+  const regex = /Game Providers<\/h4>\s*<p.*?>(.*?)<\/p>/;
+  const match = content.match(regex);
+  if (!match || match.length < 2) return null;
+
+  const providersText = match[1];
+  const providersWithoutParentheses = providersText
+    .split(",")
+    .map((provider) => provider.trim());
+
+  return providersWithoutParentheses;
+}
+
 
 export function extractFlag(content) {
   const reviewStart = content.indexOf('<div class="pokageo-flag-circle">');
@@ -117,3 +130,32 @@ export function extractFlag(content) {
   const extractFlag = content.substring(reviewStart, reviewEnd + 6);
   return extractFlag;
 }
+
+
+export function extractSingle(content) {
+  const reviewStart = content.indexOf('<div class="wp-block-poka-affiliate-single">');
+  if (reviewStart === -1) return "";
+  const reviewEnd = content.indexOf("<!-- /.review-box -->", reviewStart);
+  if (reviewEnd === -1) return "";
+
+  const extractSingle = content.substring(reviewStart, reviewEnd + 6);
+  return extractSingle;
+}
+export function extractRating(content) {
+  const reviewStart = content.indexOf(
+    '\r\n\t\t\t\t\t<div class="review-rating"><span><strong>'
+  );
+  if (reviewStart === -1) return "";
+
+  const strongStart = content.indexOf("<strong>", reviewStart);
+  if (strongStart === -1) return "";
+
+  const strongEnd = content.indexOf("</strong>", strongStart);
+  if (strongEnd === -1) return "";
+
+  const ratingText = content.substring(strongStart + 8, strongEnd);
+  const numericRating = parseFloat(ratingText);
+
+  return numericRating;
+}
+

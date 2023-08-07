@@ -42,7 +42,6 @@ export default function AllBrands({ choose }) {
 
   const filteredBrands = useTopBrands(choose);
   const topBrands = useTopBrands(112);
-  console.log("real", topBrands);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);

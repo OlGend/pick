@@ -7020,14 +7020,116 @@ p {
 }
 
 
+.oneBrand .attachment-affiliate-thumb, .oneBrand .review-extra-links-item, .oneBrand .review-box-thumb {
+  display: none;
+}
+
+.oneBrand .review-badge {
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+.oneBrand .brandImage {
+  background: rgba(29, 39, 48, 0.79) !important;
+}
 
 
 
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.stars {
+  display: flex;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  /* Додайте тут ваші стилі для іконок рейтингу, які ви використовуєте */
+}
 
 
 
+/* styles.css (зовнішній CSS файл) */
+.rating-bar {
+  width: 100%;
+  max-width: 266px;
+  height: 8px;
+  background: linear-gradient(to right, rgba(205, 75, 201, 0.7) 0%, rgba(120, 104, 223, 0.7) 50%, rgba(39, 115, 230, 0.7) 100%);
+  position: relative;
+  border-radius: 5px;
+}
 
+.rating-circle {
+  position: absolute;
+  top: -10px;
 
+}
+
+.review-rating {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.raitText {
+  font-size: 22px;
+  font-weight: 700;
+  background: #0967e3;
+  color: #fff;
+}
+.block-rating {
+  border: 1px solid rgba(9, 103, 227, 0.619);
+}
+.safeIndex {
+  font-size: 14px;
+}
+.oneBrand .pokageo-flag-circle img {
+  width: 32px;
+  height: 32px;
+}
+.oneBrand .pokageo-status-icon {
+  width: 100%;
+  height: initial;
+}
+.geo-tag {
+  background: #f0f3f7;
+padding: 5px 5px;
+border: 1px solid rgba(123, 140, 152, 0.2);
+}
+.geo-tag div {
+  width: 100%;
+}
+.oneBrand .pokageo-flag-circle {
+  display: flex;
+  align-items: center;
+}
+.status-text {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.otherContent .title span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.restricted .countries-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.limits li {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #0967e3;
+}
 
 
 .loader {
