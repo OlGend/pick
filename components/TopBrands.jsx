@@ -27,6 +27,16 @@ export default function TopBrands() {
       setLoading(false);
     }
   }, [filteredBrands]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
   return (
     <>
       {loading ? (
@@ -55,9 +65,6 @@ export default function TopBrands() {
                     </Link>
                   </div>
                   <div className="brandContent p-3">
-                    {/* <Link key={brand.id} href={`/bonuses/${brand.id}`}>
-                    <h4>{brand.title.rendered}</h4>
-                  </Link> */}
                     <div
                       dangerouslySetInnerHTML={{
                         __html: extractReviewBonus(brand.content.rendered),
@@ -74,9 +81,14 @@ export default function TopBrands() {
                       <Link
                         className="btn btn-primary flex justify-center items-center mt-1"
                         href={playLink}
+                        onClick={handleLinkClick}
                       >
-                        <Play className="mr-1 mb-1" size={20} />
-                        Play Now
+                        {isLoading ? (
+                          <Loader />
+                        ) : (
+                          <Eye className="mr-2 mb-1" size={20} />
+                        )}
+                        Read review
                       </Link>
                     </div>
                   </div>

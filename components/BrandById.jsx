@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useBrandById } from "./useBrandById";
 import { SketchLogo, Star, MinusCircle, Play } from "phosphor-react";
 import {
-  extractReviewBonus,
+  extractProviders,
   extractReviewImage,
   extractLink,
   extractBadge,
@@ -15,9 +15,9 @@ import {
   extractCountries,
   extractFlag,
   extractLimits,
-  extractSingle,
   extractRating,
 } from "./brandUtils";
+import Loader from "@/components/Loader";
 
 export default function Brand({ brand }) {
   const oneBrand = useBrandById(brand);
@@ -31,9 +31,7 @@ export default function Brand({ brand }) {
   const reviewImgSrc = oneBrand
     ? extractReviewImage(oneBrand.content.rendered)
     : null;
-  const playLink = oneBrand
-  ? extractLink(oneBrand.content.rendered)
-  : null;
+  const playLink = oneBrand ? extractLink(oneBrand.content.rendered) : null;
 
   const ratingText = oneBrand ? extractRating(oneBrand.content.rendered) : "0";
   const numericRating = parseFloat(ratingText);
@@ -61,6 +59,14 @@ export default function Brand({ brand }) {
   }, [oneBrand]);
   useEffect(() => {
     const withdrawalItems = document.querySelectorAll(".withdrawal li");
+    withdrawalItems.forEach((item) => {
+      const content = item.textContent.trim();
+      const className = content.toLowerCase().replace(/\s+/g, "-");
+      item.classList.add(className);
+    });
+  }, [oneBrand]);
+  useEffect(() => {
+    const withdrawalItems = document.querySelectorAll(".providers-items div");
     withdrawalItems.forEach((item) => {
       const content = item.textContent.trim();
       const className = content.toLowerCase().replace(/\s+/g, "-");
@@ -140,14 +146,14 @@ export default function Brand({ brand }) {
                         __html: extractLimits(oneBrand.content.rendered),
                       }}
                     />
-                     <Link
+                    <Link
                       className="btn btn-primary mt-3 text-center flex justify-center items-center"
                       href={playLink}
                     >
                       <Play className="mr-2 mb-1" size={24} /> Play Now
                     </Link>
                   </div>
-                  <div className="otherContent ml-2 basis-[75%]">
+                  <div className="otherContent ml-6 basis-[75%]">
                     <div className="title">
                       <h1> {oneBrand.title.rendered}</h1>
                     </div>
@@ -158,26 +164,46 @@ export default function Brand({ brand }) {
                           __html: extractPros(oneBrand.content.rendered),
                         }}
                       />
-                      <div className="title pt-2 flex items-center ">
-                        <span className="mt-2 ">Deposit Methods:</span>
+                      <div className="one-brand-item mt-3">
+                        <div className="title flex items-center ">
+                          <span className="mt-2 ">Deposit Methods:</span>
+                        </div>
+                        <div
+                          className="withdrawal"
+                          dangerouslySetInnerHTML={{
+                            __html: extractDeposits(oneBrand.content.rendered),
+                          }}
+                        />
                       </div>
-                      <div
-                        className="withdrawal"
-                        dangerouslySetInnerHTML={{
-                          __html: extractDeposits(oneBrand.content.rendered),
-                        }}
-                      />
-                      <div className="title pt-2 flex items-center ">
-                        <span className="mt-2 ">Withdrawal Methods:</span>
+                      <div className="one-brand-item mt-3">
+                        <div className="title flex items-center ">
+                          <span className="mt-2 ">Withdrawal Methods:</span>
+                        </div>
+                        <div
+                          className="withdrawal"
+                          dangerouslySetInnerHTML={{
+                            __html: extractWithdrawal(
+                              oneBrand.content.rendered
+                            ),
+                          }}
+                        />
                       </div>
-                      <div
-                        className="withdrawal"
-                        dangerouslySetInnerHTML={{
-                          __html: extractWithdrawal(oneBrand.content.rendered),
-                        }}
-                      />
-                      <div className="restricted">
-                        <div className="title pt-2 flex items-center ">
+                      <div className="one-brand-item mt-3">
+                        <div className="title flex items-center ">
+                          <span className="mt-2 ">Game Providers:</span>
+                        </div>
+                        <div className="providers-items pt-2">
+                          {extractProviders(oneBrand.content.rendered).map(
+                            (country, index) => (
+                              <div className="pr-2 mb-2 flex" key={index}>
+                                <span className="pl-1">{country}</span>
+                              </div>
+                            )
+                          )}
+                        </div>
+                      </div>
+                      <div className="restricted mt-3">
+                        <div className="title flex items-center ">
                           <span className="mt-2 ">Restricted countries:</span>
                         </div>
                         <div className="countries-items pt-2">
@@ -195,7 +221,7 @@ export default function Brand({ brand }) {
                   </div>
                 </>
               ) : (
-                <p>Завантаження...</p>
+                <Loader />
               )}
             </div>
           </div>

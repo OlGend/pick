@@ -1,3 +1,4 @@
+
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+ 
         <TheHeader />
         <main>{children}</main>
         <TheFooter />

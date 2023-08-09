@@ -1,7 +1,8 @@
 "use client";
-
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Loader from "./Loader";
 
 type NavLink = {
   label: string;
@@ -14,6 +15,15 @@ type Props = {
 };
 
 const Navigation = ({ navLinks }: Props) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  };
   const pathname = usePathname();
   return (
     <>
@@ -24,10 +34,17 @@ const Navigation = ({ navLinks }: Props) => {
             key={link.label}
             href={link.href}
             className={isActive ? "active" : ""}
+            onClick={handleLinkClick}
           >
             <div className="flex items-center justify-center">
-              {link.icon}
-              <span>{link.label}</span>
+              {isLoading ? (
+                <Loader />
+              ) : (
+                <>
+                  {link.icon}
+                  <span>{link.label}</span>
+                </>
+              )}
             </div>
           </Link>
         );

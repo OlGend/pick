@@ -1,6 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import React from "react";
+import { useState } from "react";
+import Loader from "./Loader";
 import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,6 +20,17 @@ export default function NewBrands() {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   const title = `Latest Casino Additions ${year}`;
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
 
   return (
     <>
@@ -73,16 +85,24 @@ export default function NewBrands() {
                   }}
                 />
                 <div className="buttons basis-[17%] ml-auto p-3 flex items-center">
-                  <Link className="btn btn-primary mb-1 flex justify-center items-center w-full" href={playLink}>
+                  <Link
+                    className="btn btn-primary mb-1 flex justify-center items-center w-full"
+                    href={playLink}
+                  >
                     <Play className="mb-1 mr-1" size={24} />
                     Play Now
                   </Link>
                   <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
                     href={`/bonuses/${brand.id}`}
+                    onClick={handleLinkClick}
                   >
-                    <Eye className="mb-1 mr-1" size={24} />
-                    Read Review
+                    {isLoading ? (
+                      <Loader />
+                    ) : (
+                      <Eye className="mr-2 mb-1" size={20} />
+                    )}
+                    Read review
                   </Link>
                 </div>
               </div>

@@ -6401,6 +6401,7 @@ h2 {
   font-size: 24px;
   line-height: 28px;
 }
+.brand-slider .slick-slide:nth-child(5n + 1) .card-brand .brandImage,
 .card-brand-filtered:nth-child(5n + 1) .brandImage,
 .card-brand:nth-child(5n + 1) .brandImage,
 .card-brand-new:nth-child(5n + 1) .brandImage {
@@ -6408,7 +6409,7 @@ h2 {
     radial-gradient(closest-side at 65% 56%, #ff0080 0, #c70067 100%) 0 0
     no-repeat padding-box;
 }
-
+.brand-slider .slick-slide:nth-child(5n + 2) .card-brand .brandImage,
 .card-brand-filtered:nth-child(5n + 2) .brandImage,
 .card-brand:nth-child(5n + 2) .brandImage,
 .card-brand-new:nth-child(5n + 2) .brandImage {
@@ -6416,7 +6417,7 @@ h2 {
     radial-gradient(closest-side at 65% 56%, #a4ff00 0, #80c700 100%) 0 0
     no-repeat padding-box;
 }
-
+.brand-slider .slick-slide:nth-child(5n + 3) .card-brand .brandImage,
 .card-brand-filtered:nth-child(5n + 3) .brandImage,
 .card-brand:nth-child(5n + 3) .brandImage,
 .card-brand-new:nth-child(5n + 3) .brandImage {
@@ -6424,7 +6425,7 @@ h2 {
     radial-gradient(closest-side at 65% 56%, #00e6ff 0, #00b2c7 100%) 0 0
     no-repeat padding-box;
 }
-
+.brand-slider .slick-slide:nth-child(5n + 4) .card-brand .brandImage,
 .card-brand-filtered:nth-child(5n + 4) .brandImage,
 .card-brand:nth-child(5n + 4) .brandImage,
 .card-brand-new:nth-child(5n + 4) .brandImage {
@@ -6432,7 +6433,7 @@ h2 {
     radial-gradient(closest-side at 65% 56%, #ff6f61 0, #c73832 100%) 0 0
     no-repeat padding-box;
 }
-
+.brand-slider .slick-slide:nth-child(5n + 5) .card-brand .brandImage,
 .card-brand-filtered:nth-child(5n + 5) .brandImage,
 .card-brand:nth-child(5n + 5) .brandImage,
 .card-brand-new:nth-child(5n + 5) .brandImage {
@@ -6646,11 +6647,30 @@ body {
   color: #fff !important;
   background: #0967e3;
   transition: 0.3s;
-  box-shadow: 0 16px 64px #0967e3;
   max-width: 350px;
   width: 100%;
   padding: 18px 15px 13px;
   margin: 0 auto !important;
+}
+.providers-items {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+
+}
+.providers-items div:nth-child(1) {
+  display: none;
+}
+.providers-items div {
+  width: 100px;
+  height: 60px;
+  color: transparent;
+  margin-right: 3px;
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  margin-bottom: 3px;
 }
 .guides .btn:hover {
   background: #2173de;
@@ -6749,7 +6769,8 @@ p {
 .page-bonuses .main {
   position: relative;
 }
-.page-bonuses .filter-brands h2, .page-bonuses .filter-brands p {
+.page-bonuses .filter-brands h2,
+.page-bonuses .filter-brands p {
   color: #fff;
 }
 .guides-white {
@@ -6829,74 +6850,6 @@ p {
   color: #0967e3;
 }
 
-.ecopayz {
-  background: url(/ecopayz.png) no-repeat center;
-}
-.mastercard {
-  background: url(/master.png) no-repeat center;
-}
-.skrill {
-  background: url(/skrill.png) no-repeat center;
-}
-.neteller {
-  background: url(/neteller.png) no-repeat center;
-}
-.mifinity {
-  background: url(/mifinity.png) no-repeat center;
-}
-.visa {
-  background: url(/visa.png) no-repeat center;
-}
-.litecoin {
-  background: url(/litecoin.png) no-repeat center;
-}
-.bank-transfer,
-.bank-wire-transfer {
-  background: url(/bank.png) no-repeat center;
-}
-.ethereum {
-  background: url(/etherium.png) no-repeat center;
-}
-.trustly {
-  background: url(/trustly.png) no-repeat center;
-}
-.bitcoin {
-  background: url(/bitcoin.png) no-repeat center;
-}
-.boleto {
-  background: url(/boleto.png) no-repeat center;
-}
-.coinspaid {
-  background: url(/coinspaid.png) no-repeat center;
-}
-.discover {
-  background: url(/discover.png) no-repeat center;
-}
-.jeton-wallet {
-  background: url(/jeton.png) no-repeat center;
-}
-.muchbetter {
-  background: url(/muchbetter.png) no-repeat center;
-}
-.neosurf {
-  background: url(/neosurf.png) no-repeat center;
-}
-.paysafe-card,
-.paysafecard {
-  background: url(/paysafecard.png) no-repeat center;
-}
-.piastrix {
-  background: url(/piastrix.png) no-repeat center;
-}
-.qiwi {
-  background: url(/qiwi.png) no-repeat center;
-}
-.tether {
-  background: url(/tether.png) no-repeat center;
-}
-.yandex-money {
-  background: url(/youmoney.png) no-repeat center;
-}
 .withdrawal ul {
   padding-left: 0;
   display: flex;
@@ -7014,13 +6967,14 @@ p {
 }
 
 .background-block {
-  background-image: url('/bg2.png');
+  background-image: url("/bg2.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-
-.oneBrand .attachment-affiliate-thumb, .oneBrand .review-extra-links-item, .oneBrand .review-box-thumb {
+.oneBrand .attachment-affiliate-thumb,
+.oneBrand .review-extra-links-item,
+.oneBrand .review-box-thumb {
   display: none;
 }
 
@@ -7033,8 +6987,6 @@ p {
 .oneBrand .brandImage {
   background: rgba(29, 39, 48, 0.79) !important;
 }
-
-
 
 .rating {
   display: flex;
@@ -7054,14 +7006,16 @@ p {
   /* Додайте тут ваші стилі для іконок рейтингу, які ви використовуєте */
 }
 
-
-
 /* styles.css (зовнішній CSS файл) */
 .rating-bar {
   width: 100%;
-  max-width: 266px;
   height: 8px;
-  background: linear-gradient(to right, rgba(205, 75, 201, 0.7) 0%, rgba(120, 104, 223, 0.7) 50%, rgba(39, 115, 230, 0.7) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(205, 75, 201, 0.7) 0%,
+    rgba(120, 104, 223, 0.7) 50%,
+    rgba(39, 115, 230, 0.7) 100%
+  );
   position: relative;
   border-radius: 5px;
 }
@@ -7069,7 +7023,6 @@ p {
 .rating-circle {
   position: absolute;
   top: -10px;
-
 }
 
 .review-rating {
@@ -7099,8 +7052,8 @@ p {
 }
 .geo-tag {
   background: #f0f3f7;
-padding: 5px 5px;
-border: 1px solid rgba(123, 140, 152, 0.2);
+  padding: 5px 5px;
+  border: 1px solid rgba(123, 140, 152, 0.2);
 }
 .geo-tag div {
   width: 100%;
@@ -7114,7 +7067,9 @@ border: 1px solid rgba(123, 140, 152, 0.2);
   font-size: 16px;
   font-weight: 700;
 }
-
+.page-bonuses .filter-brands p.text-slate-500 {
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
 .otherContent .title span {
   font-size: 22px;
   font-weight: 700;
@@ -7130,11 +7085,73 @@ border: 1px solid rgba(123, 140, 152, 0.2);
   font-weight: 700;
   color: #0967e3;
 }
-
-
+.brand-slider {
+  padding: 16px;
+  border: 1px solid rgba(9, 103, 227, 0.1);
+  /* background: rgba(9, 103, 227, 0.2); */
+}
+.brand-slider .review-bonus {
+  max-height: 69px;
+  overflow: hidden;
+}
+.wrapper-container .guides {
+  background: transparent;
+  padding: 0;
+}
+.wrapper-container .guides .guide-cards {
+  padding-top: 0;
+}
+.wrapper-container .guides::after,
+.wrapper-container .guides::before {
+  display: none;
+}
+.one-brand-item,
+.restricted {
+  background: #f0f3f7;
+  padding: 5px 5px;
+  border: 1px solid rgba(123, 140, 152, 0.2);
+}
+.brandUtils h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.wrapper-container {
+  padding: 16px;
+  border: 1px solid rgba(9, 103, 227, 0.1);
+}
+.wrapper-container .main__container,
+.wrapper-container .py-6 {
+  padding: 0 !important;
+}
+.slick-slide {
+  padding: 0 5px;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: #1d2730 !important;
+  font-size: 30px !important;
+}
+.slick-prev,
+.slick-next {
+  top: -30px !important;
+  left: initial !important;
+}
+.slick-prev {
+  right: 50px !important;
+}
+.slick-next {
+  right: 10px !important;
+}
 .loader {
-  background-color: rgba(29, 39, 48, 0.95); /* semi-transparent background to create the blur effect */
-  backdrop-filter: blur(8px); 
+  background-color: rgba(
+    29,
+    39,
+    48,
+    0.95
+  ); /* semi-transparent background to create the blur effect */
+  backdrop-filter: blur(8px);
   bottom: 0;
   left: 0;
   overflow: hidden;
@@ -7156,9 +7173,7 @@ border: 1px solid rgba(123, 140, 152, 0.2);
 }
 
 .loader-line-wrap {
-  animation: 
-  spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
-;
+  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
   box-sizing: border-box;
   height: 50px;
   left: 0;
@@ -7180,11 +7195,21 @@ border: 1px solid rgba(123, 140, 152, 0.2);
   top: 0;
   width: 100px;
 }
-.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
-.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
-.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
-.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
-.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+.loader-line-wrap:nth-child(1) {
+  animation-delay: -50ms;
+}
+.loader-line-wrap:nth-child(2) {
+  animation-delay: -100ms;
+}
+.loader-line-wrap:nth-child(3) {
+  animation-delay: -150ms;
+}
+.loader-line-wrap:nth-child(4) {
+  animation-delay: -200ms;
+}
+.loader-line-wrap:nth-child(5) {
+  animation-delay: -250ms;
+}
 
 .loader-line-wrap:nth-child(1) .loader-line {
   border-color: hsl(0, 80%, 60%);
@@ -7218,10 +7243,94 @@ border: 1px solid rgba(123, 140, 152, 0.2);
 }
 
 @keyframes spin {
-  0%, 15% {
-  transform: rotate(0);
+  0%,
+  15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-100% {
-  transform: rotate(360deg);
+
+
+.booongo-gaming {
+  background: url(/booongo-gaming.png) no-repeat center;
 }
+.amusnet-interactive {
+  background: url(/amusnet-interactive.png) no-repeat center;
+}
+.netent {
+  background: url(/NeTent.png) no-repeat center;
+
+}
+
+
+
+.ecopayz {
+  background: url(/ecopayz.png) no-repeat center;
+}
+.mastercard {
+  background: url(/master.png) no-repeat center;
+}
+.skrill {
+  background: url(/skrill.png) no-repeat center;
+}
+.neteller {
+  background: url(/neteller.png) no-repeat center;
+}
+.mifinity {
+  background: url(/mifinity.png) no-repeat center;
+}
+.visa {
+  background: url(/visa.png) no-repeat center;
+}
+.litecoin {
+  background: url(/litecoin.png) no-repeat center;
+}
+.bank-transfer,
+.bank-wire-transfer {
+  background: url(/bank.png) no-repeat center;
+}
+.ethereum {
+  background: url(/etherium.png) no-repeat center;
+}
+.trustly {
+  background: url(/trustly.png) no-repeat center;
+}
+.bitcoin {
+  background: url(/bitcoin.png) no-repeat center;
+}
+.boleto {
+  background: url(/boleto.png) no-repeat center;
+}
+.coinspaid {
+  background: url(/coinspaid.png) no-repeat center;
+}
+.discover {
+  background: url(/discover.png) no-repeat center;
+}
+.jeton-wallet {
+  background: url(/jeton.png) no-repeat center;
+}
+.muchbetter {
+  background: url(/muchbetter.png) no-repeat center;
+}
+.neosurf {
+  background: url(/neosurf.png) no-repeat center;
+}
+.paysafe-card,
+.paysafecard {
+  background: url(/paysafecard.png) no-repeat center;
+}
+.piastrix {
+  background: url(/piastrix.png) no-repeat center;
+}
+.qiwi {
+  background: url(/qiwi.png) no-repeat center;
+}
+.tether {
+  background: url(/tether.png) no-repeat center;
+}
+.yandex-money {
+  background: url(/youmoney.png) no-repeat center;
 }

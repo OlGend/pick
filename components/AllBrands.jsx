@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
+import Loader from "./Loader";
 import {
   Gift,
   ShieldPlus,
@@ -15,7 +16,7 @@ import {
   Prohibit,
   MinusCircle,
   DotsThreeCircle,
-  Handshake
+  Handshake,
 } from "phosphor-react";
 
 import {
@@ -28,7 +29,7 @@ import {
   extractDeposits,
   extractCountries,
   extractFlag,
-  extractLimits
+  extractLimits,
 } from "./brandUtils";
 
 export default function AllBrands({ choose }) {
@@ -86,6 +87,17 @@ export default function AllBrands({ choose }) {
     });
   }, [filteredBrands]);
 
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
+
   return (
     <>
       <div className="flex flex-wrap justify-between">
@@ -128,7 +140,7 @@ export default function AllBrands({ choose }) {
                     />
                   </div>
                   <div className="mb-2 withdrawal withdrawal-limits flex items-center">
-                  <Handshake className="mr-1 mb-1" size={24} />
+                    <Handshake className="mr-1 mb-1" size={24} />
                     <div className="title mr-2">Withdrawal Limits:</div>
                     <div
                       className="items-center"
@@ -219,7 +231,6 @@ export default function AllBrands({ choose }) {
                       </div>
                     )}
                   </div>
-                
                 </div>
                 <div className="basis-[36%]">
                   <div className="brandImage p-3">
@@ -238,13 +249,18 @@ export default function AllBrands({ choose }) {
                     <Link
                       className="btn btn-secondary text-center flex justify-center items-center"
                       href={`/bonuses/${brand.id}`}
+                      onClick={handleLinkClick}
                     >
-                      <Eye className="mr-2 mb-1" size={20} />
+                      {isLoading ? (
+                        <Loader />
+                      ) : (
+                        <Eye className="mr-2 mb-1" size={20} />
+                      )}
                       Read review
                     </Link>
                     <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
                       <span className="text-center">How to get bonus?</span>
-                      <p className="text-center m-0">
+                      <p className="text-center m-0 text-slate-500">
                         Activate bonus in your casino account
                       </p>
                     </div>

@@ -108,17 +108,33 @@ export function extractCountries(content) {
   return countriesWithoutParentheses;
 }
 export function extractProviders(content) {
-  const regex = /Game Providers<\/h4>\s*<p.*?>(.*?)<\/p>/;
-  const match = content.match(regex);
-  if (!match || match.length < 2) return null;
+  const reviewStart = content.indexOf('\n\n\n\n<p class="has-poka-boxes-background-color-alt-background-color has-background">');
+  if (reviewStart === -1) return null;
+  const reviewEnd = content.indexOf("</p>", reviewStart);
+  if (reviewEnd === -1) return null;
 
-  const providersText = match[1];
-  const providersWithoutParentheses = providersText
+  const countriesText = content.substring(reviewStart, reviewEnd);
+  const countriesWithoutParentheses = countriesText
+ 
+    .trim()
+    .replace(/\([^)]*\)/g, "") // Видаляємо текст у дужках
     .split(",")
-    .map((provider) => provider.trim());
+    .map((country) => country.trim());
 
-  return providersWithoutParentheses;
+  return countriesWithoutParentheses;
 }
+// export function extractProviders(content) {
+//   const regex = /Game Providers<\/h4>\s*<p.*?>(.*?)<\/p>/;
+//   const match = content.match(regex);
+//   if (!match || match.length < 2) return null;
+
+//   const providersText = match[1];
+//   const providersWithoutParentheses = providersText
+//     .split(",")
+//     .map((provider) => provider.trim());
+
+//   return providersWithoutParentheses;
+// }
 
 
 export function extractFlag(content) {

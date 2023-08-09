@@ -1,6 +1,6 @@
 "use client";
+import React from "react";
 import { Navigation } from "./Navigation";
-import LanguageSwitcher from "./LanguageSwitcher";
 import {
   Gift,
   PokerChip,
@@ -49,6 +49,7 @@ const navItems = [
 ];
 
 const TheHeader = () => {
+  
   return (
     <header className="header">
       {/* <div className="change-lng"> <LanguageSwitcher /> </div> */}
