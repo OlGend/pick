@@ -10,6 +10,13 @@ import {
   At,
   HouseLine,
 } from "phosphor-react";
+import Image from "next/image";
+import Img from "@/public/logo2.png";
+// import LanguageSwitcher from "@/components/LanguageSwitcher";
+import SearchBrands from "@/components/SearchBrands";
+// import SearchResult from "@/components/SearchResult";
+
+
 const navItems = [
   {
     icon: <HouseLine className="mr-1 mb-1" size={24} />,
@@ -49,10 +56,20 @@ const navItems = [
 ];
 
 const TheHeader = () => {
-  
   return (
     <header className="header">
       {/* <div className="change-lng"> <LanguageSwitcher /> </div> */}
+      <div className="header__bg">
+        <div className="header__container">
+          <div className="logo">
+            <Image src={Img} alt="logo" width={150} loading="lazy" />
+          </div>
+          <div className="search-container flex items-center justify-center">
+            <SearchBrands />
+            {/* <SearchResult /> */}
+          </div>
+        </div>
+      </div>
       <div className="header__container">
         <Navigation navLinks={navItems} />
       </div>

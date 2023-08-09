@@ -6658,8 +6658,6 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 0;
-
-
 }
 .providers-items div:nth-child(1) {
   display: none;
@@ -7074,7 +7072,9 @@ p {
   font-size: 22px;
   font-weight: 700;
 }
-
+.header__bg {
+  background: #1d273047;
+}
 .restricted .countries-items {
   display: flex;
   flex-wrap: wrap;
@@ -7252,6 +7252,25 @@ p {
   }
 }
 
+.header__container {
+  position: relative;
+}
+.search-header-results {
+  width: calc(100% - 1.875rem);
+  top: 55px;
+  z-index: 2;
+  position: absolute;
+  right: 0.9375rem;
+  background: #1d2730;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+.search-container input {
+
+border-bottom: none !important;
+padding: 7px 15px;
+border-radius: 4px !important;
+outline: none;
+}
 
 .booongo-gaming {
   background: url(/booongo-gaming.png) no-repeat center;
@@ -7261,10 +7280,7 @@ p {
 }
 .netent {
   background: url(/NeTent.png) no-repeat center;
-
 }
-
-
 
 .ecopayz {
   background: url(/ecopayz.png) no-repeat center;
