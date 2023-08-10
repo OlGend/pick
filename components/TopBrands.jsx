@@ -86,9 +86,9 @@ export default function TopBrands() {
                         {isLoading ? (
                           <Loader />
                         ) : (
-                          <Eye className="mr-2 mb-1" size={20} />
+                          <Play className="mr-2 mb-1" size={20} />
                         )}
-                        Read review
+                        Play Now
                       </Link>
                     </div>
                   </div>

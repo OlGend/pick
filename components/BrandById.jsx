@@ -24,7 +24,7 @@ export default function Brand({ brand }) {
 
   useEffect(() => {
     if (oneBrand) {
-      console.log(oneBrand);
+      // console.log(oneBrand);
     }
   }, [oneBrand]);
 

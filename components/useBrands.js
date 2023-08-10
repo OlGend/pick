@@ -26,7 +26,7 @@ export function useTopBrands(filterValue) {
     return false;
   });
 
-  console.log("filter", filteredBrands)
+
   return filteredBrands || [];
 }
 

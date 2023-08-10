@@ -17,7 +17,7 @@ export function extractReviewImage(content) {
   let reviewImg = content.substring(reviewStart + 5, reviewEnd + 4);
   reviewImg = reviewImg.replace(/-\d+x\d+/, "");
 
-  console.log(reviewImg);
+ 
   return reviewImg;
 }
 export function extractLink(content) {
@@ -28,7 +28,6 @@ export function extractLink(content) {
   if (linkEnd === -1) return "";
 
   const linkPlay = content.substring(linkStart, linkEnd);
-  console.log(linkPlay);
 
   return linkPlay;
 }
@@ -123,18 +122,7 @@ export function extractProviders(content) {
 
   return countriesWithoutParentheses;
 }
-// export function extractProviders(content) {
-//   const regex = /Game Providers<\/h4>\s*<p.*?>(.*?)<\/p>/;
-//   const match = content.match(regex);
-//   if (!match || match.length < 2) return null;
 
-//   const providersText = match[1];
-//   const providersWithoutParentheses = providersText
-//     .split(",")
-//     .map((provider) => provider.trim());
-
-//   return providersWithoutParentheses;
-// }
 
 
 export function extractFlag(content) {
