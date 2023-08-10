@@ -23,7 +23,7 @@ export default function BrandSearchPage({ showBrands }) {
               key={brand.id}
             >
               <Image
-                className="ml-auto mr-auto mb-2"
+                className="ml-auto mr-auto mb-2 w-auto"
                 src={extractReviewImage(brand.content.rendered)}
                 alt={brand.title.rendered}
                 width={150}
