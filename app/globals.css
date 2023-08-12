@@ -6968,12 +6968,12 @@ p {
 .withdrawal-limits ul {
   margin-top: 0;
 }
-
+/* 
 .background-block {
   background-image: url("/bg2.png");
   background-repeat: no-repeat;
   background-position: top center;
-}
+} */
 
 .oneBrand .attachment-affiliate-thumb,
 .oneBrand .review-extra-links-item,
