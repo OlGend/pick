@@ -1,31 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { useTopBrands } from "./useBrands";
-import BrandSearchPage from "./BrandSearchPage";
-import { Play, Eye, MagnifyingGlass } from "phosphor-react";
-import Image from "next/image";
+import BrandSearchContainer from "./BrandSearchContainer";
+import { MagnifyingGlass } from "phosphor-react";
 import Link from "next/link";
-import {
-  extractReviewBonus,
-  extractReviewImage,
-  extractLink,
-} from "./brandUtils";
-
+import { extractReviewBonus } from "./brandUtils";
+import { useDispatch } from "react-redux";
+import Loader from "./Loader";
+import { setShowBrandsAsync, clearShowBrands } from "./brandsActions";
 
 const SearchBrands = () => {
+  const dispatch = useDispatch();
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
   const [showBrands, setShowBrands] = useState([]);
   const [overlayActive, setOverlayActive] = useState(false);
   const allBrands = useTopBrands(33);
-
-
-
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleOverlayClick = () => {
-    setSearchQuery("");
-    setSearchResults([]);
+    // dispatch(clearShowBrands());
+    // setSearchQuery("");
     setShowBrands([]);
     setOverlayActive(false);
+  };
+
+  const handleEnterClick = () => {
+    setShowBrands([]);
+    // setSearchQuery("");
+    setOverlayActive(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
   };
 
   const handleSearch = () => {
@@ -35,22 +39,18 @@ const SearchBrands = () => {
         .includes(searchQuery.toLowerCase())
     );
 
-    setSearchResults(filteredBrands);
     setShowBrands(filteredBrands);
+    dispatch(setShowBrandsAsync(filteredBrands));
   };
 
   useEffect(() => {
     handleSearch();
-  }, [searchQuery]);
-
-  useEffect(() => {
     if (searchQuery === "") {
-      setSearchResults([]);
       setShowBrands([]);
+      dispatch(clearShowBrands());
     }
   }, [searchQuery]);
-
-
+  
 
   return (
     <div className="search">
@@ -63,21 +63,26 @@ const SearchBrands = () => {
           onClick={() => setOverlayActive(true)}
           style={{ zIndex: overlayActive ? 1000 : "auto" }}
         />
+         {isLoading ? (
+                <Loader />
+              ) : (
+                <>
         <Link
+          onClick={handleEnterClick}
           className="absolute right-2 top-2 button-search"
-          href={`/bonuses`}
+          href={`/search`}
         >
-          <MagnifyingGlass />
+          <MagnifyingGlass color="#fff" />
         </Link>
+        </>
+              )}
       </div>
       {overlayActive && (
         <div className="overlay" onClick={handleOverlayClick}></div>
       )}
       <div className="search-header-results ">
-        <BrandSearchPage showBrands={showBrands} />
-        {searchQuery.length > 0 && showBrands.length === 0 && (
-          <div className="size-lg text-slate-200 p-4">No results found.</div>
-        )}
+        <BrandSearchContainer  showBrands={showBrands} />
+     
       </div>
     </div>
   );

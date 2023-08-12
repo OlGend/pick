@@ -12,7 +12,6 @@ import {
 } from "phosphor-react";
 import Image from "next/image";
 import Img from "@/public/logo2.png";
-import SearchComponent from "@/components/SearchComponent";
 
 const navItems = [
   {
@@ -52,7 +51,7 @@ const navItems = [
   },
 ];
 
-const TheHeader = () => {
+const HeaderForSearch = () => {
   return (
     <header className="header">
       {/* <div className="change-lng"> <LanguageSwitcher /> </div> */}
@@ -61,9 +60,7 @@ const TheHeader = () => {
           <div className="logo">
             <Image src={Img} alt="logo" width={150} loading="lazy" />
           </div>
-          <div className="search-container flex items-center justify-center">
-            <SearchComponent />
-          </div>
+       
         </div>
       </div>
       <div className="header__container">
@@ -73,4 +70,4 @@ const TheHeader = () => {
   );
 };
 
-export { TheHeader };
+export { HeaderForSearch };

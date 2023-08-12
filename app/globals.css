@@ -6726,10 +6726,12 @@ p {
 .header {
   background: #fff;
   box-shadow: 0px 4px 24px 0px rgba(175, 27, 79, 0.04);
+  background: #1d2730;
+  background: linear-gradient(to bottom, #0967e3, #78aeed);
 }
 .header a {
   font-size: 18px;
-  color: #818590;
+  color: #fff;
   transition: 0.3s;
   padding: 20px 15px;
   font-weight: 600;
@@ -6740,8 +6742,11 @@ p {
 }
 .header a.active,
 .header a:hover {
-  background-color: rgba(130, 178, 242, 0.1);
-  color: #0967e3;
+  background-color: rgba(0, 53, 122, 0.711);
+  color: #fff;
+}
+.header a.button-search:hover {
+  background: transparent;
 }
 
 .header a.active::after {
@@ -7272,10 +7277,17 @@ p {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
 }
 .search-container input {
-  border-bottom: none !important;
   padding: 7px 15px;
   border-radius: 4px !important;
   outline: none;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  background: #051bad;
+  color: #fff;
+}
+.search-container input::placeholder {
+  color: rgba(255, 255, 255, 0.825);
+  font-size: 14px;
 }
 .button-search {
   max-width: 24px;
@@ -7291,7 +7303,6 @@ p {
   mask-image: linear-gradient(rgb(0, 0, 0) 70%, transparent);
 }
 .search-header-results {
-
   z-index: 1000;
 }
 .search input {
@@ -7300,7 +7311,7 @@ p {
 .search-result {
   margin-right: 10px;
 }
-.search-result:nth-child(4n+4) {
+.search-result:nth-child(4n + 4) {
   margin-right: 0;
 }
 .search .overlay {
@@ -7310,7 +7321,7 @@ p {
   width: 100%;
   height: 100%;
   background: rgba(29, 39, 48, 0.5);
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
   z-index: 999;
 }
 .header .search-header-results .buttons a {
@@ -7325,6 +7336,20 @@ p {
   /* min-height: initial;
   max-height: initial; */
   max-height: 75px;
+}
+.search-page .search-card:nth-child(5n + 1) {
+  margin-left: 0;
+}
+.search-page .review-bonus {
+  max-height: 69px;
+  overflow: hidden;
+}
+.search-page .brandImage img {
+  max-height: 93px;
+  height: 100%;
+}
+.search-page .card-brand h4 {
+  font-size: 19px;
 }
 
 .booongo-gaming {
