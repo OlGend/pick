@@ -64,7 +64,7 @@ export default function NewBrands() {
                   key={brand.id}
                   href={`/bonuses/${brand.id}`}
                 >
-                  <h4>{brand.title.rendered}</h4>
+                  <span>{brand.title.rendered}</span>
                 </Link>
                 <div
                   className="basis-[15%] flex items-center"
