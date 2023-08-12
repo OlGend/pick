@@ -32,6 +32,7 @@ const PreviewHome = () => {
           src={Img}
           alt="Beep"
           width={550}
+          loading="lazy" 
         />
       </div>
     </div>
