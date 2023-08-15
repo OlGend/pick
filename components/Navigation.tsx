@@ -70,7 +70,7 @@ const Navigation = ({ navLinks }: Props) => {
                   ))}
                 </div>
                 <div className="sub-menu-image">
-                  <Image src={Img} alt="logo" width={280} loading="lazy" />
+                  <Image src={Img} alt="bonuses" width={280} loading="lazy" />
                 </div>
               </div>
             )}
