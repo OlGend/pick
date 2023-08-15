@@ -19,7 +19,7 @@ const PreviewHome = () => {
   return (
     <I18nextProvider i18n={i18n}> {/* Додали обгортку I18nextProvider */}
     <div className="preview">
-      <div className="main__container flex items-end">
+      <div className="main__container flex items-end first-block">
         <div className="flex flex-col basis-[50%]">
         <h1>{t('home.title')}</h1>
           <p>{t('home.description')}</p>

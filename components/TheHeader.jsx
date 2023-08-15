@@ -57,16 +57,16 @@ const TheHeader = () => {
     <header className="header">
       {/* <div className="change-lng"> <LanguageSwitcher /> </div> */}
       <div className="header__bg">
-        <div className="header__container">
+        <div className="header__container ">
           <div className="logo">
             <Image src={Img} alt="logo" width={150} loading="lazy" />
           </div>
-          <div className="search-container flex items-center justify-center">
+          <div className="search-container flex items-center justify-center ">
             <SearchComponent />
           </div>
         </div>
       </div>
-      <div className="header__container">
+      <div className="header__container menu-desctop">
         <Navigation navLinks={navItems} />
       </div>
     </header>
