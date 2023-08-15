@@ -1,14 +1,14 @@
 "use client"
 import React from "react";
 import { useTranslation } from 'react-i18next';
-import { Navigation } from "./Navigation";
+import { NavigationHome } from "./NavigationHome";
 import Image from "next/image";
 import { Club, PokerChip, DiceSix, BookBookmark } from "phosphor-react";
 import Img from "@/public/laptop_blue2.png";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/components/i18n"; // Шлях до вашого файлу i18n.js
 const navItems = [
-  { label: "No Deposit Bonuses", href: "/bonuses", icon: <PokerChip color="#0967e3" size={32} /> },
+  { label: "Bonuses", href: "/bonuses", icon: <PokerChip color="#0967e3" size={32} /> },
   { label: "New Casinos", href: "/casinos", icon: <Club color="#0967e3" size={32} /> },
   { label: "Free Spins", href: "/free-spins", icon: <DiceSix color="#0967e3" size={32} /> },
   { label: "Gambling Guides", href: "/guides", icon: <BookBookmark color="#0967e3" size={32} /> },
@@ -24,7 +24,7 @@ const PreviewHome = () => {
         <h1>{t('home.title')}</h1>
           <p>{t('home.description')}</p>
           <div className="flex flex-wrap justify-start preview-navigate mt-3">
-            <Navigation navLinks={navItems} />
+            <NavigationHome navLinks={navItems} />
           </div>
         
         </div>
