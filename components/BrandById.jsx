@@ -67,12 +67,23 @@ export default function Brand({ brand }) {
   }, [oneBrand]);
   useEffect(() => {
     const withdrawalItems = document.querySelectorAll(".providers-items div");
+    
     withdrawalItems.forEach((item) => {
       const content = item.textContent.trim();
-      const className = content.toLowerCase().replace(/\s+/g, "-");
+  
+      // Удаляем недопустимые символы для CSS-классов и HTML-сущности
+      const cleanedContent = content.replace(/[^\w\s-]/g, "");
+  
+      // Проверяем, начинается ли текст с цифры, и добавляем "a" при необходимости
+      const adjustedContent = /^[0-9]/.test(cleanedContent) ? "a" + cleanedContent : cleanedContent;
+  
+      // Заменяем пробелы на дефисы и приводим к нижнему регистру
+      const className = adjustedContent.toLowerCase().replace(/\s+/g, "-");
       item.classList.add(className);
     });
   }, [oneBrand]);
+  
+  
 
   return (
     <>
