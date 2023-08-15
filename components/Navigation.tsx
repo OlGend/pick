@@ -3,11 +3,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
+import Image from "next/image";
+import Img from "@/public/menuBonuses2.png";
 
 type NavLink = {
   label: string;
   href: string;
   icon: React.ReactNode;
+  subMenu?: NavLink[];
 };
 
 type Props = {
@@ -29,24 +32,49 @@ const Navigation = ({ navLinks }: Props) => {
     <>
       {navLinks.map((link) => {
         const isActive = pathname === link.href;
+        const hasSubMenu = link.subMenu && link.subMenu.length > 0;
         return (
-          <Link
-            key={link.label}
-            href={link.href}
-            className={isActive ? "active" : ""}
-            onClick={handleLinkClick}
-          >
-            <div className="flex items-center justify-center">
-              {isLoading ? (
-                <Loader />
-              ) : (
-                <>
-                  {link.icon}
-                  <span>{link.label}</span>
-                </>
-              )}
-            </div>
-          </Link>
+          <div key={link.label} className="navigation-item">
+            <Link
+              href={link.href}
+              className={isActive ? "active" : ""}
+              onClick={handleLinkClick}
+            >
+              <div className="flex items-center justify-center">
+                {isLoading ? (
+                  <Loader />
+                ) : (
+                  <>
+                    {link.icon}
+                    <span>{link.label}</span>
+                  </>
+                )}
+              </div>
+            </Link>
+
+            {hasSubMenu && (
+              <div className="sub-menu flex justify-between">
+                <div className="sub-menu-items">
+                  {link.subMenu!.map((subLink) => (
+                    <Link key={subLink.label} href={subLink.href}>
+                      <div className="sub-menu-item" onClick={handleLinkClick}>
+                        <div className="">
+                          {isLoading ? (
+                            <Loader />
+                          ) : (
+                            <span>{subLink.label}</span>
+                          )}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <div className="sub-menu-image">
+                  <Image src={Img} alt="logo" width={280} loading="lazy" />
+                </div>
+              </div>
+            )}
+          </div>
         );
       })}
     </>

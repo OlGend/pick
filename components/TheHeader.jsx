@@ -22,8 +22,16 @@ const navItems = [
   },
   {
     icon: <Gift className="mr-1 mb-1" size={24} />,
-    label: "Bonuses",
+    label: "Bonuses ▼",
     href: "/bonuses",
+    subMenu: [
+      { label: "No Deposit Bonuses", href: "/no-deposit-bonuses" },
+      { label: "Exclusive Bonuses", href: "/exclusive-bonuses" },
+      { label: "Deposit Bonuses", href: "/deposit-bonuses" },
+      { label: "Welcome Bonuses", href: "/welcome-bonuses" },
+      { label: "No Wagering Bonuses", href: "/no-wagering-bonuses" },
+
+    ],
   },
   {
     icon: <PokerChip className="mr-1 mb-1" size={24} />,
