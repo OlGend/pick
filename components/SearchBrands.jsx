@@ -29,7 +29,7 @@ const SearchBrands = () => {
     setOverlayActive(false);
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
   };
 
   const handleSearch = () => {

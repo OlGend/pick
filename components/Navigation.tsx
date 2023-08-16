@@ -26,7 +26,7 @@ const Navigation = ({ navLinks }: Props) => {
     // Simulate some delay to show the loader (remove this in actual usage)
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
   };
   const pathname = usePathname();
   return (
