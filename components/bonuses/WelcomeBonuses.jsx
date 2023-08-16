@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Img from "@/public/bonuses.png";
+import Img from "@/public/welcomebonus.png";
 
 const WelcomeBonuses = () => {
   return (
@@ -15,8 +15,8 @@ const WelcomeBonuses = () => {
           If you&#39;re in search of a quality casino experience coupled with enticing bonuses, we have the perfect solution tailored for you! The welcoming bonus stands as a gesture from casinos to their fresh players, usually presented as free spins or cashback rewards. Explore our compilation of introductory bonuses from renowned online casinos, ensuring an ideal match for your preferences.
           </p>
         </div>
-        <div className="basis-[40%] flex justify-end">
-          <Image src={Img} alt="Beep" width={300} height={300} loading="lazy" />
+        <div className="basis-[40%] flex justify-center">
+          <Image src={Img} alt="Beep" width={242} loading="lazy" />
         </div>
       </div>
     </div>

@@ -19,8 +19,8 @@ const CryptoCasinos = () => {
             tailored to your preferences.
           </p>
         </div>
-        <div className="basis-[40%] flex justify-end">
-          <Image src={Img} alt="Beep" width={300} height={300} loading="lazy" />
+        <div className="basis-[40%] flex justify-center">
+          <Image src={Img} alt="Beep" width={242} loading="lazy" />
         </div>
       </div>
     </div>

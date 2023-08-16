@@ -15,8 +15,8 @@ const TopCertifiedCasinos = () => {
           Gaming constitutes a substantial sector, and with the assistance of authorized internet-based casinos, you can relish your preferred pastime with serenity, assured of its oversight by official governmental bodies. Cutting-edge security protocols ensure the confidentiality of all personal data!
           </p>
         </div>
-        <div className="basis-[40%] flex justify-end">
-          <Image src={Img} alt="Beep" width={300} height={300} loading="lazy" />
+        <div className="basis-[40%] flex justify-center">
+          <Image src={Img} alt="Beep" width={242} loading="lazy" />
         </div>
       </div>
     </div>

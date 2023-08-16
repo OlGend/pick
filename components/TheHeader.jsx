@@ -22,6 +22,7 @@ const navItems = [
   },
   {
     icon: <Gift className="mr-1 mb-1" size={24} />,
+    class: "sub-bonuses",
     label: "Bonuses ▼",
     href: "/bonuses",
     subMenu: [
@@ -35,6 +36,7 @@ const navItems = [
   },
   {
     icon: <PokerChip className="mr-1 mb-1" size={24} />,
+    class: "sub-casinos",
     label: "Casinos ▼",
     href: "/casinos",
     subMenu: [

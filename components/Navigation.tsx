@@ -7,6 +7,7 @@ import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
 
 type NavLink = {
+  class: string;
   label: string;
   href: string;
   icon: React.ReactNode;
@@ -53,7 +54,7 @@ const Navigation = ({ navLinks }: Props) => {
             </Link>
 
             {hasSubMenu && (
-              <div className="sub-menu flex justify-between">
+              <div className={`sub-menu flex justify-between ${link.class}`}>
                 <div className="sub-menu-items">
                   {link.subMenu!.map((subLink) => (
                     <Link key={subLink.label} href={subLink.href}>

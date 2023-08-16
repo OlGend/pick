@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Img from "@/public/bonuses.png";
+import Img from "@/public/exclusive.png";
 
 const NoDepositBonuses = () => {
   return (
@@ -15,8 +15,8 @@ const NoDepositBonuses = () => {
           Searching for casino bonuses and promos on the web? Explore our current, well-maintained repository featuring a plethora of casino bonus propositions for your consideration.
           </p>
         </div>
-        <div className="basis-[40%] flex justify-end">
-          <Image src={Img} alt="Beep" width={300} height={300} loading="lazy" />
+        <div className="basis-[40%] flex justify-center">
+          <Image src={Img} alt="Beep" width={242} loading="lazy" />
         </div>
       </div>
     </div>

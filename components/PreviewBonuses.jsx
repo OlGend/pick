@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Img from "@/public/bonuses.png";
+import Img from "@/public/bonuses2.png";
 
 const PreviewBonuses = () => {
   return (
@@ -15,8 +15,8 @@ const PreviewBonuses = () => {
             Looking for exciting online casino bonuses and promotions? Look no further! Our extensive and regularly updated database offers a vast selection of enticing casino bonus offers that cater to all players&#39; preferences. Whether you&#39;re into free spins, deposit bonuses, or cashback rewards, we&#39;ve got you covered with the best deals available in the gambling world. Don&#39;t miss out on these exclusive offers – start exploring now and boost your gaming experience with lucrative bonuses!
           </p>
         </div>
-        <div className="basis-[40%] flex justify-end">
-          <Image src={Img} alt="Beep" width={300} height={300} loading="lazy" />
+        <div className="basis-[40%] flex justify-center">
+          <Image src={Img} alt="Beep" width={242} loading="lazy" />
         </div>
       </div>
     </div>

@@ -6791,10 +6791,18 @@ p {
 .filter-brands .card-brand-filtered .brandImage a img {
   max-height: 85px !important;
 }
+.bonuses {
+  background-image: url(/bgsingle.png);
+  background-repeat: no-repeat !important;
+  background-position: top -100px right !important;
+}
 .custom-bonuses {
    background-image: url(/bgfilter.png) !important;
    background-position: top center !important;
-   background-repeat: no-repeat !important;
+}
+.other-custom-bonuses {
+  background-image: url(/bgfilter.png) !important;
+  background-position: top center !important;
 }
 .filter-brands .card-brand-filtered .buttons {
   flex-direction: column;
@@ -7409,6 +7417,12 @@ p {
   left: 13px;
   padding: 25px 15px 15px;
   box-shadow: 0 16px 64px rgba(9, 103, 227, 0.1);
+}
+.sub-bonuses {
+  left: 182px;
+}
+.sub-casinos {
+  left: 349px;
 }
 .navigation-item {
   /* position: relative; */

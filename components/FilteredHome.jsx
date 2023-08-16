@@ -52,7 +52,7 @@ const FilteredHome = () => {
   ];
 
   return (
-    <div className="main pt-10 pb-10">
+    <div className="main pt-10 pb-10 other-custom-bonuses">
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
@@ -65,15 +65,7 @@ const FilteredHome = () => {
               selection.
             </p>
           </div>
-          <div className="right ml-auto">
-            <Image
-              src={Img}
-              alt={"Beep"}
-              width={318}
-              height={237}
-              loading="lazy"
-            />
-          </div>
+   
         </div>
         <div className="flex">
           {navigateBrands.map((item) => (

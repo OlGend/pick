@@ -81,15 +81,7 @@ const FilteredBonuses = () => {
               selection.
             </p>
           </div>
-          <div className="right ml-auto">
-            <Image
-              src={Img}
-              alt={"Beep"}
-              width={318}
-              height={237}
-              loading="lazy"
-            />
-          </div>
+     
         </div>
         <div className="flex">
           {navigateBrands.map((item) => (

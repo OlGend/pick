@@ -20,43 +20,42 @@ const FilteredCasinos = () => {
       currentCategories: 19,
       currentText: "Crypto Casino",
       icon: <CurrencyBtc className="mr-2 pb-1" size={32} />,
-      slug: "crypto-casinos"
+      slug: "crypto-casinos",
     },
     {
       currentTab: 2,
       currentCategories: 20,
       currentText: "Fast Withdrawal Casinos",
       icon: <Cardholder className="mr-2 pb-1" size={32} />,
-      slug: "fast-withdrawal-casinos"
+      slug: "fast-withdrawal-casinos",
     },
     {
       currentTab: 3,
       currentCategories: 22,
       currentText: "Live Casinos",
       icon: <UsersThree className="mr-2 pb-1" size={32} />,
-      slug: "live-casinos"
+      slug: "live-casinos",
     },
     {
       currentTab: 4,
       currentCategories: 24,
       currentText: "Newest Casinos",
       icon: <CalendarCheck className="mr-2 pb-1" size={32} />,
-      slug: "newest-casinos"
+      slug: "newest-casinos",
     },
     {
       currentTab: 5,
       currentCategories: 26,
       currentText: "Top Certified Casinos",
       icon: <Scroll className="mr-2 pb-1" size={32} />,
-      slug: "top-certified-casinos"
+      slug: "top-certified-casinos",
     },
   ];
-
 
   useEffect(() => {
     const pathSegments = window.location.pathname.split("/");
     const slugFromUrl = pathSegments[1]; // Используйте [1] для первого сегмента после "/"
-    const foundTab = navigateBrands.find(item => item.slug === slugFromUrl);
+    const foundTab = navigateBrands.find((item) => item.slug === slugFromUrl);
     if (foundTab) {
       setCurrentTab(foundTab.currentTab);
     }
@@ -66,22 +65,20 @@ const FilteredCasinos = () => {
     setCurrentTab(tabNumber);
   };
 
-
   return (
     <div className="main pt-10 pb-10 custom-bonuses">
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
             <h2 className="">
-              Catalog of all 2023 Online Casino Bonuses Offered
+              Comprehensive Compilation of 2023 Online Casino Selection
             </h2>
             <p className="mt-3 pb-4">
-              Seeking online casino bonuses and promotions? Explore our current
-              database featuring numerous casino bonus offers for your
-              selection.
+              In Search of an Online Casino? Navigate through our up-to-date
+              repository housing a myriad of casinos awaiting your
+              consideration.
             </p>
           </div>
-        
         </div>
         <div className="flex">
           {navigateBrands.map((item) => (
