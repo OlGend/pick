@@ -6789,9 +6789,13 @@ p {
 }
 
 .filter-brands .card-brand-filtered .brandImage a img {
-  max-height: 125px !important;
+  max-height: 85px !important;
 }
-
+.custom-bonuses {
+   background-image: url(/bgfilter.png) !important;
+   background-position: top center !important;
+   background-repeat: no-repeat !important;
+}
 .filter-brands .card-brand-filtered .buttons {
   flex-direction: column;
 }

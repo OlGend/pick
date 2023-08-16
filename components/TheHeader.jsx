@@ -35,8 +35,16 @@ const navItems = [
   },
   {
     icon: <PokerChip className="mr-1 mb-1" size={24} />,
-    label: "New Casinos",
+    label: "Casinos ▼",
     href: "/casinos",
+    subMenu: [
+      { label: "Crypto Casinos", href: "/crypto-casinos" },
+      { label: "Fast Withdrawal Casinos", href: "/fast-withdrawal-casinos" },
+      { label: "Live Casinos", href: "/live-casinos" },
+      { label: "Newest Casinos", href: "/newest-casinos" },
+      { label: "Top Certified Casinos", href: "/top-certified-casinos" },
+
+    ],
   },
   {
     icon: <Spiral className="mr-1 mb-1" size={24} />,
