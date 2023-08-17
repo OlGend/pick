@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
@@ -18,6 +19,7 @@ const LanguageSwitcher = () => {
   ];
 
   return (
+    
     <div className={`language-switcher ml-3`}>
       <select
         className={`${selectedLanguage}`}

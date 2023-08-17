@@ -1,11 +1,10 @@
 
-"use client";
+
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
-import { I18nextProvider } from "react-i18next";
-import i18n from "@/components/i18n";
+
 
 export const metadata: Metadata = {
   title: "This is a new brand",
@@ -22,9 +21,7 @@ export default function RootLayout({
       <body>
  
         <TheHeader />
-        <I18nextProvider i18n={i18n}> 
         <main>{children}</main>
-        </I18nextProvider>
         <TheFooter />
       </body>
     </html>

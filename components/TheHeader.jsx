@@ -1,6 +1,8 @@
 //TheHeader.jsx
 "use client";
 import React from "react";
+import { I18nextProvider } from "react-i18next";
+import i18n from "@/components/i18n";
 import { Navigation } from "./Navigation";
 import {
   Gift,
@@ -43,7 +45,10 @@ const navItems = [
     href: "/casinos",
     subMenu: [
       { label: "header.cryptocasinos", href: "/crypto-casinos" },
-      { label: "header.fastwithdrawalcasinos", href: "/fast-withdrawal-casinos" },
+      {
+        label: "header.fastwithdrawalcasinos",
+        href: "/fast-withdrawal-casinos",
+      },
       { label: "header.livecasinos", href: "/live-casinos" },
       { label: "header.newestcasinos", href: "/newest-casinos" },
       { label: "header.certifiedcasinos", href: "/top-certified-casinos" },
@@ -83,7 +88,9 @@ const TheHeader = () => {
           <div className="search-container flex items-center justify-center ml-auto">
             <SearchComponent />
           </div>
-          <LanguageSwitcher />{" "}
+          <I18nextProvider i18n={i18n}>
+            <LanguageSwitcher />{" "}
+          </I18nextProvider>
         </div>
       </div>
       <div className="header__container menu-desctop">
