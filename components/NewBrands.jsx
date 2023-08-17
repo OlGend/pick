@@ -1,6 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import Loader from "./Loader";
 import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -15,11 +16,9 @@ import {
 } from "./brandUtils";
 
 export default function NewBrands() {
+  const { t } = useTranslation();
   const filteredBrands = useTopBrands(183);
 
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  const title = `Latest Casino Additions ${year}`;
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -36,7 +35,7 @@ export default function NewBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-          <h2>{title}</h2>
+        <h2>{t('topBrands.title')}</h2>
         </div>
         <div className="flex flex-col px-0 py-6">
           {filteredBrands.map((brand) => {
@@ -90,7 +89,7 @@ export default function NewBrands() {
                     href={playLink}
                   >
                     <Play className="mb-1 mr-1" size={24} />
-                    Play Now
+                    {t('button.play')}
                   </Link>
                   <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
@@ -102,7 +101,7 @@ export default function NewBrands() {
                     ) : (
                       <Eye className="mr-2 mb-1" size={20} />
                     )}
-                    Read review
+                     {t('button.review')}
                   </Link>
                 </div>
               </div>

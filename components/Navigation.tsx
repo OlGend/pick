@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Loader from "./Loader";
 import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
+import { useTranslation } from 'react-i18next';
 
 type NavLink = {
   class: string;
@@ -19,6 +20,8 @@ type Props = {
 };
 
 const Navigation = ({ navLinks }: Props) => {
+  // Получите функцию перевода
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
   const handleLinkClick = () => {
     setIsLoading(true);
@@ -47,7 +50,7 @@ const Navigation = ({ navLinks }: Props) => {
                 ) : (
                   <>
                     {link.icon}
-                    <span>{link.label}</span>
+                    <span>{t(link.label)}</span>
                   </>
                 )}
               </div>
@@ -63,7 +66,7 @@ const Navigation = ({ navLinks }: Props) => {
                           {isLoading ? (
                             <Loader />
                           ) : (
-                            <span>{subLink.label}</span>
+                            <span>{t(subLink.label)}</span>
                           )}
                         </div>
                       </div>

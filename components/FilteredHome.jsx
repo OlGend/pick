@@ -1,6 +1,7 @@
 // TopBrands.jsx (Клієнтський компонент)
 "use client";
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import AllBrands from "./AllBrands";
 import {
   Medal,
@@ -9,10 +10,9 @@ import {
   CurrencyBtc,
   SquareLogo,
 } from "phosphor-react";
-import Image from "next/image";
-import Img from "@/public/beep2.png";
 
 const FilteredHome = () => {
+  const { t } = useTranslation();
   const [currentTab, setCurrentTab] = useState(2);
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
@@ -22,31 +22,31 @@ const FilteredHome = () => {
     {
       currentTab: 1,
       currentCategories: 25,
-      currentText: "All Brands",
+      currentText: "navigateBrands.all",
       icon: <SquareLogo className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 2,
       currentCategories: 26,
-      currentText: "Recommended Brands",
+      currentText: "navigateBrands.recommend",
       icon: <Medal className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 3,
       currentCategories: 24,
-      currentText: "Newly Brands",
+      currentText: "navigateBrands.newly",
       icon: <Crown className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 4,
       currentCategories: 19,
-      currentText: "Crypto Brands",
+      currentText: "navigateBrands.crypto",
       icon: <CurrencyBtc className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 5,
       currentCategories: 187,
-      currentText: "Top Sports Brands",
+      currentText: "navigateBrands.sports",
       icon: <DribbbleLogo className="mr-2 pb-1" size={32} />,
     },
   ];
@@ -57,12 +57,10 @@ const FilteredHome = () => {
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
             <h2 className="">
-              Catalog of all 2023 Online Casino Bonuses Offered
+            {t('filteredHome.title')}
             </h2>
             <p className="mt-3 pb-4">
-              Seeking online casino bonuses and promotions? Explore our current
-              database featuring numerous casino bonus offers for your
-              selection.
+            {t('filteredHome.description')}
             </p>
           </div>
    
@@ -77,7 +75,7 @@ const FilteredHome = () => {
               onClick={() => handleTabChange(item.currentTab)}
             >
               {item.icon}
-              {item.currentText}
+              {t(item.currentText)}
             </button>
           ))}
         </div>

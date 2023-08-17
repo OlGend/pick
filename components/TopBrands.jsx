@@ -1,6 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,12 +14,10 @@ import {
 import Loader from "@/components/Loader";
 
 export default function TopBrands() {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
   const filteredBrands = useTopBrands(112);
-  const currentDate = new Date();
-  const month = currentDate.toLocaleString("en-US", { month: "long" });
-  const year = currentDate.getFullYear();
-  const title = `CasinoFrog Best Choices for ${month} ${year}`;
+
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -44,7 +43,7 @@ export default function TopBrands() {
       ) : (
         <div className="main__container pb-6">
           <div className="heading flex items-center pt-12">
-            <h2>{title}</h2>
+            <h2>{t('topBrands.title')}</h2>
           </div>
           <div className="flex flex-wrap px-0 py-6">
             {filteredBrands.map((brand) => {
@@ -75,8 +74,8 @@ export default function TopBrands() {
                         className="btn btn-secondary flex justify-center items-center mb-1"
                         href={`/bonuses/${brand.id}`}
                       >
-                        <Eye className="mr-1 mb-1" size={20} />
-                        Read Review
+                        <Eye className="mr-1" size={20} />
+                        {t('button.review')}
                       </Link>
                       <Link
                         className="btn btn-primary flex justify-center items-center mt-1"
@@ -86,9 +85,9 @@ export default function TopBrands() {
                         {isLoading ? (
                           <Loader />
                         ) : (
-                          <Play className="mr-2 mb-1" size={20} />
+                          <Play className="mr-2" size={20} />
                         )}
-                        Play Now
+                       {t('button.play')}
                       </Link>
                     </div>
                   </div>

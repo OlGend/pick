@@ -1,11 +1,11 @@
 
+"use client";
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import { TheFooter } from "@/components/TheFooter";
-
-// const inter = Inter({ subsets: ["latin"] });
+import { I18nextProvider } from "react-i18next";
+import i18n from "@/components/i18n"; // Шлях до вашого файлу i18n.js
 
 export const metadata: Metadata = {
   title: "This is a new brand",
@@ -22,7 +22,9 @@ export default function RootLayout({
       <body>
  
         <TheHeader />
+        <I18nextProvider i18n={i18n}> {/* Додали обгортку I18nextProvider */}
         <main>{children}</main>
+        </I18nextProvider>
         <TheFooter />
       </body>
     </html>

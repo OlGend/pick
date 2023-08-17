@@ -7,8 +7,10 @@ import { extractReviewBonus } from "./brandUtils";
 import { useDispatch } from "react-redux";
 import Loader from "./Loader";
 import { setShowBrandsAsync, clearShowBrands } from "./brandsActions";
+import { useTranslation } from 'react-i18next';
 
 const SearchBrands = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const [searchQuery, setSearchQuery] = useState("");
   const [showBrands, setShowBrands] = useState([]);
@@ -59,7 +61,7 @@ const SearchBrands = () => {
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search brands..."
+          placeholder={t('searchBrands.placeholder')}
           onClick={() => setOverlayActive(true)}
           style={{ zIndex: overlayActive ? 1000 : "auto" }}
         />

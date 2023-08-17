@@ -1,6 +1,6 @@
-// TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
@@ -33,6 +33,7 @@ import {
 } from "./brandUtils";
 
 export default function AllBrands({ choose }) {
+  const { t } = useTranslation();
   const itemsPerPage = 7;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
   const [hasMoreBrands, setHasMoreBrands] = useState(false);
@@ -141,7 +142,7 @@ export default function AllBrands({ choose }) {
                   </div>
                   <div className="mb-2 withdrawal withdrawal-limits flex items-center">
                     <Handshake className="mr-1 mb-1" size={24} />
-                    <div className="title mr-2">Withdrawal Limits:</div>
+                    <div className="title mr-2">{t("allBrands.withLimits")}</div>
                     <div
                       className="items-center"
                       dangerouslySetInnerHTML={{
@@ -155,7 +156,7 @@ export default function AllBrands({ choose }) {
                   >
                     <div className="title flex items-center">
                       <ShieldPlus size={24} />
-                      <span className="mt-1 ml-2">Advantages</span>
+                      <span className="mt-1 ml-2">{t("allBrands.advantages")}</span>
                       <CaretDown className="ml-auto" size={20} />
                     </div>
                     {isPlusesOpen && (
@@ -173,7 +174,7 @@ export default function AllBrands({ choose }) {
                   >
                     <div className="title flex items-center">
                       <CurrencyCircleDollar size={24} />
-                      <span className="mt-1 ml-2">Deposit Methods</span>
+                      <span className="mt-1 ml-2">{t("allBrands.depMethods")}</span>
                       <CaretDown className="ml-auto" size={20} />
                     </div>
                     {isDepositsOpen && (
@@ -191,7 +192,7 @@ export default function AllBrands({ choose }) {
                   >
                     <div className="title flex items-center">
                       <Bank size={24} />
-                      <span className="mt-1 ml-2">Withdrawal Methods</span>
+                      <span className="mt-1 ml-2">{t("allBrands.withMethods")}</span>
                       <CaretDown className="ml-auto" size={20} />
                     </div>
                     {isWithdrawalOpen && (
@@ -209,7 +210,7 @@ export default function AllBrands({ choose }) {
                   >
                     <div className="title flex items-center">
                       <Prohibit size={24} />
-                      <span className="mt-1 ml-2">Restricted Countries</span>
+                      <span className="mt-1 ml-2">{t("allBrands.restricted")}</span>
                       <CaretDown className="ml-auto" size={20} />
                     </div>
                     {isCountriesOpen && (
@@ -254,21 +255,22 @@ export default function AllBrands({ choose }) {
                       {isLoading ? (
                         <Loader />
                       ) : (
-                        <Eye className="mr-2 mb-1" size={20} />
+                        <Eye className="mr-2" size={20} />
                       )}
-                      Read review
+                      {t("button.review")}
                     </Link>
                     <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
-                      <span className="text-center">How to get bonus?</span>
+                      <span className="text-center">{t("allBrands.howGet")}</span>
                       <p className="text-center m-0 text-slate-500">
-                        Activate bonus in your casino account
+                      {t("allBrands.activate")}
                       </p>
                     </div>
                     <Link
                       className="btn btn-primary mt-0 text-center flex justify-center items-center"
                       href={playLink}
                     >
-                      <Play className="mr-2 mb-1" size={24} /> Play Now
+                      <Play className="mr-2" size={24} />{" "}
+                      {t("button.play")}
                     </Link>
                   </div>
                 </div>
@@ -281,8 +283,8 @@ export default function AllBrands({ choose }) {
               className="btn-primary btn-more text-lg max-w-sm p-3 ml-auto mr-auto mt-4 font-semibold text-white flex justify-center items-center"
               onClick={loadMoreBrands}
             >
-              <DotsThreeCircle className="mb-1 mr-1" size={24} />
-              Load More Brands
+              <DotsThreeCircle className="mr-1" size={24} />
+              {t("button.load")}
             </button>
           )}
         </div>

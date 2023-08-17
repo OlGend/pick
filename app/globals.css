@@ -136,6 +136,14 @@ h6 {
   display: none;
 }
 
+.carretDown svg {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.menuItem {
+  padding-right: 34px;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -4500,7 +4508,6 @@ img {
   grid-area: email;
 }
 
-
 *,
 :after,
 :before {
@@ -4649,8 +4656,6 @@ body::-webkit-scrollbar {
 .hero-slide-image-wrap img {
   max-width: 80%;
 }
-
-
 
 .team-white-bg {
   background-color: #dddddd !important;
@@ -6297,7 +6302,8 @@ h1 {
   max-width: 550px;
   color: #bec2cb;
 }
-.page-bonuses .custom-bonuses .filter-brands p, .page-bonuses .custom-bonuses .filter-brands h2 {
+.page-bonuses .custom-bonuses .filter-brands p,
+.page-bonuses .custom-bonuses .filter-brands h2 {
   color: #000;
 }
 .preview-navigate a {
@@ -6698,10 +6704,10 @@ p {
   background: linear-gradient(to bottom, #0967e3, #78aeed);
 }
 .header a {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   transition: 0.3s;
-  padding: 20px 15px;
+  padding: 10px 15px;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -6735,7 +6741,7 @@ p {
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .page-bonuses .main {
   position: relative;
@@ -6797,8 +6803,8 @@ p {
   background-position: top -100px right !important;
 }
 .custom-bonuses {
-   background-image: url(/bgfilter.png) !important;
-   background-position: top center !important;
+  background-image: url(/bgfilter.png) !important;
+  background-position: top center !important;
 }
 .other-custom-bonuses {
   background-image: url(/bgfilter.png) !important;
@@ -6981,12 +6987,6 @@ p {
 
 .stars {
   display: flex;
-}
-
-.icon {
-  width: 16px;
-  height: 16px;
-  /* Додайте тут ваші стилі для іконок рейтингу, які ви використовуєте */
 }
 
 /* styles.css (зовнішній CSS файл) */
@@ -7332,8 +7332,6 @@ p {
   font-size: 19px;
 }
 
-
-
 .ecopayz {
   background: url(/ecopayz.png) no-repeat center;
 }
@@ -7404,7 +7402,6 @@ p {
 }
 .giropay {
   background: url(/GiroPay.png) no-repeat center;
-
 }
 
 .sub-menu {
@@ -7426,8 +7423,11 @@ p {
 }
 .navigation-item {
   /* position: relative; */
-  
+
   width: 100%;
+}
+.header__container .navigation-item {
+  max-height: 68px;
 }
 .sub-menu-items {
   display: flex;
@@ -7445,7 +7445,7 @@ p {
   z-index: 1;
 }
 
-@media(min-width:320px) and (max-width:767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .menu-desctop {
     display: none;
   }
@@ -7468,450 +7468,506 @@ p {
 }
 
 .providers-items div {
-  border: 1px solid rgba(123, 140, 152, 0.2)
+  border: 1px solid rgba(123, 140, 152, 0.2);
 }
 .yggdrasil-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -60px;
+  background-position: left -200px top -60px;
 }
 .booongo-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -540px;
+  background-position: left -200px top -540px;
 }
 .amusnet-interactive {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -540px;
+  background-position: left -300px top -540px;
 }
 .netent {
   background-image: url(/providers2.png);
-  background-position:  left 0px top 0px;
+  background-position: left 0px top 0px;
 }
 .big-time-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -120px;
+  background-position: left -200px top -120px;
 }
 .merkur-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -120px;
+  background-position: left -600px top -120px;
 }
 .n-go {
   background-image: url(/providers2.png);
-  background-position:  left -7px top -120px;
+  background-position: left -7px top -120px;
 }
 .thunderkick {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -840px;
+  background-position: left -100px top -840px;
 }
 .netgame {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -722px;
+  background-position: left -700px top -722px;
 }
 .push-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -300px;
+  background-position: left -500px top -300px;
 }
 .evolution-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -120px;
+  background-position: left -300px top -120px;
 }
 .amatic-industries {
   background-image: url(/providers2.png);
-  background-position:  left 0 top -360px;
+  background-position: left 0 top -360px;
 }
 .quickspin {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -480px;
+  background-position: left -100px top -480px;
 }
 .endorphina {
   background-image: url(/providers2.png);
-  background-position:  left 0 top -420px;
+  background-position: left 0 top -420px;
 }
 .elk-studios {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -840px;
+  background-position: left -200px top -840px;
 }
 .betsoft {
   background-image: url(/providers2.png);
-  background-position:  left 0 top -60px;
+  background-position: left 0 top -60px;
 }
 .tom-horn-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -300px;
+  background-position: left -600px top -300px;
 }
 .pariplay {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -720px;
+  background-position: left 0px top -720px;
 }
 .isoftbet {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -180px;
+  background-position: left 0px top -180px;
 }
 .booming-games {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -300px;
+  background-position: left -100px top -300px;
 }
 .pragmatic-play {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -420px;
+  background-position: left -100px top -420px;
 }
 .spinomenal {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -120px;
+  background-position: left -500px top -120px;
 }
 .gameart {
   background-image: url(/providers2.png);
-  background-position:  left -100px top 0;
+  background-position: left -100px top 0;
 }
 .wazdan {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -180px;
+  background-position: left -400px top -180px;
 }
 .lightning-box {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -600px;
+  background-position: left 0px top -600px;
 }
-.by-2-gaming{
+.by-2-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -240px;
+  background-position: left -200px top -240px;
   /* //////////////////////////////////// */
 }
 .gamevy {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -240px;
+  background-position: left -300px top -240px;
 }
 .nextgen-gaming {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -660px;
+  background-position: left 0px top -660px;
 }
 .red-tiger-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -720px;
+  background-position: left -300px top -720px;
 }
 .games-global {
   background-image: url(/providers2.png);
-  background-position:  left -400px top 0;
+  background-position: left -400px top 0;
 }
 .nolimit-city {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -780px;
+  background-position: left -200px top -780px;
 }
 .playson {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -780px;
+  background-position: left 0px top -780px;
 }
 .gamomat {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -480px;
+  background-position: left -300px top -480px;
 }
 .bf-games {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -900px;
+  background-position: left -300px top -900px;
 }
 .red-rake-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -720px;
+  background-position: left -100px top -720px;
 }
 .iron-dog-studios {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -360px;
+  background-position: left -300px top -360px;
 }
 .onetouch-games {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -360px;
+  background-position: left -500px top -360px;
 }
 .just-for-the-win {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -480px;
+  background-position: left 0px top -480px;
 }
 .bgaming {
   background-image: url(/providers2.png);
-  background-position:  left 0px top -240px;
+  background-position: left 0px top -240px;
 }
 .swintt {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -540px;
+  background-position: left -500px top -540px;
 }
 .ct-interactive {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -600px;
+  background-position: left -500px top -600px;
 }
 .platipus-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -180px;
+  background-position: left -100px top -180px;
 }
 .felix-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -480px;
+  background-position: left -400px top -480px;
 }
 .hacksaw-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -540px;
+  background-position: left -600px top -540px;
 }
 .smartsoft-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -660px;
+  background-position: left -400px top -660px;
 }
 .foxium {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -180px;
+  background-position: left -300px top -180px;
 }
 .mascot-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -720px;
+  background-position: left -500px top -720px;
 }
 .playpearls {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -840px;
+  background-position: left -700px top -840px;
 }
 .caleta-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -500px top 0;
+  background-position: left -500px top 0;
 }
 .oryx-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -180px;
+  background-position: left -600px top -180px;
 }
 .rabcat {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -600px;
+  background-position: left -100px top -600px;
 }
 .ortiz-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -240px;
+  background-position: left -600px top -240px;
 }
 .kiron-interactive {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -300px;
+  background-position: left -400px top -300px;
 }
 .felt-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -60px;
+  background-position: left -600px top -60px;
 }
 .ezugi {
   background-image: url(/providers2.png);
-  background-position:  left -1px top -301px;
+  background-position: left -1px top -301px;
 }
 .betgamestv {
   background-image: url(/providers2.png);
-  background-position:  left -200px top -360px;
+  background-position: left -200px top -360px;
 }
 .golden-rock-studios {
   background-image: url(/providers2.png);
-  background-position:  left -301px top -661px;
+  background-position: left -301px top -661px;
 }
-.givme-games{
+.givme-games {
   background-image: url(/providers2.png);
-  background-position:  left -601px top -1px;
+  background-position: left -601px top -1px;
 }
 .spribe {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -420px;
+  background-position: left -500px top -420px;
 }
 .golden-hero-games {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -660px;
+  background-position: left -500px top -660px;
 }
 .zitro-games {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -720px;
+  background-position: left -600px top -720px;
 }
 .fantasma-games {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -120px;
+  background-position: left -400px top -120px;
 }
 .pocket-games-soft {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -840px;
+  background-position: left -600px top -840px;
 }
 .belatra {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -240px;
+  background-position: left -100px top -240px;
 }
 .mr-slotty {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -120px;
+  background-position: left -100px top -120px;
 }
-.high5games{
+.high5games {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -360px;
+  background-position: left -700px top -360px;
 }
-.apollo-games{
+.apollo-games {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -60px;
+  background-position: left -700px top -60px;
 }
 .luckystreak {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -420px;
+  background-position: left -600px top -420px;
 }
 .stakelogic {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -240px;
+  background-position: left -700px top -240px;
 }
 .kalamba-games {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -600px;
+  background-position: left -300px top -600px;
 }
-.gaming-corps{
+.gaming-corps {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -480px;
+  background-position: left -600px top -480px;
 }
 .fazi-interactive {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -180px;
+  background-position: left -500px top -180px;
 }
 .evoplay {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -900px;
+  background-position: left -100px top -900px;
 }
 .bally-wulff {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -600px;
-} 
+  background-position: left -400px top -600px;
+}
 .netgaming {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -780px;
-} 
+  background-position: left -700px top -780px;
+}
 .synot-games {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -60px;
-} 
+  background-position: left -400px top -60px;
+}
 .spinmatic-entertainment {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -480px;
-} 
+  background-position: left -700px top -480px;
+}
 .revolver-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -540px;
+  background-position: left -700px top -540px;
 }
 .avatar-ux {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -600px;
+  background-position: left -700px top -600px;
 }
 .slingo {
   background-image: url(/providers2.png);
-  background-position:  left -600px top -600px;
+  background-position: left -600px top -600px;
 }
 .eurasian-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -780px;
+  background-position: left -400px top -780px;
 }
 .world-match {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -840px;
+  background-position: left -300px top -840px;
 }
 .omi-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -840px;
+  background-position: left -500px top -840px;
 }
 .multislot {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -60px;
+  background-position: left -500px top -60px;
 }
 .zeus-play {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -240px;
+  background-position: left -400px top -240px;
 }
 .habanero {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -60px;
+  background-position: left -100px top -60px;
 }
 .genii {
   background-image: url(/providers2.png);
-  background-position:  left -300px top -420px;
+  background-position: left -300px top -420px;
 }
 .inbet-games {
   background-image: url(/providers2.png);
-  background-position:  left -500px top -240px;
+  background-position: left -500px top -240px;
 }
 .fugaso {
   background-image: url(/providers2.png);
-  background-position:  left -400px top -420px;
+  background-position: left -400px top -420px;
 }
 .spigo {
   background-image: url(/providers2.png);
-  background-position:  left -700px top -420px;
+  background-position: left -700px top -420px;
 }
 .leap {
   background-image: url(/providers2.png);
-  background-position:  left -100px top -780px;
+  background-position: left -100px top -780px;
 }
 .patagonia-entertainment {
   background-image: url(/providers2.png);
-  background-position:  left -601px top -661px;
+  background-position: left -601px top -661px;
 }
 .betconstruct {
   background-image: url(/providers2.png);
-  background-position:  left -501px top -781px;
+  background-position: left -501px top -781px;
 }
 .betsolutions {
   background-image: url(/providers2.png);
-  background-position:  left -601px top -781px;
+  background-position: left -601px top -781px;
 }
 .ka-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -701px top -301px;
+  background-position: left -701px top -301px;
 }
 .mancala-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -601px top -361px;
+  background-position: left -601px top -361px;
 }
 .medialive-casino {
   background-image: url(/providers2.png);
-  background-position:  left -501px top -481px;
+  background-position: left -501px top -481px;
 }
 .nucleus-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -701px top -1px;
+  background-position: left -701px top -1px;
 }
 .vivo-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -401px top -361px;
+  background-position: left -401px top -361px;
 }
 .microgaming {
   background-image: url(/providers2.png);
-  background-position:  left -1px top -541px;
+  background-position: left -1px top -541px;
 }
 .relax-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -301px top -781px;
+  background-position: left -301px top -781px;
 }
 .betixon {
   background-image: url(/providers2.png);
-  background-position:  left -401px top -541px;
+  background-position: left -401px top -541px;
 }
 .blueprint-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -201px top -901px;
+  background-position: left -201px top -901px;
 }
 .ganapati {
   background-image: url(/providers2.png);
-  background-position:  left -701px top -661px;
+  background-position: left -701px top -661px;
 }
 .spade-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -401px top -841px;
+  background-position: left -401px top -841px;
 }
 .xplosive {
   background-image: url(/providers2.png);
-  background-position:  left -701px top -121px;
+  background-position: left -701px top -121px;
 }
 .asia-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -701px top -181px;
+  background-position: left -701px top -181px;
 }
 .gold-rock-studios {
   background-image: url(/providers2.png);
-  background-position:  left -301px top -661px;
+  background-position: left -301px top -661px;
 }
 .play8217n-go {
   background-image: url(/providers2.png);
-  background-position:  left -1px top -121px;
+  background-position: left -1px top -121px;
 }
 .a1x2games {
   background-image: url(/providers2.png);
-  background-position:  left -201px top -301px;
+  background-position: left -201px top -301px;
 }
 .a2-by-2-gaming {
   background-image: url(/providers2.png);
-  background-position:  left -201px top -241px;
+  background-position: left -201px top -241px;
+}
+
+/* Ваши глобальные стили или стили компонента */
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 95px; /* Регулируйте ширину по вашему усмотрению */
+  font-family: Arial, sans-serif;
+}
+
+.language-switcher select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 6px 20px 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  background-color: #051bad;
+  outline: none;
+}
+
+
+.language-switcher select:focus {
+  outline: none;
+  border-color: #0967e3;
+}
+
+/* Стили для стрелки выпадающего списка */
+.language-switcher select::-ms-expand {
+  display: none;
+}
+
+/* Стили для опций в выпадающем списке */
+.language-switcher select option {
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* При наведении на опцию */
+.language-switcher select option:hover {
+  background-color: #0967e3;
+  color: #fff;
+}
+
+/* Активный язык */
+.language-switcher select option:checked {
+  background-color: #0967e3;
+  color: #fff;
 }
