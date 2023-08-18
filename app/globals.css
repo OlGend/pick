@@ -6680,8 +6680,8 @@ body {
   background: #4c2b69;
   border-radius: 50px;
   border: 3px solid #fff;
-  right: 14px;
-  top: 226px;
+  right: 25px;
+  top: 220px;
 }
 p {
   font-size: 16px;
@@ -7922,7 +7922,7 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  width: 95px; /* Регулируйте ширину по вашему усмотрению */
+  width: 99px; /* Регулируйте ширину по вашему усмотрению */
   font-family: Arial, sans-serif;
 }
 
@@ -7971,3 +7971,21 @@ p {
   background-color: #0967e3;
   color: #fff;
 }
+
+.page-post li {
+  list-style-type: none;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.page-post li::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #0967e3;
+  border-radius: 50%;
+  left: 0;
+  top: 8px;
+}
+

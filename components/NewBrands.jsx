@@ -35,7 +35,7 @@ export default function NewBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-        <h2>{t('topBrands.title')}</h2>
+        <h2>{t('newestasinos.title')}</h2>
         </div>
         <div className="flex flex-col px-0 py-6">
           {filteredBrands.map((brand) => {

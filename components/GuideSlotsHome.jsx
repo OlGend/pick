@@ -1,15 +1,33 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { BookBookmark, Coins, UsersFour } from "phosphor-react";
 import Img from "@/public/mobile_blue.png";
 import Link from "next/link";
-import jsonContent from "./guidePosts.json";
+
+
+import guidepostDataEn from "@/components/posts/en.json";
+import guidepostDataPl from "@/components/posts/pl.json";
 
 const GuideSlotsHome = () => {
-  const { t } = useTranslation();
 
-  const lastThreePosts = jsonContent.slice(-3);
+  const [loading, setLoading] = useState(true);
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const guidepostData =
+    currentLanguage === "pl" ? guidepostDataPl : guidepostDataEn;
+  const guideposts = guidepostData.guideposts;
+
+  useEffect(() => {
+    if (guideposts.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, [guideposts]);
+
+  const lastThreePosts = guideposts.slice(-3);
   return (
     <div className="guides">
       <div className="main__container flex">
