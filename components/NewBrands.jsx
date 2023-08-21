@@ -37,7 +37,7 @@ export default function NewBrands() {
         <div className="heading flex items-center">
         <h2>{t('newestasinos.title')}</h2>
         </div>
-        <div className="flex flex-col px-0 py-6">
+        <div className="flex flex-col px-0 py-6 wrap-mobile">
           {filteredBrands.map((brand) => {
             const reviewImgSrc = extractReviewImage(brand.content.rendered);
             const playLink = extractLink(brand.content.rendered);

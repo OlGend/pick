@@ -33,10 +33,10 @@ export default function GuideSlotsGuide() {
 
   return (
     <>
-      <h1 className="pt-12 pb-4">{t("guideslotsguide.title")}</h1>
-      <p>
-      {t("guideslotsguide.excerpt")}
-      </p>
+      <div className="title-guide">
+        <h1 className="pt-12 pb-4">{t("guideslotsguide.title")}</h1>
+      </div>
+      <p>{t("guideslotsguide.excerpt")}</p>
       {showMore ? (
         <>
           <p>{t("guideslotsguide")}</p>

@@ -65,7 +65,7 @@ const FilteredHome = () => {
           </div>
    
         </div>
-        <div className="flex">
+        <div className="flex navigate-filter">
           {navigateBrands.map((item) => (
             <button
               key={item.currentTab}

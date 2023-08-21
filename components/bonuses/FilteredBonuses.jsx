@@ -71,7 +71,7 @@ const FilteredBonuses = () => {
             <p className="mt-3 pb-4">{t("filteredBonuses.excerpt")}</p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex navigate-filter">
           {navigateBrands.map((item) => (
             <button
               key={item.currentTab}

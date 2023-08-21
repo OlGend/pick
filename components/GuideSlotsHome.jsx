@@ -33,7 +33,7 @@ const GuideSlotsHome = () => {
       <div className="main__container flex">
         <div className="flex flex-col">
           <h2 className="mb-5">{t("guideSlotsHome.title1")}</h2>
-          <div className="flex justify-between">
+          <div className="flex justify-between guide-wrapper">
             <div className="left basis-5/12 ">
               <div className="item relative mb-5">
                 <BookBookmark

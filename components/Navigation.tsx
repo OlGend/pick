@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Loader from "./Loader";
 import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 type NavLink = {
   class: string;
@@ -17,9 +17,10 @@ type NavLink = {
 
 type Props = {
   navLinks: NavLink[];
+  onLinkClick: () => void;
 };
 
-const Navigation = ({ navLinks }: Props) => {
+const Navigation = ({ navLinks, onLinkClick }: Props) => {
   // Получите функцию перевода
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
@@ -31,18 +32,24 @@ const Navigation = ({ navLinks }: Props) => {
       setIsLoading(false);
     }, 1000);
   };
+
   const pathname = usePathname();
+
   return (
     <>
       {navLinks.map((link) => {
         const isActive = pathname === link.href;
         const hasSubMenu = link.subMenu && link.subMenu.length > 0;
+
         return (
           <div key={link.label} className="navigation-item">
             <Link
               href={link.href}
               className={isActive ? "active" : ""}
-              onClick={handleLinkClick}
+              onClick={() => {
+                handleLinkClick();
+                onLinkClick(); // Закрываем меню
+              }}
             >
               <div className="flex items-center justify-center">
                 {isLoading ? (

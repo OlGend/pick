@@ -1,6 +1,6 @@
 //TheHeader.jsx
 "use client";
-import React from "react";
+import { useState } from "react";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/components/i18n";
 import { Navigation } from "./Navigation";
@@ -78,6 +78,15 @@ const navItems = [
 
 const TheHeader = () => {
   const { t } = useTranslation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Step 2
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Step 3
+  };
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header__bg">
@@ -91,6 +100,30 @@ const TheHeader = () => {
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
+          <div className="mobile-none">
+            <button
+              className={`burger-icon ${isMobileMenuOpen ? "open" : ""}`}
+              onClick={toggleMobileMenu}
+            >
+              <div className="burger-lines">
+                <div className="line line1"></div>
+                <div className="line line2"></div>
+                <div className="line line3"></div>
+              </div>
+            </button>
+            <div className="menu-mobile">
+              <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
+                {/* Mobile menu content */}
+                <Navigation
+                  navLinks={navItems.map((item) => ({
+                    ...item,
+                    label: t(item.label),
+                  }))}
+                  onLinkClick={closeMobileMenu} 
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="header__container menu-desctop">
