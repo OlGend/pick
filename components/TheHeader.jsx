@@ -1,6 +1,6 @@
 //TheHeader.jsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/components/i18n";
 import { Navigation } from "./Navigation";
@@ -86,6 +86,10 @@ const TheHeader = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+  const storedLanguage = localStorage.getItem("language");
+  const defaultLanguage = "en"; // Язык по умолчанию
+  const selectedLanguage = storedLanguage || defaultLanguage;
 
   return (
     <header className="header">
