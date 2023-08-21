@@ -87,9 +87,7 @@ const TheHeader = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const storedLanguage = localStorage.getItem("language");
-  const defaultLanguage = "en"; // Язык по умолчанию
-  const selectedLanguage = storedLanguage || defaultLanguage;
+
 
   return (
     <header className="header">
@@ -123,7 +121,7 @@ const TheHeader = () => {
                     ...item,
                     label: t(item.label),
                   }))}
-                  onLinkClick={closeMobileMenu} 
+                  // onLinkClick={closeMobileMenu} 
                 />
               </div>
             </div>

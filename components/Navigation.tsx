@@ -48,7 +48,7 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
               className={isActive ? "active" : ""}
               onClick={() => {
                 handleLinkClick();
-                onLinkClick(); // Закрываем меню
+                // onLinkClick(); 
               }}
             >
               <div className="flex items-center justify-center">

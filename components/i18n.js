@@ -5,7 +5,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import enTranslation from "@/components/posts/en.json"; // Путь к файлу с английскими переводами
 import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
 import noTranslation from "@/components/posts/no.json"; // Путь к файлу с польскими переводами
-import Cookies from "js-cookie";
 
 
 const resources = {
@@ -1783,17 +1782,12 @@ const resources = {
   // Add translations for other languages here
 };
 
-const storedLanguage = Cookies.get("language"); // Получите язык из кукисов
-const defaultLanguage = "en"; // Язык по умолчанию
-const initialLanguage = storedLanguage || defaultLanguage;
-
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: initialLanguage,
+    lng: "en", // Default language
     interpolation: {
       escapeValue: false,
     },
