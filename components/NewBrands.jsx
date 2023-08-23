@@ -99,7 +99,7 @@ export default function NewBrands() {
                     {isLoading ? (
                       <Loader />
                     ) : (
-                      <Eye className="mr-2 mb-1" size={20} />
+                      <Eye className="mr-2" size={20} />
                     )}
                      {t('button.review')}
                   </Link>

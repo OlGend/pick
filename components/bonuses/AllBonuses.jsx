@@ -266,7 +266,7 @@ export default function AllBonuses({ choose }) {
                       {isLoading ? (
                         <Loader />
                       ) : (
-                        <Eye className="mr-2 mb-1" size={20} />
+                        <Eye className="mr-2" size={20} />
                       )}
                       {t("button.review")}
                     </Link>
@@ -282,7 +282,7 @@ export default function AllBonuses({ choose }) {
                       className="btn btn-primary mt-0 text-center flex justify-center items-center"
                       href={playLink}
                     >
-                      <Play className="mr-2 mb-1" size={24} />{" "}
+                      <Play className="mr-2" size={24} />{" "}
                       {t("button.play")}
                     </Link>
                   </div>

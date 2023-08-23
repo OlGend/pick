@@ -4,7 +4,7 @@ import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
-
+import RandomWindow from "@/components/random/RandomWindow";
 
 export const metadata: Metadata = {
   title: "This is a new brand",
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
- 
+        <RandomWindow />
         <TheHeader />
         <main>{children}</main>
         <TheFooter />

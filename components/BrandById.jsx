@@ -161,7 +161,7 @@ export default function Brand({ brand }) {
                       className="btn btn-primary mt-3 text-center flex justify-center items-center"
                       href={playLink}
                     >
-                      <Play className="mr-2 mb-1" size={24} /> Play Now
+                      <Play className="mr-2" size={24} /> Play Now
                     </Link>
                   </div>
                   <div className="otherContent ml-6 basis-[75%]">

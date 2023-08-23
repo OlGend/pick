@@ -6422,7 +6422,7 @@ h2 {
   justify-content: space-between;
 }
 .btn {
-  padding: 8px 15px 3px;
+  padding: 8px 15px 8px;
   color: #fff;
   transition: 0.3s;
   font-weight: 700;
@@ -8111,11 +8111,13 @@ input.error {
   top: 50px;
   right: 50px;
 }
-.slider-popup .slick-prev, .slider-popup .slick-next {
+.slider-popup .slick-prev,
+.slider-popup .slick-next {
   top: 50% !important;
   z-index: 9999;
 }
-.slider-popup .slick-prev::before, .slider-popup .slick-next::before {
+.slider-popup .slick-prev::before,
+.slider-popup .slick-next::before {
   color: #fff !important;
 }
 .slider-popup .slick-prev {
@@ -8125,6 +8127,91 @@ input.error {
   display: flex;
   align-items: center;
 }
+
+.footer-top {
+}
+.footer-bottom,
+.footer-center {
+  border-top: 1px solid #4a5b68;
+}
+.footer-bottom p {
+  font-size: 14px;
+}
+.footer-end {
+  border-top: 1px solid #4a5b68;
+}
+.footer-end span {
+  font-size: 12px;
+  color: #4a5b68;
+  text-align: center;
+}
+.main__container.pt-3 {
+  padding-top: 0.75rem;
+}
+.main__container.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.main__container.pt-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+}
+.solution-contacts p {
+  margin-bottom: 5px;
+}
+.solution-contacts a {
+  transition: 0.3s;
+}
+.solution-contacts a:hover {
+  color: #0967e3;
+}
+
+.modal-overlay {
+  position: fixed;
+  max-width: 400px;
+  width: 100%;
+  right: 0;
+  bottom: 150px;
+  z-index: 9999;
+}
+
+.modal-content {
+  padding: 35px 15px 15px;
+  background: #f0f3f7;
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  box-shadow: 0px 4px 24px 0px rgba(175, 27, 79, 0.15);
+}
+.modal-content p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+.modal-content span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.modal-content .card-brand {
+  border: none;
+  margin-left: 0;
+}
+.modal-content .card-brand .brandImage {
+  height: 100%;
+  min-height: 80px;
+  min-width: 100px;
+  margin-left: 15px;
+}
+.modal-content .card-brand .buttons {
+  margin-top: 0;
+}
+.modal-content .card-brand .review-bonus {
+  line-height: 18px;
+}
+.modal-content .card-brand .review-bonus br {
+  display: none !important;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile-none {
     display: flex;
