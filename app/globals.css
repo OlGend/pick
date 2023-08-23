@@ -8170,11 +8170,14 @@ input.error {
   position: fixed;
   max-width: 400px;
   width: 100%;
-  right: 0;
+  right: -500px;
   bottom: 150px;
   z-index: 9999;
+  transition: 0.7s;
 }
-
+.modal-overlay.active {
+  right: 0;
+}
 .modal-content {
   padding: 35px 15px 15px;
   background: #f0f3f7;
