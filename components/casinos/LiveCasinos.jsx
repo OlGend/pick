@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Img from "@/public/live.png";
+import Subscribe from "@/components/subscribe/Subscribe";
 
 
 const LiveCasinos = () => {
@@ -14,6 +15,7 @@ const LiveCasinos = () => {
         <div className="flex flex-col basis-[60%]">
         <h1 className="text-white">{t("livecasinos.title")}</h1>
           <p className="text-white mt-5">{t("livecasinos.excerpt")}</p>
+          <Subscribe />
         </div>
         <div className="basis-[40%] flex justify-center">
           <Image src={Img} alt="Beep" width={242} loading="lazy" />
