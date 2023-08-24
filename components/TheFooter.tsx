@@ -40,7 +40,7 @@ const TheFooter = () => {
             <div className="solution-images flex flex-wrap justify-start items-center">
               {solutions.map((item, index) => (
                 <Image
-                  className=""
+                  className="grayscale"
                   key={index}
                   src={item}
                   alt={`Item ${index}`}
@@ -62,7 +62,7 @@ const TheFooter = () => {
             <div className="solution-images flex flex-wrap justify-end items-center">
               {solutions2.map((item, index) => (
                 <Image
-                  className=""
+                  className="grayscale"
                   key={index}
                   src={item}
                   alt={`Item ${index}`}

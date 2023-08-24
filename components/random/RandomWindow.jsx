@@ -20,7 +20,7 @@ const Modal = () => {
     const timer = setTimeout(() => {
       const lastClosedTime = localStorage.getItem("lastClosedTime");
 
-      if (!lastClosedTime || Date.now() - lastClosedTime > 60000) {
+      if (!lastClosedTime || Date.now() - lastClosedTime > 600000) {
         const randomIndex = Math.floor(Math.random() * brandData.length);
         setRandomBrand(brandData[randomIndex]);
         setShowModal(true);
@@ -40,12 +40,12 @@ const Modal = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const lastClosedTime = localStorage.getItem("lastClosedTime");
-      if (!lastClosedTime || Date.now() - lastClosedTime > 60000) {
+      if (!lastClosedTime || Date.now() - lastClosedTime > 600000) {
         const randomIndex = Math.floor(Math.random() * brandData.length);
         setRandomBrand(brandData[randomIndex]);
         setShowModal(true);
       }
-    }, 60000); // 1000 миллисекунд = 10 минут
+    }, 600000); // 1000 миллисекунд = 10 минут
 
     return () => clearInterval(interval);
   }, [brandData]);

@@ -8,6 +8,7 @@ import {
   Gift,
   PokerChip,
   Spiral,
+  Wallet,
   Notepad,
   UsersThree,
   At,
@@ -55,9 +56,9 @@ const navItems = [
     ],
   },
   {
-    icon: <Spiral className="mr-1" size={20} />,
-    label: "header.spins",
-    href: "/free-spins",
+    icon: <Wallet className="mr-1" size={20} />,
+    label: "All Payments",
+    href: "/payments",
   },
   {
     icon: <Notepad className="mr-1" size={20} />,
