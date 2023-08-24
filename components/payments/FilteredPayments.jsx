@@ -2,8 +2,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import AllBonuses from "./AllPayments";
-import { Gift, Coins, Crown, Handshake, RadioButton } from "phosphor-react";
+import AllPayments from "./AllPayments";
 import Image from "next/image";
 import Visa from "@/public/payments/visa.png";
 import Bitcoin from "@/public/payments/bitcoin.png";
@@ -21,7 +20,7 @@ import Paypal from "@/public/payments/PayPal.png";
 import Pix from "@/public/payments/Pix.png";
 import Revolut from "@/public/payments/Revolut.png";
 import Mobile from "@/public/payments/mobilepayments.png";
-import AllPayments from "@/public/payments/allpaymentmethods.png";
+import AllPaymentsImg from "@/public/payments/allpaymentmethods.png";
 
 const FilteredPayments = () => {
   const { t } = useTranslation();
@@ -35,8 +34,8 @@ const FilteredPayments = () => {
       icon: (
         <Image
           className="mr-1"
-          src={AllPayments}
-          alt="logo"
+          src={AllPaymentsImg}
+          alt="payments"
           width={60}
           height={38}
           loading="lazy"
@@ -52,7 +51,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Applepay}
-          alt="logo"
+          alt="apple-pay"
           width={60}
           height={38}
           loading="lazy"
@@ -68,7 +67,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Bitcoin}
-          alt="logo"
+          alt="bitcoin"
           width={60}
           height={38}
           loading="lazy"
@@ -84,7 +83,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Ecopayz}
-          alt="logo"
+          alt="ecopayz"
           width={60}
           height={38}
           loading="lazy"
@@ -100,7 +99,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Maestro}
-          alt="logo"
+          alt="maestro"
           width={60}
           height={38}
           loading="lazy"
@@ -116,7 +115,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Mastercard}
-          alt="logo"
+          alt="mastercard"
           width={60}
           height={38}
           loading="lazy"
@@ -132,7 +131,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Mobile}
-          alt="logo"
+          alt="mobile"
           width={60}
           height={38}
           loading="lazy"
@@ -148,7 +147,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Muchbetter}
-          alt="logo"
+          alt="muchbetter"
           width={60}
           height={38}
           loading="lazy"
@@ -164,7 +163,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Neosurf}
-          alt="logo"
+          alt="neosurf"
           width={60}
           height={38}
           loading="lazy"
@@ -180,7 +179,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Neteller}
-          alt="logo"
+          alt="neteller"
           width={60}
           height={38}
           loading="lazy"
@@ -196,7 +195,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Paypal}
-          alt="logo"
+          alt="paypal"
           width={60}
           height={38}
           loading="lazy"
@@ -212,7 +211,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Paysafecard}
-          alt="logo"
+          alt="paysafecard"
           width={60}
           height={38}
           loading="lazy"
@@ -228,7 +227,7 @@ const FilteredPayments = () => {
         <Image
           className="mr-1"
           src={Pix}
-          alt="logo"
+          alt="pix"
           width={60}
           height={38}
           loading="lazy"
@@ -236,31 +235,16 @@ const FilteredPayments = () => {
       ),
       slug: "pix",
     },
+ 
     {
       currentTab: 14,
-      currentCategories: 210,
-      currentText: "Revolute",
-      icon: (
-        <Image
-          className="mr-1"
-          src={Revolut}
-          alt="logo"
-          width={60}
-          height={38}
-          loading="lazy"
-        />
-      ),
-      slug: "revolute",
-    },
-    {
-      currentTab: 15,
       currentCategories: 91,
       currentText: "Skrill",
       icon: (
         <Image
           className="mr-1"
           src={Skrill}
-          alt="logo"
+          alt="skrill"
           width={60}
           height={38}
           loading="lazy"
@@ -269,14 +253,14 @@ const FilteredPayments = () => {
       slug: "skrill-casino",
     },
     {
-      currentTab: 16,
+      currentTab: 15,
       currentCategories: 171,
       currentText: "Trustly",
       icon: (
         <Image
           className="mr-1"
           src={Trustly}
-          alt="logo"
+          alt="trustly"
           width={60}
           height={38}
           loading="lazy"
@@ -285,14 +269,14 @@ const FilteredPayments = () => {
       slug: "trustly",
     },
     {
-      currentTab: 17,
+      currentTab: 16,
       currentCategories: 134,
       currentText: "Visa",
       icon: (
         <Image
           className="mr-1"
           src={Visa}
-          alt="logo"
+          alt="visa"
           width={60}
           height={38}
           loading="lazy"
@@ -303,13 +287,14 @@ const FilteredPayments = () => {
   ];
 
   useEffect(() => {
-    const pathSegments = window.location.pathname.split("/");
-    const slugFromUrl = pathSegments[1]; // Используйте [1] для первого сегмента после "/"
+    const pathSegments = window.location.pathname.split("/payments/");
+    const slugFromUrl = pathSegments[1];
     const foundTab = navigateBrands.find((item) => item.slug === slugFromUrl);
     if (foundTab) {
       setCurrentTab(foundTab.currentTab);
     }
   }, []);
+  
 
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
@@ -345,7 +330,7 @@ const FilteredPayments = () => {
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
-                <AllBonuses
+                <AllPayments
                   key={item.currentTab}
                   choose={item.currentCategories}
                 />

@@ -10,8 +10,7 @@ import {
   CalendarCheck,
   Scroll,
 } from "phosphor-react";
-import Image from "next/image";
-import Img from "@/public/beep2.png";
+
 
 const FilteredCasinos = () => {
   const { t } = useTranslation();

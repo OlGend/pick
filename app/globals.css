@@ -7421,6 +7421,21 @@ p {
 .sub-casinos {
   left: 349px;
 }
+.sub-payments {
+  left: 515px;
+}
+.sub-payments {
+  max-width: 671px;
+}
+.sub-payments .sub-menu-items {
+  flex-wrap: wrap;
+  min-width: 200px;
+  max-width: 400px;
+  flex-direction: row;
+}
+.sub-payments .sub-menu-items a {
+  flex-basis: 32%;
+}
 .navigation-item {
   /* position: relative; */
 
