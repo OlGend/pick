@@ -13,6 +13,7 @@ import {
   UsersThree,
   At,
   HouseLine,
+  GameController
 } from "phosphor-react";
 import Image from "next/image";
 import Img from "@/public/logo2.png";
@@ -84,9 +85,9 @@ const navItems = [
     href: "/guides",
   },
   {
-    icon: <UsersThree className="mr-1" size={20} />,
-    label: "header.about",
-    href: "/about",
+    icon: <GameController className="mr-1" size={20} />,
+    label: "Game Providers",
+    href: "/game-providers",
   },
   {
     icon: <At className="mr-1" size={20} />,

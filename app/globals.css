@@ -6800,7 +6800,8 @@ p {
 .bonuses {
   background-image: url(/bgsingle.png);
   background-repeat: no-repeat !important;
-  background-position: top -100px right !important;
+  background-position: top right !important;
+  background-size: contain;
 }
 .custom-bonuses {
   background-image: url(/bgfilter.png) !important;
@@ -8231,6 +8232,9 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .custom-bonuses {
+    background-image: none;
+  }
   .mobile-none {
     display: flex;
   }
