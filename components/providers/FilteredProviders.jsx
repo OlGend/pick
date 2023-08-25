@@ -78,7 +78,7 @@ const FilteredProviders = () => {
           loading="lazy"
         />
       ),
-      slug: "nooongo",
+      slug: "booongo",
     },
 
     {
@@ -133,7 +133,7 @@ const FilteredProviders = () => {
           loading="lazy"
         />
       ),
-      slug: "netEnt",
+      slug: "netent",
     },
     {
       currentTab: 9,
@@ -194,7 +194,7 @@ const FilteredProviders = () => {
           loading="lazy"
         />
       ),
-      slug: "Push Gaming",
+      slug: "push-gaming",
     },
     {
       currentTab: 13,
@@ -214,7 +214,7 @@ const FilteredProviders = () => {
   ];
 
   useEffect(() => {
-    const pathSegments = window.location.pathname.split("/payments/");
+    const pathSegments = window.location.pathname.split("/game-providers/");
     const slugFromUrl = pathSegments[1];
     const foundTab = navigateBrands.find((item) => item.slug === slugFromUrl);
     if (foundTab) {

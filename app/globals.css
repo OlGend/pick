@@ -7425,16 +7425,20 @@ p {
 .sub-payments {
   left: 515px;
 }
-.sub-payments {
+.sub-providers {
+  left: initial;
+  right: 0.9375rem;
+}
+.sub-payments, .sub-providers {
   max-width: 671px;
 }
-.sub-payments .sub-menu-items {
+.sub-payments .sub-menu-items, .sub-providers .sub-menu-items {
   flex-wrap: wrap;
   min-width: 200px;
   max-width: 400px;
   flex-direction: row;
 }
-.sub-payments .sub-menu-items a {
+.sub-payments .sub-menu-items a, .sub-providers .sub-menu-items a {
   flex-basis: 32%;
 }
 .navigation-item {

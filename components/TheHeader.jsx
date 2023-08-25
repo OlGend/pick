@@ -13,7 +13,7 @@ import {
   UsersThree,
   At,
   HouseLine,
-  GameController
+  GameController,
 } from "phosphor-react";
 import Image from "next/image";
 import Img from "@/public/logo2.png";
@@ -86,13 +86,23 @@ const navItems = [
   },
   {
     icon: <GameController className="mr-1" size={20} />,
-    label: "Game Providers",
+    class: "sub-providers",
+    label: "Game Providers ▼",
     href: "/game-providers",
-  },
-  {
-    icon: <At className="mr-1" size={20} />,
-    label: "header.contacts",
-    href: "/contacts",
+    subMenu: [
+      { label: "Amatic", href: "/game-providers/amatic" },
+      { label: "BGaming", href: "/game-providers/bgaming" },
+      { label: "Boongo", href: "/game-providers/boongo" },
+      { label: "Amusnet", href: "/game-providers/amusnet" },
+      { label: "Evolution", href: "/game-providers/evolution" },
+      { label: "Mascot", href: "/game-providers/mascot" },
+      { label: "NeTent", href: "/game-providers/netent" },
+      { label: "Nolimit city", href: "/game-providers/nolimit-city" },
+      { label: "Play’n go", href: "/game-providers/playn-go" },
+      { label: "Pragmatic Play", href: "/game-providers/pragmatic-play" },
+      { label: "Push Gaming", href: "/game-providers/push-gaming" },
+      { label: "Spinomenal", href: "/game-providers/spinomenal" },
+    ],
   },
 ];
 
@@ -106,8 +116,6 @@ const TheHeader = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
-
-
 
   return (
     <header className="header">
@@ -141,7 +149,7 @@ const TheHeader = () => {
                     ...item,
                     label: t(item.label),
                   }))}
-                  // onLinkClick={closeMobileMenu} 
+                  // onLinkClick={closeMobileMenu}
                 />
               </div>
             </div>
