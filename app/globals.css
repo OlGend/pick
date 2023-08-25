@@ -8233,7 +8233,7 @@ input.error {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .custom-bonuses {
-    background-image: none;
+    background-image: none !important;
   }
   .mobile-none {
     display: flex;
