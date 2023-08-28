@@ -1,11 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
 import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
 import { useTranslation } from "react-i18next";
+import { CaretDown } from "@phosphor-icons/react";
 
 type NavLink = {
   class: string;
@@ -24,14 +25,36 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
   // Получите функцию перевода
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
+  const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const handleLinkClick = () => {
     setIsLoading(true);
-
+    setOpenSubMenu(null);
     // Simulate some delay to show the loader (remove this in actual usage)
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
   };
+
+  const toggleSubMenu = (label: string) => {
+    if (openSubMenu === label) {
+      setOpenSubMenu(null);
+    } else {
+      setOpenSubMenu(label);
+    }
+  };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const pathname = usePathname();
 
@@ -48,7 +71,8 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
               className={isActive ? "active" : ""}
               onClick={() => {
                 handleLinkClick();
-                // onLinkClick(); 
+                onLinkClick();
+                setOpenSubMenu(null);
               }}
             >
               <div className="flex items-center justify-center">
@@ -62,29 +86,87 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
                 )}
               </div>
             </Link>
-
             {hasSubMenu && (
-              <div className={`sub-menu flex justify-between ${link.class}`}>
-                <div className="sub-menu-items">
-                  {link.subMenu!.map((subLink) => (
-                    <Link key={subLink.label} href={subLink.href}>
-                      <div className="sub-menu-item" onClick={handleLinkClick}>
-                        <div className="">
-                          {isLoading ? (
-                            <Loader />
-                          ) : (
-                            <span>{t(subLink.label)}</span>
-                          )}
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-                <div className="sub-menu-image">
-                  <Image src={Img} alt="bonuses" width={280} loading="lazy" />
-                </div>
+              <div className="op-menu">
+                <button onClick={() => toggleSubMenu(link.label)}>
+                  <CaretDown color="#fff" size={16} />
+                </button>
               </div>
             )}
+
+            {windowWidth > 1259
+              ? hasSubMenu && (
+                  <div
+                    className={`sub-menu flex justify-between ${link.class}`}
+                  >
+                    <div className="sub-menu-items">
+                      {link.subMenu!.map((subLink) => (
+                        <Link key={subLink.label} href={subLink.href}>
+                          <div
+                            className="sub-menu-item"
+                            onClick={() => {
+                              handleLinkClick();
+                            
+                            }}
+                          >
+                            <div className="">
+                              {isLoading ? (
+                                <Loader />
+                              ) : (
+                                <span>{t(subLink.label)}</span>
+                              )}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="sub-menu-image">
+                      <Image
+                        src={Img}
+                        alt="bonuses"
+                        width={280}
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                )
+              : hasSubMenu &&
+                openSubMenu === link.label && (
+                  <div
+                    className={`sub-menu flex justify-between ${link.class}`}
+                  >
+                    <div className="sub-menu-items">
+                      {link.subMenu!.map((subLink) => (
+                        <Link key={subLink.label} href={subLink.href}>
+                          <div
+                            className="sub-menu-item"
+                            onClick={() => {
+                              handleLinkClick();
+                              onLinkClick();
+                              setOpenSubMenu(null);
+                            }}
+                          >
+                            <div className="">
+                              {isLoading ? (
+                                <Loader />
+                              ) : (
+                                <span>{t(subLink.label)}</span>
+                              )}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="sub-menu-image">
+                      <Image
+                        src={Img}
+                        alt="bonuses"
+                        width={280}
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                )}
           </div>
         );
       })}

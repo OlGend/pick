@@ -7,12 +7,9 @@ import { Navigation } from "./Navigation";
 import {
   Gift,
   PokerChip,
-  Spiral,
   Wallet,
   Notepad,
-  UsersThree,
-  At,
-  HouseLine,
+  Flag,
   GameController,
 } from "phosphor-react";
 import Image from "next/image";
@@ -22,24 +19,6 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 const navItems = [
-  {
-    icon: <HouseLine className="mr-1" size={20} />,
-    label: "header.home",
-    href: "/",
-  },
-  {
-    icon: <Gift className="mr-1" size={20} />,
-    class: "sub-bonuses",
-    label: "header.bonuses",
-    href: "/bonuses",
-    subMenu: [
-      { label: "header.nodeposit", href: "/no-deposit-bonuses" },
-      { label: "header.exclusive", href: "/exclusive-bonuses" },
-      { label: "header.deposit", href: "/deposit-bonuses" },
-      { label: "header.welcome", href: "/welcome-bonuses" },
-      { label: "header.nowager", href: "/no-wagering-bonuses" },
-    ],
-  },
   {
     icon: <PokerChip className="mr-1" size={20} />,
     class: "sub-casinos",
@@ -56,6 +35,20 @@ const navItems = [
       { label: "header.certifiedcasinos", href: "/top-certified-casinos" },
     ],
   },
+  {
+    icon: <Gift className="mr-1" size={20} />,
+    class: "sub-bonuses",
+    label: "header.bonuses",
+    href: "/bonuses",
+    subMenu: [
+      { label: "header.nodeposit", href: "/no-deposit-bonuses" },
+      { label: "header.exclusive", href: "/exclusive-bonuses" },
+      { label: "header.deposit", href: "/deposit-bonuses" },
+      { label: "header.welcome", href: "/welcome-bonuses" },
+      { label: "header.nowager", href: "/no-wagering-bonuses" },
+    ],
+  },
+
   {
     icon: <Wallet className="mr-1" size={20} />,
     class: "sub-payments",
@@ -104,6 +97,22 @@ const navItems = [
       { label: "Spinomenal", href: "/game-providers/spinomenal" },
     ],
   },
+  {
+    icon: <Flag className="mr-1" size={20} />,
+    class: "sub-countries",
+    label: "Casinos by Country ▼",
+    href: "/by-country",
+    subMenu: [
+      { label: "Australia Casino", href: "/by-country/australia" },
+      { label: "Brazilian Casino", href: "/by-country/brazil" },
+      { label: "Canada Casino", href: "/by-country/canada" },
+      { label: "Finnish Casino", href: "/by-country/finland" },
+      { label: "Germany Casino", href: "/by-country/germany" },
+      { label: "New Zealand Casino", href: "/by-country/new-zealand" },
+      { label: "Norway Casino", href: "/by-country/norway" },
+      { label: "Polish Casino", href: "/by-country/poland" },
+    ],
+  },
 ];
 
 const TheHeader = () => {
@@ -149,7 +158,7 @@ const TheHeader = () => {
                     ...item,
                     label: t(item.label),
                   }))}
-                  // onLinkClick={closeMobileMenu}
+                  onLinkClick={closeMobileMenu}
                 />
               </div>
             </div>

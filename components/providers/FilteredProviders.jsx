@@ -227,7 +227,7 @@ const FilteredProviders = () => {
   };
 
   return (
-    <div className="main pt-10 pb-10 custom-bonuses">
+    <div className="main pt-10 pb-10 custom-bonuses filtered-providers">
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
