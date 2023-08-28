@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import Loader from "./Loader";
 import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
@@ -26,7 +27,7 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
   const handleLinkClick = () => {
     setIsLoading(true);
@@ -45,6 +46,9 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
     }
   };
   useEffect(() => {
+    // Теперь можно безопасно использовать window
+    setWindowWidth(window.innerWidth);
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -55,7 +59,6 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   const pathname = usePathname();
 
   return (
@@ -94,7 +97,7 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
               </div>
             )}
 
-            {windowWidth > 1259
+            {windowWidth !== null && windowWidth > 1259
               ? hasSubMenu && (
                   <div
                     className={`sub-menu flex justify-between ${link.class}`}
@@ -106,7 +109,6 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
                             className="sub-menu-item"
                             onClick={() => {
                               handleLinkClick();
-                            
                             }}
                           >
                             <div className="">
