@@ -17,6 +17,8 @@ import Img from "@/public/logo2.png";
 import SearchComponent from "@/components/SearchComponent";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
+
 
 const navItems = [
   {
@@ -131,7 +133,9 @@ const TheHeader = () => {
       <div className="header__bg">
         <div className="header__container ">
           <div className="logo">
+          <Link href="/">
             <Image src={Img} alt="logo" width={150} loading="lazy" />
+            </Link>
           </div>
           <div className="search-container flex items-center justify-center ml-auto">
             <SearchComponent />
