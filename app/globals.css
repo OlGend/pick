@@ -8578,6 +8578,9 @@ input.error {
   .withdrawal li {
     width: 24%;
   }
+  .list-circle-check li {
+    width: initial !important;
+  }
   .limits li {
     width: 100%;
   }
