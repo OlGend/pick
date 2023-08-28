@@ -8565,6 +8565,35 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .oneBrand {
+    padding-top: 60px;
+  }
+  .card-brand-filtered > div {
+    flex-direction: column;
+  }
+  .card-brand-filtered .otherContent {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+  .withdrawal li {
+    width: 24%;
+  }
+  .limits li {
+    width: 100%;
+  }
+  .brandUtils .background-block h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .brandUtils .background-block {
+    padding-top: 20px !important;
+  }
+  .providers-items .flex {
+    margin-right: auto;
+  }
+  .providers-items .flex:nth-child(3n + 1) {
+    margin-right: 0;
+  }
   .modal-overlay {
     bottom: 0;
   }
@@ -8873,6 +8902,9 @@ input.error {
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
+  .oneBrand {
+    padding-top: 60px;
+  }
   .bonuses {
     padding: 110px 0 60px;
   }
@@ -9041,11 +9073,12 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 1259px) {
+ 
   .filtered-payments .basis-\[10\%\] {
     flex-basis: 20%;
     padding: 5px !important;
   }
-  .filtered-providers .basis-\[7\.69\%\]{
+  .filtered-providers .basis-\[7\.69\%\] {
     flex-basis: 20%;
     padding: 5px !important;
   }

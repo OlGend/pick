@@ -69,13 +69,9 @@ const SearchBrands = () => {
                 <Loader />
               ) : (
                 <>
-        <Link
-          onClick={handleEnterClick}
-          className="absolute right-2 top-2 button-search"
-          href={`/search`}
-        >
-          <MagnifyingGlass color="#fff" />
-        </Link>
+       
+          <MagnifyingGlass size={20} className="absolute right-2 top-2" color="#fff" />
+       
         </>
               )}
       </div>

@@ -3,11 +3,14 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import AllCountryCasinos from "./AllCountryCasinos";
+import Loader from "@/components/Loader";
 
 
 const FilteredCasinos = () => {
   const { t } = useTranslation();
   const [currentTab, setCurrentTab] = useState(1);
+  
+
   const navigateBrands = [
     {
       currentTab: 1,
@@ -97,6 +100,7 @@ const FilteredCasinos = () => {
   };
 
   return (
+ 
     <div className="main pt-10 pb-10 custom-bonuses">
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">

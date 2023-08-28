@@ -100,8 +100,18 @@ export default function AllPayments({ choose }) {
     }, 1000);
   };
 
+  useEffect(() => {
+    if (filteredBrands && filteredBrands.length > 0) {
+      setIsLoading(false);
+    } else {
+      setIsLoading(true);
+    }
+  }, [filteredBrands]);
   return (
     <>
+     {isLoading ? (
+        <Loader />
+      ) : (
       <div className="flex flex-wrap justify-between">
         <div className="flex flex-col px-0 py-6 basis-[75%]">
           {filteredBrands.slice(0, visibleBrands).map((brand) => {
@@ -333,6 +343,7 @@ export default function AllPayments({ choose }) {
           })}
         </div>
       </div>
+      )}
     </>
   );
 }

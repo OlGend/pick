@@ -24,7 +24,7 @@ export default async function Brand({ params: { id } }: Props) {
       <div className="main__container brandUtils">
         <BrandById brand={id} />
         <CarouselSlider slides={[]} />
-        <div className="wrapper-container">
+        <div className="wrapper-container background-block">
           <NewBrands />
         </div>
         <div className="wrapper-container mt-6 mb-6">
