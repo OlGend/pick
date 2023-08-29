@@ -231,14 +231,9 @@ const FilteredProviders = () => {
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
-            <h2 className="">
-              Comprehensive 2023 Directory for Online Casinos Sorted by Game
-              Providers
-            </h2>
-            <p className="mt-3 pb-4">
-              Interested in locating online casinos featuring games from
-              particular providers? Browse our up-to-date list of diverse casino
-              options to find your perfect match.
+            <h2 className="text-white">{t("filtered.providers.title")}</h2>
+            <p className="text-white mt-5">
+              {t("filtered.providers.description")}
             </p>
           </div>
         </div>

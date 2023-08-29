@@ -54,7 +54,7 @@ const navItems = [
   {
     icon: <Wallet className="mr-1" size={20} />,
     class: "sub-payments",
-    label: "All Payments ▼",
+    label: "header.payments",
     href: "/payments",
     subMenu: [
       { label: "Apple Pay", href: "/payments/apple-pay" },
@@ -82,7 +82,7 @@ const navItems = [
   {
     icon: <GameController className="mr-1" size={20} />,
     class: "sub-providers",
-    label: "Game Providers ▼",
+    label: "header.providers",
     href: "/game-providers",
     subMenu: [
       { label: "Amatic", href: "/game-providers/amatic" },
@@ -102,17 +102,17 @@ const navItems = [
   {
     icon: <Flag className="mr-1" size={20} />,
     class: "sub-countries",
-    label: "Casinos by Country ▼",
+    label: "header.countries",
     href: "/by-country",
     subMenu: [
-      { label: "Australia Casino", href: "/by-country/australia" },
-      { label: "Brazilian Casino", href: "/by-country/brazil" },
-      { label: "Canada Casino", href: "/by-country/canada" },
-      { label: "Finnish Casino", href: "/by-country/finland" },
-      { label: "Germany Casino", href: "/by-country/germany" },
-      { label: "New Zealand Casino", href: "/by-country/new-zealand" },
-      { label: "Norway Casino", href: "/by-country/norway" },
-      { label: "Polish Casino", href: "/by-country/poland" },
+      { label: "header.austr", href: "/by-country/australia" },
+      { label: "header.brazil", href: "/by-country/brazil" },
+      { label: "header.canada", href: "/by-country/canada" },
+      { label: "header.finnish", href: "/by-country/finland" },
+      { label: "header.germany", href: "/by-country/germany" },
+      { label: "header.nz", href: "/by-country/new-zealand" },
+      { label: "header.norw", href: "/by-country/norway" },
+      { label: "header.polish", href: "/by-country/poland" },
     ],
   },
 ];

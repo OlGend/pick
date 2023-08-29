@@ -305,8 +305,8 @@ const FilteredPayments = () => {
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
-            <h2 className="">Catalog of all offered Online Casinos by Payment Methods in 2023</h2>
-            <p className="mt-3 pb-4">Looking for online casinos with specific payment methods? Explore our current database of numerous casino offers for you to choose from.</p>
+            <h2 className="">{t("filtered.payments.title")}</h2>
+            <p className="mt-3 pb-4">{t("filtered.payments.description")}</p>
           </div>
         </div>
         <div className="flex navigate-filter flex-wrap">

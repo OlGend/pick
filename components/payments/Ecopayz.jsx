@@ -12,11 +12,11 @@ const Payments = () => {
     <div className="bonuses">
       <div className="main__container flex justify-between items-center">
         <div className="flex flex-col basis-[60%]">
-          <h1 className="text-white">
-          Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2023
+        <h1 className="text-white">
+          {t("ecopayz.title")}
           </h1>
           <p className="text-white mt-5">
-          Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.
+          {t("ecopayz.description")}
           </p>
           <Subscribe />
         </div>

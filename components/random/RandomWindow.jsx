@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Play, Eye, X } from "phosphor-react";
@@ -11,6 +13,8 @@ import {
 } from "@/components/brandUtils";
 
 const Modal = () => {
+  const { t } = useTranslation();
+
   const [showModal, setShowModal] = useState(false);
   const [randomBrand, setRandomBrand] = useState(null);
   const [isActive, setIsActive] = useState(false); // Добавляем состояние для класса "active"
@@ -51,12 +55,16 @@ const Modal = () => {
   }, [brandData]);
 
   return (
-    showModal && randomBrand && (
+    showModal &&
+    randomBrand && (
       <div className={`modal-overlay ${isActive ? "active" : ""}`}>
         <div className="modal-content relative">
-          <p>Random Brand</p>
-          <span className="mb-2">Pay attention to a random brand suggested just for you</span>
-          <div className="card-brand flex items-center mt-2" key={randomBrand.id}>
+          <p>{t("random.brand")}</p>
+          <span className="mb-2">{t("random.description")}</span>
+          <div
+            className="card-brand flex items-center mt-2"
+            key={randomBrand.id}
+          >
             <div className="brandImage p-3">
               <Link href={`/bonuses/${randomBrand.id}`}>
                 <Image
@@ -75,24 +83,26 @@ const Modal = () => {
                 }}
               />
             </div>
-              <div className="buttons p-3">
-                <Link
-                  className="btn btn-secondary flex justify-center items-center mb-1"
-                  href={`/bonuses/${randomBrand.id}`}
-                >
-                  <Eye className="mr-1" size={20} />
-                 Review
-                </Link>
-                <Link
-                  className="btn btn-primary flex justify-center items-center mt-1"
-                  href={extractLink(randomBrand.content.rendered)}
-                >
-                  <Play className="mr-1" size={20} />
-                  Play
-                </Link>
-              </div>
+            <div className="buttons p-3">
+              <Link
+                className="btn btn-secondary flex justify-center items-center mb-1"
+                href={`/bonuses/${randomBrand.id}`}
+              >
+                <Eye className="mr-1" size={20} />
+                {t("button.review")}
+              </Link>
+              <Link
+                className="btn btn-primary flex justify-center items-center mt-1"
+                href={extractLink(randomBrand.content.rendered)}
+              >
+                <Play className="mr-1" size={20} />
+                {t("button.play")}
+              </Link>
+            </div>
           </div>
-          <button className="absolute top-3 right-3" onClick={closeModal}><X size={20} /></button>
+          <button className="absolute top-3 right-3" onClick={closeModal}>
+            <X size={20} />
+          </button>
         </div>
       </div>
     )

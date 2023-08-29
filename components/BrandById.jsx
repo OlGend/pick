@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useBrandById } from "./useBrandById";
@@ -20,6 +21,8 @@ import {
 import Loader from "@/components/Loader";
 
 export default function Brand({ brand }) {
+  const { t } = useTranslation();
+
   const oneBrand = useBrandById(brand);
 
   useEffect(() => {
@@ -67,23 +70,23 @@ export default function Brand({ brand }) {
   }, [oneBrand]);
   useEffect(() => {
     const withdrawalItems = document.querySelectorAll(".providers-items div");
-    
+
     withdrawalItems.forEach((item) => {
       const content = item.textContent.trim();
-  
+
       // Удаляем недопустимые символы для CSS-классов и HTML-сущности
       const cleanedContent = content.replace(/[^\w\s-]/g, "");
-  
+
       // Проверяем, начинается ли текст с цифры, и добавляем "a" при необходимости
-      const adjustedContent = /^[0-9]/.test(cleanedContent) ? "a" + cleanedContent : cleanedContent;
-  
+      const adjustedContent = /^[0-9]/.test(cleanedContent)
+        ? "a" + cleanedContent
+        : cleanedContent;
+
       // Заменяем пробелы на дефисы и приводим к нижнему регистру
       const className = adjustedContent.toLowerCase().replace(/\s+/g, "-");
       item.classList.add(className);
     });
   }, [oneBrand]);
-  
-  
 
   return (
     <>
@@ -112,7 +115,7 @@ export default function Brand({ brand }) {
                           />
                         </Link>
                       ) : (
-                        <p>Завантаження...</p>
+                        <Loader />
                       )}
                     </div>
 
@@ -123,8 +126,8 @@ export default function Brand({ brand }) {
                           {numericRating}/5
                         </div>
                         <div className="basis-[50%] p-2 safeIndex">
-                          <div className="font-bold">Safety Index </div>
-                          <div>by Our Casino</div>
+                          <div className="font-bold">{t("brand.safety")}</div>
+                          <div>{t("brand.our")}</div>
                         </div>
                       </div>
                     </div>
@@ -150,7 +153,9 @@ export default function Brand({ brand }) {
                         __html: extractBadge(oneBrand.content.rendered),
                       }}
                     />
-                    <div className="title mt-2">Withdrawal limits:</div>
+                    <div className="title mt-2">
+                      {t("allBrands.withLimits")}
+                    </div>
                     <div
                       className="limits flex items-center"
                       dangerouslySetInnerHTML={{
@@ -161,7 +166,7 @@ export default function Brand({ brand }) {
                       className="btn btn-primary mt-3 text-center flex justify-center items-center"
                       href={playLink}
                     >
-                      <Play className="mr-2" size={24} /> Play Now
+                      <Play className="mr-2" size={24} /> {t("button.play")}
                     </Link>
                   </div>
                   <div className="otherContent ml-6 basis-[75%]">
@@ -177,7 +182,9 @@ export default function Brand({ brand }) {
                       />
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">Deposit Methods:</span>
+                          <span className="mt-2 ">
+                            {t("allBrands.depMethods")}
+                          </span>
                         </div>
                         <div
                           className="withdrawal"
@@ -188,7 +195,9 @@ export default function Brand({ brand }) {
                       </div>
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">Withdrawal Methods:</span>
+                          <span className="mt-2 ">
+                            {t("allBrands.withMethods")}
+                          </span>
                         </div>
                         <div
                           className="withdrawal"
@@ -201,7 +210,7 @@ export default function Brand({ brand }) {
                       </div>
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">Game Providers:</span>
+                          <span className="mt-2 ">{t("brand.providers")}</span>
                         </div>
                         <div className="providers-items pt-2">
                           {extractProviders(oneBrand.content.rendered).map(
@@ -215,7 +224,7 @@ export default function Brand({ brand }) {
                       </div>
                       <div className="restricted mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">Restricted countries:</span>
+                          <span className="mt-2 ">{t("brand.restricted")}</span>
                         </div>
                         <div className="countries-items pt-2">
                           {extractCountries(oneBrand.content.rendered).map(

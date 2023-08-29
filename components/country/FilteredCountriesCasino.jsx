@@ -5,18 +5,16 @@ import { useTranslation } from "react-i18next";
 import AllCountryCasinos from "./AllCountryCasinos";
 import Loader from "@/components/Loader";
 
-
 const FilteredCasinos = () => {
   const { t } = useTranslation();
   const [currentTab, setCurrentTab] = useState(1);
-  
 
   const navigateBrands = [
     {
       currentTab: 1,
       currentCategories: 138,
       topCurrentCategories: 112,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🌍",
       slug: "by-country",
     },
@@ -24,7 +22,7 @@ const FilteredCasinos = () => {
       currentTab: 2,
       currentCategories: 143,
       topCurrentCategories: 184,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇦🇺",
       slug: "australia",
     },
@@ -32,7 +30,7 @@ const FilteredCasinos = () => {
       currentTab: 3,
       currentCategories: 119,
       topCurrentCategories: 84,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇧🇷",
       slug: "brazil",
     },
@@ -40,7 +38,7 @@ const FilteredCasinos = () => {
       currentTab: 4,
       currentCategories: 120,
       topCurrentCategories: 46,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇨🇦",
       slug: "canada",
     },
@@ -48,7 +46,7 @@ const FilteredCasinos = () => {
       currentTab: 5,
       currentCategories: 121,
       topCurrentCategories: 43,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇫🇮",
       slug: "finland",
     },
@@ -56,7 +54,7 @@ const FilteredCasinos = () => {
       currentTab: 6,
       currentCategories: 122,
       topCurrentCategories: 45,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇩🇪",
       slug: "germany",
     },
@@ -64,7 +62,7 @@ const FilteredCasinos = () => {
       currentTab: 7,
       currentCategories: 123,
       topCurrentCategories: 47,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇳🇿",
       slug: "new-zealand",
     },
@@ -72,7 +70,7 @@ const FilteredCasinos = () => {
       currentTab: 8,
       currentCategories: 124,
       topCurrentCategories: 44,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇳🇴",
       slug: "norway",
     },
@@ -80,7 +78,7 @@ const FilteredCasinos = () => {
       currentTab: 9,
       currentCategories: 125,
       topCurrentCategories: 48,
-      currentText: "Casinos",
+      currentText: "tab.casinos",
       icon: "🇵🇱",
       slug: "poland",
     },
@@ -100,20 +98,13 @@ const FilteredCasinos = () => {
   };
 
   return (
- 
     <div className="main pt-10 pb-10 custom-bonuses">
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
-            <h2 className="">
-              Interactive List of Online Casinos 2023: Filtering by Country
-            </h2>
-            <p className="mt-3 pb-4">
-              Looking for the perfect online casino? Explore our interactive
-              list for 2023, specifically designed to help you filter through an
-              array of options based on country. Tailor your search to find the
-              most reputable, safe, and exciting casinos available in your
-              region.
+            <h2 className="text-white">{t("filtered.countries.title")}</h2>
+            <p className="text-white mt-5">
+              {t("filtered.countries.description")}
             </p>
           </div>
         </div>
@@ -141,7 +132,6 @@ const FilteredCasinos = () => {
                   key={item.currentTab}
                   choose={item.currentCategories}
                   topchoose={item.topCurrentCategories}
-
                 />
               )
             );

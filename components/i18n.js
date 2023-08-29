@@ -6,7 +6,6 @@ import enTranslation from "@/components/posts/en.json"; // Путь к файл�
 import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
 import noTranslation from "@/components/posts/no.json"; // Путь к файлу с польскими переводами
 
-
 const resources = {
   en: {
     translation: {
@@ -22,6 +21,19 @@ const resources = {
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
+      "header.payments": "All Payments ▼",
+      "header.providers": "Game Providers ▼",
+      "header.countries": "Casinos by Country ▼",
+
+      "header.austr": "Australian Casino",
+      "header.brazil": "Brazilian Casino",
+      "header.canada": "Canadian Casino",
+      "header.finnish": "Finnish Casino",
+      "header.germany": "Germanian Casino",
+      "header.nz": "New Zealandian Casino",
+      "header.norw": "Norwegian Casino",
+      "header.polish": "Polish Casino",
+
       "header.spins": "Free Spins",
       "header.guides": "Guides",
       "header.about": "About Us",
@@ -194,6 +206,160 @@ const resources = {
 
       "GuideSlotsPage.title": "Latest Casino Guides",
 
+      "filtered.payments.title":
+        "Catalog of all offered Online Casinos by Payment Methods in 2023",
+      "filtered.payments.description":
+        "Looking for online casinos with specific payment methods? Explore our current database of numerous casino offers for you to choose from.",
+      "apple.title":
+        "Exceptional Online Casinos That Welcome Apple Pay Transactions in 2023",
+      "apple.description":
+        " Wondering which online casinos accept Apple Pay for financial transactions? Let our guide direct you to the most reliable Apple Pay casinos for a top-notch gaming experience.",
+      "bitcoin.title":
+        "Premier Bitcoin & Cryptocurrency Gambling Destinations in 2023.",
+      "bitcoin.description":
+        " Explore our curated selection of leading Bitcoin-friendly casinos and gaming platforms that welcome BTC and other digital currencies. Dive into our impartial reviews to discover the ideal Bitcoin gambling venue for you right now.",
+      "ecopayz.title":
+        "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2023",
+      "ecopayz.description":
+        "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.",
+      "maestro.title":
+        "Top-Rated Online Casinos Accepting Maestro Payments for 2023",
+      "maestro.description":
+        "Interested in gaming at online casinos that welcome Maestro transactions? Let Casino Guru steer you to the ideal Maestro-friendly casino for you.",
+      "mastercard.title":
+        "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2023",
+      "mastercard.description":
+        " Interested in gaming at a Mastercard-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.",
+      "mobi.title":
+        "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2023.",
+      "mobi.description":
+        "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.",
+      "muchbetter.title":
+        "Top Online Casinos Supporting MuchBetter Transactions in 2023",
+      "muchbetter.description":
+        "Searching for casinos compatible with MuchBetter? Consult our guide to discover the ideal MuchBetter-friendly casino for you.",
+      "neosurf.title":
+        "Top-Rated Online Casinos Supporting Neosurf Transactions for 2023",
+      "neosurf.description":
+        "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.",
+      "neteller.title":
+        "Top Online Casinos Supporting Neteller Transactions in 2023",
+      "neteller.description":
+        "  Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by Casino Guru. ✅ Discover your ideal Neteller-friendly casino.",
+      "allpayments.title":
+        "Digital Casino Financial Transactions & Payment Selections",
+      "allpayments.description":
+        "Currently, there exist numerous methods for funding a gaming account. Listed below are internet casinos categorized by widely utilized payment options. Some casinos accommodate MasterCard, Visa, and digital currency, while others endorse less conventional avenues like Neteller and Skrill. The choice of your preferred payment mechanism lies in your hands.",
+      "paypal.title":
+        "Leading Online Casinos Accepting PayPal Payments in 2023",
+      "paypal.description":
+        "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!",
+      "paysafe.title": "Top-Ranked Online Casino Platforms for 2023",
+      "paysafe.description":
+        "Our specialists have scrutinized more than 5,000 digital gambling platforms and selected the cream of the crop. Explore our curated list to discover your ideal online casino.",
+      "pix.title":
+        "Discover Top-Rated Casinos Accepting Pix Payments for Quick and Secure Transactions",
+      "pix.description":
+        "Explore our curated list of premium casinos that support Pix as a payment option. Known for its speed and security, Pix is a go-to method for deposits and withdrawals among online casino enthusiasts worldwide. It offers the advantage of sidestepping traditional banking hassles and pesky geographical limits. If you haven't set up a Pix wallet yet, it's easy to do so—then you're all set to try your luck!",
+      "skrill.title":
+        "Top Online Casinos Supporting Skrill Transactions for 2023",
+      "skrill.description":
+        "Searching for an online casino that allows Skrill payments? Browse our curated selection of premier Skrill-compatible casinos to find your ideal gaming destination.",
+      "trustly.title":
+        "Top Online Casinos Supporting Trustly Transactions for 2023",
+      "trustly.description":
+        "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.",
+      "visa.title":
+        "Top-Rated Online Casinos Welcoming Visa Transactions in 2023",
+      "visa.description":
+        "Interested in gaming at a Visa-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.",
+
+      "filtered.countries.title":
+        "Interactive List of Online Casinos 2023: Filtering by Country",
+      "filtered.countries.description":
+        " Looking for the perfect online casino? Explore our interactive list for 2023, specifically designed to help you filter through an array of options based on country. Tailor your search to find the most reputable, safe, and exciting casinos available in your region.",
+      "countries.title":
+        "Global Online Casino Review: Top Platforms by Country",
+      "countries.description":
+        "Searching for the perfect online casino? Our comprehensive compilation showcases the most reliable and enticing casinos available across the globe. Here, you'll find information on lucrative bonuses, dependable customer service, and various payment methods ranging from credit cards to e-wallets. No matter where you are located, we have something to offer for every player.",
+      "australia.title":
+        "Australian Online Casino Overview: The Pinnacle of Gaming Down Unde",
+      "australia.description":
+        "Seeking an unparalleled gaming experience in Australia? Our curated list spotlights the crème de la crème of Australian online casinos. Dive into a world of generous bonuses, impeccable customer service, and diverse payment options—ranging from traditional bank transfers to modern e-wallet solutions. For those located in Australia, we offer a tailored gaming journey that's second to none.",
+      "brazil.title":
+        "Brazilian Online Casino Guide: Your Portal to Gaming Bliss in Brazil",
+      "brazil.description":
+        "Looking for a top-tier gaming experience in Brazil? Our expertly curated list highlights the most exceptional online casinos available in the Brazilian market. Explore a universe of rewarding bonuses, dependable customer service, and a myriad of payment options, from traditional bank transfers to modern digital wallets. If you're in Brazil, we've got your ultimate gaming adventure covered.",
+      "canada.title":
+        "Canadian Online Casino Guide: Uncovering the Best in Canadian Gaming",
+      "canada.description":
+        "In search of an exceptional gaming experience in Canada? Our meticulously curated list features the top online casinos available to the Canadian audience. Dive into a realm of generous bonuses, stellar customer service, and a wide array of payment options that include traditional bank transfers as well as contemporary e-wallets. If you're based in Canada, your ultimate gaming adventure awaits.",
+      "finland.title":
+        "Finnish Online Casino Guide: The Ultimate Gaming Experience in Finland",
+      "finland.description":
+        "Searching for an unparalleled gaming adventure in Finland? Our hand-picked selection showcases the finest online casinos catering to the Finnish audience. Step into a realm filled with generous bonuses, top-notch customer service, and a broad spectrum of payment methods from traditional bank transfers to modern e-wallets. If you're in Finland, your one-of-a-kind gaming journey starts here",
+      "germany.title":
+        "German Online Casino Guide: The Ultimate Gaming Haven in Deutschland",
+      "germany.description":
+        "Are you on the quest for an exceptional gaming experience in Germany? Our carefully curated list highlights the best online casinos available for the German market. Venture into a world rich with enticing bonuses, reliable customer support, and a multitude of payment options, including traditional bank transfers and contemporary e-wallets. If you're in Germany, your unparalleled gaming journey begins here",
+      "nz.title":
+        "New Zealand Online Casino Guide: The Ultimate Kiwi Gaming Experience",
+      "nz.description":
+        "Searching for an extraordinary gaming experience in New Zealand? Our rigorously curated list features the cream of the crop in online casinos available to Kiwi players. Step into a world of lavish bonuses, excellent customer service, and a plethora of payment options ranging from traditional bank transfers to cutting-edge e-wallets. For those in New Zealand, your unparalleled gaming adventure starts right here.",
+      "norway.title":
+        "Norwegian Online Casino Guide: The Apex of Gaming in Norway",
+      "norway.description":
+        "Looking for an unmatched gaming experience in Norway? Our carefully vetted list highlights the top online casinos available to Norwegian players. Enter a realm of substantial bonuses, first-rate customer support, and a wide variety of payment options from traditional bank transfers to state-of-the-art e-wallets. If you're in Norway, the ultimate gaming escapade awaits you here.",
+      "poland.title":
+        "Polish Online Casino Guide: The Premier Gaming Destination in Poland",
+      "poland.description":
+        "Seeking an unparalleled gaming experience in Poland? Our scrupulously curated list highlights the elite online casinos accessible to Polish players. Step into a world rich in lucrative bonuses, impeccable customer service, and a myriad of payment options, from traditional bank transfers to innovative e-wallet solutions. If you're in Poland, your matchless gaming journey starts here.",
+
+      "filtered.providers.title":
+        "Comprehensive 2023 Directory for Online Casinos Sorted by Game Providers",
+      "filtered.providers.description":
+        "Interested in locating online casinos featuring games from particular providers? Browse our up-to-date list of diverse casino options to find your perfect match.",
+      "amatic.title": "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles",
+      "amatic.description": "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.",
+      "amusnet.title": "Two Decades of Gaming Excellence: Exploring Amusnet Interactive&#39;s Innovative Portfolio",
+      "amusnet.description": "Spanning over 20 years, Amusnet Interactive has amassed a significant following thanks to its relentless focus on game innovation, including the integration of in-game jackpots across several of its offerings. Notable Amusnet Interactive titles encompass Supreme Hot, Burning Hot, Ultimate Hot, and Shining Crown. Dive into the exhilarating gameplay and compelling elements presented by Amusnet Interactive's remarkable range of games.",
+      "bgaming.title": "Rising Star in iGaming: BGaming's Rapid Ascent Through Innovation and Quality",
+      "bgaming.description": " Though a relative novice in the iGaming realm, BGaming has rapidly ascended as a premier provider of online casino entertainment, owing to its superior quality and inventive strategies. Specializing in slots, casual diversions, and classic table games, BGaming constantly refreshes its game lineup with compelling storylines, unforgettable personas, and engaging promotional campaigns. Noteworthy titles such as Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon, and Aloha King Elvis populate their standout collection. Delve into the thrilling and engaging world presented by BGaming's exceptional range of gaming options.",
+      "boongo.title": " Boongo Gaming: Crafting Immersive Digital Experiences through Innovative Game Design",
+      "boongo.description": " Boongo Gaming has quickly distinguished itself in the competitive iGaming sector with visually appealing and feature-rich games. Known for titles like 'God's Temple' and '15 Golden Eggs,' the company excels in both innovation and quality. Their robust backend solutions further enhance the gaming experience. Whether you're a casual player or a dedicated enthusiast, Boongo Gaming offers a memorable gaming journey.",
+      "evolution.title": "Evolution Gaming: Setting the Gold Standard in Live Casino Experiences",
+      "evolution.description": "A recognized leader in the live casino arena, Evolution Gaming has earned its reputation through a commitment to unparalleled quality and innovation. Offering a rich variety of live dealer games, from classics like blackjack and roulette to unique offerings like Lightning Dice, the company consistently delivers engaging and authentic experiences. By utilizing cutting-edge streaming technology and employing professional dealers, Evolution Gaming ensures a seamless and immersive gaming atmosphere that sets them apart in the industry.",
+      "mascot.title": "Mascot Gaming: An Emerging Powerhouse in Tailored iGaming Solutions",
+      "mascot.description": "Quickly rising through the ranks of the iGaming industry, Mascot Gaming is garnering attention for its custom gaming solutions. With a balanced portfolio of slots, table games, and interactive experiences, the company is making its mark through a blend of creativity and technology. Known for titles like 'Reel Monsters' and 'Fruit Vegas,' Mascot Gaming combines captivating visuals with intriguing gameplay features. Their unique approach to gaming has made them a go-to for operators seeking versatile and engaging content, setting the stage for what promises to be a bright future in the sector.",
+      "netent.title": "NetEnt Gaming: Pioneering Excellence in the iGaming World",
+      "netent.description": "As one of the stalwarts in the iGaming industry, NetEnt Gaming has consistently pushed the envelope in terms of quality, innovation, and gameplay. With a broad spectrum of offerings from classic slots like 'Starburst' to groundbreaking live casino games, the company has set industry benchmarks time and again. Utilizing state-of-the-art technology and creative storytelling, NetEnt offers an unrivaled gaming experience that keeps players coming back for more. Their reputation for excellence is backed by an extensive portfolio that continually evolves, solidifying their position as a leader in digital gaming.",
+      "nolimit.title": "No Limit City Gaming: Unbounded Innovation in the iGaming Sphere",
+      "nolimit.description": "Emerging as a force to be reckoned with in the iGaming industry, No Limit City Gaming is synonymous with creative freedom and technological prowess. Known for unique slots like 'Deadwood' and 'Punk Rocker,' the company goes beyond the norm to offer riveting themes and game mechanics. Their dedication to innovation is evident, providing a refreshing and unpredictable gaming experience. By continually pushing the boundaries of what’s possible, No Limit City Gaming has carved a niche for itself as an avant-garde game provider in a highly competitive market.",
+      "playngo.title": "Play'n GO Gaming: A Vanguard of Versatility and Innovation in iGaming",
+      "playngo.description": "Cementing its status as a trendsetter in the iGaming community, Play'n GO Gaming is celebrated for its wide-ranging and inventive game portfolio. From iconic slots like 'Book of Dead' to inventive table games, the company provides an all-encompassing gaming experience. Employing cutting-edge technology and captivating narratives, Play'n GO has mastered the art of creating games that are not just visually appealing but also rich in features. Their unyielding commitment to quality and innovation makes them a preferred choice for both casual gamers and ardent casino enthusiasts, continually setting new standards in the ever-evolving gaming landscape.",
+      "pragmatic.title": "Pragmatic Play: Fusing Quality and Creativity for an Unmatched iGaming Experience",
+      "pragmatic.description": "A frontrunner in the iGaming industry, Pragmatic Play has made its name through a potent blend of innovative gameplay and top-notch graphics. Renowned for popular titles like 'Wolf Gold' and 'The Dog House,' the company delivers a versatile range of slots, live casino games, and even bingo offerings. Pragmatic Play's commitment to quality is manifest in its intuitive interfaces, engaging storylines, and well-executed game mechanics. By consistently rolling out new and captivating games, they manage to stay ahead in the competitive world of online gaming, solidifying their reputation as a reliable and inventive game provider.",
+      "allproviders.title": "Easily Find Your Ideal Online Casino: Sorted by Game Developers for Tailored Gaming Experiences",
+      "allproviders.description": "To make your hunt easier, we've sorted our casino offerings by game developer. This enables you to effortlessly locate a gaming site that provides the exact games you wish to play. From state-of-the-art video slots and electrifying live casino experiences to traditional table games, we've got all your preferences accounted for. Browse our detailed list of game providers to find casinos backed by premier software developers, guaranteeing high-quality visuals, captivating gameplay, and engaging features.",
+      "pushgaming.title": "Push Gaming: Revolutionizing iGaming with Cutting-Edge Concepts",
+      "pushgaming.description": "In the ever-competitive realm of iGaming, Push Gaming stands out for groundbreaking slots like 'Jammin' Jars' and 'Wild Swarm,' the company excels in delivering games with exceptional visuals and intricate gameplay features. Push Gaming's focus on mobile-optimized, HTML5-based games ensures a seamless experience across devices. Their capacity to marry traditional gaming elements with novel twists makes them a sought-after provider, continually pushing the envelope in terms of what is possible in the iGaming world.",
+      "spinomenal.title": "Spinomenal: A New Age Innovator in the iGaming Ecosystem",
+      "spinomenal.description": "Earning its place as an agile and forward-thinking player in the iGaming scene, Spinomenal is recognized for its inventive approach to game development. Specializing in highly engaging slots like 'Book of Guardians' and 'Demi Gods II,' the company combines vibrant graphics with enticing gameplay mechanics. Spinomenal's commitment to user experience is evident, offering games that are optimized for both desktop and mobile play. Their innovative features, such as bonus games and progressive jackpots, make them a standout provider in an ever-growing market, appealing to a wide range of players seeking fresh and exciting gaming experiences.",
+
+      "brand.safety": "Safety Index",
+      "brand.our": "by Our Casino",
+      "brand.providers": "Game Providers:",
+      "brand.restricted": "Restricted countries:",
+
+
+
+
+      "tab.casinos": "Casinos",
+      "random.brand": "Random Brand",
+      "random.description": "Pay attention to a random brand suggested just for you",
+      "slider.title": "Reccomend brands for you",
+
+
       "button.read": "Read More",
       "button.less": "Read Less",
 
@@ -201,6 +367,10 @@ const resources = {
       "button.load": "Load More Brands",
       "button.review": "Read Review",
       "button.play": "Play Now",
+
+      "subscribe.text": " Subscribe to our mailing list to receive the latest reviews right now, or check out our mailing ",
+      "subscribe.link": "List Examples",
+
     },
   },
   au: {
@@ -1189,108 +1359,109 @@ const resources = {
     translation: {
       guideposts: enTranslation,
       guideslotsguide:
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
-    guideslotsguide2:
-      "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
-    "guideslotsguide.title": "Glücksspielführer",
-    "guideslotsguide.excerpt":
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
-    
-    "header.home": "Startseite",
-    "header.bonuses": "Boni ▼",
-    "header.casinos": "Kasinos ▼",
-    "header.spins": "Freispiele",
-    "header.guides": "Anleitungen",
-    "header.about": "Über uns",
-    "header.contacts": "Kontakte",
-    
-    "header.homebonuses": "Boni",
-    "header.homecasinos": "Kasinos",
-    "header.homespins": "Freispiele",
-    "header.homeguides": "Glücksspielführer",
-    
-    "header.nodeposit": "Keine Einzahlungsboni",
-    "header.exclusive": "Exklusive Boni",
-    "header.deposit": "Einzahlungsboni",
-    "header.welcome": "Willkommensboni",
-    "header.nowager": "Bonis ohne Umsatzbedingungen",
-    "header.cryptocasinos": "Krypto-Kasinos",
-    "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
-    "header.livecasinos": "Live-Kasinos",
-    "header.newestcasinos": "Neueste Kasinos",
-    "header.certifiedcasinos": "Top zertifizierte Kasinos",
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspielführer",
+      "guideslotsguide.excerpt":
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
 
-    "searchBrands.placeholder": "Marken suchen...",
+      "header.home": "Startseite",
+      "header.bonuses": "Boni ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.spins": "Freispiele",
+      "header.guides": "Anleitungen",
+      "header.about": "Über uns",
+      "header.contacts": "Kontakte",
 
-    "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
-    "home.description":
-      "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
-    
-    "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
-    "newBrands.title": "Neueste Casino-Zugänge 2023",
-    
-    "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
-    "reviewBrands.description1":
-      "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
-    
-    "reviewBrands.question1.title":
-      "Derzeit auf der Suche nach neuen Casino-Websites",
-    "reviewBrands.question1.excerpt":
-      "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.link": "gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.excerpt2":
-      ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
-    
-    "reviewBrands.question2.title":
-      "Die präzisesten Details zu jedem Casino",
-    "reviewBrands.question2.excerpt":
-      "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
-    
-    "reviewBrands.question3.title":
-      "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
-    "reviewBrands.question3.excerpt":
-      "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
-    "reviewBrands.question3.link": "und unvoreingenommenen Überprüfungsansatz",
-    
-    "reviewBrands.button1": "Top-Boni entdecken",
-    "reviewBrands.button2": "Top-Casinos entdecken",
-    
-    "reviewBrands.title2": "Wir sind leidenschaftlich über Boni ohne Einzahlung",
-    "reviewBrands.description2":
-      "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
-    
-    "reviewBrands.question4.title":
-      "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
-    "reviewBrands.question4.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.excerpt2":
-      ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
-    
-    "reviewBrands.question5.title":
-      "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
-    "reviewBrands.question5.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
-    "reviewBrands.question5.link": "exklusiven Boni",
-    "reviewBrands.question5.excerpt2":
-      " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
-    
-    "reviewBrands.question6.title":
-      "Umfassende und präzise Details zu jedem Bonus",
-    "reviewBrands.question6.excerpt":
-      "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
-    
+      "header.homebonuses": "Boni",
+      "header.homecasinos": "Kasinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielführer",
+
+      "header.nodeposit": "Keine Einzahlungsboni",
+      "header.exclusive": "Exklusive Boni",
+      "header.deposit": "Einzahlungsboni",
+      "header.welcome": "Willkommensboni",
+      "header.nowager": "Bonis ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto-Kasinos",
+      "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
+      "header.livecasinos": "Live-Kasinos",
+      "header.newestcasinos": "Neueste Kasinos",
+      "header.certifiedcasinos": "Top zertifizierte Kasinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
+      "home.description":
+        "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
+
+      "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Zugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
+
+      "reviewBrands.question1.title":
+        "Derzeit auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
+
+      "reviewBrands.question2.title": "Die präzisesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Überprüfungsansatz",
+
+      "reviewBrands.button1": "Top-Boni entdecken",
+      "reviewBrands.button2": "Top-Casinos entdecken",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
+      "reviewBrands.question4.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
+
+      "reviewBrands.question5.title":
+        "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
+      "reviewBrands.question5.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
 
       "filteredHome.title": "Katalog aller Online Casino Boni für 2023",
       "filteredHome.description":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "navigateBrands.all": "Alle Marken",
       "navigateBrands.recommend": "Empfohlene Marken",
       "navigateBrands.newly": "Neue Marken",
       "navigateBrands.crypto": "Krypto-Marken",
       "navigateBrands.sports": "Top Sport-Marken",
-      
+
       "allBrands.withLimits": "Auszahlungslimits:",
       "allBrands.advantages": "Vorteile",
       "allBrands.depMethods": "Einzahlungsmethoden",
@@ -1298,197 +1469,199 @@ const resources = {
       "allBrands.restricted": "Eingeschränkte Länder",
       "allBrands.howGet": "Wie erhalte ich den Bonus?",
       "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
-      
+
       "guideSlotsHome.title1": "Online Glücksspielhandbücher",
       "guideSlotsHome.title2": "Budget für Glücksspiele festlegen",
       "guideSlotsHome.excerpt1":
         "Bevor Sie eine Glücksspielsitzung beginnen, ist es wichtig, ein Budget festzulegen und strikt einzuhalten. Stellen Sie sicher, dass der zugewiesene Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr Glückstag ist und verloren gehen könnte.",
-      "guideSlotsHome.title3": "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
+      "guideSlotsHome.title3":
+        "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
       "guideSlotsHome.excerpt2":
         "Die unvorhersehbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten und letztendlich zur Entwicklung einer Glücksspielsucht führen kann.",
       "guideSlotsHome.title3":
         "Achten Sie genau auf Ihre Emotionen während des Glücksspiels",
       "guideSlotsHome.excerpt3":
         "Genießen Sie das Unterhaltungsangebot des Glücksspiels und achten Sie dabei darauf, dass es beim Spielen angenehm bleibt. Wenn Sie erhöhte Wut, Frustration oder Schwierigkeiten bei rationalen Entscheidungen bemerken, ist es unerlässlich, mit dem Spielen aufzuhören.",
-      
-      "previewBonuses.title": "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
       "previewBonuses.excerpt":
         "Suchen Sie nach aufregenden Online Casino Boni und Promotionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine große Auswahl an verlockenden Casino Bonusangeboten, die alle Spielerpräferenzen abdecken. Egal, ob Sie Freispiele, Einzahlungsboni oder Cashback-Belohnungen bevorzugen, wir haben die besten Angebote aus der Welt des Glücksspiels für Sie. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
-      
+
       "nodepositbonuses.title":
         "Unwiderstehlich im Jahr 2023: Boni ohne Einzahlung im Casino und einzigartige Bonuscodes",
       "nodepositbonuses.excerpt":
         "Neu im Jahr 2023: Ein kontinuierlich aktualisierter Katalog von Boni ohne Einzahlung für virtuelle Casinos. Erhalten Sie exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
-      
+
       "exclusivebonuses.title":
         "Umfassende Zusammenstellung von Online Casino Boni zugänglich im Jahr 2023",
       "exclusivebonuses.excerpt":
         "Suchen Sie im Web nach Casino Boni und Promotionen? Entdecken Sie unsere aktuelle, gut gepflegte Sammlung von zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "depositbonuses.title":
         "Beste Casino Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
       "depositbonuses.excerpt":
         "Wählen Sie aus einer Vielzahl von erstklassigen Einführungs-Casino-Belohnungen und erhalten Sie zusätzliche Bonusmittel, die in Ihre erste Einzahlung integriert sind. Exklusive Anmeldeanreiz-Angebote für neue Teilnehmer.",
-      
+
       "welcomebonuses.title": "Willkommensboni 2023",
       "welcomebonuses.excerpt":
         "Wenn Sie nach einer hochwertigen Casino-Erfahrung suchen, die mit verlockenden Boni kombiniert ist, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler, die in der Regel als Freispiele oder Cashback-Belohnungen präsentiert werden. Erkunden Sie unsere Zusammenstellung von Einführungs-Boni von renommierten Online Casinos, um eine ideale Übereinstimmung für Ihre Präferenzen sicherzustellen.",
-      
+
       "nowagerbonuses.title": "Bonuscodes ohne Wettanforderungen 2023",
       "nowagerbonuses.excerpt":
         "Suchen Sie nach Bonuscodes ohne Wettanforderungen? Entdecken Sie unsere exklusive Zusammenstellung von wettanforderungsfreien Bonuscodes, die nur im Casino erhältlich sind.",
-      
+
       "cryptocasinos.title":
         "Top Kryptowährungs-Wettplattformen & Bitcoin Casino Seiten im Jahr 2023",
       "cryptocasinos.excerpt":
         "Erkunden Sie unsere Zusammenstellung erstklassiger Online Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie in unvoreingenommene Bewertungen ein und finden Sie das ultimative Bitcoin Casino-Ziel, das auf Ihre Präferenzen zugeschnitten ist.",
-      
 
-        "fastcasinos.title":
+      "fastcasinos.title":
         "Das schnellste Auszahlungs-Casino und Wettplattformen 2023",
       "fastcasinos.excerpt":
         "Der vorteilhafteste Aspekt von Casinos mit schnellen Auszahlungen ist ihre schnelle und zuverlässige Ausschüttung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig erstellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und signifikant steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten zur Verwendung dieser Mittel vor!",
-      
+
       "livecasinos.title": "Hervorragende Live-Dealer Casinos des Jahres 2023",
       "livecasinos.excerpt":
         "Erkunden Sie diese Zusammenstellung erstklassiger Live-Dealer Casinos für ein immersives Spielerlebnis und entdecken Sie erstklassige Online Casinos, die fesselnde Live-Casino-Spiele nach Ihren Vorlieben anbieten.",
-      
+
       "newestasinos.title": "Neueinsteiger in der Online Casino Szene 2023",
       "newestasinos.excerpt":
         "Auf der Suche nach frischen Online Casino Plattformen für das Jahr 2023? Entdecken Sie neu gestartete Casino Websites, die herausragende Anreize und innovative Merkmale bieten. Ständig aktualisiert für Ihre Erkundung.",
-      
-      "certifiedcasinos.title": "Erstklassige akkreditierte Casinos im Jahr 2023",
+
+      "certifiedcasinos.title":
+        "Erstklassige akkreditierte Casinos im Jahr 2023",
       "certifiedcasinos.excerpt":
         "Das Gaming bildet einen bedeutenden Sektor, und mit der Unterstützung von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen und sich darauf verlassen, dass es von offiziellen staatlichen Stellen überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
-      
+
       "filteredBonuses.title":
         "Katalog aller Online Casino Boni für das Jahr 2023",
       "filteredBonuses.excerpt":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "filteredCasinos.title":
         "Umfassende Zusammenstellung der Online Casino Auswahl für das Jahr 2023",
       "filteredCasinos.excerpt":
         "Auf der Suche nach einem Online Casino? Navigieren Sie durch unser aktuelles Repository, das eine Vielzahl von Casinos für Ihre Überlegung bereithält.",
-      
+
       "GuideSlotsPage.title": "Neueste Casino Anleitungen",
-      
+
       "button.read": "Mehr lesen",
       "button.less": "Weniger lesen",
-      
+
       "button.view": "Alle Anleitungen anzeigen",
       "button.load": "Mehr Marken laden",
       "button.review": "Rezension lesen",
       "button.play": "Jetzt spielen",
-      
     },
   },
   at: {
     translation: {
       guideposts: enTranslation,
       guideslotsguide:
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
-    guideslotsguide2:
-      "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
-    "guideslotsguide.title": "Glücksspielführer",
-    "guideslotsguide.excerpt":
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
-    
-    "header.home": "Startseite",
-    "header.bonuses": "Boni ▼",
-    "header.casinos": "Kasinos ▼",
-    "header.spins": "Freispiele",
-    "header.guides": "Anleitungen",
-    "header.about": "Über uns",
-    "header.contacts": "Kontakte",
-    
-    "header.homebonuses": "Boni",
-    "header.homecasinos": "Kasinos",
-    "header.homespins": "Freispiele",
-    "header.homeguides": "Glücksspielführer",
-    
-    "header.nodeposit": "Keine Einzahlungsboni",
-    "header.exclusive": "Exklusive Boni",
-    "header.deposit": "Einzahlungsboni",
-    "header.welcome": "Willkommensboni",
-    "header.nowager": "Bonis ohne Umsatzbedingungen",
-    "header.cryptocasinos": "Krypto-Kasinos",
-    "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
-    "header.livecasinos": "Live-Kasinos",
-    "header.newestcasinos": "Neueste Kasinos",
-    "header.certifiedcasinos": "Top zertifizierte Kasinos",
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspielführer",
+      "guideslotsguide.excerpt":
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
 
-    "searchBrands.placeholder": "Marken suchen...",
+      "header.home": "Startseite",
+      "header.bonuses": "Boni ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.spins": "Freispiele",
+      "header.guides": "Anleitungen",
+      "header.about": "Über uns",
+      "header.contacts": "Kontakte",
 
-    "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
-    "home.description":
-      "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
-    
-    "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
-    "newBrands.title": "Neueste Casino-Zugänge 2023",
-    
-    "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
-    "reviewBrands.description1":
-      "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
-    
-    "reviewBrands.question1.title":
-      "Derzeit auf der Suche nach neuen Casino-Websites",
-    "reviewBrands.question1.excerpt":
-      "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.link": "gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.excerpt2":
-      ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
-    
-    "reviewBrands.question2.title":
-      "Die präzisesten Details zu jedem Casino",
-    "reviewBrands.question2.excerpt":
-      "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
-    
-    "reviewBrands.question3.title":
-      "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
-    "reviewBrands.question3.excerpt":
-      "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
-    "reviewBrands.question3.link": "und unvoreingenommenen Überprüfungsansatz",
-    
-    "reviewBrands.button1": "Top-Boni entdecken",
-    "reviewBrands.button2": "Top-Casinos entdecken",
-    
-    "reviewBrands.title2": "Wir sind leidenschaftlich über Boni ohne Einzahlung",
-    "reviewBrands.description2":
-      "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
-    
-    "reviewBrands.question4.title":
-      "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
-    "reviewBrands.question4.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.excerpt2":
-      ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
-    
-    "reviewBrands.question5.title":
-      "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
-    "reviewBrands.question5.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
-    "reviewBrands.question5.link": "exklusiven Boni",
-    "reviewBrands.question5.excerpt2":
-      " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
-    
-    "reviewBrands.question6.title":
-      "Umfassende und präzise Details zu jedem Bonus",
-    "reviewBrands.question6.excerpt":
-      "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
-    
+      "header.homebonuses": "Boni",
+      "header.homecasinos": "Kasinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielführer",
+
+      "header.nodeposit": "Keine Einzahlungsboni",
+      "header.exclusive": "Exklusive Boni",
+      "header.deposit": "Einzahlungsboni",
+      "header.welcome": "Willkommensboni",
+      "header.nowager": "Bonis ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto-Kasinos",
+      "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
+      "header.livecasinos": "Live-Kasinos",
+      "header.newestcasinos": "Neueste Kasinos",
+      "header.certifiedcasinos": "Top zertifizierte Kasinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
+      "home.description":
+        "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
+
+      "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Zugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
+
+      "reviewBrands.question1.title":
+        "Derzeit auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
+
+      "reviewBrands.question2.title": "Die präzisesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Überprüfungsansatz",
+
+      "reviewBrands.button1": "Top-Boni entdecken",
+      "reviewBrands.button2": "Top-Casinos entdecken",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
+      "reviewBrands.question4.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
+
+      "reviewBrands.question5.title":
+        "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
+      "reviewBrands.question5.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
 
       "filteredHome.title": "Katalog aller Online Casino Boni für 2023",
       "filteredHome.description":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "navigateBrands.all": "Alle Marken",
       "navigateBrands.recommend": "Empfohlene Marken",
       "navigateBrands.newly": "Neue Marken",
       "navigateBrands.crypto": "Krypto-Marken",
       "navigateBrands.sports": "Top Sport-Marken",
-      
+
       "allBrands.withLimits": "Auszahlungslimits:",
       "allBrands.advantages": "Vorteile",
       "allBrands.depMethods": "Einzahlungsmethoden",
@@ -1496,197 +1669,199 @@ const resources = {
       "allBrands.restricted": "Eingeschränkte Länder",
       "allBrands.howGet": "Wie erhalte ich den Bonus?",
       "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
-      
+
       "guideSlotsHome.title1": "Online Glücksspielhandbücher",
       "guideSlotsHome.title2": "Budget für Glücksspiele festlegen",
       "guideSlotsHome.excerpt1":
         "Bevor Sie eine Glücksspielsitzung beginnen, ist es wichtig, ein Budget festzulegen und strikt einzuhalten. Stellen Sie sicher, dass der zugewiesene Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr Glückstag ist und verloren gehen könnte.",
-      "guideSlotsHome.title3": "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
+      "guideSlotsHome.title3":
+        "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
       "guideSlotsHome.excerpt2":
         "Die unvorhersehbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten und letztendlich zur Entwicklung einer Glücksspielsucht führen kann.",
       "guideSlotsHome.title3":
         "Achten Sie genau auf Ihre Emotionen während des Glücksspiels",
       "guideSlotsHome.excerpt3":
         "Genießen Sie das Unterhaltungsangebot des Glücksspiels und achten Sie dabei darauf, dass es beim Spielen angenehm bleibt. Wenn Sie erhöhte Wut, Frustration oder Schwierigkeiten bei rationalen Entscheidungen bemerken, ist es unerlässlich, mit dem Spielen aufzuhören.",
-      
-      "previewBonuses.title": "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
       "previewBonuses.excerpt":
         "Suchen Sie nach aufregenden Online Casino Boni und Promotionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine große Auswahl an verlockenden Casino Bonusangeboten, die alle Spielerpräferenzen abdecken. Egal, ob Sie Freispiele, Einzahlungsboni oder Cashback-Belohnungen bevorzugen, wir haben die besten Angebote aus der Welt des Glücksspiels für Sie. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
-      
+
       "nodepositbonuses.title":
         "Unwiderstehlich im Jahr 2023: Boni ohne Einzahlung im Casino und einzigartige Bonuscodes",
       "nodepositbonuses.excerpt":
         "Neu im Jahr 2023: Ein kontinuierlich aktualisierter Katalog von Boni ohne Einzahlung für virtuelle Casinos. Erhalten Sie exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
-      
+
       "exclusivebonuses.title":
         "Umfassende Zusammenstellung von Online Casino Boni zugänglich im Jahr 2023",
       "exclusivebonuses.excerpt":
         "Suchen Sie im Web nach Casino Boni und Promotionen? Entdecken Sie unsere aktuelle, gut gepflegte Sammlung von zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "depositbonuses.title":
         "Beste Casino Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
       "depositbonuses.excerpt":
         "Wählen Sie aus einer Vielzahl von erstklassigen Einführungs-Casino-Belohnungen und erhalten Sie zusätzliche Bonusmittel, die in Ihre erste Einzahlung integriert sind. Exklusive Anmeldeanreiz-Angebote für neue Teilnehmer.",
-      
+
       "welcomebonuses.title": "Willkommensboni 2023",
       "welcomebonuses.excerpt":
         "Wenn Sie nach einer hochwertigen Casino-Erfahrung suchen, die mit verlockenden Boni kombiniert ist, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler, die in der Regel als Freispiele oder Cashback-Belohnungen präsentiert werden. Erkunden Sie unsere Zusammenstellung von Einführungs-Boni von renommierten Online Casinos, um eine ideale Übereinstimmung für Ihre Präferenzen sicherzustellen.",
-      
+
       "nowagerbonuses.title": "Bonuscodes ohne Wettanforderungen 2023",
       "nowagerbonuses.excerpt":
         "Suchen Sie nach Bonuscodes ohne Wettanforderungen? Entdecken Sie unsere exklusive Zusammenstellung von wettanforderungsfreien Bonuscodes, die nur im Casino erhältlich sind.",
-      
+
       "cryptocasinos.title":
         "Top Kryptowährungs-Wettplattformen & Bitcoin Casino Seiten im Jahr 2023",
       "cryptocasinos.excerpt":
         "Erkunden Sie unsere Zusammenstellung erstklassiger Online Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie in unvoreingenommene Bewertungen ein und finden Sie das ultimative Bitcoin Casino-Ziel, das auf Ihre Präferenzen zugeschnitten ist.",
-      
 
-        "fastcasinos.title":
+      "fastcasinos.title":
         "Das schnellste Auszahlungs-Casino und Wettplattformen 2023",
       "fastcasinos.excerpt":
         "Der vorteilhafteste Aspekt von Casinos mit schnellen Auszahlungen ist ihre schnelle und zuverlässige Ausschüttung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig erstellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und signifikant steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten zur Verwendung dieser Mittel vor!",
-      
+
       "livecasinos.title": "Hervorragende Live-Dealer Casinos des Jahres 2023",
       "livecasinos.excerpt":
         "Erkunden Sie diese Zusammenstellung erstklassiger Live-Dealer Casinos für ein immersives Spielerlebnis und entdecken Sie erstklassige Online Casinos, die fesselnde Live-Casino-Spiele nach Ihren Vorlieben anbieten.",
-      
+
       "newestasinos.title": "Neueinsteiger in der Online Casino Szene 2023",
       "newestasinos.excerpt":
         "Auf der Suche nach frischen Online Casino Plattformen für das Jahr 2023? Entdecken Sie neu gestartete Casino Websites, die herausragende Anreize und innovative Merkmale bieten. Ständig aktualisiert für Ihre Erkundung.",
-      
-      "certifiedcasinos.title": "Erstklassige akkreditierte Casinos im Jahr 2023",
+
+      "certifiedcasinos.title":
+        "Erstklassige akkreditierte Casinos im Jahr 2023",
       "certifiedcasinos.excerpt":
         "Das Gaming bildet einen bedeutenden Sektor, und mit der Unterstützung von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen und sich darauf verlassen, dass es von offiziellen staatlichen Stellen überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
-      
+
       "filteredBonuses.title":
         "Katalog aller Online Casino Boni für das Jahr 2023",
       "filteredBonuses.excerpt":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "filteredCasinos.title":
         "Umfassende Zusammenstellung der Online Casino Auswahl für das Jahr 2023",
       "filteredCasinos.excerpt":
         "Auf der Suche nach einem Online Casino? Navigieren Sie durch unser aktuelles Repository, das eine Vielzahl von Casinos für Ihre Überlegung bereithält.",
-      
+
       "GuideSlotsPage.title": "Neueste Casino Anleitungen",
-      
+
       "button.read": "Mehr lesen",
       "button.less": "Weniger lesen",
-      
+
       "button.view": "Alle Anleitungen anzeigen",
       "button.load": "Mehr Marken laden",
       "button.review": "Rezension lesen",
       "button.play": "Jetzt spielen",
-      
     },
   },
   ch: {
     translation: {
       guideposts: enTranslation,
       guideslotsguide:
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
-    guideslotsguide2:
-      "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
-    "guideslotsguide.title": "Glücksspielführer",
-    "guideslotsguide.excerpt":
-      "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
-    
-    "header.home": "Startseite",
-    "header.bonuses": "Boni ▼",
-    "header.casinos": "Kasinos ▼",
-    "header.spins": "Freispiele",
-    "header.guides": "Anleitungen",
-    "header.about": "Über uns",
-    "header.contacts": "Kontakte",
-    
-    "header.homebonuses": "Boni",
-    "header.homecasinos": "Kasinos",
-    "header.homespins": "Freispiele",
-    "header.homeguides": "Glücksspielführer",
-    
-    "header.nodeposit": "Keine Einzahlungsboni",
-    "header.exclusive": "Exklusive Boni",
-    "header.deposit": "Einzahlungsboni",
-    "header.welcome": "Willkommensboni",
-    "header.nowager": "Bonis ohne Umsatzbedingungen",
-    "header.cryptocasinos": "Krypto-Kasinos",
-    "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
-    "header.livecasinos": "Live-Kasinos",
-    "header.newestcasinos": "Neueste Kasinos",
-    "header.certifiedcasinos": "Top zertifizierte Kasinos",
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Während es vielleicht so aussieht, als ob Spielautomaten eine Frage von einfachem 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihre Erfahrung verbessern können. Unsere Anleitungen sollen Ihnen ein umfassendes Verständnis dafür vermitteln, wie Slots funktionieren, und Ihnen die volle Kontrolle über Ihre Spiel-Sessions geben.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Aufbewahrungsort für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugang zu einigen der relevantesten Slot-Anleitungen und kostenlosen Slot-Spielen, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspielführer",
+      "guideslotsguide.excerpt":
+        "Wenn Sie darauf hoffen, den Jackpot zu knacken, tauchen Sie in die Welt der Online-Slots ein durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
 
-    "searchBrands.placeholder": "Marken suchen...",
+      "header.home": "Startseite",
+      "header.bonuses": "Boni ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.spins": "Freispiele",
+      "header.guides": "Anleitungen",
+      "header.about": "Über uns",
+      "header.contacts": "Kontakte",
 
-    "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
-    "home.description":
-      "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
-    
-    "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
-    "newBrands.title": "Neueste Casino-Zugänge 2023",
-    
-    "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
-    "reviewBrands.description1":
-      "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
-    
-    "reviewBrands.question1.title":
-      "Derzeit auf der Suche nach neuen Casino-Websites",
-    "reviewBrands.question1.excerpt":
-      "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.link": "gestarteten Casino-Websites zur Bewertung",
-    "reviewBrands.question1.excerpt2":
-      ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
-    
-    "reviewBrands.question2.title":
-      "Die präzisesten Details zu jedem Casino",
-    "reviewBrands.question2.excerpt":
-      "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
-    
-    "reviewBrands.question3.title":
-      "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
-    "reviewBrands.question3.excerpt":
-      "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
-    "reviewBrands.question3.link": "und unvoreingenommenen Überprüfungsansatz",
-    
-    "reviewBrands.button1": "Top-Boni entdecken",
-    "reviewBrands.button2": "Top-Casinos entdecken",
-    
-    "reviewBrands.title2": "Wir sind leidenschaftlich über Boni ohne Einzahlung",
-    "reviewBrands.description2":
-      "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
-    
-    "reviewBrands.question4.title":
-      "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
-    "reviewBrands.question4.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
-    "reviewBrands.question4.excerpt2":
-      ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
-    
-    "reviewBrands.question5.title":
-      "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
-    "reviewBrands.question5.excerpt":
-      "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
-    "reviewBrands.question5.link": "exklusiven Boni",
-    "reviewBrands.question5.excerpt2":
-      " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
-    
-    "reviewBrands.question6.title":
-      "Umfassende und präzise Details zu jedem Bonus",
-    "reviewBrands.question6.excerpt":
-      "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
-    
+      "header.homebonuses": "Boni",
+      "header.homecasinos": "Kasinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielführer",
+
+      "header.nodeposit": "Keine Einzahlungsboni",
+      "header.exclusive": "Exklusive Boni",
+      "header.deposit": "Einzahlungsboni",
+      "header.welcome": "Willkommensboni",
+      "header.nowager": "Bonis ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto-Kasinos",
+      "header.fastwithdrawalcasinos": "Kasinos mit schneller Auszahlung",
+      "header.livecasinos": "Live-Kasinos",
+      "header.newestcasinos": "Neueste Kasinos",
+      "header.certifiedcasinos": "Top zertifizierte Kasinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielhandbücher",
+      "home.description":
+        "Authentische Spielerbewertungen, keine Einzahlungsboni und eine breite Auswahl an Spielen mit kostenlosem Spiel.",
+
+      "topBrands.title": "CasinoFrog Top-Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Zugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig überprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle vorhandenen Online-Casinos, unabhängig von ihren Vorlieben",
+
+      "reviewBrands.question1.title":
+        "Derzeit auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", mit dem Ziel, unseren Besuchern höchsten Wert zu bieten.",
+
+      "reviewBrands.question2.title": "Die präzisesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir überprüfen jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, was sie vor dem Spielen erwarten können",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet und folgt einem umfassenden, datengetriebenen und unvoreingenommenen Überprüfungsansatz",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Überprüfungsansatz",
+
+      "reviewBrands.button1": "Top-Boni entdecken",
+      "reviewBrands.button2": "Top-Casinos entdecken",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen fließen in die Erstellung der ultimativen Datenbank für Boni ohne Einzahlung.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellen von Werbedeals von jedem Online-Casino da draußen",
+      "reviewBrands.question4.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen bestehenden Casino-Websites stammt.",
+
+      "reviewBrands.question5.title":
+        "Erstellen von einzigartigen und exklusiven Boni, die ausschließlich auf unsere geschätzten Besucher zugeschnitten sind",
+      "reviewBrands.question5.excerpt":
+        "In unserem Bestreben, die größtmögliche Auswahl zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        " enthält Angebote, die ausschließlich für unsere geschätzten Besucher entwickelt wurden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und veranschaulichende Beispiele.",
 
       "filteredHome.title": "Katalog aller Online Casino Boni für 2023",
       "filteredHome.description":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "navigateBrands.all": "Alle Marken",
       "navigateBrands.recommend": "Empfohlene Marken",
       "navigateBrands.newly": "Neue Marken",
       "navigateBrands.crypto": "Krypto-Marken",
       "navigateBrands.sports": "Top Sport-Marken",
-      
+
       "allBrands.withLimits": "Auszahlungslimits:",
       "allBrands.advantages": "Vorteile",
       "allBrands.depMethods": "Einzahlungsmethoden",
@@ -1694,91 +1869,92 @@ const resources = {
       "allBrands.restricted": "Eingeschränkte Länder",
       "allBrands.howGet": "Wie erhalte ich den Bonus?",
       "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
-      
+
       "guideSlotsHome.title1": "Online Glücksspielhandbücher",
       "guideSlotsHome.title2": "Budget für Glücksspiele festlegen",
       "guideSlotsHome.excerpt1":
         "Bevor Sie eine Glücksspielsitzung beginnen, ist es wichtig, ein Budget festzulegen und strikt einzuhalten. Stellen Sie sicher, dass der zugewiesene Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr Glückstag ist und verloren gehen könnte.",
-      "guideSlotsHome.title3": "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
+      "guideSlotsHome.title3":
+        "Verfolgen Sie Ihre Verluste um jeden Preis nicht",
       "guideSlotsHome.excerpt2":
         "Die unvorhersehbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten und letztendlich zur Entwicklung einer Glücksspielsucht führen kann.",
       "guideSlotsHome.title3":
         "Achten Sie genau auf Ihre Emotionen während des Glücksspiels",
       "guideSlotsHome.excerpt3":
         "Genießen Sie das Unterhaltungsangebot des Glücksspiels und achten Sie dabei darauf, dass es beim Spielen angenehm bleibt. Wenn Sie erhöhte Wut, Frustration oder Schwierigkeiten bei rationalen Entscheidungen bemerken, ist es unerlässlich, mit dem Spielen aufzuhören.",
-      
-      "previewBonuses.title": "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes für das Glücksspiel",
       "previewBonuses.excerpt":
         "Suchen Sie nach aufregenden Online Casino Boni und Promotionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine große Auswahl an verlockenden Casino Bonusangeboten, die alle Spielerpräferenzen abdecken. Egal, ob Sie Freispiele, Einzahlungsboni oder Cashback-Belohnungen bevorzugen, wir haben die besten Angebote aus der Welt des Glücksspiels für Sie. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
-      
+
       "nodepositbonuses.title":
         "Unwiderstehlich im Jahr 2023: Boni ohne Einzahlung im Casino und einzigartige Bonuscodes",
       "nodepositbonuses.excerpt":
         "Neu im Jahr 2023: Ein kontinuierlich aktualisierter Katalog von Boni ohne Einzahlung für virtuelle Casinos. Erhalten Sie exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
-      
+
       "exclusivebonuses.title":
         "Umfassende Zusammenstellung von Online Casino Boni zugänglich im Jahr 2023",
       "exclusivebonuses.excerpt":
         "Suchen Sie im Web nach Casino Boni und Promotionen? Entdecken Sie unsere aktuelle, gut gepflegte Sammlung von zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "depositbonuses.title":
         "Beste Casino Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
       "depositbonuses.excerpt":
         "Wählen Sie aus einer Vielzahl von erstklassigen Einführungs-Casino-Belohnungen und erhalten Sie zusätzliche Bonusmittel, die in Ihre erste Einzahlung integriert sind. Exklusive Anmeldeanreiz-Angebote für neue Teilnehmer.",
-      
+
       "welcomebonuses.title": "Willkommensboni 2023",
       "welcomebonuses.excerpt":
         "Wenn Sie nach einer hochwertigen Casino-Erfahrung suchen, die mit verlockenden Boni kombiniert ist, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler, die in der Regel als Freispiele oder Cashback-Belohnungen präsentiert werden. Erkunden Sie unsere Zusammenstellung von Einführungs-Boni von renommierten Online Casinos, um eine ideale Übereinstimmung für Ihre Präferenzen sicherzustellen.",
-      
+
       "nowagerbonuses.title": "Bonuscodes ohne Wettanforderungen 2023",
       "nowagerbonuses.excerpt":
         "Suchen Sie nach Bonuscodes ohne Wettanforderungen? Entdecken Sie unsere exklusive Zusammenstellung von wettanforderungsfreien Bonuscodes, die nur im Casino erhältlich sind.",
-      
+
       "cryptocasinos.title":
         "Top Kryptowährungs-Wettplattformen & Bitcoin Casino Seiten im Jahr 2023",
       "cryptocasinos.excerpt":
         "Erkunden Sie unsere Zusammenstellung erstklassiger Online Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie in unvoreingenommene Bewertungen ein und finden Sie das ultimative Bitcoin Casino-Ziel, das auf Ihre Präferenzen zugeschnitten ist.",
-      
 
-        "fastcasinos.title":
+      "fastcasinos.title":
         "Das schnellste Auszahlungs-Casino und Wettplattformen 2023",
       "fastcasinos.excerpt":
         "Der vorteilhafteste Aspekt von Casinos mit schnellen Auszahlungen ist ihre schnelle und zuverlässige Ausschüttung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig erstellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und signifikant steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten zur Verwendung dieser Mittel vor!",
-      
+
       "livecasinos.title": "Hervorragende Live-Dealer Casinos des Jahres 2023",
       "livecasinos.excerpt":
         "Erkunden Sie diese Zusammenstellung erstklassiger Live-Dealer Casinos für ein immersives Spielerlebnis und entdecken Sie erstklassige Online Casinos, die fesselnde Live-Casino-Spiele nach Ihren Vorlieben anbieten.",
-      
+
       "newestasinos.title": "Neueinsteiger in der Online Casino Szene 2023",
       "newestasinos.excerpt":
         "Auf der Suche nach frischen Online Casino Plattformen für das Jahr 2023? Entdecken Sie neu gestartete Casino Websites, die herausragende Anreize und innovative Merkmale bieten. Ständig aktualisiert für Ihre Erkundung.",
-      
-      "certifiedcasinos.title": "Erstklassige akkreditierte Casinos im Jahr 2023",
+
+      "certifiedcasinos.title":
+        "Erstklassige akkreditierte Casinos im Jahr 2023",
       "certifiedcasinos.excerpt":
         "Das Gaming bildet einen bedeutenden Sektor, und mit der Unterstützung von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen und sich darauf verlassen, dass es von offiziellen staatlichen Stellen überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
-      
+
       "filteredBonuses.title":
         "Katalog aller Online Casino Boni für das Jahr 2023",
       "filteredBonuses.excerpt":
         "Suchen Sie nach Online Casino Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
-      
+
       "filteredCasinos.title":
         "Umfassende Zusammenstellung der Online Casino Auswahl für das Jahr 2023",
       "filteredCasinos.excerpt":
         "Auf der Suche nach einem Online Casino? Navigieren Sie durch unser aktuelles Repository, das eine Vielzahl von Casinos für Ihre Überlegung bereithält.",
-      
+
       "GuideSlotsPage.title": "Neueste Casino Anleitungen",
-      
+
       "button.read": "Mehr lesen",
       "button.less": "Weniger lesen",
-      
+
       "button.view": "Alle Anleitungen anzeigen",
       "button.load": "Mehr Marken laden",
       "button.review": "Rezension lesen",
       "button.play": "Jetzt spielen",
-      
     },
-  }
+  },
   // Add translations for other languages here
 };
 

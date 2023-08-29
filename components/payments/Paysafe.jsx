@@ -12,12 +12,8 @@ const Payments = () => {
     <div className="bonuses">
       <div className="main__container flex justify-between items-center">
         <div className="flex flex-col basis-[60%]">
-          <h1 className="text-white">
-          Top-Ranked Online Casino Platforms for 2023
-          </h1>
-          <p className="text-white mt-5">
-          Our specialists have scrutinized more than 5,000 digital gambling platforms and selected the cream of the crop. Explore our curated list to discover your ideal online casino.
-          </p>
+          <h1 className="text-white">{t("paysafe.title")}</h1>
+          <p className="text-white mt-5">{t("paysafe.description")}</p>
           <Subscribe />
         </div>
         <div className="basis-[40%] flex justify-center">

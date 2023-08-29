@@ -13,11 +13,13 @@ const Amatic = () => {
       <div className="main__container flex justify-between items-center">
         <div className="flex flex-col basis-[60%]">
           <h1 className="text-white">
-          Boongo Gaming: Crafting Immersive Digital Experiences through Innovative Game Design
+         
           </h1>
           <p className="text-white mt-5">
-          Boongo Gaming has quickly distinguished itself in the competitive iGaming sector with visually appealing and feature-rich games. Known for titles like &#34;God&#39;s Temple&#34; and &#34;15 Golden Eggs,&#34; the company excels in both innovation and quality. Their robust backend solutions further enhance the gaming experience. Whether you&#39;re a casual player or a dedicated enthusiast, Boongo Gaming offers a memorable gaming journey.
+         
           </p>
+          <h1 className="text-white">{t("boongo.title")}</h1>
+          <p className="text-white mt-5">{t("boongo.description")}</p>
           <Subscribe />
         </div>
         <div className="basis-[40%] flex justify-center">

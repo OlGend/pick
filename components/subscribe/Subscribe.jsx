@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import LoaderButton from "@/components/subscribe/LoaderButton";
 import { X } from "phosphor-react";
+import { useTranslation } from "react-i18next";
 import SliderExample from "./SliderExample";
 
 const Subscribe = () => {
@@ -10,6 +11,8 @@ const Subscribe = () => {
   const [popupText, setPopupText] = useState("");
   const [popupVisible, setPopupVisible] = useState(false);
   const [sliderVisible, setSliderVisible] = useState(false);
+  const { t } = useTranslation();
+
 
   const handleSubscribe = () => {
     setError(""); // Сброс ошибки перед проверкой
@@ -80,7 +83,7 @@ const Subscribe = () => {
         )}
       </div>
       <span className="flex mt-5">
-        Subscribe to our mailing list to receive the latest reviews right now, or check out our mailing <br/> <b onClick={toggleSlider} className="list-examples">List Examples</b>
+      {t("subscribe.text")} <br/> <b onClick={toggleSlider} className="list-examples">{t("subscribe.link")}</b>
       .</span>
       {popupVisible && (
         <div

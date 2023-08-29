@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +16,8 @@ import {
 } from "./brandUtils";
 
 const CarouselSlider = ({ slides }) => {
+  const { t } = useTranslation();
+
   const settings = {
     // dots: true,
     infinite: true,
@@ -21,39 +25,37 @@ const CarouselSlider = ({ slides }) => {
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const slidesData = useTopBrands(112);
 
-  
-
   return (
     <div className="brand-slider mb-6">
-        <h4 className="mb-3">Reccomend brands for you</h4>
+      <h4 className="mb-3">{t("slider.title")}</h4>
       <Slider {...settings}>
         {slidesData.map((slide, index) => {
           const reviewImgSrc = extractReviewImage(slide.content.rendered);
@@ -84,14 +86,14 @@ const CarouselSlider = ({ slides }) => {
                     href={`/bonuses/${slide.id}`}
                   >
                     <Eye className="mr-1 mb-1" size={20} />
-                    Read Review
+                    {t("button.review")}
                   </Link>
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
                     href={playLink}
                   >
                     <Play className="mr-1 mb-1" size={20} />
-                    Play Now
+                    {t("button.play")}
                   </Link>
                 </div>
               </div>
