@@ -124,7 +124,6 @@ export function extractProviders(content) {
 }
 
 
-
 export function extractFlag(content) {
   const reviewStart = content.indexOf('<div class="pokageo-flag-circle">');
   if (reviewStart === -1) return "";

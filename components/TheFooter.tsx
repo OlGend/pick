@@ -14,8 +14,11 @@ import Img11 from "@/public/solution11.png";
 import Img12 from "@/public/solution12.png";
 import Img from "@/public/logo2.png";
 import { At } from "phosphor-react";
+import { useTranslation } from "react-i18next";
+
 
 const TheFooter = () => {
+  const { t } = useTranslation();
   const solutions = [Img1, Img2, Img3, Img4, Img5, Img6];
   const solutions2 = [Img7, Img8, Img9, Img10, Img11, Img12];
   return (
@@ -27,7 +30,7 @@ const TheFooter = () => {
               <Image src={Img} alt="logo" width={150} loading="lazy" />
             </div>
             <div className="solution-contacts">
-              <p>Our Contacts:</p>
+              <p>{t("footer.contacts")}</p>
               <a className="flex items-center" href="#">
                 <At className="mr-1" size={20} />
                 info@reg2dep.com
@@ -51,12 +54,11 @@ const TheFooter = () => {
             </div>
             <div className="flex flex-col">
               <div className="solution-text flex flex-col items-center">
-                <h4 className="text-center mb-1">Empowering iGaming Solutions</h4>
+                <h4 className="text-center mb-1">{t("footer.title")}</h4>
                 <p className="text-center">
-                  Unlocking 15 Websites That Will Boost Your Brand to New
-                  Heights
+                {t("footer.description")}
                 </p>
-                <a className="btn btn-primary m-auto" href="#">Start Working With Us</a>
+                <a className="btn btn-primary m-auto" href="#">{t("footer.link")}</a>
               </div>
             </div>
             <div className="solution-images flex flex-wrap justify-end items-center">
@@ -76,22 +78,13 @@ const TheFooter = () => {
         <div className="footer-bottom">
           <div className="main__container pt-3">
             <p>
-              CasinoFrog positions itself as an exceptional source of
-              information about virtual gaming establishments and online
-              gambling entertainment. All our reviews and guides are crafted in
-              accordance with the knowledge and convictions of our independent
-              team of experts, objectively and without any bias. Nevertheless,
-              such assessments and notifications are provided solely for
-              informational purposes and should not be considered legal advice
-              or a basis for making legal decisions. Before commencing
-              participation in your chosen casino, always ensure that you comply
-              with all applicable legal requirements.
+            {t("footer.about")}
             </p>
           </div>
         </div>
         <div className="footer-end">
           <div className="main__container pt-3 pb-3 flex justify-center">
-            <span>Copyright © 2023, CasinoFrog All rights reserved.</span>
+            <span>{t("footer.copyright")}</span>
           </div>
         </div>
       </div>

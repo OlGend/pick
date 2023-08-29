@@ -61,6 +61,7 @@ export default function Brand({ brand }) {
     });
   }, [oneBrand]);
   useEffect(() => {
+  
     const withdrawalItems = document.querySelectorAll(".withdrawal li");
     withdrawalItems.forEach((item) => {
       const content = item.textContent.trim();
@@ -206,6 +207,7 @@ export default function Brand({ brand }) {
                               oneBrand.content.rendered
                             ),
                           }}
+                          
                         />
                       </div>
                       <div className="one-brand-item mt-3">

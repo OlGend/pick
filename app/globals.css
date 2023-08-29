@@ -6689,7 +6689,7 @@ p {
   background: linear-gradient(to bottom, #0967e3, #78aeed);
 }
 .header a {
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
   transition: 0.3s;
   padding: 10px 15px;
@@ -7688,7 +7688,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -200px top -840px;
 }
-.betsoft {
+.betsoft, .betsoft-gaming {
   background-image: url(/providers3.png);
   background-position: left 0 top -60px;
 }
@@ -8517,7 +8517,7 @@ input.error {
 
 .modal-overlay {
   position: fixed;
-  max-width: 400px;
+  max-width: 480px;
   width: 100%;
   right: -500px;
   bottom: 150px;
@@ -8563,8 +8563,24 @@ input.error {
 .modal-content .card-brand .review-bonus br {
   display: none !important;
 }
-
+.modal-content .buttons {
+  min-width: 180px;
+}
+.modal-content .buttons .btn, .modal-content .review-bonus {
+  font-size: 13px !important;
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .modal-content .buttons {
+    min-width: 160px;
+    padding: 5px;
+  }
+  .modal-content .buttons .btn, .modal-content .review-bonus {
+    font-size: 12px !important;
+  }
+  .modal-content .brandImage {
+   margin-left: 5px !important;
+  }
+  
   .oneBrand {
     padding-top: 60px;
   }
