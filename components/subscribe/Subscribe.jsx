@@ -67,7 +67,7 @@ const Subscribe = () => {
         <input
           className={`subscribe ${error ? "error" : ""}`}
           type="email"
-          placeholder="Email"
+          placeholder={t("subscribe.email")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           onFocus={handleInputFocus}
@@ -76,7 +76,7 @@ const Subscribe = () => {
           className="button-subscribe flex justify-center items-center"
           onClick={handleSubscribe}
         >
-          {loading ? <LoaderButton /> : "Subscribe"}
+         {loading ? <LoaderButton /> : t("subscribe.button")}
         </button>
         {error && (
           <span className="text-red-500 absolute error-text">{error}</span>
