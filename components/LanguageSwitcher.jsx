@@ -28,12 +28,12 @@ const LanguageSwitcher = () => {
     { code: "en", label: "EN", flag: "🇬🇧" }, //
     { code: "pl", label: "PL", flag: "🇵🇱" }, //
     { code: "no", label: "NO", flag: "🇳🇴" }, //
-    // { code: "au", label: "AU", flag: "🇦🇺" }, //
-    // { code: "ca", label: "CA", flag: "🇨🇦" }, //
-    // { code: "nz", label: "NZ", flag: "🇳🇿" }, //
-    // { code: "de", label: "DE", flag: "🇩🇪" }, //
-    // { code: "at", label: "AT", flag: "🇦🇹" },
-    // { code: "ch", label: "CH", flag: "🇨🇭" },
+    { code: "au", label: "AU", flag: "🇦🇺" }, //
+    { code: "ca", label: "CA", flag: "🇨🇦" }, //
+    { code: "nz", label: "NZ", flag: "🇳🇿" }, //
+    { code: "de", label: "DE", flag: "🇩🇪" }, //
+    { code: "at", label: "AT", flag: "🇦🇹" },
+    { code: "ch", label: "CH", flag: "🇨🇭" },
     // Добавьте другие языки по аналогии
   ];
 

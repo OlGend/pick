@@ -1216,7 +1216,2012 @@ const resources = {
       "footer.copyright": "Start Sammen Med Oss",
     },
   },
+  de: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Handbuch für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugriff auf einige der relevantesten Slot-Anleitungen und kostenlose Slot-Spiele, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspiel-Anleitungen",
+      "guideslotsguide.excerpt":
+        "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
 
+      "header.home": "Startseite",
+      "header.bonuses": "Bonis ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.payments": "Alle Zahlungen ▼",
+      "header.providers": "Spielanbieter ▼",
+      "header.countries": "Kasinos nach Land ▼",
+
+      "header.austr": "Australisches Casino",
+      "header.brazil": "Brasilianisches Casino",
+      "header.canada": "Kanadisches Casino",
+      "header.finnish": "Finnisches Casino",
+      "header.germany": "Deutsches Casino",
+      "header.nz": "Neuseeländisches Casino",
+      "header.norw": "Norwegisches Casino",
+      "header.polish": "Polnisches Casino",
+
+      "header.spins": "Freispiele",
+      "header.guides": "Ratgeber",
+      "header.about": "Über Uns",
+      "header.contacts": "Kontakt",
+
+      "header.homebonuses": "Bonusrunden",
+      "header.homecasinos": "Casinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielratgeber",
+
+      "header.nodeposit": "Bonusrunden ohne Einzahlung",
+      "header.exclusive": "Exklusive Bonusrunden",
+      "header.deposit": "Einzahlungsbonusrunden",
+      "header.welcome": "Willkommensbonusrunden",
+      "header.nowager": "Bonusrunden ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto Casinos",
+      "header.fastwithdrawalcasinos": "Schnelle Auszahlungs-Casinos",
+      "header.livecasinos": "Live Casinos",
+      "header.newestcasinos": "Neueste Casinos",
+      "header.certifiedcasinos": "Top Zertifizierte Casinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielanleitungen",
+      "home.description":
+        "Authentische Spielerbewertungen, Bonusrunden ohne Einzahlung und eine breite Auswahl an Spielen mit kostenloser Spieloption.",
+
+      "topBrands.title": "CasinoFrog Beste Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Neuzugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig geprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle bestehenden Online-Casinos, unabhängig von ihren Vorlieben.",
+
+      "reviewBrands.question1.title":
+        "Aktuell auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", um den größtmöglichen Nutzen für unsere Besucher zu bieten.",
+
+      "reviewBrands.question2.title": "Die genauesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir bewerten jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, worauf sie sich vor dem Spielen einlassen.",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Umgangs mit Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet, das einen umfassenden, datengesteuerten",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Bewertungsansatz verfolgt",
+
+      "reviewBrands.button1": "Entdecken Sie erstklassige Boni",
+      "reviewBrands.button2": "Entdecken Sie erstklassige Casinos",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen konzentrieren sich darauf, die ultimative Datenbank für Boni ohne Einzahlung zu erstellen.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellung von Werbeaktionen von allen Online-Casinos da draußen",
+      "reviewBrands.question4.excerpt":
+        "Auf unserer Suche, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen vorhandenen Casino-Websites bezogen wird.",
+
+      "reviewBrands.question5.title":
+        "Erstellung einzigartiger und exklusiver Boni, die exklusiv für unsere geschätzten Besucher maßgeschneidert sind",
+      "reviewBrands.question5.excerpt":
+        "In unserer Bemühung, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        ", die exklusiv für unsere geschätzten Besucher erstellt werden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und anschauliche Beispiele.",
+
+      "filteredHome.title":
+        "Katalog aller angebotenen Online Casino Boni für 2023",
+      "filteredHome.description":
+        "Suchen Sie nach Online Casino Boni und Promotionen? Erkunden Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
+
+      "navigateBrands.all": "Alle Marken",
+      "navigateBrands.recommend": "Empfohlene Marken",
+      "navigateBrands.newly": "Neue Marken",
+      "navigateBrands.crypto": "Krypto-Marken",
+      "navigateBrands.sports": "Top Sport-Marken",
+
+      "allBrands.withLimits": "Auszahlungslimits:",
+      "allBrands.advantages": "Vorteile",
+      "allBrands.depMethods": "Einzahlungsmethoden",
+      "allBrands.withMethods": "Auszahlungsmethoden",
+      "allBrands.restricted": "Eingeschränkte Länder",
+      "allBrands.howGet": "Wie bekomme ich den Bonus?",
+      "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
+
+      "guideSlotsHome.title1": "Leitfäden für Online-Glücksspiele",
+      "guideSlotsHome.title2": "Festlegung eines Glücksspielbudgets",
+      "guideSlotsHome.excerpt1":
+        "Bevor Sie mit einer Glücksspielsitzung beginnen, ist es unerlässlich, ein Budget festzulegen und sich strikt daran zu halten. Stellen Sie sicher, dass der zugeteilte Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr glücklicher Tag ist und verloren gehen könnte.",
+      "guideSlotsHome.title3":
+        "Vermeiden Sie um jeden Preis, Verlusten nachzujagen",
+      "guideSlotsHome.excerpt2":
+        "Die unberechenbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten führen kann und letztendlich zur Entwicklung einer Glücksspielsucht führen könnte.",
+      "guideSlotsHome.title3":
+        "Achten Sie genau auf Ihre Emotionen beim Glücksspiel",
+      "guideSlotsHome.excerpt3":
+        "Genießen Sie die Unterhaltung beim Glücksspiel und achten Sie dabei darauf, dass es angenehm bleibt, indem Sie während des Spiels auf Ihre Emotionen achten. Wenn Sie erhöhte Gefühle von Wut, Frustration oder Schwierigkeiten bei der rationalen Entscheidungsfindung feststellen, ist es wichtig, das Spielen einzustellen.",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes beim Glücksspiel",
+      "previewBonuses.excerpt":
+        "Suchen Sie aufregende Online-Casino-Boni und Aktionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine breite Auswahl verlockender Casino-Bonusangebote, die den Vorlieben aller Spieler gerecht werden. Egal, ob Sie auf Freispiele, Einzahlungsboni oder Cashback-Belohnungen stehen, wir haben Sie abgedeckt mit den besten Deals, die in der Glücksspielwelt verfügbar sind. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt Ihre Erkundung und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
+
+      "nodepositbonuses.title":
+        "Unwiderstehlich im Jahr 2023: Casino-Boni ohne Einzahlung und einzigartige Bonuscodes",
+      "nodepositbonuses.excerpt":
+        "Neu im Jahr 2023: Ein kontinuierlich aktualisiertes Verzeichnis von Bonusangeboten ohne Einzahlung für virtuelle Casinos. Holen Sie sich exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
+
+      "exclusivebonuses.title":
+        "Umfassende Zusammenstellung von Online-Casino-Boni im Jahr 2023",
+      "exclusivebonuses.excerpt":
+        "Auf der Suche nach Casino-Boni und Aktionen im Web? Entdecken Sie unser aktuelles, gut gepflegtes Verzeichnis mit einer Fülle von Casino-Bonusvorschlägen zur Auswahl.",
+
+      "depositbonuses.title":
+        "Beste Casino-Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
+      "depositbonuses.excerpt":
+        "Wählen Sie aus einer Vielzahl erstklassiger Einführungs-Casinoprämien aus und erhalten Sie zusätzliche Bonusgelder in Ihre erste Zahlung integriert. Exklusive Anmeldeanreize für neue Teilnehmer konzipiert.",
+
+      "welcomebonuses.title": "Willkommensboni 2023",
+      "welcomebonuses.excerpt":
+        "Wenn Sie auf der Suche nach einer hochwertigen Casino-Erfahrung gepaart mit verlockenden Boni sind, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler und wird in der Regel in Form von Freispielen oder Cashback-Belohnungen präsentiert. Entdecken Sie unsere Zusammenstellung von Einführungsboni von renommierten Online-Casinos, um die ideale Übereinstimmung für Ihre Vorlieben zu finden.",
+
+      "nowagerbonuses.title": "Boni ohne Umsatzbedingungen 2023",
+      "nowagerbonuses.excerpt":
+        "Auf der Suche nach Boni ohne Umsatzbedingungen? Entdecken Sie unsere exklusive Zusammenstellung von boni ohne Wetteinsatz, die nur im Casino erhältlich sind.",
+
+      "cryptocasinos.title":
+        "Top-Kryptowährungs-Wettplattformen & Bitcoin Casino-Seiten im Jahr 2023",
+      "cryptocasinos.excerpt":
+        " Entdecken Sie unsere Zusammenstellung erstklassiger Online-Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie ein in unabhängige Bewertungen und finden Sie das ultimative Bitcoin-Casinoziel, das auf Ihre Vorlieben zugeschnitten ist.",
+
+      "fastcasinos.title":
+        "Die schnellsten Auszahlungscasinos und Wettplattformen von 2023",
+      "fastcasinos.excerpt":
+        "Der größte Vorteil von schnellen Auszahlungscasinos ist die schnelle und zuverlässige Auszahlung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig zusammengestellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und erheblich steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten vor, diese Mittel zu verwenden!",
+
+      "livecasinos.title": "Premier Live Dealer Casinos des Jahres 2023",
+      "livecasinos.excerpt":
+        "Entdecken Sie diese Zusammenstellung erstklassiger Live-Dealer-Casinos für ein immersives Spielerlebnis und finden Sie erstklassige Online-Casinos, die fesselnde Live-Casinospiele nach Ihren Vorlieben anbieten.",
+
+      "newestasinos.title": "Neue Einträge in die Online-Casino-Szene 2023",
+      "newestasinos.excerpt":
+        "Auf der Suche nach frischen Online-Casino-Plattformen aus dem Jahr 2023? Entdecken Sie neu gestartete Casino-Seiten mit herausragenden Anreizen und modernsten Funktionen. Ständig aktualisiert für Ihre Erkundung.",
+
+      "certifiedcasinos.title": "Premier-zertifizierte Casinos im Jahr 2023",
+      "certifiedcasinos.excerpt":
+        "Das Glücksspiel ist ein wichtiger Sektor, und mit Hilfe von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen, sicher in dem Wissen, dass es von offiziellen Regierungsbehörden überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
+
+      "filteredBonuses.title":
+        "Katalog aller 2023 angebotenen Online-Casino-Boni",
+      "filteredBonuses.excerpt":
+        " Suchen Sie nach Online-Casino-Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Bonusangeboten zur Auswahl.",
+
+      "filteredCasinos.title":
+        "Umfassende Zusammenstellung von 2023 Online-Casino-Auswahlmöglichkeiten",
+      "filteredCasinos.excerpt":
+        "Auf der Suche nach einem Online-Casino? Navigieren Sie durch unser aktuelles Repository mit einer Vielzahl von Casinos, die auf Ihre Überlegung warten.",
+
+      "GuideSlotsPage.title": "Neueste Casino-Anleitungen",
+
+      "filtered.payments.title":
+        "Katalog aller angebotenen Online-Casinos nach Zahlungsmethoden im Jahr 2023",
+      "filtered.payments.description":
+        "Suchen Sie nach Online-Casinos mit bestimmten Zahlungsmethoden? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Angeboten zur Auswahl.",
+      "apple.title":
+        "Außergewöhnliche Online-Casinos, die Apple Pay-Transaktionen im Jahr 2023 akzeptieren",
+      "apple.description":
+        "Fragen Sie sich, welche Online-Casinos Apple Pay für finanzielle Transaktionen akzeptieren? Lassen Sie sich von unserem Leitfaden zu den vertrauenswürdigsten Apple Pay-Casinos für ein erstklassiges Spielerlebnis führen.",
+      "bitcoin.title":
+        "Führende Bitcoin- und Kryptowährungs-Glücksspielziele im Jahr 2023",
+      "bitcoin.description":
+        "Entdecken Sie unsere sorgfältig ausgewählte Sammlung führender Bitcoin-freundlicher Casinos und Glücksspielplattformen, die BTC und andere digitale Währungen akzeptieren. Tauchen Sie in unsere unparteiischen Bewertungen ein, um das ideale Bitcoin-Glücksspielziel für Sie zu entdecken.",
+      "ecopayz.title":
+        "Top bewertete Online-Casinos, die ecoPayz-Transaktionen für 2023 unterstützen",
+      "ecopayz.description":
+        "Suchen Sie nach führenden Online-Casinos, die ecoPayz-Transaktionen begrüßen? Entdecken Sie unsere sorgfältig ausgewählte Sammlung erstklassiger ecoPayz-freundlicher Casinos, um die perfekte Wahl für Sie zu finden.",
+      "maestro.title":
+        "Höchstbewertete Online-Casinos, die Maestro-Zahlungen für 2023 akzeptieren",
+      "maestro.description":
+        "Interessiert an Online-Casinos, die Maestro-Transaktionen begrüßen? Lassen Sie sich von Casino Guru zum idealen Maestro-freundlichen Casino für Sie führen.",
+      "mastercard.title":
+        "Höchstbewertete Online-Casinos, die Mastercard-Transaktionen für 2023 akzeptieren",
+      "mastercard.description":
+        "Interessiert an einem Casino, das Mastercard-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Mastercard für sicheres Glücksspiel begrüßen.",
+      "mobi.title":
+        "Führende Online-Casinos, die mobile Zahlungen für reibungslose Transaktionen in 2023 bevorzugen.",
+      "mobi.description":
+        "Erleben Sie reibungslose finanzielle Transaktionen in Online-Casinos und nutzen Sie die Einfachheit und Geschwindigkeit von mobilen Zahlungsmethoden. Halten Sie sich über Ihre verfügbaren Optionen auf dem Laufenden, um die beste Wahl für Ihren geografischen Standort und Ihre bevorzugte Währung zu treffen und so eine mühelose Spielerfahrung sicherzustellen.",
+      "muchbetter.title":
+        "Top-Online-Casinos, die MuchBetter-Transaktionen für 2023 unterstützen",
+      "muchbetter.description":
+        "Auf der Suche nach Casinos, die mit MuchBetter kompatibel sind? Konsultieren Sie unseren Leitfaden, um das ideale MuchBetter-freundliche Casino für Sie zu entdecken.",
+      "neosurf.title":
+        "Höchstbewertete Online-Casinos, die Neosurf-Transaktionen für 2023 unterstützen",
+      "neosurf.description":
+        "Suchen Sie nach einem Online-Casino, das Neosurf-Zahlungen akzeptiert? Durchstöbern Sie unsere sorgfältig ausgewählte Sammlung von Neosurf-freundlichen Casinos, tauchen Sie in unsere ausführlichen Bewertungen ein und finden Sie die ideale Plattform für Sie.",
+      "neteller.title":
+        "Top-Online-Casinos, die Neteller-Transaktionen für 2023 unterstützen",
+      "neteller.description":
+        "Verzeichnis von Online-Casinos, die mit Neteller-Zahlungen kompatibel sind. ✅ Tiefgehende Bewertungen von Casino Guru. ✅ Entdecken Sie Ihr ideales Neteller-freundliches Casino.",
+      "allpayments.title":
+        "Digitale Casino-Finanztransaktionen und Zahlungsoptionen",
+      "allpayments.description":
+        "Aktuell gibt es zahlreiche Methoden zur Finanzierung eines Spielerkontos. Hier sind Internetcasinos nach häufig genutzten Zahlungsoptionen kategorisiert. Einige Casinos akzeptieren MasterCard, Visa und digitale Währungen, während andere weniger konventionelle Wege wie Neteller und Skrill unterstützen. Die Wahl Ihrer bevorzugten Zahlungsmethode liegt in Ihrer Hand.",
+      "paypal.title":
+        "Führende Online-Casinos, die PayPal-Zahlungen in 2023 akzeptieren",
+      "paypal.description":
+        "Entdecken Sie unsere umfassende Liste der bestbewerteten Casinos, die PayPal akzeptieren – eine schnelle und sichere Option für Einzahlungen und Auszahlungen. Diese Zahlungsmethode ist bei globalen Online-Spielern beliebt und bietet Vorteile wie das Umgehen traditioneller Bankbeschränkungen und geografischer Einschränkungen. Wenn Sie noch kein PayPal-Konto haben, ist die Einrichtung einfach und Sie können sofort Ihre Reise zu großen Gewinnen antreten!",
+      "paysafe.title": "Höchstbewertete Online-Casino-Plattformen für 2023",
+      "paysafe.description":
+        "Unsere Experten haben über 5.000 digitale Glücksspielplattformen unter die Lupe genommen und die besten ausgewählt. Entdecken Sie unsere kuratierte Liste, um Ihr ideales Online-Casino zu finden.",
+      "pix.title":
+        "Entdecken Sie erstklassige Casinos, die Pix-Zahlungen für schnelle und sichere Transaktionen akzeptieren",
+      "pix.description":
+        "Durchstöbern Sie unsere kuratierte Liste erstklassiger Casinos, die Pix als Zahlungsoption unterstützen. Bekannt für Geschwindigkeit und Sicherheit, ist Pix unter Online-Casino-Enthusiasten weltweit eine beliebte Methode für Ein- und Auszahlungen. Sie bietet den Vorteil, traditionelle Bankhürden und lästige geografische Beschränkungen zu umgehen. Wenn Sie noch keine Pix-Wallet eingerichtet haben, ist dies einfach zu tun – dann sind Sie bereit, Ihr Glück zu versuchen!",
+      "skrill.title":
+        "Top-Online-Casinos, die Skrill-Transaktionen für 2023 unterstützen",
+      "skrill.description":
+        "Suchen Sie nach einem Online-Casino, das Skrill-Zahlungen ermöglicht? Durchstöbern Sie unsere kuratierte Auswahl erstklassiger Skrill-kompatibler Casinos, um Ihr ideales Spielerlebnis zu finden.",
+      "trustly.title":
+        "Top-Online-Casinos, die Trustly-Transaktionen für 2023 unterstützen",
+      "trustly.description":
+        "Suchen Sie nach Internetcasinos, die Trustly-Zahlungen akzeptieren? Durchstöbern Sie unsere kuratierte Liste und tiefgehenden Bewertungen, um das am besten geeignete Trustly-kompatible Casino für Sie zu finden.",
+      "visa.title":
+        "Höchstbewertete Online-Casinos, die Visa-Transaktionen für 2023 akzeptieren",
+      "visa.description":
+        "Interessiert an einem Casino, das Visa-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Visa für sicheres Glücksspiel begrüßen.",
+
+      "filtered.countries.title":
+        "Interaktive Liste der Online-Casinos 2023: Filtern nach Land",
+      "filtered.countries.description":
+        "Suchen Sie nach dem perfekten Online-Casino? Entdecken Sie unsere interaktive Liste für 2023, die speziell darauf ausgelegt ist, Ihnen bei der Auswahl aus einer Vielzahl von Optionen nach Land zu helfen. Passen Sie Ihre Suche an, um die renommiertesten, sichersten und aufregendsten Casinos in Ihrer Region zu finden.",
+      "countries.title":
+        "Weltweite Online-Casino-Übersicht: Top-Plattformen nach Land",
+      "countries.description":
+        "Suchen Sie das perfekte Online-Casino? Unsere umfassende Zusammenstellung zeigt die zuverlässigsten und verlockendsten Casinos weltweit. Hier finden Sie Informationen über lukrative Boni, zuverlässigen Kundenservice und verschiedene Zahlungsmethoden von Kreditkarten bis hin zu E-Wallets. Egal, wo Sie sich befinden, wir haben für jeden Spieler etwas zu bieten.",
+      "australia.title":
+        "Australische Online-Casino-Übersicht: Die Spitze des Glücksspiels Down Under",
+      "australia.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Australien? Unsere kuratierte Liste zeigt die Crème de la Crème der australischen Online-Casinos. Tauchen Sie ein in eine Welt großzügiger Boni, makellosem Kundenservice und vielfältiger Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallet-Lösungen. Für diejenigen, die sich in Australien befinden, bieten wir eine maßgeschneiderte Spielerreise, die ihresgleichen sucht.",
+      "brazil.title":
+        "Brasilianischer Online-Casino-Guide: Ihr Portal zum Spielerparadies in Brasilien",
+      "brazil.description":
+        "Suchen Sie nach einem erstklassigen Spielerlebnis in Brasilien? Unsere sorgfältig kuratierte Liste hebt die außergewöhnlichsten Online-Casinos auf dem brasilianischen Markt hervor. Entdecken Sie ein Universum von belohnenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen digitalen Geldbörsen. Wenn Sie in Brasilien sind, haben wir Ihr ultimatives Spielerabenteuer abgedeckt.",
+      "canada.title":
+        "Kanadischer Online-Casino-Guide: Die besten Spiele in Kanada",
+      "canada.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Kanada? Unsere sorgfältig kuratierte Liste zeigt die besten Online-Casinos, die dem kanadischen Publikum zur Verfügung stehen. Tauchen Sie ein in eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsoptionen, die von traditionellen Banküberweisungen bis hin zu modernen E-Wallets reichen. Wenn Sie in Kanada ansässig sind, erwartet Sie Ihr ultimatives Spielerabenteuer.",
+      "finland.title":
+        "Finnischer Online-Casino-Guide: Das ultimative Spielerlebnis in Finnland",
+      "finland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Finnland? Unsere sorgfältig ausgewählte Auswahl zeigt die besten Online-Casinos, die auf das finnische Publikum zugeschnitten sind. Betreten Sie eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsmethoden von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Wenn Sie in Finnland sind, beginnt Ihre einzigartige Spielerreise hier.",
+      "germany.title":
+        "Deutscher Online-Casino-Guide: Das ultimative Spielerparadies in Deutschland",
+      "germany.description":
+        "Sind Sie auf der Suche nach einem außergewöhnlichen Spielerlebnis in Deutschland? Unsere sorgfältig kuratierte Liste hebt die besten Online-Casinos hervor, die für den deutschen Markt verfügbar sind. Betreten Sie eine Welt reich an verlockenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, darunter traditionelle Banküberweisungen und moderne E-Wallets. Wenn Sie in Deutschland sind, beginnt Ihre unvergleichliche Spielerreise hier.",
+      "nz.title":
+        "Neuseeländischer Online-Casino-Guide: Das ultimative Spielerlebnis für Kiwis",
+      "nz.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Neuseeland? Unsere sorgfältig kuratierte Liste zeigt die Crème de la Crème der Online-Casinos, die für neuseeländische Spieler verfügbar sind. Betreten Sie eine Welt großzügiger Boni, exzellentem Kundenservice und einer Fülle von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Für diejenigen in Neuseeland beginnt Ihr unvergleichliches Spielerabenteuer direkt hier.",
+      "norway.title":
+        "Norwegischer Online Casino Leitfaden: Die Spitze des Spielens in Norwegen",
+      "norway.description":
+        "Auf der Suche nach einem unvergleichlichen Spielerlebnis in Norwegen? Unsere sorgfältig geprüfte Liste hebt die besten Online Casinos hervor, die norwegischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit großzügigen Boni, erstklassigem Kundensupport und einer breiten Palette von Zahlungsoptionen von traditionellen Banküberweisungen bis hin zu hochmodernen E-Wallets. Wenn Sie sich in Norwegen befinden, erwartet Sie hier das ultimative Spielerlebnis.",
+      "poland.title":
+        "Polnischer Online Casino Leitfaden: Das führende Spielerziel in Polen",
+      "poland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Polen? Unsere sorgfältig zusammengestellte Liste hebt die besten Online Casinos hervor, die polnischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit lukrativen Boni, erstklassigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu innovativen E-Wallet-Lösungen. Wenn Sie sich in Polen befinden, beginnt hier Ihre einzigartige Spielerreise.",
+
+      "filtered.providers.title":
+        "Umfassendes Verzeichnis für Online Casinos 2023, sortiert nach Spieleanbietern",
+      "filtered.providers.description":
+        "Interessiert an Online Casinos, die Spiele von bestimmten Anbietern anbieten? Durchstöbern Sie unsere aktuelle Liste vielfältiger Casino-Optionen, um Ihre perfekte Übereinstimmung zu finden.",
+      "amatic.title":
+        "Amatic: Brückenschlag zwischen traditionellen und Online Casinos mit klassischen Spieltiteln",
+      "amatic.description":
+        "Amatic entwickelt digitale Spiele, die sowohl ästhetisch als auch erzählerisch den realen Versionen entsprechen. Diese einzigartige Strategie fesselt Spieler, die die traditionelle Casino-Atmosphäre schätzen. Mit herausragenden Spielen wie Hot Fruits 100, Allways Hot Fruits, Book Of Aztec und Lucky Joker 10 bietet Amatic eine unvergleichliche Unterhaltung für Casino-Liebhaber.",
+      "amusnet.title":
+        "Zwei Jahrzehnte Gaming-Exzellenz: Erkunden Sie das innovative Portfolio von Amusnet Interactive",
+      "amusnet.description":
+        "Über mehr als 20 Jahre hinweg hat Amusnet Interactive dank seiner unermüdlichen Fokussierung auf Spieleinnovation eine beträchtliche Fangemeinde aufgebaut, darunter die Integration von In-Game-Jackpots in mehreren Angeboten. Bekannte Titel von Amusnet Interactive umfassen Supreme Hot, Burning Hot, Ultimate Hot und Shining Crown. Tauchen Sie ein in das aufregende Gameplay und die fesselnden Elemente des bemerkenswerten Spieleangebots von Amusnet Interactive.",
+      "bgaming.title":
+        "Aufstrebender Star im iGaming: BGaming's schneller Aufstieg durch Innovation und Qualität",
+      "bgaming.description":
+        "Obwohl noch relativ neu in der iGaming-Branche, hat sich BGaming dank seiner überragenden Qualität und innovativen Strategien rasch als führender Anbieter von Online-Casino-Unterhaltung etabliert. Spezialisiert auf Slots, Casual-Spiele und klassische Tischspiele, erfrischt BGaming ständig seine Spielauswahl mit packenden Handlungssträngen, unvergesslichen Charakteren und ansprechenden Werbekampagnen. Bemerkenswerte Titel wie Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon und Aloha King Elvis bevölkern ihre herausragende Sammlung. Tauchen Sie ein in die aufregende und fesselnde Welt des außergewöhnlichen Angebots von BGaming.",
+      "boongo.title":
+        "Boongo Gaming: Erschaffung immersiver digitaler Erlebnisse durch innovative Spieledesigns",
+      "boongo.description":
+        "Boongo Gaming hat sich schnell in der wettbewerbsintensiven iGaming-Branche mit optisch ansprechenden und funktionsreichen Spielen etabliert. Bekannt für Titel wie 'God's Temple' und '15 Golden Eggs', überzeugt das Unternehmen sowohl durch Innovation als auch Qualität. Ihre robusten Backend-Lösungen verbessern das Spielerlebnis weiter. Ob Sie ein Gelegenheitsspieler oder ein engagierter Enthusiast sind, Boongo Gaming bietet eine unvergessliche Spielerreise.",
+      "evolution.title":
+        "Evolution Gaming: Setzen des Goldstandards in Live-Casino-Erlebnissen",
+      "evolution.description":
+        "Als anerkannter Marktführer im Bereich Live-Casino hat sich Evolution Gaming durch sein Engagement für unübertroffene Qualität und Innovation einen Namen gemacht. Mit einer reichen Vielfalt an Live-Dealer-Spielen, von Klassikern wie Blackjack und Roulette bis hin zu einzigartigen Angeboten wie Lightning Dice, bietet das Unternehmen stets ansprechende und authentische Erlebnisse. Durch den Einsatz modernster Streaming-Technologie und professioneller Dealer sorgt Evolution Gaming für eine nahtlose und immersive Spieleratmosphäre, die sie in der Branche auszeichnet.",
+      "mascot.title":
+        "Mascot Gaming: Ein aufstrebender Kraft im maßgeschneiderten iGaming-Bereich",
+      "mascot.description":
+        "Mascot Gaming steigt schnell in der iGaming-Branche auf und gewinnt durch maßgeschneiderte Spielelösungen an Aufmerksamkeit. Mit einem ausgewogenen Portfolio aus Slots, Tischspielen und interaktiven Erlebnissen setzt das Unternehmen durch eine Mischung aus Kreativität und Technologie Akzente. Bekannt für Titel wie 'Reel Monsters' und 'Fruit Vegas' kombiniert Mascot Gaming fesselnde Optik mit faszinierenden Gameplay-Funktionen. Ihr einzigartiger Ansatz für das Spielen hat sie zur ersten Wahl für Betreiber gemacht, die vielseitigen und ansprechenden Content suchen, und legt den Grundstein für eine vielversprechende Zukunft in der Branche.",
+      "netent.title": "NetEnt Gaming: Spitzenleistungen in der iGaming-Welt",
+      "netent.description":
+        "Als einer der Pioniere in der iGaming-Branche hat NetEnt Gaming kontinuierlich in Bezug auf Qualität, Innovation und Gameplay neue Maßstäbe gesetzt. Mit einer breiten Palette von Angeboten von klassischen Slots wie 'Starburst' bis hin zu bahnbrechenden Live-Casinospielen hat das Unternehmen immer wieder Branchenstandards gesetzt. Durch den Einsatz modernster Technologie und kreativer Geschichtenerzählung bietet NetEnt eine unvergleichliche Spielerfahrung, die die Spieler immer wieder zurückkommen lässt. Ihr Ruf für Exzellenz wird durch ein umfangreiches Portfolio gestützt, das sich ständig weiterentwickelt und ihre Position als Marktführer im digitalen Gaming festigt.",
+      "nolimit.title":
+        "No Limit City Gaming: Unbegrenzte Innovation in der iGaming-Welt",
+      "nolimit.description":
+        "Als aufstrebende Kraft in der iGaming-Branche steht No Limit City Gaming für kreative Freiheit und technologische Kompetenz. Bekannt für einzigartige Slots wie 'Deadwood' und 'Punk Rocker' geht das Unternehmen über das Übliche hinaus, um fesselnde Themen und Spielfunktionen anzubieten. Ihre Hingabe zur Innovation zeigt sich in einer erfrischenden und unvorhersehbaren Spielerfahrung. Indem sie ständig die Grenzen des Möglichen überschreiten, hat sich No Limit City Gaming als avantgardistischer Spieleanbieter in einem stark umkämpften Marktsegment etabliert.",
+      "playngo.title":
+        "Play'n GO Gaming: Ein Vorreiter für Vielseitigkeit und Innovation im iGaming",
+      "playngo.description":
+        "Mit seinem breit gefächerten und innovativen Spieleportfolio hat sich Play'n GO Gaming als Trendsetter in der iGaming-Community etabliert. Vom ikonischen Slot 'Book of Dead' bis hin zu innovativen Tischspielen bietet das Unternehmen ein umfassendes Spielerlebnis. Durch den Einsatz modernster Technologie und fesselnder Erzählungen hat Play'n GO die Kunst perfektioniert, Spiele zu entwickeln, die nicht nur visuell ansprechend sind, sondern auch reich an Funktionen. Ihre unermüdliche Verpflichtung zur Qualität und Innovation macht sie zur bevorzugten Wahl sowohl für Gelegenheitsspieler als auch für begeisterte Casino-Enthusiasten, die kontinuierlich neue Standards in der sich ständig weiterentwickelnden Gaming-Landschaft setzen.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusion von Qualität und Kreativität für ein unvergleichliches iGaming-Erlebnis",
+      "pragmatic.description":
+        "Als Spitzenreiter in der iGaming-Branche hat sich Pragmatic Play durch eine starke Kombination aus innovativem Gameplay und erstklassiger Grafik einen Namen gemacht. Bekannt für beliebte Titel wie 'Wolf Gold' und 'The Dog House' bietet das Unternehmen eine vielseitige Auswahl an Slots, Live-Casinospielen und sogar Bingo-Angeboten. Die Verpflichtung von Pragmatic Play zur Qualität zeigt sich in intuitiven Benutzeroberflächen, fesselnden Handlungssträngen und gut durchdachten Spielmechaniken. Durch die kontinuierliche Einführung neuer und fesselnder Spiele bleiben sie in der wettbewerbsintensiven Welt des Online-Gaming immer voraus und festigen ihren Ruf als zuverlässiger und einfallsreicher Spieleanbieter.",
+      "allproviders.title":
+        "Finden Sie leicht Ihr ideales Online Casino: Sortiert nach Spieleentwicklern für maßgeschneiderte Spielerlebnisse",
+      "allproviders.description":
+        "Um Ihre Suche zu erleichtern, haben wir unsere Casino-Angebote nach Spieleentwicklern sortiert. Dies ermöglicht es Ihnen, mühelos eine Spieleseite zu finden, die genau die Spiele bietet, die Sie spielen möchten. Von hochmodernen Videoslots und elektrisierenden Live-Casino-Erlebnissen bis hin zu traditionellen Tischspielen haben wir alle Ihre Vorlieben berücksichtigt. Durchsuchen Sie unsere detaillierte Liste der Spieleentwickler, um Casinos von führenden Softwareentwicklern zu finden, die hochwertige Visuals, fesselndes Gameplay und ansprechende Funktionen garantieren.",
+      "pushgaming.title":
+        "Push Gaming: Revolutionierung des iGaming mit bahnbrechenden Konzepten",
+      "pushgaming.description":
+        "In der stets wettbewerbsintensiven Welt des iGaming sticht Push Gaming durch bahnbrechende Slots wie 'Jammin' Jars' und 'Wild Swarm' hervor. Das Unternehmen zeichnet sich durch außergewöhnliche Grafiken und komplexe Gameplay-Funktionen aus. Push Gaming's Fokus auf mobiloptimierte, HTML5-basierte Spiele sorgt für ein nahtloses Erlebnis auf allen Geräten. Ihre Fähigkeit, traditionelle Spielelemente mit neuen Wendungen zu kombinieren, macht sie zu einem gefragten Anbieter, der ständig die Grenzen dessen, was in der iGaming-Welt möglich ist, ausreizt.",
+      "spinomenal.title":
+        "Spinomenal: Ein neuer innovativer Akteur im iGaming-Ökosystem",
+      "spinomenal.description":
+        "Spinomenal hat sich als agiler und zukunftsorientierter Akteur in der iGaming-Szene einen Platz erarbeitet und wird für seinen innovativen Ansatz in der Spieleentwicklung anerkannt. Das Unternehmen ist auf äußerst fesselnde Slots wie 'Book of Guardians' und 'Demi Gods II' spezialisiert und kombiniert lebendige Grafiken mit verlockenden Gameplay-Mechaniken. Die Hingabe von Spinomenal an die Benutzererfahrung ist offensichtlich und bietet Spiele, die sowohl für Desktop- als auch für Mobilgeräte optimiert sind. Ihre innovativen Funktionen wie Bonus-Spiele und progressive Jackpots machen sie zu einem herausragenden Anbieter in einem stetig wachsenden Markt, der eine breite Palette von Spielern anspricht, die frische und aufregende Spielerlebnisse suchen.",
+
+      "brand.safety": "Sicherheitsindex",
+      "brand.our": "von Unserem Casino",
+      "brand.providers": "Spiele-Anbieter:",
+      "brand.restricted": "Eingeschränkte Länder:",
+
+      "tab.casinos": "Kasinos",
+      "random.brand": "Zufällige Marke",
+      "random.description":
+        "Achten Sie auf eine zufällig vorgeschlagene Marke, die speziell für Sie empfohlen wird",
+      "slider.title": "Empfohlene Marken für Sie",
+
+      "button.read": "Mehr Lesen",
+      "button.less": "Weniger Lesen",
+
+      "button.view": "Alle Guides anzeigen",
+      "button.load": "Mehr Marken laden",
+      "button.review": "Rezension Lesen",
+      "button.play": "Jetzt Spielen",
+
+      "subscribe.text":
+        "Abonnieren Sie unseren Newsletter, um die neuesten Bewertungen direkt zu erhalten, oder werfen Sie einen Blick auf unsere",
+      "subscribe.link": "Beispiel-Liste",
+
+      "footer.contacts": "Unsere Kontakte:",
+      "footer.title": "Stärkung der iGaming-Lösungen",
+      "footer.description":
+        "Freischaltung von 15 Websites, die Ihre Marke auf neue Höhen bringen werden",
+      "footer.link": "Arbeiten Sie mit uns",
+      "footer.about":
+        "CasinoFrog positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
+      "footer.copyright": "Arbeiten Sie mit uns",
+    },
+  },
+
+  au: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on CasinoFreak.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
+      guideslotsguide2:
+        "In search of the perfect repository for tips, fun facts, and advice to boost your chances of winning? Look no further as we provide quick access to some of the most relevant slots guides and free slots games hosted on our website.",
+      "guideslotsguide.title": "Gambling Guides",
+      "guideslotsguide.excerpt":
+        "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on CasinoFreak.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.",
+
+      "header.home": "Home",
+      "header.bonuses": "Bonuses ▼",
+      "header.casinos": "Casinos ▼",
+      "header.payments": "All Payments ▼",
+      "header.providers": "Game Providers ▼",
+      "header.countries": "Casinos by Country ▼",
+
+      "header.austr": "Australian Casino",
+      "header.brazil": "Brazilian Casino",
+      "header.canada": "Canadian Casino",
+      "header.finnish": "Finnish Casino",
+      "header.germany": "Germanian Casino",
+      "header.nz": "New Zealandian Casino",
+      "header.norw": "Norwegian Casino",
+      "header.polish": "Polish Casino",
+
+      "header.spins": "Free Spins",
+      "header.guides": "Guides",
+      "header.about": "About Us",
+      "header.contacts": "Contacts",
+
+      "header.homebonuses": "Bonuses",
+      "header.homecasinos": "Casinos",
+      "header.homespins": "Free Spins",
+      "header.homeguides": "Gambling Guides",
+
+      "header.nodeposit": "No Deposit Bonuses",
+      "header.exclusive": "Exclusive Bonuses",
+      "header.deposit": "Deposit Bonuses",
+      "header.welcome": "Welcome Bonuses",
+      "header.nowager": "No Wagering Bonuses",
+      "header.cryptocasinos": "Crypto Casinos",
+      "header.fastwithdrawalcasinos": "Fast Withdrawal Casinos",
+      "header.livecasinos": "Live Casinos",
+      "header.newestcasinos": "Newest Casinos",
+      "header.certifiedcasinos": "Top Certified Casinos",
+
+      "searchBrands.placeholder": "Search brands...",
+
+      "home.title": "Online Casino Reviews & Gambling Guide's",
+      "home.description":
+        "Authentic player reviews, no deposit bonuses, and a wide selection of games with free play.",
+
+      "topBrands.title": "CasinoFrog Best Choices for 2023",
+      "newBrands.title": "Latest Casino Additions 2023",
+
+      "reviewBrands.title1": "All meticulously reviewed online casinos",
+      "reviewBrands.description1":
+        "We thoroughly review all existing online casinos, regardless of their preference",
+
+      "reviewBrands.question1.title":
+        "Currently in active pursuit of fresh casino websites",
+      "reviewBrands.question1.excerpt":
+        "Our team is constantly seeking recently",
+      "reviewBrands.question1.link": "launched casino websites for evaluation",
+      "reviewBrands.question1.excerpt2":
+        ", aiming to provide utmost value to our visitors.",
+
+      "reviewBrands.question2.title":
+        "The most precise details regarding each casino",
+      "reviewBrands.question2.excerpt":
+        "We meticulously assess each casino and gather extensive information to ensure our visitors are well-informed about what to anticipate before playing",
+
+      "reviewBrands.question3.title":
+        "Promoting responsible approach to gambling",
+      "reviewBrands.question3.excerpt":
+        "Every casino undergoes evaluation by an impartial team, adhering to a comprehensive, data-driven, ",
+      "reviewBrands.question3.link": "and unbiased review approach",
+
+      "reviewBrands.button1": "Discover top-rated bonuses",
+      "reviewBrands.button2": "Discover top-rated casinos",
+
+      "reviewBrands.title2": "We are passionate about no deposit bonuses",
+      "reviewBrands.description2":
+        "Our relentless efforts go into crafting the ultimate database of no deposit bonuses.",
+
+      "reviewBrands.question4.title":
+        "Compiling promotional deals from every online casino out there",
+      "reviewBrands.question4.excerpt":
+        "In our quest to provide the widest range of choices, we continually seek ",
+      "reviewBrands.question4.link": "fresh no deposit bonuses",
+      "reviewBrands.question4.excerpt2":
+        " to expand our database, sourced from all existing casino websites.",
+
+      "reviewBrands.question5.title":
+        "Creating unique and exclusive bonuses tailored exclusively for our valued visitors",
+      "reviewBrands.question5.excerpt":
+        "In our quest to provide the widest range of choices, we continually seek fresh ",
+      "reviewBrands.question5.link": "exclusive bonuses",
+      "reviewBrands.question5.excerpt2":
+        " features deals crafted solely for our esteemed visitors.",
+
+      "reviewBrands.question6.title":
+        "Comprehensive and precise details regarding every bonus",
+      "reviewBrands.question6.excerpt":
+        "In our bonus database, you'll find crucial information and terms associated with each bonus, along with clear explanations and illustrative examples.",
+
+      "filteredHome.title": "Catalog of all 2023 Online Casino Bonuses Offered",
+      "filteredHome.description":
+        "Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.",
+
+      "navigateBrands.all": "All Brands",
+      "navigateBrands.recommend": "Recommended Brands",
+      "navigateBrands.newly": "Newly Brands",
+      "navigateBrands.crypto": "Crypto Brands",
+      "navigateBrands.sports": "Top Sports Brands",
+
+      "allBrands.withLimits": "Withdrawal Limits:",
+      "allBrands.advantages": "Advantages",
+      "allBrands.depMethods": "Deposit Methods",
+      "allBrands.withMethods": "Withdrawal Methods",
+      "allBrands.restricted": "Restricted Countries",
+      "allBrands.howGet": "How to get bonus?",
+      "allBrands.activate": "Activate bonus in your casino account",
+
+      "guideSlotsHome.title1": "Online Gambling Guides",
+      "guideSlotsHome.title2": "Establish a gambling budge",
+      "guideSlotsHome.excerpt1":
+        "Prior to commencing any gambling session, it is imperative to establish a budget and adhere to it strictly. Ensure that the allocated amount is within your financial means, as it may not be your fortunate day and could be lost.",
+      "guideSlotsHome.title3": "Avoid pursuing your losses at all costs",
+      "guideSlotsHome.excerpt2":
+        "The unpredictable nature of games of chance necessitates caution. If your budget is lost, refrain from chasing your losses, as this behavior may result in further financial losses and, ultimately, lead to the development of a gambling addiction.",
+      "guideSlotsHome.title3":
+        "Pay close attention to your emotions while engaging in gambling activities",
+      "guideSlotsHome.excerpt3":
+        "Enjoy the entertainment of gambling while ensuring it remains enjoyable by being mindful of your emotions during play. If you detect feelings of heightened anger, frustration, or difficulty making rational decisions, it is essential to cease playing.",
+
+      "previewBonuses.title": "Promoting a responsible approach to gambling",
+      "previewBonuses.excerpt":
+        " Looking for exciting online casino bonuses and promotions? Look no further! Our extensive and regularly updated database offers a vast selection of enticing casino bonus offers that cater to all players' preferences. Whether you're into free spins, deposit bonuses, or cashback rewards, we've got you covered with the best deals available in the gambling world. Don't miss out on these exclusive offers – start exploring now and boost your gaming experience with lucrative bonuses!",
+
+      "nodepositbonuses.title":
+        "Irresistible in 2023: No Deposit Casino Bonuses and Unique Bonus Codes",
+      "nodepositbonuses.excerpt":
+        "Fresh in 2023: A continuously refreshed catalog of no deposit bonus deals for virtual casinos. Obtain exclusive promo codes and enjoy complimentary spins rewards.",
+
+      "exclusivebonuses.title":
+        "Comprehensive Compilation of Online Casino Bonuses Accessible in 2023",
+      "exclusivebonuses.excerpt":
+        "Searching for casino bonuses and promos on the web? Explore our current, well-maintained repository featuring a plethora of casino bonus propositions for your consideration.",
+
+      "depositbonuses.title":
+        "Finest Casino Welcome Bonuses on Your Initial 2023 Deposit",
+      "depositbonuses.excerpt":
+        "Select from a variety of top-tier introductory casino rewards and receive additional bonus funds incorporated into your initial payment. Exclusive registration incentive deals designed for fresh participants.",
+
+      "welcomebonuses.title": "Welcome Bonuses 2023",
+      "welcomebonuses.excerpt":
+        "If you're in search of a quality casino experience coupled with enticing bonuses, we have the perfect solution tailored for you! The welcoming bonus stands as a gesture from casinos to their fresh players, usually presented as free spins or cashback rewards. Explore our compilation of introductory bonuses from renowned online casinos, ensuring an ideal match for your preferences.",
+
+      "nowagerbonuses.title": "No Wagering Casino Bonuses 2023",
+      "nowagerbonuses.excerpt":
+        "Searching for no wagering bonuses? Explore our exclusive compilation of wager-free bonuses, available only at Casino.",
+
+      "cryptocasinos.title":
+        "Top Cryptocurrency Betting Platforms & Bitcoin Casino Sites in 2023",
+      "cryptocasinos.excerpt":
+        "  Explore our compilation of premier online casinos for Bitcoin along with betting platforms that embrace BTC and alternative cryptocurrencies as viable payment methods. Delve into impartial assessments, and pinpoint the ultimate Bitcoin casino destination tailored to your preferences.",
+
+      "fastcasinos.title":
+        "2023's Swiftest Payout Casino and Betting Platforms",
+      "fastcasinos.excerpt":
+        "The most advantageous aspect of rapid payout casinos is their swift and unwavering dispensation of your earnings. We've meticulously crafted this inventory to aid you in locating the supreme casinos offering expedited withdrawal processes, particularly when your earnings surge swiftly and substantially. Simply initiate a withdrawal and envisage the exhilarating possibilities for allocating those funds!",
+
+      "livecasinos.title": "Premier Live Dealer Casinos of the Year 2023",
+      "livecasinos.excerpt":
+        "Explore this compilation of top-notch live dealer casinos for an immersive gaming experience and discover prime online casinos hosting captivating live casino games catered to your preferences.",
+
+      "newestasinos.title": "Fresh Entrants to the Online Casino Scene 2023",
+      "newestasinos.excerpt":
+        "On the Hunt for Fresh 2023 Online Casino Platforms? Discover Recently Launched Casino Sites Offering Outstanding Incentives and Cutting-Edge Attributes. Constantly Refreshed for Your Exploration.",
+
+      "certifiedcasinos.title": "Premier Accredited Casinos in 2023",
+      "certifiedcasinos.excerpt":
+        "Gaming constitutes a substantial sector, and with the assistance of authorized internet-based casinos, you can relish your preferred pastime with serenity, assured of its oversight by official governmental bodies. Cutting-edge security protocols ensure the confidentiality of all personal data!",
+
+      "filteredBonuses.title":
+        "Catalog of all 2023 Online Casino Bonuses Offered",
+      "filteredBonuses.excerpt":
+        " Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.",
+
+      "filteredCasinos.title":
+        "Comprehensive Compilation of 2023 Online Casino Selection",
+      "filteredCasinos.excerpt":
+        "In Search of an Online Casino? Navigate through our up-to-date repository housing a myriad of casinos awaiting your consideration.",
+
+      "GuideSlotsPage.title": "Latest Casino Guides",
+
+      "filtered.payments.title":
+        "Catalog of all offered Online Casinos by Payment Methods in 2023",
+      "filtered.payments.description":
+        "Looking for online casinos with specific payment methods? Explore our current database of numerous casino offers for you to choose from.",
+      "apple.title":
+        "Exceptional Online Casinos That Welcome Apple Pay Transactions in 2023",
+      "apple.description":
+        " Wondering which online casinos accept Apple Pay for financial transactions? Let our guide direct you to the most reliable Apple Pay casinos for a top-notch gaming experience.",
+      "bitcoin.title":
+        "Premier Bitcoin & Cryptocurrency Gambling Destinations in 2023.",
+      "bitcoin.description":
+        " Explore our curated selection of leading Bitcoin-friendly casinos and gaming platforms that welcome BTC and other digital currencies. Dive into our impartial reviews to discover the ideal Bitcoin gambling venue for you right now.",
+      "ecopayz.title":
+        "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2023",
+      "ecopayz.description":
+        "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.",
+      "maestro.title":
+        "Top-Rated Online Casinos Accepting Maestro Payments for 2023",
+      "maestro.description":
+        "Interested in gaming at online casinos that welcome Maestro transactions? Let Casino Guru steer you to the ideal Maestro-friendly casino for you.",
+      "mastercard.title":
+        "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2023",
+      "mastercard.description":
+        " Interested in gaming at a Mastercard-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.",
+      "mobi.title":
+        "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2023.",
+      "mobi.description":
+        "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.",
+      "muchbetter.title":
+        "Top Online Casinos Supporting MuchBetter Transactions in 2023",
+      "muchbetter.description":
+        "Searching for casinos compatible with MuchBetter? Consult our guide to discover the ideal MuchBetter-friendly casino for you.",
+      "neosurf.title":
+        "Top-Rated Online Casinos Supporting Neosurf Transactions for 2023",
+      "neosurf.description":
+        "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.",
+      "neteller.title":
+        "Top Online Casinos Supporting Neteller Transactions in 2023",
+      "neteller.description":
+        "  Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by Casino Guru. ✅ Discover your ideal Neteller-friendly casino.",
+      "allpayments.title":
+        "Digital Casino Financial Transactions & Payment Selections",
+      "allpayments.description":
+        "Currently, there exist numerous methods for funding a gaming account. Listed below are internet casinos categorized by widely utilized payment options. Some casinos accommodate MasterCard, Visa, and digital currency, while others endorse less conventional avenues like Neteller and Skrill. The choice of your preferred payment mechanism lies in your hands.",
+      "paypal.title":
+        "Leading Online Casinos Accepting PayPal Payments in 2023",
+      "paypal.description":
+        "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!",
+      "paysafe.title": "Top-Ranked Online Casino Platforms for 2023",
+      "paysafe.description":
+        "Our specialists have scrutinized more than 5,000 digital gambling platforms and selected the cream of the crop. Explore our curated list to discover your ideal online casino.",
+      "pix.title":
+        "Discover Top-Rated Casinos Accepting Pix Payments for Quick and Secure Transactions",
+      "pix.description":
+        "Explore our curated list of premium casinos that support Pix as a payment option. Known for its speed and security, Pix is a go-to method for deposits and withdrawals among online casino enthusiasts worldwide. It offers the advantage of sidestepping traditional banking hassles and pesky geographical limits. If you haven't set up a Pix wallet yet, it's easy to do so—then you're all set to try your luck!",
+      "skrill.title":
+        "Top Online Casinos Supporting Skrill Transactions for 2023",
+      "skrill.description":
+        "Searching for an online casino that allows Skrill payments? Browse our curated selection of premier Skrill-compatible casinos to find your ideal gaming destination.",
+      "trustly.title":
+        "Top Online Casinos Supporting Trustly Transactions for 2023",
+      "trustly.description":
+        "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.",
+      "visa.title":
+        "Top-Rated Online Casinos Welcoming Visa Transactions in 2023",
+      "visa.description":
+        "Interested in gaming at a Visa-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.",
+
+      "filtered.countries.title":
+        "Interactive List of Online Casinos 2023: Filtering by Country",
+      "filtered.countries.description":
+        " Looking for the perfect online casino? Explore our interactive list for 2023, specifically designed to help you filter through an array of options based on country. Tailor your search to find the most reputable, safe, and exciting casinos available in your region.",
+      "countries.title":
+        "Global Online Casino Review: Top Platforms by Country",
+      "countries.description":
+        "Searching for the perfect online casino? Our comprehensive compilation showcases the most reliable and enticing casinos available across the globe. Here, you'll find information on lucrative bonuses, dependable customer service, and various payment methods ranging from credit cards to e-wallets. No matter where you are located, we have something to offer for every player.",
+      "australia.title":
+        "Australian Online Casino Overview: The Pinnacle of Gaming Down Unde",
+      "australia.description":
+        "Seeking an unparalleled gaming experience in Australia? Our curated list spotlights the crème de la crème of Australian online casinos. Dive into a world of generous bonuses, impeccable customer service, and diverse payment options—ranging from traditional bank transfers to modern e-wallet solutions. For those located in Australia, we offer a tailored gaming journey that's second to none.",
+      "brazil.title":
+        "Brazilian Online Casino Guide: Your Portal to Gaming Bliss in Brazil",
+      "brazil.description":
+        "Looking for a top-tier gaming experience in Brazil? Our expertly curated list highlights the most exceptional online casinos available in the Brazilian market. Explore a universe of rewarding bonuses, dependable customer service, and a myriad of payment options, from traditional bank transfers to modern digital wallets. If you're in Brazil, we've got your ultimate gaming adventure covered.",
+      "canada.title":
+        "Canadian Online Casino Guide: Uncovering the Best in Canadian Gaming",
+      "canada.description":
+        "In search of an exceptional gaming experience in Canada? Our meticulously curated list features the top online casinos available to the Canadian audience. Dive into a realm of generous bonuses, stellar customer service, and a wide array of payment options that include traditional bank transfers as well as contemporary e-wallets. If you're based in Canada, your ultimate gaming adventure awaits.",
+      "finland.title":
+        "Finnish Online Casino Guide: The Ultimate Gaming Experience in Finland",
+      "finland.description":
+        "Searching for an unparalleled gaming adventure in Finland? Our hand-picked selection showcases the finest online casinos catering to the Finnish audience. Step into a realm filled with generous bonuses, top-notch customer service, and a broad spectrum of payment methods from traditional bank transfers to modern e-wallets. If you're in Finland, your one-of-a-kind gaming journey starts here",
+      "germany.title":
+        "German Online Casino Guide: The Ultimate Gaming Haven in Deutschland",
+      "germany.description":
+        "Are you on the quest for an exceptional gaming experience in Germany? Our carefully curated list highlights the best online casinos available for the German market. Venture into a world rich with enticing bonuses, reliable customer support, and a multitude of payment options, including traditional bank transfers and contemporary e-wallets. If you're in Germany, your unparalleled gaming journey begins here",
+      "nz.title":
+        "New Zealand Online Casino Guide: The Ultimate Kiwi Gaming Experience",
+      "nz.description":
+        "Searching for an extraordinary gaming experience in New Zealand? Our rigorously curated list features the cream of the crop in online casinos available to Kiwi players. Step into a world of lavish bonuses, excellent customer service, and a plethora of payment options ranging from traditional bank transfers to cutting-edge e-wallets. For those in New Zealand, your unparalleled gaming adventure starts right here.",
+      "norway.title":
+        "Norwegian Online Casino Guide: The Apex of Gaming in Norway",
+      "norway.description":
+        "Looking for an unmatched gaming experience in Norway? Our carefully vetted list highlights the top online casinos available to Norwegian players. Enter a realm of substantial bonuses, first-rate customer support, and a wide variety of payment options from traditional bank transfers to state-of-the-art e-wallets. If you're in Norway, the ultimate gaming escapade awaits you here.",
+      "poland.title":
+        "Polish Online Casino Guide: The Premier Gaming Destination in Poland",
+      "poland.description":
+        "Seeking an unparalleled gaming experience in Poland? Our scrupulously curated list highlights the elite online casinos accessible to Polish players. Step into a world rich in lucrative bonuses, impeccable customer service, and a myriad of payment options, from traditional bank transfers to innovative e-wallet solutions. If you're in Poland, your matchless gaming journey starts here.",
+
+      "filtered.providers.title":
+        "Comprehensive 2023 Directory for Online Casinos Sorted by Game Providers",
+      "filtered.providers.description":
+        "Interested in locating online casinos featuring games from particular providers? Browse our up-to-date list of diverse casino options to find your perfect match.",
+      "amatic.title":
+        "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles",
+      "amatic.description":
+        "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.",
+      "amusnet.title":
+        "Two Decades of Gaming Excellence: Exploring Amusnet Interactive&#39;s Innovative Portfolio",
+      "amusnet.description":
+        "Spanning over 20 years, Amusnet Interactive has amassed a significant following thanks to its relentless focus on game innovation, including the integration of in-game jackpots across several of its offerings. Notable Amusnet Interactive titles encompass Supreme Hot, Burning Hot, Ultimate Hot, and Shining Crown. Dive into the exhilarating gameplay and compelling elements presented by Amusnet Interactive's remarkable range of games.",
+      "bgaming.title":
+        "Rising Star in iGaming: BGaming's Rapid Ascent Through Innovation and Quality",
+      "bgaming.description":
+        " Though a relative novice in the iGaming realm, BGaming has rapidly ascended as a premier provider of online casino entertainment, owing to its superior quality and inventive strategies. Specializing in slots, casual diversions, and classic table games, BGaming constantly refreshes its game lineup with compelling storylines, unforgettable personas, and engaging promotional campaigns. Noteworthy titles such as Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon, and Aloha King Elvis populate their standout collection. Delve into the thrilling and engaging world presented by BGaming's exceptional range of gaming options.",
+      "boongo.title":
+        " Boongo Gaming: Crafting Immersive Digital Experiences through Innovative Game Design",
+      "boongo.description":
+        " Boongo Gaming has quickly distinguished itself in the competitive iGaming sector with visually appealing and feature-rich games. Known for titles like 'God's Temple' and '15 Golden Eggs,' the company excels in both innovation and quality. Their robust backend solutions further enhance the gaming experience. Whether you're a casual player or a dedicated enthusiast, Boongo Gaming offers a memorable gaming journey.",
+      "evolution.title":
+        "Evolution Gaming: Setting the Gold Standard in Live Casino Experiences",
+      "evolution.description":
+        "A recognized leader in the live casino arena, Evolution Gaming has earned its reputation through a commitment to unparalleled quality and innovation. Offering a rich variety of live dealer games, from classics like blackjack and roulette to unique offerings like Lightning Dice, the company consistently delivers engaging and authentic experiences. By utilizing cutting-edge streaming technology and employing professional dealers, Evolution Gaming ensures a seamless and immersive gaming atmosphere that sets them apart in the industry.",
+      "mascot.title":
+        "Mascot Gaming: An Emerging Powerhouse in Tailored iGaming Solutions",
+      "mascot.description":
+        "Quickly rising through the ranks of the iGaming industry, Mascot Gaming is garnering attention for its custom gaming solutions. With a balanced portfolio of slots, table games, and interactive experiences, the company is making its mark through a blend of creativity and technology. Known for titles like 'Reel Monsters' and 'Fruit Vegas,' Mascot Gaming combines captivating visuals with intriguing gameplay features. Their unique approach to gaming has made them a go-to for operators seeking versatile and engaging content, setting the stage for what promises to be a bright future in the sector.",
+      "netent.title":
+        "NetEnt Gaming: Pioneering Excellence in the iGaming World",
+      "netent.description":
+        "As one of the stalwarts in the iGaming industry, NetEnt Gaming has consistently pushed the envelope in terms of quality, innovation, and gameplay. With a broad spectrum of offerings from classic slots like 'Starburst' to groundbreaking live casino games, the company has set industry benchmarks time and again. Utilizing state-of-the-art technology and creative storytelling, NetEnt offers an unrivaled gaming experience that keeps players coming back for more. Their reputation for excellence is backed by an extensive portfolio that continually evolves, solidifying their position as a leader in digital gaming.",
+      "nolimit.title":
+        "No Limit City Gaming: Unbounded Innovation in the iGaming Sphere",
+      "nolimit.description":
+        "Emerging as a force to be reckoned with in the iGaming industry, No Limit City Gaming is synonymous with creative freedom and technological prowess. Known for unique slots like 'Deadwood' and 'Punk Rocker,' the company goes beyond the norm to offer riveting themes and game mechanics. Their dedication to innovation is evident, providing a refreshing and unpredictable gaming experience. By continually pushing the boundaries of what’s possible, No Limit City Gaming has carved a niche for itself as an avant-garde game provider in a highly competitive market.",
+      "playngo.title":
+        "Play'n GO Gaming: A Vanguard of Versatility and Innovation in iGaming",
+      "playngo.description":
+        "Cementing its status as a trendsetter in the iGaming community, Play'n GO Gaming is celebrated for its wide-ranging and inventive game portfolio. From iconic slots like 'Book of Dead' to inventive table games, the company provides an all-encompassing gaming experience. Employing cutting-edge technology and captivating narratives, Play'n GO has mastered the art of creating games that are not just visually appealing but also rich in features. Their unyielding commitment to quality and innovation makes them a preferred choice for both casual gamers and ardent casino enthusiasts, continually setting new standards in the ever-evolving gaming landscape.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusing Quality and Creativity for an Unmatched iGaming Experience",
+      "pragmatic.description":
+        "A frontrunner in the iGaming industry, Pragmatic Play has made its name through a potent blend of innovative gameplay and top-notch graphics. Renowned for popular titles like 'Wolf Gold' and 'The Dog House,' the company delivers a versatile range of slots, live casino games, and even bingo offerings. Pragmatic Play's commitment to quality is manifest in its intuitive interfaces, engaging storylines, and well-executed game mechanics. By consistently rolling out new and captivating games, they manage to stay ahead in the competitive world of online gaming, solidifying their reputation as a reliable and inventive game provider.",
+      "allproviders.title":
+        "Easily Find Your Ideal Online Casino: Sorted by Game Developers for Tailored Gaming Experiences",
+      "allproviders.description":
+        "To make your hunt easier, we've sorted our casino offerings by game developer. This enables you to effortlessly locate a gaming site that provides the exact games you wish to play. From state-of-the-art video slots and electrifying live casino experiences to traditional table games, we've got all your preferences accounted for. Browse our detailed list of game providers to find casinos backed by premier software developers, guaranteeing high-quality visuals, captivating gameplay, and engaging features.",
+      "pushgaming.title":
+        "Push Gaming: Revolutionizing iGaming with Cutting-Edge Concepts",
+      "pushgaming.description":
+        "In the ever-competitive realm of iGaming, Push Gaming stands out for groundbreaking slots like 'Jammin' Jars' and 'Wild Swarm,' the company excels in delivering games with exceptional visuals and intricate gameplay features. Push Gaming's focus on mobile-optimized, HTML5-based games ensures a seamless experience across devices. Their capacity to marry traditional gaming elements with novel twists makes them a sought-after provider, continually pushing the envelope in terms of what is possible in the iGaming world.",
+      "spinomenal.title":
+        "Spinomenal: A New Age Innovator in the iGaming Ecosystem",
+      "spinomenal.description":
+        "Earning its place as an agile and forward-thinking player in the iGaming scene, Spinomenal is recognized for its inventive approach to game development. Specializing in highly engaging slots like 'Book of Guardians' and 'Demi Gods II,' the company combines vibrant graphics with enticing gameplay mechanics. Spinomenal's commitment to user experience is evident, offering games that are optimized for both desktop and mobile play. Their innovative features, such as bonus games and progressive jackpots, make them a standout provider in an ever-growing market, appealing to a wide range of players seeking fresh and exciting gaming experiences.",
+
+      "brand.safety": "Safety Index",
+      "brand.our": "by Our Casino",
+      "brand.providers": "Game Providers:",
+      "brand.restricted": "Restricted countries:",
+
+      "tab.casinos": "Casinos",
+      "random.brand": "Random Brand",
+      "random.description":
+        "Pay attention to a random brand suggested just for you",
+      "slider.title": "Reccomend brands for you",
+
+      "button.read": "Read More",
+      "button.less": "Read Less",
+
+      "button.view": "View All Guides",
+      "button.load": "Load More Brands",
+      "button.review": "Read Review",
+      "button.play": "Play Now",
+
+      "subscribe.text":
+        " Subscribe to our mailing list to receive the latest reviews right now, or check out our mailing ",
+      "subscribe.link": "List Examples",
+
+      "footer.contacts": "Our Contacts:",
+      "footer.title": "Empowering iGaming Solutions",
+      "footer.description":
+        "Unlocking 15 Websites That Will Boost Your Brand to New Heights",
+      "footer.link": "Start Working With Us",
+      "footer.about":
+        "CasinoFrog positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
+      "footer.copyright": "Start Working With Us",
+    },
+  },
+
+  ca: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on CasinoFreak.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
+      guideslotsguide2:
+        "In search of the perfect repository for tips, fun facts, and advice to boost your chances of winning? Look no further as we provide quick access to some of the most relevant slots guides and free slots games hosted on our website.",
+      "guideslotsguide.title": "Gambling Guides",
+      "guideslotsguide.excerpt":
+        "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on CasinoFreak.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.",
+
+      "header.home": "Home",
+      "header.bonuses": "Bonuses ▼",
+      "header.casinos": "Casinos ▼",
+      "header.payments": "All Payments ▼",
+      "header.providers": "Game Providers ▼",
+      "header.countries": "Casinos by Country ▼",
+
+      "header.austr": "Australian Casino",
+      "header.brazil": "Brazilian Casino",
+      "header.canada": "Canadian Casino",
+      "header.finnish": "Finnish Casino",
+      "header.germany": "Germanian Casino",
+      "header.nz": "New Zealandian Casino",
+      "header.norw": "Norwegian Casino",
+      "header.polish": "Polish Casino",
+
+      "header.spins": "Free Spins",
+      "header.guides": "Guides",
+      "header.about": "About Us",
+      "header.contacts": "Contacts",
+
+      "header.homebonuses": "Bonuses",
+      "header.homecasinos": "Casinos",
+      "header.homespins": "Free Spins",
+      "header.homeguides": "Gambling Guides",
+
+      "header.nodeposit": "No Deposit Bonuses",
+      "header.exclusive": "Exclusive Bonuses",
+      "header.deposit": "Deposit Bonuses",
+      "header.welcome": "Welcome Bonuses",
+      "header.nowager": "No Wagering Bonuses",
+      "header.cryptocasinos": "Crypto Casinos",
+      "header.fastwithdrawalcasinos": "Fast Withdrawal Casinos",
+      "header.livecasinos": "Live Casinos",
+      "header.newestcasinos": "Newest Casinos",
+      "header.certifiedcasinos": "Top Certified Casinos",
+
+      "searchBrands.placeholder": "Search brands...",
+
+      "home.title": "Online Casino Reviews & Gambling Guide's",
+      "home.description":
+        "Authentic player reviews, no deposit bonuses, and a wide selection of games with free play.",
+
+      "topBrands.title": "CasinoFrog Best Choices for 2023",
+      "newBrands.title": "Latest Casino Additions 2023",
+
+      "reviewBrands.title1": "All meticulously reviewed online casinos",
+      "reviewBrands.description1":
+        "We thoroughly review all existing online casinos, regardless of their preference",
+
+      "reviewBrands.question1.title":
+        "Currently in active pursuit of fresh casino websites",
+      "reviewBrands.question1.excerpt":
+        "Our team is constantly seeking recently",
+      "reviewBrands.question1.link": "launched casino websites for evaluation",
+      "reviewBrands.question1.excerpt2":
+        ", aiming to provide utmost value to our visitors.",
+
+      "reviewBrands.question2.title":
+        "The most precise details regarding each casino",
+      "reviewBrands.question2.excerpt":
+        "We meticulously assess each casino and gather extensive information to ensure our visitors are well-informed about what to anticipate before playing",
+
+      "reviewBrands.question3.title":
+        "Promoting responsible approach to gambling",
+      "reviewBrands.question3.excerpt":
+        "Every casino undergoes evaluation by an impartial team, adhering to a comprehensive, data-driven, ",
+      "reviewBrands.question3.link": "and unbiased review approach",
+
+      "reviewBrands.button1": "Discover top-rated bonuses",
+      "reviewBrands.button2": "Discover top-rated casinos",
+
+      "reviewBrands.title2": "We are passionate about no deposit bonuses",
+      "reviewBrands.description2":
+        "Our relentless efforts go into crafting the ultimate database of no deposit bonuses.",
+
+      "reviewBrands.question4.title":
+        "Compiling promotional deals from every online casino out there",
+      "reviewBrands.question4.excerpt":
+        "In our quest to provide the widest range of choices, we continually seek ",
+      "reviewBrands.question4.link": "fresh no deposit bonuses",
+      "reviewBrands.question4.excerpt2":
+        " to expand our database, sourced from all existing casino websites.",
+
+      "reviewBrands.question5.title":
+        "Creating unique and exclusive bonuses tailored exclusively for our valued visitors",
+      "reviewBrands.question5.excerpt":
+        "In our quest to provide the widest range of choices, we continually seek fresh ",
+      "reviewBrands.question5.link": "exclusive bonuses",
+      "reviewBrands.question5.excerpt2":
+        " features deals crafted solely for our esteemed visitors.",
+
+      "reviewBrands.question6.title":
+        "Comprehensive and precise details regarding every bonus",
+      "reviewBrands.question6.excerpt":
+        "In our bonus database, you'll find crucial information and terms associated with each bonus, along with clear explanations and illustrative examples.",
+
+      "filteredHome.title": "Catalog of all 2023 Online Casino Bonuses Offered",
+      "filteredHome.description":
+        "Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.",
+
+      "navigateBrands.all": "All Brands",
+      "navigateBrands.recommend": "Recommended Brands",
+      "navigateBrands.newly": "Newly Brands",
+      "navigateBrands.crypto": "Crypto Brands",
+      "navigateBrands.sports": "Top Sports Brands",
+
+      "allBrands.withLimits": "Withdrawal Limits:",
+      "allBrands.advantages": "Advantages",
+      "allBrands.depMethods": "Deposit Methods",
+      "allBrands.withMethods": "Withdrawal Methods",
+      "allBrands.restricted": "Restricted Countries",
+      "allBrands.howGet": "How to get bonus?",
+      "allBrands.activate": "Activate bonus in your casino account",
+
+      "guideSlotsHome.title1": "Online Gambling Guides",
+      "guideSlotsHome.title2": "Establish a gambling budge",
+      "guideSlotsHome.excerpt1":
+        "Prior to commencing any gambling session, it is imperative to establish a budget and adhere to it strictly. Ensure that the allocated amount is within your financial means, as it may not be your fortunate day and could be lost.",
+      "guideSlotsHome.title3": "Avoid pursuing your losses at all costs",
+      "guideSlotsHome.excerpt2":
+        "The unpredictable nature of games of chance necessitates caution. If your budget is lost, refrain from chasing your losses, as this behavior may result in further financial losses and, ultimately, lead to the development of a gambling addiction.",
+      "guideSlotsHome.title3":
+        "Pay close attention to your emotions while engaging in gambling activities",
+      "guideSlotsHome.excerpt3":
+        "Enjoy the entertainment of gambling while ensuring it remains enjoyable by being mindful of your emotions during play. If you detect feelings of heightened anger, frustration, or difficulty making rational decisions, it is essential to cease playing.",
+
+      "previewBonuses.title": "Promoting a responsible approach to gambling",
+      "previewBonuses.excerpt":
+        " Looking for exciting online casino bonuses and promotions? Look no further! Our extensive and regularly updated database offers a vast selection of enticing casino bonus offers that cater to all players' preferences. Whether you're into free spins, deposit bonuses, or cashback rewards, we've got you covered with the best deals available in the gambling world. Don't miss out on these exclusive offers – start exploring now and boost your gaming experience with lucrative bonuses!",
+
+      "nodepositbonuses.title":
+        "Irresistible in 2023: No Deposit Casino Bonuses and Unique Bonus Codes",
+      "nodepositbonuses.excerpt":
+        "Fresh in 2023: A continuously refreshed catalog of no deposit bonus deals for virtual casinos. Obtain exclusive promo codes and enjoy complimentary spins rewards.",
+
+      "exclusivebonuses.title":
+        "Comprehensive Compilation of Online Casino Bonuses Accessible in 2023",
+      "exclusivebonuses.excerpt":
+        "Searching for casino bonuses and promos on the web? Explore our current, well-maintained repository featuring a plethora of casino bonus propositions for your consideration.",
+
+      "depositbonuses.title":
+        "Finest Casino Welcome Bonuses on Your Initial 2023 Deposit",
+      "depositbonuses.excerpt":
+        "Select from a variety of top-tier introductory casino rewards and receive additional bonus funds incorporated into your initial payment. Exclusive registration incentive deals designed for fresh participants.",
+
+      "welcomebonuses.title": "Welcome Bonuses 2023",
+      "welcomebonuses.excerpt":
+        "If you're in search of a quality casino experience coupled with enticing bonuses, we have the perfect solution tailored for you! The welcoming bonus stands as a gesture from casinos to their fresh players, usually presented as free spins or cashback rewards. Explore our compilation of introductory bonuses from renowned online casinos, ensuring an ideal match for your preferences.",
+
+      "nowagerbonuses.title": "No Wagering Casino Bonuses 2023",
+      "nowagerbonuses.excerpt":
+        "Searching for no wagering bonuses? Explore our exclusive compilation of wager-free bonuses, available only at Casino.",
+
+      "cryptocasinos.title":
+        "Top Cryptocurrency Betting Platforms & Bitcoin Casino Sites in 2023",
+      "cryptocasinos.excerpt":
+        "  Explore our compilation of premier online casinos for Bitcoin along with betting platforms that embrace BTC and alternative cryptocurrencies as viable payment methods. Delve into impartial assessments, and pinpoint the ultimate Bitcoin casino destination tailored to your preferences.",
+
+      "fastcasinos.title":
+        "2023's Swiftest Payout Casino and Betting Platforms",
+      "fastcasinos.excerpt":
+        "The most advantageous aspect of rapid payout casinos is their swift and unwavering dispensation of your earnings. We've meticulously crafted this inventory to aid you in locating the supreme casinos offering expedited withdrawal processes, particularly when your earnings surge swiftly and substantially. Simply initiate a withdrawal and envisage the exhilarating possibilities for allocating those funds!",
+
+      "livecasinos.title": "Premier Live Dealer Casinos of the Year 2023",
+      "livecasinos.excerpt":
+        "Explore this compilation of top-notch live dealer casinos for an immersive gaming experience and discover prime online casinos hosting captivating live casino games catered to your preferences.",
+
+      "newestasinos.title": "Fresh Entrants to the Online Casino Scene 2023",
+      "newestasinos.excerpt":
+        "On the Hunt for Fresh 2023 Online Casino Platforms? Discover Recently Launched Casino Sites Offering Outstanding Incentives and Cutting-Edge Attributes. Constantly Refreshed for Your Exploration.",
+
+      "certifiedcasinos.title": "Premier Accredited Casinos in 2023",
+      "certifiedcasinos.excerpt":
+        "Gaming constitutes a substantial sector, and with the assistance of authorized internet-based casinos, you can relish your preferred pastime with serenity, assured of its oversight by official governmental bodies. Cutting-edge security protocols ensure the confidentiality of all personal data!",
+
+      "filteredBonuses.title":
+        "Catalog of all 2023 Online Casino Bonuses Offered",
+      "filteredBonuses.excerpt":
+        " Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.",
+
+      "filteredCasinos.title":
+        "Comprehensive Compilation of 2023 Online Casino Selection",
+      "filteredCasinos.excerpt":
+        "In Search of an Online Casino? Navigate through our up-to-date repository housing a myriad of casinos awaiting your consideration.",
+
+      "GuideSlotsPage.title": "Latest Casino Guides",
+
+      "filtered.payments.title":
+        "Catalog of all offered Online Casinos by Payment Methods in 2023",
+      "filtered.payments.description":
+        "Looking for online casinos with specific payment methods? Explore our current database of numerous casino offers for you to choose from.",
+      "apple.title":
+        "Exceptional Online Casinos That Welcome Apple Pay Transactions in 2023",
+      "apple.description":
+        " Wondering which online casinos accept Apple Pay for financial transactions? Let our guide direct you to the most reliable Apple Pay casinos for a top-notch gaming experience.",
+      "bitcoin.title":
+        "Premier Bitcoin & Cryptocurrency Gambling Destinations in 2023.",
+      "bitcoin.description":
+        " Explore our curated selection of leading Bitcoin-friendly casinos and gaming platforms that welcome BTC and other digital currencies. Dive into our impartial reviews to discover the ideal Bitcoin gambling venue for you right now.",
+      "ecopayz.title":
+        "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2023",
+      "ecopayz.description":
+        "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.",
+      "maestro.title":
+        "Top-Rated Online Casinos Accepting Maestro Payments for 2023",
+      "maestro.description":
+        "Interested in gaming at online casinos that welcome Maestro transactions? Let Casino Guru steer you to the ideal Maestro-friendly casino for you.",
+      "mastercard.title":
+        "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2023",
+      "mastercard.description":
+        " Interested in gaming at a Mastercard-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.",
+      "mobi.title":
+        "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2023.",
+      "mobi.description":
+        "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.",
+      "muchbetter.title":
+        "Top Online Casinos Supporting MuchBetter Transactions in 2023",
+      "muchbetter.description":
+        "Searching for casinos compatible with MuchBetter? Consult our guide to discover the ideal MuchBetter-friendly casino for you.",
+      "neosurf.title":
+        "Top-Rated Online Casinos Supporting Neosurf Transactions for 2023",
+      "neosurf.description":
+        "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.",
+      "neteller.title":
+        "Top Online Casinos Supporting Neteller Transactions in 2023",
+      "neteller.description":
+        "  Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by Casino Guru. ✅ Discover your ideal Neteller-friendly casino.",
+      "allpayments.title":
+        "Digital Casino Financial Transactions & Payment Selections",
+      "allpayments.description":
+        "Currently, there exist numerous methods for funding a gaming account. Listed below are internet casinos categorized by widely utilized payment options. Some casinos accommodate MasterCard, Visa, and digital currency, while others endorse less conventional avenues like Neteller and Skrill. The choice of your preferred payment mechanism lies in your hands.",
+      "paypal.title":
+        "Leading Online Casinos Accepting PayPal Payments in 2023",
+      "paypal.description":
+        "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!",
+      "paysafe.title": "Top-Ranked Online Casino Platforms for 2023",
+      "paysafe.description":
+        "Our specialists have scrutinized more than 5,000 digital gambling platforms and selected the cream of the crop. Explore our curated list to discover your ideal online casino.",
+      "pix.title":
+        "Discover Top-Rated Casinos Accepting Pix Payments for Quick and Secure Transactions",
+      "pix.description":
+        "Explore our curated list of premium casinos that support Pix as a payment option. Known for its speed and security, Pix is a go-to method for deposits and withdrawals among online casino enthusiasts worldwide. It offers the advantage of sidestepping traditional banking hassles and pesky geographical limits. If you haven't set up a Pix wallet yet, it's easy to do so—then you're all set to try your luck!",
+      "skrill.title":
+        "Top Online Casinos Supporting Skrill Transactions for 2023",
+      "skrill.description":
+        "Searching for an online casino that allows Skrill payments? Browse our curated selection of premier Skrill-compatible casinos to find your ideal gaming destination.",
+      "trustly.title":
+        "Top Online Casinos Supporting Trustly Transactions for 2023",
+      "trustly.description":
+        "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.",
+      "visa.title":
+        "Top-Rated Online Casinos Welcoming Visa Transactions in 2023",
+      "visa.description":
+        "Interested in gaming at a Visa-friendly casino? Casino Guru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.",
+
+      "filtered.countries.title":
+        "Interactive List of Online Casinos 2023: Filtering by Country",
+      "filtered.countries.description":
+        " Looking for the perfect online casino? Explore our interactive list for 2023, specifically designed to help you filter through an array of options based on country. Tailor your search to find the most reputable, safe, and exciting casinos available in your region.",
+      "countries.title":
+        "Global Online Casino Review: Top Platforms by Country",
+      "countries.description":
+        "Searching for the perfect online casino? Our comprehensive compilation showcases the most reliable and enticing casinos available across the globe. Here, you'll find information on lucrative bonuses, dependable customer service, and various payment methods ranging from credit cards to e-wallets. No matter where you are located, we have something to offer for every player.",
+      "australia.title":
+        "Australian Online Casino Overview: The Pinnacle of Gaming Down Unde",
+      "australia.description":
+        "Seeking an unparalleled gaming experience in Australia? Our curated list spotlights the crème de la crème of Australian online casinos. Dive into a world of generous bonuses, impeccable customer service, and diverse payment options—ranging from traditional bank transfers to modern e-wallet solutions. For those located in Australia, we offer a tailored gaming journey that's second to none.",
+      "brazil.title":
+        "Brazilian Online Casino Guide: Your Portal to Gaming Bliss in Brazil",
+      "brazil.description":
+        "Looking for a top-tier gaming experience in Brazil? Our expertly curated list highlights the most exceptional online casinos available in the Brazilian market. Explore a universe of rewarding bonuses, dependable customer service, and a myriad of payment options, from traditional bank transfers to modern digital wallets. If you're in Brazil, we've got your ultimate gaming adventure covered.",
+      "canada.title":
+        "Canadian Online Casino Guide: Uncovering the Best in Canadian Gaming",
+      "canada.description":
+        "In search of an exceptional gaming experience in Canada? Our meticulously curated list features the top online casinos available to the Canadian audience. Dive into a realm of generous bonuses, stellar customer service, and a wide array of payment options that include traditional bank transfers as well as contemporary e-wallets. If you're based in Canada, your ultimate gaming adventure awaits.",
+      "finland.title":
+        "Finnish Online Casino Guide: The Ultimate Gaming Experience in Finland",
+      "finland.description":
+        "Searching for an unparalleled gaming adventure in Finland? Our hand-picked selection showcases the finest online casinos catering to the Finnish audience. Step into a realm filled with generous bonuses, top-notch customer service, and a broad spectrum of payment methods from traditional bank transfers to modern e-wallets. If you're in Finland, your one-of-a-kind gaming journey starts here",
+      "germany.title":
+        "German Online Casino Guide: The Ultimate Gaming Haven in Deutschland",
+      "germany.description":
+        "Are you on the quest for an exceptional gaming experience in Germany? Our carefully curated list highlights the best online casinos available for the German market. Venture into a world rich with enticing bonuses, reliable customer support, and a multitude of payment options, including traditional bank transfers and contemporary e-wallets. If you're in Germany, your unparalleled gaming journey begins here",
+      "nz.title":
+        "New Zealand Online Casino Guide: The Ultimate Kiwi Gaming Experience",
+      "nz.description":
+        "Searching for an extraordinary gaming experience in New Zealand? Our rigorously curated list features the cream of the crop in online casinos available to Kiwi players. Step into a world of lavish bonuses, excellent customer service, and a plethora of payment options ranging from traditional bank transfers to cutting-edge e-wallets. For those in New Zealand, your unparalleled gaming adventure starts right here.",
+      "norway.title":
+        "Norwegian Online Casino Guide: The Apex of Gaming in Norway",
+      "norway.description":
+        "Looking for an unmatched gaming experience in Norway? Our carefully vetted list highlights the top online casinos available to Norwegian players. Enter a realm of substantial bonuses, first-rate customer support, and a wide variety of payment options from traditional bank transfers to state-of-the-art e-wallets. If you're in Norway, the ultimate gaming escapade awaits you here.",
+      "poland.title":
+        "Polish Online Casino Guide: The Premier Gaming Destination in Poland",
+      "poland.description":
+        "Seeking an unparalleled gaming experience in Poland? Our scrupulously curated list highlights the elite online casinos accessible to Polish players. Step into a world rich in lucrative bonuses, impeccable customer service, and a myriad of payment options, from traditional bank transfers to innovative e-wallet solutions. If you're in Poland, your matchless gaming journey starts here.",
+
+      "filtered.providers.title":
+        "Comprehensive 2023 Directory for Online Casinos Sorted by Game Providers",
+      "filtered.providers.description":
+        "Interested in locating online casinos featuring games from particular providers? Browse our up-to-date list of diverse casino options to find your perfect match.",
+      "amatic.title":
+        "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles",
+      "amatic.description":
+        "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.",
+      "amusnet.title":
+        "Two Decades of Gaming Excellence: Exploring Amusnet Interactive&#39;s Innovative Portfolio",
+      "amusnet.description":
+        "Spanning over 20 years, Amusnet Interactive has amassed a significant following thanks to its relentless focus on game innovation, including the integration of in-game jackpots across several of its offerings. Notable Amusnet Interactive titles encompass Supreme Hot, Burning Hot, Ultimate Hot, and Shining Crown. Dive into the exhilarating gameplay and compelling elements presented by Amusnet Interactive's remarkable range of games.",
+      "bgaming.title":
+        "Rising Star in iGaming: BGaming's Rapid Ascent Through Innovation and Quality",
+      "bgaming.description":
+        " Though a relative novice in the iGaming realm, BGaming has rapidly ascended as a premier provider of online casino entertainment, owing to its superior quality and inventive strategies. Specializing in slots, casual diversions, and classic table games, BGaming constantly refreshes its game lineup with compelling storylines, unforgettable personas, and engaging promotional campaigns. Noteworthy titles such as Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon, and Aloha King Elvis populate their standout collection. Delve into the thrilling and engaging world presented by BGaming's exceptional range of gaming options.",
+      "boongo.title":
+        " Boongo Gaming: Crafting Immersive Digital Experiences through Innovative Game Design",
+      "boongo.description":
+        " Boongo Gaming has quickly distinguished itself in the competitive iGaming sector with visually appealing and feature-rich games. Known for titles like 'God's Temple' and '15 Golden Eggs,' the company excels in both innovation and quality. Their robust backend solutions further enhance the gaming experience. Whether you're a casual player or a dedicated enthusiast, Boongo Gaming offers a memorable gaming journey.",
+      "evolution.title":
+        "Evolution Gaming: Setting the Gold Standard in Live Casino Experiences",
+      "evolution.description":
+        "A recognized leader in the live casino arena, Evolution Gaming has earned its reputation through a commitment to unparalleled quality and innovation. Offering a rich variety of live dealer games, from classics like blackjack and roulette to unique offerings like Lightning Dice, the company consistently delivers engaging and authentic experiences. By utilizing cutting-edge streaming technology and employing professional dealers, Evolution Gaming ensures a seamless and immersive gaming atmosphere that sets them apart in the industry.",
+      "mascot.title":
+        "Mascot Gaming: An Emerging Powerhouse in Tailored iGaming Solutions",
+      "mascot.description":
+        "Quickly rising through the ranks of the iGaming industry, Mascot Gaming is garnering attention for its custom gaming solutions. With a balanced portfolio of slots, table games, and interactive experiences, the company is making its mark through a blend of creativity and technology. Known for titles like 'Reel Monsters' and 'Fruit Vegas,' Mascot Gaming combines captivating visuals with intriguing gameplay features. Their unique approach to gaming has made them a go-to for operators seeking versatile and engaging content, setting the stage for what promises to be a bright future in the sector.",
+      "netent.title":
+        "NetEnt Gaming: Pioneering Excellence in the iGaming World",
+      "netent.description":
+        "As one of the stalwarts in the iGaming industry, NetEnt Gaming has consistently pushed the envelope in terms of quality, innovation, and gameplay. With a broad spectrum of offerings from classic slots like 'Starburst' to groundbreaking live casino games, the company has set industry benchmarks time and again. Utilizing state-of-the-art technology and creative storytelling, NetEnt offers an unrivaled gaming experience that keeps players coming back for more. Their reputation for excellence is backed by an extensive portfolio that continually evolves, solidifying their position as a leader in digital gaming.",
+      "nolimit.title":
+        "No Limit City Gaming: Unbounded Innovation in the iGaming Sphere",
+      "nolimit.description":
+        "Emerging as a force to be reckoned with in the iGaming industry, No Limit City Gaming is synonymous with creative freedom and technological prowess. Known for unique slots like 'Deadwood' and 'Punk Rocker,' the company goes beyond the norm to offer riveting themes and game mechanics. Their dedication to innovation is evident, providing a refreshing and unpredictable gaming experience. By continually pushing the boundaries of what’s possible, No Limit City Gaming has carved a niche for itself as an avant-garde game provider in a highly competitive market.",
+      "playngo.title":
+        "Play'n GO Gaming: A Vanguard of Versatility and Innovation in iGaming",
+      "playngo.description":
+        "Cementing its status as a trendsetter in the iGaming community, Play'n GO Gaming is celebrated for its wide-ranging and inventive game portfolio. From iconic slots like 'Book of Dead' to inventive table games, the company provides an all-encompassing gaming experience. Employing cutting-edge technology and captivating narratives, Play'n GO has mastered the art of creating games that are not just visually appealing but also rich in features. Their unyielding commitment to quality and innovation makes them a preferred choice for both casual gamers and ardent casino enthusiasts, continually setting new standards in the ever-evolving gaming landscape.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusing Quality and Creativity for an Unmatched iGaming Experience",
+      "pragmatic.description":
+        "A frontrunner in the iGaming industry, Pragmatic Play has made its name through a potent blend of innovative gameplay and top-notch graphics. Renowned for popular titles like 'Wolf Gold' and 'The Dog House,' the company delivers a versatile range of slots, live casino games, and even bingo offerings. Pragmatic Play's commitment to quality is manifest in its intuitive interfaces, engaging storylines, and well-executed game mechanics. By consistently rolling out new and captivating games, they manage to stay ahead in the competitive world of online gaming, solidifying their reputation as a reliable and inventive game provider.",
+      "allproviders.title":
+        "Easily Find Your Ideal Online Casino: Sorted by Game Developers for Tailored Gaming Experiences",
+      "allproviders.description":
+        "To make your hunt easier, we've sorted our casino offerings by game developer. This enables you to effortlessly locate a gaming site that provides the exact games you wish to play. From state-of-the-art video slots and electrifying live casino experiences to traditional table games, we've got all your preferences accounted for. Browse our detailed list of game providers to find casinos backed by premier software developers, guaranteeing high-quality visuals, captivating gameplay, and engaging features.",
+      "pushgaming.title":
+        "Push Gaming: Revolutionizing iGaming with Cutting-Edge Concepts",
+      "pushgaming.description":
+        "In the ever-competitive realm of iGaming, Push Gaming stands out for groundbreaking slots like 'Jammin' Jars' and 'Wild Swarm,' the company excels in delivering games with exceptional visuals and intricate gameplay features. Push Gaming's focus on mobile-optimized, HTML5-based games ensures a seamless experience across devices. Their capacity to marry traditional gaming elements with novel twists makes them a sought-after provider, continually pushing the envelope in terms of what is possible in the iGaming world.",
+      "spinomenal.title":
+        "Spinomenal: A New Age Innovator in the iGaming Ecosystem",
+      "spinomenal.description":
+        "Earning its place as an agile and forward-thinking player in the iGaming scene, Spinomenal is recognized for its inventive approach to game development. Specializing in highly engaging slots like 'Book of Guardians' and 'Demi Gods II,' the company combines vibrant graphics with enticing gameplay mechanics. Spinomenal's commitment to user experience is evident, offering games that are optimized for both desktop and mobile play. Their innovative features, such as bonus games and progressive jackpots, make them a standout provider in an ever-growing market, appealing to a wide range of players seeking fresh and exciting gaming experiences.",
+
+      "brand.safety": "Safety Index",
+      "brand.our": "by Our Casino",
+      "brand.providers": "Game Providers:",
+      "brand.restricted": "Restricted countries:",
+
+      "tab.casinos": "Casinos",
+      "random.brand": "Random Brand",
+      "random.description":
+        "Pay attention to a random brand suggested just for you",
+      "slider.title": "Reccomend brands for you",
+
+      "button.read": "Read More",
+      "button.less": "Read Less",
+
+      "button.view": "View All Guides",
+      "button.load": "Load More Brands",
+      "button.review": "Read Review",
+      "button.play": "Play Now",
+
+      "subscribe.text":
+        " Subscribe to our mailing list to receive the latest reviews right now, or check out our mailing ",
+      "subscribe.link": "List Examples",
+
+      "footer.contacts": "Our Contacts:",
+      "footer.title": "Empowering iGaming Solutions",
+      "footer.description":
+        "Unlocking 15 Websites That Will Boost Your Brand to New Heights",
+      "footer.link": "Start Working With Us",
+      "footer.about":
+        "CasinoFrog positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
+      "footer.copyright": "Start Working With Us",
+    },
+  },
+
+  at: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Handbuch für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugriff auf einige der relevantesten Slot-Anleitungen und kostenlose Slot-Spiele, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspiel-Anleitungen",
+      "guideslotsguide.excerpt":
+        "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
+
+      "header.home": "Startseite",
+      "header.bonuses": "Bonis ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.payments": "Alle Zahlungen ▼",
+      "header.providers": "Spielanbieter ▼",
+      "header.countries": "Kasinos nach Land ▼",
+
+      "header.austr": "Australisches Casino",
+      "header.brazil": "Brasilianisches Casino",
+      "header.canada": "Kanadisches Casino",
+      "header.finnish": "Finnisches Casino",
+      "header.germany": "Deutsches Casino",
+      "header.nz": "Neuseeländisches Casino",
+      "header.norw": "Norwegisches Casino",
+      "header.polish": "Polnisches Casino",
+
+      "header.spins": "Freispiele",
+      "header.guides": "Ratgeber",
+      "header.about": "Über Uns",
+      "header.contacts": "Kontakt",
+
+      "header.homebonuses": "Bonusrunden",
+      "header.homecasinos": "Casinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielratgeber",
+
+      "header.nodeposit": "Bonusrunden ohne Einzahlung",
+      "header.exclusive": "Exklusive Bonusrunden",
+      "header.deposit": "Einzahlungsbonusrunden",
+      "header.welcome": "Willkommensbonusrunden",
+      "header.nowager": "Bonusrunden ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto Casinos",
+      "header.fastwithdrawalcasinos": "Schnelle Auszahlungs-Casinos",
+      "header.livecasinos": "Live Casinos",
+      "header.newestcasinos": "Neueste Casinos",
+      "header.certifiedcasinos": "Top Zertifizierte Casinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielanleitungen",
+      "home.description":
+        "Authentische Spielerbewertungen, Bonusrunden ohne Einzahlung und eine breite Auswahl an Spielen mit kostenloser Spieloption.",
+
+      "topBrands.title": "CasinoFrog Beste Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Neuzugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig geprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle bestehenden Online-Casinos, unabhängig von ihren Vorlieben.",
+
+      "reviewBrands.question1.title":
+        "Aktuell auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", um den größtmöglichen Nutzen für unsere Besucher zu bieten.",
+
+      "reviewBrands.question2.title": "Die genauesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir bewerten jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, worauf sie sich vor dem Spielen einlassen.",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Umgangs mit Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet, das einen umfassenden, datengesteuerten",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Bewertungsansatz verfolgt",
+
+      "reviewBrands.button1": "Entdecken Sie erstklassige Boni",
+      "reviewBrands.button2": "Entdecken Sie erstklassige Casinos",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen konzentrieren sich darauf, die ultimative Datenbank für Boni ohne Einzahlung zu erstellen.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellung von Werbeaktionen von allen Online-Casinos da draußen",
+      "reviewBrands.question4.excerpt":
+        "Auf unserer Suche, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen vorhandenen Casino-Websites bezogen wird.",
+
+      "reviewBrands.question5.title":
+        "Erstellung einzigartiger und exklusiver Boni, die exklusiv für unsere geschätzten Besucher maßgeschneidert sind",
+      "reviewBrands.question5.excerpt":
+        "In unserer Bemühung, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        ", die exklusiv für unsere geschätzten Besucher erstellt werden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und anschauliche Beispiele.",
+
+      "filteredHome.title":
+        "Katalog aller angebotenen Online Casino Boni für 2023",
+      "filteredHome.description":
+        "Suchen Sie nach Online Casino Boni und Promotionen? Erkunden Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
+
+      "navigateBrands.all": "Alle Marken",
+      "navigateBrands.recommend": "Empfohlene Marken",
+      "navigateBrands.newly": "Neue Marken",
+      "navigateBrands.crypto": "Krypto-Marken",
+      "navigateBrands.sports": "Top Sport-Marken",
+
+      "allBrands.withLimits": "Auszahlungslimits:",
+      "allBrands.advantages": "Vorteile",
+      "allBrands.depMethods": "Einzahlungsmethoden",
+      "allBrands.withMethods": "Auszahlungsmethoden",
+      "allBrands.restricted": "Eingeschränkte Länder",
+      "allBrands.howGet": "Wie bekomme ich den Bonus?",
+      "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
+
+      "guideSlotsHome.title1": "Leitfäden für Online-Glücksspiele",
+      "guideSlotsHome.title2": "Festlegung eines Glücksspielbudgets",
+      "guideSlotsHome.excerpt1":
+        "Bevor Sie mit einer Glücksspielsitzung beginnen, ist es unerlässlich, ein Budget festzulegen und sich strikt daran zu halten. Stellen Sie sicher, dass der zugeteilte Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr glücklicher Tag ist und verloren gehen könnte.",
+      "guideSlotsHome.title3":
+        "Vermeiden Sie um jeden Preis, Verlusten nachzujagen",
+      "guideSlotsHome.excerpt2":
+        "Die unberechenbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten führen kann und letztendlich zur Entwicklung einer Glücksspielsucht führen könnte.",
+      "guideSlotsHome.title3":
+        "Achten Sie genau auf Ihre Emotionen beim Glücksspiel",
+      "guideSlotsHome.excerpt3":
+        "Genießen Sie die Unterhaltung beim Glücksspiel und achten Sie dabei darauf, dass es angenehm bleibt, indem Sie während des Spiels auf Ihre Emotionen achten. Wenn Sie erhöhte Gefühle von Wut, Frustration oder Schwierigkeiten bei der rationalen Entscheidungsfindung feststellen, ist es wichtig, das Spielen einzustellen.",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes beim Glücksspiel",
+      "previewBonuses.excerpt":
+        "Suchen Sie aufregende Online-Casino-Boni und Aktionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine breite Auswahl verlockender Casino-Bonusangebote, die den Vorlieben aller Spieler gerecht werden. Egal, ob Sie auf Freispiele, Einzahlungsboni oder Cashback-Belohnungen stehen, wir haben Sie abgedeckt mit den besten Deals, die in der Glücksspielwelt verfügbar sind. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt Ihre Erkundung und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
+
+      "nodepositbonuses.title":
+        "Unwiderstehlich im Jahr 2023: Casino-Boni ohne Einzahlung und einzigartige Bonuscodes",
+      "nodepositbonuses.excerpt":
+        "Neu im Jahr 2023: Ein kontinuierlich aktualisiertes Verzeichnis von Bonusangeboten ohne Einzahlung für virtuelle Casinos. Holen Sie sich exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
+
+      "exclusivebonuses.title":
+        "Umfassende Zusammenstellung von Online-Casino-Boni im Jahr 2023",
+      "exclusivebonuses.excerpt":
+        "Auf der Suche nach Casino-Boni und Aktionen im Web? Entdecken Sie unser aktuelles, gut gepflegtes Verzeichnis mit einer Fülle von Casino-Bonusvorschlägen zur Auswahl.",
+
+      "depositbonuses.title":
+        "Beste Casino-Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
+      "depositbonuses.excerpt":
+        "Wählen Sie aus einer Vielzahl erstklassiger Einführungs-Casinoprämien aus und erhalten Sie zusätzliche Bonusgelder in Ihre erste Zahlung integriert. Exklusive Anmeldeanreize für neue Teilnehmer konzipiert.",
+
+      "welcomebonuses.title": "Willkommensboni 2023",
+      "welcomebonuses.excerpt":
+        "Wenn Sie auf der Suche nach einer hochwertigen Casino-Erfahrung gepaart mit verlockenden Boni sind, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler und wird in der Regel in Form von Freispielen oder Cashback-Belohnungen präsentiert. Entdecken Sie unsere Zusammenstellung von Einführungsboni von renommierten Online-Casinos, um die ideale Übereinstimmung für Ihre Vorlieben zu finden.",
+
+      "nowagerbonuses.title": "Boni ohne Umsatzbedingungen 2023",
+      "nowagerbonuses.excerpt":
+        "Auf der Suche nach Boni ohne Umsatzbedingungen? Entdecken Sie unsere exklusive Zusammenstellung von boni ohne Wetteinsatz, die nur im Casino erhältlich sind.",
+
+      "cryptocasinos.title":
+        "Top-Kryptowährungs-Wettplattformen & Bitcoin Casino-Seiten im Jahr 2023",
+      "cryptocasinos.excerpt":
+        " Entdecken Sie unsere Zusammenstellung erstklassiger Online-Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie ein in unabhängige Bewertungen und finden Sie das ultimative Bitcoin-Casinoziel, das auf Ihre Vorlieben zugeschnitten ist.",
+
+      "fastcasinos.title":
+        "Die schnellsten Auszahlungscasinos und Wettplattformen von 2023",
+      "fastcasinos.excerpt":
+        "Der größte Vorteil von schnellen Auszahlungscasinos ist die schnelle und zuverlässige Auszahlung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig zusammengestellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und erheblich steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten vor, diese Mittel zu verwenden!",
+
+      "livecasinos.title": "Premier Live Dealer Casinos des Jahres 2023",
+      "livecasinos.excerpt":
+        "Entdecken Sie diese Zusammenstellung erstklassiger Live-Dealer-Casinos für ein immersives Spielerlebnis und finden Sie erstklassige Online-Casinos, die fesselnde Live-Casinospiele nach Ihren Vorlieben anbieten.",
+
+      "newestasinos.title": "Neue Einträge in die Online-Casino-Szene 2023",
+      "newestasinos.excerpt":
+        "Auf der Suche nach frischen Online-Casino-Plattformen aus dem Jahr 2023? Entdecken Sie neu gestartete Casino-Seiten mit herausragenden Anreizen und modernsten Funktionen. Ständig aktualisiert für Ihre Erkundung.",
+
+      "certifiedcasinos.title": "Premier-zertifizierte Casinos im Jahr 2023",
+      "certifiedcasinos.excerpt":
+        "Das Glücksspiel ist ein wichtiger Sektor, und mit Hilfe von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen, sicher in dem Wissen, dass es von offiziellen Regierungsbehörden überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
+
+      "filteredBonuses.title":
+        "Katalog aller 2023 angebotenen Online-Casino-Boni",
+      "filteredBonuses.excerpt":
+        " Suchen Sie nach Online-Casino-Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Bonusangeboten zur Auswahl.",
+
+      "filteredCasinos.title":
+        "Umfassende Zusammenstellung von 2023 Online-Casino-Auswahlmöglichkeiten",
+      "filteredCasinos.excerpt":
+        "Auf der Suche nach einem Online-Casino? Navigieren Sie durch unser aktuelles Repository mit einer Vielzahl von Casinos, die auf Ihre Überlegung warten.",
+
+      "GuideSlotsPage.title": "Neueste Casino-Anleitungen",
+
+      "filtered.payments.title":
+        "Katalog aller angebotenen Online-Casinos nach Zahlungsmethoden im Jahr 2023",
+      "filtered.payments.description":
+        "Suchen Sie nach Online-Casinos mit bestimmten Zahlungsmethoden? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Angeboten zur Auswahl.",
+      "apple.title":
+        "Außergewöhnliche Online-Casinos, die Apple Pay-Transaktionen im Jahr 2023 akzeptieren",
+      "apple.description":
+        "Fragen Sie sich, welche Online-Casinos Apple Pay für finanzielle Transaktionen akzeptieren? Lassen Sie sich von unserem Leitfaden zu den vertrauenswürdigsten Apple Pay-Casinos für ein erstklassiges Spielerlebnis führen.",
+      "bitcoin.title":
+        "Führende Bitcoin- und Kryptowährungs-Glücksspielziele im Jahr 2023",
+      "bitcoin.description":
+        "Entdecken Sie unsere sorgfältig ausgewählte Sammlung führender Bitcoin-freundlicher Casinos und Glücksspielplattformen, die BTC und andere digitale Währungen akzeptieren. Tauchen Sie in unsere unparteiischen Bewertungen ein, um das ideale Bitcoin-Glücksspielziel für Sie zu entdecken.",
+      "ecopayz.title":
+        "Top bewertete Online-Casinos, die ecoPayz-Transaktionen für 2023 unterstützen",
+      "ecopayz.description":
+        "Suchen Sie nach führenden Online-Casinos, die ecoPayz-Transaktionen begrüßen? Entdecken Sie unsere sorgfältig ausgewählte Sammlung erstklassiger ecoPayz-freundlicher Casinos, um die perfekte Wahl für Sie zu finden.",
+      "maestro.title":
+        "Höchstbewertete Online-Casinos, die Maestro-Zahlungen für 2023 akzeptieren",
+      "maestro.description":
+        "Interessiert an Online-Casinos, die Maestro-Transaktionen begrüßen? Lassen Sie sich von Casino Guru zum idealen Maestro-freundlichen Casino für Sie führen.",
+      "mastercard.title":
+        "Höchstbewertete Online-Casinos, die Mastercard-Transaktionen für 2023 akzeptieren",
+      "mastercard.description":
+        "Interessiert an einem Casino, das Mastercard-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Mastercard für sicheres Glücksspiel begrüßen.",
+      "mobi.title":
+        "Führende Online-Casinos, die mobile Zahlungen für reibungslose Transaktionen in 2023 bevorzugen.",
+      "mobi.description":
+        "Erleben Sie reibungslose finanzielle Transaktionen in Online-Casinos und nutzen Sie die Einfachheit und Geschwindigkeit von mobilen Zahlungsmethoden. Halten Sie sich über Ihre verfügbaren Optionen auf dem Laufenden, um die beste Wahl für Ihren geografischen Standort und Ihre bevorzugte Währung zu treffen und so eine mühelose Spielerfahrung sicherzustellen.",
+      "muchbetter.title":
+        "Top-Online-Casinos, die MuchBetter-Transaktionen für 2023 unterstützen",
+      "muchbetter.description":
+        "Auf der Suche nach Casinos, die mit MuchBetter kompatibel sind? Konsultieren Sie unseren Leitfaden, um das ideale MuchBetter-freundliche Casino für Sie zu entdecken.",
+      "neosurf.title":
+        "Höchstbewertete Online-Casinos, die Neosurf-Transaktionen für 2023 unterstützen",
+      "neosurf.description":
+        "Suchen Sie nach einem Online-Casino, das Neosurf-Zahlungen akzeptiert? Durchstöbern Sie unsere sorgfältig ausgewählte Sammlung von Neosurf-freundlichen Casinos, tauchen Sie in unsere ausführlichen Bewertungen ein und finden Sie die ideale Plattform für Sie.",
+      "neteller.title":
+        "Top-Online-Casinos, die Neteller-Transaktionen für 2023 unterstützen",
+      "neteller.description":
+        "Verzeichnis von Online-Casinos, die mit Neteller-Zahlungen kompatibel sind. ✅ Tiefgehende Bewertungen von Casino Guru. ✅ Entdecken Sie Ihr ideales Neteller-freundliches Casino.",
+      "allpayments.title":
+        "Digitale Casino-Finanztransaktionen und Zahlungsoptionen",
+      "allpayments.description":
+        "Aktuell gibt es zahlreiche Methoden zur Finanzierung eines Spielerkontos. Hier sind Internetcasinos nach häufig genutzten Zahlungsoptionen kategorisiert. Einige Casinos akzeptieren MasterCard, Visa und digitale Währungen, während andere weniger konventionelle Wege wie Neteller und Skrill unterstützen. Die Wahl Ihrer bevorzugten Zahlungsmethode liegt in Ihrer Hand.",
+      "paypal.title":
+        "Führende Online-Casinos, die PayPal-Zahlungen in 2023 akzeptieren",
+      "paypal.description":
+        "Entdecken Sie unsere umfassende Liste der bestbewerteten Casinos, die PayPal akzeptieren – eine schnelle und sichere Option für Einzahlungen und Auszahlungen. Diese Zahlungsmethode ist bei globalen Online-Spielern beliebt und bietet Vorteile wie das Umgehen traditioneller Bankbeschränkungen und geografischer Einschränkungen. Wenn Sie noch kein PayPal-Konto haben, ist die Einrichtung einfach und Sie können sofort Ihre Reise zu großen Gewinnen antreten!",
+      "paysafe.title": "Höchstbewertete Online-Casino-Plattformen für 2023",
+      "paysafe.description":
+        "Unsere Experten haben über 5.000 digitale Glücksspielplattformen unter die Lupe genommen und die besten ausgewählt. Entdecken Sie unsere kuratierte Liste, um Ihr ideales Online-Casino zu finden.",
+      "pix.title":
+        "Entdecken Sie erstklassige Casinos, die Pix-Zahlungen für schnelle und sichere Transaktionen akzeptieren",
+      "pix.description":
+        "Durchstöbern Sie unsere kuratierte Liste erstklassiger Casinos, die Pix als Zahlungsoption unterstützen. Bekannt für Geschwindigkeit und Sicherheit, ist Pix unter Online-Casino-Enthusiasten weltweit eine beliebte Methode für Ein- und Auszahlungen. Sie bietet den Vorteil, traditionelle Bankhürden und lästige geografische Beschränkungen zu umgehen. Wenn Sie noch keine Pix-Wallet eingerichtet haben, ist dies einfach zu tun – dann sind Sie bereit, Ihr Glück zu versuchen!",
+      "skrill.title":
+        "Top-Online-Casinos, die Skrill-Transaktionen für 2023 unterstützen",
+      "skrill.description":
+        "Suchen Sie nach einem Online-Casino, das Skrill-Zahlungen ermöglicht? Durchstöbern Sie unsere kuratierte Auswahl erstklassiger Skrill-kompatibler Casinos, um Ihr ideales Spielerlebnis zu finden.",
+      "trustly.title":
+        "Top-Online-Casinos, die Trustly-Transaktionen für 2023 unterstützen",
+      "trustly.description":
+        "Suchen Sie nach Internetcasinos, die Trustly-Zahlungen akzeptieren? Durchstöbern Sie unsere kuratierte Liste und tiefgehenden Bewertungen, um das am besten geeignete Trustly-kompatible Casino für Sie zu finden.",
+      "visa.title":
+        "Höchstbewertete Online-Casinos, die Visa-Transaktionen für 2023 akzeptieren",
+      "visa.description":
+        "Interessiert an einem Casino, das Visa-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Visa für sicheres Glücksspiel begrüßen.",
+
+      "filtered.countries.title":
+        "Interaktive Liste der Online-Casinos 2023: Filtern nach Land",
+      "filtered.countries.description":
+        "Suchen Sie nach dem perfekten Online-Casino? Entdecken Sie unsere interaktive Liste für 2023, die speziell darauf ausgelegt ist, Ihnen bei der Auswahl aus einer Vielzahl von Optionen nach Land zu helfen. Passen Sie Ihre Suche an, um die renommiertesten, sichersten und aufregendsten Casinos in Ihrer Region zu finden.",
+      "countries.title":
+        "Weltweite Online-Casino-Übersicht: Top-Plattformen nach Land",
+      "countries.description":
+        "Suchen Sie das perfekte Online-Casino? Unsere umfassende Zusammenstellung zeigt die zuverlässigsten und verlockendsten Casinos weltweit. Hier finden Sie Informationen über lukrative Boni, zuverlässigen Kundenservice und verschiedene Zahlungsmethoden von Kreditkarten bis hin zu E-Wallets. Egal, wo Sie sich befinden, wir haben für jeden Spieler etwas zu bieten.",
+      "australia.title":
+        "Australische Online-Casino-Übersicht: Die Spitze des Glücksspiels Down Under",
+      "australia.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Australien? Unsere kuratierte Liste zeigt die Crème de la Crème der australischen Online-Casinos. Tauchen Sie ein in eine Welt großzügiger Boni, makellosem Kundenservice und vielfältiger Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallet-Lösungen. Für diejenigen, die sich in Australien befinden, bieten wir eine maßgeschneiderte Spielerreise, die ihresgleichen sucht.",
+      "brazil.title":
+        "Brasilianischer Online-Casino-Guide: Ihr Portal zum Spielerparadies in Brasilien",
+      "brazil.description":
+        "Suchen Sie nach einem erstklassigen Spielerlebnis in Brasilien? Unsere sorgfältig kuratierte Liste hebt die außergewöhnlichsten Online-Casinos auf dem brasilianischen Markt hervor. Entdecken Sie ein Universum von belohnenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen digitalen Geldbörsen. Wenn Sie in Brasilien sind, haben wir Ihr ultimatives Spielerabenteuer abgedeckt.",
+      "canada.title":
+        "Kanadischer Online-Casino-Guide: Die besten Spiele in Kanada",
+      "canada.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Kanada? Unsere sorgfältig kuratierte Liste zeigt die besten Online-Casinos, die dem kanadischen Publikum zur Verfügung stehen. Tauchen Sie ein in eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsoptionen, die von traditionellen Banküberweisungen bis hin zu modernen E-Wallets reichen. Wenn Sie in Kanada ansässig sind, erwartet Sie Ihr ultimatives Spielerabenteuer.",
+      "finland.title":
+        "Finnischer Online-Casino-Guide: Das ultimative Spielerlebnis in Finnland",
+      "finland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Finnland? Unsere sorgfältig ausgewählte Auswahl zeigt die besten Online-Casinos, die auf das finnische Publikum zugeschnitten sind. Betreten Sie eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsmethoden von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Wenn Sie in Finnland sind, beginnt Ihre einzigartige Spielerreise hier.",
+      "germany.title":
+        "Deutscher Online-Casino-Guide: Das ultimative Spielerparadies in Deutschland",
+      "germany.description":
+        "Sind Sie auf der Suche nach einem außergewöhnlichen Spielerlebnis in Deutschland? Unsere sorgfältig kuratierte Liste hebt die besten Online-Casinos hervor, die für den deutschen Markt verfügbar sind. Betreten Sie eine Welt reich an verlockenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, darunter traditionelle Banküberweisungen und moderne E-Wallets. Wenn Sie in Deutschland sind, beginnt Ihre unvergleichliche Spielerreise hier.",
+      "nz.title":
+        "Neuseeländischer Online-Casino-Guide: Das ultimative Spielerlebnis für Kiwis",
+      "nz.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Neuseeland? Unsere sorgfältig kuratierte Liste zeigt die Crème de la Crème der Online-Casinos, die für neuseeländische Spieler verfügbar sind. Betreten Sie eine Welt großzügiger Boni, exzellentem Kundenservice und einer Fülle von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Für diejenigen in Neuseeland beginnt Ihr unvergleichliches Spielerabenteuer direkt hier.",
+      "norway.title":
+        "Norwegischer Online Casino Leitfaden: Die Spitze des Spielens in Norwegen",
+      "norway.description":
+        "Auf der Suche nach einem unvergleichlichen Spielerlebnis in Norwegen? Unsere sorgfältig geprüfte Liste hebt die besten Online Casinos hervor, die norwegischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit großzügigen Boni, erstklassigem Kundensupport und einer breiten Palette von Zahlungsoptionen von traditionellen Banküberweisungen bis hin zu hochmodernen E-Wallets. Wenn Sie sich in Norwegen befinden, erwartet Sie hier das ultimative Spielerlebnis.",
+      "poland.title":
+        "Polnischer Online Casino Leitfaden: Das führende Spielerziel in Polen",
+      "poland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Polen? Unsere sorgfältig zusammengestellte Liste hebt die besten Online Casinos hervor, die polnischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit lukrativen Boni, erstklassigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu innovativen E-Wallet-Lösungen. Wenn Sie sich in Polen befinden, beginnt hier Ihre einzigartige Spielerreise.",
+
+      "filtered.providers.title":
+        "Umfassendes Verzeichnis für Online Casinos 2023, sortiert nach Spieleanbietern",
+      "filtered.providers.description":
+        "Interessiert an Online Casinos, die Spiele von bestimmten Anbietern anbieten? Durchstöbern Sie unsere aktuelle Liste vielfältiger Casino-Optionen, um Ihre perfekte Übereinstimmung zu finden.",
+      "amatic.title":
+        "Amatic: Brückenschlag zwischen traditionellen und Online Casinos mit klassischen Spieltiteln",
+      "amatic.description":
+        "Amatic entwickelt digitale Spiele, die sowohl ästhetisch als auch erzählerisch den realen Versionen entsprechen. Diese einzigartige Strategie fesselt Spieler, die die traditionelle Casino-Atmosphäre schätzen. Mit herausragenden Spielen wie Hot Fruits 100, Allways Hot Fruits, Book Of Aztec und Lucky Joker 10 bietet Amatic eine unvergleichliche Unterhaltung für Casino-Liebhaber.",
+      "amusnet.title":
+        "Zwei Jahrzehnte Gaming-Exzellenz: Erkunden Sie das innovative Portfolio von Amusnet Interactive",
+      "amusnet.description":
+        "Über mehr als 20 Jahre hinweg hat Amusnet Interactive dank seiner unermüdlichen Fokussierung auf Spieleinnovation eine beträchtliche Fangemeinde aufgebaut, darunter die Integration von In-Game-Jackpots in mehreren Angeboten. Bekannte Titel von Amusnet Interactive umfassen Supreme Hot, Burning Hot, Ultimate Hot und Shining Crown. Tauchen Sie ein in das aufregende Gameplay und die fesselnden Elemente des bemerkenswerten Spieleangebots von Amusnet Interactive.",
+      "bgaming.title":
+        "Aufstrebender Star im iGaming: BGaming's schneller Aufstieg durch Innovation und Qualität",
+      "bgaming.description":
+        "Obwohl noch relativ neu in der iGaming-Branche, hat sich BGaming dank seiner überragenden Qualität und innovativen Strategien rasch als führender Anbieter von Online-Casino-Unterhaltung etabliert. Spezialisiert auf Slots, Casual-Spiele und klassische Tischspiele, erfrischt BGaming ständig seine Spielauswahl mit packenden Handlungssträngen, unvergesslichen Charakteren und ansprechenden Werbekampagnen. Bemerkenswerte Titel wie Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon und Aloha King Elvis bevölkern ihre herausragende Sammlung. Tauchen Sie ein in die aufregende und fesselnde Welt des außergewöhnlichen Angebots von BGaming.",
+      "boongo.title":
+        "Boongo Gaming: Erschaffung immersiver digitaler Erlebnisse durch innovative Spieledesigns",
+      "boongo.description":
+        "Boongo Gaming hat sich schnell in der wettbewerbsintensiven iGaming-Branche mit optisch ansprechenden und funktionsreichen Spielen etabliert. Bekannt für Titel wie 'God's Temple' und '15 Golden Eggs', überzeugt das Unternehmen sowohl durch Innovation als auch Qualität. Ihre robusten Backend-Lösungen verbessern das Spielerlebnis weiter. Ob Sie ein Gelegenheitsspieler oder ein engagierter Enthusiast sind, Boongo Gaming bietet eine unvergessliche Spielerreise.",
+      "evolution.title":
+        "Evolution Gaming: Setzen des Goldstandards in Live-Casino-Erlebnissen",
+      "evolution.description":
+        "Als anerkannter Marktführer im Bereich Live-Casino hat sich Evolution Gaming durch sein Engagement für unübertroffene Qualität und Innovation einen Namen gemacht. Mit einer reichen Vielfalt an Live-Dealer-Spielen, von Klassikern wie Blackjack und Roulette bis hin zu einzigartigen Angeboten wie Lightning Dice, bietet das Unternehmen stets ansprechende und authentische Erlebnisse. Durch den Einsatz modernster Streaming-Technologie und professioneller Dealer sorgt Evolution Gaming für eine nahtlose und immersive Spieleratmosphäre, die sie in der Branche auszeichnet.",
+      "mascot.title":
+        "Mascot Gaming: Ein aufstrebender Kraft im maßgeschneiderten iGaming-Bereich",
+      "mascot.description":
+        "Mascot Gaming steigt schnell in der iGaming-Branche auf und gewinnt durch maßgeschneiderte Spielelösungen an Aufmerksamkeit. Mit einem ausgewogenen Portfolio aus Slots, Tischspielen und interaktiven Erlebnissen setzt das Unternehmen durch eine Mischung aus Kreativität und Technologie Akzente. Bekannt für Titel wie 'Reel Monsters' und 'Fruit Vegas' kombiniert Mascot Gaming fesselnde Optik mit faszinierenden Gameplay-Funktionen. Ihr einzigartiger Ansatz für das Spielen hat sie zur ersten Wahl für Betreiber gemacht, die vielseitigen und ansprechenden Content suchen, und legt den Grundstein für eine vielversprechende Zukunft in der Branche.",
+      "netent.title": "NetEnt Gaming: Spitzenleistungen in der iGaming-Welt",
+      "netent.description":
+        "Als einer der Pioniere in der iGaming-Branche hat NetEnt Gaming kontinuierlich in Bezug auf Qualität, Innovation und Gameplay neue Maßstäbe gesetzt. Mit einer breiten Palette von Angeboten von klassischen Slots wie 'Starburst' bis hin zu bahnbrechenden Live-Casinospielen hat das Unternehmen immer wieder Branchenstandards gesetzt. Durch den Einsatz modernster Technologie und kreativer Geschichtenerzählung bietet NetEnt eine unvergleichliche Spielerfahrung, die die Spieler immer wieder zurückkommen lässt. Ihr Ruf für Exzellenz wird durch ein umfangreiches Portfolio gestützt, das sich ständig weiterentwickelt und ihre Position als Marktführer im digitalen Gaming festigt.",
+      "nolimit.title":
+        "No Limit City Gaming: Unbegrenzte Innovation in der iGaming-Welt",
+      "nolimit.description":
+        "Als aufstrebende Kraft in der iGaming-Branche steht No Limit City Gaming für kreative Freiheit und technologische Kompetenz. Bekannt für einzigartige Slots wie 'Deadwood' und 'Punk Rocker' geht das Unternehmen über das Übliche hinaus, um fesselnde Themen und Spielfunktionen anzubieten. Ihre Hingabe zur Innovation zeigt sich in einer erfrischenden und unvorhersehbaren Spielerfahrung. Indem sie ständig die Grenzen des Möglichen überschreiten, hat sich No Limit City Gaming als avantgardistischer Spieleanbieter in einem stark umkämpften Marktsegment etabliert.",
+      "playngo.title":
+        "Play'n GO Gaming: Ein Vorreiter für Vielseitigkeit und Innovation im iGaming",
+      "playngo.description":
+        "Mit seinem breit gefächerten und innovativen Spieleportfolio hat sich Play'n GO Gaming als Trendsetter in der iGaming-Community etabliert. Vom ikonischen Slot 'Book of Dead' bis hin zu innovativen Tischspielen bietet das Unternehmen ein umfassendes Spielerlebnis. Durch den Einsatz modernster Technologie und fesselnder Erzählungen hat Play'n GO die Kunst perfektioniert, Spiele zu entwickeln, die nicht nur visuell ansprechend sind, sondern auch reich an Funktionen. Ihre unermüdliche Verpflichtung zur Qualität und Innovation macht sie zur bevorzugten Wahl sowohl für Gelegenheitsspieler als auch für begeisterte Casino-Enthusiasten, die kontinuierlich neue Standards in der sich ständig weiterentwickelnden Gaming-Landschaft setzen.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusion von Qualität und Kreativität für ein unvergleichliches iGaming-Erlebnis",
+      "pragmatic.description":
+        "Als Spitzenreiter in der iGaming-Branche hat sich Pragmatic Play durch eine starke Kombination aus innovativem Gameplay und erstklassiger Grafik einen Namen gemacht. Bekannt für beliebte Titel wie 'Wolf Gold' und 'The Dog House' bietet das Unternehmen eine vielseitige Auswahl an Slots, Live-Casinospielen und sogar Bingo-Angeboten. Die Verpflichtung von Pragmatic Play zur Qualität zeigt sich in intuitiven Benutzeroberflächen, fesselnden Handlungssträngen und gut durchdachten Spielmechaniken. Durch die kontinuierliche Einführung neuer und fesselnder Spiele bleiben sie in der wettbewerbsintensiven Welt des Online-Gaming immer voraus und festigen ihren Ruf als zuverlässiger und einfallsreicher Spieleanbieter.",
+      "allproviders.title":
+        "Finden Sie leicht Ihr ideales Online Casino: Sortiert nach Spieleentwicklern für maßgeschneiderte Spielerlebnisse",
+      "allproviders.description":
+        "Um Ihre Suche zu erleichtern, haben wir unsere Casino-Angebote nach Spieleentwicklern sortiert. Dies ermöglicht es Ihnen, mühelos eine Spieleseite zu finden, die genau die Spiele bietet, die Sie spielen möchten. Von hochmodernen Videoslots und elektrisierenden Live-Casino-Erlebnissen bis hin zu traditionellen Tischspielen haben wir alle Ihre Vorlieben berücksichtigt. Durchsuchen Sie unsere detaillierte Liste der Spieleentwickler, um Casinos von führenden Softwareentwicklern zu finden, die hochwertige Visuals, fesselndes Gameplay und ansprechende Funktionen garantieren.",
+      "pushgaming.title":
+        "Push Gaming: Revolutionierung des iGaming mit bahnbrechenden Konzepten",
+      "pushgaming.description":
+        "In der stets wettbewerbsintensiven Welt des iGaming sticht Push Gaming durch bahnbrechende Slots wie 'Jammin' Jars' und 'Wild Swarm' hervor. Das Unternehmen zeichnet sich durch außergewöhnliche Grafiken und komplexe Gameplay-Funktionen aus. Push Gaming's Fokus auf mobiloptimierte, HTML5-basierte Spiele sorgt für ein nahtloses Erlebnis auf allen Geräten. Ihre Fähigkeit, traditionelle Spielelemente mit neuen Wendungen zu kombinieren, macht sie zu einem gefragten Anbieter, der ständig die Grenzen dessen, was in der iGaming-Welt möglich ist, ausreizt.",
+      "spinomenal.title":
+        "Spinomenal: Ein neuer innovativer Akteur im iGaming-Ökosystem",
+      "spinomenal.description":
+        "Spinomenal hat sich als agiler und zukunftsorientierter Akteur in der iGaming-Szene einen Platz erarbeitet und wird für seinen innovativen Ansatz in der Spieleentwicklung anerkannt. Das Unternehmen ist auf äußerst fesselnde Slots wie 'Book of Guardians' und 'Demi Gods II' spezialisiert und kombiniert lebendige Grafiken mit verlockenden Gameplay-Mechaniken. Die Hingabe von Spinomenal an die Benutzererfahrung ist offensichtlich und bietet Spiele, die sowohl für Desktop- als auch für Mobilgeräte optimiert sind. Ihre innovativen Funktionen wie Bonus-Spiele und progressive Jackpots machen sie zu einem herausragenden Anbieter in einem stetig wachsenden Markt, der eine breite Palette von Spielern anspricht, die frische und aufregende Spielerlebnisse suchen.",
+
+      "brand.safety": "Sicherheitsindex",
+      "brand.our": "von Unserem Casino",
+      "brand.providers": "Spiele-Anbieter:",
+      "brand.restricted": "Eingeschränkte Länder:",
+
+      "tab.casinos": "Kasinos",
+      "random.brand": "Zufällige Marke",
+      "random.description":
+        "Achten Sie auf eine zufällig vorgeschlagene Marke, die speziell für Sie empfohlen wird",
+      "slider.title": "Empfohlene Marken für Sie",
+
+      "button.read": "Mehr Lesen",
+      "button.less": "Weniger Lesen",
+
+      "button.view": "Alle Guides anzeigen",
+      "button.load": "Mehr Marken laden",
+      "button.review": "Rezension Lesen",
+      "button.play": "Jetzt Spielen",
+
+      "subscribe.text":
+        "Abonnieren Sie unseren Newsletter, um die neuesten Bewertungen direkt zu erhalten, oder werfen Sie einen Blick auf unsere",
+      "subscribe.link": "Beispiel-Liste",
+
+      "footer.contacts": "Unsere Kontakte:",
+      "footer.title": "Stärkung der iGaming-Lösungen",
+      "footer.description":
+        "Freischaltung von 15 Websites, die Ihre Marke auf neue Höhen bringen werden",
+      "footer.link": "Arbeiten Sie mit uns",
+      "footer.about":
+        "CasinoFrog positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
+      "footer.copyright": "Arbeiten Sie mit uns",
+    },
+  },
+
+  ch: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
+      guideslotsguide2:
+        "Auf der Suche nach dem perfekten Handbuch für Tipps, unterhaltsame Fakten und Ratschläge, um Ihre Gewinnchancen zu steigern? Suchen Sie nicht weiter, denn wir bieten schnellen Zugriff auf einige der relevantesten Slot-Anleitungen und kostenlose Slot-Spiele, die auf unserer Website gehostet werden.",
+      "guideslotsguide.title": "Glücksspiel-Anleitungen",
+      "guideslotsguide.excerpt":
+        "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf CasinoFreak.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
+
+      "header.home": "Startseite",
+      "header.bonuses": "Bonis ▼",
+      "header.casinos": "Kasinos ▼",
+      "header.payments": "Alle Zahlungen ▼",
+      "header.providers": "Spielanbieter ▼",
+      "header.countries": "Kasinos nach Land ▼",
+
+      "header.austr": "Australisches Casino",
+      "header.brazil": "Brasilianisches Casino",
+      "header.canada": "Kanadisches Casino",
+      "header.finnish": "Finnisches Casino",
+      "header.germany": "Deutsches Casino",
+      "header.nz": "Neuseeländisches Casino",
+      "header.norw": "Norwegisches Casino",
+      "header.polish": "Polnisches Casino",
+
+      "header.spins": "Freispiele",
+      "header.guides": "Ratgeber",
+      "header.about": "Über Uns",
+      "header.contacts": "Kontakt",
+
+      "header.homebonuses": "Bonusrunden",
+      "header.homecasinos": "Casinos",
+      "header.homespins": "Freispiele",
+      "header.homeguides": "Glücksspielratgeber",
+
+      "header.nodeposit": "Bonusrunden ohne Einzahlung",
+      "header.exclusive": "Exklusive Bonusrunden",
+      "header.deposit": "Einzahlungsbonusrunden",
+      "header.welcome": "Willkommensbonusrunden",
+      "header.nowager": "Bonusrunden ohne Umsatzbedingungen",
+      "header.cryptocasinos": "Krypto Casinos",
+      "header.fastwithdrawalcasinos": "Schnelle Auszahlungs-Casinos",
+      "header.livecasinos": "Live Casinos",
+      "header.newestcasinos": "Neueste Casinos",
+      "header.certifiedcasinos": "Top Zertifizierte Casinos",
+
+      "searchBrands.placeholder": "Marken suchen...",
+
+      "home.title": "Online Casino Bewertungen & Glücksspielanleitungen",
+      "home.description":
+        "Authentische Spielerbewertungen, Bonusrunden ohne Einzahlung und eine breite Auswahl an Spielen mit kostenloser Spieloption.",
+
+      "topBrands.title": "CasinoFrog Beste Auswahl für 2023",
+      "newBrands.title": "Neueste Casino-Neuzugänge 2023",
+
+      "reviewBrands.title1": "Alle sorgfältig geprüften Online-Casinos",
+      "reviewBrands.description1":
+        "Wir überprüfen gründlich alle bestehenden Online-Casinos, unabhängig von ihren Vorlieben.",
+
+      "reviewBrands.question1.title":
+        "Aktuell auf der Suche nach neuen Casino-Websites",
+      "reviewBrands.question1.excerpt":
+        "Unser Team sucht ständig nach kürzlich",
+      "reviewBrands.question1.link":
+        "gestarteten Casino-Websites zur Bewertung",
+      "reviewBrands.question1.excerpt2":
+        ", um den größtmöglichen Nutzen für unsere Besucher zu bieten.",
+
+      "reviewBrands.question2.title": "Die genauesten Details zu jedem Casino",
+      "reviewBrands.question2.excerpt":
+        "Wir bewerten jedes Casino sorgfältig und sammeln umfangreiche Informationen, um sicherzustellen, dass unsere Besucher gut informiert sind, worauf sie sich vor dem Spielen einlassen.",
+
+      "reviewBrands.question3.title":
+        "Förderung eines verantwortungsbewussten Umgangs mit Glücksspiel",
+      "reviewBrands.question3.excerpt":
+        "Jedes Casino wird von einem unparteiischen Team bewertet, das einen umfassenden, datengesteuerten",
+      "reviewBrands.question3.link":
+        "und unvoreingenommenen Bewertungsansatz verfolgt",
+
+      "reviewBrands.button1": "Entdecken Sie erstklassige Boni",
+      "reviewBrands.button2": "Entdecken Sie erstklassige Casinos",
+
+      "reviewBrands.title2":
+        "Wir sind leidenschaftlich über Boni ohne Einzahlung",
+      "reviewBrands.description2":
+        "Unsere unermüdlichen Bemühungen konzentrieren sich darauf, die ultimative Datenbank für Boni ohne Einzahlung zu erstellen.",
+
+      "reviewBrands.question4.title":
+        "Zusammenstellung von Werbeaktionen von allen Online-Casinos da draußen",
+      "reviewBrands.question4.excerpt":
+        "Auf unserer Suche, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach",
+      "reviewBrands.question4.link": "frischen Boni ohne Einzahlung",
+      "reviewBrands.question4.excerpt2":
+        ", um unsere Datenbank zu erweitern, die von allen vorhandenen Casino-Websites bezogen wird.",
+
+      "reviewBrands.question5.title":
+        "Erstellung einzigartiger und exklusiver Boni, die exklusiv für unsere geschätzten Besucher maßgeschneidert sind",
+      "reviewBrands.question5.excerpt":
+        "In unserer Bemühung, die breiteste Auswahl an Möglichkeiten zu bieten, suchen wir ständig nach frischen",
+      "reviewBrands.question5.link": "exklusiven Boni",
+      "reviewBrands.question5.excerpt2":
+        ", die exklusiv für unsere geschätzten Besucher erstellt werden.",
+
+      "reviewBrands.question6.title":
+        "Umfassende und präzise Details zu jedem Bonus",
+      "reviewBrands.question6.excerpt":
+        "In unserer Bonusdatenbank finden Sie wichtige Informationen und Bedingungen zu jedem Bonus sowie klare Erklärungen und anschauliche Beispiele.",
+
+      "filteredHome.title":
+        "Katalog aller angebotenen Online Casino Boni für 2023",
+      "filteredHome.description":
+        "Suchen Sie nach Online Casino Boni und Promotionen? Erkunden Sie unsere aktuelle Datenbank mit zahlreichen Casino Bonusangeboten zur Auswahl.",
+
+      "navigateBrands.all": "Alle Marken",
+      "navigateBrands.recommend": "Empfohlene Marken",
+      "navigateBrands.newly": "Neue Marken",
+      "navigateBrands.crypto": "Krypto-Marken",
+      "navigateBrands.sports": "Top Sport-Marken",
+
+      "allBrands.withLimits": "Auszahlungslimits:",
+      "allBrands.advantages": "Vorteile",
+      "allBrands.depMethods": "Einzahlungsmethoden",
+      "allBrands.withMethods": "Auszahlungsmethoden",
+      "allBrands.restricted": "Eingeschränkte Länder",
+      "allBrands.howGet": "Wie bekomme ich den Bonus?",
+      "allBrands.activate": "Aktivieren Sie den Bonus in Ihrem Casino-Konto",
+
+      "guideSlotsHome.title1": "Leitfäden für Online-Glücksspiele",
+      "guideSlotsHome.title2": "Festlegung eines Glücksspielbudgets",
+      "guideSlotsHome.excerpt1":
+        "Bevor Sie mit einer Glücksspielsitzung beginnen, ist es unerlässlich, ein Budget festzulegen und sich strikt daran zu halten. Stellen Sie sicher, dass der zugeteilte Betrag innerhalb Ihrer finanziellen Möglichkeiten liegt, da es möglicherweise nicht Ihr glücklicher Tag ist und verloren gehen könnte.",
+      "guideSlotsHome.title3":
+        "Vermeiden Sie um jeden Preis, Verlusten nachzujagen",
+      "guideSlotsHome.excerpt2":
+        "Die unberechenbare Natur von Glücksspielen erfordert Vorsicht. Wenn Ihr Budget verloren geht, vermeiden Sie es, Ihren Verlusten hinterherzujagen, da dieses Verhalten zu weiteren finanziellen Verlusten führen kann und letztendlich zur Entwicklung einer Glücksspielsucht führen könnte.",
+      "guideSlotsHome.title3":
+        "Achten Sie genau auf Ihre Emotionen beim Glücksspiel",
+      "guideSlotsHome.excerpt3":
+        "Genießen Sie die Unterhaltung beim Glücksspiel und achten Sie dabei darauf, dass es angenehm bleibt, indem Sie während des Spiels auf Ihre Emotionen achten. Wenn Sie erhöhte Gefühle von Wut, Frustration oder Schwierigkeiten bei der rationalen Entscheidungsfindung feststellen, ist es wichtig, das Spielen einzustellen.",
+
+      "previewBonuses.title":
+        "Förderung eines verantwortungsbewussten Ansatzes beim Glücksspiel",
+      "previewBonuses.excerpt":
+        "Suchen Sie aufregende Online-Casino-Boni und Aktionen? Suchen Sie nicht weiter! Unsere umfangreiche und regelmäßig aktualisierte Datenbank bietet eine breite Auswahl verlockender Casino-Bonusangebote, die den Vorlieben aller Spieler gerecht werden. Egal, ob Sie auf Freispiele, Einzahlungsboni oder Cashback-Belohnungen stehen, wir haben Sie abgedeckt mit den besten Deals, die in der Glücksspielwelt verfügbar sind. Verpassen Sie nicht diese exklusiven Angebote – starten Sie jetzt Ihre Erkundung und steigern Sie Ihre Spielerfahrung mit lukrativen Boni!",
+
+      "nodepositbonuses.title":
+        "Unwiderstehlich im Jahr 2023: Casino-Boni ohne Einzahlung und einzigartige Bonuscodes",
+      "nodepositbonuses.excerpt":
+        "Neu im Jahr 2023: Ein kontinuierlich aktualisiertes Verzeichnis von Bonusangeboten ohne Einzahlung für virtuelle Casinos. Holen Sie sich exklusive Promo-Codes und genießen Sie kostenlose Spins-Belohnungen.",
+
+      "exclusivebonuses.title":
+        "Umfassende Zusammenstellung von Online-Casino-Boni im Jahr 2023",
+      "exclusivebonuses.excerpt":
+        "Auf der Suche nach Casino-Boni und Aktionen im Web? Entdecken Sie unser aktuelles, gut gepflegtes Verzeichnis mit einer Fülle von Casino-Bonusvorschlägen zur Auswahl.",
+
+      "depositbonuses.title":
+        "Beste Casino-Willkommensboni für Ihre erste Einzahlung im Jahr 2023",
+      "depositbonuses.excerpt":
+        "Wählen Sie aus einer Vielzahl erstklassiger Einführungs-Casinoprämien aus und erhalten Sie zusätzliche Bonusgelder in Ihre erste Zahlung integriert. Exklusive Anmeldeanreize für neue Teilnehmer konzipiert.",
+
+      "welcomebonuses.title": "Willkommensboni 2023",
+      "welcomebonuses.excerpt":
+        "Wenn Sie auf der Suche nach einer hochwertigen Casino-Erfahrung gepaart mit verlockenden Boni sind, haben wir die perfekte Lösung für Sie! Der Willkommensbonus ist eine Geste der Casinos an ihre neuen Spieler und wird in der Regel in Form von Freispielen oder Cashback-Belohnungen präsentiert. Entdecken Sie unsere Zusammenstellung von Einführungsboni von renommierten Online-Casinos, um die ideale Übereinstimmung für Ihre Vorlieben zu finden.",
+
+      "nowagerbonuses.title": "Boni ohne Umsatzbedingungen 2023",
+      "nowagerbonuses.excerpt":
+        "Auf der Suche nach Boni ohne Umsatzbedingungen? Entdecken Sie unsere exklusive Zusammenstellung von boni ohne Wetteinsatz, die nur im Casino erhältlich sind.",
+
+      "cryptocasinos.title":
+        "Top-Kryptowährungs-Wettplattformen & Bitcoin Casino-Seiten im Jahr 2023",
+      "cryptocasinos.excerpt":
+        " Entdecken Sie unsere Zusammenstellung erstklassiger Online-Casinos für Bitcoin sowie Wettplattformen, die BTC und alternative Kryptowährungen als tragfähige Zahlungsmethoden akzeptieren. Tauchen Sie ein in unabhängige Bewertungen und finden Sie das ultimative Bitcoin-Casinoziel, das auf Ihre Vorlieben zugeschnitten ist.",
+
+      "fastcasinos.title":
+        "Die schnellsten Auszahlungscasinos und Wettplattformen von 2023",
+      "fastcasinos.excerpt":
+        "Der größte Vorteil von schnellen Auszahlungscasinos ist die schnelle und zuverlässige Auszahlung Ihrer Gewinne. Wir haben dieses Inventar sorgfältig zusammengestellt, um Ihnen bei der Suche nach den besten Casinos zu helfen, die beschleunigte Auszahlungsprozesse anbieten, insbesondere wenn Ihre Gewinne schnell und erheblich steigen. Starten Sie einfach eine Auszahlung und stellen Sie sich die aufregenden Möglichkeiten vor, diese Mittel zu verwenden!",
+
+      "livecasinos.title": "Premier Live Dealer Casinos des Jahres 2023",
+      "livecasinos.excerpt":
+        "Entdecken Sie diese Zusammenstellung erstklassiger Live-Dealer-Casinos für ein immersives Spielerlebnis und finden Sie erstklassige Online-Casinos, die fesselnde Live-Casinospiele nach Ihren Vorlieben anbieten.",
+
+      "newestasinos.title": "Neue Einträge in die Online-Casino-Szene 2023",
+      "newestasinos.excerpt":
+        "Auf der Suche nach frischen Online-Casino-Plattformen aus dem Jahr 2023? Entdecken Sie neu gestartete Casino-Seiten mit herausragenden Anreizen und modernsten Funktionen. Ständig aktualisiert für Ihre Erkundung.",
+
+      "certifiedcasinos.title": "Premier-zertifizierte Casinos im Jahr 2023",
+      "certifiedcasinos.excerpt":
+        "Das Glücksspiel ist ein wichtiger Sektor, und mit Hilfe von autorisierten Internet-Casinos können Sie Ihr bevorzugtes Hobby mit Ruhe genießen, sicher in dem Wissen, dass es von offiziellen Regierungsbehörden überwacht wird. Modernste Sicherheitsprotokolle gewährleisten die Vertraulichkeit aller persönlichen Daten!",
+
+      "filteredBonuses.title":
+        "Katalog aller 2023 angebotenen Online-Casino-Boni",
+      "filteredBonuses.excerpt":
+        " Suchen Sie nach Online-Casino-Boni und Promotionen? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Bonusangeboten zur Auswahl.",
+
+      "filteredCasinos.title":
+        "Umfassende Zusammenstellung von 2023 Online-Casino-Auswahlmöglichkeiten",
+      "filteredCasinos.excerpt":
+        "Auf der Suche nach einem Online-Casino? Navigieren Sie durch unser aktuelles Repository mit einer Vielzahl von Casinos, die auf Ihre Überlegung warten.",
+
+      "GuideSlotsPage.title": "Neueste Casino-Anleitungen",
+
+      "filtered.payments.title":
+        "Katalog aller angebotenen Online-Casinos nach Zahlungsmethoden im Jahr 2023",
+      "filtered.payments.description":
+        "Suchen Sie nach Online-Casinos mit bestimmten Zahlungsmethoden? Entdecken Sie unsere aktuelle Datenbank mit zahlreichen Casino-Angeboten zur Auswahl.",
+      "apple.title":
+        "Außergewöhnliche Online-Casinos, die Apple Pay-Transaktionen im Jahr 2023 akzeptieren",
+      "apple.description":
+        "Fragen Sie sich, welche Online-Casinos Apple Pay für finanzielle Transaktionen akzeptieren? Lassen Sie sich von unserem Leitfaden zu den vertrauenswürdigsten Apple Pay-Casinos für ein erstklassiges Spielerlebnis führen.",
+      "bitcoin.title":
+        "Führende Bitcoin- und Kryptowährungs-Glücksspielziele im Jahr 2023",
+      "bitcoin.description":
+        "Entdecken Sie unsere sorgfältig ausgewählte Sammlung führender Bitcoin-freundlicher Casinos und Glücksspielplattformen, die BTC und andere digitale Währungen akzeptieren. Tauchen Sie in unsere unparteiischen Bewertungen ein, um das ideale Bitcoin-Glücksspielziel für Sie zu entdecken.",
+      "ecopayz.title":
+        "Top bewertete Online-Casinos, die ecoPayz-Transaktionen für 2023 unterstützen",
+      "ecopayz.description":
+        "Suchen Sie nach führenden Online-Casinos, die ecoPayz-Transaktionen begrüßen? Entdecken Sie unsere sorgfältig ausgewählte Sammlung erstklassiger ecoPayz-freundlicher Casinos, um die perfekte Wahl für Sie zu finden.",
+      "maestro.title":
+        "Höchstbewertete Online-Casinos, die Maestro-Zahlungen für 2023 akzeptieren",
+      "maestro.description":
+        "Interessiert an Online-Casinos, die Maestro-Transaktionen begrüßen? Lassen Sie sich von Casino Guru zum idealen Maestro-freundlichen Casino für Sie führen.",
+      "mastercard.title":
+        "Höchstbewertete Online-Casinos, die Mastercard-Transaktionen für 2023 akzeptieren",
+      "mastercard.description":
+        "Interessiert an einem Casino, das Mastercard-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Mastercard für sicheres Glücksspiel begrüßen.",
+      "mobi.title":
+        "Führende Online-Casinos, die mobile Zahlungen für reibungslose Transaktionen in 2023 bevorzugen.",
+      "mobi.description":
+        "Erleben Sie reibungslose finanzielle Transaktionen in Online-Casinos und nutzen Sie die Einfachheit und Geschwindigkeit von mobilen Zahlungsmethoden. Halten Sie sich über Ihre verfügbaren Optionen auf dem Laufenden, um die beste Wahl für Ihren geografischen Standort und Ihre bevorzugte Währung zu treffen und so eine mühelose Spielerfahrung sicherzustellen.",
+      "muchbetter.title":
+        "Top-Online-Casinos, die MuchBetter-Transaktionen für 2023 unterstützen",
+      "muchbetter.description":
+        "Auf der Suche nach Casinos, die mit MuchBetter kompatibel sind? Konsultieren Sie unseren Leitfaden, um das ideale MuchBetter-freundliche Casino für Sie zu entdecken.",
+      "neosurf.title":
+        "Höchstbewertete Online-Casinos, die Neosurf-Transaktionen für 2023 unterstützen",
+      "neosurf.description":
+        "Suchen Sie nach einem Online-Casino, das Neosurf-Zahlungen akzeptiert? Durchstöbern Sie unsere sorgfältig ausgewählte Sammlung von Neosurf-freundlichen Casinos, tauchen Sie in unsere ausführlichen Bewertungen ein und finden Sie die ideale Plattform für Sie.",
+      "neteller.title":
+        "Top-Online-Casinos, die Neteller-Transaktionen für 2023 unterstützen",
+      "neteller.description":
+        "Verzeichnis von Online-Casinos, die mit Neteller-Zahlungen kompatibel sind. ✅ Tiefgehende Bewertungen von Casino Guru. ✅ Entdecken Sie Ihr ideales Neteller-freundliches Casino.",
+      "allpayments.title":
+        "Digitale Casino-Finanztransaktionen und Zahlungsoptionen",
+      "allpayments.description":
+        "Aktuell gibt es zahlreiche Methoden zur Finanzierung eines Spielerkontos. Hier sind Internetcasinos nach häufig genutzten Zahlungsoptionen kategorisiert. Einige Casinos akzeptieren MasterCard, Visa und digitale Währungen, während andere weniger konventionelle Wege wie Neteller und Skrill unterstützen. Die Wahl Ihrer bevorzugten Zahlungsmethode liegt in Ihrer Hand.",
+      "paypal.title":
+        "Führende Online-Casinos, die PayPal-Zahlungen in 2023 akzeptieren",
+      "paypal.description":
+        "Entdecken Sie unsere umfassende Liste der bestbewerteten Casinos, die PayPal akzeptieren – eine schnelle und sichere Option für Einzahlungen und Auszahlungen. Diese Zahlungsmethode ist bei globalen Online-Spielern beliebt und bietet Vorteile wie das Umgehen traditioneller Bankbeschränkungen und geografischer Einschränkungen. Wenn Sie noch kein PayPal-Konto haben, ist die Einrichtung einfach und Sie können sofort Ihre Reise zu großen Gewinnen antreten!",
+      "paysafe.title": "Höchstbewertete Online-Casino-Plattformen für 2023",
+      "paysafe.description":
+        "Unsere Experten haben über 5.000 digitale Glücksspielplattformen unter die Lupe genommen und die besten ausgewählt. Entdecken Sie unsere kuratierte Liste, um Ihr ideales Online-Casino zu finden.",
+      "pix.title":
+        "Entdecken Sie erstklassige Casinos, die Pix-Zahlungen für schnelle und sichere Transaktionen akzeptieren",
+      "pix.description":
+        "Durchstöbern Sie unsere kuratierte Liste erstklassiger Casinos, die Pix als Zahlungsoption unterstützen. Bekannt für Geschwindigkeit und Sicherheit, ist Pix unter Online-Casino-Enthusiasten weltweit eine beliebte Methode für Ein- und Auszahlungen. Sie bietet den Vorteil, traditionelle Bankhürden und lästige geografische Beschränkungen zu umgehen. Wenn Sie noch keine Pix-Wallet eingerichtet haben, ist dies einfach zu tun – dann sind Sie bereit, Ihr Glück zu versuchen!",
+      "skrill.title":
+        "Top-Online-Casinos, die Skrill-Transaktionen für 2023 unterstützen",
+      "skrill.description":
+        "Suchen Sie nach einem Online-Casino, das Skrill-Zahlungen ermöglicht? Durchstöbern Sie unsere kuratierte Auswahl erstklassiger Skrill-kompatibler Casinos, um Ihr ideales Spielerlebnis zu finden.",
+      "trustly.title":
+        "Top-Online-Casinos, die Trustly-Transaktionen für 2023 unterstützen",
+      "trustly.description":
+        "Suchen Sie nach Internetcasinos, die Trustly-Zahlungen akzeptieren? Durchstöbern Sie unsere kuratierte Liste und tiefgehenden Bewertungen, um das am besten geeignete Trustly-kompatible Casino für Sie zu finden.",
+      "visa.title":
+        "Höchstbewertete Online-Casinos, die Visa-Transaktionen für 2023 akzeptieren",
+      "visa.description":
+        "Interessiert an einem Casino, das Visa-Transaktionen unterstützt? Casino Guru steht Ihnen zur Seite und führt Sie zu den verlässlichsten Casinos, die Visa für sicheres Glücksspiel begrüßen.",
+
+      "filtered.countries.title":
+        "Interaktive Liste der Online-Casinos 2023: Filtern nach Land",
+      "filtered.countries.description":
+        "Suchen Sie nach dem perfekten Online-Casino? Entdecken Sie unsere interaktive Liste für 2023, die speziell darauf ausgelegt ist, Ihnen bei der Auswahl aus einer Vielzahl von Optionen nach Land zu helfen. Passen Sie Ihre Suche an, um die renommiertesten, sichersten und aufregendsten Casinos in Ihrer Region zu finden.",
+      "countries.title":
+        "Weltweite Online-Casino-Übersicht: Top-Plattformen nach Land",
+      "countries.description":
+        "Suchen Sie das perfekte Online-Casino? Unsere umfassende Zusammenstellung zeigt die zuverlässigsten und verlockendsten Casinos weltweit. Hier finden Sie Informationen über lukrative Boni, zuverlässigen Kundenservice und verschiedene Zahlungsmethoden von Kreditkarten bis hin zu E-Wallets. Egal, wo Sie sich befinden, wir haben für jeden Spieler etwas zu bieten.",
+      "australia.title":
+        "Australische Online-Casino-Übersicht: Die Spitze des Glücksspiels Down Under",
+      "australia.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Australien? Unsere kuratierte Liste zeigt die Crème de la Crème der australischen Online-Casinos. Tauchen Sie ein in eine Welt großzügiger Boni, makellosem Kundenservice und vielfältiger Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallet-Lösungen. Für diejenigen, die sich in Australien befinden, bieten wir eine maßgeschneiderte Spielerreise, die ihresgleichen sucht.",
+      "brazil.title":
+        "Brasilianischer Online-Casino-Guide: Ihr Portal zum Spielerparadies in Brasilien",
+      "brazil.description":
+        "Suchen Sie nach einem erstklassigen Spielerlebnis in Brasilien? Unsere sorgfältig kuratierte Liste hebt die außergewöhnlichsten Online-Casinos auf dem brasilianischen Markt hervor. Entdecken Sie ein Universum von belohnenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen digitalen Geldbörsen. Wenn Sie in Brasilien sind, haben wir Ihr ultimatives Spielerabenteuer abgedeckt.",
+      "canada.title":
+        "Kanadischer Online-Casino-Guide: Die besten Spiele in Kanada",
+      "canada.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Kanada? Unsere sorgfältig kuratierte Liste zeigt die besten Online-Casinos, die dem kanadischen Publikum zur Verfügung stehen. Tauchen Sie ein in eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsoptionen, die von traditionellen Banküberweisungen bis hin zu modernen E-Wallets reichen. Wenn Sie in Kanada ansässig sind, erwartet Sie Ihr ultimatives Spielerabenteuer.",
+      "finland.title":
+        "Finnischer Online-Casino-Guide: Das ultimative Spielerlebnis in Finnland",
+      "finland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Finnland? Unsere sorgfältig ausgewählte Auswahl zeigt die besten Online-Casinos, die auf das finnische Publikum zugeschnitten sind. Betreten Sie eine Welt großzügiger Boni, erstklassigem Kundenservice und einer breiten Palette von Zahlungsmethoden von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Wenn Sie in Finnland sind, beginnt Ihre einzigartige Spielerreise hier.",
+      "germany.title":
+        "Deutscher Online-Casino-Guide: Das ultimative Spielerparadies in Deutschland",
+      "germany.description":
+        "Sind Sie auf der Suche nach einem außergewöhnlichen Spielerlebnis in Deutschland? Unsere sorgfältig kuratierte Liste hebt die besten Online-Casinos hervor, die für den deutschen Markt verfügbar sind. Betreten Sie eine Welt reich an verlockenden Boni, zuverlässigem Kundenservice und einer Vielzahl von Zahlungsoptionen, darunter traditionelle Banküberweisungen und moderne E-Wallets. Wenn Sie in Deutschland sind, beginnt Ihre unvergleichliche Spielerreise hier.",
+      "nz.title":
+        "Neuseeländischer Online-Casino-Guide: Das ultimative Spielerlebnis für Kiwis",
+      "nz.description":
+        "Suchen Sie nach einem außergewöhnlichen Spielerlebnis in Neuseeland? Unsere sorgfältig kuratierte Liste zeigt die Crème de la Crème der Online-Casinos, die für neuseeländische Spieler verfügbar sind. Betreten Sie eine Welt großzügiger Boni, exzellentem Kundenservice und einer Fülle von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu modernen E-Wallets. Für diejenigen in Neuseeland beginnt Ihr unvergleichliches Spielerabenteuer direkt hier.",
+      "norway.title":
+        "Norwegischer Online Casino Leitfaden: Die Spitze des Spielens in Norwegen",
+      "norway.description":
+        "Auf der Suche nach einem unvergleichlichen Spielerlebnis in Norwegen? Unsere sorgfältig geprüfte Liste hebt die besten Online Casinos hervor, die norwegischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit großzügigen Boni, erstklassigem Kundensupport und einer breiten Palette von Zahlungsoptionen von traditionellen Banküberweisungen bis hin zu hochmodernen E-Wallets. Wenn Sie sich in Norwegen befinden, erwartet Sie hier das ultimative Spielerlebnis.",
+      "poland.title":
+        "Polnischer Online Casino Leitfaden: Das führende Spielerziel in Polen",
+      "poland.description":
+        "Suchen Sie nach einem unvergleichlichen Spielerlebnis in Polen? Unsere sorgfältig zusammengestellte Liste hebt die besten Online Casinos hervor, die polnischen Spielern zur Verfügung stehen. Tauchen Sie ein in eine Welt mit lukrativen Boni, erstklassigem Kundenservice und einer Vielzahl von Zahlungsoptionen, von traditionellen Banküberweisungen bis hin zu innovativen E-Wallet-Lösungen. Wenn Sie sich in Polen befinden, beginnt hier Ihre einzigartige Spielerreise.",
+
+      "filtered.providers.title":
+        "Umfassendes Verzeichnis für Online Casinos 2023, sortiert nach Spieleanbietern",
+      "filtered.providers.description":
+        "Interessiert an Online Casinos, die Spiele von bestimmten Anbietern anbieten? Durchstöbern Sie unsere aktuelle Liste vielfältiger Casino-Optionen, um Ihre perfekte Übereinstimmung zu finden.",
+      "amatic.title":
+        "Amatic: Brückenschlag zwischen traditionellen und Online Casinos mit klassischen Spieltiteln",
+      "amatic.description":
+        "Amatic entwickelt digitale Spiele, die sowohl ästhetisch als auch erzählerisch den realen Versionen entsprechen. Diese einzigartige Strategie fesselt Spieler, die die traditionelle Casino-Atmosphäre schätzen. Mit herausragenden Spielen wie Hot Fruits 100, Allways Hot Fruits, Book Of Aztec und Lucky Joker 10 bietet Amatic eine unvergleichliche Unterhaltung für Casino-Liebhaber.",
+      "amusnet.title":
+        "Zwei Jahrzehnte Gaming-Exzellenz: Erkunden Sie das innovative Portfolio von Amusnet Interactive",
+      "amusnet.description":
+        "Über mehr als 20 Jahre hinweg hat Amusnet Interactive dank seiner unermüdlichen Fokussierung auf Spieleinnovation eine beträchtliche Fangemeinde aufgebaut, darunter die Integration von In-Game-Jackpots in mehreren Angeboten. Bekannte Titel von Amusnet Interactive umfassen Supreme Hot, Burning Hot, Ultimate Hot und Shining Crown. Tauchen Sie ein in das aufregende Gameplay und die fesselnden Elemente des bemerkenswerten Spieleangebots von Amusnet Interactive.",
+      "bgaming.title":
+        "Aufstrebender Star im iGaming: BGaming's schneller Aufstieg durch Innovation und Qualität",
+      "bgaming.description":
+        "Obwohl noch relativ neu in der iGaming-Branche, hat sich BGaming dank seiner überragenden Qualität und innovativen Strategien rasch als führender Anbieter von Online-Casino-Unterhaltung etabliert. Spezialisiert auf Slots, Casual-Spiele und klassische Tischspiele, erfrischt BGaming ständig seine Spielauswahl mit packenden Handlungssträngen, unvergesslichen Charakteren und ansprechenden Werbekampagnen. Bemerkenswerte Titel wie Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon und Aloha King Elvis bevölkern ihre herausragende Sammlung. Tauchen Sie ein in die aufregende und fesselnde Welt des außergewöhnlichen Angebots von BGaming.",
+      "boongo.title":
+        "Boongo Gaming: Erschaffung immersiver digitaler Erlebnisse durch innovative Spieledesigns",
+      "boongo.description":
+        "Boongo Gaming hat sich schnell in der wettbewerbsintensiven iGaming-Branche mit optisch ansprechenden und funktionsreichen Spielen etabliert. Bekannt für Titel wie 'God's Temple' und '15 Golden Eggs', überzeugt das Unternehmen sowohl durch Innovation als auch Qualität. Ihre robusten Backend-Lösungen verbessern das Spielerlebnis weiter. Ob Sie ein Gelegenheitsspieler oder ein engagierter Enthusiast sind, Boongo Gaming bietet eine unvergessliche Spielerreise.",
+      "evolution.title":
+        "Evolution Gaming: Setzen des Goldstandards in Live-Casino-Erlebnissen",
+      "evolution.description":
+        "Als anerkannter Marktführer im Bereich Live-Casino hat sich Evolution Gaming durch sein Engagement für unübertroffene Qualität und Innovation einen Namen gemacht. Mit einer reichen Vielfalt an Live-Dealer-Spielen, von Klassikern wie Blackjack und Roulette bis hin zu einzigartigen Angeboten wie Lightning Dice, bietet das Unternehmen stets ansprechende und authentische Erlebnisse. Durch den Einsatz modernster Streaming-Technologie und professioneller Dealer sorgt Evolution Gaming für eine nahtlose und immersive Spieleratmosphäre, die sie in der Branche auszeichnet.",
+      "mascot.title":
+        "Mascot Gaming: Ein aufstrebender Kraft im maßgeschneiderten iGaming-Bereich",
+      "mascot.description":
+        "Mascot Gaming steigt schnell in der iGaming-Branche auf und gewinnt durch maßgeschneiderte Spielelösungen an Aufmerksamkeit. Mit einem ausgewogenen Portfolio aus Slots, Tischspielen und interaktiven Erlebnissen setzt das Unternehmen durch eine Mischung aus Kreativität und Technologie Akzente. Bekannt für Titel wie 'Reel Monsters' und 'Fruit Vegas' kombiniert Mascot Gaming fesselnde Optik mit faszinierenden Gameplay-Funktionen. Ihr einzigartiger Ansatz für das Spielen hat sie zur ersten Wahl für Betreiber gemacht, die vielseitigen und ansprechenden Content suchen, und legt den Grundstein für eine vielversprechende Zukunft in der Branche.",
+      "netent.title": "NetEnt Gaming: Spitzenleistungen in der iGaming-Welt",
+      "netent.description":
+        "Als einer der Pioniere in der iGaming-Branche hat NetEnt Gaming kontinuierlich in Bezug auf Qualität, Innovation und Gameplay neue Maßstäbe gesetzt. Mit einer breiten Palette von Angeboten von klassischen Slots wie 'Starburst' bis hin zu bahnbrechenden Live-Casinospielen hat das Unternehmen immer wieder Branchenstandards gesetzt. Durch den Einsatz modernster Technologie und kreativer Geschichtenerzählung bietet NetEnt eine unvergleichliche Spielerfahrung, die die Spieler immer wieder zurückkommen lässt. Ihr Ruf für Exzellenz wird durch ein umfangreiches Portfolio gestützt, das sich ständig weiterentwickelt und ihre Position als Marktführer im digitalen Gaming festigt.",
+      "nolimit.title":
+        "No Limit City Gaming: Unbegrenzte Innovation in der iGaming-Welt",
+      "nolimit.description":
+        "Als aufstrebende Kraft in der iGaming-Branche steht No Limit City Gaming für kreative Freiheit und technologische Kompetenz. Bekannt für einzigartige Slots wie 'Deadwood' und 'Punk Rocker' geht das Unternehmen über das Übliche hinaus, um fesselnde Themen und Spielfunktionen anzubieten. Ihre Hingabe zur Innovation zeigt sich in einer erfrischenden und unvorhersehbaren Spielerfahrung. Indem sie ständig die Grenzen des Möglichen überschreiten, hat sich No Limit City Gaming als avantgardistischer Spieleanbieter in einem stark umkämpften Marktsegment etabliert.",
+      "playngo.title":
+        "Play'n GO Gaming: Ein Vorreiter für Vielseitigkeit und Innovation im iGaming",
+      "playngo.description":
+        "Mit seinem breit gefächerten und innovativen Spieleportfolio hat sich Play'n GO Gaming als Trendsetter in der iGaming-Community etabliert. Vom ikonischen Slot 'Book of Dead' bis hin zu innovativen Tischspielen bietet das Unternehmen ein umfassendes Spielerlebnis. Durch den Einsatz modernster Technologie und fesselnder Erzählungen hat Play'n GO die Kunst perfektioniert, Spiele zu entwickeln, die nicht nur visuell ansprechend sind, sondern auch reich an Funktionen. Ihre unermüdliche Verpflichtung zur Qualität und Innovation macht sie zur bevorzugten Wahl sowohl für Gelegenheitsspieler als auch für begeisterte Casino-Enthusiasten, die kontinuierlich neue Standards in der sich ständig weiterentwickelnden Gaming-Landschaft setzen.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusion von Qualität und Kreativität für ein unvergleichliches iGaming-Erlebnis",
+      "pragmatic.description":
+        "Als Spitzenreiter in der iGaming-Branche hat sich Pragmatic Play durch eine starke Kombination aus innovativem Gameplay und erstklassiger Grafik einen Namen gemacht. Bekannt für beliebte Titel wie 'Wolf Gold' und 'The Dog House' bietet das Unternehmen eine vielseitige Auswahl an Slots, Live-Casinospielen und sogar Bingo-Angeboten. Die Verpflichtung von Pragmatic Play zur Qualität zeigt sich in intuitiven Benutzeroberflächen, fesselnden Handlungssträngen und gut durchdachten Spielmechaniken. Durch die kontinuierliche Einführung neuer und fesselnder Spiele bleiben sie in der wettbewerbsintensiven Welt des Online-Gaming immer voraus und festigen ihren Ruf als zuverlässiger und einfallsreicher Spieleanbieter.",
+      "allproviders.title":
+        "Finden Sie leicht Ihr ideales Online Casino: Sortiert nach Spieleentwicklern für maßgeschneiderte Spielerlebnisse",
+      "allproviders.description":
+        "Um Ihre Suche zu erleichtern, haben wir unsere Casino-Angebote nach Spieleentwicklern sortiert. Dies ermöglicht es Ihnen, mühelos eine Spieleseite zu finden, die genau die Spiele bietet, die Sie spielen möchten. Von hochmodernen Videoslots und elektrisierenden Live-Casino-Erlebnissen bis hin zu traditionellen Tischspielen haben wir alle Ihre Vorlieben berücksichtigt. Durchsuchen Sie unsere detaillierte Liste der Spieleentwickler, um Casinos von führenden Softwareentwicklern zu finden, die hochwertige Visuals, fesselndes Gameplay und ansprechende Funktionen garantieren.",
+      "pushgaming.title":
+        "Push Gaming: Revolutionierung des iGaming mit bahnbrechenden Konzepten",
+      "pushgaming.description":
+        "In der stets wettbewerbsintensiven Welt des iGaming sticht Push Gaming durch bahnbrechende Slots wie 'Jammin' Jars' und 'Wild Swarm' hervor. Das Unternehmen zeichnet sich durch außergewöhnliche Grafiken und komplexe Gameplay-Funktionen aus. Push Gaming's Fokus auf mobiloptimierte, HTML5-basierte Spiele sorgt für ein nahtloses Erlebnis auf allen Geräten. Ihre Fähigkeit, traditionelle Spielelemente mit neuen Wendungen zu kombinieren, macht sie zu einem gefragten Anbieter, der ständig die Grenzen dessen, was in der iGaming-Welt möglich ist, ausreizt.",
+      "spinomenal.title":
+        "Spinomenal: Ein neuer innovativer Akteur im iGaming-Ökosystem",
+      "spinomenal.description":
+        "Spinomenal hat sich als agiler und zukunftsorientierter Akteur in der iGaming-Szene einen Platz erarbeitet und wird für seinen innovativen Ansatz in der Spieleentwicklung anerkannt. Das Unternehmen ist auf äußerst fesselnde Slots wie 'Book of Guardians' und 'Demi Gods II' spezialisiert und kombiniert lebendige Grafiken mit verlockenden Gameplay-Mechaniken. Die Hingabe von Spinomenal an die Benutzererfahrung ist offensichtlich und bietet Spiele, die sowohl für Desktop- als auch für Mobilgeräte optimiert sind. Ihre innovativen Funktionen wie Bonus-Spiele und progressive Jackpots machen sie zu einem herausragenden Anbieter in einem stetig wachsenden Markt, der eine breite Palette von Spielern anspricht, die frische und aufregende Spielerlebnisse suchen.",
+
+      "brand.safety": "Sicherheitsindex",
+      "brand.our": "von Unserem Casino",
+      "brand.providers": "Spiele-Anbieter:",
+      "brand.restricted": "Eingeschränkte Länder:",
+
+      "tab.casinos": "Kasinos",
+      "random.brand": "Zufällige Marke",
+      "random.description":
+        "Achten Sie auf eine zufällig vorgeschlagene Marke, die speziell für Sie empfohlen wird",
+      "slider.title": "Empfohlene Marken für Sie",
+
+      "button.read": "Mehr Lesen",
+      "button.less": "Weniger Lesen",
+
+      "button.view": "Alle Guides anzeigen",
+      "button.load": "Mehr Marken laden",
+      "button.review": "Rezension Lesen",
+      "button.play": "Jetzt Spielen",
+
+      "subscribe.text":
+        "Abonnieren Sie unseren Newsletter, um die neuesten Bewertungen direkt zu erhalten, oder werfen Sie einen Blick auf unsere",
+      "subscribe.link": "Beispiel-Liste",
+
+      "footer.contacts": "Unsere Kontakte:",
+      "footer.title": "Stärkung der iGaming-Lösungen",
+      "footer.description":
+        "Freischaltung von 15 Websites, die Ihre Marke auf neue Höhen bringen werden",
+      "footer.link": "Arbeiten Sie mit uns",
+      "footer.about":
+        "CasinoFrog positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
+      "footer.copyright": "Arbeiten Sie mit uns",
+    },
+  },
   // Add translations for other languages here
 };
 
