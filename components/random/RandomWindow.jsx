@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { withTranslation } from 'react-i18next';
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,47 +12,54 @@ import {
   extractLink,
 } from "@/components/brandUtils";
 
-const Modal = () => {
-  const { t } = useTranslation();
-
+const Modal = ({ t }) => {
   const [showModal, setShowModal] = useState(false);
   const [randomBrand, setRandomBrand] = useState(null);
-  const [isActive, setIsActive] = useState(false); // Добавляем состояние для класса "active"
+  const [isActive, setIsActive] = useState(false);
+
   const brandData = useTopBrands(112);
+
+  const setRandomBrandAndShowModal = () => {
+    if (brandData && brandData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * brandData.length);
+      setRandomBrand(brandData[randomIndex]);
+      setShowModal(true);
+      setIsActive(true);
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setIsActive(false);
+    localStorage.setItem("lastClosedTime", Date.now().toString());
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const lastClosedTime = localStorage.getItem("lastClosedTime");
-
-      if (!lastClosedTime || Date.now() - lastClosedTime > 600000) {
-        const randomIndex = Math.floor(Math.random() * brandData.length);
-        setRandomBrand(brandData[randomIndex]);
-        setShowModal(true);
-        setIsActive(true); // Добавляем класс "active" через 5 секунд
+      const lastClosedTime = Number(
+        localStorage.getItem("lastClosedTime") || 0
+      );
+      if (Date.now() - lastClosedTime > 600000) {
+        setRandomBrandAndShowModal();
       }
-    }, 5000); // 5000 миллисекунд = 5 секунд
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [brandData]);
 
-  const closeModal = () => {
-    setShowModal(false);
-    setIsActive(false); // Удаляем класс "active"
-    localStorage.setItem("lastClosedTime", Date.now());
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
-      const lastClosedTime = localStorage.getItem("lastClosedTime");
-      if (!lastClosedTime || Date.now() - lastClosedTime > 600000) {
-        const randomIndex = Math.floor(Math.random() * brandData.length);
-        setRandomBrand(brandData[randomIndex]);
-        setShowModal(true);
+      const lastClosedTime = Number(
+        localStorage.getItem("lastClosedTime") || 0
+      );
+      if (Date.now() - lastClosedTime > 600000) {
+        setRandomBrandAndShowModal();
       }
-    }, 600000); // 1000 миллисекунд = 10 минут
+    }, 600000);
 
     return () => clearInterval(interval);
   }, [brandData]);
+
 
   return (
     showModal &&
@@ -109,4 +116,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default withTranslation()(Modal);

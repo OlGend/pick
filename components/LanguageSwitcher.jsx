@@ -8,18 +8,26 @@ const LanguageSwitcher = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
   const [isLoading, setIsLoading] = useState(false);
 
+
+
+
   const changeLanguage = async (lng) => {
     setIsLoading(true);
-    await i18n.changeLanguage(lng);
-    setSelectedLanguage(lng);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 500); // Показываем лоадер в течение 1 секунды
+    try {
+      await i18n.changeLanguage(lng);
+      setSelectedLanguage(lng);
+    } catch (error) {
+      console.error("Ошибка при смене языка:", error);
+    } finally {
+      setIsLoading(false); // Установить состояние загрузки в false, когда операция завершена
+    }
   };
+  
+  
   const availableLanguages = [
     { code: "en", label: "EN", flag: "🇬🇧" }, //
     { code: "pl", label: "PL", flag: "🇵🇱" }, //
-    // { code: "no", label: "NO", flag: "🇳🇴" }, //
+    { code: "no", label: "NO", flag: "🇳🇴" }, //
     // { code: "au", label: "AU", flag: "🇦🇺" }, //
     // { code: "ca", label: "CA", flag: "🇨🇦" }, //
     // { code: "nz", label: "NZ", flag: "🇳🇿" }, //

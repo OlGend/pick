@@ -7438,7 +7438,8 @@ p {
 .sepa {
   background: url(/Sepa.png) no-repeat center;
 }
-.aktia {
+.aktia,
+.aktia-bank {
   background: url(/Aktia.png) no-repeat center;
 }
 .american-express {
@@ -7448,7 +7449,8 @@ p {
   background: url(/bank.png) no-repeat center;
 }
 
-.bank-wire-transfer {
+.bank-wire-transfer,
+.wire-transfer {
   background: url(/wirebank.png) no-repeat center;
 }
 .instant-bank-transfer {
@@ -7500,6 +7502,229 @@ p {
 }
 .giropay {
   background: url(/GiroPay.png) no-repeat center;
+}
+.perfect-money {
+  background: url(/perfectmoney.png) no-repeat center;
+}
+.beeline {
+  background: url(/Beeline.png) no-repeat center;
+}
+.netbanking {
+  background: url(/NetBanking.png) no-repeat center;
+}
+.bradesco {
+  background: url(/Bradesco.png) no-repeat center;
+}
+.santander {
+  background: url(/Santander.png) no-repeat center;
+}
+.poli {
+  background: url(/POLi.png) no-repeat center;
+}
+.paypal {
+  background: url(/PayPal.png) no-repeat center;
+}
+.swedbank {
+  background: url(/Swedbank.png) no-repeat center;
+}
+.seb-pank {
+  background: url(/SEB.png) no-repeat center;
+}
+.apple-pay,
+.applepay {
+  background: url(/applepay.png) no-repeat center;
+}
+.carte-bleue {
+  background: url(/CarteBlue.png) no-repeat center;
+}
+.op-pohjola-group {
+  background: url(/pohjola.png) no-repeat center;
+}
+.siru,
+.siru-mobile {
+  background: url(/sirumobile.png) no-repeat center;
+}
+.cashlib {
+  background: url(/Cashlib.png) no-repeat center;
+}
+.ideal {
+  background: url(/iDEAL.png) no-repeat center;
+}
+.entercash {
+  background: url(/EnterCash.png) no-repeat center;
+}
+
+.webmoney {
+  background: url(/WebMoney.png) no-repeat center;
+}
+
+.mtc {
+  background: url(/MTC.png) no-repeat center;
+}
+
+.payeer {
+  background: url(/Payeer.png) no-repeat center;
+}
+
+/* //////// */
+.ecovoucher {
+  background: url(/Beeline.png) no-repeat center;
+}
+.epay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.iwallet {
+  background: url(/Beeline.png) no-repeat center;
+}
+.moonpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.virtual-card {
+  background: url(/Beeline.png) no-repeat center;
+}
+.venus-point {
+  background: url(/Beeline.png) no-repeat center;
+}
+.sticpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.upaycard {
+  background: url(/Beeline.png) no-repeat center;
+}
+.gpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.binance {
+  background: url(/Beeline.png) no-repeat center;
+}
+.purplepay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.cryptocurrency {
+  background: url(/Beeline.png) no-repeat center;
+}
+.instant-eft {
+  background: url(/Beeline.png) no-repeat center;
+}
+.ecachout {
+  background: url(/Beeline.png) no-repeat center;
+}
+.binance-pay {
+  background: url(/Beeline.png) no-repeat center;
+}
+
+.webpayz {
+  background: url(/Beeline.png) no-repeat center;
+}
+.usemybank {
+  background: url(/Beeline.png) no-repeat center;
+}
+.prepaid-gift-card {
+  background: url(/Beeline.png) no-repeat center;
+}
+.dankort {
+  background: url(/Beeline.png) no-repeat center;
+}
+.sampopankki {
+  background: url(/Beeline.png) no-repeat center;
+}
+.instant-bank {
+  background: url(/Beeline.png) no-repeat center;
+}
+.impaya {
+  background: url(/Beeline.png) no-repeat center;
+}
+.nodapay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.sirenpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.tigerpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.crypto {
+  background: url(/Beeline.png) no-repeat center;
+}
+.astropay-direct {
+  background: url(/Beeline.png) no-repeat center;
+}
+.laser {
+  background: url(/Beeline.png) no-repeat center;
+}
+.netpay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.jcb {
+  background: url(/Beeline.png) no-repeat center;
+}
+.ewallet {
+  background: url(/Beeline.png) no-repeat center;
+}
+.przelewy24 {
+  background: url(/Beeline.png) no-repeat center;
+}
+.instant-wire-transfer {
+  background: url(/Beeline.png) no-repeat center;
+}
+.click2pay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.cheque {
+  background: url(/Beeline.png) no-repeat center;
+}
+.diners-club-international {
+  background: url(/Beeline.png) no-repeat center;
+}
+.clickandbuy {
+  background: url(/Beeline.png) no-repeat center;
+}
+.bank-draft {
+  background: url(/Beeline.png) no-repeat center;
+}
+.advcash {
+  background: url(/Beeline.png) no-repeat center;
+}
+.payretailers {
+  background: url(/Beeline.png) no-repeat center;
+}
+.banklocal {
+  background: url(/Beeline.png) no-repeat center;
+}
+.safetypay {
+  background: url(/Beeline.png) no-repeat center;
+}
+.easy-eft {
+  background: url(/Beeline.png) no-repeat center;
+}
+.cryptocurrencies {
+  background: url(/Beeline.png) no-repeat center;
+}
+.advcash {
+  background: url(/Beeline.png) no-repeat center;
+}
+.advcash {
+  background: url(/Beeline.png) no-repeat center;
+}
+.advcash {
+  background: url(/Beeline.png) no-repeat center;
+}
+.advcash {
+  background: url(/Beeline.png) no-repeat center;
+}
+/* ///////// */
+
+.multibanco {
+  background: url(/Multibanco.png) no-repeat center;
+}
+.piastrix-wallet {
+  background: url(/Piastrix.png) no-repeat center;
+}
+.skrill-1-tap {
+  background: url(/Skrill1-Tap.png) no-repeat center;
+}
+.monero {
+  background: url(/Monero.png) no-repeat center;
 }
 
 .sub-menu {
@@ -7688,7 +7913,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -200px top -840px;
 }
-.betsoft, .betsoft-gaming {
+.betsoft,
+.betsoft-gaming {
   background-image: url(/providers3.png);
   background-position: left 0 top -60px;
 }
@@ -8566,7 +8792,8 @@ input.error {
 .modal-content .buttons {
   min-width: 180px;
 }
-.modal-content .buttons .btn, .modal-content .review-bonus {
+.modal-content .buttons .btn,
+.modal-content .review-bonus {
   font-size: 13px !important;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -8574,13 +8801,14 @@ input.error {
     min-width: 160px;
     padding: 5px;
   }
-  .modal-content .buttons .btn, .modal-content .review-bonus {
+  .modal-content .buttons .btn,
+  .modal-content .review-bonus {
     font-size: 12px !important;
   }
   .modal-content .brandImage {
-   margin-left: 5px !important;
+    margin-left: 5px !important;
   }
-  
+
   .oneBrand {
     padding-top: 60px;
   }
@@ -9092,7 +9320,6 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 1259px) {
- 
   .filtered-payments .basis-\[10\%\] {
     flex-basis: 20%;
     padding: 5px !important;

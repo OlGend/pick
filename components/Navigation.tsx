@@ -74,7 +74,6 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
               className={isActive ? "active" : ""}
               onClick={() => {
                 handleLinkClick();
-                onLinkClick();
                 setOpenSubMenu(null);
               }}
             >

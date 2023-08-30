@@ -816,6 +816,406 @@ const resources = {
       "footer.copyright": "Zacznij z Nami Współpracę",
     },
   },
+  no: {
+    translation: {
+      guideposts: enTranslation,
+      guideslotsguide:
+        "Hvis du aspirerer til å treffe jackpotten, dykk inn i verden av nettspilleautomater gjennom våre omfattende guider på CasinoFreak.com. All den informasjonen du trenger, fra gevinstlinjer til progressive jackpotter, er tilgjengelig på én enkelt plattform! Hold deg oppdatert med de nyeste utviklingene innen spilleautomatgambling og prøv til og med ut gratis spilleautomatspill direkte fra enheten din. Vår samling av nettspillguider sikrer enkel tilgang til alt du trenger å vite om spilleautomater. Mens det kan virke som om spilleautomater er en ren 'trykk og snurr'-sak, finnes det triks og strategier som kan forbedre opplevelsen din. Våre guider er designet for å gi deg full forståelse av hvordan spilleautomater fungerer, og gi deg full kontroll over spilløktene dine.",
+      guideslotsguide2:
+        "Er du på jakt etter det perfekte stedet for tips, morsomme fakta og råd som kan øke vinnersjansene dine? Ikke se lenger, da vi gir deg rask tilgang til noen av de mest relevante spilleautomatguidene og gratis spilleautomatspillene som er vert på nettsiden vår.",
+
+      "guideslotsguide.title": "Spilleguider",
+      "guideslotsguide.excerpt":
+        "Hvis du aspirerer til å treffe jackpotten, dykk inn i verden av nettspilleautomater gjennom våre omfattende guider på CasinoFreak.com. All den informasjonen du trenger, fra gevinstlinjer til progressive jackpotter, er tilgjengelig på én enkelt plattform! Hold deg oppdatert med de nyeste utviklingene innen spilleautomatgambling og prøv til og med ut gratis spilleautomatspill direkte fra enheten din.",
+
+      "header.home": "Hjem",
+      "header.bonuses": "Bonuser ▼",
+      "header.casinos": "Kasinoer ▼",
+      "header.payments": "Alle Betalinger ▼",
+      "header.providers": "Spilleleverandører ▼",
+      "header.countries": "Kasinoer etter Land ▼",
+
+      "header.austr": "Australsk Kasino",
+      "header.brazil": "Brasiliansk Kasino",
+      "header.canada": "Kanadisk Kasino",
+      "header.finnish": "Finsk Kasino",
+      "header.germany": "Tysk Kasino",
+      "header.nz": "Newzealandsk Kasino",
+      "header.norw": "Norsk Kasino",
+      "header.polish": "Polsk Kasino",
+
+      "header.spins": "Gratis Spinn",
+      "header.guides": "Guider",
+      "header.about": "Om Oss",
+      "header.contacts": "Kontakter",
+
+      "header.homebonuses": "Bonuser",
+      "header.homecasinos": "Kasinoer",
+      "header.homespins": "Gratis Spinn",
+      "header.homeguides": "Spilleguider",
+
+      "header.nodeposit": "Bonuser uten innskudd",
+      "header.exclusive": "Eksklusive Bonuser",
+      "header.deposit": "Innskuddsbonuser",
+      "header.welcome": "Velkomstbonuser",
+      "header.nowager": "Bonuser uten omsetningskrav",
+      "header.cryptocasinos": "Krypto Kasinoer",
+      "header.fastwithdrawalcasinos": "Kasinoer med Rask Uttak",
+      "header.livecasinos": "Live Kasinoer",
+      "header.newestcasinos": "Nyeste Kasinoer",
+      "header.certifiedcasinos": "Topp Sertifiserte Kasinoer",
+
+      "searchBrands.placeholder": "Søk etter merker...",
+
+      "home.title": "Anmeldelser av Online Kasinoer og Spilleguider",
+      "home.description":
+        "Autentiske spilleranmeldelser, bonuser uten innskudd og et bredt utvalg av spill med gratis spill.",
+
+      "topBrands.title": "CasinoFrog's Beste Valg for 2023",
+      "newBrands.title": "Nyeste Kasino Tillegg 2023",
+
+      "reviewBrands.title1": "Alle nøye gjennomgåtte online kasinoer",
+      "reviewBrands.description1":
+        "Vi gjennomgår grundig alle eksisterende online kasinoer, uavhengig av deres preferanser",
+
+      "reviewBrands.question1.title":
+        "For øyeblikket aktivt på jakt etter ferske kasino-nettsteder",
+      "reviewBrands.question1.excerpt": "Vårt team leter konstant etter nylig",
+      "reviewBrands.question1.link": "lanserte kasino-nettsteder for vurdering",
+      "reviewBrands.question1.excerpt2":
+        ", med sikte på å gi maksimal verdi til våre besøkende.",
+
+      "reviewBrands.question2.title":
+        "De mest nøyaktige detaljene om hvert kasino",
+      "reviewBrands.question2.excerpt":
+        "Vi vurderer grundig hvert kasino og samler omfattende informasjon for å sikre at våre besøkende er godt informert om hva de kan forvente før de spiller",
+
+      "reviewBrands.question3.title":
+        "Fremmer en ansvarlig tilnærming til gambling",
+      "reviewBrands.question3.excerpt":
+        "Hvert kasino gjennomgår evaluering av et upartisk team, med en omfattende, datadrevet og, ",
+      "reviewBrands.question3.link": "upartisk gjennomgangstilnærming",
+
+      "reviewBrands.button1": "Oppdag best rangerte bonuser",
+      "reviewBrands.button2": "Oppdag best rangerte kasinoer",
+
+      "reviewBrands.title2":
+        "Vi er lidenskapelig opptatt av bonuser uten innskudd",
+      "reviewBrands.description2":
+        "Våre ubøyelige anstrengelser går med på å skape den ultimate databasen over bonuser uten innskudd.",
+
+      "reviewBrands.question4.title":
+        "Samler promoteringstilbud fra alle tilgjengelige online kasinoer",
+      "reviewBrands.question4.excerpt":
+        "I vårt strev etter å tilby det bredeste utvalget av valg, søker vi kontinuerlig etter",
+      "reviewBrands.question4.link": "ferske bonuser uten innskudd ",
+      "reviewBrands.question4.excerpt2":
+        " for å utvide vår database, hentet fra alle eksisterende kasino-nettsteder.",
+
+      "reviewBrands.question5.title":
+        "Skaper unike og eksklusive bonuser skreddersydd spesielt for våre verdifulle besøkende",
+      "reviewBrands.question5.excerpt":
+        "I vårt strev etter å tilby det bredeste utvalget av valg, søker vi kontinuerlig etter ferske ",
+      "reviewBrands.question5.link": "eksklusive bonuser",
+      "reviewBrands.question5.excerpt2":
+        " som er skapt spesielt for våre ærede besøkende.",
+
+      "reviewBrands.question6.title":
+        "Omfattende og presise detaljer om hver bonus",
+      "reviewBrands.question6.excerpt":
+        "I vår bonusdatabase vil du finne viktig informasjon og vilkår knyttet til hver bonus, sammen med klare forklaringer og illustrerende eksempler.",
+
+      "filteredHome.title":
+        "Katalog over alle tilgjengelige kasinobonuser i 2023",
+      "filteredHome.description":
+        "Leter du etter kasinobonuser og kampanjer på nettet? Utforsk vår nåværende database med et stort antall kasinobonustilbud for ditt valg.",
+
+      "navigateBrands.all": "Alle Merker",
+      "navigateBrands.recommend": "Anbefalte Merker",
+      "navigateBrands.newly": "Nye Merker",
+      "navigateBrands.crypto": "Krypto Merker",
+      "navigateBrands.sports": "Topp Sports Merker",
+
+      "allBrands.withLimits": "Uttaksgrenser:",
+      "allBrands.advantages": "Fordeler",
+      "allBrands.depMethods": "Innskuddsmetoder",
+      "allBrands.withMethods": "Uttaksmetoder",
+      "allBrands.restricted": "Begrensede Land",
+      "allBrands.howGet": "Hvordan få bonus?",
+      "allBrands.activate": "Aktiver bonusen på din kasinokonto",
+
+      "guideSlotsHome.title1": "Spilleguider på Nettet",
+      "guideSlotsHome.title2": "Opprett en spillbudsjett",
+      "guideSlotsHome.excerpt1":
+        "Før du starter en spilløkt, er det viktig å opprette et budsjett og holde deg strengt til det. Pass på at den tildelte summen er innenfor din økonomiske evne, da det kanskje ikke er din heldige dag og pengene kan gå tapt.",
+      "guideSlotsHome.title3": "Unngå å jage tapene for enhver pris",
+      "guideSlotsHome.excerpt2":
+        "De uforutsigbare spillenes natur krever forsiktighet. Hvis budsjettet ditt går tapt, unngå å jage tapene, da denne oppførselen kan resultere i ytterligere økonomiske tap og til slutt føre til utvikling av spilleavhengighet.",
+      "guideSlotsHome.title4":
+        "Vær oppmerksom på følelsene dine mens du spiller",
+      "guideSlotsHome.excerpt3":
+        "Nyt underholdningen med gambling samtidig som du sørger for at det forblir morsomt ved å være oppmerksom på følelsene dine mens du spiller. Hvis du merker økt sinne, frustrasjon eller vanskeligheter med å ta rasjonelle beslutninger, er det viktig å slutte å spille.",
+
+      "previewBonuses.title": "Fremmer en ansvarlig tilnærming til gambling",
+      "previewBonuses.excerpt":
+        " Leter du etter spennende kasinobonuser og kampanjer på nettet? Ikke lete lenger! Vår omfattende og jevnlig oppdaterte database tilbyr et bredt utvalg fristende kasinobonustilbud som imøtekommer alle spilleres preferanser. Enten du foretrekker gratisspinn, innskuddsbonuser eller cashback-belønninger, har vi deg dekket med de beste tilbudene tilgjengelige i gamblingverdenen. Ikke gå glipp av disse eksklusive tilbudene – begynn å utforske nå og forbedre spillopplevelsen din med lukrative bonuser!",
+
+      "nodepositbonuses.title":
+        "Irresistible in 2023: No Deposit Casino Bonuses and Unique Bonus Codes",
+      "nodepositbonuses.excerpt":
+        "Fresh in 2023: A continuously refreshed catalog of no deposit bonus deals for virtual casinos. Obtain exclusive promo codes and enjoy complimentary spins rewards.",
+
+      "exclusivebonuses.title":
+        "Omfattende Samling av Kasinobonuser tilgjengelige i 2023",
+      "exclusivebonuses.excerpt":
+        "Leter du etter kasinobonuser og kampanjer på nettet? Utforsk vår nåværende, godt vedlikeholdte samling som inneholder et mangfold av kasinobonusforslag for din vurdering.",
+
+      "depositbonuses.title":
+        "De beste kasinovelkomstbonusene på ditt første innskudd i 2023",
+      "depositbonuses.excerpt":
+        "Velg blant et utvalg av førsteklasses introduksjonskasinobonuser og motta ekstra bonusmidler sammenføyd med ditt første innskudd. Eksklusive registreringsinsentiver utformet for nye deltakere.",
+
+      "welcomebonuses.title": "Velkomstbonuser 2023",
+      "welcomebonuses.excerpt":
+        "Hvis du er på jakt etter en kvalitetsrik kasinoopplevelse sammen med fristende bonuser, har vi den perfekte løsningen skreddersydd for deg! Velkomstbonusen er en gest fra kasinoer til deres nye spillere, vanligvis presentert som gratisspinn eller cashback-belønninger. Utforsk vår samling av introduksjonsbonuser fra anerkjente online kasinoer, og finn en ideell match for dine preferanser.",
+
+      "nowagerbonuses.title": "Bonuser uten Omsetningskrav 2023",
+      "nowagerbonuses.excerpt":
+        "Leter du etter bonuser uten omsetningskrav? Utforsk vår eksklusive samling av bonuser uten omsetningskrav, kun tilgjengelig på Casino.",
+
+      "cryptocasinos.title":
+        "Topp Kryptocurrency Betting Plattformer og Bitcoin Kasino Sider i 2023",
+      "cryptocasinos.excerpt":
+        "Utforsk vår samling av fremragende online kasinoer for Bitcoin, samt betting plattformer som omfavner BTC og alternative kryptokurser som levedyktige betalingsmetoder. Dykk ned i upartiske vurderinger og finn det ultimate Bitcoin kasinoet som passer dine preferanser.",
+
+      "fastcasinos.title":
+        "2023's Raskeste Uttak Kasino og Betting Plattformer",
+      "fastcasinos.excerpt":
+        "Det mest fordelsaktige aspektet med raske uttakskasinoer er deres hurtige og pålitelige utbetaling av gevinstene dine. Vi har nøye utarbeidet denne listen for å hjelpe deg med å finne de beste kasinoene som tilbyr raske uttaksprosesser, spesielt når gevinstene dine øker raskt og betydelig. Start en uttaksforespørsel og forestill deg de spennende mulighetene for bruk av disse midlene!",
+
+      "livecasinos.title": "Premierte Live Dealer Kasinoer i 2023",
+      "livecasinos.excerpt":
+        "Utforsk denne samlingen av førsteklasses live dealer kasinoer for en engasjerende spillopplevelse, og oppdag ledende online kasinoer som tilbyr fengslende live kasinospill skreddersydd for dine preferanser.",
+
+      "newestasinos.title": "Ferske Nykommere til Online Kasinomarkedet i 2023",
+      "newestasinos.excerpt":
+        "På jakt etter nye online kasinoplattformer i 2023? Oppdag nylig lanserte kasinosider som tilbyr enestående insentiver og banebrytende egenskaper. Konstant oppdatert for din utforskning.",
+
+      "certifiedcasinos.title": "Fremragende Akkrediterte Kasinoer i 2023",
+      "certifiedcasinos.excerpt":
+        "Spill utgjør en betydelig sektor, og med hjelp av autoriserte internettbaserte kasinoer kan du nyte din foretrukne fritid med ro i sjelen, med forsikring om tilsyn fra offisielle myndigheter. Avanserte sikkerhetsprotokoller sikrer konfidensialiteten til all personlig informasjon!",
+
+      "filteredBonuses.title":
+        "Katalog over alle 2023 Kasinobonuser som tilbys",
+      "filteredBonuses.excerpt":
+        "Leter du etter kasinobonuser og kampanjer på nettet? Utforsk vår nåværende database med et mangfold av kasinobonustilbud for ditt valg.",
+
+      "filteredCasinos.title":
+        "Omfattende Samling av 2023 Online Casino Utvalg",
+      "filteredCasinos.excerpt":
+        "På jakt etter et online kasino? Naviger gjennom vår oppdaterte samling som inneholder et mylder av kasinoer som venter på din vurdering.",
+
+      "GuideSlotsPage.title": "De Nyeste Kasinoguidene",
+
+      "filtered.payments.title":
+        "Katalog over alle tilgjengelige online kasinoer etter betalingsmetoder i 2023",
+      "filtered.payments.description":
+        "Leter du etter online kasinoer med spesifikke betalingsmetoder? Utforsk vår nåværende database med mange kasinotilbud å velge mellom.",
+      "apple.title":
+        "Eksepsjonelle online kasinoer som godtar Apple Pay-transaksjoner i 2023",
+      "apple.description":
+        "Lurer du på hvilke online kasinoer som godtar Apple Pay for finansielle transaksjoner? La guiden vår lede deg til de mest pålitelige Apple Pay-kasinoene for en førsteklasses spillopplevelse.",
+      "bitcoin.title":
+        "Fremragende Bitcoin- og kryptokurrency-spilldestinasjoner i 2023",
+      "bitcoin.description":
+        "Utforsk vår kuraterte samling av ledende Bitcoin-vennlige kasinoer og spillplattformer som godtar BTC og andre digitale valutaer. Dykk ned i våre upartiske vurderinger for å finne den ideelle Bitcoin-spilldestinasjonen for deg akkurat nå.",
+      "ecopayz.title":
+        "Topp rangerte online kasinoer som støtter EcoPayz-transaksjoner for 2023",
+      "ecopayz.description":
+        "Leter du etter ledende online kasinoer som godtar EcoPayz-transaksjoner? Utforsk vår kuraterte samling av premium EcoPayz-vennlige kasinoer for å finne den perfekte matchen for deg.",
+      "maestro.title":
+        "Topp rangerte online kasinoer som aksepterer Maestro-betalinger for 2023",
+      "maestro.description":
+        "Interessert i å spille på online kasinoer som aksepterer Maestro-transaksjoner? La Casino Guru lede deg til det ideelle Maestro-vennlige kasinoet for deg.",
+      "mastercard.title":
+        "Topp rangerte online kasinoer som ønsker velkommen Mastercard-transaksjoner i 2023",
+      "mastercard.description":
+        "Interessert i å spille på et Mastercard-vennlig kasino? Casino Guru er her for å guide deg til de mest pålitelige kasinoene som godtar Mastercard for sikker spilling.",
+      "mobi.title":
+        "Ledende online kasinoer som foretrekker mobile betalinger for problemfrie transaksjoner i 2023.",
+      "mobi.description":
+        "Opplev jevne finansielle transaksjoner på online kasinoer ved å dra nytte av enkle og raske mobile betalingsmetoder. Hold deg oppdatert på tilgjengelige alternativer for å velge den beste løsningen for din geografiske beliggenhet og foretrukne valuta, og sikre en problemfri spillopplevelse.",
+      "muchbetter.title":
+        "Topp online kasinoer som støtter MuchBetter-transaksjoner i 2023",
+      "muchbetter.description":
+        "På jakt etter kasinoer som er kompatible med MuchBetter? Konsulter guiden vår for å finne det ideelle MuchBetter-vennlige kasinoet for deg.",
+      "neosurf.title":
+        "Topp rangerte online kasinoer som støtter Neosurf-transaksjoner for 2023",
+      "neosurf.description":
+        "På jakt etter et online kasino som er kompatibelt med Neosurf-betalinger? Gå gjennom vår kuraterte samling av Neosurf-vennlige kasinoer, dykk inn i våre grundige vurderinger og finn den ideelle plattformen for deg.",
+      "neteller.title":
+        "Topp online kasinoer som støtter Neteller-transaksjoner i 2023",
+      "neteller.description":
+        "Oversikt over online kasinoer som er kompatible med Neteller-betalinger. ✅ Grundige vurderinger fra Casino Guru. ✅ Finn ditt ideelle Neteller-vennlige kasino.",
+      "allpayments.title":
+        "Digitale kasinofinansielle transaksjoner og betalingsvalg",
+      "allpayments.description":
+        "For tiden finnes det mange metoder for å finansiere en spillkonto. Nedenfor er internett-kasinoer kategorisert etter mye brukte betalingsalternativer. Noen kasinoer aksepterer MasterCard, Visa og digitale valutaer, mens andre godkjenner mindre konvensjonelle veier som Neteller og Skrill. Valget av din foretrukne betalingsmetode ligger i dine hender.",
+      "paypal.title":
+        "Ledende online kasinoer som godtar PayPal-betalinger i 2023",
+      "paypal.description":
+        "Sjekk ut vår omfattende liste over topprangerte kasinoer som godtar PayPal – en rask og sikker løsning for både innskudd og uttak. Denne betalingsmetoden er et populært valg blant globale online spillere og tilbyr fordeler som omgåelse av tradisjonelle bankbegrensninger og geografiske begrensninger. Hvis du ikke allerede har en PayPal-konto, er det enkelt å opprette en og starte reisen mot store gevinster!",
+      "paysafe.title": "Topp rangerte online kasinoplattformer for 2023",
+      "paysafe.description":
+        "Våre eksperter har gransket mer enn 5000 digitale spilleplattformer og valgt det beste av det beste. Utforsk vår kuraterte liste for å finne ditt ideelle online kasino.",
+      "pix.title":
+        "Oppdag topprangerte kasinoer som godtar Pix-betalinger for raske og sikre transaksjoner",
+      "pix.description":
+        "Utforsk vår kuraterte liste over førsteklasses kasinoer som støtter Pix som en betalingsmulighet. Kjent for sin hastighet og sikkerhet, er Pix en foretrukket metode for innskudd og uttak blant online kasinoentusiaster over hele verden. Den gir fordelen med å omgå tradisjonelle bankutfordringer og irriterende geografiske begrensninger. Hvis du ikke har opprettet en Pix-lommebok ennå, er det enkelt å gjøre det – da er du klar til å prøve lykken!",
+      "skrill.title":
+        "Topp online kasinoer som støtter Skrill-transaksjoner i 2023",
+      "skrill.description":
+        "Leter du etter et online kasino som tillater Skrill-betalinger? Gå gjennom vår kuraterte samling av førsteklasses kasinoer som er kompatible med Skrill for å finne din ideelle spilldestinasjon.",
+      "trustly.title":
+        "Topp online kasinoer som støtter Trustly-transaksjoner i 2023",
+      "trustly.description":
+        "Leter du etter internett-kasinoer som godtar Trustly-betalinger? Utforsk vår kuraterte liste og dyptgående evalueringer for å finne det mest passende Trustly-kompatible kasinoet for deg.",
+      "visa.title":
+        "Topp rangerte online kasinoer som ønsker velkommen Visa-transaksjoner i 2023",
+      "visa.description":
+        "Interessert i å spille på et Visa-vennlig kasino? Casino Guru er her for å guide deg til de mest pålitelige kasinoene som godtar Visa for sikker spilling.",
+
+      "filtered.countries.title":
+        "Interaktiv liste over online kasinoer 2023: Filtrering etter land",
+      "filtered.countries.description":
+        "Leter du etter det perfekte online kasinoet? Utforsk vår interaktive liste for 2023, spesielt designet for å hjelpe deg med å filtrere gjennom et utvalg av alternativer basert på land. Skreddersy søket ditt for å finne de mest pålitelige, trygge og spennende kasinoene som er tilgjengelige i din region.",
+      "countries.title":
+        "Global online kasinoanmeldelse: Topp plattformer etter land",
+      "countries.description":
+        "Leter du etter det perfekte online kasinoet? Vår omfattende samling viser de mest pålitelige og fristende kasinoene som er tilgjengelige over hele verden. Her vil du finne informasjon om lukrative bonuser, pålitelig kundeservice og ulike betalingsmetoder, fra kredittkort til e-lommebøker. Uansett hvor du befinner deg, har vi noe å tilby for enhver spiller.",
+      "australia.title":
+        "Australsk online kasinooversikt: Høydepunktet med spill Down Under",
+      "australia.description":
+        "Leter du etter en enestående spillopplevelse i Australia? Vår kuraterte liste fremhever det beste av det beste innen australske online kasinoer. Dykk ned i en verden av generøse bonuser, upåklagelig kundeservice og ulike betalingsalternativer – alt fra tradisjonelle bankoverføringer til moderne e-lommebøker. For de som befinner seg i Australia, tilbyr vi en skreddersydd spillopplevelse uten sidestykke.",
+      "brazil.title":
+        "Brasiliansk online kasinoguide: Porten til spillglede i Brasil",
+      "brazil.description":
+        "Leter du etter en førsteklasses spillopplevelse i Brasil? Vår nøye kuraterte liste fremhever de mest eksepsjonelle online kasinoene som er tilgjengelige på det brasilianske markedet. Utforsk et univers av belønnende bonuser, pålitelig kundeservice og et mylder av betalingsalternativer, fra tradisjonelle bankoverføringer til moderne digitale lommebøker. Hvis du er i Brasil, har vi din ultimate spillopplevelse dekket.",
+      "canada.title":
+        "Kanadisk online kasinoguide: Oppdag det beste innen kanadisk spill",
+      "canada.description":
+        "På jakt etter en enestående spillopplevelse i Canada? Vår nøye kuraterte liste viser de beste online kasinoene som er tilgjengelige for det kanadiske publikummet. Dykk inn i en verden av generøse bonuser, enestående kundeservice og et bredt spekter av betalingsalternativer, inkludert tradisjonelle bankoverføringer og moderne e-lommebøker. Hvis du er basert i Canada, venter din ultimate spillopplevelse på deg.",
+      "finland.title":
+        "Finsk online kasinoguide: Den ultimate spillopplevelsen i Finland",
+      "finland.description":
+        "På jakt etter en enestående spillopplevelse i Finland? Vår håndplukkede utvalg viser de fineste online kasinoene som imøtekommer det finske publikummet. Trå inn i en verden fylt med generøse bonuser, førsteklasses kundeservice og et bredt spekter av betalingsmetoder, fra tradisjonelle bankoverføringer til moderne e-lommebøker. Hvis du er i Finland, starter din unike spillopplevelse her.",
+      "germany.title":
+        "Tysk online kasinoguide: Det ultimate spillparadiset i Tyskland",
+      "germany.description":
+        "Er du på jakt etter en enestående spillopplevelse i Tyskland? Vår nøye kuraterte liste fremhever de beste online kasinoene som er tilgjengelige på det tyske markedet. Utforsk en verden rik på fristende bonuser, pålitelig kundestøtte og en rekke betalingsalternativer, inkludert tradisjonelle bankoverføringer og moderne e-lommebøker. Hvis du er i Tyskland, begynner din uovertrufne spillopplevelse her.",
+      "nz.title":
+        "New Zealandsk online kasinoguide: Den ultimate spillopplevelsen for kiwier",
+      "nz.description":
+        "På jakt etter en ekstraordinær spillopplevelse i New Zealand? Vår nøye kuraterte liste viser det beste av det beste blant online kasinoer tilgjengelige for kiwi-spillere. Trå inn i en verden av rause bonuser, utmerket kundeservice og et mangfold av betalingsalternativer, fra tradisjonelle bankoverføringer til toppmoderne e-lommebøker. For de i New Zealand, begynner din uovertrufne spillopplevelse rett her.",
+      "norway.title":
+        "Norsk online kasinoguide: Høydepunktet med spill i Norge",
+      "norway.description":
+        "Leter du etter en enestående spillopplevelse i Norge? Vår nøye utvalgte liste viser de beste online kasinoene som er tilgjengelige for norske spillere. Gå inn i en verden av sjenerøse bonuser, førsteklasses kundeservice og et bredt utvalg av betalingsalternativer, fra tradisjonelle bankoverføringer til toppmoderne e-lommebøker. Hvis du er i Norge, venter den ultimate spillopplevelsen på deg her.",
+      "poland.title":
+        "Polsk online kasinoguide: Den fremste spilldestinasjonen i Polen",
+      "poland.description":
+        "På jakt etter en enestående spillopplevelse i Polen? Vår nøye kuraterte liste fremhever de fremste online kasinoene tilgjengelige for polske spillere. Trå inn i en verden rik på lukrative bonuser, førsteklasses kundeservice og et mylder av betalingsalternativer, fra tradisjonelle bankoverføringer til innovative e-lommebokløsninger. Hvis du befinner deg i Polen, starter din enestående spillopplevelse her.",
+
+      "filtered.providers.title":
+        "Omfattende oversikt over 2023 Online Kasinoer sortert etter Spilleleverandører",
+      "filtered.providers.description":
+        "Interessert i å finne online kasinoer med spill fra spesifikke leverandører? Gå gjennom vår oppdaterte liste over ulike kasinoalternativer for å finne din perfekte match.",
+      "amatic.title":
+        "Amatic: Broen mellom Tradisjonelle og Online Kasinoer med Klassiske Spilltitler",
+      "amatic.description":
+        "Amatic lager digitale spill som gjenspeiler deres virkelige versjoner både i estetikk og fortelling. Denne distinkte strategien fenger spillere som liker den tidløse kasinoatmosfæren. Med fremragende spill som Hot Fruits 100, Allways Hot Fruits, Book Of Aztec og Lucky Joker 10, tilbyr Amatic en enestående underholdningsopplevelse for kasinoentusiaster.",
+      "amusnet.title":
+        "To Tiår med Spilleekspertise: Utforsk Amusnet Interactives Innovative Portefølje",
+      "amusnet.description":
+        "Med en erfaring på over 20 år har Amusnet Interactive samlet seg en betydelig følgerskare takket være sitt konstante fokus på spillinnovasjon, inkludert integrering av in-game jackpoter i flere av deres tilbud. Bemerkelsesverdige titler fra Amusnet Interactive inkluderer Supreme Hot, Burning Hot, Ultimate Hot og Shining Crown. Dykk ned i den spennende spillmekanikken og de engasjerende elementene presentert av Amusnet Interactives bemerkelsesverdige spillutvalg.",
+      "bgaming.title":
+        "Rising Star innen iGaming: BGamings Raske Fremgang gjennom Innovasjon og Kvalitet",
+      "bgaming.description":
+        "Selv om de er relativt nye i iGaming-sektoren, har BGaming raskt blitt anerkjent som en ledende leverandør av online kasino-underholdning, takket være sin overlegne kvalitet og innovative strategier. Spesialisert på spilleautomater, avslappende spill og klassiske bordspill, oppdaterer BGaming kontinuerlig spillutvalget sitt med engasjerende historier, uforglemmelige karakterer og spennende kampanjer. Bemerkelsesverdige titler som Fruit Million, Elvis Frog in Vegas, Lucky Lady Moon og Aloha King Elvis befolker deres utmerkede samling. Dykk inn i den spennende og engasjerende verdenen presentert av BGamings eksepsjonelle utvalg av spillalternativer.",
+      "boongo.title":
+        "Boongo Gaming: Skaper Immersive Digitale Opplevelser gjennom Innovativ Spilledesign",
+      "boongo.description":
+        "Boongo Gaming har raskt skilt seg ut i den konkurransedyktige iGaming-sektoren med visuelt tiltalende og funksjonsrike spill. Kjent for titler som 'God's Temple' og '15 Golden Eggs,' utmerker selskapet seg både i innovasjon og kvalitet. Deres robuste backend-løsninger forbedrer ytterligere spillopplevelsen. Enten du er en tilfeldig spiller eller en dedikert entusiast, tilbyr Boongo Gaming en minneverdig spillreise.",
+      "evolution.title":
+        "Evolution Gaming: Setter Gullstandarden for Live Kasinoopplevelser",
+      "evolution.description":
+        "En anerkjent leder innen live kasinoarenaen, har Evolution Gaming bygget sitt rykte gjennom et engasjement for enestående kvalitet og innovasjon. Med et rikt utvalg av live dealer-spill, fra klassikere som blackjack og rulett til unike tilbud som Lightning Dice, leverer selskapet konsekvent engasjerende og autentiske opplevelser. Ved å bruke avansert strømningsteknologi og profesjonelle dealere, sikrer Evolution Gaming en sømløs og engasjerende spillatmosfære som skiller dem ut i bransjen.",
+      "mascot.title":
+        "Mascot Gaming: Et Fremvoksende Kraftsenter innen Skreddersydde iGaming-løsninger",
+      "mascot.description":
+        "Med rask oppgang i iGaming-bransjen vekker Mascot Gaming oppmerksomhet for sine skreddersydde spill-løsninger. Med en balansert portefølje av spilleautomater, bordspill og interaktive opplevelser, markerer selskapet seg gjennom en blanding av kreativitet og teknologi. Kjent for titler som 'Reel Monsters' og 'Fruit Vegas,' kombinerer Mascot Gaming fengslende visuelle elementer med fascinerende spillfunksjoner. Deres unike tilnærming til spill har gjort dem til et foretrukket valg for operatører som søker allsidig og engasjerende innhold, og legger grunnlaget for en lovende fremtid i sektoren.",
+      "netent.title":
+        "NetEnt Gaming: Pionér for Fremragende i iGaming-verdenen",
+      "netent.description":
+        "Som en av veteranene i iGaming-bransjen har NetEnt Gaming konsekvent presset grensene når det gjelder kvalitet, innovasjon og spillopplevelse. Med et bredt spekter av tilbud fra klassiske spilleautomater som 'Starburst' til banebrytende live kasinospill, har selskapet satt bransjestandarder gang på gang. Ved å bruke toppmoderne teknologi og kreativ fortelling, tilbyr NetEnt en uovertruffen spillopplevelse som holder spillere engasjerte. Deres rykte for kvalitet støttes av en omfattende portefølje som stadig utvikles, og befester deres posisjon som en leder innen digital spillutvikling.",
+      "nolimit.title":
+        "No Limit City Gaming: Ubegrenset Innovasjon i iGaming-verdenen",
+      "nolimit.description":
+        "Emerging som en kraft å regne med i iGaming-bransjen, er No Limit City Gaming synonymt med kreativ frihet og teknologisk styrke. Kjent for unike spilleautomater som 'Deadwood' og 'Punk Rocker,' går selskapet utover det vanlige for å tilby fengslende temaer og spillmekanikker. Deres dedikasjon til innovasjon er tydelig, og gir en oppfriskende og uforutsigbar spillopplevelse. Ved å stadig utfordre grensene for hva som er mulig, har No Limit City Gaming skapt en nisje som en avant-garde spilltilbyder i et svært konkurransedyktig marked.",
+      "playngo.title":
+        "Play'n GO Gaming: En Vanguard for Allsidighet og Innovasjon i iGaming",
+      "playngo.description":
+        "Med sin status som en trendsetter i iGaming-samfunnet, feires Play'n GO Gaming for sin brede og oppfinnsomme spillportefølje. Fra ikoniske spilleautomater som 'Book of Dead' til oppfinnsomme bordspill, gir selskapet en omfattende spillopplevelse. Ved å bruke toppmoderne teknologi og engasjerende fortellinger, har Play'n GO mestret kunsten å skape spill som ikke bare er visuelt tiltalende, men også rike på funksjoner. Deres urokkelige forpliktelse til kvalitet og innovasjon gjør dem til et foretrukket valg for både tilfeldige spillere og ivrige kasinoentusiaster, og setter stadig nye standarder i det stadig skiftende spillmiljøet.",
+      "pragmatic.title":
+        "Pragmatic Play: Fusjon av Kvalitet og Kreativitet for en Uovertruffen iGaming-opplevelse",
+      "pragmatic.description":
+        "En frontløper i iGaming-bransjen, har Pragmatic Play gjort seg bemerket gjennom en potent kombinasjon av innovativ spillopplevelse og førsteklasses grafikk. Kjent for populære titler som 'Wolf Gold' og 'The Dog House,' leverer selskapet et allsidig utvalg av spilleautomater, live kasinospill og til og med bingo-tilbud. Pragmatic Plays forpliktelse til kvalitet viser seg i intuitive grensesnitt, engasjerende historier og velutførte spillmekanikker. Ved å kontinuerlig lansere nye og fengslende spill, klarer de å holde seg foran i den konkurransetette verdenen av online spill, og befester deres rykte som en pålitelig og oppfinnsom spilltilbyder.",
+      "allproviders.title":
+        "Finn enkelt ditt ideelle nettkasino: Sortert etter spillutviklere for skreddersydde spillopplevelser",
+      "allproviders.description":
+        "For å gjøre søket ditt enklere, har vi sortert våre kasinotilbud etter spillutviklere. Dette gjør det mulig for deg å enkelt finne et spillside som tilbyr akkurat de spillene du ønsker å spille. Fra moderne videoautomater og spennende live kasinoopplevelser til tradisjonelle bordspill, har vi tatt hensyn til alle preferansene dine. Bla gjennom vår detaljerte liste over spillutviklere for å finne kasinoer støttet av førsteklasses programvareutviklere, som garanterer høykvalitets visuelle elementer, engasjerende spillopplevelse og spennende funksjoner.",
+      "pushgaming.title":
+        "Push Gaming: Revolusjonerer iGaming med banebrytende konsepter",
+      "pushgaming.description":
+        "I det stadig konkurransetette iGaming-landskapet skiller Push Gaming seg ut med banebrytende spilleautomater som 'Jammin' Jars' og 'Wild Swarm.' Selskapet utmerker seg i levering av spill med eksepsjonelle visuelle elementer og intrikate spillopplevelsesfunksjoner. Push Gamings fokus på mobiltilpassede, HTML5-baserte spill sikrer en sømløs opplevelse på tvers av enheter. Deres evne til å kombinere tradisjonelle spill-elementer med nye vrier gjør dem til en ettertraktet leverandør, som kontinuerlig pusher grensene for hva som er mulig i iGaming-verdenen.",
+      "spinomenal.title":
+        "Spinomenal: En Nyskapende Aktør i iGaming-økosystemet",
+      "spinomenal.description":
+        "Som en smidig og fremtidsrettet aktør i iGaming-landskapet er Spinomenal anerkjent for sin oppfinnsomme tilnærming til spillutvikling. Spesialisert på svært engasjerende spilleautomater som 'Book of Guardians' og 'Demi Gods II,' kombinerer selskapet livlige visuelle elementer med fengslende spillopplevelsesmekanikker. Spinomenals forpliktelse til brukeropplevelse er tydelig, og de tilbyr spill som er optimalisert for både stasjonær og mobil spilling. Deres innovative funksjoner, som bonusrunder og progressive jackpotter, gjør dem til en fremragende leverandør i et stadig voksende marked, som appellerer til en bredt spekter av spillere som søker friske og spennende spillopplevelser.",
+
+      "brand.safety": "Sikkerhetsindeks",
+      "brand.our": "av Vårt Casino",
+      "brand.providers": "Spilleleverandører:",
+      "brand.restricted": "Begrensede land:",
+
+      "tab.casinos": "Kasinoer",
+      "random.brand": "Tilfeldig Merke",
+      "random.description":
+        "Merk deg et tilfeldig merke som foreslås spesielt for deg",
+      "slider.title": "Anbefalte Merker for Deg",
+
+      "button.read": "Les Mer",
+      "button.less": "Les Mindre",
+
+      "button.view": "Se Alle Guider",
+      "button.load": "Last Inn Flere Merker",
+      "button.review": "Les Anmeldelse",
+      "button.play": "Spill Nå",
+
+      "subscribe.text":
+        "Abonner på vår e-postliste for å motta de nyeste anmeldelsene akkurat nå, eller sjekk ut vår e-post ",
+      "subscribe.link": "Listeeksempler",
+
+      "footer.contacts": "Våre Kontakter:",
+      "footer.title": "Styrkende iGaming-løsninger",
+      "footer.description":
+        "Låser opp 15 nettsteder som vil gi merket ditt et løft til nye høyder",
+      "footer.link": "Start Sammen Med Oss",
+      "footer.about":
+        "CasinoFrog posisjonerer seg som en enestående kilde til informasjon om virtuelle spillsteder og online gambling-underholdning. Alle våre anmeldelser og guider er utarbeidet i samsvar med kunnskapen og overbevisningene til vårt uavhengige ekspertteam, objektivt og uten noen form for fordommer. Likevel, slike vurderinger og meldinger tilbys kun til informasjonsformål og skal ikke betraktes som juridisk rådgivning eller grunnlag for å fatte juridiske beslutninger. Før du begynner deltakelsen i ditt valgte kasino, må du alltid sørge for at du overholder alle gjeldende juridiske krav.",
+      "footer.copyright": "Start Sammen Med Oss",
+    },
+  },
 
   // Add translations for other languages here
 };
