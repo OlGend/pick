@@ -26,7 +26,7 @@ export function useTopBrands(filterValue) {
       allData.push(...data);
       page++;
     }
-    console.log(allData)
+    
     return allData;
   };
 

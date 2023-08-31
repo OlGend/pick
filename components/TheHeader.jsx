@@ -18,6 +18,7 @@ import SearchComponent from "@/components/SearchComponent";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
+import { geolocation } from "@vercel/edge";
 
 
 const navItems = [
@@ -127,6 +128,7 @@ const TheHeader = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
 
   return (
     <header className="header">

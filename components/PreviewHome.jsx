@@ -37,6 +37,7 @@ const PreviewHome = () => {
     <div className="preview">
       <div className="main__container flex items-center first-block">
         <div className="flex flex-col basis-[50%]">
+        
           <h1>{t("home.title")}</h1>
           <p>{t("home.description")}</p>
           <Subscribe />

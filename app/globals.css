@@ -7934,7 +7934,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -300px top -120px;
 }
-.amatic-industries {
+.amatic-industries, .amatic {
   background-image: url(/providers3.png);
   background-position: left 0 top -360px;
 }
@@ -8043,7 +8043,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -300px top -360px;
 }
-.onetouch-games {
+.onetouch-games, .onetouch {
   background-image: url(/providers3.png);
   background-position: left -500px top -360px;
 }
@@ -8147,11 +8147,11 @@ p {
   background-image: url(/providers3.png);
   background-position: left -600px top -720px;
 }
-.fantasma-games {
+.fantasma-games, .fantasma {
   background-image: url(/providers3.png);
   background-position: left -400px top -120px;
 }
-.pocket-games-soft {
+.pocket-games-soft, .pgsoft {
   background-image: url(/providers3.png);
   background-position: left -600px top -840px;
 }
@@ -8172,7 +8172,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -700px top -60px;
 }
-.luckystreak {
+.luckystreak, .lucky-streak {
   background-image: url(/providers3.png);
   background-position: left -600px top -420px;
 }
@@ -8518,7 +8518,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -1101px top -721px;
 }
-.barbarabang {
+.barbarabang, .barbara-bang {
   background-image: url(/providers3.png);
   background-position: left -1101px top -121px;
 }
@@ -8529,6 +8529,74 @@ p {
 .galaxsys {
   background-image: url(/providers3.png);
   background-position: left -1101px top -301px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.a3-oaks {
+  background-image: url(/providers3.png);
+  background-position: left -1200px top -181px;
+}
+.ruby-play {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -121px;
+}
+.champion-studio {
+  background-image: url(/providers3.png);
+  background-position: left -1100px top -541px;
+}
+.simpleplay {
+  background-image: url(/providers3.png);
+  background-position: left -1200px top -1px;
+}
+.electric-elephant {
+  background-image: url(/providers3.png);
+  background-position: left -300px top -61px;
+}
+.a4theplayer {
+  background-image: url(/providers3.png);
+  background-position: left -200px top -661px;
+}
+.avatarux {
+  background-image: url(/providers3.png);
+  background-position: left -700px top -601px;
+}
+.gamebeat {
+  background-image: url(/providers3.png);
+  background-position: left -1100px top -361px;
+}
+.retro-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -61px;
+}
+.slot-factory {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -301px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
+}
+.mrslotty {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -121px;
 }
 
 /* Ваши глобальные стили или стили компонента */
@@ -8883,7 +8951,8 @@ input.error {
   .modal-overlay {
     bottom: 0;
   }
-  .custom-bonuses, .other-custom-bonuses {
+  .custom-bonuses,
+  .other-custom-bonuses {
     background-image: none !important;
   }
   .mobile-none {
