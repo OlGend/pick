@@ -8601,7 +8601,9 @@ p {
 }
 
 /* Ваши глобальные стили или стили компонента */
-
+.header__bg {
+  padding: 5px;
+}
 .language-switcher {
   display: flex;
   align-items: center;
