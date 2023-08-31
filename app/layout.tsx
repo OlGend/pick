@@ -1,5 +1,4 @@
-
-
+import { Analytics } from '@vercel/analytics/react';
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -21,7 +20,7 @@ export default function RootLayout({
       <body>
         <RandomWindow />
         <TheHeader />
-        <main>{children}</main>
+        <main>{children}<Analytics /></main>
         <TheFooter />
       </body>
     </html>
