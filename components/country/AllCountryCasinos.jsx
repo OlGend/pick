@@ -33,7 +33,7 @@ import {
   extractLimits,
 } from "@/components/brandUtils";
 
-export default function AllBonuses({ choose, topchoose }) {
+export default function AllBonuses({ choose, topchoose, icon }) {
   const { t } = useTranslation();
   const itemsPerPage = 7;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
@@ -130,18 +130,19 @@ export default function AllBonuses({ choose, topchoose }) {
                 >
                   <div className="flex flex-col basis-[63%]">
                     <div className="flex ml-1 mb-3">
-                      <div
+                      {/* <div
                         className="items-center"
                         dangerouslySetInnerHTML={{
                           __html: extractFlag(brand.content.rendered),
                         }}
-                      />
-                      <div
+                      /> */}
+                      <div className="icon-flag">{icon}</div>
+                      {/* <div
                         className="items-center ml-2"
                         dangerouslySetInnerHTML={{
                           __html: extractBadge(brand.content.rendered),
                         }}
-                      />
+                      /> */}
                     </div>
                     <div className="flex mb-1">
                       <Gift className="mr-1" size={24} />

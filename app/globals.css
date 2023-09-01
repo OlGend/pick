@@ -8600,6 +8600,10 @@ p {
   background-position: left -100px top -121px;
 }
 
+.icon-flag {
+  font-size: 32px;
+}
+
 /* Ваши глобальные стили или стили компонента */
 .header__bg {
   padding: 5px;

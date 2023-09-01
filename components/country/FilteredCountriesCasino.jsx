@@ -132,6 +132,7 @@ const FilteredCasinos = () => {
                   key={item.currentTab}
                   choose={item.currentCategories}
                   topchoose={item.topCurrentCategories}
+                  icon={item.icon}
                 />
               )
             );

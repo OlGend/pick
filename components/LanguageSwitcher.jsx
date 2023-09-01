@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
   
   
   const availableLanguages = [
-    { code: "en", label: "EN", flag: "🇬🇧" }, //
+    { code: "en", label: "EN", flag: "🌍" }, //
     { code: "pl", label: "PL", flag: "🇵🇱" }, //
     { code: "no", label: "NO", flag: "🇳🇴" }, //
     { code: "au", label: "AU", flag: "🇦🇺" }, //
