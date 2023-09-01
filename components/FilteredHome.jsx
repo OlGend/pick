@@ -10,13 +10,15 @@ import {
   CurrencyBtc,
   SquareLogo,
 } from "phosphor-react";
+import useSWR from "swr";
+
 
 const FilteredHome = () => {
   const { t } = useTranslation();
+  const [isLoader, setIsLoader] = useState(false);
+
   const [currentTab, setCurrentTab] = useState(2);
-  const handleTabChange = (tabNumber) => {
-    setCurrentTab(tabNumber);
-  };
+
 
   const navigateBrands = [
     {
@@ -51,6 +53,23 @@ const FilteredHome = () => {
     },
   ];
 
+  const handleTabChange = (tabNumber) => {
+    setCurrentTab(tabNumber);
+    setIsLoader(true);
+    setTimeout(() => {
+      setIsLoader(false);
+    }, 500);
+  };
+
+  // В начале компонента FilteredBonuses
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
+
   return (
     <div className="main pt-10 pb-10 other-custom-bonuses">
       <div className="main__container filter-brands">
@@ -80,13 +99,15 @@ const FilteredHome = () => {
           ))}
         </div>
 
-        <div>
+        <div className="overlay-filter">
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
                 <AllBrands
                   key={item.currentTab}
                   choose={item.currentCategories}
+                  filtered={languageDetails}
+                  isLoader={isLoader}
                 />
               )
             );

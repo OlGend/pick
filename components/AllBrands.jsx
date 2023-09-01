@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrands } from "./useBrands";
+import { useTopBrandsFilter } from "./useBrands";
 import Loader from "./Loader";
+import FilterLoader from "@/components/FilterLoader";
+
 import {
   Gift,
   ShieldPlus,
@@ -32,7 +34,7 @@ import {
   extractLimits,
 } from "./brandUtils";
 
-export default function AllBrands({ choose }) {
+export default function AllBrands({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
   const itemsPerPage = 7;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
@@ -41,9 +43,22 @@ export default function AllBrands({ choose }) {
   const [openWithdrawalId, setOpenWithdrawalId] = useState(null);
   const [openDepositsId, setOpenDepositsId] = useState(null);
   const [openCountriesId, setOpenCountriesId] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const filteredBrands = useTopBrands(choose);
-  const topBrands = useTopBrands(112);
+
+
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
+
+
+  const filteredBrands = useTopBrandsFilter(choose, filtered.allBrand);
+  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
@@ -73,34 +88,13 @@ export default function AllBrands({ choose }) {
   const handleCountriesClick = (brandId) => {
     setOpenCountriesId((prevId) => (prevId === brandId ? null : brandId));
   };
-  useEffect(() => {
-    const flagCircles = document.querySelectorAll(".pokageo-flag-circle");
 
-    flagCircles.forEach((flagCircle) => {
-      const statusIconDiv = flagCircle.querySelector(".pokageo-status-icon");
-
-      if (
-        statusIconDiv &&
-        statusIconDiv.classList.contains("pokageo-status-icon-disallowed")
-      ) {
-        flagCircle.classList.add("disallowed");
-      }
-    });
-  }, [filteredBrands]);
-
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleLinkClick = () => {
-    setIsLoading(true);
-
-    // Simulate some delay to show the loader (remove this in actual usage)
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  };
 
   return (
     <>
+      {isLoader ? (
+        <FilterLoader />
+      ) : (
       <div className="flex flex-wrap justify-between">
         <div className="flex flex-col px-0 py-6 basis-[75%]">
           {filteredBrands.slice(0, visibleBrands).map((brand) => {
@@ -118,19 +112,8 @@ export default function AllBrands({ choose }) {
               >
                 <div className="flex flex-col basis-[63%]">
                   <div className="flex ml-1 mb-3">
-                    <div
-                      className="items-center"
-                      dangerouslySetInnerHTML={{
-                        __html: extractFlag(brand.content.rendered),
-                      }}
-                    />
-                    <div
-                      className="items-center ml-2"
-                      dangerouslySetInnerHTML={{
-                        __html: extractBadge(brand.content.rendered),
-                      }}
-                    />
-                  </div>
+                      <div className="filter-flag">{filtered.flag}</div>
+                    </div>
                   <div className="flex mb-1">
                     <Gift className="mr-1" size={24} />
                     <div
@@ -320,6 +303,7 @@ export default function AllBrands({ choose }) {
           })}
         </div>
       </div>
+      )}
     </>
   );
 }
