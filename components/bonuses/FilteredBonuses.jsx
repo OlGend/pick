@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import AllBonuses from "./AllBonuses";
 import { Gift, Coins, Crown, Handshake, RadioButton } from "phosphor-react";
-import Image from "next/image";
-import Img from "@/public/beep2.png";
+import useSWR from "swr";
 
 const FilteredBonuses = () => {
   const { t } = useTranslation();
+  const [isLoader, setIsLoader] = useState(false);
 
   const [currentTab, setCurrentTab] = useState(1);
   const navigateBrands = [
@@ -60,7 +60,20 @@ const FilteredBonuses = () => {
 
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
+    setIsLoader(true);
+    setTimeout(() => {
+      setIsLoader(false);
+    }, 500);
   };
+
+  // В начале компонента FilteredBonuses
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
 
   return (
     <div className="main pt-10 pb-10 custom-bonuses">
@@ -86,13 +99,15 @@ const FilteredBonuses = () => {
           ))}
         </div>
 
-        <div>
+        <div className="overlay-filter">
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
                 <AllBonuses
                   key={item.currentTab}
                   choose={item.currentCategories}
+                  filtered={languageDetails}
+                  isLoader={isLoader}
                 />
               )
             );

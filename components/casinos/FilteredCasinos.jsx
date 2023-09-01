@@ -10,10 +10,14 @@ import {
   CalendarCheck,
   Scroll,
 } from "phosphor-react";
+import useSWR from "swr";
+
 
 
 const FilteredCasinos = () => {
   const { t } = useTranslation();
+  const [isLoader, setIsLoader] = useState(false);
+
   const [currentTab, setCurrentTab] = useState(1);
   const navigateBrands = [
     {
@@ -64,7 +68,20 @@ const FilteredCasinos = () => {
 
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
+    setIsLoader(true);
+    setTimeout(() => {
+      setIsLoader(false);
+    }, 500);
   };
+
+    // В начале компонента FilteredBonuses
+    const { data: languageDetails, error: detailsError } = useSWR(
+      "languageDetails",
+      null,
+      {
+        fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+      }
+    );
 
   return (
     <div className="main pt-10 pb-10 custom-bonuses">
@@ -90,13 +107,15 @@ const FilteredCasinos = () => {
           ))}
         </div>
 
-        <div>
+        <div className="overlay-filter">
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
                 <AllCasinos
                   key={item.currentTab}
                   choose={item.currentCategories}
+                  filtered={languageDetails}
+                  isLoader={isLoader}
                 />
               )
             );

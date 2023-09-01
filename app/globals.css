@@ -7115,103 +7115,6 @@ p {
 .slick-next {
   right: 10px !important;
 }
-.loader {
-  background-color: rgba(
-    29,
-    39,
-    48,
-    0.95
-  ); /* semi-transparent background to create the blur effect */
-  backdrop-filter: blur(8px);
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 99999;
-}
-
-.loader-inner {
-  bottom: 0;
-  height: 60px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-}
-
-.loader-line-wrap {
-  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-  box-sizing: border-box;
-  height: 50px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  transform-origin: 50% 100%;
-  width: 100px;
-}
-.loader-line {
-  border: 4px solid transparent;
-  border-radius: 100%;
-  box-sizing: border-box;
-  height: 100px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-}
-.loader-line-wrap:nth-child(1) {
-  animation-delay: -50ms;
-}
-.loader-line-wrap:nth-child(2) {
-  animation-delay: -100ms;
-}
-.loader-line-wrap:nth-child(3) {
-  animation-delay: -150ms;
-}
-.loader-line-wrap:nth-child(4) {
-  animation-delay: -200ms;
-}
-.loader-line-wrap:nth-child(5) {
-  animation-delay: -250ms;
-}
-
-.loader-line-wrap:nth-child(1) .loader-line {
-  border-color: hsl(0, 80%, 60%);
-  height: 90px;
-  width: 90px;
-  top: 7px;
-}
-.loader-line-wrap:nth-child(2) .loader-line {
-  border-color: hsl(60, 80%, 60%);
-  height: 76px;
-  width: 76px;
-  top: 14px;
-}
-.loader-line-wrap:nth-child(3) .loader-line {
-  border-color: hsl(120, 80%, 60%);
-  height: 62px;
-  width: 62px;
-  top: 21px;
-}
-.loader-line-wrap:nth-child(4) .loader-line {
-  border-color: hsl(180, 80%, 60%);
-  height: 48px;
-  width: 48px;
-  top: 28px;
-}
-.loader-line-wrap:nth-child(5) .loader-line {
-  border-color: hsl(240, 80%, 60%);
-  height: 34px;
-  width: 34px;
-  top: 35px;
-}
 
 @keyframes spin {
   0%,
@@ -7934,7 +7837,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -300px top -120px;
 }
-.amatic-industries, .amatic {
+.amatic-industries,
+.amatic {
   background-image: url(/providers3.png);
   background-position: left 0 top -360px;
 }
@@ -8043,7 +7947,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -300px top -360px;
 }
-.onetouch-games, .onetouch {
+.onetouch-games,
+.onetouch {
   background-image: url(/providers3.png);
   background-position: left -500px top -360px;
 }
@@ -8147,11 +8052,13 @@ p {
   background-image: url(/providers3.png);
   background-position: left -600px top -720px;
 }
-.fantasma-games, .fantasma {
+.fantasma-games,
+.fantasma {
   background-image: url(/providers3.png);
   background-position: left -400px top -120px;
 }
-.pocket-games-soft, .pgsoft {
+.pocket-games-soft,
+.pgsoft {
   background-image: url(/providers3.png);
   background-position: left -600px top -840px;
 }
@@ -8172,7 +8079,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -700px top -60px;
 }
-.luckystreak, .lucky-streak {
+.luckystreak,
+.lucky-streak {
   background-image: url(/providers3.png);
   background-position: left -600px top -420px;
 }
@@ -8518,7 +8426,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -1101px top -721px;
 }
-.barbarabang, .barbara-bang {
+.barbarabang,
+.barbara-bang {
   background-image: url(/providers3.png);
   background-position: left -1101px top -121px;
 }
@@ -8600,7 +8509,8 @@ p {
   background-position: left -100px top -121px;
 }
 
-.icon-flag {
+.icon-flag,
+.filter-flag {
   font-size: 32px;
 }
 
@@ -8630,7 +8540,6 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.144);
   background-color: #051bad;
   outline: none;
-  
 }
 
 .language-switcher select:focus {
@@ -9505,4 +9414,111 @@ input.error {
   .sub-menu-image {
     display: none;
   }
+}
+
+.overlay-filter {
+  position: relative;
+  min-height: 50vh;
+}
+.loader {
+  background-color: rgba(
+    29,
+    39,
+    48,
+    0.95
+  ); /* semi-transparent background to create the blur effect */
+  backdrop-filter: blur(8px);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+.loader2 {
+  position: absolute;
+  background-color: rgba(29, 39, 48, 0.01);
+  border: 1px solid rgba(123, 140, 152, 0.2);
+  margin-top: 1.5rem;
+}
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.loader-line-wrap {
+  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) {
+  animation-delay: -50ms;
+}
+.loader-line-wrap:nth-child(2) {
+  animation-delay: -100ms;
+}
+.loader-line-wrap:nth-child(3) {
+  animation-delay: -150ms;
+}
+.loader-line-wrap:nth-child(4) {
+  animation-delay: -200ms;
+}
+.loader-line-wrap:nth-child(5) {
+  animation-delay: -250ms;
+}
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  border-color: hsl(0, 80%, 60%);
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  border-color: hsl(60, 80%, 60%);
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  border-color: hsl(120, 80%, 60%);
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  border-color: hsl(180, 80%, 60%);
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  border-color: hsl(240, 80%, 60%);
+  height: 34px;
+  width: 34px;
+  top: 35px;
 }

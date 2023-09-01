@@ -47,3 +47,39 @@ export function useTopBrands(filterValue) {
 
   return filteredBrands || [];
 }
+
+
+export function useTopBrandsFilter(depositFilterValue, countryFilterValue) {
+  const fetcher = async () => {
+    const allData = [];
+    let page = 1;
+
+    while (true) {
+      const data = await getData(page);
+      if (data.length === 0) {
+        break; // Прекращаем цикл, если больше данных нет
+      }
+      allData.push(...data);
+      page++;
+    }
+    
+    return allData;
+  };
+
+  const { data: allBrands, error } = useSWR("brandsData", fetcher);
+
+  if (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+
+  const filteredBrands = allBrands?.filter((brand) => {
+    if (brand.lists) {
+      const listsValues = Object.values(brand.lists);
+      return listsValues.includes(depositFilterValue) && listsValues.includes(countryFilterValue);
+    }
+    return false;
+  });
+
+  return filteredBrands || [];
+}

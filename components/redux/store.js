@@ -9,12 +9,26 @@ const brandsSlice = createSlice({
     },
   },
 });
-
 export const { setShowBrands } = brandsSlice.actions;
+
+const languageSlice = createSlice({
+  name: 'language',
+  initialState: { language: 'en' },
+  reducers: {
+    changeLanguage: (state, action) => {
+      state.language = action.payload;
+    }
+  }
+});
+export const { changeLanguage } = languageSlice.actions;
+
+
+
 
 const store = configureStore({
   reducer: {
     brands: brandsSlice.reducer,
+    language: languageSlice.reducer,
   },
 });
 

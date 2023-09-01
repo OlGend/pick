@@ -18,9 +18,13 @@ import Nolimitcity from "@/public/providers/nolimitcity.png";
 import Pragmatic from "@/public/providers/pragmaticplay.png";
 import Evolution from "@/public/providers/Evolution.png";
 import AllPaymentsImg from "@/public/payments/allpaymentmethods.png";
+import useSWR from "swr";
+
 
 const FilteredProviders = () => {
   const { t } = useTranslation();
+  const [isLoader, setIsLoader] = useState(false);
+
 
   const [currentTab, setCurrentTab] = useState(1);
   const navigateBrands = [
@@ -224,7 +228,21 @@ const FilteredProviders = () => {
 
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
+    setIsLoader(true);
+    setTimeout(() => {
+      setIsLoader(false);
+    }, 500);
   };
+
+  // В начале компонента FilteredBonuses
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
+
 
   return (
     <div className="main pt-10 pb-10 custom-bonuses filtered-providers">
@@ -254,13 +272,15 @@ const FilteredProviders = () => {
           ))}
         </div>
 
-        <div>
+        <div className="overlay-filter">
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
                 <AllPayments
                   key={item.currentTab}
                   choose={item.currentCategories}
+                  filtered={languageDetails}
+                  isLoader={isLoader}
                 />
               )
             );

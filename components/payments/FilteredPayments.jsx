@@ -21,9 +21,13 @@ import Pix from "@/public/payments/Pix.png";
 import Revolut from "@/public/payments/Revolut.png";
 import Mobile from "@/public/payments/mobilepayments.png";
 import AllPaymentsImg from "@/public/payments/allpaymentmethods.png";
+import useSWR from "swr";
+
 
 const FilteredPayments = () => {
   const { t } = useTranslation();
+  const [isLoader, setIsLoader] = useState(false);
+
 
   const [currentTab, setCurrentTab] = useState(1);
   const navigateBrands = [
@@ -298,8 +302,19 @@ const FilteredPayments = () => {
 
   const handleTabChange = (tabNumber) => {
     setCurrentTab(tabNumber);
+    setIsLoader(true);
+    setTimeout(() => {
+      setIsLoader(false);
+    }, 500);
   };
-
+  // В начале компонента FilteredBonuses
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
   return (
     <div className="main pt-10 pb-10 custom-bonuses filtered-payments">
       <div className="main__container filter-brands">
@@ -326,13 +341,15 @@ const FilteredPayments = () => {
           ))}
         </div>
 
-        <div>
+        <div className="overlay-filter">
           {navigateBrands.map((item) => {
             return (
               currentTab === item.currentTab && (
                 <AllPayments
                   key={item.currentTab}
                   choose={item.currentCategories}
+                  filtered={languageDetails}
+                  isLoader={isLoader}
                 />
               )
             );

@@ -4,8 +4,10 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrands } from "@/components/useBrands";
+import { useTopBrandsFilter } from "@/components/useBrands";
 import Loader from "@/components/Loader";
+import FilterLoader from "@/components/FilterLoader";
+
 import {
   Gift,
   ShieldPlus,
@@ -33,7 +35,7 @@ import {
   extractLimits,
 } from "@/components/brandUtils";
 
-export default function AllPayments({ choose }) {
+export default function AllPayments({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
   const itemsPerPage = 7;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
@@ -42,9 +44,19 @@ export default function AllPayments({ choose }) {
   const [openWithdrawalId, setOpenWithdrawalId] = useState(null);
   const [openDepositsId, setOpenDepositsId] = useState(null);
   const [openCountriesId, setOpenCountriesId] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const filteredBrands = useTopBrands(choose);
-  const topBrands = useTopBrands(36);
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  const filteredBrands = useTopBrandsFilter(choose, filtered.allBrand);
+  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
@@ -74,44 +86,11 @@ export default function AllPayments({ choose }) {
   const handleCountriesClick = (brandId) => {
     setOpenCountriesId((prevId) => (prevId === brandId ? null : brandId));
   };
-  useEffect(() => {
-    const flagCircles = document.querySelectorAll(".pokageo-flag-circle");
-
-    flagCircles.forEach((flagCircle) => {
-      const statusIconDiv = flagCircle.querySelector(".pokageo-status-icon");
-
-      if (
-        statusIconDiv &&
-        statusIconDiv.classList.contains("pokageo-status-icon-disallowed")
-      ) {
-        flagCircle.classList.add("disallowed");
-      }
-    });
-  }, [filteredBrands]);
-
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleLinkClick = () => {
-    setIsLoading(true);
-
-    // Simulate some delay to show the loader (remove this in actual usage)
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  };
-
-  useEffect(() => {
-    if (filteredBrands && filteredBrands.length > 0) {
-      setIsLoading(false);
-    } else {
-      setIsLoading(true);
-    }
-  }, [filteredBrands]);
 
   return (
     <>
-      {isLoading ? (
-        <Loader />
+      {isLoader ? (
+        <FilterLoader />
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
@@ -130,18 +109,7 @@ export default function AllPayments({ choose }) {
                 >
                   <div className="flex flex-col basis-[63%]">
                     <div className="flex ml-1 mb-3">
-                      <div
-                        className="items-center"
-                        dangerouslySetInnerHTML={{
-                          __html: extractFlag(brand.content.rendered),
-                        }}
-                      />
-                      <div
-                        className="items-center ml-2"
-                        dangerouslySetInnerHTML={{
-                          __html: extractBadge(brand.content.rendered),
-                        }}
-                      />
+                      <div className="filter-flag">{filtered.flag}</div>
                     </div>
                     <div className="flex mb-1">
                       <Gift className="mr-1" size={24} />
