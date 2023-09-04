@@ -59,9 +59,8 @@ const resources = {
 
       "searchBrands.placeholder": "Search brands...",
 
-      "home.title": "Online Casino Reviews & Gambling Guide's",
-      "home.description":
-        "Authentic player reviews, no deposit bonuses, and a wide selection of games with free play.",
+      "home.title": "Join the community of our subscribers",
+      "home.description": "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
 
       "topBrands.title": "CasinoFrog Best Choices for 2023",
       "newBrands.title": "Latest Casino Additions 2023",
