@@ -1,8 +1,11 @@
+"use client";
 import { useState, useEffect } from "react";
 import LoaderButton from "@/components/subscribe/LoaderButton";
 import { X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import SliderExample from "./SliderExample";
+// import customerio from './customerio';
+import * as CustomerIO from "customerio-node";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -13,12 +16,9 @@ const Subscribe = () => {
   const [sliderVisible, setSliderVisible] = useState(false);
   const { t } = useTranslation();
 
-
   const handleSubscribe = () => {
     setError(""); // Сброс ошибки перед проверкой
     setLoading(true);
-
-    
 
     // Simulate a loading delay of 2 seconds
     setTimeout(() => {
@@ -28,13 +28,17 @@ const Subscribe = () => {
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         setError("Please enter a valid email");
       } else {
+        _cio.identify({
+          email: email,
+        });
+
         setEmail("");
         setPopupText(
           "Congratulations! You have subscribed to the mailing list."
         );
         setPopupVisible(true);
       }
-    }, 2000);
+    }, 1000);
   };
 
   const closePopup = () => {
@@ -76,15 +80,21 @@ const Subscribe = () => {
           className="button-subscribe flex justify-center items-center"
           onClick={handleSubscribe}
         >
-         {loading ? <LoaderButton /> : t("subscribe.button")}
+          {loading ? <LoaderButton /> : t("subscribe.button")}
         </button>
         {error && (
           <span className="text-red-500 absolute error-text">{error}</span>
         )}
       </div>
       <span className="flex mt-5">
-       <br/> <b onClick={toggleSlider} className="list-examples">{t("subscribe.link")}</b> {t("subscribe.text")}
+        <br />{" "}
+        <b onClick={toggleSlider} className="list-examples">
+          {t("subscribe.link")}
+        </b>{" "}
+        {t("subscribe.text")}
       </span>
+      <strong className="countUsers text-lime-400">XXXXX</strong>
+      <span> players subscribed</span>
       {popupVisible && (
         <div
           className="overlay-popup flex justify-center items-center"
@@ -105,7 +115,10 @@ const Subscribe = () => {
       )}
       {sliderVisible && (
         <div className="overlay-popup flex justify-center items-center">
-          <div className="close-slider cursor-pointer absolute" onClick={() => setSliderVisible(false)}>
+          <div
+            className="close-slider cursor-pointer absolute"
+            onClick={() => setSliderVisible(false)}
+          >
             <X color="#fff" size={48} />
           </div>
           <SliderExample />
