@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
 import guidepostDataEn from "@/components/posts/en.json";
 import guidepostDataPl from "@/components/posts/pl.json";
+import guidepostDataNo from "@/components/posts/no.json"; // Файл с данными на норвежском
+import guidepostDataDe from "@/components/posts/de.json"; // Файл с данными на немецком
 import Link from "next/link";
 import Image from "next/image";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
@@ -13,15 +13,30 @@ import Loader from "@/components/Loader";
 export default function GuideSlotsGuide() {
   const [loading, setLoading] = useState(true);
   const [showMore, setShowMore] = useState(false);
+
   const toggleShowMore = () => {
     setShowMore((prevShowMore) => !prevShowMore);
   };
 
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
-  const guidepostData =
-    currentLanguage === "pl" ? guidepostDataPl : guidepostDataEn;
-  const guideposts = guidepostData.guideposts;
+
+  // Используйте объект с данными для каждого языка
+  const guidepostData = {
+    pl: guidepostDataPl,
+    en: guidepostDataEn,
+    nz: guidepostDataEn,
+    au: guidepostDataEn,
+    ca: guidepostDataEn,
+    no: guidepostDataNo, // Добавьте данные на норвежском языке
+    de: guidepostDataDe, // Добавьте данные на немецком языке
+    at: guidepostDataDe, // Добавьте данные на немецком языке
+    ch: guidepostDataDe, // Добавьте данные на немецком языке
+
+
+  };
+
+  const guideposts = guidepostData[currentLanguage].guideposts;
 
   useEffect(() => {
     if (guideposts.length === 0) {

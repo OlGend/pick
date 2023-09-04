@@ -83,8 +83,8 @@ const Subscribe = () => {
         )}
       </div>
       <span className="flex mt-5">
-      {t("subscribe.text")} <br/> <b onClick={toggleSlider} className="list-examples">{t("subscribe.link")}</b>
-      .</span>
+       <br/> <b onClick={toggleSlider} className="list-examples">{t("subscribe.link")}</b> {t("subscribe.text")}
+      </span>
       {popupVisible && (
         <div
           className="overlay-popup flex justify-center items-center"

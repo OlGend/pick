@@ -5,13 +5,22 @@ import { useTranslation } from "react-i18next";
 
 import guidepostDataEn from "@/components/posts/en.json";
 import guidepostDataPl from "@/components/posts/pl.json";
+import guidepostDataNo from "@/components/posts/no.json"; // Файл с данными на норвежском
+import guidepostDataDe from "@/components/posts/de.json"; // Файл с данными на немецком
 
 export default function PostContent({ id }) {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
-  const guidepostData =
-    currentLanguage === "pl" ? guidepostDataPl : guidepostDataEn;
-  const guideposts = guidepostData.guideposts;
+  
+  // Используйте объект с данными для каждого языка
+  const guidepostData = {
+    pl: guidepostDataPl,
+    en: guidepostDataEn,
+    no: guidepostDataNo, // Добавьте данные на норвежском языке
+    de: guidepostDataDe, // Добавьте данные на немецком языке
+  };
+
+  const guideposts = guidepostData[currentLanguage].guideposts;
 
   const post = guideposts.find((item) => item.id === Number(id));
 
