@@ -4,8 +4,7 @@ import LoaderButton from "@/components/subscribe/LoaderButton";
 import { X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import SliderExample from "./SliderExample";
-// import customerio from './customerio';
-import * as CustomerIO from "customerio-node";
+
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -15,6 +14,24 @@ const Subscribe = () => {
   const [popupVisible, setPopupVisible] = useState(false);
   const [sliderVisible, setSliderVisible] = useState(false);
   const { t } = useTranslation();
+  const [countUsers, setCountUsers] = useState(250000);
+
+  useEffect(() => {
+    const currentTimeNow = Date.now();
+    const targetTimestamp = new Date("2023-09-04T19:00:00").getTime();
+    const timeDifference = currentTimeNow - targetTimestamp;
+    const users = timeDifference / 600000;
+    const roundedNumber = Math.round(users);
+
+    console.log(roundedNumber)
+    // Обновление countUsers на основе roundedNumber
+    setCountUsers((prevCount) => prevCount + roundedNumber);
+
+    // Остальная логика...
+  }, []);
+
+
+
 
   const handleSubscribe = () => {
     setError(""); // Сброс ошибки перед проверкой
@@ -37,6 +54,7 @@ const Subscribe = () => {
           "Congratulations! You have subscribed to the mailing list."
         );
         setPopupVisible(true);
+        setCountUsers((prevCount) => prevCount + 1);
       }
     }, 1000);
   };
@@ -93,7 +111,7 @@ const Subscribe = () => {
         </b>{" "}
         {t("subscribe.text")}
       </span>
-      <strong className="countUsers text-lime-400">XXXXX</strong>
+      <strong className="countUsers text-lime-400">{countUsers}</strong>
       <span> players subscribed</span>
       {popupVisible && (
         <div
@@ -129,3 +147,5 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
+
+  

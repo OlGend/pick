@@ -52,7 +52,6 @@ const SliderExample = () => {
               alt={`Slide ${index + 1}`}
               width={298}
               height={300}
-              loading="lazy"
             />
           </div>
         ))}
