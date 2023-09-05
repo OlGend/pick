@@ -9,6 +9,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTopBrands } from "./useBrands";
+import { useTopBrandsFilter } from "@/components/useBrands";
+import useSWR from "swr";
+
 import {
   extractReviewBonus,
   extractReviewImage,
@@ -17,7 +20,13 @@ import {
 
 const CarouselSlider = ({ slides }) => {
   const { t } = useTranslation();
-
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
   const settings = {
     // dots: true,
     infinite: true,
@@ -51,7 +60,7 @@ const CarouselSlider = ({ slides }) => {
       },
     ],
   };
-  const slidesData = useTopBrands(112);
+  const slidesData = useTopBrandsFilter(112, languageDetails.allBrand);
 
   return (
     <div className="brand-slider mb-6">
