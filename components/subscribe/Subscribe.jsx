@@ -5,7 +5,6 @@ import { X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import SliderExample from "./SliderExample";
 
-
 const Subscribe = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -23,15 +22,12 @@ const Subscribe = () => {
     const users = timeDifference / 600000;
     const roundedNumber = Math.round(users);
 
-    console.log(roundedNumber)
+    console.log(roundedNumber);
     // Обновление countUsers на основе roundedNumber
     setCountUsers((prevCount) => prevCount + roundedNumber);
 
     // Остальная логика...
   }, []);
-
-
-
 
   const handleSubscribe = () => {
     setError(""); // Сброс ошибки перед проверкой
@@ -41,11 +37,10 @@ const Subscribe = () => {
     setTimeout(() => {
       setLoading(false);
       if (!email) {
-        setError("Email cannot be empty");
+        setError(t("subscribe.error1"));
       } else if (!/\S+@\S+\.\S+/.test(email)) {
-        setError("Please enter a valid email");
+        setError(t("subscribe.error2"));
       } else {
-
         console.log("after", email);
         _cio.identify({
           id: email,
@@ -54,9 +49,7 @@ const Subscribe = () => {
         console.log("before", email);
 
         setEmail("");
-        setPopupText(
-          "Congratulations! You have subscribed to the mailing list."
-        );
+        setPopupText(t("subscribe.congrats"));
         setPopupVisible(true);
         setCountUsers((prevCount) => prevCount + 1);
       }
@@ -116,7 +109,7 @@ const Subscribe = () => {
         {t("subscribe.text")}
       </span>
       <strong className="countUsers text-lime-400">{countUsers}</strong>
-      <span> players subscribed</span>
+      <span> {t("subscribe.players")}</span>
       {popupVisible && (
         <div
           className="overlay-popup flex justify-center items-center"
@@ -151,5 +144,3 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
-
-  

@@ -23,6 +23,12 @@ const resources = {
 
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
+      "subscribe.players": "players subscribed",
+      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.error1": "Email cannot be empty",
+      "subscribe.error2": "Please enter a valid email",
+
+
 
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
@@ -425,6 +431,11 @@ const resources = {
 
       "subscribe.button": "Subskrybuj",
       "subscribe.email": "Adres email",
+      "subscribe.players": "zapisanych graczy",
+"subscribe.congrats": "Gratulacje! Zapisano Cię do listy mailingowej.",
+"subscribe.error1": "Pole e-mail nie może być puste",
+"subscribe.error2": "Proszę wprowadzić prawidłowy adres e-mail",
+
       "header.home": "Strona Główna",
       "header.bonuses": "Bonusy ▼",
       "header.casinos": "Kasyna ▼",
@@ -839,7 +850,11 @@ const resources = {
 
       "subscribe.button": "Abonner",
       "subscribe.email": "E-Post",
-
+      "subscribe.players": "spillere abonnert",
+      "subscribe.congrats": "Gratulerer! Du har abonnert på nyhetsbrevet.",
+      "subscribe.error1": "E-post kan ikke være tom",
+      "subscribe.error2": "Vennligst skriv inn en gyldig e-postadresse",
+      
       "header.home": "Hjem",
       "header.bonuses": "Bonuser ▼",
       "header.casinos": "Kasinoer ▼",
@@ -1242,7 +1257,11 @@ const resources = {
 
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
-
+      "subscribe.players": "abonnierte Spieler",
+      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.error1": "E-Mail darf nicht leer sein",
+      "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -1647,6 +1666,10 @@ const resources = {
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.",
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
+      "subscribe.players": "players subscribed",
+      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.error1": "Email cannot be empty",
+      "subscribe.error2": "Please enter a valid email",
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
@@ -2048,6 +2071,10 @@ const resources = {
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.",
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
+      "subscribe.players": "players subscribed",
+      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.error1": "Email cannot be empty",
+      "subscribe.error2": "Please enter a valid email",
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
@@ -2448,7 +2475,11 @@ const resources = {
         "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
-
+      "subscribe.players": "abonnierte Spieler",
+      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.error1": "E-Mail darf nicht leer sein",
+      "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -2851,7 +2882,11 @@ const resources = {
         "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
-
+      "subscribe.players": "abonnierte Spieler",
+      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.error1": "E-Mail darf nicht leer sein",
+      "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -3256,7 +3291,10 @@ const resources = {
 
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
-
+      "subscribe.players": "players subscribed",
+      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.error1": "Email cannot be empty",
+      "subscribe.error2": "Please enter a valid email",
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
