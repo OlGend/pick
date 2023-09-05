@@ -12,8 +12,7 @@ import Img9 from "@/public/solution9.png";
 import Img10 from "@/public/solution10.png";
 import Img11 from "@/public/solution11.png";
 import Img12 from "@/public/solution12.png";
-import Img from "@/public/logo2.png";
-import { At } from "phosphor-react";
+import Img from "@/public/logo3.png";
 import { useTranslation } from "react-i18next";
 
 
@@ -32,7 +31,6 @@ const TheFooter = () => {
             <div className="solution-contacts">
               <p>{t("footer.contacts")}</p>
               <a className="flex items-center" href="#">
-                <At className="mr-1" size={20} />
                 info@reg2dep.com
               </a>
             </div>
@@ -58,7 +56,8 @@ const TheFooter = () => {
                 <p className="text-center">
                 {t("footer.description")}
                 </p>
-                <a className="btn btn-primary m-auto" href="#">{t("footer.link")}</a>
+                <a className="btn btn-primary m-auto" target="_blank" href="skype:live:.cid.5aea35e66c096c0b">{t("footer.link")}</a>
+
               </div>
             </div>
             <div className="solution-images flex flex-wrap justify-end items-center">

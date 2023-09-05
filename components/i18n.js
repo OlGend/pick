@@ -414,7 +414,7 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-      "footer.copyright": "Start Working With Us",
+      "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -833,7 +833,7 @@ const resources = {
       "footer.link": "Zacznij z Nami Współpracę",
       "footer.about":
         "XxlCasinolist.com prezentuje się jako wyjątkowe źródło informacji na temat wirtualnych zakładów hazardowych i rozrywki związanej z hazardem online. Wszystkie nasze recenzje i poradniki są tworzone zgodnie z wiedzą i przekonaniami naszego niezależnego zespołu ekspertów, obiektywnie i bezstronnie. Niemniej jednak, takie oceny i powiadomienia są dostarczane wyłącznie w celach informacyjnych i nie powinny być uznawane za porady prawne ani za podstawę do podejmowania decyzji prawnych. Zanim rozpoczniesz udział w wybranym kasynie, zawsze upewnij się, że spełniasz wszystkie obowiązujące wymagania prawne.",
-      "footer.copyright": "Zacznij z Nami Współpracę",
+        "footer.copyright": "Prawa autorskie © 2023, xxlcasinolist.com Wszelkie prawa zastrzeżone.",
     },
   },
   no: {
@@ -1241,7 +1241,7 @@ const resources = {
       "footer.link": "Start Sammen Med Oss",
       "footer.about":
         "XxlCasinolist.com posisjonerer seg som en enestående kilde til informasjon om virtuelle spillsteder og online gambling-underholdning. Alle våre anmeldelser og guider er utarbeidet i samsvar med kunnskapen og overbevisningene til vårt uavhengige ekspertteam, objektivt og uten noen form for fordommer. Likevel, slike vurderinger og meldinger tilbys kun til informasjonsformål og skal ikke betraktes som juridisk rådgivning eller grunnlag for å fatte juridiske beslutninger. Før du begynner deltakelsen i ditt valgte kasino, må du alltid sørge for at du overholder alle gjeldende juridiske krav.",
-      "footer.copyright": "Start Sammen Med Oss",
+        "footer.copyright": "Opphavsrett © 2023, xxlcasinolist.com Alle rettigheter reservert.",
     },
   },
   de: {
@@ -1650,7 +1650,7 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-      "footer.copyright": "Arbeiten Sie mit uns",
+        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten."
     },
   },
 
@@ -2055,7 +2055,7 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-      "footer.copyright": "Start Working With Us",
+        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -2459,7 +2459,7 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-      "footer.copyright": "Start Working With Us",
+        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -2866,7 +2866,7 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-      "footer.copyright": "Arbeiten Sie mit uns",
+        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
     },
   },
 
@@ -3274,7 +3274,7 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-      "footer.copyright": "Arbeiten Sie mit uns",
+        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
     },
   },
 
@@ -3679,7 +3679,7 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-      "footer.copyright": "Start Working With Us",
+        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
   // Add translations for other languages here

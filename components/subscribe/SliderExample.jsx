@@ -10,12 +10,13 @@ const SliderExample = () => {
     // Здесь вы можете динамически загрузить изображения
     // Например, с использованием new Image()
     const img1 = new Image();
-    img1.src = "/subscr1.png";
+    img1.src = "/letter1.png";
     const img2 = new Image();
-    img2.src = "/subscr2.png";
+    img2.src = "/letter2.png";
     const img3 = new Image();
-    img3.src = "/subscr3.png";
-
+    img3.src = "/letter3.png";
+    const img4 = new Image();
+    img4.src = "/letter4.png";
     // После загрузки всех изображений устанавливаем флаг imagesLoaded в true
     Promise.all([img1, img2, img3])
       .then(() => {
@@ -68,13 +69,16 @@ const SliderExample = () => {
     <div className="slider-popup">
       <Slider {...settings}>
         <div>
-          <img src="/subscr1.png" alt="Slide 1" width={298} height={300} />
+          <img src="/letter1.png" alt="Slide 1" width={298} height={300} />
         </div>
         <div>
-          <img src="/subscr2.png" alt="Slide 2" width={298} height={300} />
+          <img src="/letter2.png" alt="Slide 2" width={298} height={300} />
         </div>
         <div>
-          <img src="/subscr3.png" alt="Slide 3" width={298} height={300} />
+          <img src="/letter3.png" alt="Slide 3" width={298} height={300} />
+        </div>
+        <div>
+          <img src="/letter4.png" alt="Slide 4" width={298} height={300} />
         </div>
       </Slider>
     </div>
