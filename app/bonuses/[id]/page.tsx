@@ -14,7 +14,7 @@ export async function generateMetadata({
   params: { id },
 }: Props): Promise<Metadata> {
   return {
-    title: "Bonuses | New Brand | ",
+    title: "Bonuses | XXLCasinoList | ",
   };
 }
 

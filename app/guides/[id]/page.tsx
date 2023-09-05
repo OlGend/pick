@@ -22,11 +22,11 @@ export async function generateMetadata({
   const post = jsonContent.find((item) => item.id === Number(postId));
   if (post) {
     return {
-      title: `New Brand | ${post.title}`,
+      title: `XXLCasinoList | ${post.title}`,
     };
   }
   return {
-    title: "New Brand | Not Found",
+    title: "XXLCasinoList | Not Found",
   };
 }
 
