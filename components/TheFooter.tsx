@@ -56,7 +56,7 @@ const TheFooter = () => {
                 <p className="text-center">
                 {t("footer.description")}
                 </p>
-                <a className="btn btn-primary m-auto" target="_blank" href="skype:live:.cid.5aea35e66c096c0b">{t("footer.link")}</a>
+                <a className="btn btn-primary m-auto" target="_blank" href="skype:live:.cid.5aea35e66c096c0b?chat">{t("footer.link")}</a>
 
               </div>
             </div>
