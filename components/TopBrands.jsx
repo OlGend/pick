@@ -13,11 +13,20 @@ import {
   extractLink,
 } from "./brandUtils";
 import Loader from "@/components/Loader";
+import useSWR from "swr";
+
 
 export default function TopBrands() {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
-  const filteredBrands = useTopBrands(112);
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+    }
+  );
+  const filteredBrands = useTopBrandsFilter(112, languageDetails.allBrand);
 
 
   useEffect(() => {
