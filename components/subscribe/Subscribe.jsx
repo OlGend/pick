@@ -45,9 +45,13 @@ const Subscribe = () => {
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         setError("Please enter a valid email");
       } else {
+
+        console.log("after", email);
         _cio.identify({
+          id: email,
           email: email,
         });
+        console.log("before", email);
 
         setEmail("");
         setPopupText(
