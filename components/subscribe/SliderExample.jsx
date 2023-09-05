@@ -41,7 +41,7 @@ const SliderExample = () => {
       },
     ],
   };
-  
+
   return (
     <div className="slider-popup">
       <Slider {...settings}>
@@ -49,7 +49,7 @@ const SliderExample = () => {
           <div key={index}>
             <Image
             key={index} 
-              src={slide}
+              src={slide.src}
               alt={`Slide ${index + 1}`}
               width={298}
               height={300}
