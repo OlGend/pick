@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
-import Img1 from "@/public/subscr1.png";
-import Img2 from "@/public/subscr2.png";
-import Img3 from "@/public/subscr3.png";
 
 const SliderExample = () => {
-  const images = [Img1, Img2, Img3];
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    // Здесь вы можете динамически загрузить изображения
+    // Например, с использованием new Image()
+    const img1 = new Image();
+    img1.src = "/subscr1.png";
+    const img2 = new Image();
+    img2.src = "/subscr2.png";
+    const img3 = new Image();
+    img3.src = "/subscr3.png";
+
+    // После загрузки всех изображений устанавливаем флаг imagesLoaded в true
+    Promise.all([img1, img2, img3])
+      .then(() => {
+        setImagesLoaded(true);
+      })
+      .catch((error) => {
+        console.error("Ошибка при загрузке изображений:", error);
+      });
+  }, []);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -42,20 +59,23 @@ const SliderExample = () => {
     ],
   };
 
+  if (!imagesLoaded) {
+    // Если изображения еще не загружены, вы можете отобразить загрузочный индикатор или что-то подобное
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="slider-popup">
       <Slider {...settings}>
-        {images.map((slide, index) => (
-          <div key={index}>
-            <Image
-            key={index} 
-              src={slide.src}
-              alt={`Slide ${index + 1}`}
-              width={298}
-              height={300}
-            />
-          </div>
-        ))}
+        <div>
+          <img src="/subscr1.png" alt="Slide 1" width={298} height={300} />
+        </div>
+        <div>
+          <img src="/subscr2.png" alt="Slide 2" width={298} height={300} />
+        </div>
+        <div>
+          <img src="/subscr3.png" alt="Slide 3" width={298} height={300} />
+        </div>
       </Slider>
     </div>
   );
