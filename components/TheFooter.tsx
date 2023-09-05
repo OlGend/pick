@@ -30,7 +30,7 @@ const TheFooter = () => {
             </div>
             <div className="solution-contacts">
               <p>{t("footer.contacts")}</p>
-              <a className="flex items-center" href="#">
+              <a className="flex items-center" href="mailto:info@reg2dep.com">
                 info@reg2dep.com
               </a>
             </div>
