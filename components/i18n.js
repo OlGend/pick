@@ -41,8 +41,8 @@ const resources = {
       "header.brazil": "Brazilian Casino",
       "header.canada": "Canadian Casino",
       "header.finnish": "Finnish Casino",
-      "header.germany": "Germanian Casino",
-      "header.nz": "New Zealandian Casino",
+      "header.germany": "German Casino",
+      "header.nz": "New Zealand Casino",
       "header.norw": "Norwegian Casino",
       "header.polish": "Polish Casino",
 
@@ -1681,8 +1681,8 @@ const resources = {
       "header.brazil": "Brazilian Casino",
       "header.canada": "Canadian Casino",
       "header.finnish": "Finnish Casino",
-      "header.germany": "Germanian Casino",
-      "header.nz": "New Zealandian Casino",
+      "header.germany": "German Casino",
+      "header.nz": "New Zealand Casino",
       "header.norw": "Norwegian Casino",
       "header.polish": "Polish Casino",
 
@@ -2086,8 +2086,8 @@ const resources = {
       "header.brazil": "Brazilian Casino",
       "header.canada": "Canadian Casino",
       "header.finnish": "Finnish Casino",
-      "header.germany": "Germanian Casino",
-      "header.nz": "New Zealandian Casino",
+      "header.germany": "German Casino",
+      "header.nz": "New Zealand Casino",
       "header.norw": "Norwegian Casino",
       "header.polish": "Polish Casino",
 
@@ -3306,8 +3306,8 @@ const resources = {
       "header.brazil": "Brazilian Casino",
       "header.canada": "Canadian Casino",
       "header.finnish": "Finnish Casino",
-      "header.germany": "Germanian Casino",
-      "header.nz": "New Zealandian Casino",
+      "header.germany": "German Casino",
+      "header.nz": "New Zealand Casino",
       "header.norw": "Norwegian Casino",
       "header.polish": "Polish Casino",
 

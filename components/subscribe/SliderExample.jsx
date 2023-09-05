@@ -48,6 +48,7 @@ const SliderExample = () => {
         {images.map((slide, index) => (
           <div key={index}>
             <Image
+            key={index} 
               src={slide}
               alt={`Slide ${index + 1}`}
               width={298}
