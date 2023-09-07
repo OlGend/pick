@@ -1,3 +1,7 @@
+export function extractReviewTitle(title) {
+
+  return title;
+}
 export function extractReviewBonus(content) {
   const reviewStart = content.indexOf('<div class="review-bonus">');
   if (reviewStart === -1) return "";

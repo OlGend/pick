@@ -7529,7 +7529,8 @@ p {
 .dankort {
   background: url(/Dankort.png) no-repeat center;
 }
-.sampopankki {
+.sampopankki,
+.s-pankki {
   background: url(/SampoPankki.png) no-repeat center;
 }
 .instant-bank {
@@ -7621,7 +7622,6 @@ p {
 }
 .western-union {
   background: url(/WesternUnion.png) no-repeat center;
-
 }
 .ukash {
   background: url(/Ukash.png) no-repeat center;
@@ -7652,7 +7652,55 @@ p {
 .monero {
   background: url(/Monero.png) no-repeat center;
 }
-
+.danske-bank {
+  background: url(/Danske-Bank.png) no-repeat center;
+}
+.handelsbanken {
+  background: url(/Handelsbanken.png) no-repeat center;
+}
+.usd-coin {
+  background: url(/USD-Coin.png) no-repeat center;
+}
+.solana {
+  background: url(/Solana.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.beeline {
+  background: url(/beeline.png) no-repeat center;
+}
+.oneBrand .brandImage img {
+  width: fit-content;
+  max-height: 100px;
+}
 .sub-menu {
   display: none;
   position: absolute;
@@ -7779,7 +7827,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -200px top -60px;
 }
-.booongo-gaming {
+.booongo-gaming,
+.booongo {
   background-image: url(/providers3.png);
   background-position: left -200px top -540px;
 }
@@ -8468,29 +8517,101 @@ p {
   background-image: url(/providers3.png);
   background-position: left -1000px top -301px;
 }
-.mrslotty {
+.bombay-live {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -1400px top -721px;
 }
-.mrslotty {
+.elysium-studios {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -1500px top -121px;
 }
-.mrslotty {
+.green-jade-games {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -1500px top -421px;
 }
-.mrslotty {
+.high-5-games {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -700px top -361px;
 }
-.mrslotty {
+.kalambagames {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -300px top -601px;
 }
-.mrslotty {
+.leap-gaming {
   background-image: url(/providers3.png);
-  background-position: left -100px top -121px;
+  background-position: left -100px top -781px;
+}
+.multi-slot {
+  background-image: url(/providers3.png);
+  background-position: left -500px top -61px;
+}
+.playn-go {
+  background-image: url(/providers3.png);
+  background-position: left 0px top -121px;
+}
+.red-tiger {
+  background-image: url(/providers3.png);
+  background-position: left -300px top -721px;
+}
+.sa-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -181px;
+}
+.synot {
+  background-image: url(/providers3.png);
+  background-position: left -400px top -61px;
+}
+.triple-edge-studios {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -721px;
+}
+.triple-cherry {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -661px;
+}
+.virtual-generation {
+  background-image: url(/providers3.png);
+  background-position: left -1200px top -361px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
+}
+.default {
+  background-image: url(/providers3.png);
+  background-position: left -100px top -781px;
 }
 
 .icon-flag,
@@ -9329,7 +9450,8 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 1259px) {
-  .slider-popup .slick-prev, .slider-popup .slick-next {
+  .slider-popup .slick-prev,
+  .slider-popup .slick-next {
     top: 50% !important;
     z-index: 9999;
   }

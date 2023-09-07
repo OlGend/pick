@@ -3,7 +3,7 @@ import { useTopBrands } from "./useBrands";
 import BrandSearchContainer from "./BrandSearchContainer";
 import { MagnifyingGlass } from "phosphor-react";
 import Link from "next/link";
-import { extractReviewBonus } from "./brandUtils";
+import { extractReviewBonus, extractReviewTitle } from "./brandUtils";
 import { useDispatch } from "react-redux";
 import Loader from "./Loader";
 import { setShowBrandsAsync, clearShowBrands } from "./brandsActions";
@@ -17,6 +17,8 @@ const SearchBrands = () => {
   const [overlayActive, setOverlayActive] = useState(false);
   const allBrands = useTopBrands(33);
   const [isLoading, setIsLoading] = useState(false);
+
+
 
   const handleOverlayClick = () => {
     // dispatch(clearShowBrands());
@@ -36,15 +38,18 @@ const SearchBrands = () => {
 
   const handleSearch = () => {
     const filteredBrands = allBrands.filter((brand) =>
-      extractReviewBonus(brand.content.rendered)
+      (
+        extractReviewBonus(brand.content.rendered) +
+        extractReviewTitle(brand.content.rendered)
+      )
         .toLowerCase()
         .includes(searchQuery.toLowerCase())
     );
-
+  
     setShowBrands(filteredBrands);
     dispatch(setShowBrandsAsync(filteredBrands));
   };
-
+  
   useEffect(() => {
     handleSearch();
     if (searchQuery === "") {

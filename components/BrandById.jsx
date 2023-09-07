@@ -17,6 +17,7 @@ import {
   extractFlag,
   extractLimits,
   extractRating,
+  extractReviewTitle
 } from "./brandUtils";
 import Loader from "@/components/Loader";
 
@@ -100,6 +101,7 @@ export default function Brand({ brand }) {
             <div className="flex w-full">
               {oneBrand ? (
                 <>
+
                   <div className="mb-2 withdrawal withdrawal-limits flex flex-col basis-[25%]">
                     <div className="brandImage p-3">
                       {reviewImgSrc ? (
