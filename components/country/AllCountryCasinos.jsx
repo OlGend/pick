@@ -292,7 +292,8 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                       </div>
                       <Link
                         className="btn btn-primary mt-0 text-center flex justify-center items-center"
-                        href={playLink}
+                        href={`https://link.reg2dep.business/${playLink}`}
+                        target="_blank"
                       >
                         <Play className="mr-2" size={24} />
                         {t("button.play")}
@@ -323,7 +324,8 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                     <Link
                       className="flex justify-center flex-col items-center"
                       key={item.id}
-                      href={playLink}
+                      href={`https://link.reg2dep.business/${playLink}`}
+                      target="_blank"
                     >
                       <Image
                         src={reviewImgSrc}

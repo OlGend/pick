@@ -1,7 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState, useEffect } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +15,6 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
-
 export default function TopBrands() {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
@@ -27,7 +26,6 @@ export default function TopBrands() {
     }
   );
   const filteredBrands = useTopBrandsFilter(112, languageDetails.allBrand);
-
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -53,7 +51,7 @@ export default function TopBrands() {
       ) : (
         <div className="main__container pb-6">
           <div className="heading flex items-center pt-12">
-            <h2>{t('topBrands.title')}</h2>
+            <h2>{t("topBrands.title")}</h2>
           </div>
           <div className="flex flex-wrap px-0 py-6">
             {filteredBrands.map((brand) => {
@@ -85,19 +83,16 @@ export default function TopBrands() {
                         href={`/bonuses/${brand.id}`}
                       >
                         <Eye className="mr-1" size={20} />
-                        {t('button.review')}
+                        {t("button.review")}
                       </Link>
                       <Link
                         className="btn btn-primary flex justify-center items-center mt-1"
-                        href={playLink}
-                        onClick={handleLinkClick}
+                        href={`https://link.reg2dep.business/${playLink}`}
+                        target="_blank"
                       >
-                        {isLoading ? (
-                          <Loader />
-                        ) : (
-                          <Play className="mr-2" size={20} />
-                        )}
-                       {t('button.play')}
+                        <Play className="mr-2" size={20} />
+
+                        {t("button.play")}
                       </Link>
                     </div>
                   </div>

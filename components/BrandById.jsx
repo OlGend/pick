@@ -165,7 +165,8 @@ export default function Brand({ brand }) {
                     />
                     <Link
                       className="btn btn-primary mt-3 text-center flex justify-center items-center"
-                      href={playLink}
+                      href={`https://link.reg2dep.business/${playLink}`}
+                      target="_blank"
                     >
                       <Play className="mr-2" size={24} /> {t("button.play")}
                     </Link>

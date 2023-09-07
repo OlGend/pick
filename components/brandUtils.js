@@ -21,16 +21,17 @@ export function extractReviewImage(content) {
   return reviewImg;
 }
 export function extractLink(content) {
-  const linkStart = content.indexOf('https://hotoffers.casino/go/');
+  const linkStart = content.indexOf('/go/');
   if (linkStart === -1) return "";
 
   const linkEnd = content.indexOf('" class="review-logo"', linkStart);
   if (linkEnd === -1) return "";
 
-  const linkPlay = content.substring(linkStart, linkEnd);
+  const linkPlay = content.substring(linkStart + 4, linkEnd);
 
   return linkPlay;
 }
+
 export function extractBadge(content) {
   const reviewStart = content.indexOf('<span class="review-badge"');
   if (reviewStart === -1) return "";

@@ -99,7 +99,9 @@ const CarouselSlider = ({ slides }) => {
                   </Link>
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
-                    href={playLink}
+                    href={`https://link.reg2dep.business/${playLink}`}
+                    target="_blank"
+
                   >
                     <Play className="mr-1 mb-1" size={20} />
                     {t("button.play")}

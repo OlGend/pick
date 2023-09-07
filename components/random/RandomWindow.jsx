@@ -16,6 +16,7 @@ const Modal = ({ t }) => {
   const [showModal, setShowModal] = useState(false);
   const [randomBrand, setRandomBrand] = useState(null);
   const [isActive, setIsActive] = useState(false);
+  const [playLink, setPlayLink] = useState(null); // Добавляем playLink сюда
 
   const brandData = useTopBrands(112);
 
@@ -25,6 +26,10 @@ const Modal = ({ t }) => {
       setRandomBrand(brandData[randomIndex]);
       setShowModal(true);
       setIsActive(true);
+
+      // Извлекаем playLink и устанавливаем его в state
+      const extractedPlayLink = extractLink(brandData[randomIndex].content.rendered);
+      setPlayLink(extractedPlayLink);
     }
   };
 
@@ -59,7 +64,6 @@ const Modal = ({ t }) => {
 
     return () => clearInterval(interval);
   }, [brandData]);
-
 
   return (
     showModal &&
@@ -100,7 +104,9 @@ const Modal = ({ t }) => {
               </Link>
               <Link
                 className="btn btn-primary flex justify-center items-center mt-1"
-                href={extractLink(randomBrand.content.rendered)}
+                href={`https://link.reg2dep.business/${playLink}`}
+                target="_blank"
+
               >
                 <Play className="mr-1" size={20} />
                 {t("button.play")}
