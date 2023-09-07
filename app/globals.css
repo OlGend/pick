@@ -8077,7 +8077,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -500px top -420px;
 }
-.golden-hero-games {
+.golden-hero-games, .golden-hero {
   background-image: url(/providers3.png);
   background-position: left -500px top -660px;
 }
@@ -8573,9 +8573,9 @@ p {
   background-image: url(/providers3.png);
   background-position: left -1200px top -361px;
 }
-.default {
+.ho-gaming {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -900px top -61px;
 }
 .default {
   background-image: url(/providers3.png);
@@ -8613,7 +8613,9 @@ p {
   background-image: url(/providers3.png);
   background-position: left -100px top -781px;
 }
-
+.oneBrand .one-brand-item .wp-block-column li {
+  background: url(/noimage.png) no-repeat 50%;
+}
 .icon-flag,
 .filter-flag {
   font-size: 32px;
