@@ -9,7 +9,9 @@
   margin: 0px;
   border: 0px;
 }
-
+.oneBrand .one-brand-item .wp-block-column li {
+  background: url(/noimage.png) no-repeat 50%;
+}
 *,
 *:before,
 *:after {
@@ -8577,6 +8579,10 @@ p {
   background-image: url(/providers3.png);
   background-position: left -900px top -61px;
 }
+.iron-dog {
+  background-image: url(/providers3.png);
+  background-position: left -300px top -361px;
+}
 .default {
   background-image: url(/providers3.png);
   background-position: left -100px top -781px;
@@ -8609,13 +8615,7 @@ p {
   background-image: url(/providers3.png);
   background-position: left -100px top -781px;
 }
-.default {
-  background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
-}
-.oneBrand .one-brand-item .wp-block-column li {
-  background: url(/noimage.png) no-repeat 50%;
-}
+
 .icon-flag,
 .filter-flag {
   font-size: 32px;
