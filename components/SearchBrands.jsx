@@ -39,7 +39,7 @@ const SearchBrands = () => {
   const handleSearch = () => {
     const filteredBrands = allBrands.filter((brand) =>
       (
-        extractReviewBonus(brand.content.rendered) +
+        extractReviewBonus(brand.content.rendered) &&
         extractReviewTitle(brand.content.rendered)
       )
         .toLowerCase()

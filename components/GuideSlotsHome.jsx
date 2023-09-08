@@ -49,7 +49,7 @@ const GuideSlotsHome = () => {
           <h2 className="mb-5">{t("guideSlotsHome.title1")}</h2>
           <div className="flex justify-between guide-wrapper">
             <div className="left basis-5/12">
-              {/* ... Остальной код компонента ... */}
+          <p>{t("guideSlotsHome.excerpt3")}</p>
             </div>
             <div className="right basis-5/12">
               <Image
