@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -28,6 +29,7 @@
     "next": "13.4.12",
     "next-images": "^1.8.5",
     "next-optimized-images": "^2.6.2",
+    "next-sitemap": "^4.2.3",
     "phosphor-react": "^1.4.1",
     "postcss": "8.4.27",
     "react": "18.2.0",

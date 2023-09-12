@@ -1,15 +1,14 @@
 import { Metadata } from "next";
+import BrandById from "@/components/BrandById";
+import CarouselSlider from "@/components/CarouselSlider";
+import NewBrands from "@/components/NewBrands";
+import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 async function getData(id: string) {
-  const response = await fetch(
-    `https://hotoffers.casino/wp-json/wp/v2/affiliates/${id}`,
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
-  );
-  return response.json();
+  // Здесь выполняйте загрузку данных бренда, например, с использованием fetch
+  const response = await fetch(`https://hotoffers.casino/wp-json/wp/v2/affiliates/${id}`);
+  const data = await response.json();
+  return data;
 }
 
 type Props = {
@@ -21,19 +20,27 @@ type Props = {
 export async function generateMetadata({
   params: { id },
 }: Props): Promise<Metadata> {
-  const brand = await getData(id); // Дожидаемся окончания функции getData
+  const brand = await getData(id);
   return {
-    title: brand.title, // Используем актуальный заголовок из полученных данных
+    title: `${brand.title.rendered} | XXLCasinoList | Bonuses`,
   };
 }
 
+
 export default async function Brand({ params: { id } }: Props) {
   const brand = await getData(id);
-
   return (
     <>
-      <h1>{brand.title.rendered}</h1>
-      <div dangerouslySetInnerHTML={{ __html: brand.content.rendered }} />
+      <div className="main__container brandUtils">
+        <BrandById brand={brand.id} />
+        <CarouselSlider slides={[]} />
+        <div className="wrapper-container background-block">
+          <NewBrands />
+        </div>
+        <div className="wrapper-container mt-6 mb-6">
+          <GuideSlotsPage />
+          </div>
+      </div>
     </>
   );
 }
