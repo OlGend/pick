@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import RandomWindow from "@/components/random/RandomWindow";
 import Script from "next/script";
-import { sql } from "@vercel/postgres";
+
 
 
 

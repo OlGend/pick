@@ -7640,6 +7640,12 @@ p {
 .prepaid-cards {
   background: url(/PrepaidCard.png) no-repeat center;
 }
+.payto {
+  background: url(/Payto.png) no-repeat center;
+}
+.inpay {
+  background: url(/Inpay.png) no-repeat center;
+}
 /* ///////// */
 
 .multibanco {
@@ -8079,7 +8085,8 @@ p {
   background-image: url(/providers3.png);
   background-position: left -500px top -420px;
 }
-.golden-hero-games, .golden-hero {
+.golden-hero-games,
+.golden-hero {
   background-image: url(/providers3.png);
   background-position: left -500px top -660px;
 }
@@ -8583,39 +8590,174 @@ p {
   background-image: url(/providers3.png);
   background-position: left -300px top -361px;
 }
-.default {
+.authentic-gaming {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -400px top -721px;
 }
-.default {
+.ggames {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1600px top -661px;
 }
-.default {
+.liveg24 {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1600px top -721px;
 }
-.default {
+.atmosfera {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1400px top -541px;
 }
-.default {
+.oriental-game {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1600px top -781px;
 }
-.default {
+.pragmatic-play-live {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1700px top -301px;
 }
-.default {
+.reelnrg {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1600px top -841px;
 }
-.default {
+.reeltime {
   background-image: url(/providers3.png);
-  background-position: left -100px top -781px;
+  background-position: left -1600px top -901px;
 }
-
+.tvbet {
+  background-image: url(/providers3.png);
+  background-position: left -1500px top -901px;
+}
+.wearecasino {
+  background-image: url(/providers3.png);
+  background-position: left -1400px top -901px;
+}
+.a1x2-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -200px top -301px;
+}
+.tom-horn {
+  background-image: url(/providers3.png);
+  background-position: left -600px top -301px;
+}
+.iron-dog-studio {
+  background-image: url(/providers3.png);
+  background-position: left -300px top -361px;
+}
+.sega-sammy {
+  background-image: url(/providers3.png);
+  background-position: left -1300px top -901px;
+}
+.gromada-games {
+  background-image: url(/providers3.png);
+  background-position: left -1200px top -901px;
+}
+.grand-vision-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1100px top -901px;
+}
+.reel-play {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -1px;
+}
+.oryx {
+  background-image: url(/providers3.png);
+  background-position: left -600px top -181px;
+}
+.light-amp-wonder {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -901px;
+}
+.elysium-game-studio {
+  background-image: url(/providers3.png);
+  background-position: left -1500px top -121px;
+}
+.triple-profits-games {
+  background-image: url(/providers3.png);
+  background-position: left -800px top -901px;
+}
+.qora-games {
+  background-image: url(/providers3.png);
+  background-position: left -900px top -901px;
+}
+.wms-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -1px;
+}
+.nyx-gaming-group {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -61px;
+}
+.eyecon {
+  background-image: url(/providers3.png);
+  background-position: left -1500px top -181px;
+}
+.bally {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -121px;
+}
+.barcrest {
+  background-image: url(/providers3.png);
+  background-position: left -1400px top -601px;
+}
+.all41-studios {
+  background-image: url(/providers3.png);
+  background-position: left -800px top -61px;
+}
+.cayetano {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -181px;
+}
+.gluck-games {
+  background-image: url(/providers3.png);
+  background-position: left -800px top -721px;
+}
+.gameburger-studios {
+  background-image: url(/providers3.png);
+  background-position: left -800px top -601px;
+}
+.inspired-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1500px top -601px;
+}
+.max-win-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1400px top -121px;
+}
+.peter-amp-sons {
+  background-image: url(/providers3.png);
+  background-position: left -1300px top -781px;
+}
+.pulse-8-studios {
+  background-image: url(/providers3.png);
+  background-position: left -900px top -781px;
+}
+.sthlm-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -200px top -721px;
+}
+.stormcraft-studios {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -541px;
+}
+.switch-studios {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -601px;
+}
+.reel-time-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1600px top -901px;
+}
+.gvg {
+  background-image: url(/providers3.png);
+  background-position: left -1100px top -901px;
+}
+.win-fast {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -241px;
+}
+.spearhead-studios {
+  background-image: url(/providers3.png);
+  background-position: left -1000px top -421px;
+}
 .icon-flag,
 .filter-flag {
   font-size: 32px;
