@@ -9792,3 +9792,28 @@ input.error {
   width: 34px;
   top: 35px;
 }
+.page-gaming li {
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.page-gaming h2 {
+  margin-top: 25px;
+}
+.page-gaming li a {
+  text-decoration: underline;
+}
+.page-gaming ul {
+  padding-left: 15px;
+}
+.page-gaming li::after {
+  content: "";
+  position: absolute;
+  left: -13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 8px;
+  z-index: 1;
+  background: #0967e3;
+}
