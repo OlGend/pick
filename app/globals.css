@@ -9800,8 +9800,9 @@ input.error {
 .page-gaming h2 {
   margin-top: 25px;
 }
-.page-gaming li a {
+.page-gaming li a, .page-gaming a {
   text-decoration: underline;
+  color: #0967e3;
 }
 .page-gaming ul {
   padding-left: 15px;

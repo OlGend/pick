@@ -14,7 +14,7 @@ import Img11 from "@/public/solution11.png";
 import Img12 from "@/public/solution12.png";
 import Img from "@/public/logo3.png";
 import { useTranslation } from "react-i18next";
-
+import { Link } from "phosphor-react";
 
 const TheFooter = () => {
   const { t } = useTranslation();
@@ -28,10 +28,15 @@ const TheFooter = () => {
             <div className="logo">
               <Image src={Img} alt="logo" width={150} loading="lazy" />
             </div>
-            <div className="solution-contacts">
-              <p>{t("footer.contacts")}</p>
-              <a className="flex items-center" href="mailto:info@reg2dep.com">
-                info@reg2dep.com
+            <div className="solution-contacts flex">
+              <div>
+                <p>{t("footer.contacts")}</p>
+                <a className="underline flex items-center" href="mailto:info@reg2dep.com">
+                  info@reg2dep.com
+                </a>
+              </div>
+              <a className="underline ml-5 flex items-end " href="/responsible-gaming">
+                Responsible Gaming
               </a>
             </div>
           </div>
@@ -53,11 +58,14 @@ const TheFooter = () => {
             <div className="flex flex-col">
               <div className="solution-text flex flex-col items-center">
                 <h4 className="text-center mb-1">{t("footer.title")}</h4>
-                <p className="text-center">
-                {t("footer.description")}
-                </p>
-                <a className="btn btn-primary m-auto" target="_blank" href="skype:live:.cid.5aea35e66c096c0b?chat">{t("footer.link")}</a>
-
+                <p className="text-center">{t("footer.description")}</p>
+                <a
+                  className="btn btn-primary m-auto"
+                  target="_blank"
+                  href="skype:live:.cid.5aea35e66c096c0b?chat"
+                >
+                  {t("footer.link")}
+                </a>
               </div>
             </div>
             <div className="solution-images flex flex-wrap justify-end items-center">
@@ -76,9 +84,7 @@ const TheFooter = () => {
         </div>
         <div className="footer-bottom">
           <div className="main__container pt-3">
-            <p>
-            {t("footer.about")}
-            </p>
+            <p>{t("footer.about")}</p>
           </div>
         </div>
         <div className="footer-end">
