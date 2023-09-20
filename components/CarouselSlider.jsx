@@ -24,7 +24,7 @@ const CarouselSlider = ({ slides }) => {
     "languageDetails",
     null,
     {
-      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
     }
   );
   const settings = {
@@ -60,7 +60,7 @@ const CarouselSlider = ({ slides }) => {
       },
     ],
   };
-  const slidesData = useTopBrandsFilter(112, languageDetails.allBrand);
+  const slidesData = useTopBrandsFilter(213, languageDetails.allBrand);
 
   return (
     <div className="brand-slider mb-6">

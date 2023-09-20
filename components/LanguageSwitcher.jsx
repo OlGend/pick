@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const { data: selectedLanguage, error } = useSWR("selectedLanguage", () => i18n.language);
   const { data: languageDetails, error: detailsError } = useSWR("languageDetails", null, { 
-    fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 } // Задаем начальное значение
+    fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 } // Задаем начальное значение
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -39,7 +39,7 @@ const LanguageSwitcher = () => {
   };
 
   const availableLanguages = [
-    { code: "en", label: "EN", flag: "🌍", allBrand: 25, topBrand: 112 }, //
+    { code: "en", label: "EN", flag: "🌍", allBrand: 25, topBrand: 213 }, //
     { code: "pl", label: "PL", flag: "🇵🇱", allBrand: 125, topBrand: 48 }, //
     { code: "no", label: "NO", flag: "🇳🇴", allBrand: 124, topBrand: 44 }, //
     { code: "au", label: "AU", flag: "🇦🇺", allBrand: 143, topBrand: 184 }, //

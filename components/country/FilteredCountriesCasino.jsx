@@ -13,7 +13,7 @@ const FilteredCasinos = () => {
     {
       currentTab: 1,
       currentCategories: 138,
-      topCurrentCategories: 112,
+      topCurrentCategories: 213,
       currentText: "tab.casinos",
       icon: "🌍",
       slug: "by-country",

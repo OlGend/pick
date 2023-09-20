@@ -79,7 +79,7 @@ const FilteredCasinos = () => {
       "languageDetails",
       null,
       {
-        fallbackData: { flag: "🌍", allBrand: 25, topBrand: 112 }, // Задаем начальное значение
+        fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
       }
     );
 
