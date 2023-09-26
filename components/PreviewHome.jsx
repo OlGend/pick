@@ -32,25 +32,13 @@ const navItems = [
 const PreviewHome = () => {
   const { t } = useTranslation();
 
-
   return (
     <div className="preview">
       <div className="main__container flex items-center first-block">
         <div className="flex flex-col basis-[50%]">
-        
           <h1>{t("home.title")}</h1>
           <p>{t("home.description")}</p>
           <Subscribe />
-          <div className="flex flex-wrap justify-start preview-navigate mt-3">
-            {/* <NavigationHome navLinks={navItems} /> */}
-            {/* <NavigationHome
-              navLinks={navItems.map((item) => ({
-                ...item,
-                label: t(item.label), // Используйте функцию перевода для текста пунктов меню
-              }))}
-            /> */}
-          
-          </div>
         </div>
         <Image src={Img} alt="Beep" width={550} />
       </div>

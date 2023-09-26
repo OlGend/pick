@@ -9594,6 +9594,9 @@ input.error {
 }
 
 @media (min-width: 320px) and (max-width: 1259px) {
+  .page-post {
+    padding-top: 2.5rem;
+  }
   .slider-popup .slick-prev,
   .slider-popup .slick-next {
     top: 50% !important;
