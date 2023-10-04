@@ -31,7 +31,7 @@ export default async function Brand({ params: { id } }: Props) {
   const brand = await getData(id);
   return (
     <>
-      <div className="main__container brandUtils">
+      <div className={`main__container brandUtils brand-${id}`}>
         <BrandById brand={brand.id} />
         <CarouselSlider slides={[]} />
         <div className="wrapper-container background-block">

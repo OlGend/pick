@@ -6694,12 +6694,15 @@ p {
   font-size: 13px;
   color: #fff;
   transition: 0.3s;
-  padding: 10px 15px;
+  padding: 10px 0px;
   font-weight: 600;
   display: inline-block;
   position: relative;
   width: 100%;
   text-align: center;
+}
+.navigation-item .mr-1 {
+  margin-right: 0.2rem;
 }
 .header a.active,
 .header a:hover {
@@ -8112,6 +8115,14 @@ p {
   background-image: url(/providers3.png);
   background-position: left -100px top -120px;
 }
+.golden-race {
+  background-image: url(/providers3.png);
+  background-position: left -1700px top -541px;
+}
+.beefee {
+  background-image: url(/providers3.png);
+  background-position: left -300px top -901px;
+}
 .high5games,
 .high5 {
   background-image: url(/providers3.png);
@@ -8758,6 +8769,45 @@ p {
   background-image: url(/providers3.png);
   background-position: left -1000px top -421px;
 }
+.live-5-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -900px top -421px;
+}
+.xpro-gaming {
+  background-image: url(/providers3.png);
+  background-position: left -1100px top -61px;
+}
+/* .header-brands {
+  background: linear-gradient(to bottom, rgba(255, 245, 50, 0.82), #f4bb49);
+} */
+.header-brands {
+  background: #1d273047;
+}
+.header-brands a.active, .header-brands a:hover {
+  background: transparent;
+}
+.header-brands .header__container {
+  justify-content: center;
+}
+.header-brands .header__container a{
+  padding: 0;
+}
+.header-brands .header__container a img {
+  transition: 0.3s;
+}
+.header-brands .header__container a:hover img.grayscale {
+  /* grays */
+  --tw-grayscale: initial;
+  filter: initial;
+
+}
+/* .header-brands a:hover {
+  background: #d6920a;
+
+} */
+.Smokace a, .Winlegends a {
+  padding: 0;
+}
 .icon-flag,
 .filter-flag {
   font-size: 32px;
@@ -9070,6 +9120,12 @@ input.error {
   font-size: 13px !important;
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .mobile-menu .navigation-item {
+    padding-left: 5px;
+  }
+  .header-brands {
+    display: none;
+  }
   .modal-content .buttons {
     min-width: 160px;
     padding: 5px;
@@ -9361,7 +9417,7 @@ input.error {
    */
   .mobile-menu {
     position: fixed;
-    top: 55px;
+    top: 61px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -9370,6 +9426,9 @@ input.error {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s ease-in-out;
     z-index: 100000;
+  }
+  .mobile-menu .navigation-item.p-0 a {
+    padding: 0;
   }
   .header {
     position: fixed;
@@ -9423,6 +9482,9 @@ input.error {
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
+  .header-brands {
+    display: none;
+  }
   .oneBrand {
     padding-top: 60px;
   }
@@ -9592,7 +9654,9 @@ input.error {
     margin-left: 0;
   }
 }
-
+.brand-7089 .brand-slider, .brand-7089 .wrapper-container.background-block, .brand-6883 .brand-slider, .brand-6883 .wrapper-container.background-block {
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 1259px) {
   .page-post {
     padding-top: 2.5rem;
