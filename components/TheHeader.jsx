@@ -21,6 +21,8 @@ import Link from "next/link";
 import { geolocation } from "@vercel/edge";
 import Smokace from "@/public/smokace.png";
 import Winlegends from "@/public/winlegends.png";
+import Windetta from "@/public/windeta.png";
+
 
 const navItems = [
   {
@@ -187,6 +189,15 @@ const TheHeader = () => {
                       loading="lazy"
                     />
                   </Link>
+                  <Link href={`/bonuses/7383`} onClick={closeMobileMenu}>
+                    <Image
+                      className="flex flex-start"
+                      src={Windetta}
+                      alt="logo"
+                      width={110}
+                      loading="lazy"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -220,6 +231,17 @@ const TheHeader = () => {
               <Image
                 className="grayscale"
                 src={Winlegends}
+                alt="logo"
+                width={85}
+                loading="lazy"
+              />
+            </Link>
+          </div>
+          <div className="basis-[17%]">
+            <Link href={`/bonuses/7383`}>
+              <Image
+                className="grayscale"
+                src={Windetta}
                 alt="logo"
                 width={85}
                 loading="lazy"

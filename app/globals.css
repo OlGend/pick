@@ -8256,6 +8256,18 @@ p {
   background-image: url(/providers3.png);
   background-position: left -501px top -481px;
 }
+.live-games {
+  background-image: url(/providers3.png);
+  background-position: left -1101px top -481px;
+}
+.pg-soft {
+  background-image: url(/providers3.png);
+  background-position: left -601px top -841px;
+}
+.red-rake {
+  background-image: url(/providers3.png);
+  background-position: left -101px top -721px;
+}
 .nucleus-gaming {
   background-image: url(/providers3.png);
   background-position: left -701px top -1px;
@@ -9654,7 +9666,7 @@ input.error {
     margin-left: 0;
   }
 }
-.brand-7089 .brand-slider, .brand-7089 .wrapper-container.background-block, .brand-6883 .brand-slider, .brand-6883 .wrapper-container.background-block {
+.brand-7089 .brand-slider, .brand-7089 .wrapper-container.background-block, .brand-6883 .brand-slider, .brand-6883 .wrapper-container.background-block, .brand-7383 .brand-slider, .brand-7383 .wrapper-container.background-block {
   display: none;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
