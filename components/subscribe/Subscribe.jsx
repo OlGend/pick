@@ -42,10 +42,10 @@ const Subscribe = () => {
         setError(t("subscribe.error2"));
       } else {
         console.log("after", email);
-        _cio.identify({
-          id: email,
-          email: email,
-        });
+        // _cio.identify({
+        //   id: email,
+        //   email: email,
+        // });
         console.log("before", email);
 
         setEmail("");
