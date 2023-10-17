@@ -39,7 +39,7 @@ export default function RootLayout({
         </Script>
 
         {/* Вставьте скрипт Customer.io прямо сюда */}
-        {/* <Script id="customerio" type="text/javascript">
+        <Script id="customerio" type="text/javascript">
           {`
             var _cio = _cio || [];
             (function() {
@@ -50,12 +50,12 @@ export default function RootLayout({
                   s = document.getElementsByTagName('script')[0];
               t.async = true;
               t.id    = 'cio-tracker';
-              t.setAttribute('data-site-id', '59b1e76c540108d21c4b');
+              t.setAttribute('data-site-id', '9ae231a2f5fcdcac0240');
               t.src = 'https://assets.customer.io/assets/track-eu.js';
               s.parentNode.insertBefore(t, s);
             })();
           `}
-        </Script> */}
+        </Script>
 
         <RandomWindow />
         <TheHeader />
