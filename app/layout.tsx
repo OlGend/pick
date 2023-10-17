@@ -57,9 +57,12 @@ export default function RootLayout({
           `}
         </Script>
 
+
         <RandomWindow />
         <TheHeader />
         <main>
+
+
           {children}
           <Analytics />
         </main>

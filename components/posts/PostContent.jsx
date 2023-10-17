@@ -5,16 +5,28 @@ import { useTranslation } from "react-i18next";
 
 import guidepostDataEn from "@/components/posts/en.json";
 import guidepostDataPl from "@/components/posts/pl.json";
+import guidepostDataCh from "@/components/posts/ch.json";
+import guidepostDataAt from "@/components/posts/at.json";
+import guidepostDataCa from "@/components/posts/ca.json";
+import guidepostDataAu from "@/components/posts/au.json";
+import guidepostDataNz from "@/components/posts/nz.json";
+
 import guidepostDataNo from "@/components/posts/no.json"; // Файл с данными на норвежском
 import guidepostDataDe from "@/components/posts/de.json"; // Файл с данными на немецком
 
 export default function PostContent({ id }) {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
-  
+
   // Используйте объект с данными для каждого языка
   const guidepostData = {
     pl: guidepostDataPl,
+    ca: guidepostDataCa,
+    au: guidepostDataAu,
+    au: guidepostDataNz,
+
+    ch: guidepostDataCh,
+    at: guidepostDataAt,
     en: guidepostDataEn,
     no: guidepostDataNo, // Добавьте данные на норвежском языке
     de: guidepostDataDe, // Добавьте данные на немецком языке
