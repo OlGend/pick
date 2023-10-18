@@ -70,7 +70,7 @@ export default async function Privacy() {
         <p>
           If you have any questions, concerns, or requests related to your
           personal information or this Privacy Policy, please contact us at
-          <a href="mailto:info@reg2dep.com"> info@reg2dep.com</a>. We will make
+          <a href="mailto:admin@xxlcasinolist.com"> admin@xxlcasinolist.com</a>. We will make
           reasonable efforts to address your inquiries in a timely manner. By
           using XXLCasinoList.com, you agree to the practices outlined in this
           Privacy Policy. If you do not agree with any part of this policy,

@@ -46,10 +46,16 @@ const TheFooter = () => {
                   Responsible Gaming
                 </a>
                 <a
-                  className="underline ml-5 flex items-end "
+                  className="underline ml-5 flex items-end mb-1"
                   href="/privacy-policy"
                 >
                   Privacy Policy
+                </a>
+                <a
+                  className="underline ml-5 flex items-end "
+                  href="/terms-and-conditions"
+                >
+                  Terms and Conditions
                 </a>
               </div>
             </div>
