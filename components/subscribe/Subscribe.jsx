@@ -115,7 +115,7 @@ const Subscribe = () => {
             className="mr-2"
           />
 
-          {t("subscribe.terms")}
+          {t("subscribe.agree")} <a target="_blank" className="underline text-sky-500" href="/terms-and-conditions">{t("subscribe.terms")}</a> {t("subscribe.and")} <a target="_blank" className="underline text-sky-500"  href="/privacy-policy">{t("subscribe.policy")}</a>
         </label>
         <label className={`acceptedTerms ${privacyAgreed ? "active" : ""}`}>
           <input
@@ -125,7 +125,7 @@ const Subscribe = () => {
             className="mr-2"
           />
 
-          {t("subscribe.policy")}
+          {t("subscribe.promotional")}
         </label>
       </div>
       <span className="flex mt-5">
