@@ -6161,6 +6161,9 @@ h1 {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .page-gaming {
+    padding-top: 80px;
+  }
   body {
     font-size: 15px;
     line-height: 21px;
@@ -7805,6 +7808,29 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .footer-top .main__container {
+    flex-wrap: wrap;
+  }
+  .footer-top .main__container .logo {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .footer-center .main__container {
+    flex-direction: column;
+  }
+  .footer-center .main__container .solution-images {
+    justify-content: space-between !important;
+  }
+  .footer-center .main__container .solution-images img {
+    flex-basis: 32%;
+    max-width: 32%;
+  }
+  .footer-center .main__container .solution-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .preview::before {
     display: none;
   }
@@ -9066,9 +9092,7 @@ input.error {
   padding-top: 1.25rem;
   padding-bottom: 1rem;
 }
-.solution-contacts p {
-  margin-bottom: 5px;
-}
+
 .solution-contacts a {
   transition: 0.3s;
 }
@@ -9494,6 +9518,9 @@ input.error {
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
+  .page-gaming {
+    padding-top: 80px;
+  }
   .header-brands {
     display: none;
   }

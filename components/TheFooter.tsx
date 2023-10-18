@@ -30,14 +30,28 @@ const TheFooter = () => {
             </div>
             <div className="solution-contacts flex">
               <div>
-                <p>{t("footer.contacts")}</p>
-                <a className="underline flex items-center" href="mailto:info@reg2dep.com">
+                <p className="mb-1">{t("footer.contacts")}</p>
+                <a
+                  className="underline flex items-center"
+                  href="mailto:info@reg2dep.com"
+                >
                   info@reg2dep.com
                 </a>
               </div>
-              <a className="underline ml-5 flex items-end " href="/responsible-gaming">
-                Responsible Gaming
-              </a>
+              <div className="flex flex-col">
+                <a
+                  className="underline ml-5 flex items-end mb-1"
+                  href="/responsible-gaming"
+                >
+                  Responsible Gaming
+                </a>
+                <a
+                  className="underline ml-5 flex items-end "
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
+              </div>
             </div>
           </div>
         </div>
