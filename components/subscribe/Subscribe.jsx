@@ -15,6 +15,9 @@ const Subscribe = () => {
   const { t } = useTranslation();
   const [countUsers, setCountUsers] = useState(250000);
 
+  const [termsAgreed, setTermsAgreed] = useState(false);
+  const [privacyAgreed, setPrivacyAgreed] = useState(false);
+
   useEffect(() => {
     const currentTimeNow = Date.now();
     const targetTimestamp = new Date("2023-09-04T19:00:00").getTime();
@@ -94,12 +97,36 @@ const Subscribe = () => {
         <button
           className="button-subscribe flex justify-center items-center"
           onClick={handleSubscribe}
+          disabled={!termsAgreed || !privacyAgreed}
         >
           {loading ? <LoaderButton /> : t("subscribe.button")}
         </button>
+
         {error && (
           <span className="text-red-500 absolute error-text">{error}</span>
         )}
+      </div>
+      <div className="agreeTerms mt-5">
+        <label className={`acceptedTerms ${termsAgreed ? "active" : ""}`}>
+          <input
+            type="checkbox"
+            checked={termsAgreed}
+            onChange={() => setTermsAgreed(!termsAgreed)}
+            className="mr-2"
+          />
+
+          {t("subscribe.terms")}
+        </label>
+        <label className={`acceptedTerms ${privacyAgreed ? "active" : ""}`}>
+          <input
+            type="checkbox"
+            checked={privacyAgreed}
+            onChange={() => setPrivacyAgreed(!privacyAgreed)}
+            className="mr-2"
+          />
+
+          {t("subscribe.policy")}
+        </label>
       </div>
       <span className="flex mt-5">
         <br />{" "}

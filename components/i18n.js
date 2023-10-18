@@ -7,8 +7,6 @@ import plTranslation from "@/components/posts/pl.json"; // Путь к файл�
 import deTranslation from "@/components/posts/de.json"; // Путь к файлу с польскими переводами
 import noTranslation from "@/components/posts/no.json"; // Путь к файлу с польскими переводами
 
-
-
 const resources = {
   en: {
     translation: {
@@ -24,12 +22,14 @@ const resources = {
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
       "subscribe.players": "players subscribed",
-      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.congrats":
+        "Congratulations! You have subscribed to the mailing list.",
       "subscribe.error1": "Email cannot be empty",
       "subscribe.error2": "Please enter a valid email",
+      "subscribe.terms": "I agree Terms and Conditions",
+      "subscribe.policy": "I agree Privacy Policy",
 
-
-
+      "play.to.casino": "Play now to this Casino",
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
@@ -70,10 +70,10 @@ const resources = {
       "searchBrands.placeholder": "Search brands...",
 
       "home.title": "Join the community of our subscribers",
-      "home.description": "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
+      "home.description":
+        "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
 
-      "subscribe.text":
-        "of the newsletters we're sending out!",
+      "subscribe.text": "of the newsletters we're sending out!",
       "subscribe.link": "See some examples",
 
       "topBrands.title": "XxlCasinoList Best Choices for 2023",
@@ -405,8 +405,6 @@ const resources = {
       "button.review": "Read Review",
       "button.play": "Play Now",
 
-      
-
       "footer.contacts": "Our Contacts:",
       "footer.title": "Empowering iGaming Solutions",
       "footer.description":
@@ -414,7 +412,8 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-      "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
+      "footer.copyright":
+        "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -428,13 +427,15 @@ const resources = {
       "guideslotsguide.title": "Przewodniki po Hazardzie",
       "guideslotsguide.excerpt":
         "Jeśli marzysz o wygraniu dużego jackpota, zanurz się w świat online slotów dzięki naszym wszechstronnym przewodnikom na xxlcasinolist.com. Wszystkie informacje, których potrzebujesz, od linii wypłat do progresywnych jackpotów, są dostępne na jednej platformie! Bądź na bieżąco z najnowszymi wydarzeniami w świecie hazardu na automatach i nawet wypróbuj darmowe gry na automatach bezpośrednio z Twojego urządzenia.",
-
+      "play.to.casino": "Zagraj teraz w to kasyno",
       "subscribe.button": "Subskrybuj",
       "subscribe.email": "Adres email",
       "subscribe.players": "zapisanych graczy",
-"subscribe.congrats": "Gratulacje! Zapisano Cię do listy mailingowej.",
-"subscribe.error1": "Pole e-mail nie może być puste",
-"subscribe.error2": "Proszę wprowadzić prawidłowy adres e-mail",
+      "subscribe.congrats": "Gratulacje! Zapisano Cię do listy mailingowej.",
+      "subscribe.error1": "Pole e-mail nie może być puste",
+      "subscribe.error2": "Proszę wprowadzić prawidłowy adres e-mail",
+      "subscribe.terms": "Zgadzam się z Regulaminem",
+      "subscribe.policy": "Zgadzam się z Polityką Prywatności",
 
       "header.home": "Strona Główna",
       "header.bonuses": "Bonusy ▼",
@@ -475,8 +476,8 @@ const resources = {
       "searchBrands.placeholder": "Szukaj marek...",
 
       "home.title": "Dołącz do społeczności naszych subskrybentów",
-      "home.description": "Zdobądź świeże okazje i lukratywne bonusy od godnych zaufania kasyn online działających w twoim regionie! Bądź pierwszy, który się dowie, gdzie warto grać dzisiaj!",
-
+      "home.description":
+        "Zdobądź świeże okazje i lukratywne bonusy od godnych zaufania kasyn online działających w twoim regionie! Bądź pierwszy, który się dowie, gdzie warto grać dzisiaj!",
 
       "subscribe.text": "do newsletterów, które wysyłamy!",
       "subscribe.link": "Zobacz przykłady",
@@ -833,7 +834,8 @@ const resources = {
       "footer.link": "Zacznij z Nami Współpracę",
       "footer.about":
         "XxlCasinolist.com prezentuje się jako wyjątkowe źródło informacji na temat wirtualnych zakładów hazardowych i rozrywki związanej z hazardem online. Wszystkie nasze recenzje i poradniki są tworzone zgodnie z wiedzą i przekonaniami naszego niezależnego zespołu ekspertów, obiektywnie i bezstronnie. Niemniej jednak, takie oceny i powiadomienia są dostarczane wyłącznie w celach informacyjnych i nie powinny być uznawane za porady prawne ani za podstawę do podejmowania decyzji prawnych. Zanim rozpoczniesz udział w wybranym kasynie, zawsze upewnij się, że spełniasz wszystkie obowiązujące wymagania prawne.",
-        "footer.copyright": "Prawa autorskie © 2023, xxlcasinolist.com Wszelkie prawa zastrzeżone.",
+      "footer.copyright":
+        "Prawa autorskie © 2023, xxlcasinolist.com Wszelkie prawa zastrzeżone.",
     },
   },
   no: {
@@ -847,14 +849,16 @@ const resources = {
       "guideslotsguide.title": "Spilleguider",
       "guideslotsguide.excerpt":
         "Hvis du aspirerer til å treffe jackpotten, dykk inn i verden av nettspilleautomater gjennom våre omfattende guider på xxlcasinolist.com. All den informasjonen du trenger, fra gevinstlinjer til progressive jackpotter, er tilgjengelig på én enkelt plattform! Hold deg oppdatert med de nyeste utviklingene innen spilleautomatgambling og prøv til og med ut gratis spilleautomatspill direkte fra enheten din.",
-
+      "play.to.casino": "Spill nå på dette kasinoet",
       "subscribe.button": "Abonner",
       "subscribe.email": "E-Post",
       "subscribe.players": "spillere abonnert",
       "subscribe.congrats": "Gratulerer! Du har abonnert på nyhetsbrevet.",
       "subscribe.error1": "E-post kan ikke være tom",
       "subscribe.error2": "Vennligst skriv inn en gyldig e-postadresse",
-      
+      "subscribe.terms": "Jeg godtar Vilkår og betingelser",
+      "subscribe.policy": "Jeg godtar Personvernpolitikken",
+
       "header.home": "Hjem",
       "header.bonuses": "Bonuser ▼",
       "header.casinos": "Kasinoer ▼",
@@ -895,7 +899,8 @@ const resources = {
       "searchBrands.placeholder": "Søk etter merker...",
 
       "home.title": "Bli med i fellesskapet til våre abonnenter",
-      "home.description": "Få ferske tilbud og lukrative bonuser fra pålitelige online kasinoer som opererer i ditt område! Vær den første til å finne ut hvor det er verdt å spille i dag!",
+      "home.description":
+        "Få ferske tilbud og lukrative bonuser fra pålitelige online kasinoer som opererer i ditt område! Vær den første til å finne ut hvor det er verdt å spille i dag!",
       "subscribe.text": "av nyhetsbrevene vi sender ut!",
       "subscribe.link": "Zobacz przykłady",
 
@@ -1241,7 +1246,8 @@ const resources = {
       "footer.link": "Start Sammen Med Oss",
       "footer.about":
         "XxlCasinolist.com posisjonerer seg som en enestående kilde til informasjon om virtuelle spillsteder og online gambling-underholdning. Alle våre anmeldelser og guider er utarbeidet i samsvar med kunnskapen og overbevisningene til vårt uavhengige ekspertteam, objektivt og uten noen form for fordommer. Likevel, slike vurderinger og meldinger tilbys kun til informasjonsformål og skal ikke betraktes som juridisk rådgivning eller grunnlag for å fatte juridiske beslutninger. Før du begynner deltakelsen i ditt valgte kasino, må du alltid sørge for at du overholder alle gjeldende juridiske krav.",
-        "footer.copyright": "Opphavsrett © 2023, xxlcasinolist.com Alle rettigheter reservert.",
+      "footer.copyright":
+        "Opphavsrett © 2023, xxlcasinolist.com Alle rettigheter reservert.",
     },
   },
   de: {
@@ -1254,14 +1260,17 @@ const resources = {
       "guideslotsguide.title": "Glücksspiel-Anleitungen",
       "guideslotsguide.excerpt":
         "Wenn Sie den Jackpot knacken möchten, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus.",
-
+      "play.to.casino": "Jetzt im Casino spielen",
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
       "subscribe.players": "abonnierte Spieler",
-      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.congrats":
+        "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
       "subscribe.error1": "E-Mail darf nicht leer sein",
       "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-      
+      "subscribe.terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+      "subscribe.policy": "Ich akzeptiere die Datenschutzrichtlinie",
+
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -1302,7 +1311,8 @@ const resources = {
       "searchBrands.placeholder": "Marken suchen...",
 
       "home.title": "Treten Sie der Gemeinschaft unserer Abonnenten bei",
-      "home.description": "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
+      "home.description":
+        "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
 
       "subscribe.text": "von den Newslettern, die wir versenden!",
       "subscribe.link": "Sehen Sie einige Beispiele",
@@ -1641,8 +1651,6 @@ const resources = {
       "button.review": "Rezension Lesen",
       "button.play": "Jetzt Spielen",
 
-     
-
       "footer.contacts": "Unsere Kontakte:",
       "footer.title": "Stärkung der iGaming-Lösungen",
       "footer.description":
@@ -1650,7 +1658,8 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten."
+      "footer.copyright":
+        "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
     },
   },
 
@@ -1667,15 +1676,20 @@ const resources = {
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
       "subscribe.players": "players subscribed",
-      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.congrats":
+        "Congratulations! You have subscribed to the mailing list.",
       "subscribe.error1": "Email cannot be empty",
       "subscribe.error2": "Please enter a valid email",
+      "subscribe.terms": "I agree Terms and Conditions",
+      "subscribe.policy": "I agree Privacy Policy",
+
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
       "header.payments": "All Payments ▼",
       "header.providers": "Game Providers ▼",
       "header.countries": "Casinos by Country ▼",
+      "play.to.casino": "Play now to this Casino",
 
       "header.austr": "Australian Casino",
       "header.brazil": "Brazilian Casino",
@@ -1710,11 +1724,10 @@ const resources = {
       "searchBrands.placeholder": "Search brands...",
 
       "home.title": "Join the community of our subscribers",
-      "home.description": "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
-        "subscribe.text":
-        "of the newsletters we're sending out!",
+      "home.description":
+        "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
+      "subscribe.text": "of the newsletters we're sending out!",
       "subscribe.link": "See some examples",
-
 
       "topBrands.title": "XxlCasinoList Best Choices for 2023",
       "newBrands.title": "Latest Casino Additions 2023",
@@ -2046,8 +2059,6 @@ const resources = {
       "button.review": "Read Review",
       "button.play": "Play Now",
 
-    
-
       "footer.contacts": "Our Contacts:",
       "footer.title": "Empowering iGaming Solutions",
       "footer.description":
@@ -2055,7 +2066,8 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
+      "footer.copyright":
+        "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -2072,15 +2084,20 @@ const resources = {
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
       "subscribe.players": "players subscribed",
-      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.congrats":
+        "Congratulations! You have subscribed to the mailing list.",
       "subscribe.error1": "Email cannot be empty",
       "subscribe.error2": "Please enter a valid email",
+      "subscribe.terms": "I agree Terms and Conditions",
+      "subscribe.policy": "I agree Privacy Policy",
+
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
       "header.payments": "All Payments ▼",
       "header.providers": "Game Providers ▼",
       "header.countries": "Casinos by Country ▼",
+      "play.to.casino": "Play now to this Casino",
 
       "header.austr": "Australian Casino",
       "header.brazil": "Brazilian Casino",
@@ -2115,11 +2132,10 @@ const resources = {
       "searchBrands.placeholder": "Search brands...",
 
       "home.title": "Join the community of our subscribers",
-      "home.description": "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
-        "subscribe.text":
-        "of the newsletters we're sending out!",
+      "home.description":
+        "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
+      "subscribe.text": "of the newsletters we're sending out!",
       "subscribe.link": "See some examples",
-
 
       "topBrands.title": "XxlCasinoList Best Choices for 2023",
       "newBrands.title": "Latest Casino Additions 2023",
@@ -2451,7 +2467,6 @@ const resources = {
       "button.review": "Read Review",
       "button.play": "Play Now",
 
-
       "footer.contacts": "Our Contacts:",
       "footer.title": "Empowering iGaming Solutions",
       "footer.description":
@@ -2459,7 +2474,8 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
+      "footer.copyright":
+        "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
 
@@ -2476,10 +2492,13 @@ const resources = {
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
       "subscribe.players": "abonnierte Spieler",
-      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.congrats":
+        "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
       "subscribe.error1": "E-Mail darf nicht leer sein",
       "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-      
+      "subscribe.terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+      "subscribe.policy": "Ich akzeptiere die Datenschutzrichtlinie",
+      "play.to.casino": "Jetzt im Casino spielen",
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -2520,8 +2539,9 @@ const resources = {
       "searchBrands.placeholder": "Marken suchen...",
 
       "home.title": "Treten Sie der Gemeinschaft unserer Abonnenten bei",
-      "home.description": "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
-        "subscribe.text": "von den Newslettern, die wir versenden!",
+      "home.description":
+        "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
+      "subscribe.text": "von den Newslettern, die wir versenden!",
       "subscribe.link": "Sehen Sie einige Beispiele",
 
       "topBrands.title": "XxlCasinoList Beste Auswahl für 2023",
@@ -2858,7 +2878,6 @@ const resources = {
       "button.review": "Rezension Lesen",
       "button.play": "Jetzt Spielen",
 
-
       "footer.contacts": "Unsere Kontakte:",
       "footer.title": "Stärkung der iGaming-Lösungen",
       "footer.description":
@@ -2866,7 +2885,8 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
+      "footer.copyright":
+        "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
     },
   },
 
@@ -2883,10 +2903,14 @@ const resources = {
       "subscribe.button": "Abonnieren",
       "subscribe.email": "E-Mail",
       "subscribe.players": "abonnierte Spieler",
-      "subscribe.congrats": "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
+      "subscribe.congrats":
+        "Herzlichen Glückwunsch! Sie haben sich für den Newsletter angemeldet.",
       "subscribe.error1": "E-Mail darf nicht leer sein",
       "subscribe.error2": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-      
+      "subscribe.terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+      "subscribe.policy": "Ich akzeptiere die Datenschutzrichtlinie",
+
+      "play.to.casino": "Jetzt im Casino spielen",
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
       "header.casinos": "Kasinos ▼",
@@ -2927,8 +2951,9 @@ const resources = {
       "searchBrands.placeholder": "Marken suchen...",
 
       "home.title": "Treten Sie der Gemeinschaft unserer Abonnenten bei",
-      "home.description": "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
-        "subscribe.text": "von den Newslettern, die wir versenden!",
+      "home.description":
+        "Erhalten Sie frische Schnäppchen und lukrative Boni von vertrauenswürdigen Online-Casinos, die in Ihrer Region tätig sind! Seien Sie der Erste, der herausfindet, wo es sich heute lohnt zu spielen!",
+      "subscribe.text": "von den Newslettern, die wir versenden!",
       "subscribe.link": "Sehen Sie einige Beispiele",
 
       "topBrands.title": "XxlCasinoList Beste Auswahl für 2023",
@@ -3265,8 +3290,6 @@ const resources = {
       "button.review": "Rezension Lesen",
       "button.play": "Jetzt Spielen",
 
-   
-
       "footer.contacts": "Unsere Kontakte:",
       "footer.title": "Stärkung der iGaming-Lösungen",
       "footer.description":
@@ -3274,7 +3297,8 @@ const resources = {
       "footer.link": "Arbeiten Sie mit uns",
       "footer.about":
         "XxlCasinolist.com positioniert sich als außergewöhnliche Informationsquelle über virtuelle Spielstätten und Online-Glücksspielunterhaltung. Alle unsere Bewertungen und Anleitungen werden in Übereinstimmung mit dem Wissen und den Überzeugungen unseres unabhängigen Expertenteams objektiv und ohne jegliche Voreingenommenheit verfasst. Dennoch dienen solche Bewertungen und Benachrichtigungen ausschließlich zu Informationszwecken und sollten nicht als rechtliche Beratung oder Grundlage für rechtliche Entscheidungen betrachtet werden. Bevor Sie an Ihrem gewählten Casino teilnehmen, stellen Sie bitte immer sicher, dass Sie alle geltenden rechtlichen Anforderungen erfüllen.",
-        "footer.copyright": "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
+      "footer.copyright":
+        "Urheberrecht © 2023, xxlcasinolist.com Alle Rechte vorbehalten.",
     },
   },
 
@@ -3288,13 +3312,18 @@ const resources = {
       "guideslotsguide.title": "Gambling Guides",
       "guideslotsguide.excerpt":
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.",
+      "play.to.casino": "Play now to this Casino",
 
       "subscribe.button": "Subscribe",
       "subscribe.email": "Email",
       "subscribe.players": "players subscribed",
-      "subscribe.congrats": "Congratulations! You have subscribed to the mailing list.",
+      "subscribe.congrats":
+        "Congratulations! You have subscribed to the mailing list.",
       "subscribe.error1": "Email cannot be empty",
       "subscribe.error2": "Please enter a valid email",
+      "subscribe.terms": "I agree Terms and Conditions",
+      "subscribe.policy": "I agree Privacy Policy",
+
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
       "header.casinos": "Casinos ▼",
@@ -3335,11 +3364,10 @@ const resources = {
       "searchBrands.placeholder": "Search brands...",
 
       "home.title": "Join the community of our subscribers",
-      "home.description": "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
-        "subscribe.text":
-        "of the newsletters we're sending out!",
+      "home.description":
+        "Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!",
+      "subscribe.text": "of the newsletters we're sending out!",
       "subscribe.link": "See some examples",
-
 
       "topBrands.title": "XxlCasinoList Best Choices for 2023",
       "newBrands.title": "Latest Casino Additions 2023",
@@ -3670,8 +3698,6 @@ const resources = {
       "button.review": "Read Review",
       "button.play": "Play Now",
 
-   
-
       "footer.contacts": "Our Contacts:",
       "footer.title": "Empowering iGaming Solutions",
       "footer.description":
@@ -3679,7 +3705,8 @@ const resources = {
       "footer.link": "Start Working With Us",
       "footer.about":
         "XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.",
-        "footer.copyright": "Copyright © 2023, xxlcasinolist.com All rights reserved.",
+      "footer.copyright":
+        "Copyright © 2023, xxlcasinolist.com All rights reserved.",
     },
   },
   // Add translations for other languages here

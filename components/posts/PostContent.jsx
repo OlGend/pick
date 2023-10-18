@@ -23,7 +23,7 @@ export default function PostContent({ id }) {
     pl: guidepostDataPl,
     ca: guidepostDataCa,
     au: guidepostDataAu,
-    au: guidepostDataNz,
+    nz: guidepostDataNz,
 
     ch: guidepostDataCh,
     at: guidepostDataAt,
@@ -84,6 +84,8 @@ export default function PostContent({ id }) {
             );
           } else if (item.tag === "li") {
             return <li key={index}>{item.fullContent || ""}</li>;
+          } else if (item.tag === "a") {
+            return <a className="text-sky-500 font-bold underline" target="_blank" href={`${item.fullContent}`} key={index}>{t("play.to.casino")}</a>;
           } else {
             return null;
           }
