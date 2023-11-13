@@ -22,6 +22,7 @@ import { geolocation } from "@vercel/edge";
 import Smokace from "@/public/smokace.png";
 import Winlegends from "@/public/winlegends.png";
 import Windetta from "@/public/windeta.png";
+import Spinsbro from "@/public/SpinsBro_500x250.png";
 
 
 const navItems = [
@@ -242,6 +243,17 @@ const TheHeader = () => {
               <Image
                 className="grayscale"
                 src={Windetta}
+                alt="logo"
+                width={85}
+                loading="lazy"
+              />
+            </Link>
+          </div>
+          <div className="basis-[17%]">
+            <Link href={`/bonuses/6657`}>
+              <Image
+                className="grayscale"
+                src={Spinsbro}
                 alt="logo"
                 width={85}
                 loading="lazy"
