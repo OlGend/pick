@@ -35,6 +35,8 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
             } else {
               return null;
             }
+            
+
           })}
       </div>
     </div>
