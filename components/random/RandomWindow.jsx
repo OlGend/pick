@@ -18,7 +18,7 @@ const Modal = ({ t }) => {
   const [isActive, setIsActive] = useState(false);
   const [playLink, setPlayLink] = useState(null); // Добавляем playLink сюда
 
-  const brandData = useTopBrands(213);
+  const brandData = useTopBrands(217);
 
   const setRandomBrandAndShowModal = () => {
     if (brandData && brandData.length > 0) {
