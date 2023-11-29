@@ -26,8 +26,6 @@ const GuideSlotsHome = () => {
     de: guidepostDataDe, // Добавьте данные на немецком языке
     at: guidepostDataDe, // Добавьте данные на немецком языке
     ch: guidepostDataDe, // Добавьте данные на немецком языке
-
-
   };
 
   const guideposts = guidepostData[currentLanguage].guideposts;
