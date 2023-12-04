@@ -4,7 +4,7 @@ import { X } from "phosphor-react";
 import Link from "next/link";
 
 import Image from "next/image";
-// import Mercedes1 from "@public/Mercedes1.png";
+
 
 const BannerWindow = () => {
   const [showModal, setShowModal] = useState(false);
@@ -55,7 +55,7 @@ const BannerWindow = () => {
           href="https://link.reg2dep.business/gen_vavada_reg2dep"
         >
           <Image
-            src="/Mercedes1.png"
+            src="/Mercedes2.png"
             width={480}
             height={209}
             alt="vavada"
