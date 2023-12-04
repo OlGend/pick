@@ -4,6 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import RandomWindow from "@/components/random/RandomWindow";
+import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -57,7 +58,7 @@ export default function RootLayout({
           `}
         </Script>
 
-
+          <BannerWindow />
         <RandomWindow />
         <TheHeader />
         <main>
