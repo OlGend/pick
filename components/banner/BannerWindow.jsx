@@ -55,7 +55,7 @@ const BannerWindow = () => {
           href="https://link.reg2dep.business/gen_vavada_reg2dep"
         >
           <Image
-            src="/Mercedes1.png"
+            src="/Mercedes3.png"
             width={480}
             height={209}
             alt="vavada"
