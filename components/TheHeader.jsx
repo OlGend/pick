@@ -23,7 +23,7 @@ import Smokace from "@/public/smokace.png";
 import Winlegends from "@/public/winlegends.png";
 import Windetta from "@/public/windeta.png";
 import Spinsbro from "@/public/SpinsBro_500x250.png";
-
+import Jupi from "@/public/jupicasino1_500x250.png";
 
 const navItems = [
   {
@@ -190,10 +190,34 @@ const TheHeader = () => {
                       loading="lazy"
                     />
                   </Link>
+                </div>
+                <div className="navigation-item p-0">
                   <Link href={`/bonuses/7383`} onClick={closeMobileMenu}>
                     <Image
                       className="flex flex-start"
                       src={Windetta}
+                      alt="logo"
+                      width={110}
+                      loading="lazy"
+                    />
+                  </Link>
+                </div>
+                <div className="navigation-item p-0">
+                  <Link href={`/bonuses/6657`} onClick={closeMobileMenu}>
+                    <Image
+                      className="flex flex-start"
+                      src={Spinsbro}
+                      alt="logo"
+                      width={110}
+                      loading="lazy"
+                    />
+                  </Link>
+                </div>
+                <div className="navigation-item p-0">
+                  <Link href={`/bonuses/5011`} onClick={closeMobileMenu}>
+                    <Image
+                     className="flex flex-start"
+                      src={Jupi}
                       alt="logo"
                       width={110}
                       loading="lazy"
@@ -254,6 +278,17 @@ const TheHeader = () => {
               <Image
                 className="grayscale"
                 src={Spinsbro}
+                alt="logo"
+                width={85}
+                loading="lazy"
+              />
+            </Link>
+          </div>
+          <div className="basis-[17%]">
+            <Link href={`/bonuses/5011`}>
+              <Image
+                className="grayscale"
+                src={Jupi}
                 alt="logo"
                 width={85}
                 loading="lazy"
