@@ -213,7 +213,7 @@ const TheHeader = () => {
                     />
                   </Link>
                 </div> */}
-                <div className="navigation-item p-0">
+                {/* <div className="navigation-item p-0">
                   <Link href={`/bonuses/5011`} onClick={closeMobileMenu}>
                     <Image
                      className="flex flex-start"
@@ -223,7 +223,7 @@ const TheHeader = () => {
                       loading="lazy"
                     />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@ const TheHeader = () => {
               />
             </Link>
           </div> */}
-          <div className="basis-[17%]">
+          {/* <div className="basis-[17%]">
             <Link href={`/bonuses/5011`}>
               <Image
                 className="grayscale"
@@ -294,7 +294,7 @@ const TheHeader = () => {
                 loading="lazy"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
