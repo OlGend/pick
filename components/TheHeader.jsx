@@ -132,6 +132,7 @@ const TheHeader = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+  
 
   return (
     <header className="header">
