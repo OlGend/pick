@@ -33,9 +33,9 @@ const TheFooter = () => {
                 <p className="mb-1">{t("footer.contacts")}</p>
                 <a
                   className="underline flex items-center"
-                  href="mailto:info@reg2dep.com"
+                  href="mailto:manager@reg2dep.business"
                 >
-                  info@reg2dep.com
+                  manager@reg2dep.business
                 </a>
               </div>
               <div className="flex flex-col">
