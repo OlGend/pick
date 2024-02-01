@@ -4,7 +4,7 @@ import TopBrands from "@/components/TopBrands";
 import NewBrands from "@/components/NewBrands";
 import FilteredBonuses from "@/components/bonuses//FilteredBonuses";
 import PreviewBonuses from "@/components/PreviewBonuses";
-import GuideSlotsPage from "@/components/GuideSlotsPage";
+// import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 export const metadata: Metadata = {
   title: "Bonuses | XXLCasinoList",
@@ -17,7 +17,7 @@ export default async function Bonuses() {
       <PreviewBonuses />
       <TopBrands />
       <FilteredBonuses />
-      <GuideSlotsPage />
+      {/* <GuideSlotsPage /> */}
     </div>
   );
 }
