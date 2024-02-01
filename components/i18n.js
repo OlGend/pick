@@ -2,6 +2,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { parseCookies, setCookie } from 'nookies';
 import enTranslation from "@/components/posts/en.json"; // Путь к файлу с английскими переводами
 import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
 import deTranslation from "@/components/posts/de.json"; // Путь к файлу с польскими переводами
@@ -3746,15 +3747,47 @@ const resources = {
   // Add translations for other languages here
 };
 
+
+let defLng;
+if (typeof window !== "undefined") {
+  defLng = localStorage.getItem("country");
+}
+
+const lowercaseDefLng = defLng && typeof defLng === 'string' ? defLng.toLowerCase() : defLng;
+console.log("3############3",lowercaseDefLng)
+
+
+
+
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en", // Default language
+    lng: lowercaseDefLng, // Default language
     interpolation: {
       escapeValue: false,
     },
   });
 
 export default i18n;
+// i18n
+//   .use(LanguageDetector)
+//   .use(initReactI18next)
+//   .init({
+//     resources,
+//     fallbackLng: lowercaseDefLng, // Язык по умолчанию, если язык не определен
+//     interpolation: {
+//       escapeValue: false,
+//     },
+//     detection: {
+//       order: ['cookie', 'navigator', 'htmlTag'], // Порядок, в котором детектор будет определять язык
+//       caches: ['cookie'], // Сохранение выбранного языка в cookies
+//       cookieMinutes: 60, // Время жизни cookie
+//       lookupCookie: 'i18next', // Имя cookie для хранения языка пользователя
+//       // Другие параметры детектора
+//     },
+//   });
+
+// export default i18n;

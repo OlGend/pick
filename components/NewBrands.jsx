@@ -1,7 +1,7 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import { useState } from "react";
-import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Loader from "./Loader";
 import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -18,7 +18,6 @@ import {
 } from "./brandUtils";
 import useSWR from "swr";
 
-
 export default function NewBrands() {
   const { t } = useTranslation();
   const { data: languageDetails, error: detailsError } = useSWR(
@@ -29,7 +28,6 @@ export default function NewBrands() {
     }
   );
   const filteredBrands = useTopBrandsFilter(214, languageDetails.allBrand);
-
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -42,11 +40,22 @@ export default function NewBrands() {
     }, 1000);
   };
 
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
+
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
+
   return (
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-        <h2>{t('newestasinos.title')}</h2>
+          <h2>{t("newestasinos.title")}</h2>
         </div>
         <div className="flex flex-col px-0 py-6 wrap-mobile">
           {filteredBrands.map((brand) => {
@@ -97,11 +106,11 @@ export default function NewBrands() {
                 <div className="buttons basis-[17%] ml-auto p-3 flex items-center">
                   <Link
                     className="btn btn-primary mb-1 flex justify-center items-center w-full"
-                    href={`https://link.reg2dep.business/${playLink}`}
+                    href={`https://link.reg2dep.business/${playLink}/${newUrl}`}
                     target="_blank"
                   >
                     <Play className="mb-1 mr-1" size={24} />
-                    {t('button.play')}
+                    {t("button.play")}
                   </Link>
                   <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
@@ -113,7 +122,7 @@ export default function NewBrands() {
                     ) : (
                       <Eye className="mr-2" size={20} />
                     )}
-                     {t('button.review')}
+                    {t("button.review")}
                   </Link>
                 </div>
               </div>

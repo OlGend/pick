@@ -24,7 +24,9 @@ body {
   height: 100%;
   min-width: 320px;
 }
-
+.skiptranslate {
+  display: none !important;
+}
 body {
   color: #000;
   line-height: 1;
@@ -35,6 +37,17 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    padding: 5px;
+    top: 0px !important; 
 }
 
 input,

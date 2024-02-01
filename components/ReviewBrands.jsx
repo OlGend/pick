@@ -44,6 +44,7 @@ const MenuItem = ({ title, excerpt, icon, excerpt2, link }) => {
 
 const ReviewBrands = () => {
   const { t } = useTranslation();
+ 
   return (
     <div className="tabNavigation">
       <div className="main__container">

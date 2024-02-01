@@ -17,7 +17,7 @@ export default async function Home() {
   return (
     <>
 
-      <PreviewHome />
+      {/* <PreviewHome /> */}
       <div className="background-block">
         <TopBrands />
         <NewBrands />

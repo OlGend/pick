@@ -14,8 +14,104 @@ import {
 } from "./brandUtils";
 import Loader from "@/components/Loader";
 import useSWR from "swr";
+import GoogleTranslate from "@/components/GoogleTranslate";
+
+
 
 export default function TopBrands() {
+  ////////////////////NEW CODE/////////////////////
+
+
+    // Получаем текущий URL
+    const currentUrl = window.location.href;
+
+    // Определяем позицию символа "?"
+    const indexOfQuestionMark = currentUrl.indexOf("?");
+  
+    // Если "?" найден, обрезаем URL до символа "?"
+    const newUrl2 =
+      indexOfQuestionMark !== -1
+        ? currentUrl.substring(0, indexOfQuestionMark)
+        : currentUrl;
+  
+    // Обновляем URL
+    window.history.replaceState({}, document.title, newUrl2);
+
+  const [ipData, setIpData] = useState(null);
+  const [ipDataCode, setIpDataCode] = useState(null);
+  const [newUrl, setNewUrl] = useState("");
+  const [source, setSource] = useState("");
+
+  useEffect(() => {
+    // Запрос к API с использованием fetch
+    fetch(
+      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setIpData(data.country_name);
+        setIpDataCode(data.country);
+        localStorage.setItem("country", data.country);
+        // setSelectedCountry(data.country.toLowerCase());
+      })
+      .catch((error) => {
+        console.error("Ошибка при запросе к API:", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    const url = window.location.href;
+    const urlObj = new URL(url);
+    const searchParams = new URLSearchParams(urlObj.search);
+    searchParams.delete("brand");
+  
+    const currentKeyword = searchParams.get("keyword");
+  
+    if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
+      // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
+      const partnerIndex = currentKeyword.indexOf("partner");
+      const partnerText = currentKeyword.substring(
+        partnerIndex,
+        partnerIndex + 11
+      ); // 11 - длина "partner1039" или "partner1041"
+      setSource(partnerText);
+  
+      // Используем "partner1039" или "partner1041" в newUrl
+      searchParams.set("source", partnerText);
+    } else {
+      // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
+      setSource("0");
+      searchParams.set("source", "0");
+      // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
+      // searchParams.delete("source");
+    }
+  
+    // Добавить source в новый URL только если он существует
+    const newUrl =
+      "?" +
+      (searchParams.toString() ? searchParams.toString() + "&" : "") + `creative_id=MAW`;
+  
+    // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
+    if (currentKeyword !== null) {
+      localStorage.setItem("savedUrl", newUrl);
+    }
+  
+    // Чтение сохраненной ссылки из локального хранилища
+    const savedUrl = localStorage.getItem("savedUrl");
+  
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
+  
+  
+  
+  
+  
+
+  ///////////////NEW CODE//////////////////////////////
+
   const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
   const { data: languageDetails, error: detailsError } = useSWR(
@@ -25,7 +121,12 @@ export default function TopBrands() {
       fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
     }
   );
-  const filteredBrands = useTopBrandsFilter(213, languageDetails.allBrand);
+  const urlBrands = source === "partner1039" ? 21 : 213;
+
+  const filteredBrands = useTopBrandsFilter(
+    urlBrands,
+    languageDetails.allBrand
+  );
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -50,6 +151,7 @@ export default function TopBrands() {
         <Loader />
       ) : (
         <div className="main__container pb-6">
+          <GoogleTranslate />
           <div className="heading flex items-center pt-12">
             <h2>{t("topBrands.title")}</h2>
           </div>
@@ -87,7 +189,7 @@ export default function TopBrands() {
                       </Link>
                       <Link
                         className="btn btn-primary flex justify-center items-center mt-1"
-                        href={`https://link.reg2dep.business/${playLink}`}
+                        href={`https://link.reg2dep.business/${playLink}/${newUrl}`}
                         target="_blank"
                       >
                         <Play className="mr-2" size={20} />

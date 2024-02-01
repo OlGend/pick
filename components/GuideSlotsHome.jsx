@@ -1,41 +1,32 @@
-"use client";
+"use client"
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { BookBookmark, Coins, UsersFour } from "phosphor-react";
 import Img from "@/public/mobile_blue.png";
 import Link from "next/link";
 import guidepostDataEn from "@/components/posts/en.json";
 import guidepostDataPl from "@/components/posts/pl.json";
-import guidepostDataNo from "@/components/posts/no.json"; // Файл с данными на норвежском
-import guidepostDataDe from "@/components/posts/de.json"; // Файл с данными на немецком
+import guidepostDataNo from "@/components/posts/no.json"; 
+import guidepostDataDe from "@/components/posts/de.json"; 
 
 const GuideSlotsHome = () => {
-  const [loading, setLoading] = useState(true);
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
-  // Используйте объект с данными для каждого языка
+  // Используйте просто объект с данными для каждого языка
   const guidepostData = {
     pl: guidepostDataPl,
     en: guidepostDataEn,
-    nz: guidepostDataEn,
-    au: guidepostDataEn,
-    ca: guidepostDataEn,
-    no: guidepostDataNo, // Добавьте данные на норвежском языке
-    de: guidepostDataDe, // Добавьте данные на немецком языке
-    at: guidepostDataDe, // Добавьте данные на немецком языке
-    ch: guidepostDataDe, // Добавьте данные на немецком языке
+    no: guidepostDataNo,
+    de: guidepostDataDe,
   };
 
-  const guideposts = guidepostData[currentLanguage].guideposts;
+  const guideposts = guidepostData[currentLanguage]?.guideposts || [];
+
+  const [loading, setLoading] = useState(guideposts.length === 0);
 
   useEffect(() => {
-    if (guideposts.length === 0) {
-      setLoading(true);
-    } else {
-      setLoading(false);
-    }
+    setLoading(guideposts.length === 0);
   }, [guideposts]);
 
   const lastThreePosts = guideposts.slice(-3);
@@ -47,7 +38,7 @@ const GuideSlotsHome = () => {
           <h2 className="mb-5">{t("guideSlotsHome.title1")}</h2>
           <div className="flex justify-between guide-wrapper">
             <div className="left basis-5/12">
-          <p>{t("guideSlotsHome.excerpt3")}</p>
+              <p>{t("guideSlotsHome.excerpt3")}</p>
             </div>
             <div className="right basis-5/12">
               <Image
@@ -73,7 +64,6 @@ const GuideSlotsHome = () => {
                 <span>{item.author}</span>
 
                 <Link href={`/guides/${item.id}`}>
-                  {" "}
                   <h4>{item.title}</h4>
                 </Link>
               </div>
