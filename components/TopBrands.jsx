@@ -14,7 +14,7 @@ import {
 } from "./brandUtils";
 import Loader from "@/components/Loader";
 import useSWR from "swr";
-import GoogleTranslate from "@/components/GoogleTranslate";
+
 
 
 
@@ -151,7 +151,7 @@ export default function TopBrands() {
         <Loader />
       ) : (
         <div className="main__container pb-6">
-          <GoogleTranslate />
+          
           <div className="heading flex items-center pt-12">
             <h2>{t("topBrands.title")}</h2>
           </div>
