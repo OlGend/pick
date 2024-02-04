@@ -47,18 +47,22 @@ const GoogleTranslate = () => {
   const langChange = (e) => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
-    window.location.reload();
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    }
   };
 
   return (
     <>
-      <div
-        id="google_translate_element"
-        style={{
-          width: "300px",
-          height: "300px",
-        }}
-      ></div>
+      {typeof window !== "undefined" && (
+        <div
+          id="google_translate_element"
+          style={{
+            width: "300px",
+            height: "300px",
+          }}
+        ></div>
+      )}
 
       <select
         className="notranslate"
