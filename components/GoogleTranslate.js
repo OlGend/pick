@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { SelectPicker } from "rsuite";
 import { getCookie, hasCookie, setCookie } from "cookies-next";
 
 const GoogleTranslate = () => {
@@ -21,13 +20,10 @@ const GoogleTranslate = () => {
 
   const loadGoogleTranslateScript = () => {
     const addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
+    addScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    addScript.async = true;
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
-    
   };
 
   const googleTranslateElementInit = () => {
@@ -46,18 +42,7 @@ const GoogleTranslate = () => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
     window.location.reload();
-    // changeGoogleTranslateLanguage(e);
   };
-
-  // const changeGoogleTranslateLanguage = (language) => {
-  //   const translateElement = window.google.translate.TranslateElement({
-  //     pageLanguage: "auto",
-  //     includedLanguages: language.substring(language.lastIndexOf("/") + 1),
-  //     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-  //   });
-
-  //   translateElement.translatePage();
-  // };
 
   return (
     <>
