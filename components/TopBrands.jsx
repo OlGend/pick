@@ -37,7 +37,9 @@ export default function TopBrands() {
         : currentUrl;
   
     // Обновляем URL
-    window.history.replaceState({}, document.title, newUrl2);
+    if (typeof window !== "undefined") {
+      window.history.replaceState({}, document.title, newUrl2);
+    }
 
   const [ipData, setIpData] = useState(null);
   const [ipDataCode, setIpDataCode] = useState(null);
@@ -95,7 +97,7 @@ export default function TopBrands() {
       (searchParams.toString() ? searchParams.toString() + "&" : "") + `creative_id=MAW`;
   
     // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
-    if (currentKeyword !== null) {
+    if (typeof window !== "undefined" && currentKeyword !== null) {
       localStorage.setItem("savedUrl", newUrl);
     }
   
