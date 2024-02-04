@@ -23,7 +23,9 @@ export default function TopBrands() {
 
 
     // Получаем текущий URL
-    const currentUrl = window.location.href;
+    
+    const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+
 
     // Определяем позицию символа "?"
     const indexOfQuestionMark = currentUrl.indexOf("?");
@@ -60,8 +62,9 @@ export default function TopBrands() {
   }, []);
 
   useEffect(() => {
-    const url = window.location.href;
-    const urlObj = new URL(url);
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const urlObj = typeof window !== "undefined" ? new URL(url) : null;
+    
     const searchParams = new URLSearchParams(urlObj.search);
     searchParams.delete("brand");
   
