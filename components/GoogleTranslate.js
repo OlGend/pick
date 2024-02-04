@@ -23,10 +23,11 @@ const GoogleTranslate = () => {
     const addScript = document.createElement("script");
     addScript.setAttribute(
       "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     );
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
+    
   };
 
   const googleTranslateElementInit = () => {
@@ -44,18 +45,19 @@ const GoogleTranslate = () => {
   const langChange = (e) => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
-    changeGoogleTranslateLanguage(e);
+    window.location.reload();
+    // changeGoogleTranslateLanguage(e);
   };
 
-  const changeGoogleTranslateLanguage = (language) => {
-    const translateElement = window.google.translate.TranslateElement({
-      pageLanguage: "auto",
-      includedLanguages: language.substring(language.lastIndexOf("/") + 1),
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    });
+  // const changeGoogleTranslateLanguage = (language) => {
+  //   const translateElement = window.google.translate.TranslateElement({
+  //     pageLanguage: "auto",
+  //     includedLanguages: language.substring(language.lastIndexOf("/") + 1),
+  //     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+  //   });
 
-    translateElement.translatePage();
-  };
+  //   translateElement.translatePage();
+  // };
 
   return (
     <>

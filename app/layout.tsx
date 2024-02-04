@@ -60,7 +60,7 @@ export default function RootLayout({
         </Script>
 
           {/* <BannerWindow /> */}
-        <RandomWindow />
+        {/* <RandomWindow /> */}
         <TheHeader />
         <GoogleTranslate />
         <main>

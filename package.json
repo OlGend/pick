@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "ssg": "next build && next export",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
