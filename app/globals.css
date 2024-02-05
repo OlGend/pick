@@ -6187,6 +6187,15 @@ h1 {
 }
 
 @media (min-width: 1260px) and (max-width: 1920px) {
+  .language-switcher {
+    width: initial !important;
+  }
+  .language-switcher select {
+    width: auto;
+  }
+  .headerText {
+    color: #fff;
+  }
   .invest-card-title {
     letter-spacing: -0.1rem;
   }

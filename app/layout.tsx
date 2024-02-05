@@ -6,7 +6,7 @@ import { TheFooter } from "@/components/TheFooter";
 import RandomWindow from "@/components/random/RandomWindow";
 // import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
-import GoogleTranslate from "@/components/GoogleTranslate";
+// import GoogleTranslate from "@/components/GoogleTranslate";
 
 export const metadata: Metadata = {
   title:
@@ -62,7 +62,7 @@ export default function RootLayout({
           {/* <BannerWindow /> */}
         {/* <RandomWindow /> */}
         <TheHeader />
-        <GoogleTranslate />
+        {/* <GoogleTranslate /> */}
         <main>
 
 

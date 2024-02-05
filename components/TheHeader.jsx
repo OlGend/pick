@@ -24,6 +24,8 @@ import Winlegends from "@/public/winlegends.png";
 import Windetta from "@/public/windeta.png";
 import Spinsbro from "@/public/SpinsBro_500x250.png";
 import Jupi from "@/public/jupicasino1_500x250.png";
+import GoogleTranslate from "@/components/GoogleTranslate";
+
 
 const navItems = [
   {
@@ -143,12 +145,14 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>
           </div>
-          <div className="search-container flex items-center justify-center ml-auto">
+          <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
+        <GoogleTranslate />
+
           <div className="mobile-none">
             <button
               className={`burger-icon ${isMobileMenuOpen ? "open" : ""}`}
