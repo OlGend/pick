@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandById from "@/components/BrandById";
 import CarouselSlider from "@/components/CarouselSlider";
 import NewBrands from "@/components/NewBrands";
-import GuideSlotsPage from "@/components/GuideSlotsPage";
+// import GuideSlotsPage from "@/components/GuideSlotsPage";
 
 async function getData(id: string) {
   // Здесь выполняйте загрузку данных бренда, например, с использованием fetch
@@ -38,7 +38,7 @@ export default async function Brand({ params: { id } }: Props) {
           <NewBrands />
         </div>
         <div className="wrapper-container mt-6 mb-6">
-          <GuideSlotsPage />
+          {/* <GuideSlotsPage /> */}
           </div>
       </div>
     </>

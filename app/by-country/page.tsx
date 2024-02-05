@@ -4,7 +4,7 @@ import TopBrands from "@/components/TopBrands";
 import NewBrands from "@/components/NewBrands";
 import FilteredCountriesCasino from "@/components/country/FilteredCountriesCasino";
 import PreviewBonuses from "@/components/PreviewBonuses";
-import GuideSlotsPage from "@/components/GuideSlotsPage";
+// import GuideSlotsPage from "@/components/GuideSlotsPage";
 import AllCasinos from "@/components/country/AllCasinos";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default async function Bonuses() {
       <AllCasinos />
       {/* <TopBrands /> */}
       <FilteredCountriesCasino />
-      <GuideSlotsPage />
+      {/* <GuideSlotsPage /> */}
     </div>
   );
 }
