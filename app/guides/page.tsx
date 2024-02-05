@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import GuideSlotsGuide from "@/components/GuideSlotsGuide";
+// import GuideSlotsGuide from "@/components/GuideSlotsGuide";
 
 export const metadata: Metadata = {
   title: "Gambling Guides | XXLCasinoList",
@@ -15,7 +15,7 @@ export default function Guides() {
       <div className="main__container">
         
 
-       <GuideSlotsGuide />
+       {/* <GuideSlotsGuide /> */}
       </div>
     </>
   );
