@@ -1,5 +1,3 @@
-// Я убрал fetchLanguageDetails, так как он не определен.
-// Если он вам нужен, добавьте его обратно.
 "use client";
 import { useState } from "react";
 import useSWR, { mutate } from "swr";
