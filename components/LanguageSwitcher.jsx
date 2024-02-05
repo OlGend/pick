@@ -69,7 +69,7 @@ const LanguageSwitcher = () => {
       <p className="headerText">Your country of residence</p>
       <select
         className={`${selectedLanguage}`}
-        value={selectedLanguage}
+        value={selectedLanguage.code}
         onChange={(e) => {
           const selected = availableLanguages.find(
             (lang) => lang.code === e.target.value
