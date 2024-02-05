@@ -26,7 +26,6 @@ import Spinsbro from "@/public/SpinsBro_500x250.png";
 import Jupi from "@/public/jupicasino1_500x250.png";
 import GoogleTranslate from "@/components/GoogleTranslate";
 
-
 const navItems = [
   {
     icon: <PokerChip className="mr-1" size={20} />,
@@ -134,7 +133,6 @@ const TheHeader = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
-  
 
   return (
     <header className="header">
@@ -151,7 +149,7 @@ const TheHeader = () => {
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
-        <GoogleTranslate />
+          <GoogleTranslate />
 
           <div className="mobile-none">
             <button
@@ -167,6 +165,10 @@ const TheHeader = () => {
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
+                <I18nextProvider i18n={i18n}>
+                  <LanguageSwitcher />{" "}
+                </I18nextProvider>
+                <GoogleTranslate />
                 <Navigation
                   navLinks={navItems.map((item) => ({
                     ...item,

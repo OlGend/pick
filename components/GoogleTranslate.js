@@ -24,7 +24,24 @@ const GoogleTranslate = () => {
     { label: "Türkçe", value: "/auto/tr", flag: "🇹🇷" },
   ];
 
-  const [selected, setSelected] = useState("/auto/en");
+  let defLng;
+  if (typeof window !== "undefined") {
+    defLng = localStorage.getItem("country");
+  }
+
+  const lowercaseDefLng =
+    defLng && typeof defLng === "string" ? defLng.toLowerCase() : defLng;
+
+  const [selected, setSelected] = useState(`/auto/${lowercaseDefLng}`);
+
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     loadGoogleTranslateScript();
+  //     if (hasCookie("googtrans")) {
+  //       setSelected(getCookie("googtrans"));
+  //     }
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -32,9 +49,10 @@ const GoogleTranslate = () => {
 
       if (hasCookie("googtrans")) {
         setSelected(getCookie("googtrans"));
-      }
+      } 
     }
-  }, []);
+    // langChange(selected);
+  }, [selected]);
 
   const loadGoogleTranslateScript = () => {
     if (typeof window !== "undefined") {
@@ -65,9 +83,9 @@ const GoogleTranslate = () => {
   const langChange = (e) => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
-    if (typeof window !== "undefined") {
-      window.location.reload();
-    }
+    // if (typeof window !== "undefined") {
+    //   window.location.reload();
+    // }
   };
 
   return (
@@ -82,7 +100,7 @@ const GoogleTranslate = () => {
         ></div>
       )}
       <div className={`language-switcher ml-3 flex flex-col`}>
-      <p className="headerText">Website language</p>
+        <p className="headerText">Website language</p>
         <select
           className="notranslate"
           value={selected}

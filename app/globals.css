@@ -38,7 +38,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -46,8 +45,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    padding: 5px;
-    top: 0px !important; 
+  padding: 5px;
+  top: 0px !important;
 }
 
 input,
@@ -6080,7 +6079,7 @@ h1 {
   background: #0967e3;
 }
 .acceptedTerms::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background: transparent;
@@ -6090,7 +6089,7 @@ h1 {
   top: 3px;
 }
 .acceptedTerms.active::before {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   left: 2px;
@@ -6195,6 +6194,8 @@ h1 {
   }
   .headerText {
     color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
   }
   .invest-card-title {
     letter-spacing: -0.1rem;
@@ -6224,6 +6225,20 @@ h1 {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  header .language-switcher {
+    display: none !important;
+  }
+  .mobile-none .language-switcher {
+    display: flex !important;
+    margin-left: 5px;
+    width: auto !important;
+    max-width: 200px;
+  }
+  .mobile-none .language-switcher p {
+    color: #fff !important;
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+  }
   .right-banner {
     background-color: rgba(29, 39, 48, 0.95);
     top: 0 !important;
@@ -8895,13 +8910,14 @@ p {
 .header-brands {
   background: #1d273047;
 }
-.header-brands a.active, .header-brands a:hover {
+.header-brands a.active,
+.header-brands a:hover {
   background: transparent;
 }
 .header-brands .header__container {
   justify-content: center;
 }
-.header-brands .header__container a{
+.header-brands .header__container a {
   padding: 0;
 }
 .header-brands .header__container a img {
@@ -8911,13 +8927,13 @@ p {
   /* grays */
   --tw-grayscale: initial;
   filter: initial;
-
 }
 /* .header-brands a:hover {
   background: #d6920a;
 
 } */
-.Smokace a, .Winlegends a {
+.Smokace a,
+.Winlegends a {
   padding: 0;
 }
 .icon-flag,
@@ -9767,7 +9783,12 @@ input.error {
     margin-left: 0;
   }
 }
-.brand-7089 .brand-slider, .brand-7089 .wrapper-container.background-block, .brand-6883 .brand-slider, .brand-6883 .wrapper-container.background-block, .brand-7383 .brand-slider, .brand-7383 .wrapper-container.background-block {
+.brand-7089 .brand-slider,
+.brand-7089 .wrapper-container.background-block,
+.brand-6883 .brand-slider,
+.brand-6883 .wrapper-container.background-block,
+.brand-7383 .brand-slider,
+.brand-7383 .wrapper-container.background-block {
   display: none;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
@@ -9980,7 +10001,8 @@ input.error {
 .page-gaming h2 {
   margin-top: 25px;
 }
-.page-gaming li a, .page-gaming a {
+.page-gaming li a,
+.page-gaming a {
   text-decoration: underline;
   color: #0967e3;
 }
