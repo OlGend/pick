@@ -30,12 +30,11 @@ const LanguageSwitcher = () => {
     return <div>Failed to load</div>;
   }
 
-
   const changeLanguage = async (lng, flag, allBrand, topBrand) => {
     setIsLoading(true);
     try {
       // Не вызываем i18n.changeLanguage(lng);
-      mutate("languageDetails", { flag, allBrand, topBrand }, true); // Обновляем дополнительные данные
+      mutate("languageDetails", { allBrand, topBrand }, true); // Обновляем дополнительные данные
     } catch (error) {
       console.error("Ошибка при смене языка:", error);
     } finally {
@@ -55,10 +54,22 @@ const LanguageSwitcher = () => {
       topBrand: 184,
     }, //
     { code: "ca", label: "Canada", flag: "🇨🇦", allBrand: 120, topBrand: 46 }, //
-    { code: "nz", label: "New Zealand", flag: "🇳🇿", allBrand: 123, topBrand: 47 }, //
+    {
+      code: "nz",
+      label: "New Zealand",
+      flag: "🇳🇿",
+      allBrand: 123,
+      topBrand: 47,
+    }, //
     { code: "de", label: "Germany", flag: "🇩🇪", allBrand: 122, topBrand: 45 }, //
     { code: "at", label: "Austria", flag: "🇦🇹", allBrand: 122, topBrand: 45 },
-    { code: "ch", label: "Switzerland", flag: "🇨🇭", allBrand: 122, topBrand: 45 },
+    {
+      code: "ch",
+      label: "Switzerland",
+      flag: "🇨🇭",
+      allBrand: 122,
+      topBrand: 45,
+    },
     // Добавьте другие языки по аналогии
   ];
   // Обработка ошибок для selectedLanguage и languageDetails
@@ -69,7 +80,7 @@ const LanguageSwitcher = () => {
       <p className="headerText">Your country of residence</p>
       <select
         className={`${selectedLanguage}`}
-        value={selectedLanguage.code}
+        value={selectedLanguage}
         onChange={(e) => {
           const selected = availableLanguages.find(
             (lang) => lang.code === e.target.value
