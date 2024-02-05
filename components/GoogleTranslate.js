@@ -32,27 +32,19 @@ const GoogleTranslate = () => {
   const lowercaseDefLng =
     defLng && typeof defLng === "string" ? defLng.toLowerCase() : defLng;
 
-  const [selected, setSelected] = useState(`/auto/${lowercaseDefLng}`);
+    const [selected, setSelected] = useState(`/auto/pl`);
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     loadGoogleTranslateScript();
-  //     if (hasCookie("googtrans")) {
-  //       setSelected(getCookie("googtrans"));
-  //     }
-  //   }
-  // }, []);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      loadGoogleTranslateScript();
-
-      if (hasCookie("googtrans")) {
-        setSelected(getCookie("googtrans"));
-      } 
-    }
-    // langChange(selected);
-  }, [selected]);
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        loadGoogleTranslateScript();
+    
+        if (hasCookie("googtrans")) {
+          setSelected(decodeURIComponent(getCookie("googtrans")));
+        }
+      }
+      langChange(decodeURIComponent(selected));
+    }, [selected]);
+    
 
   const loadGoogleTranslateScript = () => {
     if (typeof window !== "undefined") {
@@ -72,7 +64,7 @@ const GoogleTranslate = () => {
           pageLanguage: "auto",
           autoDisplay: false,
           includedLanguages:
-            "en,bg,cs,de,da,es,fi,fr,el,hu,it,nl,no,pt,sv,sk,tr",
+            "en,pl,bg,cs,de,da,es,fi,fr,el,hu,it,nl,no,pt,sv,sk,tr",
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
         },
         "google_translate_element"
@@ -83,9 +75,6 @@ const GoogleTranslate = () => {
   const langChange = (e) => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
-    // if (typeof window !== "undefined") {
-    //   window.location.reload();
-    // }
   };
 
   return (

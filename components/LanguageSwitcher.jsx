@@ -30,18 +30,7 @@ const LanguageSwitcher = () => {
     return <div>Failed to load</div>;
   }
 
-  // const changeLanguage = async (lng, flag, allBrand, topBrand) => {
-  //   setIsLoading(true);
-  //   try {
-  //     await i18n.changeLanguage(lng);
-  //     // mutate("selectedLanguage", lng, true);
-  //     mutate("languageDetails", { flag, allBrand, topBrand }, true);  // Обновляем дополнительные данные
-  //   } catch (error) {
-  //     console.error("Ошибка при смене языка:", error);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
+
   const changeLanguage = async (lng, flag, allBrand, topBrand) => {
     setIsLoading(true);
     try {
