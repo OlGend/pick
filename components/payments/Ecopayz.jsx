@@ -18,7 +18,7 @@ const Payments = () => {
           <p className="text-white mt-5">
           {t("ecopayz.description")}
           </p>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
         <div className="basis-[40%] flex justify-center">
           <Image src={Img} alt="Beep" width={327} height={540} loading="lazy" />

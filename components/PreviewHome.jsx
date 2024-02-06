@@ -38,7 +38,7 @@ const PreviewHome = () => {
         <div className="flex flex-col basis-[50%]">
           <h1>{t("home.title")}</h1>
           <p>{t("home.description")}</p>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
         <Image src={Img} alt="Beep" width={550} />
       </div>

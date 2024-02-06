@@ -15,7 +15,7 @@ const DepositBonuses = () => {
         
           <h1 className="text-white">{t("depositbonuses.title")}</h1>
           <p className="text-white mt-5">{t("depositbonuses.excerpt")}</p>
-          <Subscribe />
+          {/* <Subscribe /> */}
 
         </div>
         <div className="basis-[40%] flex justify-center">

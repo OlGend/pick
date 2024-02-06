@@ -14,7 +14,7 @@ const Payments = () => {
         <div className="flex flex-col basis-[60%]">
           <h1 className="text-white">{t("visa.title")}</h1>
           <p className="text-white mt-5">{t("visa.description")}</p>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
         <div className="basis-[40%] flex justify-center">
           <Image src={Img} alt="Beep" width={327} height={540} loading="lazy" />

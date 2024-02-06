@@ -20,7 +20,7 @@ const Amatic = () => {
           </p>
           <h1 className="text-white">{t("boongo.title")}</h1>
           <p className="text-white mt-5">{t("boongo.description")}</p>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
         <div className="basis-[40%] flex justify-center">
           <Image src={Img} alt="Beep" width={327} height={540} loading="lazy" />

@@ -52,7 +52,7 @@ const BannerWindow = () => {
       <div className={`modal-overlay right-banner ${isActive ? "active" : ""}`}>
         <Link
      
-          href="https://link.reg2dep.business/gen_vavada_reg2dep"
+          href="https:/link.reg2dep1.com/gen_vavada_reg2dep"
         >
           <Image
             src="/mercedes4.png"

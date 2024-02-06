@@ -33,7 +33,7 @@ const GoogleTranslate = () => {
   const lowercaseDefLng =
     defLng && typeof defLng === "string" ? defLng.toLowerCase() : defLng;
 
-    const [selected, setSelected] = useState(`/auto/${lowercaseDefLng}`);
+    const [selected, setSelected] = useState(`/auto/en`);
 
     useEffect(() => {
       if (typeof window !== "undefined") {

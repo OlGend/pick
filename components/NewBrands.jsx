@@ -106,7 +106,7 @@ export default function NewBrands() {
                 <div className="buttons basis-[17%] ml-auto p-3 flex items-center">
                   <Link
                     className="btn btn-primary mb-1 flex justify-center items-center w-full"
-                    href={`https://link.reg2dep.business/${playLink}/${newUrl}`}
+                    href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                     target="_blank"
                   >
                     <Play className="mb-1 mr-1" size={24} />

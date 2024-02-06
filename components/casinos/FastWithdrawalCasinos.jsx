@@ -16,7 +16,7 @@ const FastWithdrawalCasinos = () => {
         
           <h1 className="text-white">{t("fastcasinos.title")}</h1>
           <p className="text-white mt-5">{t("fastcasinos.excerpt")}</p>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
         <div className="basis-[40%] flex justify-center">
           <Image src={Img} alt="Beep" width={242} loading="lazy" />
