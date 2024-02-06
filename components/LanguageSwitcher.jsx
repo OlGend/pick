@@ -37,6 +37,7 @@ const LanguageSwitcher = () => {
   const changeLanguage = async (lng, flag, allBrand, topBrand) => {
     setIsLoading(true);
     try {
+      mutate("selectedLanguage", lng, false); 
       // Не вызываем i18n.changeLanguage(lng);
       mutate("languageDetails", { allBrand, topBrand }, true); // Обновляем дополнительные данные
     } catch (error) {
@@ -84,7 +85,7 @@ const LanguageSwitcher = () => {
       <p className="headerText">Your country of residence</p>
       <select
         className={`${selectedLanguage}`}
-        value={selectedLanguage.code}
+        value={selectedLanguage}
         onChange={(e) => {
           const selected = availableLanguages.find(
             (lang) => lang.code === e.target.value
