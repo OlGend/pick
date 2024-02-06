@@ -6229,10 +6229,13 @@ h1 {
     display: none !important;
   }
   .mobile-none .language-switcher {
+    margin-bottom: 8px;
+    margin-top: 8px;
     display: flex !important;
     margin-left: 5px;
     width: auto !important;
     max-width: 200px;
+    align-items: flex-start !important;
   }
   .mobile-none .language-switcher p {
     color: #fff !important;

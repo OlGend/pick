@@ -20,11 +20,89 @@ import {
 
 const CarouselSlider = ({ slides }) => {
   const { t } = useTranslation();
+  const [selectedBrand, setSelectedBrand] = useState(null);
+  useEffect(() => {
+    const defLng = localStorage.getItem("country").toLowerCase();
+    setSelectedBrand(defLng);
+    if (defLng) {
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng);
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
+    }
+  });
+  const navigateBrands = [
+    {
+      currentCategories: 138,
+      topCurrentCategories: 213,
+      icon: "🌍",
+      slug: "all",
+    },
+    {
+      currentCategories: 143,
+      topCurrentCategories: 184,
+      icon: "🇦🇺",
+      slug: "au",
+    },
+    {
+      currentCategories: 119,
+      topCurrentCategories: 84,
+      icon: "🇧🇷",
+      slug: "br",
+    },
+    {
+      currentCategories: 120,
+      topCurrentCategories: 46,
+      icon: "🇨🇦",
+      slug: "ca",
+    },
+    {
+      currentCategories: 121,
+      topCurrentCategories: 43,
+      icon: "🇫🇮",
+      slug: "fi",
+    },
+    {
+      currentCategories: 122,
+      topCurrentCategories: 45,
+      icon: "🇩🇪",
+      slug: "de",
+    },
+    {
+      currentCategories: 123,
+      topCurrentCategories: 47,
+      icon: "🇳🇿",
+      slug: "nz",
+    },
+    {
+      currentCategories: 124,
+      topCurrentCategories: 44,
+      icon: "🇳🇴",
+      slug: "no",
+    },
+    {
+      currentCategories: 125,
+      topCurrentCategories: 48,
+      icon: "🇵🇱",
+      slug: "pl",
+    },
+  ];
+  console.log("!!!!", selectedBrand);
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
-      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
+      fallbackData: selectedBrand
+        ? {
+            flag: selectedBrand.icon,
+            allBrand: selectedBrand.currentCategories,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 },
     }
   );
   const settings = {
@@ -101,7 +179,6 @@ const CarouselSlider = ({ slides }) => {
                     className="btn btn-primary flex justify-center items-center mt-1"
                     href={`https://link.reg2dep1.com/${playLink}`}
                     target="_blank"
-
                   >
                     <Play className="mr-1 mb-1" size={20} />
                     {t("button.play")}

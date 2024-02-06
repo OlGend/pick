@@ -165,9 +165,6 @@ const TheHeader = () => {
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
-                <I18nextProvider i18n={i18n}>
-                  <LanguageSwitcher />{" "}
-                </I18nextProvider>
                 <GoogleTranslate />
                 <Navigation
                   navLinks={navItems.map((item) => ({
@@ -187,6 +184,7 @@ const TheHeader = () => {
                     />
                   </Link>
                 </div> */}
+
                 <div className="navigation-item p-0">
                   <Link href={`/bonuses/6883`} onClick={closeMobileMenu}>
                     <Image
@@ -209,6 +207,9 @@ const TheHeader = () => {
                     />
                   </Link>
                 </div>
+                <I18nextProvider i18n={i18n}>
+                  <LanguageSwitcher />{" "}
+                </I18nextProvider>
                 {/* <div className="navigation-item p-0">
                   <Link href={`/bonuses/6657`} onClick={closeMobileMenu}>
                     <Image

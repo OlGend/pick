@@ -64,7 +64,7 @@ const TheFooter = () => {
         <div className="footer-center ">
           <div className="main__container flex pt-5 pb-4">
             <div className="solution-images flex flex-wrap justify-start items-center">
-              {solutions.map((item, index) => (
+              {/* {solutions.map((item, index) => (
                 <Image
                   className="grayscale"
                   key={index}
@@ -73,7 +73,50 @@ const TheFooter = () => {
                   width={120}
                   loading="lazy"
                 />
-              ))}
+              ))} */}
+            
+              <Image
+                className="grayscale"
+                src={Img1}
+                alt={`${Img1}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img2}
+                alt={`${Img2}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img3}
+                alt={`${Img3}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img4}
+                alt={`${Img4}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img5}
+                alt={`${Img5}`}
+                width={120}
+                loading="lazy"
+              />
+                <Image
+                className="grayscale"
+                src={Img6}
+                alt={`${Img6}`}
+                width={120}
+                loading="lazy"
+              />
             </div>
             <div className="flex flex-col">
               <div className="solution-text flex flex-col items-center">
@@ -89,7 +132,7 @@ const TheFooter = () => {
               </div>
             </div>
             <div className="solution-images flex flex-wrap justify-end items-center">
-              {solutions2.map((item, index) => (
+              {/* {solutions2.map((item, index) => (
                 <Image
                   className="grayscale"
                   key={index}
@@ -98,7 +141,49 @@ const TheFooter = () => {
                   width={120}
                   loading="lazy"
                 />
-              ))}
+              ))} */}
+               <Image
+                className="grayscale"
+                src={Img7}
+                alt={`${Img7}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img8}
+                alt={`${Img8}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img9}
+                alt={`${Img9}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img10}
+                alt={`${Img10}`}
+                width={120}
+                loading="lazy"
+              />{" "}
+              <Image
+                className="grayscale"
+                src={Img11}
+                alt={`${Img11}`}
+                width={120}
+                loading="lazy"
+              />
+                <Image
+                className="grayscale"
+                src={Img12}
+                alt={`${Img12}`}
+                width={120}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

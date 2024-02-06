@@ -41,22 +41,38 @@ export default function TopBrands() {
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
 
-  useEffect(() => {
-    // Запрос к API с использованием fetch
+
+  
+  const [selectedBrand, setSelectedBrand] = useState(null);
+
+useEffect(() => {
     fetch(
       "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
     )
       .then((response) => response.json())
       .then((data) => {
-        setIpData(data.country_name);
-        setIpDataCode(data.country);
         localStorage.setItem("country", data.country);
-        // setSelectedCountry(data.country.toLowerCase());
+        const locale = data.country.toLowerCase();
+        if (locale) {
+          const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
+          if (foundBrand) {
+            setSelectedBrand(foundBrand);
+          } else {
+            // Если локаль не найдена, устанавливаем "all"
+            const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+            setSelectedBrand(allBrand);
+          }
+        }
       })
       .catch((error) => {
         console.error("Ошибка при запросе к API:", error);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }, []);
+
+
 
   useEffect(() => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -108,15 +124,76 @@ export default function TopBrands() {
     }
   }, []);
 
+  const navigateBrands = [
+    {
+      currentCategories: 138,
+      topCurrentCategories: 213,
+      icon: "🌍",
+      slug: "all",
+    },
+    {
+      currentCategories: 143,
+      topCurrentCategories: 184,
+      icon: "🇦🇺",
+      slug: "au",
+    },
+    {
+      currentCategories: 119,
+      topCurrentCategories: 84,
+      icon: "🇧🇷",
+      slug: "br",
+    },
+    {
+      currentCategories: 120,
+      topCurrentCategories: 46,
+      icon: "🇨🇦",
+      slug: "ca",
+    },
+    {
+      currentCategories: 121,
+      topCurrentCategories: 43,
+      icon: "🇫🇮",
+      slug: "fi",
+    },
+    {
+      currentCategories: 122,
+      topCurrentCategories: 45,
+      icon: "🇩🇪",
+      slug: "de",
+    },
+    {
+      currentCategories: 123,
+      topCurrentCategories: 47,
+      icon: "🇳🇿",
+      slug: "nz",
+    },
+    {
+      currentCategories: 124,
+      topCurrentCategories: 44,
+      icon: "🇳🇴",
+      slug: "no",
+    },
+    {
+      currentCategories: 125,
+      topCurrentCategories: 48,
+      icon: "🇵🇱",
+      slug: "pl",
+    },
+  ];
+
+ 
   ///////////////NEW CODE//////////////////////////////
 
   const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
+
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
-      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
+      fallbackData: selectedBrand
+        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
   const urlBrands = source === "partner1039" ? 21 : 213;
