@@ -10,6 +10,10 @@ const LanguageSwitcher = () => {
     "selectedLanguage",
     () => i18n.language
   );
+  let defLng;
+  if (typeof window !== "undefined") {
+    defLng = localStorage.getItem("country");
+  }
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -80,7 +84,7 @@ const LanguageSwitcher = () => {
       <p className="headerText">Your country of residence</p>
       <select
         className={`${selectedLanguage}`}
-        value={selectedLanguage}
+        value={selectedLanguage.code}
         onChange={(e) => {
           const selected = availableLanguages.find(
             (lang) => lang.code === e.target.value

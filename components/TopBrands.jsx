@@ -15,31 +15,26 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
-
-
-
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
 
+  // Получаем текущий URL
 
-    // Получаем текущий URL
-    
-    const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
 
+  // Определяем позицию символа "?"
+  const indexOfQuestionMark = currentUrl.indexOf("?");
 
-    // Определяем позицию символа "?"
-    const indexOfQuestionMark = currentUrl.indexOf("?");
-  
-    // Если "?" найден, обрезаем URL до символа "?"
-    const newUrl2 =
-      indexOfQuestionMark !== -1
-        ? currentUrl.substring(0, indexOfQuestionMark)
-        : currentUrl;
-  
-    // Обновляем URL
-    if (typeof window !== "undefined") {
-      window.history.replaceState({}, document.title, newUrl2);
-    }
+  // Если "?" найден, обрезаем URL до символа "?"
+  const newUrl2 =
+    indexOfQuestionMark !== -1
+      ? currentUrl.substring(0, indexOfQuestionMark)
+      : currentUrl;
+
+  // Обновляем URL
+  if (typeof window !== "undefined") {
+    window.history.replaceState({}, document.title, newUrl2);
+  }
 
   const [ipData, setIpData] = useState(null);
   const [ipDataCode, setIpDataCode] = useState(null);
@@ -66,12 +61,12 @@ export default function TopBrands() {
   useEffect(() => {
     const url = typeof window !== "undefined" ? window.location.href : "";
     const urlObj = typeof window !== "undefined" ? new URL(url) : null;
-    
+
     const searchParams = new URLSearchParams(urlObj.search);
     searchParams.delete("brand");
-  
+
     const currentKeyword = searchParams.get("keyword");
-  
+
     if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
       // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
       const partnerIndex = currentKeyword.indexOf("partner");
@@ -80,7 +75,7 @@ export default function TopBrands() {
         partnerIndex + 11
       ); // 11 - длина "partner1039" или "partner1041"
       setSource(partnerText);
-  
+
       // Используем "partner1039" или "partner1041" в newUrl
       searchParams.set("source", partnerText);
     } else {
@@ -90,30 +85,28 @@ export default function TopBrands() {
       // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
       // searchParams.delete("source");
     }
-  
+
     // Добавить source в новый URL только если он существует
     const newUrl =
       "?" +
-      (searchParams.toString() ? searchParams.toString() + "&" : "") + `creative_id=MAW`;
-  
+      (searchParams.toString()
+        ? searchParams.toString() + "&"
+        : "keyword=undefined") +
+      `creative_id=MAW`;
+
     // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
-    if (typeof window !== "undefined" && currentKeyword !== null) {
+    if (typeof window !== "undefined") {
       localStorage.setItem("savedUrl", newUrl);
     }
-  
+
     // Чтение сохраненной ссылки из локального хранилища
     const savedUrl = localStorage.getItem("savedUrl");
-  
+
     // Установка новой ссылки в состояние
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
   }, []);
-  
-  
-  
-  
-  
 
   ///////////////NEW CODE//////////////////////////////
 
@@ -156,7 +149,6 @@ export default function TopBrands() {
         <Loader />
       ) : (
         <div className="main__container pb-6">
-          
           <div className="heading flex items-center pt-12">
             <h2>{t("topBrands.title")}</h2>
           </div>
