@@ -34,7 +34,7 @@ export default function NewBrands() {
         setSelectedBrand(allBrand);
       }
     }
-  });
+  }, []);
   const navigateBrands = [
     {
       currentCategories: 138,

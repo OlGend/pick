@@ -81,7 +81,7 @@ const FilteredBonuses = () => {
         setSelectedBrand(allBrand);
       }
     }
-  });
+  }, []);
   const navigateBrands2 = [
     {
       currentCategories: 138,

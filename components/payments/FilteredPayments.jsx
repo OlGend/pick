@@ -320,7 +320,7 @@ const FilteredPayments = () => {
         setSelectedBrand(allBrand);
       }
     }
-  });
+  }, []);
   const navigateBrands2 = [
     {
       currentCategories: 138,

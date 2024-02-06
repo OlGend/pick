@@ -34,7 +34,7 @@ const CarouselSlider = ({ slides }) => {
         setSelectedBrand(allBrand);
       }
     }
-  });
+  }, []);
   const navigateBrands = [
     {
       currentCategories: 138,

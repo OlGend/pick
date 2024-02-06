@@ -248,7 +248,7 @@ const FilteredProviders = () => {
         setSelectedBrand(allBrand);
       }
     }
-  });
+  }, []);
   const navigateBrands2 = [
     {
       currentCategories: 138,
