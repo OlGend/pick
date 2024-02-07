@@ -65,19 +65,36 @@ const FilteredHome = () => {
 
    const [selectedBrand, setSelectedBrand] = useState(null);
    useEffect(() => {
-     const defLng = localStorage.getItem("country").toLowerCase();
-     setSelectedBrand(defLng);
-     if (defLng) {
-       const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng);
-       if (foundBrand) {
-         setSelectedBrand(foundBrand);
-       } else {
-         // Если локаль не найдена, устанавливаем "all"
-         const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
-         setSelectedBrand(allBrand);
-       }
-     }
-   }, []);
+    const defLng = localStorage.getItem("country");
+    if (defLng) {
+      const locale = defLng.toLowerCase();
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
+      setSelectedBrand(foundBrand);
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands2.find((brand) => brand.slug === "eny");
+        setSelectedBrand(allBrand);
+      }
+    } else {
+      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
+    }
+  }, []);
+
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: selectedBrand
+        ? {
+            flag: selectedBrand.icon,
+            allBrand: selectedBrand.currentCategories,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 },
+    }
+  );
    const navigateBrands2 = [
      {
        currentCategories: 138,
@@ -135,19 +152,7 @@ const FilteredHome = () => {
      },
    ];
    console.log("!!!!", selectedBrand);
-   const { data: languageDetails, error: detailsError } = useSWR(
-     "languageDetails",
-     null,
-     {
-       fallbackData: selectedBrand
-         ? {
-             flag: selectedBrand.icon,
-             allBrand: selectedBrand.currentCategories,
-             topBrand: selectedBrand.topCurrentCategories,
-           }
-         : { flag: "🌍", allBrand: 138, topBrand: 213 },
-     }
-   );
+
  
    //////////////////
 
@@ -158,6 +163,7 @@ const FilteredHome = () => {
           <div className="left flex flex-col justify-center basis-[60%]">
             <h2 className="">
             {t('filteredHome.title')}
+            
             </h2>
             <p className="mt-3 pb-4">
             {t('filteredHome.description')}

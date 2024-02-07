@@ -43,7 +43,7 @@ const GoogleTranslate = () => {
           setSelected(decodeURIComponent(getCookie("googtrans")));
         }
       }
-      // langChange(decodeURIComponent(selected));
+      langChange(decodeURIComponent(selected));
     }, [selected]);
     
 
