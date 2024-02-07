@@ -74,7 +74,7 @@ const FilteredHome = () => {
         setSelectedBrand(foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "eny");
+        const allBrand = navigateBrands2.find((brand) => brand.slug === "en");
         setSelectedBrand(allBrand);
       }
     } else {
