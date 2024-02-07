@@ -311,8 +311,8 @@ const FilteredPayments = () => {
     const defLng = localStorage.getItem("country");
     if (defLng) {
       const locale = defLng.toLowerCase();
-      setSelectedBrand(locale);
       const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
+      setSelectedBrand(foundBrand);
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
