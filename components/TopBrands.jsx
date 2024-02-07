@@ -15,8 +15,13 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
+
+
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
+
+
+  
 
   // Получаем текущий URL
 
@@ -44,32 +49,19 @@ export default function TopBrands() {
 
   
   const [selectedBrand, setSelectedBrand] = useState(null);
-
-useEffect(() => {
-    fetch(
-      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        localStorage.setItem("country", data.country);
-        const locale = data.country.toLowerCase();
-        if (locale) {
-          const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
-          if (foundBrand) {
-            setSelectedBrand(foundBrand);
-          } else {
-            // Если локаль не найдена, устанавливаем "all"
-            const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-            setSelectedBrand(allBrand);
-          }
-        }
-      })
-      .catch((error) => {
-        console.error("Ошибка при запросе к API:", error);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+  useEffect(() =>{
+    const defLng = localStorage.getItem("country");
+    // setSelectedBrand(defLng);
+    if (defLng) {
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng.toLowerCase());
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
+    }
   }, []);
 
 
@@ -281,3 +273,5 @@ useEffect(() => {
     </>
   );
 }
+
+

@@ -22,10 +22,10 @@ export default function NewBrands() {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() =>{
-    const defLng = localStorage.getItem("country").toLowerCase();
-    setSelectedBrand(defLng);
+    const defLng = localStorage.getItem("country");
+    // setSelectedBrand(defLng);
     if (defLng) {
-      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng);
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng.toLowerCase());
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {

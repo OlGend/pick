@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { getCookie, hasCookie, setCookie } from "cookies-next";
 
+
 const GoogleTranslate = () => {
   const languages = [
     { label: "English", value: "/auto/en", flag: "🌍" },
@@ -26,26 +27,24 @@ const GoogleTranslate = () => {
 
   let defLng;
   if (typeof window !== "undefined") {
-    
     defLng = localStorage.getItem("country");
   }
 
   const lowercaseDefLng =
     defLng && typeof defLng === "string" ? defLng.toLowerCase() : defLng;
 
-    const [selected, setSelected] = useState(`/auto/${lowercaseDefLng}`);
+  const [selected, setSelected] = useState(`/auto/en`);
 
-    useEffect(() => {
-      if (typeof window !== "undefined") {
-        loadGoogleTranslateScript();
-    
-        if (hasCookie("googtrans")) {
-          setSelected(decodeURIComponent(getCookie("googtrans")));
-        }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      loadGoogleTranslateScript();
+
+      if (hasCookie("googtrans")) {
+        setSelected(decodeURIComponent(getCookie("googtrans")));
       }
-      langChange(decodeURIComponent(selected));
-    }, [selected]);
-    
+    }
+    langChange(decodeURIComponent(selected));
+  }, [selected]);
 
   const loadGoogleTranslateScript = () => {
     if (typeof window !== "undefined") {
