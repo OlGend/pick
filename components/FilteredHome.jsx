@@ -162,11 +162,11 @@ const FilteredHome = () => {
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
             <h2 className="">
-            {t(`${filteredHome.title}`)}
-
+            {t('filteredHome.title')}
+            
             </h2>
             <p className="mt-3 pb-4">
-            {t(`${filteredHome.description}`)}
+            {t('filteredHome.description')}
             </p>
           </div>
    
