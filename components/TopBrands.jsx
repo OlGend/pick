@@ -45,20 +45,20 @@ export default function TopBrands() {
   
   const [selectedBrand, setSelectedBrand] = useState(null);
 
-useEffect(() => {
+  useEffect(() => {
     fetch(
       "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
     )
       .then((response) => response.json())
       .then((data) => {
-        localStorage.setItem("country", data.country);
-        const locale = data.country.toLowerCase();
-        if (locale) {
+        const country = data.country;
+        if (country) {
+          localStorage.setItem("country", country);
+          const locale = country.toLowerCase();
           const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
           if (foundBrand) {
             setSelectedBrand(foundBrand);
           } else {
-            // Если локаль не найдена, устанавливаем "all"
             const allBrand = navigateBrands.find((brand) => brand.slug === "all");
             setSelectedBrand(allBrand);
           }
@@ -71,6 +71,7 @@ useEffect(() => {
         setIsLoading(false);
       });
   }, []);
+  
 
 
 
