@@ -307,23 +307,7 @@ const FilteredPayments = () => {
   ////////////////////////new
 
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() => {
-    const defLng = localStorage.getItem("country");
-    if (defLng) {
-      const locale = defLng.toLowerCase();
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
-      setSelectedBrand(foundBrand);
-      if (foundBrand) {
-        setSelectedBrand(foundBrand);
-      } else {
-        // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
-        setSelectedBrand(allBrand);
-      }
-    } else {
-      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
-    }
-  }, []);
+
   const navigateBrands2 = [
     {
       currentCategories: 138,
@@ -394,6 +378,7 @@ const FilteredPayments = () => {
         : { flag: "🌍", allBrand: 138, topBrand: 213 },
     }
   );
+
   //////////////////
   return (
     <div className="main pt-10 pb-10 custom-bonuses filtered-payments">
