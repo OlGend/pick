@@ -65,17 +65,20 @@ const FilteredHome = () => {
 
    const [selectedBrand, setSelectedBrand] = useState(null);
    useEffect(() => {
-    const defLng = localStorage.getItem("country").toLowerCase();
-    setSelectedBrand(defLng ? defLng : "en");
+    const defLng = localStorage.getItem("country");
     if (defLng) {
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng);
+      const locale = defLng.toLowerCase();
+      setSelectedBrand(locale);
+      const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
         setSelectedBrand(allBrand);
       }
+    } else {
+      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
     }
   }, []);
 
