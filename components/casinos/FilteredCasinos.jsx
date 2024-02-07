@@ -88,7 +88,7 @@ const FilteredCasinos = () => {
         setSelectedBrand(allBrand);
       }
     } else {
-      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
+      setSelectedBrand("all"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
     }
   }, []);
   const navigateBrands2 = [
