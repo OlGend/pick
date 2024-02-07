@@ -7904,7 +7904,9 @@ p {
 .header .logo a:hover {
   background: transparent;
 }
-
+.brandContent .review-bonus {
+  max-height: 69px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .flex.mb-1 svg.mr-1 {
     min-width: 24px;
