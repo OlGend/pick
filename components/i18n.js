@@ -2,7 +2,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { parseCookies } from 'nookies';
+import { parseCookies, setCookie } from 'nookies';
 import enTranslation from "@/components/posts/en.json"; // Путь к файлу с английскими переводами
 import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
 import deTranslation from "@/components/posts/de.json"; // Путь к файлу с польскими переводами
@@ -3747,25 +3747,25 @@ const resources = {
   // Add translations for other languages here
 };
 
-let defLng;
 
+let defLng;
 if (typeof window !== "undefined") {
   defLng = localStorage.getItem("country");
-} else {
-  // For SSR, use nookies to get the cookie value
-  const cookies = parseCookies();
-  defLng = cookies.country;
 }
 
 const lowercaseDefLng = defLng && typeof defLng === 'string' ? defLng.toLowerCase() : defLng;
-const lng = lowercaseDefLng || 'all'; // Установка en, если значение отсутствует
+
+
+
+
+
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: lng, 
+    lng: "en", 
     interpolation: {
       escapeValue: false,
     },
