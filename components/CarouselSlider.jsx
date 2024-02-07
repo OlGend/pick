@@ -22,11 +22,10 @@ const CarouselSlider = ({ slides }) => {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() => {
-    const defLng = localStorage.getItem("country");
+    const defLng = localStorage.getItem("country").toLowerCase();
+    setSelectedBrand(defLng);
     if (defLng) {
-      const locale = defLng.toLowerCase();
-      setSelectedBrand(locale);
-      const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng);
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
@@ -34,8 +33,6 @@ const CarouselSlider = ({ slides }) => {
         const allBrand = navigateBrands.find((brand) => brand.slug === "all");
         setSelectedBrand(allBrand);
       }
-    } else {
-      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
     }
   }, []);
   const navigateBrands = [
