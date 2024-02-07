@@ -35,7 +35,7 @@ export default function NewBrands() {
         setSelectedBrand(allBrand);
       }
     } else {
-      setSelectedBrand("all"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
+      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
     }
   }, []);
   const navigateBrands = [
