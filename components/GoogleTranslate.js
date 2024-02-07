@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { getCookie, hasCookie, setCookie } from "cookies-next";
-
 const GoogleTranslate = () => {
   const languages = [
     { label: "English", value: "/auto/en", flag: "🌍" },
@@ -23,13 +22,11 @@ const GoogleTranslate = () => {
     { label: "Slovenčina", value: "/auto/sk", flag: "🇸🇰" },
     { label: "Türkçe", value: "/auto/tr", flag: "🇹🇷" },
   ];
-
   let defLng;
   if (typeof window !== "undefined") {
     
     defLng = localStorage.getItem("country");
   }
-
   const lowercaseDefLng =
     defLng && typeof defLng === "string" ? defLng.toLowerCase() : defLng;
 
@@ -37,6 +34,17 @@ const GoogleTranslate = () => {
 
     useEffect(() => {
       if (typeof window !== "undefined") {
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
         loadGoogleTranslateScript();
     
         if (hasCookie("googtrans")) {
@@ -46,7 +54,6 @@ const GoogleTranslate = () => {
       langChange(decodeURIComponent(selected));
     }, [selected]);
     
-
   const loadGoogleTranslateScript = () => {
     if (typeof window !== "undefined") {
       const addScript = document.createElement("script");
@@ -57,7 +64,6 @@ const GoogleTranslate = () => {
       window.googleTranslateElementInit = googleTranslateElementInit;
     }
   };
-
   const googleTranslateElementInit = () => {
     if (typeof window !== "undefined") {
       new window.google.translate.TranslateElement(
@@ -72,12 +78,10 @@ const GoogleTranslate = () => {
       );
     }
   };
-
   const langChange = (e) => {
     setCookie("googtrans", decodeURI(e));
     setSelected(e);
   };
-
   return (
     <>
       {typeof window !== "undefined" && (
@@ -111,5 +115,4 @@ const GoogleTranslate = () => {
     </>
   );
 };
-
 export default GoogleTranslate;

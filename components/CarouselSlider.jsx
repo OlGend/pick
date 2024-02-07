@@ -22,15 +22,19 @@ const CarouselSlider = ({ slides }) => {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() => {
-    const defLng = localStorage.getItem("country");
-    console.log("DEFLNG", defLng);
+    const defLng = localStorage.getItem("country").toLowerCase();
+    setSelectedBrand(defLng);
     if (defLng) {
-      const locale = defLng.toLowerCase();
-      const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
-      console.log("FOUND", foundBrand)
-      setSelectedBrand(foundBrand || navigateBrands.find((brand) => brand.slug === "all"));
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng);
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
     }
-  }, [localStorage.getItem("country")]); 
+  }, []);
   const navigateBrands = [
     {
       currentCategories: 138,

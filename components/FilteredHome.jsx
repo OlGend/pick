@@ -132,18 +132,14 @@ const FilteredHome = () => {
    ];
    console.log("!!!!", selectedBrand);
    const { data: languageDetails, error: detailsError } = useSWR(
-     "languageDetails",
-     null,
-     {
-       fallbackData: selectedBrand
-         ? {
-             flag: selectedBrand.icon,
-             allBrand: selectedBrand.currentCategories,
-             topBrand: selectedBrand.topCurrentCategories,
-           }
-         : { flag: "🌍", allBrand: 138, topBrand: 213 },
-     }
-   );
+    "languageDetails",
+    null,
+    {
+      fallbackData: selectedBrand
+        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+    }
+  );
  
    //////////////////
 
