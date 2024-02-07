@@ -70,21 +70,14 @@ const FilteredBonuses = () => {
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() => {
     const defLng = localStorage.getItem("country");
+    console.log("DEFLNG", defLng);
     if (defLng) {
       const locale = defLng.toLowerCase();
       const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
-      setSelectedBrand(foundBrand);
-      if (foundBrand) {
-        setSelectedBrand(foundBrand);
-      } else {
-        // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "en");
-        setSelectedBrand(allBrand);
-      }
-    } else {
-      setSelectedBrand("en"); // Устанавливаем значение по умолчанию, если ключ "country" отсутствует в localStorage
+      console.log("FOUND", foundBrand)
+      setSelectedBrand(foundBrand || navigateBrands2.find((brand) => brand.slug === "all"));
     }
-  }, []);
+  }, [localStorage.getItem("country")]); 
   const navigateBrands2 = [
     {
       currentCategories: 138,
@@ -147,12 +140,8 @@ const FilteredBonuses = () => {
     null,
     {
       fallbackData: selectedBrand
-        ? {
-            flag: selectedBrand.icon,
-            allBrand: selectedBrand.currentCategories,
-            topBrand: selectedBrand.topCurrentCategories,
-          }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 },
+        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
   ///////////////////

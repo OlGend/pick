@@ -3765,7 +3765,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: lowercaseDefLng, 
+    lng: lowercaseDefLng ? lowercaseDefLng : "en", 
     interpolation: {
       escapeValue: false,
     },

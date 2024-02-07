@@ -307,7 +307,16 @@ const FilteredPayments = () => {
   ////////////////////////new
 
   const [selectedBrand, setSelectedBrand] = useState(null);
-
+  useEffect(() => {
+    const defLng = localStorage.getItem("country");
+    console.log("DEFLNG", defLng);
+    if (defLng) {
+      const locale = defLng.toLowerCase();
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
+      console.log("FOUND", foundBrand)
+      setSelectedBrand(foundBrand || navigateBrands2.find((brand) => brand.slug === "all"));
+    }
+  }, [localStorage.getItem("country")]); 
   const navigateBrands2 = [
     {
       currentCategories: 138,
