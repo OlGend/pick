@@ -235,7 +235,7 @@ const FilteredProviders = () => {
   };
 
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() =>{
+  useEffect(() => {
     const defLng = localStorage.getItem("country").toLowerCase();
     setSelectedBrand(defLng);
     if (defLng) {
@@ -311,8 +311,12 @@ const FilteredProviders = () => {
     null,
     {
       fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+        ? {
+            flag: selectedBrand.icon,
+            allBrand: selectedBrand.currentCategories,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 },
     }
   );
 

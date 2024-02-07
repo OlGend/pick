@@ -21,7 +21,7 @@ import useSWR from "swr";
 export default function NewBrands() {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() =>{
+  useEffect(() => {
     const defLng = localStorage.getItem("country").toLowerCase();
     setSelectedBrand(defLng);
     if (defLng) {
@@ -97,8 +97,12 @@ export default function NewBrands() {
     null,
     {
       fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+        ? {
+            flag: selectedBrand.icon,
+            allBrand: selectedBrand.currentCategories,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 },
     }
   );
   const filteredBrands = useTopBrandsFilter(214, languageDetails.allBrand);

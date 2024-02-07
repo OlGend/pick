@@ -391,7 +391,6 @@ const FilteredPayments = () => {
         : { flag: "🌍", allBrand: 138, topBrand: 213 },
     }
   );
-
   //////////////////
   return (
     <div className="main pt-10 pb-10 custom-bonuses filtered-payments">
