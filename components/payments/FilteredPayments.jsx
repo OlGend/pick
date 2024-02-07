@@ -317,7 +317,7 @@ const FilteredPayments = () => {
         setSelectedBrand(foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "en");
+        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
         setSelectedBrand(allBrand);
       }
     } else {

@@ -31,7 +31,7 @@ export default function NewBrands() {
         setSelectedBrand(foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands.find((brand) => brand.slug === "en");
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
         setSelectedBrand(allBrand);
       }
     } else {
