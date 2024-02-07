@@ -3758,7 +3758,7 @@ if (typeof window !== "undefined") {
 }
 
 const lowercaseDefLng = defLng && typeof defLng === 'string' ? defLng.toLowerCase() : defLng;
-const lng = lowercaseDefLng || 'en'; // Установка en, если значение отсутствует
+const lng = lowercaseDefLng || 'all'; // Установка en, если значение отсутствует
 
 i18n
   .use(LanguageDetector)
