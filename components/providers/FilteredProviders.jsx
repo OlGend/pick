@@ -237,7 +237,7 @@ const FilteredProviders = () => {
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() => {
     const defLng = localStorage.getItem("country").toLowerCase();
-    setSelectedBrand(defLng);
+    setSelectedBrand(defLng ? defLng : "en");
     if (defLng) {
       const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng);
       if (foundBrand) {
