@@ -53,7 +53,7 @@ export default function TopBrands() {
       .then((data) => {
         const country = data.country;
         if (country) {
-          localStorage.setItem("country", country);
+          localStorage.setItem("country", country ? country : "en");
           const locale = country.toLowerCase();
           const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
           if (foundBrand) {
