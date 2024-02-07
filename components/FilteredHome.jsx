@@ -69,12 +69,12 @@ const FilteredHome = () => {
     if (defLng) {
       const locale = defLng.toLowerCase();
       setSelectedBrand(locale);
-      const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
         setSelectedBrand(allBrand);
       }
     } else {
