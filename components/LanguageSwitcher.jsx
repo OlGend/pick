@@ -145,6 +145,7 @@ const LanguageSwitcher = () => {
   ];
 
   const newLng = source === "partner1039" ? availableLanguages : availableLanguagesPartners;
+  console.log("NEWLNG", newLng)
   // Обработка ошибок для selectedLanguage и languageDetails
   if (error || detailsError) return <div>Failed to load</div>;
 

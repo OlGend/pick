@@ -52,16 +52,12 @@ export default function TopBrands() {
       const foundBrandPartners = navigateBrandsPartners.find(
         (brand) => brand.slug === defLng.toLowerCase()
       );
-      if (foundBrand || foundBrandPartners) {
-        setSelectedBrand(
-          source === "partner139" ? foundBrandPartners : foundBrand
-        );
+      if (foundBrand || foundBrand2) {
+        setSelectedBrand(source === "partner139" ? foundBrandPartners : foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
         const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-        const allBrandPartners = navigateBrandsPartners.find(
-          (brand) => brand.slug === "all"
-        );
+        const allBrandPartners = navigateBrandsPartners.find((brand) => brand.slug === "all");
         setSelectedBrand(source === "partner139" ? allBrandPartners : allBrand);
       }
     }
@@ -166,7 +162,7 @@ export default function TopBrands() {
       slug: "all",
     },
     {
-      topCurrentCategories: 251,
+      topCurrentCategories: 223,
       icon: "🇦🇺",
       slug: "au",
     },
@@ -218,10 +214,14 @@ export default function TopBrands() {
         : { flag: "🌍", topBrand: 222 },
     }
   );
-  
+  const urlBrands = source === "partner1039" ? 248 : 221;
 
-  const filteredBrands = useTopBrandsFilter(221, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(
+    221,
+    languageDetails.topBrand
+  );
   const { t } = useTranslation();
+
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -240,7 +240,7 @@ export default function TopBrands() {
       setIsLoading(false);
     }, 1000);
   };
-
+  console.log("WWWW", urlBrands, languageDetails.topBrand);
   return (
     <>
       {loading ? (
