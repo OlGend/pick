@@ -7,7 +7,7 @@ import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
-import { useTopBrandsFilter } from "@/components/useBrands";
+import { useTopBrandsFilter } from "@/components/useBrandsNew";
 
 import {
   extractReviewBonus,
@@ -21,6 +21,7 @@ import useSWR from "swr";
 export default function NewBrands() {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
+  const [source, setSource] = useState("");
   useEffect(() =>{
     const defLng = localStorage.getItem("country");
     // setSelectedBrand(defLng);
@@ -35,73 +36,103 @@ export default function NewBrands() {
       }
     }
   }, []);
+  const urlBrands = source === "partner1039" ? 219 : 218;
   const navigateBrands = [
     {
-      currentCategories: 138,
-      topCurrentCategories: 213,
+      currentCategories: urlBrands,
+      topCurrentCategories: 222,
       icon: "🌍",
       slug: "all",
     },
     {
-      currentCategories: 143,
-      topCurrentCategories: 184,
+      currentCategories: urlBrands,
+      topCurrentCategories: 223,
       icon: "🇦🇺",
       slug: "au",
     },
     {
-      currentCategories: 119,
-      topCurrentCategories: 84,
-      icon: "🇧🇷",
-      slug: "br",
-    },
-    {
-      currentCategories: 120,
-      topCurrentCategories: 46,
+      currentCategories: urlBrands,
+      topCurrentCategories: 224,
       icon: "🇨🇦",
       slug: "ca",
     },
     {
-      currentCategories: 121,
-      topCurrentCategories: 43,
+      currentCategories: urlBrands,
+      topCurrentCategories: 228,
       icon: "🇫🇮",
       slug: "fi",
     },
     {
-      currentCategories: 122,
-      topCurrentCategories: 45,
+      currentCategories: urlBrands,
+      topCurrentCategories: 226,
       icon: "🇩🇪",
       slug: "de",
     },
     {
-      currentCategories: 123,
-      topCurrentCategories: 47,
+      currentCategories: urlBrands,
+      topCurrentCategories: 231,
       icon: "🇳🇿",
       slug: "nz",
     },
     {
-      currentCategories: 124,
-      topCurrentCategories: 44,
+      currentCategories: urlBrands,
+      topCurrentCategories: 230,
       icon: "🇳🇴",
       slug: "no",
     },
     {
-      currentCategories: 125,
-      topCurrentCategories: 48,
+      currentCategories: urlBrands,
+      topCurrentCategories: 232,
       icon: "🇵🇱",
       slug: "pl",
     },
   ];
-  console.log("!!!!", selectedBrand)
+  
+  useEffect(() => {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const urlObj = typeof window !== "undefined" ? new URL(url) : null;
+
+    const searchParams = new URLSearchParams(urlObj.search);
+    searchParams.delete("brand");
+
+    const currentKeyword = searchParams.get("keyword");
+
+    if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
+      // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
+      const partnerIndex = currentKeyword.indexOf("partner");
+      const partnerText = currentKeyword.substring(
+        partnerIndex,
+        partnerIndex + 11
+      ); // 11 - длина "partner1039" или "partner1041"
+      setSource(partnerText);
+
+      // Используем "partner1039" или "partner1041" в newUrl
+      searchParams.set("source", partnerText);
+    } else {
+      // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
+      setSource("0");
+      searchParams.set("source", "0");
+      // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
+      // searchParams.delete("source");
+    }
+
+  }, []);
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
       fallbackData: selectedBrand
         ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+        : { flag: "🌍", allBrand: urlBrands, topBrand: 222 }
     }
   );
-  const filteredBrands = useTopBrandsFilter(214, languageDetails.allBrand);
+  
+
+  const filteredBrands = useTopBrandsFilter(
+    urlBrands,
+    220,
+    languageDetails.topBrand
+  );
 
   const [isLoading, setIsLoading] = useState(false);
 

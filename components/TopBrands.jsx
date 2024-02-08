@@ -6,7 +6,7 @@ import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
-import { useTopBrandsFilter } from "@/components/useBrands";
+import { useTopBrandsFilter } from "@/components/useBrandsNew";
 import {
   extractReviewBonus,
   extractReviewImage,
@@ -15,13 +15,8 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
-
-
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
-
-
-  
 
   // Получаем текущий URL
 
@@ -46,14 +41,14 @@ export default function TopBrands() {
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
 
-
-  
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() =>{
+  useEffect(() => {
     const defLng = localStorage.getItem("country");
     // setSelectedBrand(defLng);
     if (defLng) {
-      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng.toLowerCase());
+      const foundBrand = navigateBrands.find(
+        (brand) => brand.slug === defLng.toLowerCase()
+      );
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
@@ -63,8 +58,6 @@ export default function TopBrands() {
       }
     }
   }, []);
-
-
 
   useEffect(() => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -118,65 +111,57 @@ export default function TopBrands() {
 
   const navigateBrands = [
     {
-      currentCategories: 138,
-      topCurrentCategories: 213,
+      currentCategories: 221,
+      topCurrentCategories: 222,
       icon: "🌍",
       slug: "all",
     },
     {
-      currentCategories: 143,
-      topCurrentCategories: 184,
+      currentCategories: 221,
+      topCurrentCategories: 223,
       icon: "🇦🇺",
       slug: "au",
     },
     {
-      currentCategories: 119,
-      topCurrentCategories: 84,
-      icon: "🇧🇷",
-      slug: "br",
-    },
-    {
-      currentCategories: 120,
-      topCurrentCategories: 46,
+      currentCategories: 221,
+      topCurrentCategories: 224,
       icon: "🇨🇦",
       slug: "ca",
     },
     {
-      currentCategories: 121,
-      topCurrentCategories: 43,
+      currentCategories: 221,
+      topCurrentCategories: 228,
       icon: "🇫🇮",
       slug: "fi",
     },
     {
-      currentCategories: 122,
-      topCurrentCategories: 45,
+      currentCategories: 221,
+      topCurrentCategories: 226,
       icon: "🇩🇪",
       slug: "de",
     },
     {
-      currentCategories: 123,
-      topCurrentCategories: 47,
+      currentCategories: 221,
+      topCurrentCategories: 231,
       icon: "🇳🇿",
       slug: "nz",
     },
     {
-      currentCategories: 124,
-      topCurrentCategories: 44,
+      currentCategories: 221,
+      topCurrentCategories: 230,
       icon: "🇳🇴",
       slug: "no",
     },
     {
-      currentCategories: 125,
-      topCurrentCategories: 48,
+      currentCategories: 221,
+      topCurrentCategories: 232,
       icon: "🇵🇱",
       slug: "pl",
     },
   ];
 
- 
   ///////////////NEW CODE//////////////////////////////
 
- 
   const [loading, setLoading] = useState(true);
 
   const { data: languageDetails, error: detailsError } = useSWR(
@@ -184,16 +169,22 @@ export default function TopBrands() {
     null,
     {
       fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+        ? {
+            flag: selectedBrand.icon,
+            allBrand: selectedBrand.currentCategories,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", allBrand: 221, topBrand: 222 },
     }
   );
-  const urlBrands = source === "partner1039" ? 21 : 213;
+  const urlBrands = source === "partner1039" ? 219 : 218;
 
   const filteredBrands = useTopBrandsFilter(
     urlBrands,
-    languageDetails.allBrand
+    languageDetails.allBrand,
+    languageDetails.topBrand
   );
+  console.log(urlBrands, languageDetails.allBrand, languageDetails.topBrand)
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -204,7 +195,7 @@ export default function TopBrands() {
     }
   }, [filteredBrands]);
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const handleLinkClick = () => {
     setIsLoading(true);
 
@@ -274,5 +265,3 @@ export default function TopBrands() {
     </>
   );
 }
-
-
