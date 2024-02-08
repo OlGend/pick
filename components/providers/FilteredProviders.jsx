@@ -236,10 +236,10 @@ const FilteredProviders = () => {
 
   const [selectedBrand, setSelectedBrand] = useState(null);
   useEffect(() =>{
-    const defLng = localStorage.getItem("country").toLowerCase();
-    setSelectedBrand(defLng);
+    const defLng = localStorage.getItem("country");
+    // setSelectedBrand(defLng);
     if (defLng) {
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng);
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng.toLowerCase());
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
@@ -305,7 +305,6 @@ const FilteredProviders = () => {
       slug: "pl",
     },
   ];
-  console.log("!!!!", selectedBrand)
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,

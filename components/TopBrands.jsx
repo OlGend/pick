@@ -1,6 +1,6 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -176,7 +176,7 @@ export default function TopBrands() {
  
   ///////////////NEW CODE//////////////////////////////
 
-  const { t } = useTranslation();
+ 
   const [loading, setLoading] = useState(true);
 
   const { data: languageDetails, error: detailsError } = useSWR(
@@ -194,6 +194,7 @@ export default function TopBrands() {
     urlBrands,
     languageDetails.allBrand
   );
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -203,7 +204,7 @@ export default function TopBrands() {
     }
   }, [filteredBrands]);
   const [isLoading, setIsLoading] = useState(false);
-
+  
   const handleLinkClick = () => {
     setIsLoading(true);
 
