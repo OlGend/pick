@@ -20,7 +20,7 @@ export default async function Home() {
       {/* <PreviewHome /> */}
       <div className="background-block">
         <TopBrands />
-        {/* <NewBrands /> */}
+        <NewBrands />
       </div>
       {/* <ReviewBrands />
       <FilteredHome /> */}
