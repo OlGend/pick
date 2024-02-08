@@ -307,11 +307,11 @@ const FilteredPayments = () => {
   ////////////////////////new
 
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() => {
-    const defLng = localStorage.getItem("country").toLowerCase();
-    setSelectedBrand(defLng);
+  useEffect(() =>{
+    const defLng = localStorage.getItem("country");
+    // setSelectedBrand(defLng);
     if (defLng) {
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng);
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng.toLowerCase());
       if (foundBrand) {
         setSelectedBrand(foundBrand);
       } else {
@@ -377,18 +377,13 @@ const FilteredPayments = () => {
       slug: "pl",
     },
   ];
-  console.log("!!!!", selectedBrand);
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
       fallbackData: selectedBrand
-        ? {
-            flag: selectedBrand.icon,
-            allBrand: selectedBrand.currentCategories,
-            topBrand: selectedBrand.topCurrentCategories,
-          }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 },
+        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
 

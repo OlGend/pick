@@ -1,6 +1,6 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -15,8 +15,13 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
+
+
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
+
+
+  
 
   // Получаем текущий URL
 
@@ -44,33 +49,19 @@ export default function TopBrands() {
 
   
   const [selectedBrand, setSelectedBrand] = useState(null);
-
-useEffect(() => {
-    fetch(
-      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        localStorage.setItem("country", data.country);
-        const locale = data.country.toLowerCase();
-        console.log("ЗАПИСЬ В ЛОКАЛСТОРЕЙДЖ", locale)
-        if (locale) {
-          const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
-          if (foundBrand) {
-            setSelectedBrand(foundBrand);
-          } else {
-            // Если локаль не найдена, устанавливаем "all"
-            const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-            setSelectedBrand(allBrand);
-          }
-        }
-      })
-      .catch((error) => {
-        console.error("Ошибка при запросе к API:", error);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+  useEffect(() =>{
+    const defLng = localStorage.getItem("country");
+    // setSelectedBrand(defLng);
+    if (defLng) {
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng.toLowerCase());
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
+    }
   }, []);
 
 
@@ -185,7 +176,7 @@ useEffect(() => {
  
   ///////////////NEW CODE//////////////////////////////
 
-  const { t } = useTranslation();
+ 
   const [loading, setLoading] = useState(true);
 
   const { data: languageDetails, error: detailsError } = useSWR(
@@ -197,13 +188,13 @@ useEffect(() => {
         : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
-  
   const urlBrands = source === "partner1039" ? 21 : 213;
 
   const filteredBrands = useTopBrandsFilter(
     urlBrands,
     languageDetails.allBrand
   );
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -213,7 +204,7 @@ useEffect(() => {
     }
   }, [filteredBrands]);
   const [isLoading, setIsLoading] = useState(false);
-
+  
   const handleLinkClick = () => {
     setIsLoading(true);
 
@@ -283,3 +274,5 @@ useEffect(() => {
     </>
   );
 }
+
+

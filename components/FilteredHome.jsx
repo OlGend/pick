@@ -64,16 +64,21 @@ const FilteredHome = () => {
    ////////////////////////new
 
    const [selectedBrand, setSelectedBrand] = useState(null);
-   useEffect(() => {
+   useEffect(() =>{
     const defLng = localStorage.getItem("country");
-    console.log("DEFLNG", defLng);
+    // setSelectedBrand(defLng);
     if (defLng) {
-      const locale = defLng.toLowerCase();
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === locale);
-      console.log("FOUND", foundBrand)
-      setSelectedBrand(foundBrand || navigateBrands2.find((brand) => brand.slug === "all"));
+      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng.toLowerCase());
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
     }
-  }, [localStorage.getItem("country")]); 
+  }, []);
+
    const navigateBrands2 = [
      {
        currentCategories: 138,

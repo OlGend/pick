@@ -6186,9 +6186,6 @@ h1 {
 }
 
 @media (min-width: 1260px) and (max-width: 1920px) {
-  .review-badge {
-    margin-right: 10px;
-  }
   .language-switcher {
     width: initial !important;
   }
@@ -6526,7 +6523,6 @@ h2 {
   border: 1px solid #65676a;
   color: #65676a;
   font-size: 13px;
-  line-height: 16px;
 }
 .btn-secondary:hover {
   border-color: #128722;
@@ -6627,13 +6623,11 @@ body {
 .review-badge {
   font-weight: 700;
   font-size: 12px;
-  line-height: 16px;
   color: #fff;
   padding: 8px 10px 5px;
   /* display: block; */
   margin-top: 2px;
 }
-
 .button-tab {
   border: 1px solid rgba(123, 140, 152, 0.1);
   background: rgba(255, 255, 255);
@@ -7904,17 +7898,8 @@ p {
 .header .logo a:hover {
   background: transparent;
 }
-.brandContent .review-bonus {
-  /* max-height: 69px; */
 
-}
 @media (min-width: 320px) and (max-width: 767px) {
-  .flex.mb-1 svg.mr-1 {
-    min-width: 24px;
-  }
-  .withdrawal .wp-block-column ul li {
-    width: 100%;
-  }
   .footer-top .main__container {
     flex-wrap: wrap;
   }

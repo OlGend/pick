@@ -1,8 +1,7 @@
 // i18n.js
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { parseCookies, setCookie } from 'nookies';
+import { initReactI18next } from "react-i18next";
 import enTranslation from "@/components/posts/en.json"; // Путь к файлу с английскими переводами
 import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
 import deTranslation from "@/components/posts/de.json"; // Путь к файлу с польскими переводами
@@ -3747,47 +3746,36 @@ const resources = {
   // Add translations for other languages here
 };
 
+// export default i18n;
+async function initializeI18n() {
+  let defLng;
 
-let defLng;
-if (typeof window !== "undefined") {
-  defLng = localStorage.getItem("country");
+  // Получаем данные о стране с API
+  try {
+    const response = await fetch(
+      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
+    );
+    const data = await response.json();
+    localStorage.setItem("country", data.country);
+    defLng = data.country.toLowerCase();
+  } catch (error) {
+    console.error("Ошибка при запросе к API:", error);
+    defLng = "en"; // В случае ошибки устанавливаем язык по умолчанию
+  }
+
+  // Инициализируем i18n
+  await i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      resources,
+      lng: defLng,
+      interpolation: {
+        escapeValue: false,
+      },
+    });
 }
 
-const lowercaseDefLng = defLng && typeof defLng === 'string' ? defLng.toLowerCase() : defLng;
-
-
-
-
-
-
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: lowercaseDefLng ? lowercaseDefLng : "en", 
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+initializeI18n();
 
 export default i18n;
-// i18n
-//   .use(LanguageDetector)
-//   .use(initReactI18next)
-//   .init({
-//     resources,
-//     fallbackLng: lowercaseDefLng, // Язык по умолчанию, если язык не определен
-//     interpolation: {
-//       escapeValue: false,
-//     },
-//     detection: {
-//       order: ['cookie', 'navigator', 'htmlTag'], // Порядок, в котором детектор будет определять язык
-//       caches: ['cookie'], // Сохранение выбранного языка в cookies
-//       cookieMinutes: 60, // Время жизни cookie
-//       lookupCookie: 'i18next', // Имя cookie для хранения языка пользователя
-//       // Другие параметры детектора
-//     },
-//   });
-
-// export default i18n;

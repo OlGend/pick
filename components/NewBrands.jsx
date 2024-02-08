@@ -21,17 +21,20 @@ import useSWR from "swr";
 export default function NewBrands() {
   const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() => {
+  useEffect(() =>{
     const defLng = localStorage.getItem("country");
-    console.log("DEFLNG", defLng);
+    // setSelectedBrand(defLng);
     if (defLng) {
-      const locale = defLng.toLowerCase();
-      const foundBrand = navigateBrands.find((brand) => brand.slug === locale);
-      console.log("FOUND", foundBrand)
-      setSelectedBrand(foundBrand || navigateBrands.find((brand) => brand.slug === "all"));
+      const foundBrand = navigateBrands.find((brand) => brand.slug === defLng.toLowerCase());
+      if (foundBrand) {
+        setSelectedBrand(foundBrand);
+      } else {
+        // Если локаль не найдена, устанавливаем "all"
+        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
+        setSelectedBrand(allBrand);
+      }
     }
-  }, [localStorage.getItem("country")]); 
-
+  }, []);
   const navigateBrands = [
     {
       currentCategories: 138,
@@ -88,8 +91,7 @@ export default function NewBrands() {
       slug: "pl",
     },
   ];
-  console.log("SELECTED", selectedBrand)
-
+  console.log("!!!!", selectedBrand)
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -99,9 +101,6 @@ export default function NewBrands() {
         : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
-  console.log("DETAILS", languageDetails)
-
-
   const filteredBrands = useTopBrandsFilter(214, languageDetails.allBrand);
 
   const [isLoading, setIsLoading] = useState(false);
