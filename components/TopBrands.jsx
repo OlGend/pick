@@ -52,7 +52,7 @@ export default function TopBrands() {
       const foundBrandPartners = navigateBrandsPartners.find(
         (brand) => brand.slug === defLng.toLowerCase()
       );
-      if (foundBrand || foundBrand2) {
+      if (foundBrand || foundBrandPartners) {
         setSelectedBrand(
           source === "partner139" ? foundBrandPartners : foundBrand
         );
