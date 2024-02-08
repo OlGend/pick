@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useSWR, { mutate } from "swr";
 import { useTranslation } from "react-i18next";
 import Loader from "@/components/Loader";
@@ -24,6 +24,40 @@ const LanguageSwitcher = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const [source, setSource] = useState("");
+  useEffect(() => {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const urlObj = typeof window !== "undefined" ? new URL(url) : null;
+
+    const searchParams = new URLSearchParams(urlObj.search);
+    searchParams.delete("brand");
+
+    const currentKeyword = searchParams.get("keyword");
+
+    if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
+      // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
+      const partnerIndex = currentKeyword.indexOf("partner");
+      const partnerText = currentKeyword.substring(
+        partnerIndex,
+        partnerIndex + 11
+      ); // 11 - длина "partner1039" или "partner1041"
+      setSource(partnerText);
+
+      // Используем "partner1039" или "partner1041" в newUrl
+      searchParams.set("source", partnerText);
+    } else {
+      // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
+      setSource("0");
+      searchParams.set("source", "0");
+      // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
+      // searchParams.delete("source");
+    }
+
+ 
+  }, []);
+
+  
+
   // Если данные еще не загрузились, показываем индикатор загрузки
   if (!selectedLanguage || !languageDetails) {
     return <Loader />;
@@ -46,6 +80,10 @@ const LanguageSwitcher = () => {
       setIsLoading(false);
     }
   };
+
+
+
+  
 
   const availableLanguages = [
     { code: "en", label: "World", flag: "🌍", topBrand: 222 }, //
@@ -76,6 +114,37 @@ const LanguageSwitcher = () => {
     },
     // Добавьте другие языки по аналогии
   ];
+  const availableLanguagesPartners = [
+    { code: "en", label: "World", flag: "🌍", topBrand: 250 }, //
+    { code: "pl", label: "Poland", flag: "🇵🇱", topBrand: 232 }, //
+    { code: "no", label: "Norway", flag: "🇳🇴", topBrand: 230 }, //
+    {
+      code: "au",
+      label: "Australia",
+      flag: "🇦🇺",
+
+      topBrand: 251,
+    }, //
+    { code: "ca", label: "Canada", flag: "🇨🇦", topBrand: 224 }, //
+    {
+      code: "nz",
+      label: "New Zealand",
+      flag: "🇳🇿",
+
+      topBrand: 231,
+    }, //
+    { code: "de", label: "Germany", flag: "🇩🇪", topBrand: 226 }, //
+    {
+      code: "fi",
+      label: "Finland",
+      flag: "🇫🇮",
+
+      topBrand: 228,
+    },
+    // Добавьте другие языки по аналогии
+  ];
+
+  const newLng = source === "partner1039" ? availableLanguages : availableLanguagesPartners;
   // Обработка ошибок для selectedLanguage и languageDetails
   if (error || detailsError) return <div>Failed to load</div>;
 
@@ -86,7 +155,7 @@ const LanguageSwitcher = () => {
         className={`${selectedLanguage}`}
         value={selectedLanguage}
         onChange={(e) => {
-          const selected = availableLanguages.find(
+          const selected = newLng.find(
             (lang) => lang.code === e.target.value
           );
           if (selected) {
@@ -94,7 +163,7 @@ const LanguageSwitcher = () => {
           }
         }}
       >
-        {availableLanguages.map((language) => (
+        {newLng.map((language) => (
           <option
             className={`${language.code} notranslate`}
             key={language.code}
