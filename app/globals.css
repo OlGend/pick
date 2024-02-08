@@ -6239,6 +6239,9 @@ h1 {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .withdrawal .wp-block-columns li {
+    width: 100%;
+  }
   header .language-switcher {
     display: none !important;
   }
