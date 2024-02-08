@@ -26,6 +26,9 @@ body {
   height: 100%;
   min-width: 320px;
 }
+.dialog-overlay {
+display: none !important;
+}
 .skiptranslate {
   display: none !important;
 }

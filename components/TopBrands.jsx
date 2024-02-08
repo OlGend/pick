@@ -6,7 +6,7 @@ import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
-import { useTopBrandsFilter } from "@/components/useBrandsNew";
+import { useTopBrandsFilter } from "@/components/useBrands";
 import {
   extractReviewBonus,
   extractReviewImage,
@@ -49,12 +49,16 @@ export default function TopBrands() {
       const foundBrand = navigateBrands.find(
         (brand) => brand.slug === defLng.toLowerCase()
       );
-      if (foundBrand) {
-        setSelectedBrand(foundBrand);
+      const foundBrandPartners = navigateBrandsPartners.find(
+        (brand) => brand.slug === defLng.toLowerCase()
+      );
+      if (foundBrand || foundBrand2) {
+        setSelectedBrand(source === "partner139" ? foundBrandPartners : foundBrand);
       } else {
         // Если локаль не найдена, устанавливаем "all"
         const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-        setSelectedBrand(allBrand);
+        const allBrandPartners = navigateBrandsPartners.find((brand) => brand.slug === "all");
+        setSelectedBrand(source === "partner139" ? allBrandPartners : allBrand);
       }
     }
   }, []);
@@ -111,49 +115,83 @@ export default function TopBrands() {
 
   const navigateBrands = [
     {
-      currentCategories: 221,
       topCurrentCategories: 222,
       icon: "🌍",
       slug: "all",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 223,
       icon: "🇦🇺",
       slug: "au",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 224,
       icon: "🇨🇦",
       slug: "ca",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 228,
       icon: "🇫🇮",
       slug: "fi",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 226,
       icon: "🇩🇪",
       slug: "de",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 231,
       icon: "🇳🇿",
       slug: "nz",
     },
     {
-      currentCategories: 221,
       topCurrentCategories: 230,
       icon: "🇳🇴",
       slug: "no",
     },
     {
-      currentCategories: 221,
+      topCurrentCategories: 232,
+      icon: "🇵🇱",
+      slug: "pl",
+    },
+  ];
+  const navigateBrandsPartners = [
+    {
+      topCurrentCategories: 250,
+      icon: "🌍",
+      slug: "all",
+    },
+    {
+      topCurrentCategories: 223,
+      icon: "🇦🇺",
+      slug: "au",
+    },
+    {
+      topCurrentCategories: 224,
+      icon: "🇨🇦",
+      slug: "ca",
+    },
+    {
+      topCurrentCategories: 228,
+      icon: "🇫🇮",
+      slug: "fi",
+    },
+    {
+      topCurrentCategories: 226,
+      icon: "🇩🇪",
+      slug: "de",
+    },
+    {
+      topCurrentCategories: 231,
+      icon: "🇳🇿",
+      slug: "nz",
+    },
+    {
+      topCurrentCategories: 230,
+      icon: "🇳🇴",
+      slug: "no",
+    },
+    {
       topCurrentCategories: 232,
       icon: "🇵🇱",
       slug: "pl",
@@ -171,21 +209,19 @@ export default function TopBrands() {
       fallbackData: selectedBrand
         ? {
             flag: selectedBrand.icon,
-            allBrand: selectedBrand.currentCategories,
             topBrand: selectedBrand.topCurrentCategories,
           }
-        : { flag: "🌍", allBrand: 221, topBrand: 222 },
+        : { flag: "🌍", topBrand: 222 },
     }
   );
-  const urlBrands = source === "partner1039" ? 219 : 218;
+  const urlBrands = source === "partner1039" ? 248 : 221;
 
   const filteredBrands = useTopBrandsFilter(
     urlBrands,
-    languageDetails.allBrand,
     languageDetails.topBrand
   );
-  console.log(urlBrands, languageDetails.allBrand, languageDetails.topBrand)
   const { t } = useTranslation();
+
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -204,6 +240,7 @@ export default function TopBrands() {
       setIsLoading(false);
     }, 1000);
   };
+  console.log("WWWW", urlBrands, languageDetails.topBrand);
   return (
     <>
       {loading ? (

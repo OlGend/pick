@@ -1,4 +1,3 @@
-// TopBrands.jsx (Клиентский компонент)
 "use client";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -122,8 +121,11 @@ export default function NewBrands() {
     null,
     {
       fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: urlBrands, topBrand: 222 }
+        ? {
+            flag: selectedBrand.icon,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", topBrand: 222 },
     }
   );
   
