@@ -229,8 +229,9 @@ export default function TopBrands() {
     }
   );
   const urlBrands = source === "partner1039" ? 248 : 221;
+  const publicBrand = localStorage.setItem("brands", urlBrands);
 
-  const filteredBrands = useTopBrandsFilter(urlBrands, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(publicBrand, languageDetails.topBrand);
   const { t } = useTranslation();
 
   useEffect(() => {
