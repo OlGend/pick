@@ -261,7 +261,7 @@ export default function TopBrands() {
 
  
 
-  const filteredBrands = useTopBrandsFilter(localStorage.getItem("brands") , languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(typeof window !== "undefined" ? localStorage.getItem("brands") : 221, languageDetails.topBrand);
 
 
   console.log("FILTERED", filteredBrands);
