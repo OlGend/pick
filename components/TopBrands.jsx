@@ -52,7 +52,7 @@ export default function TopBrands() {
       const foundBrandPartners = navigateBrandsPartners.find(
         (brand) => brand.slug === defLng.toLowerCase()
       );
-      if (foundBrand || foundBrand2) {
+      if (foundBrand || foundBrandPartners) {
         setSelectedBrand(
           source === "partner139" ? foundBrandPartners : foundBrand
         );
@@ -250,9 +250,9 @@ export default function TopBrands() {
   
   
   const urlBrands = source === "partner1039" ? 248 : 221;
-  if (urlBrands && typeof window !== "undefined") {
-    localStorage.setItem("brands", urlBrands);
-  }
+  // if (urlBrands && typeof window !== "undefined") {
+  //   localStorage.setItem("brands", urlBrands);
+  // }
   // const publicBrand =
   //   typeof window !== "undefined" ? localStorage.getItem("brands") : null;
   // console.log(publicBrand, "333333333333333");
@@ -261,7 +261,7 @@ export default function TopBrands() {
 
  
 
-  const filteredBrands = useTopBrandsFilter(typeof window !== "undefined" ? localStorage.getItem("brands") : 220, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(languageDetails.brand, languageDetails.topBrand);
 
 
   console.log("FILTERED", filteredBrands);

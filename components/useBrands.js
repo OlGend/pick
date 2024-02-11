@@ -50,7 +50,7 @@ export function useTopBrands(filterValue) {
 
 
 export function useTopBrandsFilter(depositFilterValue, countryFilterValue) {
-  console.log("==========",depositFilterValue, countryFilterValue)
+  console.log("==========CC",depositFilterValue, countryFilterValue)
   const fetcher = async () => {
     const allData = [];
     let page = 1;
