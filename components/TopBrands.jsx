@@ -232,12 +232,19 @@ export default function TopBrands() {
   if (urlBrands && typeof window !== "undefined") {
     localStorage.setItem("brands", urlBrands);
   }
-  const publicBrand = localStorage.getItem("brands");
+  let publicBrand; // Объявляем переменную заранее
 
+  if (typeof window !== "undefined") {
+      publicBrand = localStorage.getItem("brands");
+  }
+  
+  // Теперь переменная publicBrand доступна за пределами блока if
+  
   const filteredBrands = useTopBrandsFilter(
-    publicBrand,
-    languageDetails.topBrand
+      publicBrand,
+      languageDetails.topBrand
   );
+  
 
   const { t } = useTranslation();
 
