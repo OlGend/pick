@@ -249,7 +249,7 @@ export default function TopBrands() {
   );
   
   
-  // const urlBrands = source === "partner1039" ? 248 : 221;
+  const urlBrands = source === "partner1039" ? 248 : 221;
   // if (urlBrands && typeof window !== "undefined") {
   //   localStorage.setItem("brands", urlBrands);
   // }
@@ -261,7 +261,7 @@ export default function TopBrands() {
 
  
 
-  const filteredBrands = useTopBrandsFilter(languageDetails.brand, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(urlBrands, languageDetails.topBrand);
 
 
   console.log("FILTERED", filteredBrands);
