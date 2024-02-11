@@ -230,7 +230,7 @@ export default function TopBrands() {
   );
   const urlBrands = source === "partner1039" ? 248 : 221;
 
-  const filteredBrands = useTopBrandsFilter(221, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(urlBrands, languageDetails.topBrand);
   const { t } = useTranslation();
 
   useEffect(() => {
