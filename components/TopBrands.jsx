@@ -108,12 +108,12 @@ export default function TopBrands() {
       if (newUrl.includes("keyword")) {
         localStorage.setItem("savedUrl", newUrl);
         localStorage.setItem("token", "give");
-      } 
+      }
     }
 
     if (typeof window !== "undefined") {
       const tokenGive = localStorage.getItem("token");
-      if (tokenGive !== "give") { 
+      if (tokenGive !== "give") {
         localStorage.setItem("savedUrl", newUrl);
       }
     }
@@ -229,10 +229,15 @@ export default function TopBrands() {
     }
   );
   const urlBrands = source === "partner1039" ? 248 : 221;
-  localStorage.setItem("brands", urlBrands);
+  if (urlBrands) {
+    localStorage.setItem("brands", urlBrands);
+  }
   const publicBrand = localStorage.getItem("brands");
- 
-  const filteredBrands = useTopBrandsFilter(publicBrand, languageDetails.topBrand);
+
+  const filteredBrands = useTopBrandsFilter(
+    publicBrand,
+    languageDetails.topBrand
+  );
 
   const { t } = useTranslation();
 
