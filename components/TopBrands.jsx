@@ -53,11 +53,15 @@ export default function TopBrands() {
         (brand) => brand.slug === defLng.toLowerCase()
       );
       if (foundBrand || foundBrand2) {
-        setSelectedBrand(source === "partner139" ? foundBrandPartners : foundBrand);
+        setSelectedBrand(
+          source === "partner139" ? foundBrandPartners : foundBrand
+        );
       } else {
         // Если локаль не найдена, устанавливаем "all"
         const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-        const allBrandPartners = navigateBrandsPartners.find((brand) => brand.slug === "all");
+        const allBrandPartners = navigateBrandsPartners.find(
+          (brand) => brand.slug === "all"
+        );
         setSelectedBrand(source === "partner139" ? allBrandPartners : allBrand);
       }
     }
@@ -101,7 +105,9 @@ export default function TopBrands() {
 
     // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
     if (typeof window !== "undefined") {
-      localStorage.setItem("savedUrl", newUrl);
+      if (newUrl.includes("keyword")) {
+        localStorage.setItem("savedUrl", newUrl);
+      } 
     }
 
     // Чтение сохраненной ссылки из локального хранилища
@@ -216,12 +222,8 @@ export default function TopBrands() {
   );
   const urlBrands = source === "partner1039" ? 248 : 221;
 
-  const filteredBrands = useTopBrandsFilter(
-    221,
-    languageDetails.topBrand
-  );
+  const filteredBrands = useTopBrandsFilter(221, languageDetails.topBrand);
   const { t } = useTranslation();
-
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
