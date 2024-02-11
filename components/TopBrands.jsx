@@ -130,41 +130,49 @@ export default function TopBrands() {
   const navigateBrands = [
     {
       topCurrentCategories: 222,
+      brand: 221,
       icon: "🌍",
       slug: "all",
     },
     {
       topCurrentCategories: 223,
+      brand: 221,
       icon: "🇦🇺",
       slug: "au",
     },
     {
       topCurrentCategories: 224,
+      brand: 221,
       icon: "🇨🇦",
       slug: "ca",
     },
     {
       topCurrentCategories: 228,
+      brand: 221,
       icon: "🇫🇮",
       slug: "fi",
     },
     {
       topCurrentCategories: 226,
+      brand: 221,
       icon: "🇩🇪",
       slug: "de",
     },
     {
       topCurrentCategories: 231,
+      brand: 221,
       icon: "🇳🇿",
       slug: "nz",
     },
     {
       topCurrentCategories: 230,
+      brand: 221,
       icon: "🇳🇴",
       slug: "no",
     },
     {
       topCurrentCategories: 232,
+      brand: 221,
       icon: "🇵🇱",
       slug: "pl",
     },
@@ -172,41 +180,49 @@ export default function TopBrands() {
   const navigateBrandsPartners = [
     {
       topCurrentCategories: 250,
+      brand: 248,
       icon: "🌍",
       slug: "all",
     },
     {
-      topCurrentCategories: 223,
+      topCurrentCategories: 251,
+      brand: 248,
       icon: "🇦🇺",
       slug: "au",
     },
     {
-      topCurrentCategories: 224,
+      topCurrentCategories: 252,
+      brand: 248,
       icon: "🇨🇦",
       slug: "ca",
     },
     {
-      topCurrentCategories: 228,
+      topCurrentCategories: 254,
+      brand: 248,
       icon: "🇫🇮",
       slug: "fi",
     },
     {
-      topCurrentCategories: 226,
+      topCurrentCategories: 253,
+      brand: 248,
       icon: "🇩🇪",
       slug: "de",
     },
     {
-      topCurrentCategories: 231,
+      topCurrentCategories: 256,
+      brand: 248,
       icon: "🇳🇿",
       slug: "nz",
     },
     {
-      topCurrentCategories: 230,
+      topCurrentCategories: 255,
+      brand: 248,
       icon: "🇳🇴",
       slug: "no",
     },
     {
-      topCurrentCategories: 232,
+      topCurrentCategories: 257,
+      brand: 248,
       icon: "🇵🇱",
       slug: "pl",
     },
@@ -216,6 +232,8 @@ export default function TopBrands() {
 
   const [loading, setLoading] = useState(true);
 
+  console.log("SL", selectedBrand)
+
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -223,28 +241,30 @@ export default function TopBrands() {
       fallbackData: selectedBrand
         ? {
             flag: selectedBrand.icon,
+            brand: selectedBrand.brand,
             topBrand: selectedBrand.topCurrentCategories,
           }
-        : { flag: "🌍", topBrand: 222 },
+        : { flag: "🌍", brand: 221, topBrand: 222 },
     }
   );
-  const urlBrands = source === "partner1039" ? 248 : 221;
-  if (urlBrands && typeof window !== "undefined") {
-    localStorage.setItem("brands", urlBrands);
-  }
-  let publicBrand; // Объявляем переменную заранее
+  
+  
+  // const urlBrands = source === "partner1039" ? 248 : 221;
+  // if (urlBrands && typeof window !== "undefined") {
+  //   localStorage.setItem("brands", urlBrands);
+  // }
+  // const publicBrand =
+  //   typeof window !== "undefined" ? localStorage.getItem("brands") : null;
+  // console.log(publicBrand, "333333333333333");
 
-  if (typeof window !== "undefined") {
-      publicBrand = localStorage.getItem("brands");
-  }
-  
   // Теперь переменная publicBrand доступна за пределами блока if
-  
-  const filteredBrands = useTopBrandsFilter(
-      publicBrand,
-      languageDetails.topBrand
-  );
-  
+
+ 
+
+  const filteredBrands = useTopBrandsFilter(languageDetails.brand, languageDetails.topBrand);
+
+
+  console.log("FILTERED", filteredBrands);
 
   const { t } = useTranslation();
 
@@ -265,7 +285,7 @@ export default function TopBrands() {
       setIsLoading(false);
     }, 1000);
   };
-  console.log("WWWW", urlBrands, languageDetails.topBrand);
+
   return (
     <>
       {loading ? (

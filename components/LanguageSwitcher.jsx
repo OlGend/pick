@@ -18,7 +18,7 @@ const LanguageSwitcher = () => {
     "languageDetails",
     null,
     {
-      fallbackData: { flag: "🌍", topBrand: 213 }, // Задаем начальное значение
+      fallbackData: { flag: "🌍", brand: 221, topBrand: 213 }, // Задаем начальное значение
     }
   );
 
@@ -68,12 +68,12 @@ const LanguageSwitcher = () => {
     return <div>Failed to load</div>;
   }
 
-  const changeLanguage = async (lng, flag, topBrand) => {
+  const changeLanguage = async (lng, flag, brand, topBrand) => {
     setIsLoading(true);
     try {
       mutate("selectedLanguage", lng, false);
       // Не вызываем i18n.changeLanguage(lng);
-      mutate("languageDetails", {  topBrand }, true); // Обновляем дополнительные данные
+      mutate("languageDetails", {  brand, topBrand }, true); // Обновляем дополнительные данные
     } catch (error) {
       console.error("Ошибка при смене языка:", error);
     } finally {
@@ -86,65 +86,65 @@ const LanguageSwitcher = () => {
   
 
   const availableLanguages = [
-    { code: "en", label: "World", flag: "🌍", topBrand: 222 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", topBrand: 232 }, //
-    { code: "no", label: "Norway", flag: "🇳🇴", topBrand: 230 }, //
+    { code: "en", label: "World", flag: "🌍", brand: 221, topBrand: 222 }, //
+    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 221, topBrand: 232 }, //
+    { code: "no", label: "Norway", flag: "🇳🇴", brand: 221, topBrand: 230 }, //
     {
       code: "au",
       label: "Australia",
       flag: "🇦🇺",
-
+      brand: 221,
       topBrand: 223,
     }, //
-    { code: "ca", label: "Canada", flag: "🇨🇦", topBrand: 224 }, //
+    { code: "ca", label: "Canada", flag: "🇨🇦", brand: 221, topBrand: 224 }, //
     {
       code: "nz",
       label: "New Zealand",
       flag: "🇳🇿",
-
+      brand: 221,
       topBrand: 231,
     }, //
-    { code: "de", label: "Germany", flag: "🇩🇪", topBrand: 226 }, //
+    { code: "de", label: "Germany", flag: "🇩🇪", brand: 221, topBrand: 226 }, //
     {
       code: "fi",
       label: "Finland",
       flag: "🇫🇮",
-
+      brand: 221,
       topBrand: 228,
     },
     // Добавьте другие языки по аналогии
   ];
   const availableLanguagesPartners = [
-    { code: "en", label: "World", flag: "🌍", topBrand: 250 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", topBrand: 232 }, //
-    { code: "no", label: "Norway", flag: "🇳🇴", topBrand: 230 }, //
+    { code: "en", label: "World", flag: "🌍", brand: 248, topBrand: 250 }, //
+    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 232 }, //
+    { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 230 }, //
     {
       code: "au",
       label: "Australia",
       flag: "🇦🇺",
-
+      brand: 248,
       topBrand: 251,
     }, //
-    { code: "ca", label: "Canada", flag: "🇨🇦", topBrand: 224 }, //
+    { code: "ca", label: "Canada", flag: "🇨🇦", brand: 248, topBrand: 224 }, //
     {
       code: "nz",
       label: "New Zealand",
       flag: "🇳🇿",
-
+      brand: 248,
       topBrand: 231,
     }, //
-    { code: "de", label: "Germany", flag: "🇩🇪", topBrand: 226 }, //
+    { code: "de", label: "Germany", flag: "🇩🇪", brand: 248, topBrand: 226 }, //
     {
       code: "fi",
       label: "Finland",
       flag: "🇫🇮",
-
+      brand: 248,
       topBrand: 228,
     },
     // Добавьте другие языки по аналогии
   ];
 
-  const newLng = source === "partner1039" ? availableLanguages : availableLanguagesPartners;
+  const newLng = source === "partner1039" ? availableLanguagesPartners : availableLanguages;
   console.log("NEWLNG", newLng)
   // Обработка ошибок для selectedLanguage и languageDetails
   if (error || detailsError) return <div>Failed to load</div>;
@@ -160,7 +160,7 @@ const LanguageSwitcher = () => {
             (lang) => lang.code === e.target.value
           );
           if (selected) {
-            changeLanguage(selected.code, selected.flag, selected.topBrand);
+            changeLanguage(selected.code, selected.flag, selected.brand, selected.topBrand);
           }
         }}
       >
