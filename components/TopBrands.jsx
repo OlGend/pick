@@ -107,7 +107,15 @@ export default function TopBrands() {
     if (typeof window !== "undefined") {
       if (newUrl.includes("keyword")) {
         localStorage.setItem("savedUrl", newUrl);
+        localStorage.setItem("token", "give");
       } 
+    }
+
+    if (typeof window !== "undefined") {
+      const tokenGive = localStorage.getItem("token");
+      if (tokenGive !== "give") { 
+        localStorage.setItem("savedUrl", newUrl);
+      }
     }
 
     // Чтение сохраненной ссылки из локального хранилища
