@@ -229,7 +229,7 @@ export default function TopBrands() {
     }
   );
   const urlBrands = source === "partner1039" ? 248 : 221;
-  if (urlBrands) {
+  if (urlBrands && typeof window !== "undefined") {
     localStorage.setItem("brands", urlBrands);
   }
   const publicBrand = localStorage.getItem("brands");
