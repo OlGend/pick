@@ -120,7 +120,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                 >
                   <div className="flex flex-col basis-[63%]">
                     <div className="flex ml-1 mb-3">
-                      <div className="filter-flag">{filtered.flag}</div>
+                      {/* <div className="filter-flag">{filtered.flag}</div> */}
                     </div>
                     <div className="flex mb-1">
                       <Gift className="mr-1" size={24} />

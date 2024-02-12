@@ -195,7 +195,7 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>
           </div>
-          <div className="usernone">
+          <div className="usernone flex ml-auto">
 
           {user && (
             <div className="flex tickets items-end">

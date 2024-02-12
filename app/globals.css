@@ -6083,6 +6083,7 @@ h1 {
 .right-banner .absolute {
   background: #0967e3;
 }
+
 .acceptedTerms::after {
   content: "";
   width: 15px;
@@ -6489,47 +6490,67 @@ h2 {
   font-size: 24px;
   line-height: 28px;
 }
-.brand-slider .slick-slide:nth-child(5n + 1) .card-brand .brandImage,
-.card-brand-filtered:nth-child(5n + 1) .brandImage,
-.card-brand:nth-child(5n + 1) .brandImage,
-.card-brand-new:nth-child(5n + 1) .brandImage {
-  background: transparent
+.brand-slider .slick-slide:nth-child(6n + 1) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 1) .brandImage,
+.card-brand:nth-child(6n + 1) .brandImage,
+.card-brand-new:nth-child(6n + 1) .brandImage {
+  background: url(/red_vip.png);
+  background-size: cover;
+  /* background: transparent
     radial-gradient(closest-side at 65% 56%, #ff0080 0, #c70067 100%) 0 0
-    no-repeat padding-box;
+    no-repeat padding-box; */
 }
-.brand-slider .slick-slide:nth-child(5n + 2) .card-brand .brandImage,
-.card-brand-filtered:nth-child(5n + 2) .brandImage,
-.card-brand:nth-child(5n + 2) .brandImage,
-.card-brand-new:nth-child(5n + 2) .brandImage {
-  background: transparent
+.brand-slider .slick-slide:nth-child(6n + 2) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 2) .brandImage,
+.card-brand:nth-child(6n + 2) .brandImage,
+.card-brand-new:nth-child(6n + 2) .brandImage {
+  background: url(/green_vip.png);
+  background-size: cover;
+  /* background: transparent
     radial-gradient(closest-side at 65% 56%, #a4ff00 0, #80c700 100%) 0 0
-    no-repeat padding-box;
+    no-repeat padding-box; */
 }
-.brand-slider .slick-slide:nth-child(5n + 3) .card-brand .brandImage,
-.card-brand-filtered:nth-child(5n + 3) .brandImage,
-.card-brand:nth-child(5n + 3) .brandImage,
-.card-brand-new:nth-child(5n + 3) .brandImage {
-  background: transparent
+.brand-slider .slick-slide:nth-child(6n + 3) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 3) .brandImage,
+.card-brand:nth-child(6n + 3) .brandImage,
+.card-brand-new:nth-child(6n + 3) .brandImage {
+  background: url(/lightblue_vip.png);
+  background-size: cover;
+  /* background: transparent
     radial-gradient(closest-side at 65% 56%, #00e6ff 0, #00b2c7 100%) 0 0
-    no-repeat padding-box;
+    no-repeat padding-box; */
 }
-.brand-slider .slick-slide:nth-child(5n + 4) .card-brand .brandImage,
-.card-brand-filtered:nth-child(5n + 4) .brandImage,
-.card-brand:nth-child(5n + 4) .brandImage,
-.card-brand-new:nth-child(5n + 4) .brandImage {
-  background: transparent
+.brand-slider .slick-slide:nth-child(6n + 4) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 4) .brandImage,
+.card-brand:nth-child(6n + 4) .brandImage,
+.card-brand-new:nth-child(6n + 4) .brandImage {
+  background: url(/orange_vip.png);
+  background-size: cover;
+  /* background: transparent
     radial-gradient(closest-side at 65% 56%, #ff6f61 0, #c73832 100%) 0 0
-    no-repeat padding-box;
+    no-repeat padding-box; */
 }
-.brand-slider .slick-slide:nth-child(5n + 5) .card-brand .brandImage,
-.card-brand-filtered:nth-child(5n + 5) .brandImage,
-.card-brand:nth-child(5n + 5) .brandImage,
-.card-brand-new:nth-child(5n + 5) .brandImage {
-  background: transparent
+.brand-slider .slick-slide:nth-child(6n + 5) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 5) .brandImage,
+.card-brand:nth-child(6n + 5) .brandImage,
+.card-brand-new:nth-child(6n + 5) .brandImage {
+  background: url(/pink_vip.png);
+  background-size: cover;
+  /* background: transparent
     radial-gradient(closest-side at 65% 56%, #ffff00 0, #c7c700 100%) 0 0
-    no-repeat padding-box;
+    no-repeat padding-box; */
 }
 
+.brand-slider .slick-slide:nth-child(6n + 6) .card-brand .brandImage,
+.card-brand-filtered:nth-child(6n + 6) .brandImage,
+.card-brand:nth-child(6n + 6) .brandImage,
+.card-brand-new:nth-child(6n + 6) .brandImage {
+  background: url(/blue_vip.png);
+  background-size: cover;
+  /* background: transparent
+    radial-gradient(closest-side at 65% 56%, #ffff00 0, #c7c700 100%) 0 0
+    no-repeat padding-box; */
+}
 .buttons {
   margin-top: 10px;
   display: flex;
