@@ -140,9 +140,9 @@ const TheHeader = () => {
     typeof window !== "undefined" ? window.location.search : ""
   );
   const api = "https://pickbonus.myawardwallet.com/api";
+  const idUserParam = urlParams.get("keyword");
+  console.log("PARAM",idUserParam);
   useEffect(() => {
-    const idUserParam = urlParams.get("keyword");
-    console.log("PARAM",idUserParam);
 
     const fetchUsers = async () => {
       try {
