@@ -134,6 +134,36 @@ const TheHeader = () => {
     setIsMobileMenuOpen(false);
   };
 
+  /////////////////////////////////
+  const [user, setUser] = useState([]);
+  const urlParams = new URLSearchParams(
+    typeof window !== "undefined" ? window.location.search : ""
+  );
+  const api = "https://pickbonus.myawardwallet.com/api";
+  useEffect(() => {
+    const idUserParam = urlParams.get("keyword");
+    console.log("PARAM",idUserParam);
+
+    const fetchUsers = async () => {
+      try {
+        const res = await fetch(`${api}/user/read_one.php?id=${idUserParam}`);
+        if (res.ok) {
+          const users = await res.json();
+
+          setUser(users);
+        } else {
+          console.error("Failed to fetch data:", res.status);
+        }
+      } catch (error) {
+        console.error("An error occurred:", error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+  ////////////////////////////////////
+  console.log("USER", user)
+
   return (
     <header className="header">
       <div className="header__bg">
