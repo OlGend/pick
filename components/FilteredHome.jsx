@@ -1,6 +1,6 @@
 // TopBrands.jsx (Клієнтський компонент)
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import AllBrands from "./AllBrands";
 import {
@@ -61,93 +61,16 @@ const FilteredHome = () => {
     }, 500);
   };
 
-   ////////////////////////new
-
-   const [selectedBrand, setSelectedBrand] = useState(null);
-   useEffect(() =>{
-    const defLng = localStorage.getItem("country");
-    // setSelectedBrand(defLng);
-    if (defLng) {
-      const foundBrand = navigateBrands2.find((brand) => brand.slug === defLng.toLowerCase());
-      if (foundBrand) {
-        setSelectedBrand(foundBrand);
-      } else {
-        // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands2.find((brand) => brand.slug === "all");
-        setSelectedBrand(allBrand);
-      }
-    }
-  }, []);
-
-   const navigateBrands2 = [
-     {
-       currentCategories: 138,
-       topCurrentCategories: 213,
-       icon: "🌍",
-       slug: "all",
-     },
-     {
-       currentCategories: 143,
-       topCurrentCategories: 184,
-       icon: "🇦🇺",
-       slug: "au",
-     },
-     {
-       currentCategories: 119,
-       topCurrentCategories: 84,
-       icon: "🇧🇷",
-       slug: "br",
-     },
-     {
-       currentCategories: 120,
-       topCurrentCategories: 46,
-       icon: "🇨🇦",
-       slug: "ca",
-     },
-     {
-       currentCategories: 121,
-       topCurrentCategories: 43,
-       icon: "🇫🇮",
-       slug: "fi",
-     },
-     {
-       currentCategories: 122,
-       topCurrentCategories: 45,
-       icon: "🇩🇪",
-       slug: "de",
-     },
-     {
-       currentCategories: 123,
-       topCurrentCategories: 47,
-       icon: "🇳🇿",
-       slug: "nz",
-     },
-     {
-       currentCategories: 124,
-       topCurrentCategories: 44,
-       icon: "🇳🇴",
-       slug: "no",
-     },
-     {
-       currentCategories: 125,
-       topCurrentCategories: 48,
-       icon: "🇵🇱",
-       slug: "pl",
-     },
-   ];
-   console.log("!!!!", selectedBrand);
-   const { data: languageDetails, error: detailsError } = useSWR(
+  // В начале компонента FilteredBonuses
+  const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
-      fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+      fallbackData: { flag: "🌍", allBrand: 25, topBrand: 213 }, // Задаем начальное значение
     }
   );
- 
-   //////////////////
 
+  console.log("--------", languageDetails);
   return (
     <div className="main pt-10 pb-10 other-custom-bonuses">
       <div className="main__container filter-brands">
