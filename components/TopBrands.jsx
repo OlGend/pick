@@ -241,7 +241,7 @@ export default function TopBrands() {
 
   const [loading, setLoading] = useState(true);
 
-  console.log("SL", selectedBrand);
+
 
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
