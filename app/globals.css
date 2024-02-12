@@ -6248,6 +6248,7 @@ h1 {
   .useryes .tickets, .useryes .option {
     margin-left: 0;
     margin-bottom: 10px;
+    margin-left: 5px;
   }
   .usernone {
     display: none;

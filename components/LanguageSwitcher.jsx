@@ -109,8 +109,8 @@ const LanguageSwitcher = () => {
   ];
   const availableLanguagesPartners = [
     { code: "en", label: "World", flag: "🌍", brand: 248, topBrand: 250 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 232 }, //
-    { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 230 }, //
+    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 257 }, //
+    { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 255 }, //
     {
       code: "au",
       label: "Australia",
@@ -118,21 +118,21 @@ const LanguageSwitcher = () => {
       brand: 248,
       topBrand: 251,
     }, //
-    { code: "ca", label: "Canada", flag: "🇨🇦", brand: 248, topBrand: 224 }, //
+    { code: "ca", label: "Canada", flag: "🇨🇦", brand: 248, topBrand: 252 }, //
     {
       code: "nz",
       label: "New Zealand",
       flag: "🇳🇿",
       brand: 248,
-      topBrand: 231,
+      topBrand: 256,
     }, //
-    { code: "de", label: "Germany", flag: "🇩🇪", brand: 248, topBrand: 226 }, //
+    { code: "de", label: "Germany", flag: "🇩🇪", brand: 248, topBrand: 253 }, //
     {
       code: "fi",
       label: "Finland",
       flag: "🇫🇮",
       brand: 248,
-      topBrand: 228,
+      topBrand: 254,
     },
     // Добавьте другие языки по аналогии
   ];
