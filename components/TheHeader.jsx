@@ -158,16 +158,14 @@ const TheHeader = () => {
         console.log("KEYWORDPAIR", keywordPair)
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
-          console.log("Keyword Value:", keywordValue2);
+   
           setKeywordValue(keywordValue2);
-          // Здесь вы можете использовать значение keywordValue, например, установить его в состояние
+        
         }
       }
     }
   }, []);
-  // Пустой массив зависимостей означает, что эффект будет выполняться только после монтирования компонента
 
-  console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
@@ -176,7 +174,7 @@ const TheHeader = () => {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch(`${api}/user/read_one.php?id=${idUserParam}`);
+        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
         if (res.ok) {
           const users = await res.json();
 
