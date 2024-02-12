@@ -205,7 +205,7 @@ const TheHeader = () => {
             <LanguageSwitcher />{" "}
           </I18nextProvider>
           <GoogleTranslate />
-
+          <p>Keyword Value: {keywordValue}</p>
           <div className="mobile-none">
             <button
               className={`burger-icon ${isMobileMenuOpen ? "open" : ""}`}
