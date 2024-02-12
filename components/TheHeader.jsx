@@ -142,18 +142,24 @@ const TheHeader = () => {
 
   const [keywordValue, setKeywordValue] = useState(null);
 
+  
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
       console.log("KEYWORD", keyword);
-  
+
       if (keyword) {
+        console.log("IF KEYWORD", keyword);
+
         const pairs = keyword.split("&");
-        const keywordPair = pairs.find(pair => pair.startsWith("keyword="));
+        console.log("PAIRS", pairs)
+        const keywordPair = pairs.find((pair) => pair.startsWith("keyword="));
+        console.log("KEYWORDPAIR", keywordPair)
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
           console.log("Keyword Value:", keywordValue2);
-          setKeywordValue(keywordValue2)
+          setKeywordValue(keywordValue2);
           // Здесь вы можете использовать значение keywordValue, например, установить его в состояние
         }
       }
