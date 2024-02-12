@@ -55,7 +55,7 @@ export default function TopBrands() {
       if (foundBrand || foundBrandPartners) {
         const newSource = localStorage.getItem("source");
         setSelectedBrand(
-          newSource === "partner139" ? foundBrandPartners : foundBrand
+          newSource === "partner1039" ? foundBrandPartners : foundBrand
         );
       } else {
         // Если локаль не найдена, устанавливаем "all"
@@ -64,7 +64,7 @@ export default function TopBrands() {
           (brand) => brand.slug === "all"
         );
         const newSource = localStorage.getItem("source");
-        setSelectedBrand(newSource === "partner139" ? allBrandPartners : allBrand);
+        setSelectedBrand(newSource === "partner1039" ? allBrandPartners : allBrand);
       }
     }
   }, []);
