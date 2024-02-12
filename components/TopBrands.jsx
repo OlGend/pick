@@ -53,8 +53,9 @@ export default function TopBrands() {
         (brand) => brand.slug === defLng.toLowerCase()
       );
       if (foundBrand || foundBrandPartners) {
+        const newSource = localStorage.getItem("source");
         setSelectedBrand(
-          source === "partner139" ? foundBrandPartners : foundBrand
+          newSource === "partner139" ? foundBrandPartners : foundBrand
         );
       } else {
         // Если локаль не найдена, устанавливаем "all"
@@ -62,7 +63,8 @@ export default function TopBrands() {
         const allBrandPartners = navigateBrandsPartners.find(
           (brand) => brand.slug === "all"
         );
-        setSelectedBrand(source === "partner139" ? allBrandPartners : allBrand);
+        const newSource = localStorage.getItem("source");
+        setSelectedBrand(newSource === "partner139" ? allBrandPartners : allBrand);
       }
     }
   }, []);
@@ -79,7 +81,7 @@ export default function TopBrands() {
     if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
       // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
       if (typeof window !== "undefined") {
-      localStorage.setItem("source", "partner1039");
+        localStorage.setItem("source", "partner1039");
       }
       const partnerIndex = currentKeyword.indexOf("partner");
       const partnerText = currentKeyword.substring(
@@ -95,7 +97,7 @@ export default function TopBrands() {
       setSource("0");
       const sourceFound = localStorage.getItem("source");
       if (typeof window !== "undefined" && sourceFound !== "partner1039") {
-      localStorage.setItem("source", "0");
+        localStorage.setItem("source", "0");
       }
       searchParams.set("source", "0");
       // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
@@ -239,7 +241,7 @@ export default function TopBrands() {
 
   const [loading, setLoading] = useState(true);
 
-  console.log("SL", selectedBrand)
+  console.log("SL", selectedBrand);
 
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
@@ -254,21 +256,20 @@ export default function TopBrands() {
         : { flag: "🌍", brand: 221, topBrand: 222 },
     }
   );
-  
+
   if (typeof window !== "undefined") {
-  const newSource = localStorage.getItem("source");
-  const urlBrands = newSource === "partner1039" ? 248 : 221;
-  console.log("URLBRANDS", urlBrands)
-  if (urlBrands && typeof window !== "undefined") {
-    localStorage.setItem("brands", urlBrands);
+    const newSource = localStorage.getItem("source");
+    const urlBrands = newSource === "partner1039" ? 248 : 221;
+    console.log("URLBRANDS", urlBrands);
+    if (urlBrands && typeof window !== "undefined") {
+      localStorage.setItem("brands", urlBrands);
+    }
   }
-  }
- 
 
-
-  const filteredBrands = useTopBrandsFilter(languageDetails.brand, languageDetails.topBrand);
-  
-
+  const filteredBrands = useTopBrandsFilter(
+    languageDetails.brand,
+    languageDetails.topBrand
+  );
 
   console.log("FILTERED", filteredBrands);
 
