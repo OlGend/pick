@@ -193,8 +193,11 @@ const TheHeader = () => {
             </Link>
           </div>
           {user && (
-            <div className="tickets items-end">
-              <Link className="user user-wheel" href={`/fortunewheel/`}>
+            <div className="flex tickets items-end">
+              <Link
+                className="user user-wheel"
+                href={`https://pickbonus.myawardwallet.com/?keyword=test_vk1#/fortunewheel`}
+              >
                 {/* <Image
                 src={dollar}
                 alt={dollar}
@@ -203,6 +206,25 @@ const TheHeader = () => {
                 loading="lazy"
               /> */}
                 Wheel of Fortune <span>{user.tickets}</span>
+              </Link>
+            </div>
+          )}
+          {user && (
+            <div className="option">
+              <Link
+                className="flex items-center"
+                href={`https://pickbonus.myawardwallet.com/?keyword=test_vk1#/withdrawal`}
+                onClick={() => setShowAdditionalOptions(false)}
+              >
+                <Image
+                  src={wallet}
+                  alt={wallet}
+                  width={25}
+                  height={25}
+                  loading="lazy"
+                  className="mr-1"
+                />
+                {t("Withdraw")}
               </Link>
             </div>
           )}

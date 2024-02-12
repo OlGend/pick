@@ -7914,13 +7914,15 @@ p {
 .tickets span {
   font-size: 16px;
   font-weight: 900;
-  color: #0066dc;
+  color: #80c700;
   position: absolute;
-  top: -5px;
+  top: -17px;
   right: -10px;
   padding: 3px;
   border-radius: 50%;
   background: #fff;
+  width: 25px;
+  height: 25px;
 }
 .tickets {
   margin-left: auto;
