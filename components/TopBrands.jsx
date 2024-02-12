@@ -266,7 +266,10 @@ export default function TopBrands() {
     }
   }
 
-  const br = localStorage.getItem("brands");
+  let br;
+  if (typeof window !== "undefined") {
+   br = localStorage.getItem("brands");
+  }
   const filteredBrands = useTopBrandsFilter(
     br,
     languageDetails.topBrand
