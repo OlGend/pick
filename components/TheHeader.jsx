@@ -203,7 +203,7 @@ const TheHeader = () => {
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
-          {anotherState && (
+          {/* {anotherState && (
               <div className="tickets">
                 <Link href={`/fortunewheel/${newUrl}`}>
                   <Image
@@ -216,7 +216,7 @@ const TheHeader = () => {
                   {t("Wheel of Fortune")} <span>{anotherState.tickets}</span>
                 </Link>
               </div>
-            )}
+            )} */}
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
