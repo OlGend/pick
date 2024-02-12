@@ -142,41 +142,16 @@ const TheHeader = () => {
 
   const [keywordValue, setKeywordValue] = useState(null);
 
-  
-
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const keyword = localStorage.getItem("savedUrl");
-      console.log("KEYWORD", keyword);
-
-      if (keyword) {
-        console.log("IF KEYWORD", keyword);
-
-        const pairs = keyword.split("&");
-        console.log("PAIRS", pairs)
-        const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
-        console.log("KEYWORDPAIR", keywordPair)
-        if (keywordPair) {
-          const keywordValue2 = keywordPair.split("=")[1];
-   
-          setKeywordValue(keywordValue2);
-        
-        }
-      }
-    }
-  }, []);
-
-
-  const api = "https://pickbonus.myawardwallet.com/api";
-  useEffect(() => {
-   
-
+    const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async () => {
       try {
-        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
+        const res = await fetch(
+          `${api}/user/read_one.php?id=${keywordValue}`
+        );
         if (res.ok) {
           const users = await res.json();
-          console.log("USERS", users)
+          console.log("USERS", users);
           setUser(users);
         } else {
           console.error("Failed to fetch data:", res.status);
@@ -185,9 +160,30 @@ const TheHeader = () => {
         console.error("An error occurred:", error);
       }
     };
+    if (typeof window !== "undefined") {
+      const keyword = localStorage.getItem("savedUrl");
+      console.log("KEYWORD", keyword);
 
-    fetchUsers();
+      if (keyword) {
+        console.log("IF KEYWORD", keyword);
+
+        const pairs = keyword.split("&");
+        console.log("PAIRS", pairs);
+        const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
+        console.log("KEYWORDPAIR", keywordPair);
+        if (keywordPair) {
+          const keywordValue2 = keywordPair.split("=")[1];
+
+          setKeywordValue(keywordValue2);
+          fetchUsers();
+        }
+      }
+
+   
+
+    }
   }, []);
+
   ////////////////////////////////////
   console.log("USER", user);
 
