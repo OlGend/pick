@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
   if (typeof window !== "undefined") {
     defLng = localStorage.getItem("country");
   }
-  // const br = localStorage.getItem("brands");
+ 
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -53,11 +53,7 @@ const LanguageSwitcher = () => {
       // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
       // searchParams.delete("source");
     }
-
- 
   }, []);
-
-  
 
   // Если данные еще не загрузились, показываем индикатор загрузки
   if (!selectedLanguage || !languageDetails) {
@@ -74,17 +70,13 @@ const LanguageSwitcher = () => {
     try {
       mutate("selectedLanguage", lng, false);
       // Не вызываем i18n.changeLanguage(lng);
-      mutate("languageDetails", {  brand, topBrand }, true); // Обновляем дополнительные данные
+      mutate("languageDetails", { brand, topBrand }, true); // Обновляем дополнительные данные
     } catch (error) {
       console.error("Ошибка при смене языка:", error);
     } finally {
       setIsLoading(false);
     }
   };
-
-
-
-  
 
   const availableLanguages = [
     { code: "en", label: "World", flag: "🌍", brand: 221, topBrand: 222 }, //
@@ -144,9 +136,13 @@ const LanguageSwitcher = () => {
     },
     // Добавьте другие языки по аналогии
   ];
-
-  const newLng = source === "partner1039" ? availableLanguagesPartners : availableLanguages;
-  console.log("NEWLNG", newLng)
+  let item;
+  if (typeof window !== "undefined") {
+    item = localStorage.getItem("source");
+  }
+  const newLng =
+    item === "partner1039" ? availableLanguagesPartners : availableLanguages;
+  console.log("NEWLNG", newLng);
   // Обработка ошибок для selectedLanguage и languageDetails
   if (error || detailsError) return <div>Failed to load</div>;
 
@@ -157,11 +153,14 @@ const LanguageSwitcher = () => {
         className={`${selectedLanguage}`}
         value={selectedLanguage}
         onChange={(e) => {
-          const selected = newLng.find(
-            (lang) => lang.code === e.target.value
-          );
+          const selected = newLng.find((lang) => lang.code === e.target.value);
           if (selected) {
-            changeLanguage(selected.code, selected.flag, selected.brand, selected.topBrand);
+            changeLanguage(
+              selected.code,
+              selected.flag,
+              selected.brand,
+              selected.topBrand
+            );
           }
         }}
       >

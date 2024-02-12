@@ -253,7 +253,7 @@ export default function TopBrands() {
             brand: selectedBrand.brand,
             topBrand: selectedBrand.topCurrentCategories,
           }
-        : { flag: "🌍", brand: 221, topBrand: 222 },
+        : { flag: "🌍", brand: selectedBrand.brand, topBrand: selectedBrand.topCurrentCategories },
     }
   );
 
