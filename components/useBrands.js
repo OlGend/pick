@@ -73,11 +73,11 @@ export function useTopBrandsFilter(depositFilterValue, countryFilterValue) {
     console.error("Error fetching data:", error);
     return [];
   }
-
+  const depositFilterValueAsNumber = parseFloat(depositFilterValue);
   const filteredBrands = allBrands?.filter((brand) => {
     if (brand.lists) {
       const listsValues = Object.values(brand.lists);
-      return listsValues.includes(248) && listsValues.includes(countryFilterValue);
+      return listsValues.includes(depositFilterValueAsNumber) && listsValues.includes(countryFilterValue);
     }
     return false;
   });
