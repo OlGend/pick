@@ -139,10 +139,38 @@ const TheHeader = () => {
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
   );
+
+
+
+  let keyword;
+  if (typeof window !== "undefined") {
+    keyword = localStorage.getItem("source");
+  }
+
+
+  // Разбиваем строку по символу '&' чтобы получить массив пар "ключ=значение"
+  const pairs = keyword.split("&");
+
+  let keywordValue = null;
+
+  // Проходимся по массиву пар "ключ=значение"
+  for (const pair of pairs) {
+    // Разбиваем пару по символу '=', чтобы получить массив [ключ, значение]
+    const [key, value] = pair.split("=");
+
+    // Если ключ равен "keyword", сохраняем значение
+    if (key === "keyword") {
+      keywordValue = value;
+      break; // Можно выйти из цикла, если значение найдено
+    }
+  }
+
+  console.log(keywordValue);
+
   const api = "https://pickbonus.myawardwallet.com/api";
-  const idUserParam = urlParams.get("keyword");
-  console.log("PARAM",idUserParam);
   useEffect(() => {
+    const idUserParam = urlParams.get("keyword");
+    console.log("PARAM", idUserParam);
 
     const fetchUsers = async () => {
       try {
@@ -162,7 +190,7 @@ const TheHeader = () => {
     fetchUsers();
   }, []);
   ////////////////////////////////////
-  console.log("USER", user)
+  console.log("USER", user);
 
   return (
     <header className="header">
