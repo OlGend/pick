@@ -140,29 +140,26 @@ const TheHeader = () => {
     typeof window !== "undefined" ? window.location.search : ""
   );
 
-
-
   const [keywordValue, setKeywordValue] = useState(null);
 
-  useEffect(() => {
+
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
-      console.log("KEYWORD", keyword)
-      if (keyword) {
-        const pairs = keyword.split("&");
-        for (const pair of pairs) {
-          const [key, value] = pair.split("=");
-          if (key === "keyword") {
-            setKeywordValue(value);
-            break;
-          }
-        }
-      }
+      console.log("KEYWORD", keyword);
+      // if (keyword) {
+      //   const pairs = keyword.split("&");
+      //   for (const pair of pairs) {
+      //     const [key, value] = pair.split("=");
+      //     if (key === "keyword") {
+      //       setKeywordValue(value);
+      //       break;
+      //     }
+      //   }
+      // }
     }
-  }, []); // Пустой массив зависимостей означает, что эффект будет выполняться только после монтирования компонента
+
 
   console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
-  
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
@@ -205,7 +202,7 @@ const TheHeader = () => {
             <LanguageSwitcher />{" "}
           </I18nextProvider>
           <GoogleTranslate />
-          <p>Keyword Value: {keywordValue}</p>
+
           <div className="mobile-none">
             <button
               className={`burger-icon ${isMobileMenuOpen ? "open" : ""}`}
