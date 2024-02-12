@@ -6,7 +6,7 @@ import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
-import { useTopBrandsFilter } from "@/components/useBrandsNew";
+import { useTopBrandsFilter } from "@/components/useBrands";
 
 import {
   extractReviewBonus,
