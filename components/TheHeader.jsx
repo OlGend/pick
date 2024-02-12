@@ -274,7 +274,7 @@ const TheHeader = () => {
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
                 <GoogleTranslate />
-                <div className="flex flex-col">
+                <div className="flex flex-col items-start useryes">
                   {user && (
                     <div className="flex tickets items-end">
                       <Link
