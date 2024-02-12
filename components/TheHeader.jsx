@@ -154,7 +154,7 @@ const TheHeader = () => {
 
         const pairs = keyword.split("&");
         console.log("PAIRS", pairs)
-        const keywordPair = pairs.find((pair) => pair.startsWith("keyword="));
+        const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
         console.log("KEYWORDPAIR", keywordPair)
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
