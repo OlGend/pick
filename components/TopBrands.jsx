@@ -256,7 +256,8 @@ export default function TopBrands() {
   );
   
   
-  const urlBrands = source === "partner1039" ? 248 : 221;
+  const newSource = localStorage.getItem("source");
+  const urlBrands = newSource === "partner1039" ? 248 : 221;
   console.log("URLBRANDS", urlBrands)
   if (urlBrands && typeof window !== "undefined") {
     localStorage.setItem("brands", urlBrands);
