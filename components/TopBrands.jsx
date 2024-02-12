@@ -78,6 +78,9 @@ export default function TopBrands() {
 
     if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
       // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
+      if (typeof window !== "undefined") {
+      localStorage.setItem("source", "partner1039");
+      }
       const partnerIndex = currentKeyword.indexOf("partner");
       const partnerText = currentKeyword.substring(
         partnerIndex,
@@ -90,6 +93,9 @@ export default function TopBrands() {
     } else {
       // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
       setSource("0");
+      if (typeof window !== "undefined") {
+      localStorage.setItem("source", "0");
+      }
       searchParams.set("source", "0");
       // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
       // searchParams.delete("source");
@@ -250,13 +256,10 @@ export default function TopBrands() {
   
   
   const urlBrands = source === "partner1039" ? 248 : 221;
+  console.log("URLBRANDS", urlBrands)
   if (urlBrands && typeof window !== "undefined") {
-    const storedBrands = localStorage.getItem("brands");
-    if (!storedBrands) {
-      localStorage.setItem("brands", urlBrands);
-    }
+    localStorage.setItem("brands", urlBrands);
   }
-  
  
 
 
