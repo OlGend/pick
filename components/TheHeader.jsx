@@ -214,6 +214,20 @@ const TheHeader = () => {
                 </Link>
               </div>
             )} */}
+            {user.length > 0 &&
+            <div className="tickets">
+            <Link href={`/fortunewheel/${newUrl}`}>
+              {/* <Image
+                src={dollar}
+                alt={dollar}
+                width={26}
+                height={26}
+                loading="lazy"
+              /> */}
+              Wheel of Fortune <span>{user.tickets}</span>
+            </Link>
+          </div>
+            }
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
