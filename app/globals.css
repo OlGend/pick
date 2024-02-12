@@ -27,7 +27,7 @@ body {
   min-width: 320px;
 }
 .dialog-overlay {
-display: none !important;
+  display: none !important;
 }
 .skiptranslate {
   display: none !important;
@@ -7911,7 +7911,24 @@ p {
   display: flex;
   z-index: 1;
 }
-
+.tickets span {
+  font-size: 16px;
+  font-weight: 900;
+  color: #0066dc;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #fff;
+}
+.tickets {
+  margin-left: auto;
+}
+.tickets a  {
+  padding: 0;
+  background: transparent !important;
+}
 .header .logo a {
   padding: 0;
 }

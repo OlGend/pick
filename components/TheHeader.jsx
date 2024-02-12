@@ -135,7 +135,7 @@ const TheHeader = () => {
   };
 
   /////////////////////////////////
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState();
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
   );
@@ -145,11 +145,9 @@ const TheHeader = () => {
   useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
-      console.log("KEYWORDVALUE", keywordValue)
+      console.log("KEYWORDVALUE", keywordValue);
       try {
-        const res = await fetch(
-          `${api}/user/read_one.php?id=${keywordValue}`
-        );
+        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
         if (res.ok) {
           const users = await res.json();
           console.log("USERS", users);
@@ -179,9 +177,6 @@ const TheHeader = () => {
           fetchUsers(keywordValue2);
         }
       }
-
-   
-
     }
   }, []);
 
@@ -197,6 +192,20 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>
           </div>
+          {user && (
+            <div className="tickets items-end">
+              <Link className="user user-wheel" href={`/fortunewheel/`}>
+                {/* <Image
+                src={dollar}
+                alt={dollar}
+                width={26}
+                height={26}
+                loading="lazy"
+              /> */}
+                Wheel of Fortune <span>{user.tickets}</span>
+              </Link>
+            </div>
+          )}
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
@@ -214,20 +223,7 @@ const TheHeader = () => {
                 </Link>
               </div>
             )} */}
-            {user.length > 0 &&
-            <div className="tickets">
-            <Link href={`/fortunewheel/${newUrl}`}>
-              {/* <Image
-                src={dollar}
-                alt={dollar}
-                width={26}
-                height={26}
-                loading="lazy"
-              /> */}
-              Wheel of Fortune <span>{user[0].tickets}</span>
-            </Link>
-          </div>
-            }
+
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
