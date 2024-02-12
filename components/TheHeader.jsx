@@ -145,6 +145,7 @@ const TheHeader = () => {
 
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
+      setKeywordValue(keyword)
       console.log("KEYWORD", keyword);
       // if (keyword) {
       //   const pairs = keyword.split("&");
