@@ -140,27 +140,28 @@ const TheHeader = () => {
     typeof window !== "undefined" ? window.location.search : ""
   );
 
-  // const [keywordValue, setKeywordValue] = useState(null);
+  const [keywordValue, setKeywordValue] = useState(null);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const keyword = localStorage.getItem("savedUrl");
+      console.log("KEYWORD", keyword);
+  
+      if (keyword) {
+        const pairs = keyword.split("&");
+        const keywordPair = pairs.find(pair => pair.startsWith("keyword="));
+        if (keywordPair) {
+          const keywordValue2 = keywordPair.split("=")[1];
+          console.log("Keyword Value:", keywordValue2);
+          setKeywordValue(keywordValue2)
+          // Здесь вы можете использовать значение keywordValue, например, установить его в состояние
+        }
+      }
+    }
+  }, []);
+  // Пустой массив зависимостей означает, что эффект будет выполняться только после монтирования компонента
 
-  //   if (typeof window !== "undefined") {
-  //     const keyword = localStorage.getItem("savedUrl");
-  //     setKeywordValue(keyword)
-  //     console.log("KEYWORD", keyword);
-  //     if (keyword) {
-  //       const pairs = keyword.split("&");
-  //       for (const pair of pairs) {
-  //         const [key, value] = pair.split("=");
-  //         if (key === "keyword") {
-  //           setKeywordValue(value);
-  //           break;
-  //         }
-  //       }
-  //     }
-  //   }
-
-
-  // console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
+  console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
