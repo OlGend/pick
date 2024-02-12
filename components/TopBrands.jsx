@@ -260,7 +260,7 @@ export default function TopBrands() {
   if (typeof window !== "undefined") {
     const newSource = localStorage.getItem("source");
     const urlBrands = newSource === "partner1039" ? 248 : 221;
-    console.log("URLBRANDS", urlBrands);
+   
     if (urlBrands && typeof window !== "undefined") {
       localStorage.setItem("brands", urlBrands);
     }
@@ -275,7 +275,7 @@ export default function TopBrands() {
     languageDetails.topBrand
   );
 
-  console.log("FILTERED", filteredBrands);
+ 
 
   const { t } = useTranslation();
 
