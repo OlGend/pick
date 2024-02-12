@@ -142,30 +142,31 @@ const TheHeader = () => {
 
 
 
-  let keyword;
-  if (typeof window !== "undefined") {
-    keyword = localStorage.getItem("source");
-  }
-
-
-  // Разбиваем строку по символу '&' чтобы получить массив пар "ключ=значение"
-  const pairs = keyword.split("&");
-
   let keywordValue = null;
 
-  // Проходимся по массиву пар "ключ=значение"
-  for (const pair of pairs) {
-    // Разбиваем пару по символу '=', чтобы получить массив [ключ, значение]
-    const [key, value] = pair.split("=");
-
-    // Если ключ равен "keyword", сохраняем значение
-    if (key === "keyword") {
-      keywordValue = value;
-      break; // Можно выйти из цикла, если значение найдено
+  if (typeof window !== "undefined") {
+    const keyword = localStorage.getItem("source");
+  
+    if (keyword) {
+      // Разбиваем строку по символу '&' чтобы получить массив пар "ключ=значение"
+      const pairs = keyword.split("&");
+  
+      // Проходимся по массиву пар "ключ=значение"
+      for (const pair of pairs) {
+        // Разбиваем пару по символу '=', чтобы получить массив [ключ, значение]
+        const [key, value] = pair.split("=");
+  
+        // Если ключ равен "keyword", сохраняем значение
+        if (key === "keyword") {
+          keywordValue = value;
+          break; // Можно выйти из цикла, если значение найдено
+        }
+      }
     }
   }
-
+  
   console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
+  
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
