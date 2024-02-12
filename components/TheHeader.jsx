@@ -144,7 +144,8 @@ const TheHeader = () => {
 
   useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
-    const fetchUsers = async () => {
+    const fetchUsers = async (keywordValue) => {
+      console.log("KEYWORDVALUE", keywordValue)
       try {
         const res = await fetch(
           `${api}/user/read_one.php?id=${keywordValue}`
@@ -175,7 +176,7 @@ const TheHeader = () => {
           const keywordValue2 = keywordPair.split("=")[1];
 
           setKeywordValue(keywordValue2);
-          fetchUsers();
+          fetchUsers(keywordValue2);
         }
       }
 
