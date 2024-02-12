@@ -29,8 +29,6 @@ import GoogleTranslate from "@/components/GoogleTranslate";
 import wallet from "@/public/wallet.svg";
 import dollar from "@/public/dollar.svg";
 
-
-
 const navItems = [
   {
     icon: <PokerChip className="mr-1" size={20} />,
@@ -197,6 +195,8 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>
           </div>
+          <div className="usernone">
+
           {user && (
             <div className="flex tickets items-end">
               <Link
@@ -205,13 +205,13 @@ const TheHeader = () => {
                 href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
               >
                 <Image
-                className="mr-1"
-                src={dollar}
-                alt={dollar}
-                width={26}
-                height={26}
-                loading="lazy"
-              />
+                  className="mr-1"
+                  src={dollar}
+                  alt={dollar}
+                  width={26}
+                  height={26}
+                  loading="lazy"
+                />
                 Wheel of Fortune <span>{user.tickets}</span>
               </Link>
             </div>
@@ -235,6 +235,7 @@ const TheHeader = () => {
               </Link>
             </div>
           )}
+          </div>
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
@@ -273,6 +274,46 @@ const TheHeader = () => {
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
                 <GoogleTranslate />
+                <div className="flex flex-col">
+                  {user && (
+                    <div className="flex tickets items-end">
+                      <Link
+                        target="_blank"
+                        className="user user-wheel flex items-center"
+                        href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
+                      >
+                        <Image
+                          className="mr-1"
+                          src={dollar}
+                          alt={dollar}
+                          width={26}
+                          height={26}
+                          loading="lazy"
+                        />
+                        Wheel of Fortune <span>{user.tickets}</span>
+                      </Link>
+                    </div>
+                  )}
+                  {user && (
+                    <div className="option flex items-end">
+                      <Link
+                        target="_blank"
+                        className="flex items-center"
+                        href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
+                      >
+                        <Image
+                          src={wallet}
+                          alt={wallet}
+                          width={25}
+                          height={25}
+                          loading="lazy"
+                          className="mr-1"
+                        />
+                        {t("Withdraw")}
+                      </Link>
+                    </div>
+                  )}
+                </div>
                 <Navigation
                   navLinks={navItems.map((item) => ({
                     ...item,
