@@ -81,6 +81,6 @@ export function useTopBrandsFilter(depositFilterValue, countryFilterValue) {
     }
     return false;
   });
-  console.log("ALL", allBrands)
+  console.log("filteredBrands", filteredBrands)
   return filteredBrands || [];
 }
