@@ -266,8 +266,9 @@ export default function TopBrands() {
     }
   }
 
+  const br = localStorage.getItem("brands");
   const filteredBrands = useTopBrandsFilter(
-    languageDetails.brand,
+    br,
     languageDetails.topBrand
   );
 
