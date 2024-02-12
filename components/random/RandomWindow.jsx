@@ -64,7 +64,16 @@ const Modal = ({ t }) => {
 
     return () => clearInterval(interval);
   }, [brandData]);
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
 
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     showModal &&
     randomBrand && (
@@ -104,7 +113,7 @@ const Modal = ({ t }) => {
               </Link>
               <Link
                 className="btn btn-primary flex justify-center items-center mt-1"
-                href={`https://link.reg2dep1.com/${playLink}`}
+                href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                 target="_blank"
 
               >

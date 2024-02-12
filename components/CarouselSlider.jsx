@@ -135,7 +135,16 @@ const CarouselSlider = ({ slides }) => {
     ],
   };
   const slidesData = useTopBrandsFilter(213, languageDetails.allBrand);
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
 
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     <div className="brand-slider mb-6">
       <h4 className="mb-3">{t("slider.title")}</h4>
@@ -173,7 +182,7 @@ const CarouselSlider = ({ slides }) => {
                   </Link>
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
-                    href={`https://link.reg2dep1.com/${playLink}`}
+                    href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                     target="_blank"
                   >
                     <Play className="mr-1 mb-1" size={20} />

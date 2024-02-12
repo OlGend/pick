@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +10,17 @@ import {
 } from "./brandUtils";
 
 export default function BrandSearchContainer({ showBrands }) {
+
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
+
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     <div>
       {showBrands.length > 0 && (
@@ -46,7 +57,7 @@ export default function BrandSearchContainer({ showBrands }) {
                   </Link>
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
-                    href={`https://link.reg2dep1.com/${playLink}`}
+                    href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                     target="_blank"
                   >
                     <Play className="mr-2" size={20} />

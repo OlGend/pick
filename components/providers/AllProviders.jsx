@@ -55,8 +55,10 @@ export default function AllPayments({ choose, filtered, isLoader }) {
     }, 1000);
   };
 
-  const filteredBrands = useTopBrandsFilter(choose, filtered.allBrand);
-  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
+  const filteredBrands = useTopBrandsFilter(choose, 213, 221);
+  console.log("ALL", filteredBrands);
+  const topBrands = useTopBrandsFilter(choose, 221, 220);
+  console.log("TOP", topBrands);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
@@ -86,7 +88,16 @@ export default function AllPayments({ choose, filtered, isLoader }) {
   const handleCountriesClick = (brandId) => {
     setOpenCountriesId((prevId) => (prevId === brandId ? null : brandId));
   };
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
 
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     <>
       {isLoader ? (
@@ -259,7 +270,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                       </div>
                       <Link
                         className="btn btn-primary mt-0 text-center flex justify-center items-center"
-                        href={`https://link.reg2dep1.com/${playLink}`}
+                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                         target="_blank"
                       >
                         <Play className="mr-2" size={24} /> {t("button.play")}
@@ -290,7 +301,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     <Link
                       className="flex justify-center flex-col items-center"
                       key={item.id}
-                      href={`https://link.reg2dep1.com/${playLink}`}
+                      href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                       target="_blank"
                     >
                       <Image

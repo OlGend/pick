@@ -6241,6 +6241,7 @@ h1 {
     display: none;
   }
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .useryes {
     margin-top: 30px;
@@ -7941,7 +7942,7 @@ p {
 .tickets a, .option a  {
   padding: 0;
   background: transparent !important;
-  font-size: 16px;
+  font-size: 15px;
 }
 .option {
   margin-left: 20px;

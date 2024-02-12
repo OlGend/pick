@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,7 +89,16 @@ export default function Brand({ brand }) {
       item.classList.add(className);
     });
   }, [oneBrand]);
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
 
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     <>
       <div className="flex flex-wrap justify-between oneBrand">
@@ -167,7 +176,7 @@ export default function Brand({ brand }) {
                     />
                     <Link
                       className="btn btn-primary mt-3 text-center flex justify-center items-center"
-                      href={`https://link.reg2dep1.com/${playLink}`}
+                      href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                       target="_blank"
                     >
                       <Play className="mr-2" size={24} /> {t("button.play")}

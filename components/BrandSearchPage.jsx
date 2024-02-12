@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -14,7 +14,16 @@ import Loader from "./Loader";
 export default function BrandSearchContainer() {
   const showBrands = useSelector((state) => state.brands.showBrands);
   const [isLoading, setIsLoading] = useState(false);
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
+  useEffect(() => {
+    const savedUrl = localStorage.getItem("savedUrl");
 
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+  }, []);
   return (
     <div className="main__container search-page">
       <h1 className="pt-12">Search results</h1>
@@ -58,7 +67,7 @@ export default function BrandSearchContainer() {
                         </Link>
                         <Link
                           className="btn btn-primary flex justify-center items-center mt-1"
-                          href={`https://link.reg2dep1.com/${playLink}`}
+                          href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                           target="_blank"
                         >
                           <Play className="mr-2" size={20} />

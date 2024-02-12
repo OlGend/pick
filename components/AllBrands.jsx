@@ -54,7 +54,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     }, 1000);
   };
   console.log("CATEGORIES",choose, filtered.allBrand, filtered.topBrand)
-  const filteredBrands = useTopBrandsFilter(choose, 213, 213);
+  const filteredBrands = useTopBrandsFilter(choose, 213, 221);
   console.log("ALL", filteredBrands);
   const topBrands = useTopBrandsFilter(choose, 221, 220);
   console.log("TOP", topBrands);
@@ -303,7 +303,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
                     <Link
                       className="flex justify-center flex-col items-center"
                       key={item.id}
-                      href={`https://link.reg2dep1.com/${playLink}`}
+                      href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                       target="_blank"
                     >
                       <Image
