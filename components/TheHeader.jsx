@@ -140,27 +140,27 @@ const TheHeader = () => {
     typeof window !== "undefined" ? window.location.search : ""
   );
 
-  const [keywordValue, setKeywordValue] = useState(null);
+  // const [keywordValue, setKeywordValue] = useState(null);
 
 
-    if (typeof window !== "undefined") {
-      const keyword = localStorage.getItem("savedUrl");
-      setKeywordValue(keyword)
-      console.log("KEYWORD", keyword);
-      // if (keyword) {
-      //   const pairs = keyword.split("&");
-      //   for (const pair of pairs) {
-      //     const [key, value] = pair.split("=");
-      //     if (key === "keyword") {
-      //       setKeywordValue(value);
-      //       break;
-      //     }
-      //   }
-      // }
-    }
+  //   if (typeof window !== "undefined") {
+  //     const keyword = localStorage.getItem("savedUrl");
+  //     setKeywordValue(keyword)
+  //     console.log("KEYWORD", keyword);
+  //     if (keyword) {
+  //       const pairs = keyword.split("&");
+  //       for (const pair of pairs) {
+  //         const [key, value] = pair.split("=");
+  //         if (key === "keyword") {
+  //           setKeywordValue(value);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   }
 
 
-  console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
+  // console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
