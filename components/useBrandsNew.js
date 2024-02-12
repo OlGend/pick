@@ -50,6 +50,7 @@ export function useTopBrands(filterValue) {
 
 
 export function useTopBrandsFilter(depositFilterValue, countryFilterValue, thirdFilterValue) {
+  const number = parseFloat(countryFilterValue);
   const fetcher = async () => {
     const allData = [];
     let page = 1;
@@ -77,7 +78,7 @@ export function useTopBrandsFilter(depositFilterValue, countryFilterValue, third
     if (brand.lists) {
       const listsValues = Object.values(brand.lists);
       return listsValues.includes(depositFilterValue) && 
-             listsValues.includes(countryFilterValue) &&
+             listsValues.includes(number) &&
              listsValues.includes(thirdFilterValue);
     }
     return false;

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrandsFilter } from "./useBrands";
+import { useTopBrandsFilter } from "./useBrandsNew";
 import Loader from "./Loader";
 import FilterLoader from "@/components/FilterLoader";
 
@@ -53,10 +53,10 @@ export default function AllBrands({ choose, filtered, isLoader }) {
       setIsLoading(false);
     }, 1000);
   };
-
-  const filteredBrands = useTopBrandsFilter(choose, filtered.allBrand);
+  console.log("CATEGORIES",choose, filtered.allBrand, filtered.topBrand)
+  const filteredBrands = useTopBrandsFilter(choose, 213, 213);
   console.log("ALL", filteredBrands);
-  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
+  const topBrands = useTopBrandsFilter(choose, 221, 220);
   console.log("TOP", topBrands);
 
 
