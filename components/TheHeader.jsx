@@ -146,7 +146,8 @@ const TheHeader = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const keyword = localStorage.getItem("source");
+      const keyword = localStorage.getItem("savedUrl");
+      console.log("KEYWORD", keyword)
       if (keyword) {
         const pairs = keyword.split("&");
         for (const pair of pairs) {
