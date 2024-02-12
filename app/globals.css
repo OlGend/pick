@@ -6247,7 +6247,8 @@ h1 {
   .useryes {
     margin-top: 30px;
   }
-  .useryes .tickets, .useryes .option {
+  .useryes .tickets,
+  .useryes .option {
     margin-left: 0;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -7099,7 +7100,9 @@ p {
   background-repeat: no-repeat;
   background-position: top center;
 } */
-
+.background-block {
+  background-image: url(/bgfilter.png) !important;
+}
 .oneBrand .attachment-affiliate-thumb,
 .oneBrand .review-extra-links-item,
 .oneBrand .review-box-thumb {
@@ -7960,7 +7963,8 @@ p {
 .tickets {
   margin-left: auto;
 }
-.tickets a, .option a  {
+.tickets a,
+.option a {
   padding: 0;
   background: transparent !important;
   font-size: 15px;
