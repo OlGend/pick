@@ -165,7 +165,7 @@ const TheHeader = () => {
     }
   }
 
-  console.log(keywordValue);
+  console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
