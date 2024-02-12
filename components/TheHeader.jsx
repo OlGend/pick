@@ -224,7 +224,7 @@ const TheHeader = () => {
                 height={26}
                 loading="lazy"
               /> */}
-              Wheel of Fortune <span>{user.tickets}</span>
+              Wheel of Fortune <span>{user[0].tickets}</span>
             </Link>
           </div>
             }
