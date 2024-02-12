@@ -141,7 +141,7 @@ const FilteredHome = () => {
     null,
     {
       fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
+        ? { flag: selectedBrand.icon, topBrand: selectedBrand.topCurrentCategories }
         : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
