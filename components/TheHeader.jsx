@@ -142,29 +142,24 @@ const TheHeader = () => {
 
 
 
-  let keywordValue = null;
+  const [keywordValue, setKeywordValue] = useState(null);
 
-  if (typeof window !== "undefined") {
-    const keyword = localStorage.getItem("source");
-  
-    if (keyword) {
-      // Разбиваем строку по символу '&' чтобы получить массив пар "ключ=значение"
-      const pairs = keyword.split("&");
-  
-      // Проходимся по массиву пар "ключ=значение"
-      for (const pair of pairs) {
-        // Разбиваем пару по символу '=', чтобы получить массив [ключ, значение]
-        const [key, value] = pair.split("=");
-  
-        // Если ключ равен "keyword", сохраняем значение
-        if (key === "keyword") {
-          keywordValue = value;
-          break; // Можно выйти из цикла, если значение найдено
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const keyword = localStorage.getItem("source");
+      if (keyword) {
+        const pairs = keyword.split("&");
+        for (const pair of pairs) {
+          const [key, value] = pair.split("=");
+          if (key === "keyword") {
+            setKeywordValue(value);
+            break;
+          }
         }
       }
     }
-  }
-  
+  }, []); // Пустой массив зависимостей означает, что эффект будет выполняться только после монтирования компонента
+
   console.log("RRRRRRRRRRRRRRRRRRRRRRRRR", keywordValue);
   
 
