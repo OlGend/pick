@@ -93,7 +93,8 @@ export default function TopBrands() {
     } else {
       // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
       setSource("0");
-      if (typeof window !== "undefined") {
+      const sourceFound = localStorage.getItem("source");
+      if (typeof window !== "undefined" && sourceFound !== "partner1039") {
       localStorage.setItem("source", "0");
       }
       searchParams.set("source", "0");
