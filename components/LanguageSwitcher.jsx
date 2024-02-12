@@ -14,11 +14,12 @@ const LanguageSwitcher = () => {
   if (typeof window !== "undefined") {
     defLng = localStorage.getItem("country");
   }
+  const br = localStorage.getItem("brands");
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
-      fallbackData: { flag: "🌍", brand: 221, topBrand: 213 }, // Задаем начальное значение
+      fallbackData: { flag: "🌍", brand: br, topBrand: 213 }, // Задаем начальное значение
     }
   );
 
