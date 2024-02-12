@@ -54,8 +54,8 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     }, 1000);
   };
 
-  const filteredBrands = useTopBrandsFilter(choose, filtered.allBrand);
-  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
+  const filteredBrands = useTopBrandsFilter(138, filtered.allBrand);
+  const topBrands = useTopBrandsFilter(138, filtered.topBrand);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
