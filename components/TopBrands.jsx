@@ -253,16 +253,10 @@ export default function TopBrands() {
   if (urlBrands && typeof window !== "undefined") {
     localStorage.setItem("brands", urlBrands);
   }
-  // const publicBrand =
-  //   typeof window !== "undefined" ? localStorage.getItem("brands") : null;
-  // console.log(publicBrand, "333333333333333");
-
-  // Теперь переменная publicBrand доступна за пределами блока if
-
  
 
-  const brandsValue = typeof window !== "undefined" ? localStorage.getItem("brands") : null;
-  const filteredBrands = useTopBrandsFilter(brandsValue || 221, languageDetails.topBrand);
+
+  const filteredBrands = useTopBrandsFilter(languageDetails.brand, languageDetails.topBrand);
   
 
 
