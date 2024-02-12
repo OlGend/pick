@@ -209,7 +209,7 @@ const TheHeader = () => {
               </Link>
             </div>
           )}
-          {user && (
+          {/* {user && (
             <div className="option">
               <Link
                 className="flex items-center"
@@ -227,7 +227,7 @@ const TheHeader = () => {
                 {t("Withdraw")}
               </Link>
             </div>
-          )}
+          )} */}
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
