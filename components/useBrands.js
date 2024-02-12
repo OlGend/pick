@@ -77,7 +77,7 @@ export function useTopBrandsFilter(depositFilterValue, countryFilterValue) {
   const filteredBrands = allBrands?.filter((brand) => {
     if (brand.lists) {
       const listsValues = Object.values(brand.lists);
-      return listsValues.includes(depositFilterValue) && listsValues.includes(countryFilterValue);
+      return listsValues.includes(248) && listsValues.includes(countryFilterValue);
     }
     return false;
   });
