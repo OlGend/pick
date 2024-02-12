@@ -7914,7 +7914,7 @@ p {
 .tickets span {
   font-size: 16px;
   font-weight: 900;
-  color: #80c700;
+  color: #128722;
   position: absolute;
   top: -17px;
   right: -10px;
@@ -7927,9 +7927,13 @@ p {
 .tickets {
   margin-left: auto;
 }
-.tickets a  {
+.tickets a, .option a  {
   padding: 0;
   background: transparent !important;
+  font-size: 16px;
+}
+.option {
+  margin-left: 20px;
 }
 .header .logo a {
   padding: 0;

@@ -26,6 +26,11 @@ import Spinsbro from "@/public/SpinsBro_500x250.png";
 import Jupi from "@/public/jupicasino1_500x250.png";
 import GoogleTranslate from "@/components/GoogleTranslate";
 
+import wallet from "@/public/wallet.svg";
+import dollar from "@/public/dollar.svg";
+
+
+
 const navItems = [
   {
     icon: <PokerChip className="mr-1" size={20} />,
@@ -195,26 +200,28 @@ const TheHeader = () => {
           {user && (
             <div className="flex tickets items-end">
               <Link
-                className="user user-wheel"
-                href={`https://pickbonus.myawardwallet.com/?keyword=test_vk1#/fortunewheel`}
+                target="_blank"
+                className="user user-wheel flex items-center"
+                href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
               >
-                {/* <Image
+                <Image
+                className="mr-1"
                 src={dollar}
                 alt={dollar}
                 width={26}
                 height={26}
                 loading="lazy"
-              /> */}
+              />
                 Wheel of Fortune <span>{user.tickets}</span>
               </Link>
             </div>
           )}
-          {/* {user && (
-            <div className="option">
+          {user && (
+            <div className="option flex items-end">
               <Link
+                target="_blank"
                 className="flex items-center"
-                href={`https://pickbonus.myawardwallet.com/?keyword=test_vk1#/withdrawal`}
-                onClick={() => setShowAdditionalOptions(false)}
+                href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
               >
                 <Image
                   src={wallet}
@@ -227,7 +234,7 @@ const TheHeader = () => {
                 {t("Withdraw")}
               </Link>
             </div>
-          )} */}
+          )}
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
