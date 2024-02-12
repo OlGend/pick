@@ -169,15 +169,14 @@ const TheHeader = () => {
 
   const api = "https://pickbonus.myawardwallet.com/api";
   useEffect(() => {
-    const idUserParam = urlParams.get("keyword");
-    console.log("PARAM", idUserParam);
+   
 
     const fetchUsers = async () => {
       try {
         const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
         if (res.ok) {
           const users = await res.json();
-
+          console.log("USERS", users)
           setUser(users);
         } else {
           console.error("Failed to fetch data:", res.status);
@@ -204,6 +203,20 @@ const TheHeader = () => {
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
+          {anotherState && (
+              <div className="tickets">
+                <Link href={`/fortunewheel/${newUrl}`}>
+                  <Image
+                    src={dollar}
+                    alt={dollar}
+                    width={26}
+                    height={26}
+                    loading="lazy"
+                  />
+                  {t("Wheel of Fortune")} <span>{anotherState.tickets}</span>
+                </Link>
+              </div>
+            )}
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
