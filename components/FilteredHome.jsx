@@ -17,7 +17,7 @@ const FilteredHome = () => {
   const { t } = useTranslation();
   const [isLoader, setIsLoader] = useState(false);
 
-  const [currentTab, setCurrentTab] = useState(2);
+  const [currentTab, setCurrentTab] = useState(1);
 
 
   const navigateBrands = [
