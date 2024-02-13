@@ -143,7 +143,10 @@ const TheHeader = () => {
   );
 
   const [keywordValue, setKeywordValue] = useState(null);
-
+  const idUserParam = urlParams.get("keyword");
+    console.log("IDUSERPARAM", idUserParam);
+    const userData = keywordValue !== null ? keywordValue : idUserParam;
+    console.log("USERDATA", userData)
   useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
@@ -169,14 +172,12 @@ const TheHeader = () => {
         const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
-          setKeywordValue(keywordValue2);
+          setKeywordValue(userData);
           setUser(null); // Установка значения null перед загрузкой новых данных
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
   
-          setTimeout(() => {
-            setIsLoading(false); // Установка isLoading в false через 2 секунды
-            fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
-          }, 2000); // Задержка в 2 секунды (2000 миллисекунд)
+          fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
+         
       
         }
       }
