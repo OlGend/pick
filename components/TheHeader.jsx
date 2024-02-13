@@ -137,6 +137,7 @@ const TheHeader = () => {
   };
 
   /////////////////////////////////
+  const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState();
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
@@ -145,37 +146,30 @@ const TheHeader = () => {
   const [keywordValue, setKeywordValue] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true); 
     const api = "https://pickbonus.myawardwallet.com/api";
-    const fetchUsers = async (keywordValue) => {
-      console.log("KEYWORDVALUE", keywordValue);
-      try {
-        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
-        if (res.ok) {
-          const users = await res.json();
-          console.log("USERS", users);
-          setUser(users);
-        } else {
-          console.error("Failed to fetch data:", res.status);
-        }
-      } catch (error) {
-        console.error("An error occurred:", error);
-      }
-    };
+    fetchUsers(keywordValue)
+    .then((userData) => {
+      setUser(userData); // Сохраните данные пользователя в состоянии
+      setIsLoading(false); // Установите состояние загрузки в false после получения данных
+    })
+    .catch((error) => {
+      console.error("An error occurred:", error);
+      setIsLoading(false); // Обработайте ошибку и установите состояние загрузки в false
+    });
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
-      console.log("KEYWORD", keyword);
 
       if (keyword) {
-        console.log("IF KEYWORD", keyword);
-
         const pairs = keyword.split("&");
-        console.log("PAIRS", pairs);
+
         const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
-        console.log("KEYWORDPAIR", keywordPair);
+
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
 
           setKeywordValue(keywordValue2);
+          
           fetchUsers(keywordValue2);
         }
       }
@@ -195,45 +189,44 @@ const TheHeader = () => {
             </Link>
           </div>
           <div className="usernone flex ml-auto">
-
-          {user && (
-            <div className="flex tickets items-end">
-              <Link
-                target="_blank"
-                className="user user-wheel flex items-center"
-                href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
-              >
-                <Image
-                  className="mr-1"
-                  src={dollar}
-                  alt={dollar}
-                  width={26}
-                  height={26}
-                  loading="lazy"
-                />
-                Wheel of Fortune <span>{user.tickets}</span>
-              </Link>
-            </div>
-          )}
-          {user && (
-            <div className="option flex items-end">
-              <Link
-                target="_blank"
-                className="flex items-center"
-                href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
-              >
-                <Image
-                  src={wallet}
-                  alt={wallet}
-                  width={25}
-                  height={25}
-                  loading="lazy"
-                  className="mr-1"
-                />
-                Withdraw
-              </Link>
-            </div>
-          )}
+            {user && (
+              <div className="flex tickets items-end">
+                <Link
+                  target="_blank"
+                  className="user user-wheel flex items-center"
+                  href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
+                >
+                  <Image
+                    className="mr-1"
+                    src={dollar}
+                    alt={dollar}
+                    width={26}
+                    height={26}
+                    loading="lazy"
+                  />
+                  Wheel of Fortune <span>{user.tickets}</span>
+                </Link>
+              </div>
+            )}
+            {user && (
+              <div className="option flex items-end">
+                <Link
+                  target="_blank"
+                  className="flex items-center"
+                  href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
+                >
+                  <Image
+                    src={wallet}
+                    alt={wallet}
+                    width={25}
+                    height={25}
+                    loading="lazy"
+                    className="mr-1"
+                  />
+                  Withdraw
+                </Link>
+              </div>
+            )}
           </div>
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
