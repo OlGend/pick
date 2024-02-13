@@ -105,6 +105,14 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     }
   }, []);
 
+  const [randomBrands, setRandomBrands] = useState([]);
+
+  useEffect(() => {
+    const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
+    const selectedBrands = shuffledBrands.slice(0, 4);
+    setRandomBrands(selectedBrands);
+  }, []);
+
   return (
     <>
       {isLoader ? (
@@ -299,7 +307,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
             )}
           </div>
           <div className="flex flex-col basis-[24%] py-6">
-            {topBrands.map((item) => {
+            {randomBrands.map((item) => {
               const reviewImgSrc = extractReviewImage(item.content.rendered);
               const playLink = extractLink(item.content.rendered);
               return (
