@@ -266,7 +266,7 @@ const TheHeader = () => {
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
-          {/* <GoogleTranslate /> */}
+          <GoogleTranslate />
 
           <div className="mobile-none">
             <button
@@ -282,7 +282,7 @@ const TheHeader = () => {
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
-                {/* <GoogleTranslate /> */}
+                <GoogleTranslate />
                 <div className="flex flex-col items-start useryes">
                   {user && (
                     <div className="flex tickets items-end">

@@ -22,8 +22,8 @@ export default async function Home() {
         <TopBrands />
         <NewBrands />
       </div>
-      {/* <ReviewBrands />
-      <FilteredHome /> */}
+      <ReviewBrands />
+      <FilteredHome />
       {/* <GuideSlotsHome /> */}
     </>
   );
