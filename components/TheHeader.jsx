@@ -152,7 +152,6 @@ const TheHeader = () => {
         const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
         if (res.ok) {
           const users = await res.json();
-
           setUser(users);
           setIsLoading(false);
         } else {
@@ -163,27 +162,26 @@ const TheHeader = () => {
         console.error("An error occurred:", error);
       }
     };
+  
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
-
       if (keyword) {
         const pairs = keyword.split("&");
-
         const keywordPair = pairs.find((pair) => pair.startsWith("?keyword="));
-
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
-
           setKeywordValue(keywordValue2);
-
-          fetchUsers(keywordValue2);
+          setUser(null); // Установка значения null перед загрузкой новых данных
+          setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
+  
           setTimeout(() => {
             fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
-          }, 2000); 
+          }, 2000); // Задержка в 2 секунды (2000 миллисекунд)
         }
       }
     }
   }, []);
+  
 
   ////////////////////////////////////
   console.log("USER", user);
