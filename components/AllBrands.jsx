@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrandsFilter } from "./useBrandsNew";
+import { useTopBrandsFilter } from "./useBrands";
 import Loader from "./Loader";
 import FilterLoader from "@/components/FilterLoader";
 
@@ -53,12 +53,17 @@ export default function AllBrands({ choose, filtered, isLoader }) {
       setIsLoading(false);
     }, 1000);
   };
-  console.log("CATEGORIES",choose, filtered.allBrand, filtered.topBrand)
-  const filteredBrands = useTopBrandsFilter(choose, 213, 221);
-  console.log("ALL", filteredBrands);
-  const topBrands = useTopBrandsFilter(choose, 221, 220);
-  console.log("TOP", topBrands);
 
+  let br;
+  if (typeof window !== "undefined") {
+    br = localStorage.getItem("brands");
+  }
+  console.log("BRR", br);
+  console.log("CATEGORIES", choose, filtered.brand, filtered.topBrand);
+  const filteredBrands = useTopBrandsFilter(choose, filtered.topBrand);
+  console.log("ALL", filteredBrands);
+  const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
+  console.log("TOP", topBrands);
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
