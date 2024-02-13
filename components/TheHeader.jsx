@@ -173,7 +173,7 @@ const TheHeader = () => {
         if (keywordPair) {
           const keywordValue2 = keywordPair.split("=")[1];
           setKeywordValue(userData);
-          setUser(null); // Установка значения null перед загрузкой новых данных
+          // setUser(null); // Установка значения null перед загрузкой новых данных
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
   
           fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
