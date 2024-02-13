@@ -30,7 +30,7 @@ const TheFooter = () => {
             </div>
             <div className="solution-contacts flex">
               <div>
-                <p className="mb-1">{t("footer.contacts")}</p>
+                <p className="mb-1">Our Contacts:</p>
                 <a
                   className="underline flex items-center"
                   href="mailto:manager@reg2dep.business"
@@ -120,14 +120,14 @@ const TheFooter = () => {
             </div>
             <div className="flex flex-col">
               <div className="solution-text flex flex-col items-center">
-                <h4 className="text-center mb-1">{t("footer.title")}</h4>
-                <p className="text-center">{t("footer.description")}</p>
+                <h4 className="text-center mb-1">Empowering iGaming Solutions</h4>
+                <p className="text-center">Unlocking 15 Websites That Will Boost Your Brand to New Heights</p>
                 <a
                   className="btn btn-primary m-auto"
                   target="_blank"
                   href="skype:live:.cid.5aea35e66c096c0b?chat"
                 >
-                  {t("footer.link")}
+                 Start Working With Us
                 </a>
               </div>
             </div>
@@ -189,12 +189,12 @@ const TheFooter = () => {
         </div>
         <div className="footer-bottom">
           <div className="main__container pt-3">
-            <p>{t("footer.about")}</p>
+            <p>XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.</p>
           </div>
         </div>
         <div className="footer-end">
           <div className="main__container pt-3 pb-3 flex justify-center">
-            <span>{t("footer.copyright")}</span>
+            <span>Copyright © 2024, xxlcasinolist.com All rights reserved.</span>
           </div>
         </div>
       </div>

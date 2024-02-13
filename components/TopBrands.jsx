@@ -304,7 +304,7 @@ export default function TopBrands() {
       ) : (
         <div className="main__container pb-6">
           <div className="heading flex items-center pt-12">
-            <h2>{t("topBrands.title")}</h2>
+            <h2>XxlCasinoList Best Choices for 2024</h2>
           </div>
           <div className="flex flex-wrap px-0 py-6">
             {filteredBrands.map((brand) => {

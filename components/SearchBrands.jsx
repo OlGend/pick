@@ -66,7 +66,7 @@ const SearchBrands = () => {
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={t('searchBrands.placeholder')}
+          placeholder="Search brands..."
           onClick={() => setOverlayActive(true)}
           style={{ zIndex: overlayActive ? 1000 : "auto" }}
         />

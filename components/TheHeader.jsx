@@ -33,37 +33,37 @@ const navItems = [
   {
     icon: <PokerChip className="mr-1" size={20} />,
     class: "sub-casinos",
-    label: "header.casinos",
+    label: "Casinos ▼",
     href: "/casinos",
     subMenu: [
-      { label: "header.cryptocasinos", href: "/crypto-casinos" },
+      { label: "Crypto Casinos", href: "/crypto-casinos" },
       {
-        label: "header.fastwithdrawalcasinos",
+        label: "Fast Withdrawal Casinos",
         href: "/fast-withdrawal-casinos",
       },
-      { label: "header.livecasinos", href: "/live-casinos" },
-      { label: "header.newestcasinos", href: "/newest-casinos" },
-      { label: "header.certifiedcasinos", href: "/top-certified-casinos" },
+      { label: "Live Casinos", href: "/live-casinos" },
+      { label: "Newest Casinos", href: "/newest-casinos" },
+      { label: "Top Certified Casinos", href: "/top-certified-casinos" },
     ],
   },
   {
     icon: <Gift className="mr-1" size={20} />,
     class: "sub-bonuses",
-    label: "header.bonuses",
+    label: "Bonuses ▼",
     href: "/bonuses",
     subMenu: [
-      { label: "header.nodeposit", href: "/no-deposit-bonuses" },
-      { label: "header.exclusive", href: "/exclusive-bonuses" },
-      { label: "header.deposit", href: "/deposit-bonuses" },
-      { label: "header.welcome", href: "/welcome-bonuses" },
-      { label: "header.nowager", href: "/no-wagering-bonuses" },
+      { label: "No Deposit Bonuses", href: "/no-deposit-bonuses" },
+      { label: "Exclusive Bonuses", href: "/exclusive-bonuses" },
+      { label: "Deposit Bonuses", href: "/deposit-bonuses" },
+      { label: "Welcome Bonuses", href: "/welcome-bonuses" },
+      { label: "No Wagering Bonuses", href: "/no-wagering-bonuses" },
     ],
   },
 
   {
     icon: <Wallet className="mr-1" size={20} />,
     class: "sub-payments",
-    label: "header.payments",
+    label: "All Payments ▼",
     href: "/payments",
     subMenu: [
       { label: "Apple Pay", href: "/payments/apple-pay" },
@@ -85,13 +85,13 @@ const navItems = [
   },
   {
     icon: <Notepad className="mr-1" size={20} />,
-    label: "header.guides",
+    label: "Guides",
     href: "/guides",
   },
   {
     icon: <GameController className="mr-1" size={20} />,
     class: "sub-providers",
-    label: "header.providers",
+    label: "Game Providers ▼",
     href: "/game-providers",
     subMenu: [
       { label: "Amatic", href: "/game-providers/amatic" },
@@ -111,17 +111,16 @@ const navItems = [
   {
     icon: <Flag className="mr-1" size={20} />,
     class: "sub-countries",
-    label: "header.countries",
+    label: "Casinos by Country ▼",
     href: "/by-country",
     subMenu: [
-      { label: "header.austr", href: "/by-country/australia" },
-      { label: "header.brazil", href: "/by-country/brazil" },
-      { label: "header.canada", href: "/by-country/canada" },
-      { label: "header.finnish", href: "/by-country/finland" },
-      { label: "header.germany", href: "/by-country/germany" },
-      { label: "header.nz", href: "/by-country/new-zealand" },
-      { label: "header.norw", href: "/by-country/norway" },
-      { label: "header.polish", href: "/by-country/poland" },
+      { label: "Australian Casino", href: "/by-country/australia" },
+      { label: "Canadian Casino", href: "/by-country/canada" },
+      { label: "Finnish Casino", href: "/by-country/finland" },
+      { label: "German Casino", href: "/by-country/germany" },
+      { label: "New Zealand Casino", href: "/by-country/new-zealand" },
+      { label: "Norwegian Casino", href: "/by-country/norway" },
+      { label: "Polish Casino", href: "/by-country/poland" },
     ],
   },
 ];
@@ -231,7 +230,7 @@ const TheHeader = () => {
                   loading="lazy"
                   className="mr-1"
                 />
-                {t("Withdraw")}
+                Withdraw
               </Link>
             </div>
           )}
@@ -309,7 +308,7 @@ const TheHeader = () => {
                           loading="lazy"
                           className="mr-1"
                         />
-                        {t("Withdraw")}
+                        Withdraw
                       </Link>
                     </div>
                   )}

@@ -235,7 +235,7 @@ export default function NewBrands() {
     <>
       <div className="main__container pb-6">
         <div className="heading flex items-center">
-          <h2>{t("newestasinos.title")}</h2>
+          <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
         </div>
         <div className="flex flex-col px-0 py-6 wrap-mobile">
           {filteredBrands.map((brand) => {

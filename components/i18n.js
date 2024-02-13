@@ -3769,7 +3769,7 @@ async function initializeI18n() {
     .use(initReactI18next)
     .init({
       resources,
-      lng: defLng,
+      lng: defLng || "en",
       interpolation: {
         escapeValue: false,
       },

@@ -77,10 +77,10 @@ const FilteredHome = () => {
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
             <h2 className="">
-            {t('filteredHome.title')}
+            Catalog of all 2024 Online Casino Bonuses Offered
             </h2>
             <p className="mt-3 pb-4">
-            {t('filteredHome.description')}
+            Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.
             </p>
           </div>
    
