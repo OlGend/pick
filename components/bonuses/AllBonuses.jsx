@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrandsFilter } from "@/components/useBrandsNew";
+import { useTopBrandsFilter } from "@/components/useBrands";
 import Loader from "@/components/Loader";
 import FilterLoader from "@/components/FilterLoader";
 
@@ -134,9 +134,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     </div>
                     <div className="mb-2 withdrawal withdrawal-limits flex items-center">
                       <Handshake className="mr-1 mb-1" size={24} />
-                      <div className="title mr-2">
-                      Withdrawal Limits:
-                      </div>
+                      <div className="title mr-2">Withdrawal Limits:</div>
                       <div
                         className="items-center"
                         dangerouslySetInnerHTML={{
@@ -150,9 +148,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <ShieldPlus size={24} />
-                        <span className="mt-1 ml-2">
-                        Advantages
-                        </span>
+                        <span className="mt-1 ml-2">Advantages</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isPlusesOpen && (
@@ -170,9 +166,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <CurrencyCircleDollar size={24} />
-                        <span className="mt-1 ml-2">
-                        Deposit Methods
-                        </span>
+                        <span className="mt-1 ml-2">Deposit Methods</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isDepositsOpen && (
@@ -190,9 +184,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <Bank size={24} />
-                        <span className="mt-1 ml-2">
-                        Withdrawal Methods
-                        </span>
+                        <span className="mt-1 ml-2">Withdrawal Methods</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isWithdrawalOpen && (
@@ -210,9 +202,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <Prohibit size={24} />
-                        <span className="mt-1 ml-2">
-                        Restricted Countries
-                        </span>
+                        <span className="mt-1 ml-2">Restricted Countries</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isCountriesOpen && (
@@ -259,14 +249,12 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                         ) : (
                           <Eye className="mr-2" size={20} />
                         )}
-                      Read Review
+                        Read Review
                       </Link>
                       <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
-                        <span className="text-center">
-                        How to get bonus?
-                        </span>
+                        <span className="text-center">How to get bonus?</span>
                         <p className="text-center m-0 text-slate-500">
-                        Activate bonus in your casino account
+                          Activate bonus in your casino account
                         </p>
                       </div>
                       <Link

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { useTopBrandsFilter } from "@/components/useBrandsNew";
+import { useTopBrandsFilter } from "@/components/useBrands";
 import Loader from "@/components/Loader";
 import FilterLoader from "@/components/FilterLoader";
 

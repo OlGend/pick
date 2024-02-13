@@ -144,13 +144,12 @@ const FilteredCasinos = () => {
       slug: "pl",
     },
   ];
+  // В начале компонента FilteredBonuses
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
     {
-      fallbackData: selectedBrand
-        ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+      fallbackData: { flag: "🌍", brand: 25, topBrand: 213 }, // Задаем начальное значение
     }
   );
 
