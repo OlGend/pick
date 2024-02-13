@@ -177,6 +177,9 @@ const TheHeader = () => {
           setKeywordValue(keywordValue2);
 
           fetchUsers(keywordValue2);
+          setTimeout(() => {
+            fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
+          }, 2000); 
         }
       }
     }
