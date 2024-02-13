@@ -85,7 +85,7 @@ export default function PostContent({ id }) {
           } else if (item.tag === "li") {
             return <li key={index}>{item.fullContent || ""}</li>;
           } else if (item.tag === "a") {
-            return <a className="text-sky-500 font-bold underline" target="_blank" href={`${item.fullContent}`} key={index}>{t("play.to.casino")}</a>;
+            return <a className="text-sky-500 font-bold underline" target="_blank" href={`${item.fullContent}`} key={index}>Play now to this Casino</a>;
           } else {
             return null;
           }

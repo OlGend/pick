@@ -18,8 +18,8 @@ const Amatic = () => {
           <p className="text-white mt-5">
          
           </p>
-          <h1 className="text-white">{t("boongo.title")}</h1>
-          <p className="text-white mt-5">{t("boongo.description")}</p>
+          <h1 className="text-white">Boongo Gaming: Crafting Immersive Digital Experiences through Innovative Game Design</h1>
+          <p className="text-white mt-5">Boongo Gaming has quickly distinguished itself in the competitive iGaming sector with visually appealing and feature-rich games. Known for titles like 'God's Temple' and '15 Golden Eggs,' the company excels in both innovation and quality. Their robust backend solutions further enhance the gaming experience. Whether you're a casual player or a dedicated enthusiast, Boongo Gaming offers a memorable gaming journey.</p>
           {/* <Subscribe /> */}
         </div>
         <div className="basis-[40%] flex justify-center">

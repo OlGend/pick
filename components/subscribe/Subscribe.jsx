@@ -89,7 +89,7 @@ const Subscribe = () => {
         <input
           className={`subscribe ${error ? "error" : ""}`}
           type="email"
-          placeholder={t("subscribe.email")}
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           onFocus={handleInputFocus}
@@ -115,7 +115,7 @@ const Subscribe = () => {
             className="mr-2"
           />
 
-          {t("subscribe.agree")} <a target="_blank" className="underline text-sky-500" href="/terms-and-conditions">{t("subscribe.terms")}</a> {t("subscribe.and")} <a target="_blank" className="underline text-sky-500"  href="/privacy-policy">{t("subscribe.policy")}</a>
+I agree with <a target="_blank" className="underline text-sky-500" href="/terms-and-conditions">Terms and Conditions</a> and <a target="_blank" className="underline text-sky-500"  href="/privacy-policy">Privacy Policy </a>
         </label>
         <label className={`acceptedTerms ${privacyAgreed ? "active" : ""}`}>
           <input

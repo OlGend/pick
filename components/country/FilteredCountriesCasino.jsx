@@ -102,9 +102,9 @@ const FilteredCasinos = () => {
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
-            <h2 className="text-white">{t("filtered.countries.title")}</h2>
+            <h2 className="text-white">Interactive List of Online Casinos 2024: Filtering by Country</h2>
             <p className="text-white mt-5">
-              {t("filtered.countries.description")}
+            Looking for the perfect online casino? Explore our interactive list for 2024, specifically designed to help you filter through an array of options based on country. Tailor your search to find the most reputable, safe, and exciting casinos available in your region.
             </p>
           </div>
         </div>

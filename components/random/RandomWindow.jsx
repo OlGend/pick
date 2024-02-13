@@ -79,8 +79,8 @@ const Modal = ({ t }) => {
     randomBrand && (
       <div className={`modal-overlay ${isActive ? "active" : ""}`}>
         <div className="modal-content relative">
-          <p>{t("random.brand")}</p>
-          <span className="mb-2">{t("random.description")}</span>
+          <p>Random Brand</p>
+          <span className="mb-2">Pay attention to a random brand suggested just for you</span>
           <div
             className="card-brand flex items-center mt-2"
             key={randomBrand.id}
@@ -109,7 +109,7 @@ const Modal = ({ t }) => {
                 href={`/bonuses/${randomBrand.id}`}
               >
                 <Eye className="mr-1" size={20} />
-                {t("button.review")}
+                Read Review
               </Link>
               <Link
                 className="btn btn-primary flex justify-center items-center mt-1"
@@ -118,7 +118,7 @@ const Modal = ({ t }) => {
 
               >
                 <Play className="mr-1" size={20} />
-                {t("button.play")}
+                Play Now
               </Link>
             </div>
           </div>

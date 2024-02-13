@@ -44,7 +44,7 @@ const GuideSlotsPage = () => {
     <div className="guides guides-white">
       <div className="main__container flex">
         <div className="flex flex-col">
-          <h2>{t("GuideSlotsPage.title")}</h2>
+          <h2>Latest Casino Guides</h2>
           <div className="guide-cards flex-wrap flex justify-start pt-6 pb-6">
             {lastThreePosts.map((item) => (
               <div className="guide-card relative mb-6" key={item.id}>
@@ -66,7 +66,7 @@ const GuideSlotsPage = () => {
             ))}
           </div>
           <Link className="btn btn-primary text-center" href={"/guides"}>
-            {t("button.view")}
+          View All Guides
           </Link>
         </div>
       </div>

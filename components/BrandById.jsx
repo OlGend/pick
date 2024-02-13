@@ -138,8 +138,8 @@ export default function Brand({ brand }) {
                           {numericRating}/5
                         </div>
                         <div className="basis-[50%] p-2 safeIndex">
-                          <div className="font-bold">{t("brand.safety")}</div>
-                          <div>{t("brand.our")}</div>
+                          <div className="font-bold">Safety Index</div>
+                          <div>by Our Casino</div>
                         </div>
                       </div>
                     </div>
@@ -166,7 +166,7 @@ export default function Brand({ brand }) {
                       }}
                     />
                     <div className="title mt-2">
-                      {t("allBrands.withLimits")}
+                    Withdrawal Limits:
                     </div>
                     <div
                       className="limits flex items-center"
@@ -179,7 +179,7 @@ export default function Brand({ brand }) {
                       href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                       target="_blank"
                     >
-                      <Play className="mr-2" size={24} /> {t("button.play")}
+                      <Play className="mr-2" size={24} /> Play Now
                     </Link>
                   </div>
                   <div className="otherContent ml-6 basis-[75%]">
@@ -196,7 +196,7 @@ export default function Brand({ brand }) {
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
                           <span className="mt-2 ">
-                            {t("allBrands.depMethods")}
+                          Deposit Methods
                           </span>
                         </div>
                         <div
@@ -209,7 +209,7 @@ export default function Brand({ brand }) {
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
                           <span className="mt-2 ">
-                            {t("allBrands.withMethods")}
+                          Withdrawal Methods
                           </span>
                         </div>
                         <div
@@ -224,7 +224,7 @@ export default function Brand({ brand }) {
                       </div>
                       <div className="one-brand-item mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">{t("brand.providers")}</span>
+                          <span className="mt-2 ">Game Providers:</span>
                         </div>
                         <div className="providers-items pt-2">
                           {extractProviders(oneBrand.content.rendered).map(
@@ -238,7 +238,7 @@ export default function Brand({ brand }) {
                       </div>
                       <div className="restricted mt-3">
                         <div className="title flex items-center ">
-                          <span className="mt-2 ">{t("brand.restricted")}</span>
+                          <span className="mt-2 ">Restricted countries:</span>
                         </div>
                         <div className="countries-items pt-2">
                           {extractCountries(oneBrand.content.rendered).map(

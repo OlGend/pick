@@ -63,7 +63,7 @@ const ReviewBrands = () => {
                     launched casino websites for evaluation
                   </Link>
                 }
-                excerpt2={t("reviewBrands.question1.excerpt2")}
+                excerpt2=', aiming to provide utmost value to our visitors.'
               />
               <MenuItem
                 icon={<AlignCenterHorizontalSimple color="#0967e3" size={24} />}
@@ -111,7 +111,7 @@ const ReviewBrands = () => {
               <MenuItem
                 icon={<DiceTwo color="#0967e3" size={24} />}
                 title="Creating unique and exclusive bonuses tailored exclusively for our valued visitors"
-                excerpt={t("In our quest to provide the widest range of choices, we continually seek fresh ")}
+                excerpt="In our quest to provide the widest range of choices, we continually seek fresh"
                 link={
                   <Link href={"/casinos"}>
                    exclusive bonuses

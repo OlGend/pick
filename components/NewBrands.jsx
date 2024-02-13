@@ -290,7 +290,7 @@ export default function NewBrands() {
                     target="_blank"
                   >
                     <Play className="mb-1 mr-1" size={24} />
-                    {t("button.play")}
+                    Play Now
                   </Link>
                   <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
@@ -302,7 +302,7 @@ export default function NewBrands() {
                     ) : (
                       <Eye className="mr-2" size={20} />
                     )}
-                    {t("button.review")}
+                   Read Review
                   </Link>
                 </div>
               </div>

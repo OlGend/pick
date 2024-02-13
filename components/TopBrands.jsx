@@ -336,7 +336,7 @@ export default function TopBrands() {
                         href={`/bonuses/${brand.id}`}
                       >
                         <Eye className="mr-1" size={20} />
-                        {t("button.review")}
+                        Read Review
                       </Link>
                       <Link
                         className="btn btn-primary flex justify-center items-center mt-1"
@@ -345,7 +345,7 @@ export default function TopBrands() {
                       >
                         <Play className="mr-2" size={20} />
 
-                        {t("button.play")}
+                        Play Now
                       </Link>
                     </div>
                   </div>

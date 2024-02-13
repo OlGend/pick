@@ -147,7 +147,7 @@ const CarouselSlider = ({ slides }) => {
   }, []);
   return (
     <div className="brand-slider mb-6">
-      <h4 className="mb-3">{t("slider.title")}</h4>
+      <h4 className="mb-3">Reccomend brands for you</h4>
       <Slider {...settings}>
         {slidesData.map((slide, index) => {
           const reviewImgSrc = extractReviewImage(slide.content.rendered);
@@ -178,7 +178,7 @@ const CarouselSlider = ({ slides }) => {
                     href={`/bonuses/${slide.id}`}
                   >
                     <Eye className="mr-1 mb-1" size={20} />
-                    {t("button.review")}
+                    Read Review
                   </Link>
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
@@ -186,7 +186,7 @@ const CarouselSlider = ({ slides }) => {
                     target="_blank"
                   >
                     <Play className="mr-1 mb-1" size={20} />
-                    {t("button.play")}
+                    Play Now
                   </Link>
                 </div>
               </div>

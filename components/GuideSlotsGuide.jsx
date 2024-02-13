@@ -49,21 +49,21 @@ export default function GuideSlotsGuide() {
   return (
     <>
       <div className="title-guide">
-        <h1 className="pt-12 pb-4">{t("guideslotsguide.title")}</h1>
+        <h1 className="pt-12 pb-4">Gambling Guides</h1>
       </div>
-      <p>{t("guideslotsguide.excerpt")}</p>
+      <p>If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device.</p>
       {showMore ? (
         <>
-          <p>{t("guideslotsguide")}</p>
-          <p>{t("guideslotsguide2")}</p>
+          <p>If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere &#39;hit and spin&#39;, there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.</p>
+          <p>In search of the perfect repository for tips, fun facts, and advice to boost your chances of winning? Look no further as we provide quick access to some of the most relevant slots guides and free slots games hosted on our website.</p>
           <button className="read flex" onClick={toggleShowMore}>
             {" "}
-            {t("button.less")} <CaretUp size={20} />
+            Read Less <CaretUp size={20} />
           </button>
         </>
       ) : (
         <button className="read flex" onClick={toggleShowMore}>
-          {t("button.read")} <CaretDown size={20} />
+          Read More <CaretDown size={20} />
         </button>
       )}
 

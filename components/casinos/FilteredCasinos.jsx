@@ -160,8 +160,8 @@ const FilteredCasinos = () => {
       <div className="main__container filter-brands">
         <div className="content flex flex-wrap">
           <div className="left flex flex-col justify-center basis-[60%]">
-            <h2 className="">{t("filteredCasinos.title")}</h2>
-            <p className="mt-3 pb-4">{t("filteredCasinos.excerpt")}</p>
+            <h2 className="">Comprehensive Compilation of 2024 Online Casino Selection</h2>
+            <p className="mt-3 pb-4">In Search of an Online Casino? Navigate through our up-to-date repository housing a myriad of casinos awaiting your consideration.</p>
           </div>
         </div>
         <div className="flex navigate-filter">

@@ -165,7 +165,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                     <div className="mb-2 withdrawal withdrawal-limits flex items-center">
                       <Handshake className="mr-1" size={24} />
                       <div className="title mr-2">
-                        {t("allBrands.withLimits")}
+                      Withdrawal Limits:
                       </div>
                       <div
                         className="items-center"
@@ -181,7 +181,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                       <div className="title flex items-center">
                         <ShieldPlus size={24} />
                         <span className="mt-1 ml-2">
-                          {t("allBrands.advantages")}
+                        Advantages
                         </span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
@@ -201,7 +201,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                       <div className="title flex items-center">
                         <CurrencyCircleDollar size={24} />
                         <span className="mt-1 ml-2">
-                          {t("allBrands.depMethods")}
+                        Deposit Methods
                         </span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
@@ -221,7 +221,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                       <div className="title flex items-center">
                         <Bank size={24} />
                         <span className="mt-1 ml-2">
-                          {t("allBrands.withMethods")}
+                        Withdrawal Methods
                         </span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
@@ -241,7 +241,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                       <div className="title flex items-center">
                         <Prohibit size={24} />
                         <span className="mt-1 ml-2">
-                          {t("allBrands.restricted")}
+                        Restricted Countries
                         </span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
@@ -289,14 +289,14 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                         ) : (
                           <Eye className="mr-2" size={20} />
                         )}
-                        {t("button.review")}
+                    Read Review
                       </Link>
                       <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
                         <span className="text-center">
-                          {t("allBrands.howGet")}
+                        Read Review
                         </span>
                         <p className="text-center m-0 text-slate-500">
-                          {t("allBrands.activate")}
+                        Activate bonus in your casino account
                         </p>
                       </div>
                       <Link
@@ -305,7 +305,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                         target="_blank"
                       >
                         <Play className="mr-2" size={24} />
-                        {t("button.play")}
+                        Play Now
                       </Link>
                     </div>
                   </div>
@@ -319,7 +319,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
                 onClick={loadMoreBrands}
               >
                 <DotsThreeCircle className="mr-1" size={24} />
-                {t("button.load")}
+                Load More Brands
               </button>
             )}
           </div>

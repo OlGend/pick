@@ -35,10 +35,10 @@ const GuideSlotsHome = () => {
     <div className="guides">
       <div className="main__container flex">
         <div className="flex flex-col">
-          <h2 className="mb-5">{t("guideSlotsHome.title1")}</h2>
+          <h2 className="mb-5">Online Gambling Guides</h2>
           <div className="flex justify-between guide-wrapper">
             <div className="left basis-5/12">
-              <p>{t("guideSlotsHome.excerpt3")}</p>
+              <p>Enjoy the entertainment of gambling while ensuring it remains enjoyable by being mindful of your emotions during play. If you detect feelings of heightened anger, frustration, or difficulty making rational decisions, it is essential to cease playing.</p>
             </div>
             <div className="right basis-5/12">
               <Image
@@ -70,7 +70,7 @@ const GuideSlotsHome = () => {
             ))}
           </div>
           <Link className="btn btn-primary text-center" href={"/guides"}>
-            {t("button.view")}
+          View All Guides
           </Link>
         </div>
       </div>
