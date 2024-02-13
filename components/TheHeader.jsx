@@ -82,11 +82,11 @@ const navItems = [
       { label: "Visa", href: "/payments/visa" },
     ],
   },
-  {
-    icon: <Notepad className="mr-1" size={20} />,
-    label: "Guides",
-    href: "/guides",
-  },
+  // {
+  //   icon: <Notepad className="mr-1" size={20} />,
+  //   label: "Guides",
+  //   href: "/guides",
+  // },
   {
     icon: <GameController className="mr-1" size={20} />,
     class: "sub-providers",
