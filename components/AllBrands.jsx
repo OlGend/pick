@@ -62,7 +62,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
   console.log("CATEGORIES", choose, filtered.brand, filtered.topBrand);
   const filteredBrands = useTopBrandsFilter(choose, filtered.topBrand);
   console.log("ALL", filteredBrands);
-  const topBrands = useTopBrandsFilter(choose, filtered.topBrand, 221);
+  const topBrands = useTopBrandsFilter(221, filtered.topBrand);
   console.log("TOP", topBrands);
 
   useEffect(() => {
