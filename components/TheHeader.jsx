@@ -147,7 +147,7 @@ const TheHeader = () => {
     console.log("IDUSERPARAM", idUserParam);
     const userData = keywordValue !== null ? keywordValue : idUserParam;
     console.log("USERDATA", userData)
-
+  useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
       try {
@@ -182,7 +182,7 @@ const TheHeader = () => {
         }
       }
     }
-
+  }, []);
   
 
   ////////////////////////////////////
