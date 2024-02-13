@@ -1,4 +1,3 @@
-//TheHeader.jsx
 "use client";
 import { useState, useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
@@ -146,15 +145,10 @@ const TheHeader = () => {
   const [keywordValue, setKeywordValue] = useState(null);
 
   useEffect(() => {
-    const idUserParam = urlParams.get("keyword");
-    console.log("IDUSERPARAM", idUserParam);
-    const userData = idUserParam !== null ? idUserParam : keywordValue;
-
-    console.log("USERDATA", userData)
     const api = "https://pickbonus.myawardwallet.com/api";
-    const fetchUsers = async () => {
+    const fetchUsers = async (keywordValue) => {
       try {
-        const res = await fetch(`${api}/user/read_one.php?id=${userData}`);
+        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
         if (res.ok) {
           const users = await res.json();
           setUser(users);
@@ -179,8 +173,10 @@ const TheHeader = () => {
           setUser(null); // Установка значения null перед загрузкой новых данных
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
   
-          fetchUsers(); // Вызываем функцию через 2 секунды
-        
+          setTimeout(() => {
+            setIsLoading(false); // Установка isLoading в false через 2 секунды
+            fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
+          }, 2000); // Задержка в 2 секунды (2000 миллисекунд)
       
         }
       }
