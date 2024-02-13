@@ -146,17 +146,22 @@ const TheHeader = () => {
   const [keywordValue, setKeywordValue] = useState(null);
 
   useEffect(() => {
-    setIsLoading(true); 
+    
     const api = "https://pickbonus.myawardwallet.com/api";
-    fetchUsers(keywordValue)
-    .then((userData) => {
-      setUser(userData); // Сохраните данные пользователя в состоянии
-      setIsLoading(false); // Установите состояние загрузки в false после получения данных
-    })
-    .catch((error) => {
-      console.error("An error occurred:", error);
-      setIsLoading(false); // Обработайте ошибку и установите состояние загрузки в false
-    });
+    const fetchUsers = async (keywordValue) => {
+      try {
+        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
+        if (res.ok) {
+          const users = await res.json();
+
+          setUser(users);
+        } else {
+          console.error("Failed to fetch data:", res.status);
+        }
+      } catch (error) {
+        console.error("An error occurred:", error);
+      }
+    };
     if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
 
