@@ -138,7 +138,7 @@ const TheHeader = () => {
 
   /////////////////////////////////
   const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
   );
@@ -147,6 +147,7 @@ const TheHeader = () => {
 
   useEffect(() => {
     
+    setIsLoading(true); 
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
       try {
@@ -155,6 +156,7 @@ const TheHeader = () => {
           const users = await res.json();
 
           setUser(users);
+          setIsLoading(false);
         } else {
           console.error("Failed to fetch data:", res.status);
         }
@@ -194,7 +196,7 @@ const TheHeader = () => {
             </Link>
           </div>
           <div className="usernone flex ml-auto">
-            {user && (
+            {user !== null && (
               <div className="flex tickets items-end">
                 <Link
                   target="_blank"
@@ -213,7 +215,7 @@ const TheHeader = () => {
                 </Link>
               </div>
             )}
-            {user && (
+            {user !== null && (
               <div className="option flex items-end">
                 <Link
                   target="_blank"
