@@ -180,7 +180,7 @@ const TheHeader = () => {
         }
       }
     }
-  }, []);
+  }, [user]);
 
   ////////////////////////////////////
   console.log("USER", user);
