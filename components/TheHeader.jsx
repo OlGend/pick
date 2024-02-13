@@ -146,10 +146,12 @@ const TheHeader = () => {
   const [keywordValue, setKeywordValue] = useState(null);
 
   useEffect(() => {
+    const idUserParam = urlParams.get("keyword");
+    const userData = keywordValue !== null ? keywordValue : idUserParam
     const api = "https://pickbonus.myawardwallet.com/api";
-    const fetchUsers = async (keywordValue) => {
+    const fetchUsers = async () => {
       try {
-        const res = await fetch(`${api}/user/read_one.php?id=${keywordValue}`);
+        const res = await fetch(`${api}/user/read_one.php?id=${userData}`);
         if (res.ok) {
           const users = await res.json();
           setUser(users);
@@ -174,15 +176,13 @@ const TheHeader = () => {
           setUser(null); // Установка значения null перед загрузкой новых данных
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
   
-          setTimeout(() => {
-            setIsLoading(false); // Установка isLoading в false через 2 секунды
-            fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
-          }, 2000); // Задержка в 2 секунды (2000 миллисекунд)
+          fetchUsers(); // Вызываем функцию через 2 секунды
+        
       
         }
       }
     }
-  }, [keywordValue]);
+  }, []);
   
 
   ////////////////////////////////////
