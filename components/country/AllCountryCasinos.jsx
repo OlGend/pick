@@ -117,6 +117,14 @@ export default function AllBonuses({ choose, topchoose, icon }) {
     }
   }, [filteredBrands]);
 
+  const [randomBrands, setRandomBrands] = useState([]);
+
+  useEffect(() => {
+    const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
+    const selectedBrands = shuffledBrands.slice(0, 4);
+    setRandomBrands(selectedBrands);
+  }, []);
+
   return (
     <>
       {isLoading ? (
@@ -324,7 +332,7 @@ export default function AllBonuses({ choose, topchoose, icon }) {
             )}
           </div>
           <div className="flex flex-col basis-[24%] py-6">
-            {topBrands.map((item) => {
+            {randomBrands.map((item) => {
               const reviewImgSrc = extractReviewImage(item.content.rendered);
               const playLink = extractLink(item.content.rendered);
               return (
