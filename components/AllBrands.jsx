@@ -54,11 +54,11 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     }, 1000);
   };
 
-  let br;
-  if (typeof window !== "undefined") {
-    br = localStorage.getItem("brands");
-  }
-  console.log("BRR", br);
+  // let br;
+  // if (typeof window !== "undefined") {
+  //   br = localStorage.getItem("brands");
+  // }
+  // console.log("BRR", br);
   console.log("CATEGORIES", choose, filtered.brand, filtered.topBrand);
   const filteredBrands = useTopBrandsFilter(choose, filtered.topBrand);
   console.log("ALL", filteredBrands);

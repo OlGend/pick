@@ -55,9 +55,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
     }, 1000);
   };
 
-  const filteredBrands = useTopBrandsFilter(choose, 213, 221);
+  const filteredBrands = useTopBrandsFilter(choose, filtered.topBrand);
   console.log("ALL", filteredBrands);
-  const topBrands = useTopBrandsFilter(choose, 221, 220);
+  const topBrands = useTopBrandsFilter(221, choose);
   console.log("TOP", topBrands);
 
   useEffect(() => {
