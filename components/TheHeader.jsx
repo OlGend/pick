@@ -175,8 +175,10 @@ const TheHeader = () => {
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
   
           setTimeout(() => {
+            setIsLoading(false); // Установка isLoading в false через 2 секунды
             fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
           }, 2000); // Задержка в 2 секунды (2000 миллисекунд)
+      
         }
       }
     }
