@@ -37,7 +37,7 @@ const PreviewHome = () => {
       <div className="main__container flex items-center first-block">
         <div className="flex flex-col basis-[50%]">
           <h1>Join the community of our subscribers</h1>
-          <p>Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it's worth playing today!</p>
+          <p>Get fresh bargains and lucrative bonuses from trustworthy online casinos working in your region! Be the first one to find out where it&#39;s worth playing today!</p>
           {/* <Subscribe /> */}
         </div>
         <Image src={Img} alt="Beep" width={550} />
