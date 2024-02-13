@@ -164,8 +164,11 @@ const TheHeader = () => {
         console.error("An error occurred:", error);
       }
     };
-  
-    if (typeof window !== "undefined") {
+    if (idUserParam !== null){
+      fetchUsers(idUserParam)
+    } else if (keywordValue !== null) {
+      fetchUsers(keywordValue)
+    } else if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
       if (keyword) {
         const pairs = keyword.split("&");
