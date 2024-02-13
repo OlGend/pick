@@ -146,8 +146,6 @@ const TheHeader = () => {
   const [keywordValue, setKeywordValue] = useState(null);
 
   useEffect(() => {
-    
-    setIsLoading(true); 
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
       try {
@@ -158,6 +156,7 @@ const TheHeader = () => {
           setUser(users);
           setIsLoading(false);
         } else {
+          setIsLoading(false);
           console.error("Failed to fetch data:", res.status);
         }
       } catch (error) {
@@ -176,7 +175,7 @@ const TheHeader = () => {
           const keywordValue2 = keywordPair.split("=")[1];
 
           setKeywordValue(keywordValue2);
-          
+
           fetchUsers(keywordValue2);
         }
       }
@@ -195,46 +194,51 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>
           </div>
-          <div className="usernone flex ml-auto">
-            {user !== null && (
-              <div className="flex tickets items-end">
-                <Link
-                  target="_blank"
-                  className="user user-wheel flex items-center"
-                  href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
-                >
-                  <Image
-                    className="mr-1"
-                    src={dollar}
-                    alt={dollar}
-                    width={26}
-                    height={26}
-                    loading="lazy"
-                  />
-                  Wheel of Fortune <span>{user.tickets}</span>
-                </Link>
+          {isLoading ? (
+            // Если данные загружаются, отображаем индикатор загрузки или другое сообщение
+            <div></div>
+          ) : (
+            // Если данные загружены, отображаем контент
+            user && (
+              <div className="usernone flex ml-auto">
+                <div className="flex tickets items-end">
+                  <Link
+                    target="_blank"
+                    className="user user-wheel flex items-center"
+                    href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
+                  >
+                    <Image
+                      className="mr-1"
+                      src={dollar}
+                      alt={dollar}
+                      width={26}
+                      height={26}
+                      loading="lazy"
+                    />
+                    Wheel of Fortune <span>{user.tickets}</span>
+                  </Link>
+                </div>
+
+                <div className="option flex items-end">
+                  <Link
+                    target="_blank"
+                    className="flex items-center"
+                    href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
+                  >
+                    <Image
+                      src={wallet}
+                      alt={wallet}
+                      width={25}
+                      height={25}
+                      loading="lazy"
+                      className="mr-1"
+                    />
+                    Withdraw
+                  </Link>
+                </div>
               </div>
-            )}
-            {user !== null && (
-              <div className="option flex items-end">
-                <Link
-                  target="_blank"
-                  className="flex items-center"
-                  href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
-                >
-                  <Image
-                    src={wallet}
-                    alt={wallet}
-                    width={25}
-                    height={25}
-                    loading="lazy"
-                    className="mr-1"
-                  />
-                  Withdraw
-                </Link>
-              </div>
-            )}
-          </div>
+            )
+          )}
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
