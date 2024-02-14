@@ -18,10 +18,6 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
-import { v4 as uuidv4 } from "uuid";
-import Card from "@/components/slider/Card";
-import Carousel from "@/components/slider/Carousel";
-
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
 
@@ -280,29 +276,14 @@ export default function TopBrands() {
   const filteredBrands = useTopBrandsFilter(br, languageDetails.topBrand);
 
   const { t } = useTranslation();
-  // const [cards, setCards] = useState([]);
 
   useEffect(() => {
     if (filteredBrands.length === 0) {
       setLoading(true);
     } else {
       setLoading(false);
-      const cardsFromApi = filteredBrands.map((item) => ({
-        key: uuidv4(),
-        content: (
-          <Card
-            key={uuidv4()}
-            imagen={item.imagen}
-            title={item.title}
-            description={item.description}
-            link={item.link}
-          />
-        ),
-      }));
-      console.log("cardsFromApi", cardsFromApi);
-      setCards(cardsFromApi);
     }
-  }, []);
+  }, [filteredBrands]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleLinkClick = () => {
@@ -314,72 +295,101 @@ export default function TopBrands() {
     }, 1000);
   };
 
-  // useEffect(() => {
-  //   if (filteredBrands) {
-  //     const cardsFromApi = filteredBrands.map((item) => ({
-  //       key: uuidv4(),
-  //       content: (
-  //         <Card
-  //           key={uuidv4()}
-  //           imagen={item.imagen}
-  //           title={item.title}
-  //           description={item.description}
-  //           link={item.link}
-  //         />
-  //       ),
-  //     }));
-  //     console.log("cardsFromApi", cardsFromApi);
-  //     setCards(cardsFromApi);
-  //   } else {
-  //     // Если filteredBrands пустой, очистите массив cards
-  //     setCards([]);
-  //   }
-  // }, []);
+  const settings = {
+    infinite: true,
+    speed: 500,
+    // className: "center",
+    centerMode: true,
+    slidesToShow: 2,
+    centerPadding: "60px",
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-  let cards = [
-    {
-      key: uuidv4(),
-      content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
-      ),
-    },
-  ];
   return (
     <>
-      <div className="main__container">
-        <Carousel
-          cards={cards}
-          height="500px"
-          width="100%"
-          margin="0 auto"
-          offset={200}
-          showArrows={false}
-        />
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="main__container pb-6">
+          <div className="heading flex items-center pt-12">
+            <h2>XxlCasinoList Best Choices for 2024</h2>
+          </div>
+          <div className="brand-slider brandslider mb-6">
+            <Slider {...settings}>
+              {filteredBrands.map((brand) => {
+                const reviewImgSrc = extractReviewImage(brand.content.rendered);
+                const playLink = extractLink(brand.content.rendered);
+
+                return (
+                  <div className="basis-[19%] card-brand mb-3" key={brand.id}>
+                    <div className=" p-3">
+                      <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                        <Image
+                          src={reviewImgSrc}
+                          alt={brand.title.rendered}
+                          width={150}
+                          height={75}
+                          loading="lazy"
+                        />
+                      </Link>
+                    </div>
+                    <div className="brandContent p-3">
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: extractReviewBonus(brand.content.rendered),
+                        }}
+                      />
+                      <div className="buttons">
+                        {/* <Link
+                          className="btn btn-secondary flex justify-center items-center mb-1"
+                          href={`/bonuses/${brand.id}`}
+                        >
+                          <Eye className="mr-1" size={20} />
+                          Read Review
+                        </Link> */}
+                        <Link
+                          className="btn btn-primary flex justify-center items-center mt-1"
+                          href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                          target="_blank"
+                        >
+                          <Play className="mr-2" size={20} />
+                          Play Now
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </Slider>
+          </div>
+        </div>
+      )}
     </>
   );
 }
