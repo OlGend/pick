@@ -292,7 +292,7 @@ export default function NewBrands() {
                     <Play className="mb-1 mr-1" size={24} />
                     Play Now
                   </Link>
-                  <Link
+                  {/* <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
                     href={`/bonuses/${brand.id}`}
                     onClick={handleLinkClick}
@@ -303,7 +303,7 @@ export default function NewBrands() {
                       <Eye className="mr-2" size={20} />
                     )}
                    Read Review
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             );

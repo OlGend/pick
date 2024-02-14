@@ -48,13 +48,13 @@ export default function BrandSearchContainer({ showBrands }) {
                   }}
                 />
                 <div className="buttons">
-                  <Link
+                  {/* <Link
                     className="btn btn-secondary flex justify-center items-center mb-1"
                     href={`/bonuses/${brand.id}`}
                   >
                     <Eye className="mr-1" size={20} />
                     Read Review
-                  </Link>
+                  </Link> */}
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
                     href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}

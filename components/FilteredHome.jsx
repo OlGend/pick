@@ -24,31 +24,31 @@ const FilteredHome = () => {
     {
       currentTab: 1,
       currentCategories: 25,
-      currentText: "navigateBrands.all",
+      currentText: "All Brands",
       icon: <SquareLogo className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 2,
       currentCategories: 26,
-      currentText: "navigateBrands.recommend",
+      currentText: "Recommended Brands",
       icon: <Medal className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 3,
       currentCategories: 24,
-      currentText: "navigateBrands.newly",
+      currentText: "Newly Brands",
       icon: <Crown className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 4,
       currentCategories: 19,
-      currentText: "navigateBrands.crypto",
+      currentText: "Crypto Brands",
       icon: <CurrencyBtc className="mr-2 pb-1" size={32} />,
     },
     {
       currentTab: 5,
       currentCategories: 187,
-      currentText: "navigateBrands.sports",
+      currentText: "Top Sports Brands",
       icon: <DribbbleLogo className="mr-2 pb-1" size={32} />,
     },
   ];

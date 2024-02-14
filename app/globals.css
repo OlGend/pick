@@ -6383,11 +6383,16 @@ h1 {
 .page-bonuses .custom-bonuses {
   background: transparent;
 }
+.topbr {
+  padding: 60px 0;
+  background: #1d2730;
+  position: relative;
+}
 .page-bonuses .main::after,
 .preview::after,
 .bonuses::after,
 .tabNavigation::after,
-.guides::after {
+.guides::after, .topbr::after {
   content: "";
   position: absolute;
   width: 150px;
@@ -6403,7 +6408,28 @@ h1 {
     10px
   ); /* Размытие силой 10 пикселей (можно изменить значение) */
 }
+.brandslider .slick-slide {
 
+}
+.slick-slide {
+  margin-right:27px;
+}
+
+/* the parent */
+.slick-list {
+  margin-right:-27px;
+}
+.brandslider .slick-slide .card-banner {
+  background: url(/green_vip.png);
+  /* max-width: 75% !important;
+  margin-right: 5% !important; */
+}
+.branslider {
+  padding: 0;
+}
+.brandslider .card-brand {
+  background: transparent;
+}
 .btn-more {
   font-size: 14px;
   font-weight: 700;

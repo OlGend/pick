@@ -266,7 +266,7 @@ const TheHeader = () => {
           <I18nextProvider i18n={i18n}>
             <LanguageSwitcher />{" "}
           </I18nextProvider>
-          <GoogleTranslate />
+          {/* <GoogleTranslate /> */}
 
           <div className="mobile-none">
             <button
@@ -282,7 +282,7 @@ const TheHeader = () => {
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                 {/* Mobile menu content */}
-                <GoogleTranslate />
+                {/* <GoogleTranslate /> */}
                 <div className="flex flex-col items-start useryes">
                   {user && (
                     <div className="flex tickets items-end">
@@ -342,28 +342,7 @@ const TheHeader = () => {
                   </Link>
                 </div> */}
 
-                <div className="navigation-item p-0">
-                  <Link href={`/bonuses/6883`} onClick={closeMobileMenu}>
-                    <Image
-                      className="flex flex-start"
-                      src={Winlegends}
-                      alt="logo"
-                      width={110}
-                      loading="lazy"
-                    />
-                  </Link>
-                </div>
-                <div className="navigation-item p-0">
-                  <Link href={`/bonuses/7383`} onClick={closeMobileMenu}>
-                    <Image
-                      className="flex flex-start"
-                      src={Windetta}
-                      alt="logo"
-                      width={110}
-                      loading="lazy"
-                    />
-                  </Link>
-                </div>
+             
                 <I18nextProvider i18n={i18n}>
                   <LanguageSwitcher />{" "}
                 </I18nextProvider>
@@ -403,65 +382,7 @@ const TheHeader = () => {
         />
         {/* <div className="change-lng"> </div> */}
       </div>
-      <div className="header-brands">
-        <div className="header__container flex justify-center">
-          {/* <div className="basis-[17%]">
-            <Link href={`/bonuses/7089`}>
-              <Image
-                className="grayscale"
-                src={Smokace}
-                alt="logo"
-                width={85}
-                loading="lazy"
-              />
-            </Link>
-          </div> */}
-          <div className="basis-[17%]">
-            <Link href={`/bonuses/6883`}>
-              <Image
-                className="grayscale"
-                src={Winlegends}
-                alt="logo"
-                width={85}
-                loading="lazy"
-              />
-            </Link>
-          </div>
-          <div className="basis-[17%]">
-            <Link href={`/bonuses/7383`}>
-              <Image
-                className="grayscale"
-                src={Windetta}
-                alt="logo"
-                width={85}
-                loading="lazy"
-              />
-            </Link>
-          </div>
-          {/* <div className="basis-[17%]">
-            <Link href={`/bonuses/6657`}>
-              <Image
-                className="grayscale"
-                src={Spinsbro}
-                alt="logo"
-                width={85}
-                loading="lazy"
-              />
-            </Link>
-          </div> */}
-          {/* <div className="basis-[17%]">
-            <Link href={`/bonuses/5011`}>
-              <Image
-                className="grayscale"
-                src={Jupi}
-                alt="logo"
-                width={85}
-                loading="lazy"
-              />
-            </Link>
-          </div> */}
-        </div>
-      </div>
+   
     </header>
   );
 };

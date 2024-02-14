@@ -263,7 +263,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
                     </div>
 
                     <div className="buttons ml-auto flex items-center">
-                      <Link
+                      {/* <Link
                         className="btn btn-secondary text-center flex justify-center items-center"
                         href={`/bonuses/${brand.id}`}
                         onClick={handleLinkClick}
@@ -274,7 +274,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
                           <Eye className="mr-2" size={20} />
                         )}
                       Read Review
-                      </Link>
+                      </Link> */}
                       <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
                         <span className="text-center">
                         How to get bonus?
