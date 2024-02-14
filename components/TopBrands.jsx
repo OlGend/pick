@@ -23,7 +23,8 @@ import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
 
 export default function TopBrands() {
-  ////////////////////NEW CODE/////////////////////
+
+    ////////////////////NEW CODE/////////////////////
 
   // Получаем текущий URL
 
@@ -288,52 +289,7 @@ export default function TopBrands() {
       setLoading(false);
     }
   }, [filteredBrands]);
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleLinkClick = () => {
-    setIsLoading(true);
-
-    // Simulate some delay to show the loader (remove this in actual usage)
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  };
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    // className: "center",
-    centerMode: true,
-    slidesToShow: 2,
-    centerPadding: "60px",
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   let cards = [
     {
       key: uuidv4(),
@@ -367,7 +323,7 @@ export default function TopBrands() {
     }
   ];
   return (
-    <div className="">
+    <div className="main__container">
       <Carousel
         cards={cards}
         height="500px"
