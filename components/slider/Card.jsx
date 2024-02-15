@@ -1,6 +1,7 @@
 import Styles from "./Card.module.css";
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
+import Image from "next/image";
 // import Button from "./Button";
 
 function Card({ imagen, link, bonus }) {
@@ -31,7 +32,8 @@ function Card({ imagen, link, bonus }) {
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >
-      <img src={imagen} alt="" />
+      <Image width={300} height={150} loading="lazy" src={imagen} alt={bonus} />
+
       {/* <h2>Title</h2> */}
 
       <div
@@ -40,7 +42,11 @@ function Card({ imagen, link, bonus }) {
         }}
       />
       <div className={Styles.btnn}>
-        <a className="btn btn-primary" href={`https://link.reg2dep1.com/${link}/${newUrl}`} target="_blank">
+        <a
+          className="btn btn-primary"
+          href={`https://link.reg2dep1.com/${link}/${newUrl}`}
+          target="_blank"
+        >
           Play bow
         </a>
         {/* <Button text="Demo" />
