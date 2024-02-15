@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import TopBrands from "@/components/TopBrands";
+import TopBrandsOriginal from "@/components/TopBrandsOriginal";
 import NewBrands from "@/components/NewBrands";
 import FilteredCasinos from "@/components/casinos/FilteredCasinos";
 import PreviewBonuses from "@/components/PreviewBonuses";
@@ -16,7 +16,7 @@ export default async function Casinos() {
   return (
     <div className="page-bonuses">
       {/* <PreviewBonuses /> */}
-      <TopBrands />
+      <TopBrandsOriginal />
       <FilteredCasinos />
       {/* <GuideSlotsPage /> */}
     </div>
