@@ -307,14 +307,15 @@ export default function TopBrands() {
     ) : (
       // Показываем карусель, когда данные загружены
       cards2 && (
-        <Carousel
-          cards={cards2}
-          height="500px"
-          width="100%"
-          margin="0 auto"
-          offset={200}
-          showArrows={false}
-        />
+        <h2>yes</h2>
+        // <Carousel
+        //   cards={cards2}
+        //   height="500px"
+        //   width="100%"
+        //   margin="0 auto"
+        //   offset={200}
+        //   showArrows={false}
+        // />
       )
     )}
   </div>
