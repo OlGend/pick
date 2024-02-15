@@ -22,7 +22,7 @@ export default async function Home() {
       {/* <PreviewHome /> */}
       <div className="topbr">
         <TopBrandsOriginal />
-        <TopBrands />
+        {/* <TopBrands /> */}
       </div>
       <div className="background-block">
         <FilteredHome />
