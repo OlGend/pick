@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import BrandById from "@/components/BrandById";
-import CarouselSlider from "@/components/CarouselSlider";
+// import CarouselSlider from "@/components/CarouselSlider";
 import NewBrands from "@/components/NewBrands";
 // import GuideSlotsPage from "@/components/GuideSlotsPage";
 
@@ -33,7 +33,7 @@ export default async function Brand({ params: { id } }: Props) {
     <>
       <div className="main__container brandUtils">
         <BrandById brand={brand.id} />
-        <CarouselSlider slides={[]} />
+        {/* <CarouselSlider slides={[]} /> */}
         <div className="wrapper-container background-block">
           <NewBrands />
         </div>
