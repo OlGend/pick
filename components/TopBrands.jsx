@@ -294,7 +294,7 @@ export default function TopBrands() {
   // Преобразуем эти объекты в карточки
   cards2 = randomBrands.map((brand) => ({
     key: uuidv4(),
-    content: <Card  link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
+    content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
   }));
   
   

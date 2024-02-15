@@ -1,3 +1,4 @@
+"use client"
 import Styles from "./Card.module.css";
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
