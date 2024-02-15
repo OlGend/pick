@@ -40,7 +40,7 @@ function Card({ imagen, link, bonus }) {
         }}
       />
       <div className={Styles.btnn}>
-        <a href={`https://link.reg2dep1.com/${link}/${newUrl}`} target="_blank">
+        <a className="btn btn-primary" href={`https://link.reg2dep1.com/${link}/${newUrl}`} target="_blank">
           Play bow
         </a>
         {/* <Button text="Demo" />

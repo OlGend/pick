@@ -6411,6 +6411,7 @@ h1 {
 .brandslider .slick-slide {
 
 }
+
 .slick-slide {
   margin-right:27px;
 }
@@ -6976,6 +6977,10 @@ p {
   background-image: url(/bgfilter.png) !important;
   background-position: top center !important;
 } */
+.topbr .review-bonus {
+  font-size: 22px !important;
+  line-height: 26px !important;
+}
 .filter-brands .card-brand-filtered .buttons {
   flex-direction: column;
 }
