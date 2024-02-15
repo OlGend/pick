@@ -1,14 +1,9 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import { Suspense, useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useState, useEffect } from "react";
+
 import { useTranslation } from "react-i18next";
-import { Play, Eye } from "phosphor-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useTopBrands } from "./useBrands";
+
 import { useTopBrandsFilter } from "@/components/useBrands";
 import {
   extractReviewBonus,
