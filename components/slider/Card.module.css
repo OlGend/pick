@@ -3,8 +3,8 @@
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  background-color: bisque;
-  width: 16rem;
+  /* background-color: bisque; */
+  width: 22rem;
   height: fit-content;
   padding: 0 2rem 2rem 2rem;
   border-radius: 10px;
@@ -31,4 +31,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div div div:nth-child(6n + 1) .card {
+  background: url(/red_vip.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 2) .card  {
+  background: url(/green_vip.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 3) .card  {
+  background: url(/lightblue_vip.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 4) .card  {
+  background: url(/orange_vip.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 5) .card  {
+  background: url(/pink_vip.png);
+  background-size: cover;
+}
+div div div:nth-child(6n + 6) .card  {
+  background: url(/blue_vip.png);
+  background-size: cover;
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .card {
+    width: 15rem;
+  }
 }

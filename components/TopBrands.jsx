@@ -23,8 +23,7 @@ import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
 
 export default function TopBrands() {
-
-    ////////////////////NEW CODE/////////////////////
+  ////////////////////NEW CODE/////////////////////
 
   // Получаем текущий URL
 
@@ -295,43 +294,64 @@ export default function TopBrands() {
       key: uuidv4(),
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
-      )
-    }
+      ),
+    },
   ];
+  let cards2;
+  // Перемешиваем массив filteredBrands случайным образом
+  const shuffledBrands = filteredBrands.sort(() => Math.random() - 0.5);
+  // Берем первые 6 элементов из перемешанного массива
+  const randomBrands = shuffledBrands.slice(0, 6);
+  // Преобразуем эти объекты в карточки
+  cards2 = randomBrands.map((brand) => ({
+    key: uuidv4(),
+    content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
+  }));
+  
+  
+
+  console.log("CARDS2", cards2);
   return (
     <div className="main__container">
-      <Carousel
-        cards={cards}
-        height="500px"
-        width="100%"
-        margin="0 auto"
-        offset={200}
-        showArrows={false}
-      />
-    </div>
+    {loading ? ( // Показываем индикатор загрузки, если данные загружаются
+      <Loader />
+    ) : (
+      // Показываем карусель, когда данные загружены
+      cards2 && (
+        <Carousel
+          cards={cards2}
+          height="500px"
+          width="100%"
+          margin="0 auto"
+          offset={200}
+          showArrows={false}
+        />
+      )
+    )}
+  </div>
   );
 }

@@ -6384,7 +6384,7 @@ h1 {
   background: transparent;
 }
 .topbr {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   background: #1d2730;
   position: relative;
 }
@@ -6972,10 +6972,10 @@ p {
   background-image: url(/bgfilter.png) !important;
   background-position: top center !important;
 }
-.other-custom-bonuses {
+/* .other-custom-bonuses {
   background-image: url(/bgfilter.png) !important;
   background-position: top center !important;
-}
+} */
 .filter-brands .card-brand-filtered .buttons {
   flex-direction: column;
 }

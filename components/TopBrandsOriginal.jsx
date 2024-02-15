@@ -18,7 +18,7 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
-export default function TopBrands() {
+export default function TopBrandsOriginal() {
   ////////////////////NEW CODE/////////////////////
 
   // Получаем текущий URL

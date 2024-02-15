@@ -32,9 +32,8 @@ const resources = {
       "subscribe.and": "and",
       "subscribe.policy": " Privacy Policy ",
 
-      "subscribe.promotional": "I agree to receive promotional emails from xxlcasinolist and its partners",
-
-     
+      "subscribe.promotional":
+        "I agree to receive promotional emails from xxlcasinolist and its partners",
 
       "play.to.casino": "Play now to this Casino",
       "header.home": "Home",
@@ -445,7 +444,8 @@ const resources = {
       "subscribe.terms": "Regulaminem",
       "subscribe.and": "i",
       "subscribe.policy": "Polityką Prywatności",
-      "subscribe.promotional": "Zgadzam się na otrzymywanie wiadomości promocyjnych od xxlcasinolist i jego partnerów",
+      "subscribe.promotional":
+        "Zgadzam się na otrzymywanie wiadomości promocyjnych od xxlcasinolist i jego partnerów",
 
       "header.home": "Strona Główna",
       "header.bonuses": "Bonusy ▼",
@@ -870,7 +870,8 @@ const resources = {
       "subscribe.terms": "Vilkår og betingelser",
       "subscribe.and": "og",
       "subscribe.policy": "Personvernpolitikken",
-      "subscribe.promotional": "Jeg samtykker i å motta reklame-e-poster fra xxlcasinolist og dets partnere",
+      "subscribe.promotional":
+        "Jeg samtykker i å motta reklame-e-poster fra xxlcasinolist og dets partnere",
 
       "header.home": "Hjem",
       "header.bonuses": "Bonuser ▼",
@@ -1285,7 +1286,8 @@ const resources = {
       "subscribe.terms": "Allgemeinen Geschäftsbedingungen",
       "subscribe.and": "und",
       "subscribe.policy": "Datenschutzrichtlinie",
-      "subscribe.promotional": "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
+      "subscribe.promotional":
+        "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
 
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
@@ -1701,7 +1703,8 @@ const resources = {
       "subscribe.and": "and",
       "subscribe.policy": " Privacy Policy ",
 
-      "subscribe.promotional": "I agree to receive promotional emails from xxlcasinolist and its partners",
+      "subscribe.promotional":
+        "I agree to receive promotional emails from xxlcasinolist and its partners",
 
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
@@ -2113,7 +2116,8 @@ const resources = {
       "subscribe.and": "and",
       "subscribe.policy": " Privacy Policy ",
 
-      "subscribe.promotional": "I agree to receive promotional emails from xxlcasinolist and its partners",
+      "subscribe.promotional":
+        "I agree to receive promotional emails from xxlcasinolist and its partners",
 
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
@@ -2524,7 +2528,8 @@ const resources = {
       "subscribe.terms": "Allgemeinen Geschäftsbedingungen",
       "subscribe.and": "und",
       "subscribe.policy": "Datenschutzrichtlinie",
-      "subscribe.promotional": "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
+      "subscribe.promotional":
+        "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
       "play.to.casino": "Jetzt im Casino spielen",
       "header.home": "Startseite",
       "header.bonuses": "Bonis ▼",
@@ -2938,7 +2943,8 @@ const resources = {
       "subscribe.terms": "Allgemeinen Geschäftsbedingungen",
       "subscribe.and": "und",
       "subscribe.policy": "Datenschutzrichtlinie",
-      "subscribe.promotional": "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
+      "subscribe.promotional":
+        "Ich stimme zu, Werbe-E-Mails von xxlcasinolist und seinen Partnern zu erhalten",
 
       "play.to.casino": "Jetzt im Casino spielen",
       "header.home": "Startseite",
@@ -3356,7 +3362,8 @@ const resources = {
       "subscribe.and": "and",
       "subscribe.policy": " Privacy Policy ",
 
-      "subscribe.promotional": "I agree to receive promotional emails from xxlcasinolist and its partners",
+      "subscribe.promotional":
+        "I agree to receive promotional emails from xxlcasinolist and its partners",
 
       "header.home": "Home",
       "header.bonuses": "Bonuses ▼",
@@ -3756,7 +3763,9 @@ async function initializeI18n() {
       "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
     );
     const data = await response.json();
-    localStorage.setItem("country", data.country);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("country", data.country);
+    }
     defLng = data.country.toLowerCase();
   } catch (error) {
     console.error("Ошибка при запросе к API:", error);
