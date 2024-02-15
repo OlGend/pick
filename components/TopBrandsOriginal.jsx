@@ -18,6 +18,7 @@ import {
 import Loader from "@/components/Loader";
 import useSWR from "swr";
 
+
 export default function TopBrandsOriginal() {
   ////////////////////NEW CODE/////////////////////
 
