@@ -307,7 +307,7 @@ export default function TopBrands() {
     ) : (
       // Показываем карусель, когда данные загружены
       cards2 && (
-        <h2>yes</h2>
+        // <h2>yes</h2>
         <Carousel
           cards={cards2}
           height="500px"
