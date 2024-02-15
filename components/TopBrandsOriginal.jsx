@@ -336,7 +336,7 @@ export default function TopBrandsOriginal() {
       {loading ? (
         <Loader />
       ) : (
-        <div className="main__container pb-6">
+        <div className="main__container pb-6 d-none">
           <div className="heading flex items-center pt-12">
             <h2>XxlCasinoList Best Choices for 2024</h2>
           </div>

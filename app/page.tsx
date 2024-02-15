@@ -21,7 +21,7 @@ export default async function Home() {
     <>
       {/* <PreviewHome /> */}
       <div className="topbr">
-        {/* <TopBrandsOriginal /> */}
+        <TopBrandsOriginal />
         <TopBrands />
       </div>
       <div className="background-block">
