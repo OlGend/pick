@@ -18,12 +18,11 @@ function Card({ imagen, link, bonus }) {
   const [newUrl, setNewUrl] = useState("");
   // Чтение сохраненной ссылки из локального хранилища
   useEffect(() => {
-    const savedUrl = localStorage.getItem("savedUrl");
-
-    // Установка новой ссылки в состояние
-    if (savedUrl) {
+    if (typeof window !== "undefined") {
+      const savedUrl = localStorage.getItem("savedUrl");
       setNewUrl(savedUrl);
     }
+  
   }, []);
   return (
     <animated.div

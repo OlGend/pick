@@ -21,14 +21,14 @@ export default async function Home() {
     <>
       {/* <PreviewHome /> */}
       <div className="topbr">
-        <TopBrandsOriginal />
-        {/* <TopBrands /> */}
+        {/* <TopBrandsOriginal /> */}
+        <TopBrands />
       </div>
       <div className="background-block">
-        <FilteredHome />
-        <NewBrands />
+        {/* <FilteredHome /> */}
+        {/* <NewBrands /> */}
       </div>
-      <ReviewBrands />
+      {/* <ReviewBrands /> */}
       {/* <GuideSlotsHome /> */}
     </>
   );
