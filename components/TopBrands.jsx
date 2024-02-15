@@ -15,7 +15,7 @@ import useSWR from "swr";
 import { shuffle } from 'lodash';
 
 import { v4 as uuidv4 } from "uuid";
-// import Card from "@/components/slider/Card";
+import Card from "@/components/slider/Card";
 // import Carousel from "@/components/slider/Carousel";
 
 export default function TopBrands() {
@@ -292,10 +292,10 @@ export default function TopBrands() {
   // Берем первые 6 элементов из перемешанного массива
   const randomBrands = shuffledBrands.slice(0, 6);
   // Преобразуем эти объекты в карточки
-  // cards2 = randomBrands.map((brand) => ({
-  //   key: uuidv4(),
-  //   content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
-  // }));
+  cards2 = randomBrands.map((brand) => ({
+    key: uuidv4(),
+    content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
+  }));
   
   
 
