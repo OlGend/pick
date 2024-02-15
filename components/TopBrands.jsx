@@ -11,7 +11,7 @@ import {
   extractLink,
 } from "./brandUtils";
 import Loader from "@/components/Loader";
-// import useSWR from "swr";
+import useSWR from "swr";
 import { shuffle } from 'lodash';
 
 import { v4 as uuidv4 } from "uuid";
@@ -246,19 +246,19 @@ export default function TopBrands() {
 
   const [loading, setLoading] = useState(true);
 
-  // const { data: languageDetails, error: detailsError } = useSWR(
-  //   "languageDetails",
-  //   null,
-  //   {
-  //     fallbackData: selectedBrand
-  //       ? {
-  //           flag: selectedBrand.icon,
-  //           brand: selectedBrand.brand,
-  //           topBrand: selectedBrand.topCurrentCategories,
-  //         }
-  //       : { flag: "🌍", brand: 221, topBrand: 222 },
-  //   }
-  // );
+  const { data: languageDetails, error: detailsError } = useSWR(
+    "languageDetails",
+    null,
+    {
+      fallbackData: selectedBrand
+        ? {
+            flag: selectedBrand.icon,
+            brand: selectedBrand.brand,
+            topBrand: selectedBrand.topCurrentCategories,
+          }
+        : { flag: "🌍", brand: 221, topBrand: 222 },
+    }
+  );
 
   if (typeof window !== "undefined") {
     const newSource = localStorage.getItem("source");
@@ -273,7 +273,7 @@ export default function TopBrands() {
   if (typeof window !== "undefined") {
     br = localStorage.getItem("brands");
   }
-  const filteredBrands = useTopBrandsFilter(br, 25);
+  const filteredBrands = useTopBrandsFilter(br, languageDetails.topBrand);
 
   const { t } = useTranslation();
 
