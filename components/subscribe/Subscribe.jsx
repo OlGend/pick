@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import LoaderButton from "@/components/subscribe/LoaderButton";
 import { X } from "phosphor-react";
 import { useTranslation } from "react-i18next";
-import SliderExample from "./SliderExample";
+// import SliderExample from "./SliderExample";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -163,7 +163,7 @@ I agree with <a target="_blank" className="underline text-sky-500" href="/terms-
           >
             <X color="#fff" size={48} />
           </div>
-          <SliderExample />
+          {/* <SliderExample /> */}
         </div>
       )}
     </div>
