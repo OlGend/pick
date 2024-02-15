@@ -16,7 +16,7 @@ import { shuffle } from 'lodash';
 
 import { v4 as uuidv4 } from "uuid";
 import Card from "@/components/slider/Card";
-// import Carousel from "@/components/slider/Carousel";
+import Carousel from "@/components/slider/Carousel";
 
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
@@ -308,14 +308,14 @@ export default function TopBrands() {
       // Показываем карусель, когда данные загружены
       cards2 && (
         <h2>yes</h2>
-        // <Carousel
-        //   cards={cards2}
-        //   height="500px"
-        //   width="100%"
-        //   margin="0 auto"
-        //   offset={200}
-        //   showArrows={false}
-        // />
+        <Carousel
+          cards={cards2}
+          height="500px"
+          width="100%"
+          margin="0 auto"
+          offset={200}
+          showArrows={false}
+        />
       )
     )}
   </div>
