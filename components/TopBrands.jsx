@@ -14,7 +14,7 @@ import Loader from "@/components/Loader";
 import useSWR from "swr";
 import { shuffle } from 'lodash';
 
-// import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 // import Card from "@/components/slider/Card";
 // import Carousel from "@/components/slider/Carousel";
 
