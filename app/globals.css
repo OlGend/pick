@@ -7172,6 +7172,7 @@ p {
 } */
 .background-block {
   background-image: url(/bgfilter.png) !important;
+  background-position: top;
 }
 .oneBrand .attachment-affiliate-thumb,
 .oneBrand .review-extra-links-item,
@@ -8050,6 +8051,9 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .topbr {
+    overflow: hidden;
+  }
   .preview2 .main__container {
     display: flex;
     flex-direction: column;
