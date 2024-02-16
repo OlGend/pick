@@ -23,13 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
+        {/* <meta
           name="google-site-verification"
           content="Qqdm5I_A_Tr88XIgb3NPhInCB6WHFUzTVCtlZ2fLZq8"
-        />
+        /> */}
       </head>
       <body>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-3SEY9WEK5K" />
+        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-3SEY9WEK5K" />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -38,7 +38,7 @@ export default function RootLayout({
  
             gtag('config', 'G-3SEY9WEK5K');
           `}
-        </Script>
+        </Script> */}
 
         {/* Вставьте скрипт Customer.io прямо сюда */}
         <Script id="customerio" type="text/javascript">

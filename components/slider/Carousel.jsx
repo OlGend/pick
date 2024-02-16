@@ -24,10 +24,10 @@ export default function Carroussel(props) {
     >
       <Carousel
         slides={cards}
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        showNavigation={showArrows}
-        animationConfig={config.gentle}
+        // goToSlide={goToSlide}
+        // offsetRadius={offsetRadius}
+        // showNavigation={showArrows}
+        // animationConfig={config.gentle}
       />
     </div>
   );
