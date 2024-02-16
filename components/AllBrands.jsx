@@ -106,7 +106,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
   }, []);
 
   const [randomBrands, setRandomBrands] = useState([]);
-  const [randomBrands2, setRandomBrands2] = useState();
+  const [randomBrands2, setRandomBrands2] = useState([]);
 
 
   useEffect(() => {
@@ -128,7 +128,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
-          {filteredBrands.slice(0, visibleBrands).map((brand) => {
+          {randomBrands2.map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
               const isPlusesOpen = openPlusesId === brand.id;
