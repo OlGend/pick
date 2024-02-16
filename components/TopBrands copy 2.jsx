@@ -315,7 +315,7 @@ export default function TopBrands() {
           />
         ),
       }));
-      console.log("cardsFromApi", cardsFromApi);
+   
       setCards(cardsFromApi);
     } else {
       // Если filteredBrands пустой, очистите массив cards
@@ -324,7 +324,7 @@ export default function TopBrands() {
   }, [filteredBrands]);
   
   
-  console.log("CARDS", cards)
+
   return (
     <>
       <div className="">

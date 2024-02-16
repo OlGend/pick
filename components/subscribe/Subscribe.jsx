@@ -25,7 +25,7 @@ const Subscribe = () => {
     const users = timeDifference / 600000;
     const roundedNumber = Math.round(users);
 
-    console.log(roundedNumber);
+
     // Обновление countUsers на основе roundedNumber
     setCountUsers((prevCount) => prevCount + roundedNumber);
 
@@ -44,12 +44,12 @@ const Subscribe = () => {
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         setError(t("subscribe.error2"));
       } else {
-        console.log("after", email);
+   
         _cio.identify({
           id: email,
           email: email,
         });
-        console.log("before", email);
+   
 
         setEmail("");
         setPopupText(t("subscribe.congrats"));

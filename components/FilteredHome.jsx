@@ -70,7 +70,7 @@ const FilteredHome = () => {
     }
   );
 
-  console.log("--------", languageDetails);
+
   return (
     <div className="main pt-10 pb-10 other-custom-bonuses">
       <div className="main__container filter-brands">

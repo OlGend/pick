@@ -194,7 +194,7 @@ export default function NewBrands() {
   if (typeof window !== "undefined") {
     const newSource = localStorage.getItem("source");
     const urlBrands = newSource === "partner1039" ? 249 : 220;
-    console.log("NEWURLBRANDS", urlBrands);
+
     if (urlBrands && typeof window !== "undefined") {
       localStorage.setItem("newbrands", urlBrands);
     }
@@ -207,7 +207,7 @@ export default function NewBrands() {
     br,
     languageDetails.topBrand
   );
-  console.log("SL", selectedBrand);
+
 
   const [isLoading, setIsLoading] = useState(false);
 

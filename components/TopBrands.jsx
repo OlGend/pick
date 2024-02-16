@@ -304,7 +304,7 @@ export default function TopBrands() {
     ),
   }));
 
-  console.log("CARDS2", cards2);
+  
 
   return (
     <>

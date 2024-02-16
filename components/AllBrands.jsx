@@ -48,22 +48,18 @@ export default function AllBrands({ choose, filtered, isLoader }) {
   const handleLinkClick = () => {
     setIsLoading(true);
 
-    // Simulate some delay to show the loader (remove this in actual usage)
+
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
   };
 
-  // let br;
-  // if (typeof window !== "undefined") {
-  //   br = localStorage.getItem("brands");
-  // }
-  // console.log("BRR", br);
-  console.log("CATEGORIES", choose, filtered.brand, filtered.topBrand);
+
+
   const filteredBrands = useTopBrandsFilter(choose, filtered.topBrand);
-  console.log("ALL", filteredBrands);
+
   const topBrands = useTopBrandsFilter(221, choose);
-  console.log("TOP", topBrands);
+
 
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
@@ -124,7 +120,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     }
   }, [brandsGenerated, filteredBrands, topBrands]);
 
-  console.log("RANDOMBRANDS@", randomBrands2);
+
   return (
     <>
       {isLoader ? (

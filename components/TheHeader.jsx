@@ -7,8 +7,6 @@ import {
   Gift,
   PokerChip,
   Wallet,
-  Notepad,
-  Flag,
   GameController,
 } from "phosphor-react";
 import Image from "next/image";
@@ -17,12 +15,7 @@ import SearchComponent from "@/components/SearchComponent";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import { geolocation } from "@vercel/edge";
-import Smokace from "@/public/smokace.png";
-import Winlegends from "@/public/winlegends.png";
-import Windetta from "@/public/windeta.png";
-import Spinsbro from "@/public/SpinsBro_500x250.png";
-import Jupi from "@/public/jupicasino1_500x250.png";
+
 // import GoogleTranslate from "@/components/GoogleTranslate";
 
 import wallet from "@/public/wallet.svg";
@@ -144,9 +137,9 @@ const TheHeader = () => {
 
   const [keywordValue, setKeywordValue] = useState(null);
   const idUserParam = urlParams.get("keyword");
-  console.log("IDUSERPARAM", idUserParam);
+
   const userData = keywordValue !== null ? keywordValue : idUserParam;
-  console.log("USERDATA", userData);
+
   useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
@@ -185,8 +178,7 @@ const TheHeader = () => {
     }
   }, []);
 
-  ////////////////////////////////////
-  console.log("USER", user);
+
 
   return (
     <header className="header">
@@ -245,27 +237,13 @@ const TheHeader = () => {
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
-          {/* {anotherState && (
-              <div className="tickets">
-                <Link href={`/fortunewheel/${newUrl}`}>
-                  <Image
-                    src={dollar}
-                    alt={dollar}
-                    width={26}
-                    height={26}
-                    loading="lazy"
-                  />
-                  {t("Wheel of Fortune")} <span>{anotherState.tickets}</span>
-                </Link>
-              </div>
-            )} */}
-
+      
           <I18nextProvider i18n={i18n}>
             <div className="desctoplang">
               <LanguageSwitcher  />{" "}
             </div>
           </I18nextProvider>
-          {/* <GoogleTranslate /> */}
+     
 
           <div className="mobile-none">
             <button
@@ -280,8 +258,7 @@ const TheHeader = () => {
             </button>
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-                {/* Mobile menu content */}
-                {/* <GoogleTranslate /> */}
+         
                 <div className="flex flex-col items-start useryes">
                   {user && (
                     <div className="flex tickets items-end">
@@ -329,43 +306,12 @@ const TheHeader = () => {
                   }))}
                   onLinkClick={closeMobileMenu}
                 />
-                {/* <div className="navigation-item">
-                  <Link href={`/bonuses/7089`} onClick={closeMobileMenu}>
-                    <Image
-                      className="flex flex-start"
-                      src={Smokace}
-                      alt="logo"
-                      width={110}
-                      loading="lazy"
-                    />
-                  </Link>
-                </div> */}
+         
 
                 <I18nextProvider i18n={i18n}>
                   <LanguageSwitcher />{" "}
                 </I18nextProvider>
-                {/* <div className="navigation-item p-0">
-                  <Link href={`/bonuses/6657`} onClick={closeMobileMenu}>
-                    <Image
-                      className="flex flex-start"
-                      src={Spinsbro}
-                      alt="logo"
-                      width={110}
-                      loading="lazy"
-                    />
-                  </Link>
-                </div> */}
-                {/* <div className="navigation-item p-0">
-                  <Link href={`/bonuses/5011`} onClick={closeMobileMenu}>
-                    <Image
-                     className="flex flex-start"
-                      src={Jupi}
-                      alt="logo"
-                      width={110}
-                      loading="lazy"
-                    />
-                  </Link>
-                </div> */}
+          
               </div>
             </div>
           </div>
@@ -375,10 +321,10 @@ const TheHeader = () => {
         <Navigation
           navLinks={navItems.map((item) => ({
             ...item,
-            label: t(item.label), // Используйте функцию перевода для текста пунктов меню
+            label: t(item.label), 
           }))}
         />
-        {/* <div className="change-lng"> </div> */}
+
       </div>
     </header>
   );

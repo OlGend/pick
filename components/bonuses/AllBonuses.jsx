@@ -57,9 +57,9 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
   };
 
   const filteredBrands = useTopBrandsFilter(choose, filtered.brand);
-  console.log("ALL", filteredBrands);
+
   const topBrands = useTopBrandsFilter(choose, filtered.topBrand);
-  console.log("TOP", topBrands);
+
   useEffect(() => {
     setHasMoreBrands(visibleBrands < filteredBrands.length);
   }, [visibleBrands, filteredBrands.length]);
