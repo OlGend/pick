@@ -10,19 +10,19 @@ async function initializeI18n() {
   let defLng;
 
   // Получаем данные о стране с API
-  try {
-    const response = await fetch(
-      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
-    );
-    const data = await response.json();
-    if (typeof window !== "undefined") {
-      localStorage.setItem("country", data.country);
-    }
-    defLng = data.country.toLowerCase();
-  } catch (error) {
-    console.error("Ошибка при запросе к API:", error);
-    defLng = "en"; // В случае ошибки устанавливаем язык по умолчанию
-  }
+  // try {
+  //   const response = await fetch(
+  //     "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
+  //   );
+  //   const data = await response.json();
+  //   if (typeof window !== "undefined") {
+  //     localStorage.setItem("country", data.country);
+  //   }
+  //   defLng = data.country.toLowerCase();
+  // } catch (error) {
+  //   console.error("Ошибка при запросе к API:", error);
+  //   defLng = "au"; // В случае ошибки устанавливаем язык по умолчанию
+  // }
 
   // Инициализируем i18n
   await i18n

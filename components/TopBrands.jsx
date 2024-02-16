@@ -304,8 +304,6 @@ export default function TopBrands() {
     ),
   }));
 
-  
-
   return (
     <>
       <div className="topbr">
@@ -341,19 +339,15 @@ export default function TopBrands() {
               <Link
                 key={item}
                 className="btn btn-primary big-btn mt-3"
-                href={`/bonuses/${extractLink(item.content.rendered)}//${newUrl}`}
+                href={`/bonuses/${extractLink(
+                  item.content.rendered
+                )}//${newUrl}`}
               >
                 Random brand
               </Link>
             ))}
           </div>
-          <Image
-            className=""
-            src={imgrandom}
-            alt={`${imgrandom}`}
-            width={500}
-            loading="lazy"
-          />
+          <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
       </div>
     </>

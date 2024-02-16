@@ -6249,6 +6249,9 @@ h1 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .topbr .main__container > div.loader {
+    height: 100vh !important;
+  }
   .topbr {
     background-size: contain;
   }
@@ -6391,11 +6394,14 @@ h1 {
 .page-bonuses .custom-bonuses {
   background: transparent;
 }
+.topbr .loader {
+  height: 100vh;
+}
 .topbr {
   /* padding: 60px 0; */
   background-color: #1d2730;
   /* background-image: url(../bgp.png); */
-  position: relative;
+  /* position: relative; */
   background-image: url(/bgfilter.png) !important;
   background-position: top 50% !important;
 }
