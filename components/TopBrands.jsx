@@ -339,7 +339,7 @@ export default function TopBrands() {
               <Link
                 key={item}
                 className="btn btn-primary big-btn mt-3"
-                href={`/bonuses/${extractLink(
+                href={`https://link.reg2dep1.com/${extractLink(
                   item.content.rendered
                 )}//${newUrl}`}
               >
