@@ -6200,6 +6200,11 @@ h1 {
   min-width: 24px;
   max-width: 24px;
 }
+.headerText {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 @media (min-width: 1260px) and (max-width: 1920px) {
   .review-badge {
     margin-right: 10px;
@@ -6210,11 +6215,7 @@ h1 {
   .language-switcher select {
     width: auto;
   }
-  .headerText {
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
+
   .invest-card-title {
     letter-spacing: -0.1rem;
   }
