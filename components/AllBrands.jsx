@@ -128,7 +128,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
-          {randomBrands2.slice(0, visibleBrands).map((brand) => {
+          {filteredBrands.slice(0, visibleBrands).map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
               const isPlusesOpen = openPlusesId === brand.id;
