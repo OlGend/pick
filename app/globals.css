@@ -9813,6 +9813,14 @@ input.error {
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
+  .desctoplang {
+    display: none !important;  
+  }
+  .mobile-none .language-switcher {
+
+    width: auto !important;
+    max-width: 200px;
+  }
   .page-gaming {
     padding-top: 80px;
   }
@@ -9878,7 +9886,7 @@ input.error {
    */
   .mobile-menu {
     position: fixed;
-    top: 55px;
+    top: 61px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -9887,6 +9895,12 @@ input.error {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s ease-in-out;
     z-index: 1000;
+    padding-left: 15px;
+    padding-top: 38px;
+  
+  }
+  .mobile-none .language-switcher {
+    margin-left: 0;
   }
   .header {
     position: fixed;

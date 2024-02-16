@@ -144,9 +144,9 @@ const TheHeader = () => {
 
   const [keywordValue, setKeywordValue] = useState(null);
   const idUserParam = urlParams.get("keyword");
-    console.log("IDUSERPARAM", idUserParam);
-    const userData = keywordValue !== null ? keywordValue : idUserParam;
-    console.log("USERDATA", userData)
+  console.log("IDUSERPARAM", idUserParam);
+  const userData = keywordValue !== null ? keywordValue : idUserParam;
+  console.log("USERDATA", userData);
   useEffect(() => {
     const api = "https://pickbonus.myawardwallet.com/api";
     const fetchUsers = async (keywordValue) => {
@@ -164,10 +164,10 @@ const TheHeader = () => {
         console.error("An error occurred:", error);
       }
     };
-    if (idUserParam !== null){
-      fetchUsers(idUserParam)
+    if (idUserParam !== null) {
+      fetchUsers(idUserParam);
     } else if (keywordValue !== null) {
-      fetchUsers(keywordValue)
+      fetchUsers(keywordValue);
     } else if (typeof window !== "undefined") {
       const keyword = localStorage.getItem("savedUrl");
       if (keyword) {
@@ -178,15 +178,12 @@ const TheHeader = () => {
           setKeywordValue(userData);
           // setUser(null); // Установка значения null перед загрузкой новых данных
           setIsLoading(true); // Установка isLoading в true перед загрузкой новых данных
-  
+
           fetchUsers(keywordValue2); // Вызываем функцию через 2 секунды
-         
-      
         }
       }
     }
   }, []);
-  
 
   ////////////////////////////////////
   console.log("USER", user);
@@ -264,7 +261,9 @@ const TheHeader = () => {
             )} */}
 
           <I18nextProvider i18n={i18n}>
-            <LanguageSwitcher />{" "}
+            <div className="desctoplang">
+              <LanguageSwitcher  />{" "}
+            </div>
           </I18nextProvider>
           {/* <GoogleTranslate /> */}
 
@@ -342,7 +341,6 @@ const TheHeader = () => {
                   </Link>
                 </div> */}
 
-             
                 <I18nextProvider i18n={i18n}>
                   <LanguageSwitcher />{" "}
                 </I18nextProvider>
@@ -382,7 +380,6 @@ const TheHeader = () => {
         />
         {/* <div className="change-lng"> </div> */}
       </div>
-   
     </header>
   );
 };
