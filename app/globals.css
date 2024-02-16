@@ -9531,7 +9531,7 @@ input.error {
     line-height: 25px;
   }
   .background-block {
-    padding-top: 85px;
+    padding-top: 0px;
   }
   .background-block .main__container.pb-6 {
     padding-bottom: 0 !important;
