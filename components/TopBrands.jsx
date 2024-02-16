@@ -337,6 +337,7 @@ export default function TopBrands() {
             </h1>
             {randomBrands.slice(0, 1).map((item) => (
               <Link
+                target="_blank"
                 key={item}
                 className="btn btn-primary big-btn mt-3"
                 href={`https://link.reg2dep1.com/${extractLink(
