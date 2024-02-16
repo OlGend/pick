@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 // import Button from "./Button";
 
-function Card({ link, bonus }) {
+function Card({ imagen, link, bonus }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -32,7 +32,7 @@ function Card({ link, bonus }) {
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >
-      {/* <Image width={300} height={150} loading="lazy" src={imagen} alt={bonus} /> */}
+      <Image width={300} height={150} loading="lazy" src={imagen} alt={bonus} />
 
       {/* <h2>Title</h2> */}
 
