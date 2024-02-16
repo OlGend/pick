@@ -24,12 +24,15 @@ export default function Carroussel(props) {
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
 
+
+
   useEffect(() => {
     const table = props.cards.map((element, index) => {
       return { ...element, onClick: () => setGoToSlide(index) };
     });
     setCards(table);
-  }, [props.cards]);
+  }, [props.cards, setGoToSlide]);
+  
 
   if (!Carousel) {
     return null; // Мы рендерим пустоту, если Carousel еще не загружен
@@ -65,10 +68,12 @@ export default function Carroussel(props) {
       /*most significant*/
       if (xDiff > 0) {
         /* left swipe */
-        setState({ goToSlide: state.goToSlide + 1 });
+        setGoToSlide(prevSlide => prevSlide + 1);
+
       } else {
         /* right swipe */
-        setState({ goToSlide: state.goToSlide - 1 });
+        setGoToSlide(prevSlide => prevSlide - 1);
+
       }
     } else {
       if (yDiff > 0) {
