@@ -113,7 +113,10 @@ export default function AllPayments({ choose, filtered, isLoader }) {
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
-            {filteredBrands.slice(0, visibleBrands).map((brand) => {
+          {filteredBrands
+              .slice(0, visibleBrands)
+              .sort(() => Math.random() - 0.5)
+              .map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
               const isPlusesOpen = openPlusesId === brand.id;
@@ -288,7 +291,10 @@ export default function AllPayments({ choose, filtered, isLoader }) {
             )}
           </div>
           <div className="flex flex-col basis-[24%] py-6">
-            {randomBrands.map((item) => {
+          {topBrands
+              .slice(0, visibleBrands)
+              .sort(() => Math.random() - 0.5)
+              .map((item) => {
               const reviewImgSrc = extractReviewImage(item.content.rendered);
               const playLink = extractLink(item.content.rendered);
               return (
