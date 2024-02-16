@@ -79,9 +79,9 @@ const LanguageSwitcher = () => {
   };
 
   const availableLanguages = [
-    { code: "en", label: "World", flag: "🌍", brand: 221, topBrand: 222 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 221, topBrand: 232 }, //
-    { code: "no", label: "Norway", flag: "🇳🇴", brand: 221, topBrand: 230 }, //
+    // { code: "en", label: "World", flag: "🌍", brand: 221, topBrand: 222 }, //
+    // { code: "pl", label: "Poland", flag: "🇵🇱", brand: 221, topBrand: 232 }, //
+    // { code: "no", label: "Norway", flag: "🇳🇴", brand: 221, topBrand: 230 }, //
     {
       code: "au",
       label: "Australia",
@@ -97,20 +97,20 @@ const LanguageSwitcher = () => {
       brand: 221,
       topBrand: 231,
     }, //
-    { code: "de", label: "Germany", flag: "🇩🇪", brand: 221, topBrand: 226 }, //
-    {
-      code: "fi",
-      label: "Finland",
-      flag: "🇫🇮",
-      brand: 221,
-      topBrand: 228,
-    },
+    // { code: "de", label: "Germany", flag: "🇩🇪", brand: 221, topBrand: 226 }, //
+    // {
+    //   code: "fi",
+    //   label: "Finland",
+    //   flag: "🇫🇮",
+    //   brand: 221,
+    //   topBrand: 228,
+    // },
     // Добавьте другие языки по аналогии
   ];
   const availableLanguagesPartners = [
-    { code: "en", label: "World", flag: "🌍", brand: 248, topBrand: 250 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 257 }, //
-    { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 255 }, //
+    // { code: "en", label: "World", flag: "🌍", brand: 248, topBrand: 250 }, //
+    // { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 257 }, //
+    // { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 255 }, //
     {
       code: "au",
       label: "Australia",
@@ -126,14 +126,14 @@ const LanguageSwitcher = () => {
       brand: 248,
       topBrand: 256,
     }, //
-    { code: "de", label: "Germany", flag: "🇩🇪", brand: 248, topBrand: 253 }, //
-    {
-      code: "fi",
-      label: "Finland",
-      flag: "🇫🇮",
-      brand: 248,
-      topBrand: 254,
-    },
+    // { code: "de", label: "Germany", flag: "🇩🇪", brand: 248, topBrand: 253 }, //
+    // {
+    //   code: "fi",
+    //   label: "Finland",
+    //   flag: "🇫🇮",
+    //   brand: 248,
+    //   topBrand: 254,
+    // },
     // Добавьте другие языки по аналогии
   ];
   let item;

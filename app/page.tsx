@@ -20,12 +20,12 @@ export default async function Home() {
   return (
     <>
       {/* <PreviewHome /> */}
-      <div className="topbr">
+   
+        <TopBrands />
         {/* <TopBrandsOriginal /> */}
-        {/* <TopBrands /> */}
-      </div>
+  
       <div className="background-block">
-        {/* <FilteredHome /> */}
+        <FilteredHome />
         {/* <NewBrands /> */}
       </div>
       {/* <ReviewBrands /> */}

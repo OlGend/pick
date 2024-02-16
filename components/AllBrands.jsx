@@ -36,7 +36,7 @@ import {
 
 export default function AllBrands({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
-  const itemsPerPage = 7;
+  const itemsPerPage = 4;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
   const [hasMoreBrands, setHasMoreBrands] = useState(false);
   const [openPlusesId, setOpenPlusesId] = useState(null);
@@ -106,11 +106,19 @@ export default function AllBrands({ choose, filtered, isLoader }) {
   }, []);
 
   const [randomBrands, setRandomBrands] = useState([]);
+  const [randomBrands2, setRandomBrands2] = useState();
+
 
   useEffect(() => {
     const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
+    const shuffledBrands2 = filteredBrands.sort(() => Math.random() - 0.5);
+
     const selectedBrands = shuffledBrands.slice(0, 4);
+    const selectedBrands2 = shuffledBrands2.slice(0, 4);
+
     setRandomBrands(selectedBrands);
+    setRandomBrands2(selectedBrands2);
+
   }, []);
 
   return (
@@ -120,7 +128,7 @@ export default function AllBrands({ choose, filtered, isLoader }) {
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
-            {filteredBrands.slice(0, visibleBrands).map((brand) => {
+          {randomBrands2.slice(0, visibleBrands).map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
               const isPlusesOpen = openPlusesId === brand.id;
@@ -343,3 +351,6 @@ export default function AllBrands({ choose, filtered, isLoader }) {
     </>
   );
 }
+
+
+  

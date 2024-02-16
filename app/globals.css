@@ -6385,14 +6385,51 @@ h1 {
 }
 .topbr {
   /* padding: 60px 0; */
-  background: #1d2730;
+  background-color: #1d2730;
+  /* background-image: url(../bgp.png); */
   position: relative;
+  background-image: url(/bgfilter.png) !important;
+  background-position: top 50% !important;
+}
+.topbr .preview {
+  padding-top: 0 !important;
+}
+.topbr .preview h1 {
+  /* width: 70%;
+  text-align: center; */
+}
+.preview2 {
+  margin-top: 30px;
+}
+.topbr .review-bonus {
+  width: 50% !important;
+  margin-bottom: 30px !important;
+}
+.sub-menu {
+  z-index: 3;
+}
+.preview2 h1 .text-blued {
+  color: #0066dc;
+}
+.topbr .btn-primary {
+  font-size: 22px;
+  border: 1px solid #fff;
+}
+.preview2 .btn-primary {
+  font-size: 22px;
+  line-height: 23px;
+  padding: 10px 30px;
+  width: fit-content;
+}
+.topbr .preview::after {
+  display: none;
 }
 .page-bonuses .main::after,
 .preview::after,
 .bonuses::after,
 .tabNavigation::after,
-.guides::after, .topbr::after {
+.guides::after,
+.topbr::after {
   content: "";
   position: absolute;
   width: 150px;
@@ -6409,16 +6446,15 @@ h1 {
   ); /* Размытие силой 10 пикселей (можно изменить значение) */
 }
 .brandslider .slick-slide {
-
 }
 
 .slick-slide {
-  margin-right:27px;
+  margin-right: 27px;
 }
 
 /* the parent */
 .slick-list {
-  margin-right:-27px;
+  margin-right: -27px;
 }
 .brandslider .slick-slide .card-banner {
   background: url(/green_vip.png);
@@ -6955,6 +6991,9 @@ p {
   height: 7px;
   padding: 0;
   top: 6px;
+}
+.sub-menu {
+  z-index: 3;
 }
 .withdrawal h4 {
   display: none;
@@ -8011,6 +8050,49 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .preview2 .main__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    z-index: 3 !important;
+  }
+  .preview2 h1 {
+    text-align: center;
+  }
+  .preview2 .btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topbr .review-bonus {
+  }
+  .topbr .review-bonus {
+    font-size: 18px !important;
+    text-align: center;
+    margin-top: 0px;
+    width: 72% !important;
+    margin-bottom: 0 !important;
+    text-align: left;
+  }
+  .topbr .main__container > div {
+    height: 500px !important;
+    padding-top: 35px !important;
+  }
+
+  .topbr .preview h1 {
+    width: 100%;
+  }
+  .preview2 {
+    height: initial !important;
+    padding-top: 30px !important;
+  }
+  .topbr .btn-primary {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+  }
   .footer-top .main__container {
     flex-wrap: wrap;
   }

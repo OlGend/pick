@@ -47,7 +47,7 @@ function Card({ imagen, link, bonus }) {
           href={`https://link.reg2dep1.com/${link}/${newUrl}`}
           target="_blank"
         >
-          Play bow
+          Play now
         </a>
         {/* <Button text="Demo" />
         <Button text="Code" /> */}

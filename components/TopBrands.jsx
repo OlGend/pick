@@ -12,11 +12,13 @@ import {
 } from "./brandUtils";
 import Loader from "@/components/Loader";
 import useSWR from "swr";
-import { shuffle } from 'lodash';
-
+import { shuffle } from "lodash";
+import Image from "next/image";
+import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
+import imgrandom from "@/public/coins_banner2.jpg";
 
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
@@ -285,7 +287,6 @@ export default function TopBrands() {
     }
   }, [filteredBrands]);
 
-
   let cards2;
   // Перемешиваем массив filteredBrands случайным образом
   const shuffledBrands = shuffle(filteredBrands);
@@ -294,32 +295,67 @@ export default function TopBrands() {
   // Преобразуем эти объекты в карточки
   cards2 = randomBrands.map((brand) => ({
     key: uuidv4(),
-    content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
+    content: (
+      <Card
+        imagen={extractReviewImage(brand.content.rendered)}
+        link={extractLink(brand.content.rendered)}
+        bonus={extractReviewBonus(brand.content.rendered)}
+      />
+    ),
   }));
-  
-
-  
-  
 
   console.log("CARDS2", cards2);
+
   return (
-    <div className="main__container">
-    {loading ? ( // Показываем индикатор загрузки, если данные загружаются
-      <Loader />
-    ) : (
-      // Показываем карусель, когда данные загружены
-      cards2 && (
-        // <h2>yes</h2>
-        <Carousel
-          cards={cards2}
-          height="500px"
-          width="100%"
-          margin="0 auto"
-          offset={200}
-          showArrows={false}
-        />
-      )
-    )}
-  </div>
+    <>
+      <div className="topbr">
+        <div className="main__container">
+          {loading ? ( // Показываем индикатор загрузки, если данные загружаются
+            <Loader />
+          ) : (
+            // Показываем карусель, когда данные загружены
+            cards2 && (
+              // <h2>yes</h2>
+              <Carousel
+                className="carmob"
+                cards={cards2}
+                height="500px"
+                width="100%"
+                margin="0 auto"
+                offset={200}
+                showArrows={false}
+              />
+            )
+          )}
+        </div>
+      </div>
+      <div className="preview2 flex justify-between items-center">
+        <div className="main__container flex items-center">
+          <div className="flex flex-col">
+            <h1 className="">
+              Claim Your <span className="text-lime-400">Fantasy Bonuses</span>{" "}
+              Before the Monsters{" "}
+              <span className="text-blued">Swipe Them Away!</span>
+            </h1>
+            {randomBrands.slice(0, 1).map((item) => (
+              <Link
+                key={item}
+                className="btn btn-primary big-btn mt-3"
+                href={`/bonuses/${extractLink(item.content.rendered)}//${newUrl}`}
+              >
+                Random brand
+              </Link>
+            ))}
+          </div>
+          <Image
+            className=""
+            src={imgrandom}
+            alt={`${imgrandom}`}
+            width={500}
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </>
   );
 }
