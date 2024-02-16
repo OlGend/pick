@@ -6206,6 +6206,10 @@ h1 {
   margin-bottom: 0;
 }
 @media (min-width: 1260px) and (max-width: 1920px) {
+  .header {
+    position: relative;
+    z-index: 3;
+  }
   .review-badge {
     margin-right: 10px;
   }
