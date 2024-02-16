@@ -341,7 +341,7 @@ export default function TopBrands() {
                 className="btn btn-primary big-btn mt-3"
                 href={`https://link.reg2dep1.com/${extractLink(
                   item.content.rendered
-                )}//${newUrl}`}
+                )}/${newUrl}`}
               >
                 Random brand
               </Link>
