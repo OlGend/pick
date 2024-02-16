@@ -107,21 +107,21 @@ const navItems = [
       { label: "Spinomenal", href: "/game-providers/spinomenal" },
     ],
   },
-  {
-    icon: <Flag className="mr-1" size={20} />,
-    class: "sub-countries",
-    label: "Casinos by Country ▼",
-    href: "/by-country",
-    subMenu: [
-      { label: "Australian Casino", href: "/by-country/australia" },
-      { label: "Canadian Casino", href: "/by-country/canada" },
-      { label: "Finnish Casino", href: "/by-country/finland" },
-      { label: "German Casino", href: "/by-country/germany" },
-      { label: "New Zealand Casino", href: "/by-country/new-zealand" },
-      { label: "Norwegian Casino", href: "/by-country/norway" },
-      { label: "Polish Casino", href: "/by-country/poland" },
-    ],
-  },
+  // {
+  //   icon: <Flag className="mr-1" size={20} />,
+  //   class: "sub-countries",
+  //   label: "Casinos by Country ▼",
+  //   href: "/by-country",
+  //   subMenu: [
+  //     { label: "Australian Casino", href: "/by-country/australia" },
+  //     { label: "Canadian Casino", href: "/by-country/canada" },
+  //     { label: "Finnish Casino", href: "/by-country/finland" },
+  //     { label: "German Casino", href: "/by-country/germany" },
+  //     { label: "New Zealand Casino", href: "/by-country/new-zealand" },
+  //     { label: "Norwegian Casino", href: "/by-country/norway" },
+  //     { label: "Polish Casino", href: "/by-country/poland" },
+  //   ],
+  // },
 ];
 
 const TheHeader = () => {
