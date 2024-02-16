@@ -6249,6 +6249,9 @@ h1 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .topbr {
+    background-size: contain;
+  }
   .useryes {
     margin-top: 30px;
   }
