@@ -297,6 +297,8 @@ export default function TopBrands() {
     content: <Card imagen={extractReviewImage(brand.content.rendered)} link={extractLink(brand.content.rendered)} bonus={extractReviewBonus(brand.content.rendered)} />,
   }));
   
+
+  
   
 
   console.log("CARDS2", cards2);
