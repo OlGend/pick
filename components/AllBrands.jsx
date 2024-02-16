@@ -36,7 +36,7 @@ import {
 
 export default function AllBrands({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
-  const itemsPerPage = 6;
+  const itemsPerPage = 4;
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
   const [hasMoreBrands, setHasMoreBrands] = useState(false);
   const [openPlusesId, setOpenPlusesId] = useState(null);

@@ -37,7 +37,7 @@ import {
 
 export default function AllBonuses({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
-  const itemsPerPage = 7;
+  const itemsPerPage = 4;
 
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
   const [hasMoreBrands, setHasMoreBrands] = useState(false);

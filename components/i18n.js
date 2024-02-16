@@ -2,15 +2,12 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import enTranslation from "@/components/posts/en.json"; // Путь к файлу с английскими переводами
-import plTranslation from "@/components/posts/pl.json"; // Путь к файлу с польскими переводами
-import deTranslation from "@/components/posts/de.json"; // Путь к файлу с польскими переводами
-import noTranslation from "@/components/posts/no.json"; // Путь к файлу с польскими переводами
+
 
 const resources = {
   en: {
     translation: {
-      guideposts: enTranslation,
+   
       guideslotsguide:
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
       guideslotsguide2:
@@ -425,7 +422,7 @@ const resources = {
 
   pl: {
     translation: {
-      guideposts: plTranslation,
+   
       guideslotsguide:
         "Jeśli marzysz o wygraniu dużego jackpota, zanurz się w świat online slotów dzięki naszym wszechstronnym przewodnikom na xxlcasinolist.com. Wszystkie informacje, których potrzebujesz, od linii wypłat do progresywnych jackpotów, są dostępne na jednej platformie! Bądź na bieżąco z najnowszymi wydarzeniami w świecie hazardu na automatach i nawet wypróbuj darmowe gry na automatach bezpośrednio z Twojego urządzenia. Nasza kolekcja przewodników po hazardzie online zapewnia łatwy dostęp do wszystkiego, co musisz wiedzieć o slotach. Chociaż może się wydawać, że automaty to kwestia zwykłego 'naciśnij i kręć', istnieją triki i strategie, które mogą uatrakcyjnić Twoje doświadczenia.",
       guideslotsguide2:
@@ -850,7 +847,7 @@ const resources = {
   },
   no: {
     translation: {
-      guideposts: noTranslation,
+   
       guideslotsguide:
         "Hvis du aspirerer til å treffe jackpotten, dykk inn i verden av nettspilleautomater gjennom våre omfattende guider på xxlcasinolist.com. All den informasjonen du trenger, fra gevinstlinjer til progressive jackpotter, er tilgjengelig på én enkelt plattform! Hold deg oppdatert med de nyeste utviklingene innen spilleautomatgambling og prøv til og med ut gratis spilleautomatspill direkte fra enheten din. Vår samling av nettspillguider sikrer enkel tilgang til alt du trenger å vite om spilleautomater. Mens det kan virke som om spilleautomater er en ren 'trykk og snurr'-sak, finnes det triks og strategier som kan forbedre opplevelsen din. Våre guider er designet for å gi deg full forståelse av hvordan spilleautomater fungerer, og gi deg full kontroll over spilløktene dine.",
       guideslotsguide2:
@@ -1266,7 +1263,7 @@ const resources = {
   },
   de: {
     translation: {
-      guideposts: deTranslation,
+   
       guideslotsguide:
         "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
       guideslotsguide2:
@@ -1683,7 +1680,7 @@ const resources = {
 
   au: {
     translation: {
-      guideposts: enTranslation,
+   
       guideslotsguide:
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
       guideslotsguide2:
@@ -2096,7 +2093,7 @@ const resources = {
 
   ca: {
     translation: {
-      guideposts: enTranslation,
+    
       guideslotsguide:
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
       guideslotsguide2:
@@ -2509,7 +2506,7 @@ const resources = {
 
   at: {
     translation: {
-      guideposts: deTranslation,
+   
       guideslotsguide:
         "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
       guideslotsguide2:
@@ -2924,7 +2921,7 @@ const resources = {
 
   ch: {
     translation: {
-      guideposts: deTranslation,
+   
       guideslotsguide:
         "Wenn Sie darauf abzielen, den Jackpot zu knacken, tauchen Sie ein in die Welt der Online-Slots durch unsere umfassenden Anleitungen auf xxlcasinolist.com. Alle Informationen, die Sie benötigen, von Gewinnlinien bis zu progressiven Jackpots, sind auf einer einzigen Plattform verfügbar! Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen im Bereich des Slot-Glücksspiels und probieren Sie sogar kostenlose Slot-Spiele direkt von Ihrem Gerät aus. Unsere Sammlung von Online-Glücksspielführern ermöglicht Ihnen einen einfachen Zugang zu allem, was es über Slots zu wissen gibt. Obwohl es auf den ersten Blick so erscheinen mag, als ob Spielautomaten nur ein simples 'Drehen und Gewinnen' sind, gibt es Tricks und Strategien, die Ihr Erlebnis verbessern können. Unsere Anleitungen sind darauf ausgerichtet, Ihnen ein umfassendes Verständnis dafür zu vermitteln, wie Slots funktionieren, und Ihnen volle Kontrolle über Ihre Spielerlebnisse zu gewähren.",
       guideslotsguide2:
@@ -3340,7 +3337,7 @@ const resources = {
 
   nz: {
     translation: {
-      guideposts: enTranslation,
+    
       guideslotsguide:
         "If you aspire to hit the jackpot, delve into the world of online slots through our comprehensive guides on xxlcasinolist.com. All the information you need, from paylines to progressive jackpots, is available on a single platform! Stay updated with the latest developments in the slot gambling realm and even try out free slot games directly from your device. Our collection of online gambling guides ensures easy access to all there is to know about slots. While it might seem like slot machines are a matter of mere 'hit and spin', there are tricks and strategies that can enhance your experience. Our guides are designed to empower you with a complete understanding of how slots operate, granting you full control over your gaming sessions.",
       guideslotsguide2:

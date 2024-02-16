@@ -23,7 +23,7 @@ import Winlegends from "@/public/winlegends.png";
 import Windetta from "@/public/windeta.png";
 import Spinsbro from "@/public/SpinsBro_500x250.png";
 import Jupi from "@/public/jupicasino1_500x250.png";
-import GoogleTranslate from "@/components/GoogleTranslate";
+// import GoogleTranslate from "@/components/GoogleTranslate";
 
 import wallet from "@/public/wallet.svg";
 import dollar from "@/public/dollar.svg";
