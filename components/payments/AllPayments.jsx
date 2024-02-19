@@ -144,7 +144,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
            {loading ? ( // Показываем индикатор загрузки, если данные загружаются
             <Loader />
           ) : (
-            <div>
+            <div className="flex flex-wrap justify-between w-full">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
             {vis.slice(0, visibleBrands).map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);

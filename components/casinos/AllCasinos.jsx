@@ -125,6 +125,9 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
 
   const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
   const vis2 = randomBrands2.length > 0 ? randomBrands2 : filteredBrands;
+
+
+  
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -142,7 +145,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
           {loading ? ( // Показываем индикатор загрузки, если данные загружаются
             <Loader />
           ) : (
-            <div>
+            <div className="flex flex-wrap justify-between w-full">
               <div className="flex flex-col px-0 py-6 basis-[75%]">
                 {vis.slice(0, visibleBrands).map((brand) => {
                   const reviewImgSrc = extractReviewImage(
