@@ -6205,7 +6205,17 @@ h1 {
   font-size: 14px;
   margin-bottom: 0;
 }
-@media (min-width: 1260px) and (max-width: 1920px) {
+@media(min-width: 320px) and (max-width:1259px) {
+  .useryes .tickets, .useryes .option {
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+}
+@media (min-width: 1260px) and (max-width: 5000px) {
+  .background-block, .custom-bonuses {
+    background-size: cover !important;
+  }
   .header {
     position: relative;
     z-index: 3;
@@ -6215,6 +6225,7 @@ h1 {
   }
   .language-switcher {
     width: initial !important;
+
   }
   .language-switcher select {
     width: auto;
