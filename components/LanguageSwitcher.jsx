@@ -80,7 +80,7 @@ const LanguageSwitcher = () => {
 
   const availableLanguages = [
     // { code: "en", label: "World", flag: "🌍", brand: 221, topBrand: 222 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 221, topBrand: 232 }, //
+    // { code: "pl", label: "Poland", flag: "🇵🇱", brand: 221, topBrand: 232 }, //
     // { code: "no", label: "Norway", flag: "🇳🇴", brand: 221, topBrand: 230 }, //
     {
       code: "au",
@@ -109,7 +109,7 @@ const LanguageSwitcher = () => {
   ];
   const availableLanguagesPartners = [
     // { code: "en", label: "World", flag: "🌍", brand: 248, topBrand: 250 }, //
-    { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 257 }, //
+    // { code: "pl", label: "Poland", flag: "🇵🇱", brand: 248, topBrand: 257 }, //
     // { code: "no", label: "Norway", flag: "🇳🇴", brand: 248, topBrand: 255 }, //
     {
       code: "au",
