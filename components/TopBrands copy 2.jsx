@@ -119,7 +119,7 @@ export default function TopBrands() {
       (searchParams.toString()
         ? searchParams.toString() + "&"
         : "keyword=undefined") +
-      `creative_id=MAW`;
+      `creative_id=XXL`;
 
     // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
     if (typeof window !== "undefined") {
