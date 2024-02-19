@@ -3,12 +3,7 @@ import { useState, useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/components/i18n";
 import { Navigation } from "./Navigation";
-import {
-  Gift,
-  PokerChip,
-  Wallet,
-  GameController,
-} from "phosphor-react";
+import { Gift, PokerChip, Wallet, GameController } from "phosphor-react";
 import Image from "next/image";
 import Img from "@/public/logo3.png";
 import SearchComponent from "@/components/SearchComponent";
@@ -178,8 +173,7 @@ const TheHeader = () => {
     }
   }, []);
 
-
-  console.log("user", user)
+  console.log("user", user);
 
   return (
     <header className="header">
@@ -238,13 +232,12 @@ const TheHeader = () => {
           <div className="search-container flex items-end justify-center ml-auto">
             <SearchComponent />
           </div>
-      
+
           <I18nextProvider i18n={i18n}>
-            <div className="desctoplang">
-              <LanguageSwitcher  />{" "}
+            <div className="somelng">
+              <LanguageSwitcher />{" "}
             </div>
           </I18nextProvider>
-     
 
           <div className="mobile-none">
             <button
@@ -259,7 +252,6 @@ const TheHeader = () => {
             </button>
             <div className="menu-mobile">
               <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-         
                 <div className="flex flex-col items-start useryes">
                   {user && (
                     <div className="flex tickets items-end">
@@ -307,12 +299,11 @@ const TheHeader = () => {
                   }))}
                   onLinkClick={closeMobileMenu}
                 />
-         
 
+                {/* 
                 <I18nextProvider i18n={i18n}>
                   <LanguageSwitcher />{" "}
-                </I18nextProvider>
-          
+                </I18nextProvider> */}
               </div>
             </div>
           </div>
@@ -322,10 +313,9 @@ const TheHeader = () => {
         <Navigation
           navLinks={navItems.map((item) => ({
             ...item,
-            label: t(item.label), 
+            label: t(item.label),
           }))}
         />
-
       </div>
     </header>
   );

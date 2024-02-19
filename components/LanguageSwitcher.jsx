@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
   if (typeof window !== "undefined") {
     defLng = localStorage.getItem("country");
   }
- 
+
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -150,7 +150,7 @@ const LanguageSwitcher = () => {
     <div className={`language-switcher ml-3 flex flex-col`}>
       <p className="headerText">Your country of residence</p>
       <select
-        className={`${selectedLanguage}`}
+        className={`desctoplang ${selectedLanguage}`}
         value={selectedLanguage}
         onChange={(e) => {
           const selected = newLng.find((lang) => lang.code === e.target.value);
@@ -172,6 +172,32 @@ const LanguageSwitcher = () => {
             style={{ fontSize: "20px" }}
           >
             {language.flag} {language.label}
+          </option>
+        ))}
+      </select>
+      <select
+        className={`mobilelang ${selectedLanguage}`}
+        value={selectedLanguage}
+        onChange={(e) => {
+          const selected = newLng.find((lang) => lang.code === e.target.value);
+          if (selected) {
+            changeLanguage(
+              selected.code,
+              selected.flag,
+              selected.brand,
+              selected.topBrand
+            );
+          }
+        }}
+      >
+        {newLng.map((language) => (
+          <option
+            className={`${language.code} notranslate`}
+            key={language.code}
+            value={language.code}
+            style={{ fontSize: "20px" }}
+          >
+            {language.flag} {language.code.toLocaleUpperCase()}
           </option>
         ))}
       </select>

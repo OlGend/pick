@@ -6205,15 +6205,34 @@ h1 {
   font-size: 14px;
   margin-bottom: 0;
 }
-@media(min-width: 320px) and (max-width:1259px) {
-  .useryes .tickets, .useryes .option {
+.mobilelang {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .somelng {
+    display: flex;
+    align-items: center;
+  }
+  .mobilelang {
+    display: flex;
+    align-items: center;
+  }
+  .desctoplang {
+    display: none;
+  }
+  .useryes .tickets,
+  .useryes .option {
     margin-left: 0;
     margin-bottom: 10px;
     margin-left: 5px;
   }
+  .desctoplang {
+    display: none;
+  }
 }
 @media (min-width: 1260px) and (max-width: 5000px) {
-  .background-block, .custom-bonuses {
+  .background-block,
+  .custom-bonuses {
     background-size: cover !important;
   }
   .header {
@@ -6225,7 +6244,6 @@ h1 {
   }
   .language-switcher {
     width: initial !important;
-
   }
   .language-switcher select {
     width: auto;
@@ -6281,7 +6299,8 @@ h1 {
   .withdrawal .wp-block-columns li {
     width: 100%;
   }
-  header .language-switcher {
+
+  header .language-switcher .headerText {
     display: none !important;
   }
   .mobile-none .language-switcher {
@@ -9833,11 +9852,11 @@ input.error {
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
-  .desctoplang {
+  /* .desctoplang {
     display: none !important;  
-  }
-  .mobile-none .language-switcher {
+  } */
 
+  .mobile-none .language-switcher {
     width: auto !important;
     max-width: 200px;
   }
@@ -9917,7 +9936,6 @@ input.error {
     z-index: 1000;
     padding-left: 15px;
     padding-top: 38px;
-  
   }
   .mobile-none .language-switcher {
     margin-left: 0;

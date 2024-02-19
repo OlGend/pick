@@ -334,7 +334,7 @@ export default function TopBrands() {
               {/* Claim Your <span className="text-lime-400">Fantasy Bonuses</span>{" "}
               Before the Monsters{" "} */}
 
-              Feeling lucky today? <span className="text-lime-400">Click now to play</span> and see if <span className="text-blued"> luck is on your side!</span>
+              Feeling lucky today? <span className="text-blued">Click now to play</span> and see if <span className="text-blued"> luck is on your side!</span>
         
             </h1>
             {randomBrands.slice(0, 1).map((item) => (
