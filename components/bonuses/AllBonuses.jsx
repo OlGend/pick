@@ -109,6 +109,10 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
   const [brandsGenerated, setBrandsGenerated] = useState(false);
   
   useEffect(() => {
+    setBrandsGenerated(false); // Устанавливаем в false при изменении локали, чтобы пересчитать случайные бренды
+  }, [filtered.topBrand]); // Отслеживаем изменения связанные с локалью
+  
+  useEffect(() => {
     const generateRandomBrands = () => {
       if (!brandsGenerated && filteredBrands.length > 0) {
         const shuffledBrands = [...filteredBrands].sort(() => Math.random() - 0.5);
@@ -124,7 +128,8 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
   
   }, [brandsGenerated, filteredBrands]); // Отслеживаем изменения brandsGenerated и filteredBrands
   
-  console.log("RANDOM", randomBrands);
+  
+  console.log("RANDOM", filteredBrands);
   
   const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
   const vis2 = randomBrands2.length > 0 ? randomBrands2 : filteredBrands;
