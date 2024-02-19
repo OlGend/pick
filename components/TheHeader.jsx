@@ -173,7 +173,7 @@ const TheHeader = () => {
     }
   }, []);
 
-  console.log("user", user);
+
 
   return (
     <header className="header">

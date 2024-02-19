@@ -105,24 +105,26 @@ export default function AllPayments({ choose, filtered, isLoader }) {
 
   const [randomBrands, setRandomBrands] = useState([]);
   const [randomBrands2, setRandomBrands2] = useState([]);
-
   const [brandsGenerated, setBrandsGenerated] = useState(false);
-
+  
   useEffect(() => {
-    if (!brandsGenerated) {
-      const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
-      const shuffledBrands2 = filteredBrands.sort(() => Math.random() - 0.5);
-
-      // const selectedBrands = shuffledBrands.slice(0, 4);
-      // const selectedBrands2 = shuffledBrands2.slice(0, 4);
-
-      setRandomBrands(shuffledBrands);
-      setRandomBrands2(shuffledBrands2);
-      setBrandsGenerated(true);
-   
-    }
-  }, [brandsGenerated, filteredBrands, topBrands]);
-
+    const generateRandomBrands = () => {
+      if (!brandsGenerated && filteredBrands.length > 0) {
+        const shuffledBrands = [...filteredBrands].sort(() => Math.random() - 0.5);
+        const shuffledBrands2 = [...filteredBrands].sort(() => Math.random() - 0.5);
+  
+        setRandomBrands(shuffledBrands);
+        setRandomBrands2(shuffledBrands2);
+        setBrandsGenerated(true);
+      }
+    };
+  
+    generateRandomBrands(); // Вызываем генерацию при первом рендере
+  
+  }, [brandsGenerated, filteredBrands]); // Отслеживаем изменения brandsGenerated и filteredBrands
+  
+  console.log("RANDOM", randomBrands);
+  
   const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
   const vis2 = randomBrands2.length > 0 ? randomBrands2 : filteredBrands;
 
