@@ -102,6 +102,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
     setOpenCountriesId((prevId) => (prevId === brandId ? null : brandId));
   };
 
+
   const [randomBrands, setRandomBrands] = useState([]);
   const [randomBrands2, setRandomBrands2] = useState([]);
 
@@ -112,14 +113,18 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
       const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
       const shuffledBrands2 = filteredBrands.sort(() => Math.random() - 0.5);
 
-      const selectedBrands = shuffledBrands.slice(0, 4);
-      const selectedBrands2 = shuffledBrands2.slice(0, 4);
+      // const selectedBrands = shuffledBrands.slice(0, 4);
+      // const selectedBrands2 = shuffledBrands2.slice(0, 4);
 
-      setRandomBrands(selectedBrands);
-      setRandomBrands2(selectedBrands2);
+      setRandomBrands(shuffledBrands);
+      setRandomBrands2(shuffledBrands2);
       setBrandsGenerated(true);
+   
     }
   }, [brandsGenerated, filteredBrands, topBrands]);
+
+  const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
+  const vis2 = randomBrands2.length > 0 ? randomBrands2 : filteredBrands;
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     if (filteredBrands.length === 0) {
@@ -139,7 +144,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
           ) : (
             <div>
               <div className="flex flex-col px-0 py-6 basis-[75%]">
-                {filteredBrands.slice(0, visibleBrands).map((brand) => {
+                {vis.slice(0, visibleBrands).map((brand) => {
                   const reviewImgSrc = extractReviewImage(
                     brand.content.rendered
                   );
@@ -332,7 +337,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                 )}
               </div>
               <div className="flex flex-col basis-[24%] py-6">
-                {topBrands.slice(0, visibleBrands2).map((item) => {
+                {vis2.slice(0, visibleBrands2).map((item) => {
                   const reviewImgSrc = extractReviewImage(
                     item.content.rendered
                   );
