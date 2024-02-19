@@ -1,47 +1,30 @@
-// TopBrands.jsx (Клиентский компонент)
+
+
+
+
 "use client";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Play, Eye } from "phosphor-react";
+import Loader from "./Loader";
+import { CalendarCheck, Play, Eye } from "phosphor-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
 import { useTopBrandsFilter } from "@/components/useBrands";
+
 import {
   extractReviewBonus,
   extractReviewImage,
   extractLink,
+  extractBadge,
+  extractPros,
 } from "./brandUtils";
-import Loader from "@/components/Loader";
 import useSWR from "swr";
 
 export default function TopBrandsOriginal() {
-  ////////////////////NEW CODE/////////////////////
-
-  // Получаем текущий URL
-
-  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
-
-  // Определяем позицию символа "?"
-  const indexOfQuestionMark = currentUrl.indexOf("?");
-
-  // Если "?" найден, обрезаем URL до символа "?"
-  const newUrl2 =
-    indexOfQuestionMark !== -1
-      ? currentUrl.substring(0, indexOfQuestionMark)
-      : currentUrl;
-
-  // Обновляем URL
-  if (typeof window !== "undefined") {
-    window.history.replaceState({}, document.title, newUrl2);
-  }
-
-  const [ipData, setIpData] = useState(null);
-  const [ipDataCode, setIpDataCode] = useState(null);
-  const [newUrl, setNewUrl] = useState("");
-  const [source, setSource] = useState("");
-
+  const { t } = useTranslation();
   const [selectedBrand, setSelectedBrand] = useState(null);
+  const [source, setSource] = useState("");
   useEffect(() => {
     const defLng = localStorage.getItem("country");
     // setSelectedBrand(defLng);
@@ -64,12 +47,111 @@ export default function TopBrandsOriginal() {
           (brand) => brand.slug === "all"
         );
         const newSource = localStorage.getItem("source");
-        setSelectedBrand(
-          newSource === "partner1039" ? allBrandPartners : allBrand
-        );
+        setSelectedBrand(newSource === "partner1039" ? allBrandPartners : allBrand);
       }
     }
   }, []);
+
+  const navigateBrands = [
+    {
+      topCurrentCategories: 222,
+      brand: 220,
+      icon: "🌍",
+      slug: "all",
+    },
+    {
+      topCurrentCategories: 223,
+      brand: 220,
+      icon: "🇦🇺",
+      slug: "au",
+    },
+    {
+      topCurrentCategories: 224,
+      brand: 220,
+      icon: "🇨🇦",
+      slug: "ca",
+    },
+    {
+      topCurrentCategories: 228,
+      brand: 220,
+      icon: "🇫🇮",
+      slug: "fi",
+    },
+    {
+      topCurrentCategories: 226,
+      brand: 220,
+      icon: "🇩🇪",
+      slug: "de",
+    },
+    {
+      topCurrentCategories: 231,
+      brand: 220,
+      icon: "🇳🇿",
+      slug: "nz",
+    },
+    {
+      topCurrentCategories: 230,
+      brand: 220,
+      icon: "🇳🇴",
+      slug: "no",
+    },
+    {
+      topCurrentCategories: 232,
+      brand: 220,
+      icon: "🇵🇱",
+      slug: "pl",
+    },
+  ];
+  const navigateBrandsPartners = [
+    {
+      topCurrentCategories: 250,
+      brand: 249,
+      icon: "🌍",
+      slug: "all",
+    },
+    {
+      topCurrentCategories: 251,
+      brand: 249,
+      icon: "🇦🇺",
+      slug: "au",
+    },
+    {
+      topCurrentCategories: 224,
+      brand: 249,
+      icon: "🇨🇦",
+      slug: "ca",
+    },
+    {
+      topCurrentCategories: 228,
+      brand: 249,
+      icon: "🇫🇮",
+      slug: "fi",
+    },
+    {
+      topCurrentCategories: 226,
+      brand: 249,
+      icon: "🇩🇪",
+      slug: "de",
+    },
+    {
+      topCurrentCategories: 231,
+      brand: 249,
+      icon: "🇳🇿",
+      slug: "nz",
+    },
+    {
+      topCurrentCategories: 230,
+      brand: 249,
+      icon: "🇳🇴",
+      slug: "no",
+    },
+    {
+      topCurrentCategories: 232,
+      brand: 249,
+      icon: "🇵🇱",
+      slug: "pl",
+    },
+  ];
 
   useEffect(() => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -82,9 +164,6 @@ export default function TopBrandsOriginal() {
 
     if (currentKeyword !== null && currentKeyword.includes("partner1039")) {
       // Если в строке есть "partner1039" или "partner1041", вырезаем и добавляем в setSource
-      if (typeof window !== "undefined") {
-        localStorage.setItem("source", "partner1039");
-      }
       const partnerIndex = currentKeyword.indexOf("partner");
       const partnerText = currentKeyword.substring(
         partnerIndex,
@@ -97,152 +176,11 @@ export default function TopBrandsOriginal() {
     } else {
       // Если "partner1039" или "partner1041" отсутствует, добавляем 0 в setSource
       setSource("0");
-      const sourceFound = localStorage.getItem("source");
-      if (typeof window !== "undefined" && sourceFound !== "partner1039") {
-        localStorage.setItem("source", "0");
-      }
       searchParams.set("source", "0");
       // Если "partner1039" или "partner1041" отсутствует, новый URL не содержит source
       // searchParams.delete("source");
     }
-
-    // Добавить source в новый URL только если он существует
-    const newUrl =
-      "?" +
-      (searchParams.toString()
-        ? searchParams.toString() + "&"
-        : "keyword=undefined") +
-      `creative_id=XXL`;
-
-    // Сохранение ссылки в локальном хранилище только если параметр "keyword" присутствует
-    if (typeof window !== "undefined") {
-      if (newUrl.includes("keyword")) {
-        localStorage.setItem("savedUrl", newUrl);
-        localStorage.setItem("token", "give");
-      }
-    }
-
-    if (typeof window !== "undefined") {
-      const tokenGive = localStorage.getItem("token");
-      if (tokenGive !== "give") {
-        localStorage.setItem("savedUrl", newUrl);
-      }
-    }
-
-    // Чтение сохраненной ссылки из локального хранилища
-    const savedUrl = localStorage.getItem("savedUrl");
-
-    // Установка новой ссылки в состояние
-    if (savedUrl) {
-      setNewUrl(savedUrl);
-    }
   }, []);
-
-  const navigateBrands = [
-    {
-      topCurrentCategories: 222,
-      brand: 221,
-      icon: "🌍",
-      slug: "all",
-    },
-    {
-      topCurrentCategories: 223,
-      brand: 221,
-      icon: "🇦🇺",
-      slug: "au",
-    },
-    {
-      topCurrentCategories: 224,
-      brand: 221,
-      icon: "🇨🇦",
-      slug: "ca",
-    },
-    {
-      topCurrentCategories: 228,
-      brand: 221,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 226,
-      brand: 221,
-      icon: "🇩🇪",
-      slug: "de",
-    },
-    {
-      topCurrentCategories: 231,
-      brand: 221,
-      icon: "🇳🇿",
-      slug: "nz",
-    },
-    {
-      topCurrentCategories: 230,
-      brand: 221,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 232,
-      brand: 221,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
-  ];
-  const navigateBrandsPartners = [
-    {
-      topCurrentCategories: 250,
-      brand: 248,
-      icon: "🌍",
-      slug: "all",
-    },
-    {
-      topCurrentCategories: 251,
-      brand: 248,
-      icon: "🇦🇺",
-      slug: "au",
-    },
-    {
-      topCurrentCategories: 252,
-      brand: 248,
-      icon: "🇨🇦",
-      slug: "ca",
-    },
-    {
-      topCurrentCategories: 254,
-      brand: 248,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 253,
-      brand: 248,
-      icon: "🇩🇪",
-      slug: "de",
-    },
-    {
-      topCurrentCategories: 256,
-      brand: 248,
-      icon: "🇳🇿",
-      slug: "nz",
-    },
-    {
-      topCurrentCategories: 255,
-      brand: 248,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 257,
-      brand: 248,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
-  ];
-
-  ///////////////NEW CODE//////////////////////////////
-
-  const [loading, setLoading] = useState(true);
-
   const { data: languageDetails, error: detailsError } = useSWR(
     "languageDetails",
     null,
@@ -259,81 +197,94 @@ export default function TopBrandsOriginal() {
 
   if (typeof window !== "undefined") {
     const newSource = localStorage.getItem("source");
-    const urlBrands = newSource === "partner1039" ? 248 : 221;
+    const urlBrands = newSource === "partner1039" ? 249 : 220;
 
     if (urlBrands && typeof window !== "undefined") {
-      localStorage.setItem("brands", urlBrands);
+      localStorage.setItem("newbrands", urlBrands);
     }
   }
-
   let br;
   if (typeof window !== "undefined") {
-    br = localStorage.getItem("brands");
+   br = localStorage.getItem("newbrands");
   }
-  const filteredBrands = useTopBrandsFilter(br, languageDetails.topBrand);
+  const filteredBrands = useTopBrandsFilter(
+    br,
+    languageDetails.topBrand
+  );
 
-  const { t } = useTranslation();
 
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsLoading(true);
+
+    // Simulate some delay to show the loader (remove this in actual usage)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  const [newUrl, setNewUrl] = useState("");
+  // Чтение сохраненной ссылки из локального хранилища
   useEffect(() => {
-    if (filteredBrands.length === 0) {
-      setLoading(true);
-    } else {
-      setLoading(false);
+    const savedUrl = localStorage.getItem("savedUrl");
+
+    // Установка новой ссылки в состояние
+    if (savedUrl) {
+      setNewUrl(savedUrl);
     }
-  }, [filteredBrands]);
-
-
+  }, []);
 
   return (
     <>
    
-        <div className="main__container pb-6">
-          <div className="heading flex items-center pt-12">
-            <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
-          </div>
-          <div className="flex flex-wrap px-0 py-6">
-            {filteredBrands.map((brand) => {
-              const reviewImgSrc = extractReviewImage(brand.content.rendered);
-              const playLink = extractLink(brand.content.rendered);
+    <div className="main__container pb-6">
+      <div className="heading flex items-center pt-12">
+        <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
+      </div>
+      <div className="flex flex-wrap px-0 py-6">
+        {filteredBrands.map((brand) => {
+          const reviewImgSrc = extractReviewImage(brand.content.rendered);
+          const playLink = extractLink(brand.content.rendered);
 
-              return (
-                <div className="basis-[19%] card-brand mb-3" key={brand.id}>
-                  <div className="brandImage p-3">
-                    <Link key={brand.id} href={`/bonuses/${brand.id}`}>
-                      <Image
-                        src={reviewImgSrc}
-                        alt={brand.title.rendered}
-                        width={150}
-                        height={75}
-                        loading="lazy"
-                      />
-                    </Link>
-                  </div>
-                  <div className="brandContent p-3">
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: extractReviewBonus(brand.content.rendered),
-                      }}
-                    />
-                    <div className="buttons">
-                    
-                      <Link
-                        className="btn btn-primary flex justify-center items-center mt-1"
-                        href={`https://link.reg2dep1.com/${playLink}`}
-                        target="_blank"
-                      >
-                        <Play className="mr-2" size={20} />
+          return (
+            <div className="basis-[19%] card-brand mb-3" key={brand.id}>
+              <div className="brandImage p-3">
+                <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                  <Image
+                    src={reviewImgSrc}
+                    alt={brand.title.rendered}
+                    width={150}
+                    height={75}
+                    loading="lazy"
+                  />
+                </Link>
+              </div>
+              <div className="brandContent p-3">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: extractReviewBonus(brand.content.rendered),
+                  }}
+                />
+                <div className="buttons">
+                
+                  <Link
+                    className="btn btn-primary flex justify-center items-center mt-1"
+                    href={`https://link.reg2dep1.com/${playLink}`}
+                    target="_blank"
+                  >
+                    <Play className="mr-2" size={20} />
 
-                        Play Now
-                      </Link>
-                    </div>
-                  </div>
+                    Play Now
+                  </Link>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-   
-    </>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+</>
   );
 }
