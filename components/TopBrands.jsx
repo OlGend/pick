@@ -331,9 +331,11 @@ export default function TopBrands() {
         <div className="main__container flex items-center">
           <div className="flex flex-col">
             <h1 className="">
-              Claim Your <span className="text-lime-400">Fantasy Bonuses</span>{" "}
-              Before the Monsters{" "}
-              <span className="text-blued">Swipe Them Away!</span>
+              {/* Claim Your <span className="text-lime-400">Fantasy Bonuses</span>{" "}
+              Before the Monsters{" "} */}
+
+              Feeling lucky today? <span className="text-lime-400">Click now to play</span> and see if <span className="text-blued"> luck is on your side!</span>
+        
             </h1>
             {randomBrands.slice(0, 1).map((item) => (
               <Link
@@ -344,7 +346,7 @@ export default function TopBrands() {
                   item.content.rendered
                 )}/${newUrl}`}
               >
-                Random brand
+                Try Your Luck
               </Link>
             ))}
           </div>
