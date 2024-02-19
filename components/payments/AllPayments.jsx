@@ -122,12 +122,25 @@ export default function AllPayments({ choose, filtered, isLoader }) {
     }
   }, [brandsGenerated, filteredBrands, topBrands]);
 
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if (filteredBrands.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, [filteredBrands]);
+
   return (
     <>
       {isLoader ? (
         <FilterLoader />
       ) : (
         <div className="flex flex-wrap justify-between">
+           {loading ? ( // Показываем индикатор загрузки, если данные загружаются
+            <Loader />
+          ) : (
+            <div>
           <div className="flex flex-col px-0 py-6 basis-[75%]">
             {filteredBrands.slice(0, visibleBrands).map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
@@ -335,6 +348,8 @@ export default function AllPayments({ choose, filtered, isLoader }) {
               );
             })}
           </div>
+          </div>
+            )}
         </div>
       )}
     </>
