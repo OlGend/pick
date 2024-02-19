@@ -239,7 +239,7 @@ export default function TopBrandsOriginal() {
     <>
    
     <div className="main__container pb-6">
-      <div className="heading flex items-center pt-12">
+      <div className="heading flex items-center pt-12 ptn-12">
         <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
       </div>
       <div className="flex flex-wrap px-0 py-6">

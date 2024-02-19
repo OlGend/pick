@@ -6276,8 +6276,37 @@ h1 {
     display: none;
   }
 }
-
+@media (min-width: 768px) and (max-width: 1259px) {
+  .headerText {
+    display: none;
+  }
+  .search-container {
+    display: none !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .awesome .slick-slide {
+    margin-right: 0 !important;
+    width: initial;
+    margin-left: 0 !important;
+  }
+  .ptn-12 {
+    padding-top: 0 !important;
+  }
+  .awesome .slick-track, .awesome .slick-list {
+    max-height: 220px;
+  }
+  .awesome .slick-slide .p-3.text-center.flex.items-center {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  .filter-brands .basis-\[24\%\] {
+    padding-top: 50px;
+    max-width: 100%;
+  }
+  .filter-brands .card-brand-banner {
+    border: 2px solid #fff !important;
+  }
   .topbr .main__container > div.loader {
     height: 100vh !important;
   }
