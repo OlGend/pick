@@ -20,7 +20,7 @@ async function initializeI18n() {
     defLng = "au"; // Установка значения по умолчанию в случае ошибки
   }
 
-  const languages = ['au', 'ca', 'nz'];
+  const languages = ['au', 'ca', 'nz', 'pl'];
 
   // Используем метод map для сопоставления значений массива languages с defLng
   const matchedLanguages = languages.map(language => {
