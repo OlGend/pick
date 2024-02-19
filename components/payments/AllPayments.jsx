@@ -37,8 +37,12 @@ import {
 
 export default function AllPayments({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
-  const itemsPerPage = 7;
+  const itemsPerPage = 4;
+  const itemsPerPage2 = 5;
+
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
+  const [visibleBrands2, setVisibleBrands2] = useState(itemsPerPage2);
+
   const [hasMoreBrands, setHasMoreBrands] = useState(false);
   const [openPlusesId, setOpenPlusesId] = useState(null);
   const [openWithdrawalId, setOpenWithdrawalId] = useState(null);
@@ -74,6 +78,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
 
   const loadMoreBrands = () => {
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + itemsPerPage);
+    setVisibleBrands2((prevVisibleBrands) => prevVisibleBrands + itemsPerPage2);
   };
   const handlePlusesClick = (brandId) => {
     setOpenPlusesId((prevId) => (prevId === brandId ? null : brandId));
@@ -99,12 +104,24 @@ export default function AllPayments({ choose, filtered, isLoader }) {
   }, []);
 
   const [randomBrands, setRandomBrands] = useState([]);
+  const [randomBrands2, setRandomBrands2] = useState([]);
+
+  const [brandsGenerated, setBrandsGenerated] = useState(false);
 
   useEffect(() => {
-    const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
-    const selectedBrands = shuffledBrands.slice(0, 4);
-    setRandomBrands(selectedBrands);
-  }, []);
+    if (!brandsGenerated) {
+      const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
+      const shuffledBrands2 = filteredBrands.sort(() => Math.random() - 0.5);
+
+      const selectedBrands = shuffledBrands.slice(0, 4);
+      const selectedBrands2 = shuffledBrands2.slice(0, 4);
+
+      setRandomBrands(selectedBrands);
+      setRandomBrands2(selectedBrands2);
+      setBrandsGenerated(true);
+    }
+  }, [brandsGenerated, filteredBrands, topBrands]);
+
   return (
     <>
       {isLoader ? (
@@ -112,10 +129,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
       ) : (
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col px-0 py-6 basis-[75%]">
-          {filteredBrands
-              .slice(0, visibleBrands)
-              .sort(() => Math.random() - 0.5)
-              .map((brand) => {
+            {filteredBrands.slice(0, visibleBrands).map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
               const isPlusesOpen = openPlusesId === brand.id;
@@ -143,9 +157,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     </div>
                     <div className="mb-2 withdrawal withdrawal-limits flex items-center">
                       <Handshake className="mr-1 mb-1" size={24} />
-                      <div className="title mr-2">
-                      Withdrawal Limits:
-                      </div>
+                      <div className="title mr-2">Withdrawal Limits:</div>
                       <div
                         className="items-center"
                         dangerouslySetInnerHTML={{
@@ -159,9 +171,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <ShieldPlus size={24} />
-                        <span className="mt-1 ml-2">
-                        Advantages
-                        </span>
+                        <span className="mt-1 ml-2">Advantages</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isPlusesOpen && (
@@ -179,9 +189,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <CurrencyCircleDollar size={24} />
-                        <span className="mt-1 ml-2">
-                        Deposit Methods
-                        </span>
+                        <span className="mt-1 ml-2">Deposit Methods</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isDepositsOpen && (
@@ -199,9 +207,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <Bank size={24} />
-                        <span className="mt-1 ml-2">
-                        Withdrawal Methods
-                        </span>
+                        <span className="mt-1 ml-2">Withdrawal Methods</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isWithdrawalOpen && (
@@ -219,9 +225,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                     >
                       <div className="title flex items-center">
                         <Prohibit size={24} />
-                        <span className="mt-1 ml-2">
-                        Restricted Countries
-                        </span>
+                        <span className="mt-1 ml-2">Restricted Countries</span>
                         <CaretDown className="ml-auto" size={20} />
                       </div>
                       {isCountriesOpen && (
@@ -271,11 +275,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                       Read Review
                       </Link> */}
                       <div className="flex flex-col items-center w-full p-4 howUse mt-2 mb-2">
-                        <span className="text-center">
-                        How to get bonus?
-                        </span>
+                        <span className="text-center">How to get bonus?</span>
                         <p className="text-center m-0 text-slate-500">
-                        Activate bonus in your casino account
+                          Activate bonus in your casino account
                         </p>
                       </div>
                       <Link
@@ -302,10 +304,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
             )}
           </div>
           <div className="flex flex-col basis-[24%] py-6">
-          {topBrands
-              .slice(0, visibleBrands)
-              .sort(() => Math.random() - 0.5)
-              .map((item) => {
+            {topBrands.slice(0, visibleBrands2).map((item) => {
               const reviewImgSrc = extractReviewImage(item.content.rendered);
               const playLink = extractLink(item.content.rendered);
               return (

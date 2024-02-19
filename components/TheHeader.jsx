@@ -179,6 +179,7 @@ const TheHeader = () => {
   }, []);
 
 
+  console.log("user", user)
 
   return (
     <header className="header">
@@ -200,7 +201,7 @@ const TheHeader = () => {
                   <Link
                     target="_blank"
                     className="user user-wheel flex items-center"
-                    href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/fortunewheel`}
+                    href={`https://pickbonus.myawardwallet.com/?keyword=${user.id}#/fortunewheel`}
                   >
                     <Image
                       className="mr-1"
@@ -218,7 +219,7 @@ const TheHeader = () => {
                   <Link
                     target="_blank"
                     className="flex items-center"
-                    href={`https://pickbonus.myawardwallet.com/?keyword=${keywordValue}#/withdrawal`}
+                    href={`https://pickbonus.myawardwallet.com/?keyword=${user.id}#/withdrawal`}
                   >
                     <Image
                       src={wallet}

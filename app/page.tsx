@@ -1,7 +1,7 @@
 //page.tsx
 import { Metadata } from "next";
 import TopBrands from "@/components/TopBrands";
-// import TopBrandsOriginal from "@/components/TopBrandsOriginal";
+import TopBrandsOriginal from "@/components/TopBrandsOriginal";
 
 import NewBrands from "@/components/NewBrands";
 import ReviewBrands from "@/components/ReviewBrands";
@@ -22,12 +22,13 @@ export default async function Home() {
       {/* <PreviewHome /> */}
    
         <TopBrands />
-        {/* <TopBrandsOriginal /> */}
+   
   
       <div className="background-block">
         <FilteredHome />
         {/* <NewBrands /> */}
       </div>
+      <TopBrandsOriginal />
       {/* <ReviewBrands /> */}
       {/* <GuideSlotsHome /> */}
     </>

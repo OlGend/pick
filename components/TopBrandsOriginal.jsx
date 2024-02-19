@@ -1,9 +1,6 @@
 // TopBrands.jsx (Клиентский компонент)
 "use client";
-import { Suspense, useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Play, Eye } from "phosphor-react";
 import Image from "next/image";
@@ -17,7 +14,6 @@ import {
 } from "./brandUtils";
 import Loader from "@/components/Loader";
 import useSWR from "swr";
-
 
 export default function TopBrandsOriginal() {
   ////////////////////NEW CODE/////////////////////
@@ -285,112 +281,59 @@ export default function TopBrandsOriginal() {
       setLoading(false);
     }
   }, [filteredBrands]);
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleLinkClick = () => {
-    setIsLoading(true);
 
-    // Simulate some delay to show the loader (remove this in actual usage)
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  };
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    // className: "center",
-    centerMode: true,
-    slidesToShow: 2,
-    centerPadding: "60px",
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className="main__container pb-6 d-none">
+   
+        <div className="main__container pb-6">
           <div className="heading flex items-center pt-12">
-            <h2>XxlCasinoList Best Choices for 2024</h2>
+            <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
           </div>
-          <div className="brand-slider brandslider mb-6">
-            <Slider {...settings}>
-              {filteredBrands.map((brand) => {
-                const reviewImgSrc = extractReviewImage(brand.content.rendered);
-                const playLink = extractLink(brand.content.rendered);
+          <div className="flex flex-wrap px-0 py-6">
+            {filteredBrands.map((brand) => {
+              const reviewImgSrc = extractReviewImage(brand.content.rendered);
+              const playLink = extractLink(brand.content.rendered);
 
-                return (
-                  <div className="basis-[19%] card-brand mb-3" key={brand.id}>
-                    <div className=" p-3">
-                      <Link key={brand.id} href={`/bonuses/${brand.id}`}>
-                        <Image
-                          src={reviewImgSrc}
-                          alt={brand.title.rendered}
-                          width={150}
-                          height={75}
-                          loading="lazy"
-                        />
+              return (
+                <div className="basis-[19%] card-brand mb-3" key={brand.id}>
+                  <div className="brandImage p-3">
+                    <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                      <Image
+                        src={reviewImgSrc}
+                        alt={brand.title.rendered}
+                        width={150}
+                        height={75}
+                        loading="lazy"
+                      />
+                    </Link>
+                  </div>
+                  <div className="brandContent p-3">
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: extractReviewBonus(brand.content.rendered),
+                      }}
+                    />
+                    <div className="buttons">
+                    
+                      <Link
+                        className="btn btn-primary flex justify-center items-center mt-1"
+                        href={`https://link.reg2dep1.com/${playLink}`}
+                        target="_blank"
+                      >
+                        <Play className="mr-2" size={20} />
+
+                        Play Now
                       </Link>
                     </div>
-                    <div className="brandContent p-3">
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: extractReviewBonus(brand.content.rendered),
-                        }}
-                      />
-                      <div className="buttons">
-                        {/* <Link
-                          className="btn btn-secondary flex justify-center items-center mb-1"
-                          href={`/bonuses/${brand.id}`}
-                        >
-                          <Eye className="mr-1" size={20} />
-                          Read Review
-                        </Link> */}
-                        <Link
-                          className="btn btn-primary flex justify-center items-center mt-1"
-                          href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
-                          target="_blank"
-                        >
-                          <Play className="mr-2" size={20} />
-                          Play Now
-                        </Link>
-                      </div>
-                    </div>
                   </div>
-                );
-              })}
-            </Slider>
+                </div>
+              );
+            })}
           </div>
         </div>
-      )}
+   
     </>
   );
 }

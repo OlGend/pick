@@ -38,8 +38,11 @@ import {
 export default function AllBonuses({ choose, filtered, isLoader }) {
   const { t } = useTranslation();
   const itemsPerPage = 4;
+  const itemsPerPage2 = 5;
 
   const [visibleBrands, setVisibleBrands] = useState(itemsPerPage);
+  const [visibleBrands2, setVisibleBrands2] = useState(itemsPerPage2);
+
   const [hasMoreBrands, setHasMoreBrands] = useState(false);
   const [openPlusesId, setOpenPlusesId] = useState(null);
   const [openWithdrawalId, setOpenWithdrawalId] = useState(null);
@@ -75,6 +78,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
 
   const loadMoreBrands = () => {
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + itemsPerPage);
+    setVisibleBrands2((prevVisibleBrands) => prevVisibleBrands + itemsPerPage2);
   };
   const handlePlusesClick = (brandId) => {
     setOpenPlusesId((prevId) => (prevId === brandId ? null : brandId));
@@ -100,12 +104,24 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
   }, []);
 
   const [randomBrands, setRandomBrands] = useState([]);
+  const [randomBrands2, setRandomBrands2] = useState([]);
+
+  const [brandsGenerated, setBrandsGenerated] = useState(false);
 
   useEffect(() => {
-    const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
-    const selectedBrands = shuffledBrands.slice(0, 4);
-    setRandomBrands(selectedBrands);
-  }, []);
+    if (!brandsGenerated) {
+      const shuffledBrands = topBrands.sort(() => Math.random() - 0.5);
+      const shuffledBrands2 = filteredBrands.sort(() => Math.random() - 0.5);
+
+      const selectedBrands = shuffledBrands.slice(0, 4);
+      const selectedBrands2 = shuffledBrands2.slice(0, 4);
+
+      setRandomBrands(selectedBrands);
+      setRandomBrands2(selectedBrands2);
+      setBrandsGenerated(true);
+    }
+  }, [brandsGenerated, filteredBrands, topBrands]);
+
 
   return (
     <>
@@ -116,7 +132,6 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
           <div className="flex flex-col px-0 py-6 basis-[75%]">
           {filteredBrands
               .slice(0, visibleBrands)
-              .sort(() => Math.random() - 0.5)
               .map((brand) => {
               const reviewImgSrc = extractReviewImage(brand.content.rendered);
               const playLink = extractLink(brand.content.rendered);
@@ -293,8 +308,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
           </div>
           <div className="flex flex-col basis-[24%] py-6">
           {topBrands
-              .slice(0, visibleBrands)
-              .sort(() => Math.random() - 0.5)
+              .slice(0, visibleBrands2)
               .map((item) => {
               const reviewImgSrc = extractReviewImage(item.content.rendered);
               const playLink = extractLink(item.content.rendered);
