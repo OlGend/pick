@@ -311,7 +311,7 @@ const FilteredProviders = () => {
     {
       fallbackData: selectedBrand
         ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 223 }
+        : { flag: "🌍", allBrand: 138, topBrand: 213 }
     }
   );
 

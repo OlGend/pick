@@ -73,7 +73,7 @@ const FilteredBonuses = () => {
       "languageDetails",
       null,
       {
-        fallbackData: { flag: "🌍", brand: 25, topBrand: 223 }, // Задаем начальное значение
+        fallbackData: { flag: "🌍", brand: 25, topBrand: 213 }, // Задаем начальное значение
       }
     );
   ///////////////////
