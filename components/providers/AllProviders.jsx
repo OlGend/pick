@@ -186,7 +186,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
       {isLoader ? (
         <FilterLoader />
       ) : (
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between awesome">
           {loading ? ( // Показываем индикатор загрузки, если данные загружаются
             <Loader />
           ) : (
