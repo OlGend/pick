@@ -274,7 +274,9 @@ export default function TopBrandsOriginal() {
                 
                   <Link
                     className="btn btn-primary flex justify-center items-center mt-1"
-                    href={`https://link.reg2dep1.com/${playLink}`}
+                    href={`https://link.reg2dep1.com/${extractLink(
+                      brand.content.rendered
+                    )}/${newUrl}`}
                     target="_blank"
                   >
                     <Play className="mr-2" size={20} />
