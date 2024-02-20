@@ -6289,8 +6289,14 @@ h1 {
   .search-container {
     display: none !important;
   }
+  .awesome-slider {
+    max-height: 214px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .awesome-slider {
+    max-height: 214px;
+  }
   .awesome .slick-slide {
     margin-right: 0 !important;
     width: initial;
