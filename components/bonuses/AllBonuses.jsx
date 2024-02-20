@@ -6,6 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTopBrandsFilter } from "@/components/useBrands";
 import Loader from "@/components/Loader";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import FilterLoader from "@/components/FilterLoader";
 
 import {
@@ -144,12 +148,48 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
       setLoading(false);
     }
   }, [filteredBrands]);
+
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+  variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
       {isLoader ? (
         <FilterLoader />
       ) : (
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between awesome">
           {loading ? ( // Показываем индикатор загрузки, если данные загружаются
             <Loader />
           ) : (
@@ -342,7 +382,40 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                 )}
               </div>
               <div className="flex flex-col basis-[24%] py-6">
-                {vis2.slice(0, visibleBrands2).map((item) => {
+            {!isMobile && vis2.length > 1 ? (
+              vis2.slice(0, visibleBrands2).map((item) => {
+                const reviewImgSrc = extractReviewImage(item.content.rendered);
+                const playLink = extractLink(item.content.rendered);
+                return (
+                  <div className="card-brand-banner mb-2" key={item.id}>
+                    <div className="brandImage p-3">
+                      <Link
+                        className="flex justify-center flex-col items-center"
+                        key={item.id}
+                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                        target="_blank"
+                      >
+                        <Image
+                          src={reviewImgSrc}
+                          alt={item.title.rendered}
+                          width={200}
+                          height={80}
+                          loading="lazy"
+                        />
+                        <div
+                          className="p-3 text-center flex items-center"
+                          dangerouslySetInnerHTML={{
+                            __html: extractReviewBonus(item.content.rendered),
+                          }}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <Slider {...settings}>
+                {vis2.map((item) => {
                   const reviewImgSrc = extractReviewImage(
                     item.content.rendered
                   );
@@ -374,7 +447,9 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                     </div>
                   );
                 })}
-              </div>
+              </Slider>
+            )}
+          </div>
             </div>
           )}
         </div>

@@ -6305,6 +6305,9 @@ h1 {
   .awesome .slick-slide .p-3.text-center.flex.items-center {
     max-width: 250px;
     min-width: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   .filter-brands .basis-\[24\%\] {
     padding-top: 50px;
