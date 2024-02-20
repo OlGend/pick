@@ -193,7 +193,7 @@ export default function NewBrands() {
 
   if (typeof window !== "undefined") {
     const newSource = localStorage.getItem("source");
-    const urlBrands = newSource === "partner1039" ? 249 : 220;
+    const urlBrands = newSource === "partner1039" ? 248 : 221;
 
     if (urlBrands && typeof window !== "undefined") {
       localStorage.setItem("newbrands", urlBrands);
