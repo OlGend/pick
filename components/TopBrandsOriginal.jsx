@@ -53,12 +53,12 @@ export default function TopBrandsOriginal() {
   }, []);
 
   const navigateBrands = [
-    {
-      topCurrentCategories: 222,
-      brand: 220,
-      icon: "🌍",
-      slug: "all",
-    },
+    // {
+    //   topCurrentCategories: 222,
+    //   brand: 220,
+    //   icon: "🌍",
+    //   slug: "all",
+    // },
     {
       topCurrentCategories: 223,
       brand: 220,
@@ -71,44 +71,44 @@ export default function TopBrandsOriginal() {
       icon: "🇨🇦",
       slug: "ca",
     },
-    {
-      topCurrentCategories: 228,
-      brand: 220,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 226,
-      brand: 220,
-      icon: "🇩🇪",
-      slug: "de",
-    },
+    // {
+    //   topCurrentCategories: 228,
+    //   brand: 220,
+    //   icon: "🇫🇮",
+    //   slug: "fi",
+    // },
+    // {
+    //   topCurrentCategories: 226,
+    //   brand: 220,
+    //   icon: "🇩🇪",
+    //   slug: "de",
+    // },
     {
       topCurrentCategories: 231,
       brand: 220,
       icon: "🇳🇿",
       slug: "nz",
     },
-    {
-      topCurrentCategories: 230,
-      brand: 220,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 232,
-      brand: 220,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
+    // {
+    //   topCurrentCategories: 230,
+    //   brand: 220,
+    //   icon: "🇳🇴",
+    //   slug: "no",
+    // },
+    // {
+    //   topCurrentCategories: 232,
+    //   brand: 220,
+    //   icon: "🇵🇱",
+    //   slug: "pl",
+    // },
   ];
   const navigateBrandsPartners = [
-    {
-      topCurrentCategories: 250,
-      brand: 249,
-      icon: "🌍",
-      slug: "all",
-    },
+    // {
+    //   topCurrentCategories: 250,
+    //   brand: 249,
+    //   icon: "🌍",
+    //   slug: "all",
+    // },
     {
       topCurrentCategories: 251,
       brand: 249,
@@ -121,36 +121,36 @@ export default function TopBrandsOriginal() {
       icon: "🇨🇦",
       slug: "ca",
     },
-    {
-      topCurrentCategories: 228,
-      brand: 249,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 226,
-      brand: 249,
-      icon: "🇩🇪",
-      slug: "de",
-    },
+    // {
+    //   topCurrentCategories: 228,
+    //   brand: 249,
+    //   icon: "🇫🇮",
+    //   slug: "fi",
+    // },
+    // {
+    //   topCurrentCategories: 226,
+    //   brand: 249,
+    //   icon: "🇩🇪",
+    //   slug: "de",
+    // },
     {
       topCurrentCategories: 231,
       brand: 249,
       icon: "🇳🇿",
       slug: "nz",
     },
-    {
-      topCurrentCategories: 230,
-      brand: 249,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 232,
-      brand: 249,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
+    // {
+    //   topCurrentCategories: 230,
+    //   brand: 249,
+    //   icon: "🇳🇴",
+    //   slug: "no",
+    // },
+    // {
+    //   topCurrentCategories: 232,
+    //   brand: 249,
+    //   icon: "🇵🇱",
+    //   slug: "pl",
+    // },
   ];
 
   useEffect(() => {
@@ -191,7 +191,7 @@ export default function TopBrandsOriginal() {
             brand: selectedBrand.brand,
             topBrand: selectedBrand.topCurrentCategories,
           }
-        : { flag: "🌍", brand: 221, topBrand: 222 },
+        : { flag: "🌍", brand: 220, topBrand: 223 },
     }
   );
 
@@ -234,6 +234,10 @@ export default function TopBrandsOriginal() {
       setNewUrl(savedUrl);
     }
   }, []);
+
+  console.log("FBR", filteredBrands);
+  console.log("CATEG", br, languageDetails.topBrand)
+
 
   return (
     <>

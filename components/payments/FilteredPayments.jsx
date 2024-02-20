@@ -383,7 +383,7 @@ const FilteredPayments = () => {
     {
       fallbackData: selectedBrand
         ? { flag: selectedBrand.icon, allBrand: selectedBrand.currentCategories, topBrand: selectedBrand.topCurrentCategories }
-        : { flag: "🌍", allBrand: 138, topBrand: 213 }
+        : { flag: "🌍", allBrand: 138, topBrand: 223 }
     }
   );
 
