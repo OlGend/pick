@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Responsible Gaming | XXLCasinoList",
+  title: "Responsible Gaming | Bonus XXXCasinoGuru",
   description:
-    "Navigate the complexities of casino payment methods with ease, thanks to XXLCasinoList's comprehensive Payments guide. From credit cards and e-wallets to cryptocurrencies, we cover all the options, detailing the pros and cons to help you make informed decisions. Learn about processing times, fees, and security measures so you can deposit and withdraw funds with confidence. Your seamless gaming experience starts with choosing the right payment method, and we're here to guide you every step of the way!",
+    "Navigate the complexities of casino payment methods with ease, thanks to Bonus XXXCasinoGuru's comprehensive Payments guide. From credit cards and e-wallets to cryptocurrencies, we cover all the options, detailing the pros and cons to help you make informed decisions. Learn about processing times, fees, and security measures so you can deposit and withdraw funds with confidence. Your seamless gaming experience starts with choosing the right payment method, and we're here to guide you every step of the way!",
 };
 
 export default async function Bonuses() {
@@ -12,7 +12,7 @@ export default async function Bonuses() {
       <div className="main__container">
         <h1 className="mb-3">Responsible Gaming</h1>
         <p>
-          At XXLCasinoList, we believe that gambling should always be a form of
+          At Bonus XXXCasinoGuru, we believe that gambling should always be a form of
           entertainment. However, it&#39;s important to recognize that a small
           percentage of individuals may lose control when gambling. Before you
           begin playing, it&#39;s crucial to understand that gambling should never
@@ -65,15 +65,15 @@ export default async function Bonuses() {
           only occur after the previous limit of the same type expires. If you
           need more information or assistance with Personal Limits, please
           contact our support team at{" "}
-          <a target="_blank" href="mailto:support@xxlcasinolist.com.">
-            support@xxlcasinolist.com.
+          <a target="_blank" href="mailto:support@Bonus XXXCasinoGuru.com.">
+            support@Bonus XXXCasinoGuru.com.
           </a>
         </p>
         <h2 className="mb-3">Self-Exclusion by Request</h2>
         <p>
           If you decide to stop gambling at{" "}
-          <a target="_blank" href="mailto:support@xxlcasinolist.com.">
-            support@xxlcasinolist.com
+          <a target="_blank" href="mailto:support@Bonus XXXCasinoGuru.com.">
+            support@Bonus XXXCasinoGuru.com
           </a>{" "}
           for a specific or indefinite period. We will take all necessary steps
           to block your access to your account and ensure that you receive no
@@ -83,8 +83,8 @@ export default async function Bonuses() {
           When you are self-excluded, you won&#39;t be able to log into your account
           or withdraw any remaining balance. To initiate a withdrawal of your
           remaining balance, contact our support team at{" "}
-          <a target="_blank" href="mailto:support@xxlcasinolist.com.">
-            support@xxlcasinolist.com
+          <a target="_blank" href="mailto:support@Bonus XXXCasinoGuru.com.">
+            support@Bonus XXXCasinoGuru.com
           </a>
           . They will provide you with information and assistance within a
           reasonable timeframe.
@@ -119,7 +119,7 @@ export default async function Bonuses() {
         </ul>
         <h2 className="mb-3">Protection of Minors</h2>
         <p>
-          XXLCasinoList only accepts players who are at least 18 years old and
+          Bonus XXXCasinoGuru only accepts players who are at least 18 years old and
           employs various methods to prevent minors from registering and playing
           on our website. We reserve the right to request proof of identity, and
           if a player is under the legal age to play, access to the website will

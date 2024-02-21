@@ -8,8 +8,8 @@ import PreviewBonuses from "@/components/PreviewBonuses";
 import MobilePayments from "@/components/payments/MobilePayments";
 
 export const metadata: Metadata = {
-  title: "Mobile payments | XXLCasinoList",
-  description: "Step into the future of convenience with Mobile Payments, expertly covered in our comprehensive guide at XXLCasinoList. From SMS payments to mobile wallets, our guide details the various mobile payment methods that make funding your casino account as easy as a tap on your screen. Learn about their advantages, security features, and any limitations, all while discovering top-rated casinos that support mobile payments. Ensure a seamless and secure gaming experience by harnessing the power of mobile payments with our expert insights!",
+  title: "Mobile payments | Bonus XXXCasinoGuru",
+  description: "Step into the future of convenience with Mobile Payments, expertly covered in our comprehensive guide at Bonus XXXCasinoGuru. From SMS payments to mobile wallets, our guide details the various mobile payment methods that make funding your casino account as easy as a tap on your screen. Learn about their advantages, security features, and any limitations, all while discovering top-rated casinos that support mobile payments. Ensure a seamless and secure gaming experience by harnessing the power of mobile payments with our expert insights!",
 };
 
 export default async function Bonuses() {

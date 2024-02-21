@@ -8,8 +8,8 @@ import PreviewBonuses from "@/components/PreviewBonuses";
 import Pushgaming from "@/components/providers/Pushgaming";
 
 export const metadata: Metadata = {
-  title: "Push Gaming | XXLCasinoList",
-  description: "Explore the dynamic world of Push Gaming with our comprehensive guide at XXLCasinoList. Renowned for creating high-quality, mobile-optimized casino games, Push Gaming is a force to be reckoned with in the online gaming landscape. Our guide delves into their most popular titles, unique features, and innovative gameplay mechanics. Plus, discover a curated list of top-rated casinos that offer Push Gaming’s diverse game portfolio. Whether you're a casual player or a seasoned enthusiast, our guide gives you the insights you need to fully enjoy the captivating offerings of Push Gaming.",
+  title: "Push Gaming | Bonus XXXCasinoGuru",
+  description: "Explore the dynamic world of Push Gaming with our comprehensive guide at Bonus XXXCasinoGuru. Renowned for creating high-quality, mobile-optimized casino games, Push Gaming is a force to be reckoned with in the online gaming landscape. Our guide delves into their most popular titles, unique features, and innovative gameplay mechanics. Plus, discover a curated list of top-rated casinos that offer Push Gaming’s diverse game portfolio. Whether you're a casual player or a seasoned enthusiast, our guide gives you the insights you need to fully enjoy the captivating offerings of Push Gaming.",
 };
 
 export default async function Bonuses() {

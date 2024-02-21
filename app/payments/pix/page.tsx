@@ -8,8 +8,8 @@ import PreviewBonuses from "@/components/PreviewBonuses";
 import Pix from "@/components/payments/Pix";
 
 export const metadata: Metadata = {
-  title: "Pix payments | XXLCasinoList",
-  description: "Step into the future of online casino payments with our comprehensive guide to Pix on XXLCasinoList. Particularly popular in Brazil but expanding globally, Pix offers instant transactions with unparalleled security. Our in-depth guide covers everything you need to know, from setting up your Pix account to processing times for deposits and withdrawals. Plus, get a list of top-rated casinos that support Pix, ensuring a fast and secure gaming experience. Stay ahead of the curve and enhance your gameplay by mastering Pix payments with our expert guidance!",
+  title: "Pix payments | Bonus XXXCasinoGuru",
+  description: "Step into the future of online casino payments with our comprehensive guide to Pix on Bonus XXXCasinoGuru. Particularly popular in Brazil but expanding globally, Pix offers instant transactions with unparalleled security. Our in-depth guide covers everything you need to know, from setting up your Pix account to processing times for deposits and withdrawals. Plus, get a list of top-rated casinos that support Pix, ensuring a fast and secure gaming experience. Stay ahead of the curve and enhance your gameplay by mastering Pix payments with our expert guidance!",
 };
 
 export default async function Bonuses() {

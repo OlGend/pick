@@ -22,7 +22,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const brand = await getData(id);
   return {
-    title: `${brand.title.rendered} | XXLCasinoList | Bonuses`,
+    title: `${brand.title.rendered} | Bonus XXXCasinoGuru | Bonuses`,
   };
 }
 

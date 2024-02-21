@@ -171,12 +171,12 @@ const TheFooter = () => {
         </div>
         <div className="footer-bottom">
           <div className="main__container pt-3">
-            <p>XxlCasinolist.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.</p>
+            <p>bonus.xxxcasinoGuru.com positions itself as an exceptional source of information about virtual gaming establishments and online gambling entertainment. All our reviews and guides are crafted in accordance with the knowledge and convictions of our independent team of experts, objectively and without any bias. Nevertheless,such assessments and notifications are provided solely for informational purposes and should not be considered legal advice or a basis for making legal decisions. Before commencing participation in your chosen casino, always ensure that you comply with all applicable legal requirements.</p>
           </div>
         </div>
         <div className="footer-end">
           <div className="main__container pt-3 pb-3 flex justify-center">
-            <span>Copyright © 2024, xxlcasinolist.com All rights reserved.</span>
+            <span>Copyright © 2024, bonus.xxxcasinoGuru.com All rights reserved.</span>
           </div>
         </div>
       </div>

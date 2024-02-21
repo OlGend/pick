@@ -8,8 +8,8 @@ import PreviewBonuses from "@/components/PreviewBonuses";
 import Muchbetter from "@/components/payments/Muchbetter";
 
 export const metadata: Metadata = {
-  title: "Muchbetter payments | XXLCasinoList",
-  description: "Discover the innovative world of MuchBetter payments through our comprehensive guide at XXLCasinoList. Designed for the mobile age, MuchBetter offers fast, secure, and user-friendly transactions tailored for the modern casino player. Our detailed guide walks you through setting up your MuchBetter account, managing transactions, and understanding fees. We also feature a handpicked list of top casinos that accept MuchBetter, ensuring that your gaming experience is as fluid as it is secure. Elevate your gaming by making the most of MuchBetter payments with our expert guidance!",
+  title: "Muchbetter payments | Bonus XXXCasinoGuru",
+  description: "Discover the innovative world of MuchBetter payments through our comprehensive guide at Bonus XXXCasinoGuru. Designed for the mobile age, MuchBetter offers fast, secure, and user-friendly transactions tailored for the modern casino player. Our detailed guide walks you through setting up your MuchBetter account, managing transactions, and understanding fees. We also feature a handpicked list of top casinos that accept MuchBetter, ensuring that your gaming experience is as fluid as it is secure. Elevate your gaming by making the most of MuchBetter payments with our expert guidance!",
 };
 
 export default async function Bonuses() {
