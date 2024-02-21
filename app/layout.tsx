@@ -23,46 +23,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <meta
-          name="google-site-verification"
-          content="Qqdm5I_A_Tr88XIgb3NPhInCB6WHFUzTVCtlZ2fLZq8"
-        /> */}
+
       </head>
       <body>
-        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-3SEY9WEK5K" />
+   
+        {/* <RandomWindow /> */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5MZ7TVJRB" strategy="afterInteractive" />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
- 
-            gtag('config', 'G-3SEY9WEK5K');
+            gtag('config', 'G-R5MZ7TVJRB');
           `}
-        </Script> */}
-
-        {/* Вставьте скрипт Customer.io прямо сюда */}
-        {/* <Script id="customerio" type="text/javascript">
-          {`
-            var _cio = _cio || [];
-            (function() {
-              var a,b,c;a=function(f){return function(){_cio.push([f].
-              concat(Array.prototype.slice.call(arguments,0)))}};b=["load","identify",
-              "sidentify","track","page"];for(c=0;c<b.length;c++){_cio[b[c]]=a(b[c])};
-              var t = document.createElement('script'),
-                  s = document.getElementsByTagName('script')[0];
-              t.async = true;
-              t.id    = 'cio-tracker';
-              t.setAttribute('data-site-id', '9ae231a2f5fcdcac0240');
-              t.src = 'https://assets.customer.io/assets/track-eu.js';
-              s.parentNode.insertBefore(t, s);
-            })();
-          `}
-        </Script> */}
-
-
-
-          {/* <BannerWindow /> */}
-        {/* <RandomWindow /> */}
+        </Script>
         <Script id="hotjar">
           {`
             (function(h,o,t,j,a,r){
