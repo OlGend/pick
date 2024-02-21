@@ -282,6 +282,7 @@ export default function TopBrandsOriginal() {
                     <Play className="mr-2" size={20} />
                     
 
+
                     Play Now
                   </Link>
                 </div>
