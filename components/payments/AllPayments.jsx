@@ -372,7 +372,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                 const reviewImgSrc = extractReviewImage(item.content.rendered);
                 const playLink = extractLink(item.content.rendered);
                 return (
-                  <div className="card-brand-banner mb-2" key={item.id}>
+                  <div className="card-brand-banner mb-2 flex flex-col items-center pb-3" key={item.id}>
                     <div className="brandImage p-3">
                       <Link
                         className="flex justify-center flex-col items-center"
@@ -395,6 +395,12 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                         />
                       </Link>
                     </div>
+                    <Link
+                        className="btn btn-primary btn-new"
+                        key={item.id}
+                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                        target="_blank"
+                      >Play now</Link>
                   </div>
                 );
               })
@@ -406,7 +412,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                   );
                   const playLink = extractLink(item.content.rendered);
                   return (
-                    <div className="card-brand-banner mb-2" key={item.id}>
+                    <div className="card-brand-banner mb-2 flex flex-col items-center pb-3" key={item.id}>
                       <div className="brandImage p-3">
                         <Link
                           className="flex justify-center flex-col items-center"
@@ -429,6 +435,12 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                           />
                         </Link>
                       </div>
+                      <Link
+                        className="btn btn-primary btn-new"
+                        key={item.id}
+                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                        target="_blank"
+                      >Play now</Link>
                     </div>
                   );
                 })}

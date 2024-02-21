@@ -6306,7 +6306,7 @@ h1 {
     padding-top: 0 !important;
   }
   .awesome .slick-track, .awesome .slick-list {
-    max-height: 220px;
+    max-height: 260px;
   }
   .awesome .slick-slide .p-3.text-center.flex.items-center {
     max-width: 250px;
@@ -10330,4 +10330,21 @@ input.error {
   top: 8px;
   z-index: 1;
   background: #0967e3;
+}
+
+.btn-new {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px !important;
+}
+/* .card-brand-banner .review-bonus {
+  min-height: initial !important;
+} */
+@media(min-width: 320px) and (max-width: 1259px) {
+  .card-brand-banner .review-bonus {
+    min-height: 63px !important;
+  }
+  .card-brand-banner {
+    display: flex !important;
+  }
 }
