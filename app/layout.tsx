@@ -41,7 +41,7 @@ export default function RootLayout({
         </Script> */}
 
         {/* Вставьте скрипт Customer.io прямо сюда */}
-        <Script id="customerio" type="text/javascript">
+        {/* <Script id="customerio" type="text/javascript">
           {`
             var _cio = _cio || [];
             (function() {
@@ -57,10 +57,24 @@ export default function RootLayout({
               s.parentNode.insertBefore(t, s);
             })();
           `}
-        </Script>
+        </Script> */}
+
+
 
           {/* <BannerWindow /> */}
         {/* <RandomWindow /> */}
+        <Script id="hotjar">
+          {`
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:3873571,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `}
+        </Script>
         <TheHeader />
    
         <main>
