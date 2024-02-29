@@ -10,7 +10,7 @@ const FilteredBonuses = () => {
   const { t } = useTranslation();
   const [isLoader, setIsLoader] = useState(false);
 
-  const [currentTab, setCurrentTab] = useState(1);
+  const [currentTab, setCurrentTab] = useState(2);
   const navigateBrands = [
     {
       currentTab: 1,
