@@ -326,7 +326,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                       </div>
                       <div className="basis-[36%]">
                         <div className="brandImage p-3">
-                          <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                          <Link key={brand.id} href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}>
                             <Image
                               src={reviewImgSrc}
                               alt={brand.title.rendered}
@@ -340,7 +340,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                         <div className="buttons ml-auto flex items-center">
                           {/* <Link
                         className="btn btn-secondary text-center flex justify-center items-center"
-                        href={`/bonuses/${brand.id}`}
+                       href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                         onClick={handleLinkClick}
                       >
                         {isLoading ? (

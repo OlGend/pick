@@ -248,7 +248,7 @@ export default function NewBrands() {
                 key={brand.id}
               >
                 <div className="brandImage p-3">
-                  <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                  <Link key={brand.id} href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}>
                     <Image
                       src={reviewImgSrc}
                       alt={brand.title.rendered}
@@ -261,7 +261,7 @@ export default function NewBrands() {
                 <Link
                   className="flex basis-[16%] items-center p-3"
                   key={brand.id}
-                  href={`/bonuses/${brand.id}`}
+                  href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                 >
                   <span>{brand.title.rendered}</span>
                 </Link>
@@ -294,7 +294,7 @@ export default function NewBrands() {
                   </Link>
                   {/* <Link
                     className="btn btn-secondary flex justify-center items-center w-full"
-                    href={`/bonuses/${brand.id}`}
+                   href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                     onClick={handleLinkClick}
                   >
                     {isLoading ? (

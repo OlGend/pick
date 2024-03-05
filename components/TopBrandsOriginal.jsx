@@ -254,7 +254,7 @@ export default function TopBrandsOriginal() {
           return (
             <div className="basis-[19%] card-brand mb-3" key={brand.id}>
               <div className="brandImage p-3">
-                <Link key={brand.id} href={`/bonuses/${brand.id}`}>
+                <Link key={brand.id} href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}>
                   <Image
                     src={reviewImgSrc}
                     alt={brand.title.rendered}
