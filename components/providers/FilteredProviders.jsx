@@ -352,6 +352,7 @@ const FilteredProviders = () => {
                   choose={item.currentCategories}
                   filtered={languageDetails}
                   isLoader={isLoader}
+                  currentText={item.currentText}
                 />
               )
             );

@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FilterLoader from "@/components/FilterLoader";
+import { track } from "@vercel/analytics";
 
 import {
   Gift,
@@ -39,7 +40,12 @@ import {
   extractLimits,
 } from "@/components/brandUtils";
 
-export default function AllBonuses({ choose, filtered, isLoader }) {
+export default function AllBonuses({
+  choose,
+  filtered,
+  isLoader,
+  currentText,
+}) {
   const { t } = useTranslation();
   const itemsPerPage = 4;
   const itemsPerPage2 = 4;
@@ -83,6 +89,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
   const loadMoreBrands = () => {
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + itemsPerPage);
     setVisibleBrands2((prevVisibleBrands) => prevVisibleBrands + itemsPerPage2);
+    track(`Load More Brands | ${currentText}`);
   };
   const handlePlusesClick = (brandId) => {
     setOpenPlusesId((prevId) => (prevId === brandId ? null : brandId));
@@ -107,38 +114,38 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
     }
   }, []);
 
-  
   const [randomBrands, setRandomBrands] = useState([]);
   const [randomBrands2, setRandomBrands2] = useState([]);
   const [brandsGenerated, setBrandsGenerated] = useState(false);
-  
+
   useEffect(() => {
     setBrandsGenerated(false); // Устанавливаем в false при изменении локали, чтобы пересчитать случайные бренды
   }, [filtered.topBrand]); // Отслеживаем изменения связанные с локалью
-  
+
   useEffect(() => {
     const generateRandomBrands = () => {
       if (!brandsGenerated && filteredBrands.length > 0) {
-        const shuffledBrands = [...filteredBrands].sort(() => Math.random() - 0.5);
-        const shuffledBrands2 = [...filteredBrands].sort(() => Math.random() - 0.5);
-  
+        const shuffledBrands = [...filteredBrands].sort(
+          () => Math.random() - 0.5
+        );
+        const shuffledBrands2 = [...filteredBrands].sort(
+          () => Math.random() - 0.5
+        );
+
         setRandomBrands(shuffledBrands);
         setRandomBrands2(shuffledBrands2);
         setBrandsGenerated(true);
       }
     };
-  
+
     generateRandomBrands(); // Вызываем генерацию при первом рендере
-  
   }, [brandsGenerated, filteredBrands]); // Отслеживаем изменения brandsGenerated и filteredBrands
-  
-  
+
   console.log("RANDOM", filteredBrands);
-  
+
   const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
   const vis2 = randomBrands2.length > 0 ? randomBrands2 : filteredBrands;
 
-  
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -148,7 +155,6 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
       setLoading(false);
     }
   }, [filteredBrands]);
-
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -172,7 +178,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-  variableWidth: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
@@ -184,6 +190,17 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
       },
     ],
   };
+
+  const [page, setPage] = useState("");
+
+  useEffect(() => {
+    const urlArray = window.location.href.split("/");
+    const pageName = urlArray[urlArray.length - 1]; 
+    setPage(pageName);
+  }, []);
+
+
+
   return (
     <>
       {isLoader ? (
@@ -193,7 +210,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
           {loading ? ( // Показываем индикатор загрузки, если данные загружаются
             <Loader />
           ) : (
-            <div className="flex flex-wrap justify-between w-full"> 
+            <div className="flex flex-wrap justify-between w-full">
               <div className="flex flex-col px-0 py-6 basis-[75%]">
                 {vis.slice(0, visibleBrands).map((brand) => {
                   const reviewImgSrc = extractReviewImage(
@@ -326,7 +343,13 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                       </div>
                       <div className="basis-[36%]">
                         <div className="brandImage p-3">
-                          <Link key={brand.id} href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}>
+                          <Link
+                            key={brand.id}
+                            href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                            onClick={() => {
+                              track(`${page} | ${currentText} | Conversion to Brand`);
+                            }}
+                          >
                             <Image
                               src={reviewImgSrc}
                               alt={brand.title.rendered}
@@ -362,6 +385,9 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                             className="btn btn-primary mt-0 text-center flex justify-center items-center"
                             href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                             target="_blank"
+                            onClick={() => {
+                              track(`${page} | ${currentText} | Conversion to Brand`);
+                            }}
                           >
                             <Play className="mr-2" size={24} /> Play Now
                           </Link>
@@ -382,86 +408,114 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                 )}
               </div>
               <div className="flex flex-col basis-[24%] py-6">
-            {!isMobile && vis2.length > 0 ? (
-              vis2.slice(0, visibleBrands2).map((item) => {
-                const reviewImgSrc = extractReviewImage(item.content.rendered);
-                const playLink = extractLink(item.content.rendered);
-                return (
-                  <div className="card-brand-banner mb-2 flex flex-col items-center pb-3" key={item.id}>
-                    <div className="brandImage p-3">
-                      <Link
-                        className="flex justify-center flex-col items-center"
+                {!isMobile && vis2.length > 0 ? (
+                  vis2.slice(0, visibleBrands2).map((item) => {
+                    const reviewImgSrc = extractReviewImage(
+                      item.content.rendered
+                    );
+                    const playLink = extractLink(item.content.rendered);
+                    return (
+                      <div
+                        className="card-brand-banner mb-2 flex flex-col items-center pb-3"
                         key={item.id}
-                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
-                        target="_blank"
                       >
-                        <Image
-                          src={reviewImgSrc}
-                          alt={item.title.rendered}
-                          width={200}
-                          height={80}
-                          loading="lazy"
-                        />
-                        <div
-                          className="p-3 text-center flex items-center"
-                          dangerouslySetInnerHTML={{
-                            __html: extractReviewBonus(item.content.rendered),
-                          }}
-                        />
-                      </Link>
-                    </div>
-                    <Link
-                        className="btn btn-primary btn-new"
-                        key={item.id}
-                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
-                        target="_blank"
-                      >Play now</Link>
-                  </div>
-                );
-              })
-            ) : (
-              <Slider {...settings}>
-                {vis2.map((item) => {
-                  const reviewImgSrc = extractReviewImage(
-                    item.content.rendered
-                  );
-                  const playLink = extractLink(item.content.rendered);
-                  return (
-                    <div className="card-brand-banner mb-2 flex flex-col items-center pb-3" key={item.id}>
-                      <div className="brandImage p-3">
+                        <div className="brandImage p-3">
+                          <Link
+                            className="flex justify-center flex-col items-center"
+                            key={item.id}
+                            href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                            target="_blank"
+                            onClick={() => {
+                              track(`${page} | ${currentText} | Conversion to Brand`);
+                            }}
+                          >
+                            <Image
+                              src={reviewImgSrc}
+                              alt={item.title.rendered}
+                              width={200}
+                              height={80}
+                              loading="lazy"
+                            />
+                            <div
+                              className="p-3 text-center flex items-center"
+                              dangerouslySetInnerHTML={{
+                                __html: extractReviewBonus(
+                                  item.content.rendered
+                                ),
+                              }}
+                            />
+                          </Link>
+                        </div>
                         <Link
-                          className="flex justify-center flex-col items-center"
+                          className="btn btn-primary btn-new"
                           key={item.id}
                           href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                           target="_blank"
+                          onClick={() => {
+                            track(`${page} | ${currentText} | Conversion to Brand`);
+                          }}
                         >
-                          <Image
-                            src={reviewImgSrc}
-                            alt={item.title.rendered}
-                            width={200}
-                            height={80}
-                            loading="lazy"
-                          />
-                          <div
-                            className="p-3 text-center flex items-center"
-                            dangerouslySetInnerHTML={{
-                              __html: extractReviewBonus(item.content.rendered),
-                            }}
-                          />
+                          Play now
                         </Link>
                       </div>
-                      <Link
-                        className="btn btn-primary btn-new"
-                        key={item.id}
-                        href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
-                        target="_blank"
-                      >Play now</Link>
-                    </div>
-                  );
-                })}
-              </Slider>
-            )}
-          </div>
+                    );
+                  })
+                ) : (
+                  <Slider {...settings}>
+                    {vis2.map((item) => {
+                      const reviewImgSrc = extractReviewImage(
+                        item.content.rendered
+                      );
+                      const playLink = extractLink(item.content.rendered);
+                      return (
+                        <div
+                          className="card-brand-banner mb-2 flex flex-col items-center pb-3"
+                          key={item.id}
+                        >
+                          <div className="brandImage p-3">
+                            <Link
+                              className="flex justify-center flex-col items-center"
+                              key={item.id}
+                              href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                              target="_blank"
+                              onClick={() => {
+                                track(`${page} | ${currentText} | Conversion to Brand`);
+                              }}
+                            >
+                              <Image
+                                src={reviewImgSrc}
+                                alt={item.title.rendered}
+                                width={200}
+                                height={80}
+                                loading="lazy"
+                              />
+                              <div
+                                className="p-3 text-center flex items-center"
+                                dangerouslySetInnerHTML={{
+                                  __html: extractReviewBonus(
+                                    item.content.rendered
+                                  ),
+                                }}
+                              />
+                            </Link>
+                          </div>
+                          <Link
+                            className="btn btn-primary btn-new"
+                            key={item.id}
+                            href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                            target="_blank"
+                            onClick={() => {
+                              track(`${page} | ${currentText} | Conversion to Brand`);
+                            }}
+                          >
+                            Play now
+                          </Link>
+                        </div>
+                      );
+                    })}
+                  </Slider>
+                )}
+              </div>
             </div>
           )}
         </div>

@@ -109,6 +109,7 @@ const FilteredHome = () => {
                   choose={item.currentCategories}
                   filtered={languageDetails}
                   isLoader={isLoader}
+                  currentText={item.currentText}
                 />
               )
             );

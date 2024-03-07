@@ -111,6 +111,8 @@ const FilteredBonuses = () => {
                   choose={item.currentCategories}
                   filtered={languageDetails}
                   isLoader={isLoader}
+                  currentText={item.currentText}
+                  slug={item.slug}
                 />
               )
             );

@@ -423,6 +423,7 @@ const FilteredPayments = () => {
                   choose={item.currentCategories}
                   filtered={languageDetails}
                   isLoader={isLoader}
+                  currentText={item.currentText}
                 />
               )
             );

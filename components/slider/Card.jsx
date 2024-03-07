@@ -49,9 +49,9 @@ function Card({ imagen, link, bonus }) {
           className="btn btn-primary"
           href={`https://link.reg2dep1.com/${link}/${newUrl}`}
           target="_blank"
-          // onClick={() => {
-          //   track('Home > First block');
-          // }}
+          onClick={() => {
+            track('TOP Brand');
+          }}
         >
           Play now
         </Link>

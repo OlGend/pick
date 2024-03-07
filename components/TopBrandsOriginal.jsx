@@ -1,7 +1,3 @@
-
-
-
-
 "use client";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -11,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTopBrands } from "./useBrands";
 import { useTopBrandsFilter } from "@/components/useBrands";
+import { track } from "@vercel/analytics";
 
 import {
   extractReviewBonus,
@@ -47,7 +44,9 @@ export default function TopBrandsOriginal() {
           (brand) => brand.slug === "all"
         );
         const newSource = localStorage.getItem("source");
-        setSelectedBrand(newSource === "partner1039" ? allBrandPartners : allBrand);
+        setSelectedBrand(
+          newSource === "partner1039" ? allBrandPartners : allBrand
+        );
       }
     }
   }, []);
@@ -205,13 +204,9 @@ export default function TopBrandsOriginal() {
   }
   let br;
   if (typeof window !== "undefined") {
-   br = localStorage.getItem("newbrands");
+    br = localStorage.getItem("newbrands");
   }
-  const filteredBrands = useTopBrandsFilter(
-    br,
-    languageDetails.topBrand
-  );
-
+  const filteredBrands = useTopBrandsFilter(br, languageDetails.topBrand);
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -236,63 +231,65 @@ export default function TopBrandsOriginal() {
   }, []);
 
   console.log("FBR", filteredBrands);
-  console.log("CATEG", br, languageDetails.topBrand)
-
+  console.log("CATEG", br, languageDetails.topBrand);
 
   return (
     <>
-   
-    <div className="main__container pb-6">
-      <div className="heading flex items-center pt-12 ptn-12">
-        <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
-      </div>
-      <div className="flex flex-wrap px-0 py-6">
-        {filteredBrands.map((brand) => {
-          const reviewImgSrc = extractReviewImage(brand.content.rendered);
-          const playLink = extractLink(brand.content.rendered);
+      <div className="main__container pb-6">
+        <div className="heading flex items-center pt-12 ptn-12">
+          <h2>Fresh Entrants to the Online Casino Scene 2024</h2>
+        </div>
+        <div className="flex flex-wrap px-0 py-6">
+          {filteredBrands.map((brand) => {
+            const reviewImgSrc = extractReviewImage(brand.content.rendered);
+            const playLink = extractLink(brand.content.rendered);
 
-          return (
-            <div className="basis-[19%] card-brand mb-3" key={brand.id}>
-              <div className="brandImage p-3">
-                <Link key={brand.id} href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}>
-                  <Image
-                    src={reviewImgSrc}
-                    alt={brand.title.rendered}
-                    width={150}
-                    height={75}
-                    loading="lazy"
-                  />
-                </Link>
-              </div>
-              <div className="brandContent p-3">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: extractReviewBonus(brand.content.rendered),
-                  }}
-                />
-                <div className="buttons">
-                
+            return (
+              <div className="basis-[19%] card-brand mb-3" key={brand.id}>
+                <div className="brandImage p-3">
                   <Link
-                    className="btn btn-primary flex justify-center items-center mt-1"
-                    href={`https://link.reg2dep1.com/${extractLink(
-                      brand.content.rendered
-                    )}/${newUrl}`}
-                    target="_blank"
+                    key={brand.id}
+                    href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
+                    onClick={() => {
+                      track(`Fresh Entrants | Conversion to Brand`);
+                    }}
                   >
-                    <Play className="mr-2" size={20} />
-                    
-
-
-                    Play Now
+                    <Image
+                      src={reviewImgSrc}
+                      alt={brand.title.rendered}
+                      width={150}
+                      height={75}
+                      loading="lazy"
+                    />
                   </Link>
                 </div>
+                <div className="brandContent p-3">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: extractReviewBonus(brand.content.rendered),
+                    }}
+                  />
+                  <div className="buttons">
+                    <Link
+                      className="btn btn-primary flex justify-center items-center mt-1"
+                      href={`https://link.reg2dep1.com/${extractLink(
+                        brand.content.rendered
+                      )}/${newUrl}`}
+                      target="_blank"
+                      onClick={() => {
+                        track(`Fresh Entrants | Conversion to Brand`);
+                      }}
+                    >
+                      <Play className="mr-2" size={20} />
+                      Play Now
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
-
-</>
+    </>
   );
 }

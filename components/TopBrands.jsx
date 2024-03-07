@@ -19,6 +19,8 @@ import { v4 as uuidv4 } from "uuid";
 import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
 import imgrandom from "@/public/coins_banner2.jpg";
+import { track } from '@vercel/analytics';
+
 
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
@@ -345,6 +347,9 @@ export default function TopBrands() {
                 href={`https://link.reg2dep1.com/${extractLink(
                   item.content.rendered
                 )}/${newUrl}`}
+                onClick={() => {
+                  track('Try Your Luck');
+                }}
               >
                 Try Your Luck
               </Link>

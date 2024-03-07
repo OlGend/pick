@@ -11,6 +11,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FilterLoader from "@/components/FilterLoader";
+import { track } from "@vercel/analytics";
+
 
 import {
   Gift,
@@ -39,7 +41,7 @@ import {
   extractLimits,
 } from "@/components/brandUtils";
 
-export default function AllPayments({ choose, filtered, isLoader }) {
+export default function AllPayments({ choose, filtered, isLoader, currentText }) {
   const { t } = useTranslation();
   const itemsPerPage = 4;
   const itemsPerPage2 = 4;
@@ -83,6 +85,7 @@ export default function AllPayments({ choose, filtered, isLoader }) {
   const loadMoreBrands = () => {
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + itemsPerPage);
     setVisibleBrands2((prevVisibleBrands) => prevVisibleBrands + itemsPerPage2);
+    track(`Load More Brands | ${currentText}`);
   };
   const handlePlusesClick = (brandId) => {
     setOpenPlusesId((prevId) => (prevId === brandId ? null : brandId));
@@ -181,6 +184,16 @@ export default function AllPayments({ choose, filtered, isLoader }) {
       },
     ],
   };
+
+
+  const [page, setPage] = useState("");
+
+  useEffect(() => {
+    const urlArray = window.location.href.split("/");
+    const pageName = urlArray[urlArray.length - 1]; 
+    setPage(pageName);
+  }, []);
+
   return (
     <>
       {isLoader ? (
@@ -359,6 +372,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                             className="btn btn-primary mt-0 text-center flex justify-center items-center"
                             href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                             target="_blank"
+                            onClick={() => {
+                              track(`${page} | ${currentText} | Conversion to Brand`);
+                            }}
                           >
                             <Play className="mr-2" size={24} /> Play Now
                           </Link>
@@ -391,6 +407,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                         key={item.id}
                         href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                         target="_blank"
+                        onClick={() => {
+                          track(`${page} | ${currentText} | Conversion to Brand`);
+                        }}
                       >
                         <Image
                           src={reviewImgSrc}
@@ -412,6 +431,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                         key={item.id}
                         href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                         target="_blank"
+                        onClick={() => {
+                          track(`${page} | ${currentText} | Conversion to Brand`);
+                        }}
                       >Play now</Link>
                   </div>
                 );
@@ -431,6 +453,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                           key={item.id}
                           href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                           target="_blank"
+                          onClick={() => {
+                            track(`${page} | ${currentText} | Conversion to Brand`);
+                          }}
                         >
                           <Image
                             src={reviewImgSrc}
@@ -452,6 +477,9 @@ export default function AllPayments({ choose, filtered, isLoader }) {
                         key={item.id}
                         href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                         target="_blank"
+                        onClick={() => {
+                          track(`${page} | ${currentText} | Conversion to Brand`);
+                        }}
                       >Play now</Link>
                     </div>
                   );

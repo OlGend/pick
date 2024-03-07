@@ -8,6 +8,8 @@ import {
   extractReviewImage,
   extractLink,
 } from "./brandUtils";
+import { track } from "@vercel/analytics";
+
 
 export default function BrandSearchContainer({ showBrands }) {
 
@@ -59,6 +61,9 @@ export default function BrandSearchContainer({ showBrands }) {
                     className="btn btn-primary flex justify-center items-center mt-1"
                     href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                     target="_blank"
+                    onClick={() => {
+                      track(`Search | Conversion to Brand`);
+                    }}
                   >
                     <Play className="mr-2" size={20} />
                     Play Now
