@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 // import Button from "./Button";
+import Link from "next/link";
+import { track } from '@vercel/analytics';
+
 
 function Card({ imagen, link, bonus }) {
   const [show, setShown] = useState(false);
@@ -42,13 +45,16 @@ function Card({ imagen, link, bonus }) {
         }}
       />
       <div className={Styles.btnn}>
-        <a
+        <Link
           className="btn btn-primary"
           href={`https://link.reg2dep1.com/${link}/${newUrl}`}
           target="_blank"
+          onClick={() => {
+            track('Home > First block');
+          }}
         >
           Play now
-        </a>
+        </Link>
         {/* <Button text="Demo" />
         <Button text="Code" /> */}
       </div>
