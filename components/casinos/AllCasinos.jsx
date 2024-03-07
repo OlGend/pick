@@ -384,7 +384,7 @@ export default function AllBonuses({ choose, filtered, isLoader }) {
                 )}
               </div>
               <div className="flex flex-col basis-[24%] py-6">
-            {!isMobile && vis2.length > 1 ? (
+            {!isMobile && vis2.length > 0 ? (
               vis2.slice(0, visibleBrands2).map((item) => {
                 const reviewImgSrc = extractReviewImage(item.content.rendered);
                 const playLink = extractLink(item.content.rendered);

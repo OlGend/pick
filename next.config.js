@@ -29,7 +29,7 @@
 const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: ['hotoffers.casino'],
+    domains: ['hotoffers.casino', 'gobig.finance', 'trckln.com'],
   },
   swcMinify: true,
 }

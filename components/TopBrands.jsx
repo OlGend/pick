@@ -20,6 +20,10 @@ import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
 import imgrandom from "@/public/coins_banner2.jpg";
 
+import { getBrands } from "@/components/getBrands/getBrands";
+
+
+
 export default function TopBrands() {
   ////////////////////NEW CODE/////////////////////
 
@@ -47,34 +51,9 @@ export default function TopBrands() {
   const [source, setSource] = useState("");
 
   const [selectedBrand, setSelectedBrand] = useState(null);
-  useEffect(() => {
-    const defLng = localStorage.getItem("country");
-    // setSelectedBrand(defLng);
-    if (defLng) {
-      const foundBrand = navigateBrands.find(
-        (brand) => brand.slug === defLng.toLowerCase()
-      );
-      const foundBrandPartners = navigateBrandsPartners.find(
-        (brand) => brand.slug === defLng.toLowerCase()
-      );
-      if (foundBrand || foundBrandPartners) {
-        const newSource = localStorage.getItem("source");
-        setSelectedBrand(
-          newSource === "partner1039" ? foundBrandPartners : foundBrand
-        );
-      } else {
-        // Если локаль не найдена, устанавливаем "all"
-        const allBrand = navigateBrands.find((brand) => brand.slug === "all");
-        const allBrandPartners = navigateBrandsPartners.find(
-          (brand) => brand.slug === "all"
-        );
-        const newSource = localStorage.getItem("source");
-        setSelectedBrand(
-          newSource === "partner1039" ? allBrandPartners : allBrand
-        );
-      }
-    }
-  }, []);
+
+  
+
 
   useEffect(() => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -143,106 +122,7 @@ export default function TopBrands() {
     }
   }, []);
 
-  const navigateBrands = [
-    {
-      topCurrentCategories: 222,
-      brand: 221,
-      icon: "🌍",
-      slug: "all",
-    },
-    {
-      topCurrentCategories: 223,
-      brand: 221,
-      icon: "🇦🇺",
-      slug: "au",
-    },
-    {
-      topCurrentCategories: 224,
-      brand: 221,
-      icon: "🇨🇦",
-      slug: "ca",
-    },
-    {
-      topCurrentCategories: 228,
-      brand: 221,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 226,
-      brand: 221,
-      icon: "🇩🇪",
-      slug: "de",
-    },
-    {
-      topCurrentCategories: 231,
-      brand: 221,
-      icon: "🇳🇿",
-      slug: "nz",
-    },
-    {
-      topCurrentCategories: 230,
-      brand: 221,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 232,
-      brand: 221,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
-  ];
-  const navigateBrandsPartners = [
-    {
-      topCurrentCategories: 250,
-      brand: 248,
-      icon: "🌍",
-      slug: "all",
-    },
-    {
-      topCurrentCategories: 251,
-      brand: 248,
-      icon: "🇦🇺",
-      slug: "au",
-    },
-    {
-      topCurrentCategories: 252,
-      brand: 248,
-      icon: "🇨🇦",
-      slug: "ca",
-    },
-    {
-      topCurrentCategories: 254,
-      brand: 248,
-      icon: "🇫🇮",
-      slug: "fi",
-    },
-    {
-      topCurrentCategories: 253,
-      brand: 248,
-      icon: "🇩🇪",
-      slug: "de",
-    },
-    {
-      topCurrentCategories: 256,
-      brand: 248,
-      icon: "🇳🇿",
-      slug: "nz",
-    },
-    {
-      topCurrentCategories: 255,
-      brand: 248,
-      icon: "🇳🇴",
-      slug: "no",
-    },
-    {
-      topCurrentCategories: 257,
-      brand: 248,
-      icon: "🇵🇱",
-      slug: "pl",
-    },
-  ];
+
 
   ///////////////NEW CODE//////////////////////////////
 
@@ -275,31 +155,56 @@ export default function TopBrands() {
   if (typeof window !== "undefined") {
     br = localStorage.getItem("brands");
   }
-  const filteredBrands = useTopBrandsFilter(br, languageDetails.topBrand);
+
 
   const { t } = useTranslation();
 
+
+
+
+  const [brands, setBrands] = useState([]);
+  // const [selectedBrand, setSelectedBrand] = useState(null);
+
+  const defLng = localStorage.getItem("country");
+
+  const categoryBrands = { key1: "Segment2", key2: "Premium" };
   useEffect(() => {
-    if (filteredBrands.length === 0) {
+    const fetchBrands = async () => {
+      const brandsData = await getBrands(categoryBrands, defLng);
+      console.log("BRANDS", brandsData);
+      setBrands(brandsData);
+      // Установка первого бренда как активного при первом рендере
+      // if (brandsData && brandsData.length > 0) {
+      //   setSelectedBrand(brandsData[0]);
+      //   setGlobalSelectedBrand(brandsData[0]);
+      // }
+    };
+
+    fetchBrands();
+  }, [defLng]);
+
+  useEffect(() => {
+    if (brands.length === 0) {
       setLoading(true);
     } else {
       setLoading(false);
     }
-  }, [filteredBrands]);
+  }, [brands]);
 
   let cards2;
   // Перемешиваем массив filteredBrands случайным образом
-  const shuffledBrands = shuffle(filteredBrands);
+  const shuffledBrands = shuffle(brands);
   // Берем первые 6 элементов из перемешанного массива
   const randomBrands = shuffledBrands.slice(0, 6);
+  console.log("!!", randomBrands)
   // Преобразуем эти объекты в карточки
   cards2 = randomBrands.map((brand) => ({
     key: uuidv4(),
     content: (
       <Card
-        imagen={extractReviewImage(brand.content.rendered)}
-        link={extractLink(brand.content.rendered)}
-        bonus={extractReviewBonus(brand.content.rendered)}
+        imagen={brand.LinkImg}
+        link={brand.GoBig}
+        bonus={brand.OurOfferContent}
       />
     ),
   }));
@@ -342,9 +247,7 @@ export default function TopBrands() {
                 target="_blank"
                 key={item}
                 className="btn btn-primary big-btn mt-3"
-                href={`https://link.reg2dep1.com/${extractLink(
-                  item.content.rendered
-                )}/${newUrl}`}
+                href={`${item.GoBig}/${newUrl}`}
               >
                 Try Your Luck
               </Link>

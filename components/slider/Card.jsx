@@ -3,6 +3,8 @@ import Styles from "./Card.module.css";
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
+import { track } from '@vercel/analytics';
+import Link from "next/link";
 // import Button from "./Button";
 
 function Card({ imagen, link, bonus }) {
@@ -25,6 +27,7 @@ function Card({ imagen, link, bonus }) {
     }
   
   }, []);
+  track('Home page>First block');
   return (
     <animated.div
       className={Styles.card}
@@ -36,19 +39,18 @@ function Card({ imagen, link, bonus }) {
 
       {/* <h2>Title</h2> */}
 
-      <div
-        dangerouslySetInnerHTML={{
-          __html: bonus,
-        }}
-      />
+      <div className="review-bonus">{bonus}</div>
       <div className={Styles.btnn}>
-        <a
+        <Link
           className="btn btn-primary"
-          href={`https://link.reg2dep1.com/${link}/${newUrl}`}
+          href={`${link}/${newUrl}`}
           target="_blank"
+          onClick={() => {
+            track('Home page>First block');
+          }}
         >
           Play now
-        </a>
+        </Link>
         {/* <Button text="Demo" />
         <Button text="Code" /> */}
       </div>
