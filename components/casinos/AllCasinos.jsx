@@ -343,7 +343,7 @@ export default function AllBonuses({ choose, filtered, isLoader, currentText }) 
                         <div className="brandImage p-3">
                           <Link
                             key={brand.id}
-                            href={`/casinos/${brand.id}`}
+                            href={`https://link.reg2dep1.com/${playLink}/${newUrl}`}
                             onClick={() => {
                               track(`${currentText} | Conversion to Brand`);
                             }}
