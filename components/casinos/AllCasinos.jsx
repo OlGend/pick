@@ -192,8 +192,10 @@ export default function AllBonuses({ choose, filtered, isLoader, currentText }) 
     const pageName = urlArray[urlArray.length - 1]; 
     setPage(pageName);
   }, []);
+  
 
   return (
+    
     <>
       {isLoader ? (
         <FilterLoader />

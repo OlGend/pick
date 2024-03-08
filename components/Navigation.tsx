@@ -8,6 +8,7 @@ import Image from "next/image";
 import Img from "@/public/menuBonuses2.png";
 import { useTranslation } from "react-i18next";
 import { CaretDown } from "@phosphor-icons/react";
+import { track } from "@vercel/analytics";
 
 type NavLink = {
   class: string;
@@ -15,6 +16,7 @@ type NavLink = {
   href: string;
   icon: React.ReactNode;
   subMenu?: NavLink[];
+  endpoint: string;
 };
 
 type Props = {
@@ -29,9 +31,10 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (endpoint) => {
     setIsLoading(true);
     setOpenSubMenu(null);
+    track(`${endpoint}`);
     // Simulate some delay to show the loader (remove this in actual usage)
     setTimeout(() => {
       setIsLoading(false);
@@ -66,14 +69,14 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
       {navLinks.map((link) => {
         const isActive = pathname === link.href;
         const hasSubMenu = link.subMenu && link.subMenu.length > 0;
-
+        const endpoint = link.label;
         return (
           <div key={link.label} className="navigation-item">
             <Link
               href={link.href}
               className={isActive ? "active" : ""}
               onClick={() => {
-                handleLinkClick();
+                handleLinkClick(endpoint);
                 setOpenSubMenu(null);
               }}
             >
@@ -107,7 +110,8 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
                           <div
                             className="sub-menu-item"
                             onClick={() => {
-                              handleLinkClick();
+                              handleLinkClick(endpoint);
+
                             }}
                           >
                             <div className="">
@@ -142,7 +146,8 @@ const Navigation = ({ navLinks, onLinkClick }: Props) => {
                           <div
                             className="sub-menu-item"
                             onClick={() => {
-                              handleLinkClick();
+                              handleLinkClick(endpoint);
+
                               onLinkClick();
                               setOpenSubMenu(null);
                             }}
